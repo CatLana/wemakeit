@@ -26,7 +26,7 @@ export default function Hero() {
         {/* Eyebrow badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-slate-400 mb-8">
           <span aria-hidden="true">🇮🇪</span>
-          <span>Based in Dublin, Ireland</span>
+          <span>Based in Ashbourne, Ireland</span>
         </div>
 
         {/* Headline */}
@@ -34,28 +34,34 @@ export default function Hero() {
           We Make{" "}
           <span className="text-[#22D3EE]">IT</span>
           <br className="hidden sm:block" />
-          {" "}Happen.
+          {" "}Dreams Happen.
         </h1>
 
         {/* Sub-headline */}
-        <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-400 leading-relaxed mb-10">
-          Custom software, cloud &amp; AI solutions — built by Irish engineers,
-          delivered on time, built to last.
+        <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-400 leading-relaxed mb-6">
+          Frontend &amp; Backend development with built-in Accessibility and UX expertise —
+          all in one package, at the price you&apos;d pay anywhere else.
         </p>
+
+        {/* Early bird offer */}
+        <div className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-10">
+          <span aria-hidden="true">🐦</span>
+          <span>Early bird offer — generous discounts available. This won&apos;t last!</span>
+        </div>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#contact"
+            href="#quote"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
           >
-            Talk to us
+            Get a free quote
           </a>
           <a
-            href="#case-studies"
+            href="#about"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-transparent text-white border border-white/20 font-semibold rounded-xl hover:bg-white/5 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
           >
-            See our work
+            About us
           </a>
         </div>
 

@@ -1,23 +1,23 @@
-import { Heart, Zap, Handshake } from "lucide-react";
+import { Heart, Zap, Globe } from "lucide-react";
 
 const values = [
   {
     icon: Heart,
-    title: "People First",
+    title: "Accessibility & UX Built In",
     description:
-      "Our engineers are permanent employees, not contractors. You get consistent, invested teams who care about your product as if it were their own.",
+      "You do not have to pay extra to comply with modern accessibility standards required by European law, or hire separate UX experts. It is all included in our standard package.",
   },
   {
     icon: Zap,
-    title: "No-nonsense Delivery",
+    title: "Big-Tech Experience",
     description:
-      "We ship on time and in scope. Agile sprints, transparent roadmaps, and weekly demos — no surprises at go-live.",
+      "Our team has solid experience working for big tech companies and large-scale projects across multiple countries. We bring that expertise directly to your business.",
   },
   {
-    icon: Handshake,
-    title: "Long-term Partners",
+    icon: Globe,
+    title: "We Speak Your Language",
     description:
-      "We measure success in years, not tickets. Most of our clients have been with us for 5+ years because we grow with them.",
+      "We speak English, Italian, and Russian fluently. If you prefer support in a language other than English, we have you covered.",
   },
 ];
 
@@ -40,40 +40,40 @@ export default function About() {
               id="about-heading"
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E293B] leading-tight mb-6"
             >
-              Built in Ireland.
+              Senior Engineers.
               <br />
-              <span className="text-[#0F172A]">Built to Last.</span>
+              <span className="text-[#0F172A]">Real Expertise.</span>
             </h2>
             <div className="space-y-4 text-slate-500 leading-relaxed">
               <p>
-                We Make IT was founded in Dublin with a simple mission: deliver
-                software that actually works for Irish businesses. No offshoring,
-                no bait-and-switch. Every project is staffed by engineers you
-                meet on day one and work with until the end.
+                We Make IT is a software development company with a team of engineers
+                bringing 15+ years of expertise in Frontend and Backend development.
               </p>
               <p>
-                Over the last 12 years we have helped some of Ireland&apos;s most
-                ambitious companies — from Series A startups to FTSE-listed
-                enterprises — build the digital products that define their
-                market position.
+                What makes us different in the Irish market is our excellent expertise
+                in Accessibility and UX. As a team, we have solid experience working
+                for big tech companies and large projects across multiple countries.
               </p>
               <p>
-                We are headquartered at Grand Canal Dock in Dublin 2, with
-                additional engineers across Cork and Galway. 100% of our
-                leadership team is Ireland-based.
+                We have now embarked on our own journey to assist other businesses with
+                the best quality software and websites. Send us a quote from another
+                company and we will beat it!
+              </p>
+              <p className="font-semibold text-[#1E293B]">
+                Let&apos;s work together — we make your IT dreams happen!
               </p>
             </div>
             <a
-              href="#contact"
+              href="#quote"
               className="mt-8 inline-flex items-center justify-center min-h-[50px] px-7 bg-[#0F172A] text-white font-semibold rounded-xl hover:bg-slate-800 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
             >
-              Meet the team
+              Get a free quote
             </a>
           </div>
 
-          {/* Placeholder image / visual */}
+          {/* Visual */}
           <div
-            aria-label="Team photo placeholder — replace with a real team image"
+            aria-label="We Make IT — Ashbourne, Ireland"
             role="img"
             className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-[#0F172A] to-slate-800 border border-slate-200"
           >
@@ -88,10 +88,10 @@ export default function About() {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
               <span className="text-6xl mb-4" aria-hidden="true">🇮🇪</span>
               <p className="text-white font-semibold text-lg">
-                Dublin, Ireland
+                Ashbourne, Co. Meath, Ireland
               </p>
-              <p className="text-slate-400 text-sm mt-1">
-                Replace this with your real team photo
+              <p className="text-slate-400 text-sm mt-2">
+                English · Italiano · Русский
               </p>
             </div>
           </div>

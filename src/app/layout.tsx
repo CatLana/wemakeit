@@ -9,20 +9,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "We Make IT — Custom Software Development in Ireland",
+  title: "We Make IT — Software Development in Ireland",
   description:
-    "We Make IT is a Dublin-based software development company specialising in custom software, cloud migration, AI strategy, and managed IT services for businesses across Ireland and beyond.",
+    "We Make IT is a software development company based in Ashbourne, Ireland. Experts in Frontend, Backend, Accessibility and UX. All-in-one package — no hidden extras.",
   keywords: [
     "software development Ireland",
-    "custom software Dublin",
-    "cloud migration Ireland",
-    "AI consulting Ireland",
-    "managed IT services Dublin",
+    "frontend development Ireland",
+    "backend development Ireland",
+    "accessibility WCAG Ireland",
+    "UX design Ireland",
+    "web development Ashbourne",
   ],
   openGraph: {
-    title: "We Make IT — Custom Software Development in Ireland",
+    title: "We Make IT — Software Development in Ireland",
     description:
-      "Custom software, cloud & AI solutions — built by Irish engineers, delivered on time, built to last.",
+      "Frontend, Backend, Accessibility & UX — all in one package at one price. Based in Ashbourne, Ireland.",
     locale: "en_IE",
     type: "website",
   },

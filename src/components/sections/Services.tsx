@@ -1,58 +1,58 @@
 import {
   Code2,
-  Cloud,
-  BrainCircuit,
-  Settings,
-  Database,
+  Layers,
+  Accessibility,
+  Palette,
+  Globe,
   ShieldCheck,
 } from "lucide-react";
 
 const services = [
   {
     icon: Code2,
-    title: "Custom Software Development",
+    title: "Frontend Development",
     description:
-      "End-to-end web and mobile applications tailored to your business processes. From discovery to deployment and beyond.",
+      "Modern, responsive web applications built with the latest technologies. Fast, accessible, and beautiful interfaces that your users will love.",
     color: "text-[#22D3EE]",
     bg: "bg-[#22D3EE]/10",
   },
   {
-    icon: Cloud,
-    title: "Cloud Migration & Infrastructure",
+    icon: Layers,
+    title: "Backend Development",
     description:
-      "Modernise legacy systems and migrate to AWS, Azure, or GCP with zero-downtime strategies and ongoing cloud management.",
+      "Robust, scalable server-side solutions — APIs, databases, authentication, and integrations. We build the engine that powers your product.",
     color: "text-sky-400",
     bg: "bg-sky-400/10",
   },
   {
-    icon: BrainCircuit,
-    title: "AI Strategy & Implementation",
+    icon: Accessibility,
+    title: "Accessibility (WCAG & EU Law)",
     description:
-      "From proof-of-concept to production ML pipelines — we help Irish businesses unlock real value from artificial intelligence.",
+      "Accessibility is built in from day one — not bolted on at the end. We ensure your product meets WCAG 2.2 and European Accessibility Act requirements at no extra cost.",
     color: "text-[#A855F7]",
     bg: "bg-[#A855F7]/10",
   },
   {
-    icon: Settings,
-    title: "Managed IT Services",
+    icon: Palette,
+    title: "UX Design & Strategy",
     description:
-      "Proactive monitoring, helpdesk, and infrastructure management so your team can focus on the business, not the tech.",
+      "Great software starts with great UX. Our in-house UX expertise means you get research-backed, user-centred design included — no need to hire separately.",
     color: "text-emerald-400",
     bg: "bg-emerald-400/10",
   },
   {
-    icon: Database,
-    title: "Data Engineering & Analytics",
+    icon: Globe,
+    title: "Website Development",
     description:
-      "Build reliable data pipelines, warehouses, and dashboards that turn raw data into decisions you can act on today.",
+      "From marketing sites to full e-commerce platforms — we deliver polished, performant websites that convert visitors and represent your brand.",
     color: "text-amber-400",
     bg: "bg-amber-400/10",
   },
   {
     icon: ShieldCheck,
-    title: "Cybersecurity & Compliance",
+    title: "Quality & Best Practices",
     description:
-      "Penetration testing, ISO 27001 readiness, GDPR compliance, and 24/7 threat monitoring for peace of mind.",
+      "Code reviews, automated testing, and continuous integration baked into every project. We build software that lasts and is easy to maintain.",
     color: "text-rose-400",
     bg: "bg-rose-400/10",
   },
@@ -69,18 +69,18 @@ export default function Services() {
         {/* Section header */}
         <div className="max-w-2xl mb-14">
           <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-3">
-            What We Build
+            What We Do
           </span>
           <h2
             id="services-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E293B] leading-tight"
           >
-            Services built for your{" "}
-            <span className="text-[#0F172A]">growth</span>
+            Everything you need,{" "}
+            <span className="text-[#0F172A]">in one package</span>
           </h2>
           <p className="mt-4 text-slate-500 text-lg leading-relaxed">
-            Whether you need a greenfield product or to modernise an existing
-            system, our engineers have you covered from strategy to support.
+            Frontend, Backend, UX, and Accessibility — all under one roof at one
+            price. No extras, no surprises.
           </p>
         </div>
 
@@ -112,11 +112,11 @@ export default function Services() {
                 </p>
 
                 <a
-                  href="#contact"
-                  aria-label={`Learn more about ${title} — contact us`}
+                  href="#quote"
+                  aria-label={`Get a quote for ${title}`}
                   className="mt-5 inline-flex items-center text-sm font-semibold text-[#22D3EE] hover:text-cyan-300 transition-colors group-hover:gap-2 gap-1 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
-                  Learn more
+                  Get a quote
                   <span aria-hidden="true">→</span>
                 </a>
               </article>

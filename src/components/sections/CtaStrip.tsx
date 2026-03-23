@@ -10,17 +10,18 @@ export default function CtaStrip() {
             id="cta-heading"
             className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight"
           >
-            Ready to build something great?
+            Have a quote from another company?
           </h2>
           <p className="mt-2 text-slate-400 text-base lg:text-lg">
-            Schedule a free 30-minute consultation with one of our technical leads.
+            Send it to us and we will beat it. Be our early bird customer and
+            get generous discounts. This offer won&apos;t last!
           </p>
         </div>
         <a
-          href="#contact"
+          href="#quote"
           className="shrink-0 inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base whitespace-nowrap focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
         >
-          Schedule a free consultation
+          Get a free quote
         </a>
       </div>
     </section>
