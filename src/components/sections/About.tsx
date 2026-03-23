@@ -47,7 +47,7 @@ export default function About() {
             <div className="space-y-4 text-slate-500 leading-relaxed">
               <p>
                 We Make IT is a software development company with a team of engineers
-                bringing 15+ years of expertise in Frontend and Backend development.
+                bringing 15+ years of in-house expertise in full-stack applications development, UX research and WCAG Accessibility compliance.
               </p>
               <p>
                 What makes us different in the Irish market is our excellent expertise
@@ -73,7 +73,7 @@ export default function About() {
 
           {/* Visual */}
           <div
-            aria-label="We Make IT — Ashbourne, Ireland"
+            aria-label="We Make IT — Ireland"
             role="img"
             className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-[#0F172A] to-slate-800 border border-slate-200"
           >
@@ -88,7 +88,7 @@ export default function About() {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
               <span className="text-6xl mb-4" aria-hidden="true">🇮🇪</span>
               <p className="text-white font-semibold text-lg">
-                Ashbourne, Co. Meath, Ireland
+                Ireland
               </p>
               <p className="text-slate-400 text-sm mt-2">
                 English · Italiano · Русский

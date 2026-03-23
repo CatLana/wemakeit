@@ -26,7 +26,7 @@ export default function Hero() {
         {/* Eyebrow badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-slate-400 mb-8">
           <span aria-hidden="true">🇮🇪</span>
-          <span>Based in Ashbourne, Ireland</span>
+          <span>Based in Ireland</span>
         </div>
 
         {/* Headline */}
@@ -34,7 +34,7 @@ export default function Hero() {
           We Make{" "}
           <span className="text-[#22D3EE]">IT</span>
           <br className="hidden sm:block" />
-          {" "}Dreams Happen.
+          {" "}Happen.
         </h1>
 
         {/* Sub-headline */}

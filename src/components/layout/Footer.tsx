@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Linkedin, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const footerLinks = {
   Services: [
@@ -40,8 +40,7 @@ export default function Footer() {
               We Make <span className="text-[#22D3EE] ml-1">IT</span>
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-xs">
-              Software development company based in Ashbourne, Ireland. Frontend,
-              Backend, Accessibility &amp; UX — all in one package.
+              Applications and Websites development company in Ireland. Accessibility first. The best standards only!
             </p>
             {/* Contact info */}
             <address className="not-italic text-sm space-y-3">
@@ -89,19 +88,8 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <p>
-            © {new Date().getFullYear()} We Make IT Ltd. Registered in Ireland. CRO No. 083456123.
+            © {new Date().getFullYear()} We Make IT Sole Trader company registered in Ireland.
           </p>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://linkedin.com/company/wemakeit"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="We Make IT on LinkedIn (opens in new tab)"
-              className="hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-            >
-              <Linkedin size={18} aria-hidden="true" />
-            </a>
-          </div>
         </div>
       </div>
     </footer>
