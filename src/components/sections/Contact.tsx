@@ -84,6 +84,7 @@ const selectBase =
 export default function Contact() {
   const searchParams = useSearchParams();
   const [submittedType, setSubmittedType] = useState<FormValues["enquiryType"] | null>(null);
+  const [serverError, setServerError] = useState<string | null>(null);
 
   const {
     register,
@@ -109,9 +110,22 @@ export default function Contact() {
   }, [searchParams, setValue]);
 
   async function onSubmit(data: FormValues) {
-    setSubmittedType(data.enquiryType);
-    // TODO: replace with Resend / API endpoint
-    await new Promise((r) => setTimeout(r, 800));
+    setServerError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) {
+        const json = await res.json().catch(() => ({}));
+        setServerError((json as { error?: string }).error ?? "Something went wrong. Please try again.");
+        return;
+      }
+      setSubmittedType(data.enquiryType);
+    } catch {
+      setServerError("Could not reach the server. Please check your connection and try again.");
+    }
   }
 
   return (
@@ -523,6 +537,12 @@ export default function Contact() {
                     {...register("competitorQuote")}
                   />
                 </Field>
+
+                {serverError && (
+                  <p role="alert" className="text-sm text-rose-600 font-medium rounded-lg bg-rose-50 border border-rose-200 px-4 py-3">
+                    {serverError}
+                  </p>
+                )}
 
                 <button
                   type="submit"
