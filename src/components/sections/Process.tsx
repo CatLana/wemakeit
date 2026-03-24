@@ -7,15 +7,15 @@ const steps = [
   },
   {
     number: "02",
-    title: "Free Consultation Call",
+    title: "We Review and Get Back to You",
     description:
-      "We get back to you quickly to arrange a free, no-obligation chat. We will help you figure out what you actually need, validate your idea, and answer every question you have.",
+      "We review your form, ask any follow-up questions by email, and come back to you with a clear, transparent quote. No vague estimates, just a straight answer.",
   },
   {
     number: "03",
     title: "We Give You a Clear Plan",
     description:
-      "After our call, we send you a straight, transparent quote with no hidden extras. If you have a quote from another company already, share it and we will beat it.",
+      "Once we understand your idea fully, we send you a full project plan and price. If you have a quote from another company already, share it and we will beat it.",
   },
   {
     number: "04",

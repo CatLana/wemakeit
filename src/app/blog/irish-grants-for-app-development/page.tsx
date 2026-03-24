@@ -137,8 +137,8 @@ export default function ArticlePage() {
               {[
                 {
                   n: "01",
-                  title: "Discovery call (free)",
-                  body: "We discuss your idea, your business goals, and whether an Innovation Voucher or another grant could be a good fit. No commitment required.",
+                  title: "Tell us your idea",
+                  body: "Fill in our short form and describe your idea in plain words. Tell us what you want to build and mention that you are interested in grant-supported options. No jargon needed.",
                 },
                 {
                   n: "02",
@@ -275,14 +275,15 @@ export default function ArticlePage() {
                 Want to explore this for your idea?
               </p>
               <p className="text-slate-400 text-sm mb-6">
-                Book a free, no-obligation call and we will walk you through the
-                options.
+                Fill in our short form and mention that you are interested in
+                grant-supported options. We will come back to you with a clear
+                plan and a transparent quote.
               </p>
               <a
                 href="/#quote"
                 className="inline-flex items-center justify-center min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
               >
-                Book a free chat
+                Tell us your idea
               </a>
             </div>
           </div>
