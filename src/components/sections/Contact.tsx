@@ -138,7 +138,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20">
           {/* Left — copy + contact details */}
           <div className="lg:col-span-2">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-3">
+            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-3">
               Get a Quote
             </span>
             <h2
@@ -196,7 +196,7 @@ export default function Contact() {
                   <p className="text-sm font-semibold text-[#1E293B]">Email</p>
                   <a
                     href="mailto:info@wemakeit.ie"
-                    className="text-sm text-[#22D3EE] hover:text-cyan-600 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                    className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                   >
                     info@wemakeit.ie
                   </a>
@@ -219,9 +219,10 @@ export default function Contact() {
                     href="https://linkedin.com/company/wemakeit"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-[#22D3EE] hover:text-cyan-600 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                    className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                   >
                     linkedin.com/company/wemakeit
+                    <span className="sr-only"> (opens in new tab)</span>
                   </a>
                 </div>
               </div>
@@ -268,7 +269,7 @@ export default function Contact() {
                 <button
                   type="button"
                   onClick={() => { reset(); setSubmittedType(null); }}
-                  className="text-sm text-[#22D3EE] hover:text-cyan-600 underline underline-offset-2 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                  className="text-sm text-[#0E7490] hover:text-[#0891B2] underline underline-offset-2 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
                   Submit another request
                 </button>
@@ -280,7 +281,7 @@ export default function Contact() {
                 aria-label="Quote request form"
                 className="flex flex-col gap-5"
               >
-                <p className="text-xs text-slate-400">
+                <p className="text-xs text-slate-500">
                   Fields marked{" "}
                   <span aria-hidden="true" className="text-rose-500">
                     *

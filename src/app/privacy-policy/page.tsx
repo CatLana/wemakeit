@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
                 <p><strong className="text-[#1E293B]">We Make IT</strong></p>
                 <p>Operated by: Lana [Surname] (sole trader)</p>
                 <p>Address: 32 Millbourne Drive, Ashbourne, Co. Meath, Ireland</p>
-                <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#22D3EE] hover:text-cyan-600">info@wemakeit.ie</a></p>
+                <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
               </div>
               <p className="mt-3 text-sm text-slate-500">
                 We Make IT is not required to appoint a Data Protection Officer (DPO) as we do not carry out large-scale processing of special categories of data. For all privacy-related queries, please contact us at the email above.
@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
                 <li>IP address (server logs)</li>
                 <li>Browser type and version</li>
                 <li>Device type and operating system</li>
-                <li>Pages visited and time spent (when analytics tools are in use — see our <a href="/cookie-policy" className="text-[#22D3EE] hover:text-cyan-600">Cookie Policy</a>)</li>
+                <li>Pages visited and time spent (when analytics tools are in use — see our <a href="/cookie-policy" className="text-[#0E7490] hover:text-[#0891B2]">Cookie Policy</a>)</li>
                 <li>Referral source (how you found us)</li>
               </ul>
               <p className="mt-3 text-sm text-slate-500">
@@ -179,7 +179,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">7. International Data Transfers</h2>
               <p className="text-sm">
-                Some of our service providers are based outside the European Economic Area (EEA). Where we transfer personal data to countries not deemed adequate by the European Commission, we ensure appropriate safeguards are in place, including <strong className="text-[#1E293B]">Standard Contractual Clauses (SCCs)</strong> approved by the European Commission under GDPR Article 46(2)(c), or we rely on the recipient country&apos;s adequacy decision. You may request a copy of applicable transfer safeguards by contacting us at <a href="mailto:info@wemakeit.ie" className="text-[#22D3EE] hover:text-cyan-600">info@wemakeit.ie</a>.
+                Some of our service providers are based outside the European Economic Area (EEA). Where we transfer personal data to countries not deemed adequate by the European Commission, we ensure appropriate safeguards are in place, including <strong className="text-[#1E293B]">Standard Contractual Clauses (SCCs)</strong> approved by the European Commission under GDPR Article 46(2)(c), or we rely on the recipient country&apos;s adequacy decision. You may request a copy of applicable transfer safeguards by contacting us at <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a>.
               </p>
             </section>
 
@@ -205,7 +205,7 @@ export default function PrivacyPolicyPage() {
                 ))}
               </div>
               <p className="mt-4 text-sm">
-                To exercise any of these rights, contact us at <a href="mailto:info@wemakeit.ie" className="text-[#22D3EE] hover:text-cyan-600">info@wemakeit.ie</a>. We will respond within <strong className="text-[#1E293B]">30 days</strong>. We may need to verify your identity before processing your request. There is no charge for exercising your rights in most circumstances.
+                To exercise any of these rights, contact us at <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a>. We will respond within <strong className="text-[#1E293B]">30 days</strong>. We may need to verify your identity before processing your request. There is no charge for exercising your rights in most circumstances.
               </p>
             </section>
 
@@ -229,11 +229,11 @@ export default function PrivacyPolicyPage() {
               <div className="mt-3 rounded-xl bg-white border border-slate-200 p-5 text-sm space-y-1">
                 <p className="font-semibold text-[#1E293B]">Data Protection Commission (Ireland)</p>
                 <p>21 Fitzwilliam Square South, Dublin 2, D02 RD28</p>
-                <p>Email: <a href="mailto:info@dataprotection.ie" className="text-[#22D3EE] hover:text-cyan-600">info@dataprotection.ie</a></p>
-                <p>Web: <a href="https://www.dataprotection.ie" target="_blank" rel="noopener noreferrer" className="text-[#22D3EE] hover:text-cyan-600">www.dataprotection.ie</a></p>
+                <p>Email: <a href="mailto:info@dataprotection.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@dataprotection.ie</a></p>
+                <p>Web: <a href="https://www.dataprotection.ie" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] hover:text-[#0891B2]">www.dataprotection.ie</a></p>
               </div>
               <p className="mt-3 text-sm text-slate-500">
-                We would, however, appreciate the opportunity to address your concerns before you approach the DPC, so please contact us first at <a href="mailto:info@wemakeit.ie" className="text-[#22D3EE] hover:text-cyan-600">info@wemakeit.ie</a>.
+                We would, however, appreciate the opportunity to address your concerns before you approach the DPC, so please contact us first at <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a>.
               </p>
             </section>
 
@@ -241,7 +241,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">11. Cookies</h2>
               <p className="text-sm">
-                Our website uses cookies. For full details of the cookies we use, their purposes, and how to manage or opt out of them, please read our <a href="/cookie-policy" className="text-[#22D3EE] hover:text-cyan-600">Cookie Policy</a>.
+                Our website uses cookies. For full details of the cookies we use, their purposes, and how to manage or opt out of them, please read our <a href="/cookie-policy" className="text-[#0E7490] hover:text-[#0891B2]">Cookie Policy</a>.
               </p>
             </section>
 
@@ -262,7 +262,7 @@ export default function PrivacyPolicyPage() {
               <div className="mt-3 rounded-xl bg-white border border-slate-200 p-5 text-sm space-y-1">
                 <p><strong className="text-[#1E293B]">We Make IT</strong></p>
                 <p>32 Millbourne Drive, Ashbourne, Co. Meath, Ireland</p>
-                <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#22D3EE] hover:text-cyan-600">info@wemakeit.ie</a></p>
+                <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
               </div>
             </section>
 

@@ -1,5 +1,8 @@
 {
     "chat.tools.terminal.autoApprove": {
-        "npm audit": true
+        "npm audit": true,
+        "git add": true,
+        "git commit": true,
+        "git push": true
     }
 }

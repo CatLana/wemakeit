@@ -162,7 +162,7 @@ export default function ArticlePage() {
                 },
               ].map(({ n, title, body }) => (
                 <li key={n} className="flex gap-5">
-                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-[#0F172A] text-[#22D3EE] font-extrabold text-sm flex items-center justify-center">
+                  <span aria-hidden="true" className="flex-shrink-0 w-10 h-10 rounded-full bg-[#0F172A] text-[#22D3EE] font-extrabold text-sm flex items-center justify-center">
                     {n}
                   </span>
                   <div>

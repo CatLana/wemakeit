@@ -49,7 +49,7 @@ export default function TermsOfServicePage() {
                 <p><strong className="text-[#1E293B]">We Make IT</strong></p>
                 <p>Operated by: Lana [Surname] (sole trader)</p>
                 <p>Address: 32 Millbourne Drive, Ashbourne, Co. Meath, Ireland</p>
-                <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#22D3EE] hover:text-cyan-600">info@wemakeit.ie</a></p>
+                <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
               </div>
             </section>
 
@@ -305,7 +305,7 @@ export default function TermsOfServicePage() {
               <div className="mt-3 rounded-xl bg-white border border-slate-200 p-5 text-sm space-y-1">
                 <p><strong className="text-[#1E293B]">We Make IT</strong></p>
                 <p>32 Millbourne Drive, Ashbourne, Co. Meath, Ireland</p>
-                <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#22D3EE] hover:text-cyan-600">info@wemakeit.ie</a></p>
+                <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
               </div>
             </section>
 

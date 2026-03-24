@@ -27,7 +27,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16">
           {/* Text */}
           <div>
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-3">
+            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-3">
               About Us
             </span>
             <h2

@@ -104,7 +104,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl mb-14">
-          <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-3">
+          <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-3">
             What We Do
           </span>
           <h2
@@ -151,7 +151,7 @@ export default function Services() {
                 <a
                   href="#quote"
                   aria-label={`Get a quote for ${title}`}
-                  className="mt-5 inline-flex items-center text-sm font-semibold text-[#22D3EE] hover:text-cyan-300 transition-colors group-hover:gap-2 gap-1 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                  className="mt-5 inline-flex items-center text-sm font-semibold text-[#0E7490] hover:text-[#0891B2] transition-colors group-hover:gap-2 gap-1 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
                   Tell us your idea
                   <span aria-hidden="true">→</span>

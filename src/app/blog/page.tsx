@@ -63,7 +63,7 @@ export default function BlogPage() {
                 <li key={article.slug}>
                   <article className="group h-full flex flex-col bg-white rounded-2xl border border-slate-200 hover:border-[#22D3EE]/50 hover:shadow-lg transition-all duration-200">
                     <div className="p-6 flex flex-col flex-1">
-                      <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-4">
+                      <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-4">
                         {article.category}
                       </span>
                       <h2 className="text-base font-bold text-[#1E293B] leading-snug mb-3 flex-1">
@@ -84,7 +84,8 @@ export default function BlogPage() {
                       </div>
                       <Link
                         href={`/blog/${article.slug}`}
-                        className="inline-flex items-center gap-1 text-sm font-semibold text-[#22D3EE] hover:text-cyan-300 transition-colors group-hover:gap-2 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                        aria-label={`Read article: ${article.title}`}
+                        className="inline-flex items-center gap-1 text-sm font-semibold text-[#0E7490] hover:text-[#0891B2] transition-colors group-hover:gap-2 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                       >
                         Read article
                         <ArrowRight size={14} aria-hidden="true" />
@@ -94,7 +95,7 @@ export default function BlogPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-14 text-center text-slate-400 text-sm">
+            <p className="mt-14 text-center text-slate-500 text-sm">
               More articles coming soon.
             </p>
           </div>

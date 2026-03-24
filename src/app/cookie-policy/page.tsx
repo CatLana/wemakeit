@@ -37,7 +37,7 @@ export default function CookiePolicyPage() {
             {/* Introduction */}
             <section>
               <p className="text-base">
-                This Cookie Policy explains what cookies are, which cookies <strong className="text-[#1E293B]">We Make IT</strong> uses on <strong className="text-[#1E293B]">wemakeit.ie</strong>, why we use them, and how you can manage or disable them. It should be read alongside our <a href="/privacy-policy" className="text-[#22D3EE] hover:text-cyan-600">Privacy Policy</a>.
+                This Cookie Policy explains what cookies are, which cookies <strong className="text-[#1E293B]">We Make IT</strong> uses on <strong className="text-[#1E293B]">wemakeit.ie</strong>, why we use them, and how you can manage or disable them. It should be read alongside our <a href="/privacy-policy" className="text-[#0E7490] hover:text-[#0891B2]">Privacy Policy</a>.
               </p>
               <p className="text-base mt-4">
                 We operate under the EU <strong className="text-[#1E293B]">ePrivacy Directive</strong> (transposed in Ireland as the European Communities (Electronic Communications Networks and Services) (Privacy and Electronic Communications) Regulations 2011) and the <strong className="text-[#1E293B]">GDPR</strong>. Certain cookies require your consent before they are set; others are strictly necessary for the website to function and do not require consent.
@@ -143,14 +143,14 @@ export default function CookiePolicyPage() {
               <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">b) Browser settings</h3>
               <p className="text-sm">Most browsers allow you to control cookies through their settings. Please note that disabling cookies may affect the functionality of our website and other websites you visit. Browser-specific instructions:</p>
               <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
-                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className="text-[#22D3EE] hover:text-cyan-600">Google Chrome</a></li>
-                <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener noreferrer" className="text-[#22D3EE] hover:text-cyan-600">Mozilla Firefox</a></li>
-                <li><a href="https://support.apple.com/en-ie/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-[#22D3EE] hover:text-cyan-600">Apple Safari</a></li>
-                <li><a href="https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge" target="_blank" rel="noopener noreferrer" className="text-[#22D3EE] hover:text-cyan-600">Microsoft Edge</a></li>
+                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] hover:text-[#0891B2]">Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] hover:text-[#0891B2]">Mozilla Firefox</a></li>
+                <li><a href="https://support.apple.com/en-ie/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] hover:text-[#0891B2]">Apple Safari</a></li>
+                <li><a href="https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] hover:text-[#0891B2]">Microsoft Edge</a></li>
               </ul>
 
               <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">c) Opt-out tools</h3>
-              <p className="text-sm">For analytics cookies (when introduced), you may also use opt-out tools provided by analytics vendors, such as the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#22D3EE] hover:text-cyan-600">Google Analytics opt-out browser add-on</a>.</p>
+              <p className="text-sm">For analytics cookies (when introduced), you may also use opt-out tools provided by analytics vendors, such as the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] hover:text-[#0891B2]">Google Analytics opt-out browser add-on</a>.</p>
             </section>
 
             {/* Third-party cookies */}
@@ -160,7 +160,7 @@ export default function CookiePolicyPage() {
                 We do not currently use third-party cookies from advertising or analytics platforms. Third-party services we use (such as Vercel for hosting) may set cookies that are strictly necessary for the delivery and security of our website. These providers operate under their own privacy policies:
               </p>
               <ul className="list-disc pl-5 space-y-1 text-sm mt-3">
-                <li><a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#22D3EE] hover:text-cyan-600">Vercel Inc. Privacy Policy</a></li>
+                <li><a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] hover:text-[#0891B2]">Vercel Inc. Privacy Policy</a></li>
               </ul>
             </section>
 
@@ -176,7 +176,7 @@ export default function CookiePolicyPage() {
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">7. Contact</h2>
               <p className="text-sm">
-                For questions about our use of cookies, contact us at <a href="mailto:info@wemakeit.ie" className="text-[#22D3EE] hover:text-cyan-600">info@wemakeit.ie</a> or write to: We Make IT, 32 Millbourne Drive, Ashbourne, Co. Meath, Ireland.
+                For questions about our use of cookies, contact us at <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a> or write to: We Make IT, 32 Millbourne Drive, Ashbourne, Co. Meath, Ireland.
               </p>
             </section>
 

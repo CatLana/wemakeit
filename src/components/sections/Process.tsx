@@ -41,7 +41,7 @@ export default function Process() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl mb-14">
-          <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-3">
+          <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-3">
             How It Works
           </span>
           <h2
@@ -58,10 +58,7 @@ export default function Process() {
         </div>
 
         {/* Steps */}
-        <ol
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8"
-          role="list"
-        >
+        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {steps.map(({ number, title, description }, index) => (
             <li key={number} className="relative flex flex-col">
               {/* Connector line (desktop only) */}
@@ -74,7 +71,7 @@ export default function Process() {
               )}
 
               {/* Step number */}
-              <div className="relative z-10 flex items-center justify-center w-12 h-12 rounded-full bg-[#0F172A] text-[#22D3EE] font-extrabold text-sm mb-5 shrink-0">
+              <div aria-hidden="true" className="relative z-10 flex items-center justify-center w-12 h-12 rounded-full bg-[#0F172A] text-[#22D3EE] font-extrabold text-sm mb-5 shrink-0">
                 {number}
               </div>
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -15,6 +15,8 @@ const navLinks = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const drawerRef = useRef<HTMLElement>(null);
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -26,7 +28,10 @@ export default function Header() {
   useEffect(() => {
     if (!open) return;
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setOpen(false);
+        hamburgerRef.current?.focus();
+      }
     };
     document.addEventListener("keydown", handleKey);
     return () => document.removeEventListener("keydown", handleKey);
@@ -36,6 +41,40 @@ export default function Header() {
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
+  }, [open]);
+
+  // Focus trap + hide background page from screen readers when drawer is open
+  useEffect(() => {
+    const mainEl = document.getElementById("main-content");
+    const footerEl = document.querySelector("footer");
+    if (!open) {
+      mainEl?.removeAttribute("aria-hidden");
+      footerEl?.removeAttribute("aria-hidden");
+      return;
+    }
+    mainEl?.setAttribute("aria-hidden", "true");
+    footerEl?.setAttribute("aria-hidden", "true");
+    const el = drawerRef.current;
+    if (!el) return;
+    const focusableSelectors = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    const focusables = Array.from(el.querySelectorAll<HTMLElement>(focusableSelectors));
+    if (focusables.length) focusables[0].focus();
+    function trapFocus(e: KeyboardEvent) {
+      if (e.key !== "Tab") return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+      } else {
+        if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    }
+    document.addEventListener("keydown", trapFocus);
+    return () => {
+      document.removeEventListener("keydown", trapFocus);
+      mainEl?.removeAttribute("aria-hidden");
+      footerEl?.removeAttribute("aria-hidden");
+    };
   }, [open]);
 
   return (
@@ -82,6 +121,7 @@ export default function Header() {
 
             {/* Mobile hamburger */}
             <button
+              ref={hamburgerRef}
               type="button"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
@@ -106,6 +146,7 @@ export default function Header() {
 
       {/* Mobile drawer */}
       <nav
+        ref={drawerRef}
         id="mobile-menu"
         aria-label="Mobile navigation"
         className={`fixed top-0 left-0 h-full w-72 z-50 bg-[#0F172A] transform transition-transform duration-300 md:hidden ${
@@ -119,8 +160,8 @@ export default function Header() {
           <button
             type="button"
             aria-label="Close menu"
-            onClick={() => setOpen(false)}
-            className="flex items-center justify-center w-11 h-11 text-white rounded-lg hover:bg-white/10 transition-colors"
+            onClick={() => { setOpen(false); hamburgerRef.current?.focus(); }}
+            className="flex items-center justify-center w-11 h-11 text-white rounded-lg hover:bg-white/10 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
           >
             <X size={22} aria-hidden="true" />
           </button>
@@ -141,7 +182,7 @@ export default function Header() {
             <a
               href="/#quote"
               onClick={() => setOpen(false)}
-              className="flex items-center justify-center h-11 px-5 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors"
+              className="flex items-center justify-center h-11 px-5 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2"
             >
               Get a quote
             </a>

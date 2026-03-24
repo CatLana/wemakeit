@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 type ConsentValue = "all" | "essential" | null;
@@ -18,11 +18,16 @@ export function useCookieConsent(): ConsentValue {
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
+  const primaryBtnRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (!stored) setVisible(true);
   }, []);
+
+  useEffect(() => {
+    if (visible) primaryBtnRef.current?.focus();
+  }, [visible]);
 
   function accept(value: "all" | "essential") {
     localStorage.setItem(STORAGE_KEY, value);
@@ -36,7 +41,6 @@ export default function CookieBanner() {
       role="dialog"
       aria-modal="false"
       aria-label="Cookie consent"
-      aria-live="polite"
       className="fixed bottom-0 left-0 right-0 z-50 bg-[#0F172A] border-t border-white/10 shadow-2xl"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -60,6 +64,7 @@ export default function CookieBanner() {
             Essential only
           </button>
           <button
+            ref={primaryBtnRef}
             type="button"
             onClick={() => accept("all")}
             className="inline-flex items-center justify-center min-h-[40px] px-5 bg-[#22D3EE] text-[#0F172A] font-semibold text-sm rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"

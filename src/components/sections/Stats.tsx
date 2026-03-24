@@ -38,12 +38,12 @@ export default function Stats() {
               >
                 {value}
               </dd>
-              <p
+              <dd
                 aria-hidden="true"
                 className="mt-2 text-sm text-slate-500 leading-snug"
               >
                 {label}
-              </p>
+              </dd>
             </div>
           ))}
         </dl>
