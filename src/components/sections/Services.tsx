@@ -32,7 +32,7 @@ const services = [
     icon: ScanSearch,
     title: "UX Research",
     description:
-      "Already have a product or a prototype? As a UI UX design agency for businesses of all sizes, we research how real people use it, find what is confusing or broken, and give you a clear, prioritised list of improvements.",
+      "Already have a product or a prototype? With an in-house UX design expertise for small businesses, we research how real people use your product or service. We find what is confusing or broken for, and give you a clear, prioritised list of improvements. Or we can remove the hassle from you and take over the technical implementation on us.",
     color: "text-[#A855F7]",
     bg: "bg-[#A855F7]/10",
   },
@@ -111,7 +111,7 @@ export default function Services() {
             id="services-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E293B] leading-tight"
           >
-            App and software development{" "}
+            App and website development{" "}
             <span className="text-[#0F172A]">services for your business</span>
           </h2>
           <p className="mt-4 text-slate-500 text-lg leading-relaxed">
