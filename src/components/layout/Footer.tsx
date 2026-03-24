@@ -1,27 +1,24 @@
 import Link from "next/link";
-import { Linkedin, Github, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const footerLinks = {
   Services: [
-    { label: "Custom Software", href: "#services" },
-    { label: "Cloud Migration", href: "#services" },
-    { label: "AI Strategy", href: "#services" },
-    { label: "Managed IT", href: "#services" },
-    { label: "Data Engineering", href: "#services" },
-    { label: "Cybersecurity", href: "#services" },
+    { label: "Frontend Development", href: "#services" },
+    { label: "Backend Development", href: "#services" },
+    { label: "Accessibility (WCAG)", href: "#services" },
+    { label: "UX Design", href: "#services" },
+    { label: "Website Development", href: "#services" },
   ],
   Company: [
     { label: "About Us", href: "#about" },
-    { label: "Case Studies", href: "#case-studies" },
-    { label: "Careers", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Partners", href: "#" },
+    { label: "How It Works", href: "#process" },
+    { label: "Get a Quote", href: "#quote" },
   ],
   Legal: [
     { label: "Privacy Policy", href: "#" },
     { label: "Cookie Policy", href: "#" },
     { label: "Terms of Service", href: "#" },
-    { label: "Accessibility", href: "#" },
+    { label: "Accessibility Statement", href: "#" },
   ],
 };
 
@@ -43,34 +40,24 @@ export default function Footer() {
               We Make <span className="text-[#22D3EE] ml-1">IT</span>
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-xs">
-              Dublin-based software development company. Custom software, cloud &amp;
-              AI solutions — built by Irish engineers, delivered on time, built to last.
+              Applications and Websites development company in Ireland. Accessibility first. The best standards only!
             </p>
             {/* Contact info */}
             <address className="not-italic text-sm space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-[#22D3EE]" aria-hidden="true" />
                 <span>
-                  1 Grand Canal Square,<br />
-                  Dublin 2, D02 P820, Ireland
+                  32 Millbourne Drive,<br />
+                  Ashbourne, Co. Meath, Ireland
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="shrink-0 text-[#22D3EE]" aria-hidden="true" />
                 <a
-                  href="mailto:hello@wemakeit.ie"
+                  href="mailto:info@wemakeit.ie"
                   className="hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
-                  hello@wemakeit.ie
-                </a>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone size={16} className="shrink-0 text-[#22D3EE]" aria-hidden="true" />
-                <a
-                  href="tel:+35312345678"
-                  className="hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                >
-                  +353 1 234 5678
+                  info@wemakeit.ie
                 </a>
               </div>
             </address>
@@ -101,37 +88,8 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <p>
-            © {new Date().getFullYear()} We Make IT Ltd. Registered in Ireland. CRO No. 123456.
+            © {new Date().getFullYear()} We Make IT Sole Trader company registered in Ireland.
           </p>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="We Make IT on LinkedIn (opens in new tab)"
-              className="hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-            >
-              <Linkedin size={18} aria-hidden="true" />
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="We Make IT on GitHub (opens in new tab)"
-              className="hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-            >
-              <Github size={18} aria-hidden="true" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="We Make IT on X / Twitter (opens in new tab)"
-              className="hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-            >
-              <Twitter size={18} aria-hidden="true" />
-            </a>
-          </div>
         </div>
       </div>
     </footer>

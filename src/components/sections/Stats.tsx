@@ -1,30 +1,30 @@
 const stats = [
   {
-    value: "12+",
-    label: "Years Founded in Ireland",
-    ariaLabel: "12 plus years founded in Ireland",
+    value: "15+",
+    label: "Years of Combined Engineering Experience",
+    ariaLabel: "15 plus years of combined engineering experience",
   },
   {
-    value: "150+",
-    label: "Projects Delivered",
-    ariaLabel: "150 plus projects delivered",
+    value: "2",
+    label: "Core Specialisations: Frontend & Backend",
+    ariaLabel: "2 core specialisations: Frontend and Backend",
   },
   {
-    value: "40+",
-    label: "Clients Across 10 Sectors",
-    ariaLabel: "40 plus clients across 10 sectors",
+    value: "3",
+    label: "Languages Spoken: English, Italian, Russian",
+    ariaLabel: "3 languages spoken: English, Italian, and Russian",
   },
   {
-    value: "5★",
-    label: "Verified Clutch Rating",
-    ariaLabel: "5 star verified Clutch rating",
+    value: "1",
+    label: "All-in-One Package — No Hidden Extras",
+    ariaLabel: "All-in-one package with no hidden extras",
   },
 ];
 
 export default function Stats() {
   return (
     <section
-      aria-label="Company stats"
+      aria-label="Company highlights"
       className="bg-white border-b border-slate-200"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
