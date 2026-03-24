@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
+import CookieBanner from "@/components/CookieBanner";
 import "./globals.css";
 
 const inter = Inter({
@@ -51,6 +53,9 @@ export default function RootLayout({
           Skip to main content
         </a>
         {children}
+        <Suspense fallback={null}>
+          <CookieBanner />
+        </Suspense>
       </body>
     </html>
   );

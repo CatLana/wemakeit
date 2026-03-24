@@ -16,10 +16,10 @@ const footerLinks = {
     { label: "Get a Quote", href: "/#quote" },
   ],
   Legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Cookie Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Accessibility Statement", href: "#" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Cookie Policy", href: "/cookie-policy" },
+    { label: "Terms of Service", href: "/terms-of-service" },
+    { label: "Accessibility Statement", href: "/accessibility-statement" },
   ],
 };
 
