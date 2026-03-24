@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Globe } from "lucide-react";
 
 const footerLinks = {
   Services: [
@@ -34,13 +34,14 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link
               href="/"
-              aria-label="We Make IT — Home"
+              aria-label="We Make IT - Home"
               className="inline-flex items-center text-white font-bold text-2xl mb-4 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
               We Make <span className="text-[#22D3EE] ml-1">IT</span>
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-xs">
-              Applications and Websites development company in Ireland. Accessibility first. The best standards only!
+              We help entrepreneurs and small businesses turn their ideas into
+              real apps and websites. Based in Ireland, working globally.
             </p>
             {/* Contact info */}
             <address className="not-italic text-sm space-y-3">
@@ -61,6 +62,15 @@ export default function Footer() {
                 </a>
               </div>
             </address>
+            {/* Language note */}
+            <p className="mt-5 text-xs text-slate-500 flex items-center gap-1.5">
+              <Globe size={12} aria-hidden="true" className="shrink-0" />
+              <span>
+                By the way, we also speak{" "}
+                <span lang="it">Italiano</span> and{" "}
+                <span lang="ru">Русский</span>.
+              </span>
+            </p>
           </div>
 
           {/* Link columns */}

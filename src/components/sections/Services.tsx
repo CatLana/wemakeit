@@ -1,60 +1,96 @@
 import {
   Code2,
-  Layers,
+  Lightbulb,
+  ScanSearch,
+  PenTool,
+  Smartphone,
+  Monitor,
   Accessibility,
-  Palette,
-  Globe,
-  ShieldCheck,
+  Briefcase,
+  Users,
+  Wrench,
 } from "lucide-react";
 
 const services = [
   {
     icon: Code2,
-    title: "Frontend Development",
+    title: "Custom App Development",
     description:
-      "Modern, responsive web applications built with the latest technologies. Fast, accessible, and beautiful interfaces that your users will love.",
+      "We design and build custom applications tailored to exactly how your business works. No off-the-shelf compromises. Just the right tool, built for you.",
     color: "text-[#22D3EE]",
     bg: "bg-[#22D3EE]/10",
   },
   {
-    icon: Layers,
-    title: "Backend Development",
+    icon: Lightbulb,
+    title: "Idea Validation and MVP",
     description:
-      "Robust, scalable server-side solutions — APIs, databases, authentication, and integrations. We build the engine that powers your product.",
+      "Not sure if your idea will work? We help you validate it before spending a penny on a full build. We then create a Minimum Viable Product (MVP) so you can test it with real users fast.",
     color: "text-sky-400",
     bg: "bg-sky-400/10",
   },
   {
-    icon: Accessibility,
-    title: "Accessibility (WCAG & EU Law)",
+    icon: ScanSearch,
+    title: "UX Research",
     description:
-      "Accessibility is built in from day one — not bolted on at the end. We ensure your product meets WCAG 2.2 and European Accessibility Act requirements at no extra cost.",
+      "Already have a product or a prototype? As a UI UX design agency for businesses of all sizes, we research how real people use it, find what is confusing or broken, and give you a clear, prioritised list of improvements.",
     color: "text-[#A855F7]",
     bg: "bg-[#A855F7]/10",
   },
   {
-    icon: Palette,
-    title: "UX Design & Strategy",
+    icon: PenTool,
+    title: "App Prototype",
     description:
-      "Great software starts with great UX. Our in-house UX expertise means you get research-backed, user-centred design included — no need to hire separately.",
+      "Before committing to a full build, we create an interactive prototype of your app. You can click through it, test it with users, and get investor feedback.",
     color: "text-emerald-400",
     bg: "bg-emerald-400/10",
   },
   {
-    icon: Globe,
-    title: "Website Development",
+    icon: Smartphone,
+    title: "Mobile App Development",
     description:
-      "From marketing sites to full e-commerce platforms — we deliver polished, performant websites that convert visitors and represent your brand.",
+      "We build mobile apps that work on both iOS and Android from a single codebase, keeping costs down without compromising on look or feel.",
     color: "text-amber-400",
     bg: "bg-amber-400/10",
   },
   {
-    icon: ShieldCheck,
-    title: "Quality & Best Practices",
+    icon: Monitor,
+    title: "Web Application Development",
     description:
-      "Code reviews, automated testing, and continuous integration baked into every project. We build software that lasts and is easy to maintain.",
+      "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces. If you can imagine it, we can build it.",
     color: "text-rose-400",
     bg: "bg-rose-400/10",
+  },
+  {
+    icon: Accessibility,
+    title: "Accessibility Audits",
+    description:
+      "EU law now requires digital products to be accessible to people with disabilities. We audit your existing app or website and fix what needs fixing.",
+    color: "text-violet-400",
+    bg: "bg-violet-400/10",
+  },
+  {
+    icon: Briefcase,
+    title: "Software Consultancy",
+    description:
+      "Not sure what to build, which technology to choose, or whether your idea is viable? Our software consultancy and app development consulting service gives you honest, jargon-free answers.",
+    color: "text-orange-400",
+    bg: "bg-orange-400/10",
+  },
+  {
+    icon: Users,
+    title: "Discovery Workshops",
+    description:
+      "A structured session where we work with you to map out your idea, define what your users need, and agree on the scope before a single line of code is written.",
+    color: "text-teal-400",
+    bg: "bg-teal-400/10",
+  },
+  {
+    icon: Wrench,
+    title: "Maintenance and Support",
+    description:
+      "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly.",
+    color: "text-slate-400",
+    bg: "bg-slate-400/10",
   },
 ];
 
@@ -75,19 +111,20 @@ export default function Services() {
             id="services-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E293B] leading-tight"
           >
-            Everything you need,{" "}
-            <span className="text-[#0F172A]">in one package</span>
+            App and software development{" "}
+            <span className="text-[#0F172A]">services for your business</span>
           </h2>
           <p className="mt-4 text-slate-500 text-lg leading-relaxed">
-            Frontend, Backend, UX, and Accessibility — all under one roof at one
-            price. No extras, no surprises.
+            From idea validation and prototyping, to mobile app development,
+            web applications, IT consulting, and ongoing support. Everything
+            under one roof.
           </p>
         </div>
 
         {/* Service cards grid */}
         <ul
           role="list"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
         >
           {services.map(({ icon: Icon, title, description, color, bg }) => (
             <li key={title}>
@@ -116,7 +153,7 @@ export default function Services() {
                   aria-label={`Get a quote for ${title}`}
                   className="mt-5 inline-flex items-center text-sm font-semibold text-[#22D3EE] hover:text-cyan-300 transition-colors group-hover:gap-2 gap-1 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
-                  Get a quote
+                  Tell us your idea
                   <span aria-hidden="true">→</span>
                 </a>
               </article>

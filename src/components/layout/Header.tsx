@@ -5,10 +5,11 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "How It Works", href: "#process" },
-  { label: "Get a Quote", href: "#quote" },
+  { label: "What We Do", href: "/#services" },
+  { label: "About Us", href: "/#about" },
+  { label: "How It Works", href: "/#process" },
+  { label: "Blog", href: "/blog" },
+  { label: "Talk to Us", href: "/#quote" },
 ];
 
 export default function Header() {
@@ -51,7 +52,7 @@ export default function Header() {
             {/* Logo */}
             <Link
               href="/"
-              aria-label="We Make IT — Home"
+              aria-label="We Make IT - Home"
               className="flex items-center gap-1 text-white font-bold text-xl focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
               <span>We Make&nbsp;</span>
@@ -73,7 +74,7 @@ export default function Header() {
 
             {/* Desktop CTA */}
             <a
-              href="#quote"
+              href="/#quote"
               className="hidden md:inline-flex items-center justify-center min-h-[44px] min-w-[44px] px-5 py-2 bg-[#22D3EE] text-[#0F172A] font-semibold text-sm rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
             >
               Get a quote
@@ -138,7 +139,7 @@ export default function Header() {
           ))}
           <li className="mt-4">
             <a
-              href="#quote"
+              href="/#quote"
               onClick={() => setOpen(false)}
               className="flex items-center justify-center h-11 px-5 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors"
             >

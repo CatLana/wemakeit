@@ -1,23 +1,17 @@
-import { Heart, Zap, Globe } from "lucide-react";
+import { Heart, Zap, Globe, MapPin } from "lucide-react";
 
 const values = [
   {
     icon: Heart,
-    title: "Accessibility & UX Built In",
+    title: "We Speak Plain English",
     description:
-      "You do not have to pay extra to comply with modern accessibility standards required by European law, or hire separate UX experts. It is all included in our standard package.",
+      "No jargon, no confusion. We explain everything in a way that makes sense, and we never make you feel bad for asking questions.",
   },
   {
     icon: Zap,
-    title: "Big-Tech Experience",
+    title: "Big-Company Experience, Small-Team Feel",
     description:
-      "Our team has solid experience working for big tech companies and large-scale projects across multiple countries. We bring that expertise directly to your business.",
-  },
-  {
-    icon: Globe,
-    title: "We Speak Your Language",
-    description:
-      "We speak English, Italian, and Russian fluently. If you prefer support in a language other than English, we have you covered.",
+      "We have 15+ years of experience building apps for large companies. Now we bring that same quality to smaller projects, with the attention and care a big agency cannot offer.",
   },
 ];
 
@@ -40,27 +34,30 @@ export default function About() {
               id="about-heading"
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E293B] leading-tight mb-6"
             >
-              Senior Engineers.
+              We turn your idea
               <br />
-              <span className="text-[#0F172A]">Real Expertise.</span>
+              <span className="text-[#0F172A]">into a real product.</span>
             </h2>
             <div className="space-y-4 text-slate-500 leading-relaxed">
               <p>
-                We Make IT is a software development company with a team of engineers
-                bringing 15+ years of in-house expertise in full-stack applications development, UX research and WCAG Accessibility compliance.
+                We Make IT is a small team of experienced engineers based in
+                Ireland. We work with entrepreneurs, small businesses, and
+                first-time founders who have a great idea but are not sure how
+                to get it built.
               </p>
               <p>
-                What makes us different in the Irish market is our excellent expertise
-                in Accessibility and UX. As a team, we have solid experience working
-                for big tech companies and large projects across multiple countries.
+                You do not need to know anything about technology. We will have
+                a free, no-pressure conversation with you, help you figure out
+                what you actually need, and give you an honest plan and price.
               </p>
               <p>
-                We have now embarked on our own journey to assist other businesses with
-                the best quality software and websites. Send us a quote from another
-                company and we will beat it!
+                We have helped businesses across Ireland and Europe build apps,
+                websites, and digital platforms from scratch. We have worked at
+                big tech companies and know what good looks like. Now we bring
+                that experience to small teams and startups.
               </p>
               <p className="font-semibold text-[#1E293B]">
-                Let&apos;s work together — we make your IT dreams happen!
+                Wherever you are, if you have an idea, we would love to hear it.
               </p>
             </div>
             <a
@@ -73,7 +70,7 @@ export default function About() {
 
           {/* Visual */}
           <div
-            aria-label="We Make IT — Ireland"
+            aria-label="We Make IT - Ireland"
             role="img"
             className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-[#0F172A] to-slate-800 border border-slate-200"
           >
@@ -86,26 +83,32 @@ export default function About() {
               <div className="absolute w-32 h-32 rounded-full bg-[#A855F7]/10 blur-xl" />
             </div>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
-              <span className="text-6xl mb-4" aria-hidden="true">🇮🇪</span>
-              <p className="text-white font-semibold text-lg">
-                Ireland
-              </p>
-              <p className="text-slate-400 text-sm mt-2">
-                English · Italiano · Русский
-              </p>
+              <div className="w-16 h-16 rounded-full bg-[#22D3EE]/20 flex items-center justify-center mb-4">
+                <MapPin size={28} aria-hidden="true" className="text-[#22D3EE]" />
+              </div>
+              <p className="text-white font-semibold text-lg">Based in Ireland</p>
+              <p className="text-slate-400 text-sm mt-1">Working globally</p>
+              <div className="mt-4 flex items-center gap-2 text-xs text-slate-500">
+                <Globe size={12} aria-hidden="true" />
+                <span>Europe · Remote · Worldwide</span>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Values row */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-12 border-t border-slate-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-12 border-t border-slate-100">
           {values.map(({ icon: Icon, title, description }) => (
             <div key={title} className="flex flex-col items-start">
               <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#0F172A] mb-4">
                 <Icon size={22} className="text-[#22D3EE]" aria-hidden="true" />
               </div>
-              <h3 className="text-base font-bold text-[#1E293B] mb-2">{title}</h3>
-              <p className="text-sm text-slate-500 leading-relaxed">{description}</p>
+              <h3 className="text-base font-bold text-[#1E293B] mb-2">
+                {title}
+              </h3>
+              <p className="text-sm text-slate-500 leading-relaxed">
+                {description}
+              </p>
             </div>
           ))}
         </div>

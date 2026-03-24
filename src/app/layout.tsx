@@ -9,29 +9,27 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "We Make IT — Software Development in Ireland",
+  title: "We Make IT: Turn Your Idea Into an App",
   description:
-    "We Make IT is a software development company in Ireland. What makes us different from other companies is that we care about Accessibility and Usability. You do not to hire UX experts or do Accessibility audit later at extra costs. Our software and websites are accessible with the best UX standards first.",
+    "Got a business idea but not sure how to turn it into an app or website? We Make IT helps entrepreneurs in Ireland and beyond to validate, plan, and build their digital product. No tech knowledge needed. Free first consultation.",
   keywords: [
     "app development ireland",
-    "software development ireland",
-    "web accessibility consultant",
-    "web accessibility for small company",
-    "accessible website",
-    "accessible web development",
-    "screen reader accessibility testing",
-    "keyboard accessibility testing",
-    "remote usability testing services",
+    "build an app ireland",
+    "startup idea validation ireland",
+    "it business idea consultation",
+    "how to build an app",
+    "web app development ireland",
+    "small business website ireland",
     "web development company Dublin",
     "web development company Ireland",
-    "web development company",
-    "WCAG audit Dublin",
     "app development Dublin",
+    "turn idea into app",
+    "first time startup ireland",
   ],
   openGraph: {
-    title: "We Make IT — Software Development in Ireland",
+    title: "We Make IT: Turn Your Idea Into an App",
     description:
-      "Custom Applications and Website. Best standards development only. Accessible software. Reliable delivery.",
+      "Got a business idea? We help you validate it, plan it, and build it. No tech knowledge needed. Free first consultation.",
     locale: "en_IE",
     type: "website",
   },

@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "We Make IT delivered a fully custom platform in 6 months — on time and under budget. Their engineers became part of our team and we still work with them 4 years later.",
+      "We Make IT delivered a fully custom platform in 6 months, on time and under budget. Their engineers became part of our team and we still work with them 4 years later.",
     author: "Sarah O'Brien",
     title: "CTO",
     company: "Bright Finance",

@@ -26,7 +26,7 @@ export default function Clients() {
         {/* Marquee container */}
         <div
           className="relative"
-          aria-label="Client logos — Acme Corp, Bright Finance, HealthNode, Codalab, GreenGrid, StateCo, Pulsify, DataBridge"
+          aria-label="Client logos: Acme Corp, Bright Finance, HealthNode, Codalab, GreenGrid, StateCo, Pulsify, DataBridge"
         >
           {/* Fade edges */}
           <div

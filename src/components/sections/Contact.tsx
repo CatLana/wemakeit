@@ -3,7 +3,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail, MapPin, Linkedin } from "lucide-react";
+import { Mail, MapPin, Linkedin, Tag } from "lucide-react";
 
 const schema = z.object({
   name: z.string().min(2, "Please enter your full name"),
@@ -108,25 +108,27 @@ export default function Contact() {
               id="contact-heading"
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E293B] leading-tight mb-6"
             >
-              Throw Your Idea at Us
+              Tell Us Your Idea
             </h2>
             <p className="text-slate-500 leading-relaxed mb-6 text-lg">
-              Tell us about your app or website idea and we will get back to you
-              with a quick, transparent quote. First consultation is always free.
+              Fill in the form and describe your idea in your own words. There
+              are no wrong answers. We will get back to you quickly to arrange
+              a free chat and help you figure out the best path forward.
             </p>
 
             {/* Early bird highlight */}
             <div className="rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 p-5 mb-8">
-              <p className="text-sm font-semibold text-[#0F172A] mb-1">
-                🐦 Early Bird Offer
+              <p className="text-sm font-semibold text-[#0F172A] mb-1 flex items-center gap-1.5">
+                <Tag size={14} aria-hidden="true" className="text-[#22D3EE]" />
+                Early Bird Offer
               </p>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Be one of our first customers and receive generous discounts.
-                This offer won&apos;t last — get in touch today!
+                We are taking on our first clients and offering generous
+                discounts. This will not last long.
               </p>
               <p className="text-sm text-slate-600 mt-2">
-                Have a quote from another company?{" "}
-                <strong className="text-[#0F172A]">We will beat it.</strong>
+                Already have a quote from another company?{" "}
+                <strong className="text-[#0F172A]">Send it to us and we will beat it.</strong>
               </p>
             </div>
 
@@ -443,7 +445,7 @@ export default function Contact() {
                     </option>
                     <option value="yes">Yes, I have designs ready</option>
                     <option value="partial">
-                      Partial — some ideas / wireframes
+                      Partial: I have some ideas or wireframes
                     </option>
                     <option value="no">No, starting from scratch</option>
                   </select>
@@ -458,7 +460,7 @@ export default function Contact() {
                   <input
                     id="competitorQuote"
                     type="text"
-                    placeholder="e.g. €12,000 from XYZ Agency — we will beat it!"
+                    placeholder="e.g. €12,000 from XYZ Agency. We will beat it!"
                     className={`${inputBase} border-slate-200`}
                     {...register("competitorQuote")}
                   />

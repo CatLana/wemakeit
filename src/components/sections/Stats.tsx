@@ -1,23 +1,23 @@
 const stats = [
   {
     value: "15+",
-    label: "Years of Combined Engineering Experience",
-    ariaLabel: "15 plus years of combined engineering experience",
+    label: "Years Building Apps and Websites",
+    ariaLabel: "15 plus years building apps and websites",
   },
   {
-    value: "2",
-    label: "Core Specialisations: Frontend & Backend",
-    ariaLabel: "2 core specialisations: Frontend and Backend",
-  },
-  {
-    value: "3",
-    label: "Languages Spoken: English, Italian, Russian",
-    ariaLabel: "3 languages spoken: English, Italian, and Russian",
+    value: "Free",
+    label: "First Consultation. No Commitment.",
+    ariaLabel: "Free first consultation with no commitment required",
   },
   {
     value: "1",
-    label: "All-in-One Package — No Hidden Extras",
-    ariaLabel: "All-in-one package with no hidden extras",
+    label: "Fixed Price. No Hidden Extras.",
+    ariaLabel: "One fixed price with no hidden extras",
+  },
+  {
+    value: "0",
+    label: "Tech Knowledge Required From You",
+    ariaLabel: "Zero technical knowledge required from you",
   },
 ];
 
