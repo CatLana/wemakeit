@@ -1,11 +1,17 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Mail, MapPin, Linkedin, Tag } from "lucide-react";
 
 const schema = z.object({
+  enquiryType: z.enum(
+    ["need-a-quote", "business-idea-consultation", "general-query"],
+    { message: "Please select an enquiry type" }
+  ),
   name: z.string().min(2, "Please enter your full name"),
   email: z.string().email("Please enter a valid email address"),
   company: z.string().optional(),
@@ -28,7 +34,6 @@ const schema = z.object({
     message: "Please select an option",
   }),
   competitorQuote: z.string().optional(),
-  heardAbout: z.string().optional(),
 });
 
 type FormValues = z.infer<typeof schema>;
@@ -77,18 +82,36 @@ const selectBase =
   "w-full px-4 py-3 rounded-lg border text-sm text-[#1E293B] bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE] appearance-none";
 
 export default function Contact() {
+  const searchParams = useSearchParams();
+  const [submittedType, setSubmittedType] = useState<FormValues["enquiryType"] | null>(null);
+
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting, isSubmitSuccessful },
     reset,
-  } = useForm<FormValues>({ resolver: zodResolver(schema) });
+    setValue,
+  } = useForm<FormValues>({
+    resolver: zodResolver(schema),
+    defaultValues: { enquiryType: "need-a-quote" },
+  });
+
+  useEffect(() => {
+    const inquiry = searchParams.get("inquiry");
+    const map: Record<string, FormValues["enquiryType"]> = {
+      consultation: "business-idea-consultation",
+      general: "general-query",
+      quote: "need-a-quote",
+    };
+    if (inquiry && map[inquiry]) {
+      setValue("enquiryType", map[inquiry]);
+    }
+  }, [searchParams, setValue]);
 
   async function onSubmit(data: FormValues) {
+    setSubmittedType(data.enquiryType);
     // TODO: replace with Resend / API endpoint
-    console.log("Quote request submitted:", data);
     await new Promise((r) => setTimeout(r, 800));
-    reset();
   }
 
   return (
@@ -116,15 +139,15 @@ export default function Contact() {
               a free chat and help you figure out the best path forward.
             </p>
 
-            {/* Early bird highlight */}
+            {/* Spring sale highlight */}
             <div className="rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 p-5 mb-8">
               <p className="text-sm font-semibold text-[#0F172A] mb-1 flex items-center gap-1.5">
                 <Tag size={14} aria-hidden="true" className="text-[#22D3EE]" />
-                Early Bird Offer
+                Spring Sale Offer
               </p>
               <p className="text-sm text-slate-600 leading-relaxed">
-                We are taking on our first clients and offering generous
-                discounts. This will not last long.
+                40% off for new clients this spring. Submit your request now
+                and lock in the discounted rate.
               </p>
               <p className="text-sm text-slate-600 mt-2">
                 Already have a quote from another company?{" "}
@@ -215,12 +238,26 @@ export default function Contact() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">
-                  Quote request sent!
+                  {submittedType === "business-idea-consultation"
+                    ? "Consultation request sent!"
+                    : submittedType === "general-query"
+                    ? "Message sent!"
+                    : "Quote request sent!"}
                 </h3>
-                <p className="text-slate-500 text-sm">
-                  Thanks for reaching out. We&apos;ll review your request and
-                  get back to you quickly with a quote.
+                <p className="text-slate-500 text-sm mb-6">
+                  {submittedType === "business-idea-consultation"
+                    ? "Thanks for reaching out. We will review your idea and get back to you with honest, jargon-free advice."
+                    : submittedType === "general-query"
+                    ? "Thanks for getting in touch. We will get back to you shortly."
+                    : "Thanks for reaching out. We will review your request and get back to you quickly with a quote."}
                 </p>
+                <button
+                  type="button"
+                  onClick={() => { reset(); setSubmittedType(null); }}
+                  className="text-sm text-[#22D3EE] hover:text-cyan-600 underline underline-offset-2 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                >
+                  Submit another request
+                </button>
               </div>
             ) : (
               <form
@@ -237,6 +274,27 @@ export default function Contact() {
                   <span className="sr-only">with an asterisk</span> are
                   required.
                 </p>
+
+                {/* Enquiry type */}
+                <Field
+                  id="enquiryType"
+                  label="What can we help you with?"
+                  error={errors.enquiryType?.message}
+                  required
+                >
+                  <select
+                    id="enquiryType"
+                    aria-required="true"
+                    aria-describedby={errors.enquiryType ? "enquiryType-error" : undefined}
+                    aria-invalid={!!errors.enquiryType}
+                    className={`${selectBase} ${errors.enquiryType ? "border-rose-400" : "border-slate-200"}`}
+                    {...register("enquiryType")}
+                  >
+                    <option value="need-a-quote">I need a quote for a project</option>
+                    <option value="business-idea-consultation">Business idea consultation</option>
+                    <option value="general-query">General query</option>
+                  </select>
+                </Field>
 
                 {/* Contact info */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -463,21 +521,6 @@ export default function Contact() {
                     placeholder="e.g. €12,000 from XYZ Agency. We will beat it!"
                     className={`${inputBase} border-slate-200`}
                     {...register("competitorQuote")}
-                  />
-                </Field>
-
-                {/* How did you hear about us */}
-                <Field
-                  id="heardAbout"
-                  label="How did you hear about us? (optional)"
-                  error={errors.heardAbout?.message}
-                >
-                  <input
-                    id="heardAbout"
-                    type="text"
-                    placeholder="Google, LinkedIn, a friend…"
-                    className={`${inputBase} border-slate-200`}
-                    {...register("heardAbout")}
                   />
                 </Field>
 

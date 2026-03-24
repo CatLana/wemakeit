@@ -3,16 +3,17 @@ import { Mail, MapPin, Globe } from "lucide-react";
 
 const footerLinks = {
   Services: [
-    { label: "Frontend Development", href: "#services" },
-    { label: "Backend Development", href: "#services" },
-    { label: "Accessibility (WCAG)", href: "#services" },
-    { label: "UX Design", href: "#services" },
-    { label: "Website Development", href: "#services" },
+    { label: "Frontend Development", href: "/#services" },
+    { label: "Backend Development", href: "/#services" },
+    { label: "Accessibility (WCAG)", href: "/#services" },
+    { label: "UX Design", href: "/#services" },
+    { label: "Website Development", href: "/#services" },
   ],
   Company: [
-    { label: "About Us", href: "#about" },
-    { label: "How It Works", href: "#process" },
-    { label: "Get a Quote", href: "#quote" },
+    { label: "About Us", href: "/#about" },
+    { label: "How It Works", href: "/#process" },
+    { label: "Blog", href: "/blog" },
+    { label: "Get a Quote", href: "/#quote" },
   ],
   Legal: [
     { label: "Privacy Policy", href: "#" },

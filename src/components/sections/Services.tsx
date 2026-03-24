@@ -32,7 +32,7 @@ const services = [
     icon: ScanSearch,
     title: "UX Research",
     description:
-      "Already have a product or a prototype? With an in-house UX design expertise for small businesses, we research how real people use your product or service. We find what is confusing or broken for, and give you a clear, prioritised list of improvements. Or we can remove the hassle from you and take over the technical implementation on us.",
+      "Already have a product or prototype? As a UI UX design agency, we research how real people use it, find what is confusing or broken, and give you a clear, prioritised list of improvements.",
     color: "text-[#A855F7]",
     bg: "bg-[#A855F7]/10",
   },

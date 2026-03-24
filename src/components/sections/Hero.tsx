@@ -45,10 +45,10 @@ export default function Hero() {
           No tech knowledge needed. One team, one price, no surprises.
         </p>
 
-        {/* Early bird offer */}
+        {/* Spring sale offer */}
         <div className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-10">
           <Tag size={14} aria-hidden="true" />
-          <span>Early bird offer: generous discounts for our first customers. This won&apos;t last!</span>
+          <span>Spring Sale: 40% off for new clients. Limited spots available.</span>
         </div>
 
         {/* CTAs */}
@@ -60,7 +60,7 @@ export default function Hero() {
             Tell us your idea
           </a>
           <a
-            href="#about"
+            href="#process"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-transparent text-white border border-white/20 font-semibold rounded-xl hover:bg-white/5 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
           >
             How it works

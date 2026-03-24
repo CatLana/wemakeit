@@ -3,25 +3,31 @@ const steps = [
     number: "01",
     title: "Tell Us Your Idea",
     description:
-      "Fill in our short form below and describe your idea in plain words. No technical knowledge needed, just tell us what problem you want to solve or what you want to build.",
+      "Fill in our short form below and describe your idea in plain words. No technical knowledge needed.",
   },
   {
     number: "02",
-    title: "We Review and Get Back to You",
+    title: "We Send You a Quote",
     description:
-      "We review your form, ask any follow-up questions by email, and come back to you with a clear, transparent quote. No vague estimates, just a straight answer.",
+      "We review your idea and send you a clear email with the quote. No vague estimates, just a straight answer.",
   },
   {
     number: "03",
-    title: "We Give You a Clear Plan",
+    title: "We Book a Call",
     description:
-      "Once we understand your idea fully, we send you a full project plan and price. If you have a quote from another company already, share it and we will beat it.",
+      "If you are happy to proceed, we send you a calendar to pick a date for a video or in-person call.",
   },
   {
     number: "04",
-    title: "We Build It Together",
+    title: "We Shake Hands",
     description:
-      "Once you are happy, we sign a simple contract and get started. You get regular updates and demos throughout, so you always know where things stand.",
+      "When you are ready to start, we sign a simple contract to get everything in writing.",
+  },
+  {
+    number: "05",
+    title: "We Start the Work",
+    description:
+      "You pay the deposit and we get building. Easy as that.",
   },
 ];
 
@@ -43,7 +49,7 @@ export default function Process() {
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E293B] leading-tight"
           >
             From idea to app{" "}
-            <span className="text-[#0F172A]">in four simple steps</span>
+            <span className="text-[#0F172A]">in five simple steps</span>
           </h2>
           <p className="mt-4 text-slate-500 text-lg leading-relaxed">
             You do not need to be technical to get started. Just tell us your
@@ -53,7 +59,7 @@ export default function Process() {
 
         {/* Steps */}
         <ol
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8"
           role="list"
         >
           {steps.map(({ number, title, description }, index) => (
