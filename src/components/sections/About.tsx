@@ -1,21 +1,12 @@
-import { Heart, Zap, Globe, MapPin } from "lucide-react";
+﻿import { Heart, Zap, Globe, MapPin } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const values = [
-  {
-    icon: Heart,
-    title: "We Speak Plain English",
-    description:
-      "No jargon, no confusion. We explain everything in a way that makes sense, and we never make you feel bad for asking questions.",
-  },
-  {
-    icon: Zap,
-    title: "Big-Company Experience, Small-Team Feel",
-    description:
-      "We have 15+ years of experience building apps for large companies. Now we bring that same quality to smaller projects, with the attention and care a big agency cannot offer.",
-  },
-];
+const valueIcons = [Heart, Zap];
 
 export default function About() {
+  const t = useTranslations("about");
+  const values = t.raw("values") as Array<{ title: string; description: string }>;
+
   return (
     <section
       id="about"
@@ -28,53 +19,36 @@ export default function About() {
           {/* Text */}
           <div>
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-3">
-              About Us
+              {t("eyebrow")}
             </span>
             <h2
               id="about-heading"
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E293B] leading-tight mb-6"
             >
-              We turn your idea
+              {t("headingLine1")}
               <br />
-              <span className="text-[#0F172A]">into a real product.</span>
+              <span className="text-[#0F172A]">{t("headingLine2")}</span>
             </h2>
             <div className="space-y-4 text-slate-500 leading-relaxed">
-              <p>
-                We Make IT is a small team of experienced engineers based in
-                Ireland. We work with entrepreneurs, small businesses, and
-                first-time founders who have a great idea but are not sure how
-                to get it built.
-              </p>
-              <p>
-                You do not need to know anything about technology. We will have
-                a free, no-pressure conversation with you, help you figure out
-                what you actually need, and give you an honest plan and price.
-              </p>
-              <p>
-                We have helped businesses across Ireland and Europe build apps,
-                websites, and digital platforms from scratch. We have worked at
-                big tech companies and know what good looks like. Now we bring
-                that experience to small teams and startups.
-              </p>
-              <p className="font-semibold text-[#1E293B]">
-                Wherever you are, if you have an idea, we would love to hear it.
-              </p>
+              <p>{t("body1")}</p>
+              <p>{t("body2")}</p>
+              <p>{t("body3")}</p>
+              <p className="font-semibold text-[#1E293B]">{t("tagline")}</p>
             </div>
             <a
               href="#quote"
               className="mt-8 inline-flex items-center justify-center min-h-[50px] px-7 bg-[#0F172A] text-white font-semibold rounded-xl hover:bg-slate-800 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
             >
-              Get a free quote
+              {t("cta")}
             </a>
           </div>
 
           {/* Visual */}
           <div
-            aria-label="We Make IT - Ireland"
+            aria-label={t("visualLabel")}
             role="img"
             className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-[#0F172A] to-slate-800 border border-slate-200"
           >
-            {/* Decorative circles */}
             <div
               aria-hidden="true"
               className="absolute inset-0 flex items-center justify-center"
@@ -86,11 +60,11 @@ export default function About() {
               <div className="w-16 h-16 rounded-full bg-[#22D3EE]/20 flex items-center justify-center mb-4">
                 <MapPin size={28} aria-hidden="true" className="text-[#22D3EE]" />
               </div>
-              <p className="text-white font-semibold text-lg">Based in Ireland</p>
-              <p className="text-slate-400 text-sm mt-1">Working globally</p>
+              <p className="text-white font-semibold text-lg">{t("visualHeading")}</p>
+              <p className="text-slate-400 text-sm mt-1">{t("visualSub")}</p>
               <div className="mt-4 flex items-center gap-2 text-xs text-slate-500">
                 <Globe size={12} aria-hidden="true" />
-                <span>Europe · Remote · Worldwide</span>
+                <span>{t("visualRegions")}</span>
               </div>
             </div>
           </div>
@@ -98,19 +72,18 @@ export default function About() {
 
         {/* Values row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-12 border-t border-slate-100">
-          {values.map(({ icon: Icon, title, description }) => (
-            <div key={title} className="flex flex-col items-start">
-              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#0F172A] mb-4">
-                <Icon size={22} className="text-[#22D3EE]" aria-hidden="true" />
+          {values.map(({ title, description }, i) => {
+            const Icon = valueIcons[i] ?? Heart;
+            return (
+              <div key={title} className="flex flex-col items-start">
+                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#0F172A] mb-4">
+                  <Icon size={22} className="text-[#22D3EE]" aria-hidden="true" />
+                </div>
+                <h3 className="text-base font-bold text-[#1E293B] mb-2">{title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed">{description}</p>
               </div>
-              <h3 className="text-base font-bold text-[#1E293B] mb-2">
-                {title}
-              </h3>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                {description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

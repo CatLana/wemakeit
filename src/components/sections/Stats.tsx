@@ -1,35 +1,21 @@
-const stats = [
-  {
-    value: "15+",
-    label: "Years Building Apps and Websites",
-    ariaLabel: "15 plus years building apps and websites",
-  },
-  {
-    value: "Free",
-    label: "First Consultation. No Commitment.",
-    ariaLabel: "Free first consultation with no commitment required",
-  },
-  {
-    value: "1",
-    label: "Fixed Price. No Hidden Extras.",
-    ariaLabel: "One fixed price with no hidden extras",
-  },
-  {
-    value: "0",
-    label: "Tech Knowledge Required From You",
-    ariaLabel: "Zero technical knowledge required from you",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function Stats() {
+  const t = useTranslations("stats");
+  const items = t.raw("items") as Array<{
+    value: string;
+    label: string;
+    ariaLabel: string;
+  }>;
+
   return (
     <section
-      aria-label="Company highlights"
+      aria-label={t("ariaLabel")}
       className="bg-white border-b border-slate-200"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <dl className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          {stats.map(({ value, label, ariaLabel }) => (
+          {items.map(({ value, label, ariaLabel }) => (
             <div key={label} className="flex flex-col items-center">
               <dt className="sr-only">{ariaLabel}</dt>
               <dd

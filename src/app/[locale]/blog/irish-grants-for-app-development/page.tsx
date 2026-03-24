@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowLeft, Calendar, Clock, AlertCircle } from "lucide-react";
@@ -17,7 +18,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ArticlePage() {
+export default async function ArticlePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <Header />

@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 type ConsentValue = "all" | "essential" | null;
 
@@ -17,6 +18,7 @@ export function useCookieConsent(): ConsentValue {
 }
 
 export default function CookieBanner() {
+  const t = useTranslations("cookieBanner");
   const [visible, setVisible] = useState(false);
   const primaryBtnRef = useRef<HTMLButtonElement>(null);
 
@@ -40,17 +42,17 @@ export default function CookieBanner() {
     <div
       role="dialog"
       aria-modal="false"
-      aria-label="Cookie consent"
+      aria-label={t("ariaLabel")}
       className="fixed bottom-0 left-0 right-0 z-50 bg-[#0F172A] border-t border-white/10 shadow-2xl"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <p className="text-sm text-slate-300 leading-relaxed max-w-2xl">
-          We use strictly necessary cookies to keep the site working. We do not use tracking or advertising cookies without your consent.{" "}
+          {t("text")}{" "}
           <Link
             href="/cookie-policy"
             className="text-[#22D3EE] hover:text-cyan-300 underline underline-offset-2 transition-colors"
           >
-            Learn more
+            {t("learnMore")}
           </Link>
           .
         </p>
@@ -61,7 +63,7 @@ export default function CookieBanner() {
             onClick={() => accept("essential")}
             className="text-sm text-slate-400 hover:text-white transition-colors underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
           >
-            Essential only
+            {t("essential")}
           </button>
           <button
             ref={primaryBtnRef}
@@ -69,7 +71,7 @@ export default function CookieBanner() {
             onClick={() => accept("all")}
             className="inline-flex items-center justify-center min-h-[40px] px-5 bg-[#22D3EE] text-[#0F172A] font-semibold text-sm rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
           >
-            Accept all cookies
+            {t("acceptAll")}
           </button>
         </div>
       </div>

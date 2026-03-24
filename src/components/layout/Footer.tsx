@@ -1,33 +1,16 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Mail, MapPin, Globe } from "lucide-react";
-
-const footerLinks = {
-  Services: [
-    { label: "Frontend Development", href: "/#services" },
-    { label: "Backend Development", href: "/#services" },
-    { label: "Accessibility (WCAG)", href: "/#services" },
-    { label: "UX Design", href: "/#services" },
-    { label: "Website Development", href: "/#services" },
-  ],
-  Company: [
-    { label: "About Us", href: "/#about" },
-    { label: "How It Works", href: "/#process" },
-    { label: "Blog", href: "/blog" },
-    { label: "Get a Quote", href: "/#quote" },
-  ],
-  Legal: [
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Cookie Policy", href: "/cookie-policy" },
-    { label: "Terms of Service", href: "/terms-of-service" },
-    { label: "Accessibility Statement", href: "/accessibility-statement" },
-  ],
-};
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+  const serviceLabels = t.raw("serviceLinks") as string[];
+
   return (
     <footer
       className="bg-[#0F172A] text-slate-400 border-t border-white/10"
-      aria-label="Site footer"
+      aria-label={t("footerLabel")}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
@@ -40,12 +23,12 @@ export default function Footer() {
             >
               We Make <span className="text-[#22D3EE] ml-1">IT</span>
             </Link>
-            <p className="text-sm leading-relaxed mb-6 max-w-xs">
-              We help entrepreneurs and small businesses turn their ideas into
-              real apps and websites. Based in Ireland, working globally.
+            <p className="text-sm leading-relaxed mb-4 max-w-xs">
+              {t("tagline")}
             </p>
+            <NewsletterSignup />
             {/* Contact info */}
-            <address className="not-italic text-sm space-y-3">
+            <address className="not-italic text-sm space-y-3 mt-6">
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-[#22D3EE]" aria-hidden="true" />
                 <span>
@@ -66,40 +49,93 @@ export default function Footer() {
             {/* Language note */}
             <p className="mt-5 text-xs text-slate-500 flex items-center gap-1.5">
               <Globe size={12} aria-hidden="true" className="shrink-0" />
-              <span>
-                By the way, we also speak{" "}
-                <span lang="it">Italiano</span> and{" "}
-                <span lang="ru">Русский</span>.
-              </span>
+              <span>{t("languageNote")}</span>
             </p>
           </div>
 
-          {/* Link columns */}
-          {Object.entries(footerLinks).map(([section, links]) => (
-            <div key={section}>
-              <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
-                {section}
-              </h3>
-              <ul className="space-y-3" role="list">
-                {links.map(({ label, href }) => (
-                  <li key={label}>
-                    <a
-                      href={href}
-                      className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                    >
-                      {label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {/* Services column */}
+          <div>
+            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+              {t("sections.services")}
+            </h3>
+            <ul className="space-y-3" role="list">
+              {serviceLabels.map((label) => (
+                <li key={label}>
+                  <Link
+                    href="/#services"
+                    className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company column */}
+          <div>
+            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+              {t("sections.company")}
+            </h3>
+            <ul className="space-y-3" role="list">
+              <li>
+                <Link href="/#about" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("companyLinks.aboutUs")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/#process" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("companyLinks.howItWorks")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("companyLinks.blog")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/#quote" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("companyLinks.getAQuote")}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal column */}
+          <div>
+            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+              {t("sections.legal")}
+            </h3>
+            <ul className="space-y-3" role="list">
+              <li>
+                <Link href="/privacy-policy" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("legalLinks.privacyPolicy")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookie-policy" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("legalLinks.cookiePolicy")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms-of-service" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("legalLinks.termsOfService")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/accessibility-statement" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("legalLinks.accessibilityStatement")}
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <p>
-            © {new Date().getFullYear()} We Make IT Sole Trader company registered in Ireland.
+            {new Date().getFullYear()} {" "}
+            {t("copyright")}
           </p>
         </div>
       </div>

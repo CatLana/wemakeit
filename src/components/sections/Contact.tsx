@@ -1,42 +1,56 @@
-"use client";
+﻿"use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Mail, MapPin, Linkedin, Tag } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const schema = z.object({
-  enquiryType: z.enum(
-    ["need-a-quote", "business-idea-consultation", "general-query"],
-    { message: "Please select an enquiry type" }
-  ),
-  name: z.string().min(2, "Please enter your full name"),
-  email: z.string().email("Please enter a valid email address"),
-  company: z.string().optional(),
-  phone: z.string().optional(),
-  projectType: z.enum(
-    ["web-app", "mobile-app", "website", "e-commerce", "redesign", "other"],
-    { message: "Please select a project type" }
-  ),
-  description: z
-    .string()
-    .min(10, "Please describe your project in at least 10 characters"),
-  budget: z.enum(
-    ["under-5k", "5k-15k", "15k-30k", "30k-50k", "over-50k", "not-sure"],
-    { message: "Please select a budget range" }
-  ),
-  timeline: z.enum(["asap", "1-3-months", "3-6-months", "flexible"], {
-    message: "Please select a timeline",
-  }),
-  hasDesign: z.enum(["yes", "partial", "no"], {
-    message: "Please select an option",
-  }),
-  competitorQuote: z.string().optional(),
-});
+// Type is stable across locales since enum values are internal codes
+type FormValues = {
+  enquiryType: "need-a-quote" | "business-idea-consultation" | "general-query";
+  name: string;
+  email: string;
+  company?: string;
+  phone?: string;
+  projectType: "web-app" | "mobile-app" | "website" | "e-commerce" | "redesign" | "other";
+  description: string;
+  budget: "under-5k" | "5k-15k" | "15k-30k" | "30k-50k" | "over-50k" | "not-sure";
+  timeline: "asap" | "1-3-months" | "3-6-months" | "flexible";
+  hasDesign: "yes" | "partial" | "no";
+  competitorQuote?: string;
+};
 
-type FormValues = z.infer<typeof schema>;
+function makeSchema(e: (k: string) => string) {
+  return z.object({
+    enquiryType: z.enum(
+      ["need-a-quote", "business-idea-consultation", "general-query"],
+      { message: e("form.errors.enquiryType") }
+    ),
+    name: z.string().min(2, e("form.errors.name")),
+    email: z.string().email(e("form.errors.email")),
+    company: z.string().optional(),
+    phone: z.string().optional(),
+    projectType: z.enum(
+      ["web-app", "mobile-app", "website", "e-commerce", "redesign", "other"],
+      { message: e("form.errors.projectType") }
+    ),
+    description: z.string().min(10, e("form.errors.description")),
+    budget: z.enum(
+      ["under-5k", "5k-15k", "15k-30k", "30k-50k", "over-50k", "not-sure"],
+      { message: e("form.errors.budget") }
+    ),
+    timeline: z.enum(["asap", "1-3-months", "3-6-months", "flexible"], {
+      message: e("form.errors.timeline"),
+    }),
+    hasDesign: z.enum(["yes", "partial", "no"], {
+      message: e("form.errors.hasDesign"),
+    }),
+    competitorQuote: z.string().optional(),
+  });
+}
 
 function Field({
   id,
@@ -82,9 +96,12 @@ const selectBase =
   "w-full px-4 py-3 rounded-lg border text-sm text-[#1E293B] bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE] appearance-none";
 
 export default function Contact() {
+  const t = useTranslations("contact");
   const searchParams = useSearchParams();
   const [submittedType, setSubmittedType] = useState<FormValues["enquiryType"] | null>(null);
   const [serverError, setServerError] = useState<string | null>(null);
+
+  const schema = useMemo(() => makeSchema((k) => t(k as Parameters<typeof t>[0])), [t]);
 
   const {
     register,
@@ -119,12 +136,12 @@ export default function Contact() {
       });
       if (!res.ok) {
         const json = await res.json().catch(() => ({}));
-        setServerError((json as { error?: string }).error ?? "Something went wrong. Please try again.");
+        setServerError((json as { error?: string }).error ?? t("form.serverError"));
         return;
       }
       setSubmittedType(data.enquiryType);
     } catch {
-      setServerError("Could not reach the server. Please check your connection and try again.");
+      setServerError(t("form.networkError"));
     }
   }
 
@@ -136,50 +153,43 @@ export default function Contact() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20">
-          {/* Left — copy + contact details */}
+          {/* Left â€” copy + contact details */}
           <div className="lg:col-span-2">
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-3">
-              Get a Quote
+              {t("eyebrow")}
             </span>
             <h2
               id="contact-heading"
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E293B] leading-tight mb-6"
             >
-              Tell Us Your Idea
+              {t("heading")}
             </h2>
             <p className="text-slate-500 leading-relaxed mb-6 text-lg">
-              Fill in the form and describe your idea in your own words. There
-              are no wrong answers. We will get back to you quickly to arrange
-              a free chat and help you figure out the best path forward.
+              {t("body")}
             </p>
 
             {/* Spring sale highlight */}
             <div className="rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 p-5 mb-8">
               <p className="text-sm font-semibold text-[#0F172A] mb-1 flex items-center gap-1.5">
                 <Tag size={14} aria-hidden="true" className="text-[#22D3EE]" />
-                Spring Sale Offer
+                {t("springSaleTitle")}
               </p>
               <p className="text-sm text-slate-600 leading-relaxed">
-                40% off for new clients this spring. Submit your request now
-                and lock in the discounted rate.
+                {t("springSaleBody")}
               </p>
               <p className="text-sm text-slate-600 mt-2">
-                Already have a quote from another company?{" "}
-                <strong className="text-[#0F172A]">Send it to us and we will beat it.</strong>
+                {t("springSaleBeat")}{" "}
+                <strong className="text-[#0F172A]">{t("springSaleBeatHighlight")}</strong>
               </p>
             </div>
 
             <address className="not-italic space-y-5">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#22D3EE]/10 flex items-center justify-center">
-                  <MapPin
-                    size={18}
-                    className="text-[#22D3EE]"
-                    aria-hidden="true"
-                  />
+                  <MapPin size={18} className="text-[#22D3EE]" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#1E293B]">Office</p>
+                  <p className="text-sm font-semibold text-[#1E293B]">{t("officeLabel")}</p>
                   <p className="text-sm text-slate-500">
                     32 Millbourne Drive,
                     <br />
@@ -193,7 +203,7 @@ export default function Contact() {
                   <Mail size={18} className="text-[#22D3EE]" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#1E293B]">Email</p>
+                  <p className="text-sm font-semibold text-[#1E293B]">{t("emailLabel")}</p>
                   <a
                     href="mailto:info@wemakeit.ie"
                     className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
@@ -205,16 +215,10 @@ export default function Contact() {
 
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#22D3EE]/10 flex items-center justify-center">
-                  <Linkedin
-                    size={18}
-                    className="text-[#22D3EE]"
-                    aria-hidden="true"
-                  />
+                  <Linkedin size={18} className="text-[#22D3EE]" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#1E293B]">
-                    LinkedIn
-                  </p>
+                  <p className="text-sm font-semibold text-[#1E293B]">{t("linkedinLabel")}</p>
                   <a
                     href="https://linkedin.com/company/wemakeit"
                     target="_blank"
@@ -222,14 +226,14 @@ export default function Contact() {
                     className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                   >
                     linkedin.com/company/wemakeit
-                    <span className="sr-only"> (opens in new tab)</span>
+                    <span className="sr-only"> {t("linkedinNewTab")}</span>
                   </a>
                 </div>
               </div>
             </address>
           </div>
 
-          {/* Right — quote form */}
+          {/* Right â€” quote form */}
           <div className="lg:col-span-3 rounded-2xl bg-white border border-slate-200 p-6 sm:p-10 shadow-sm">
             {isSubmitSuccessful ? (
               <div
@@ -254,24 +258,24 @@ export default function Contact() {
                 </div>
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">
                   {submittedType === "business-idea-consultation"
-                    ? "Consultation request sent!"
+                    ? t("form.success.consultationTitle")
                     : submittedType === "general-query"
-                    ? "Message sent!"
-                    : "Quote request sent!"}
+                    ? t("form.success.generalTitle")
+                    : t("form.success.quoteTitle")}
                 </h3>
                 <p className="text-slate-500 text-sm mb-6">
                   {submittedType === "business-idea-consultation"
-                    ? "Thanks for reaching out. We will review your idea and get back to you with honest, jargon-free advice."
+                    ? t("form.success.consultationBody")
                     : submittedType === "general-query"
-                    ? "Thanks for getting in touch. We will get back to you shortly."
-                    : "Thanks for reaching out. We will review your request and get back to you quickly with a quote."}
+                    ? t("form.success.generalBody")
+                    : t("form.success.quoteBody")}
                 </p>
                 <button
                   type="button"
                   onClick={() => { reset(); setSubmittedType(null); }}
                   className="text-sm text-[#0E7490] hover:text-[#0891B2] underline underline-offset-2 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
-                  Submit another request
+                  {t("form.submitAnother")}
                 </button>
               </div>
             ) : (
@@ -282,18 +286,16 @@ export default function Contact() {
                 className="flex flex-col gap-5"
               >
                 <p className="text-xs text-slate-500">
-                  Fields marked{" "}
-                  <span aria-hidden="true" className="text-rose-500">
-                    *
-                  </span>
-                  <span className="sr-only">with an asterisk</span> are
-                  required.
+                  {t("form.requiredNote")}{" "}
+                  <span aria-hidden="true" className="text-rose-500">*</span>
+                  <span className="sr-only">{t("form.requiredSr")}</span>{" "}
+                  {t("form.requiredSuffix")}
                 </p>
 
                 {/* Enquiry type */}
                 <Field
                   id="enquiryType"
-                  label="What can we help you with?"
+                  label={t("form.enquiryType")}
                   error={errors.enquiryType?.message}
                   required
                 >
@@ -305,25 +307,20 @@ export default function Contact() {
                     className={`${selectBase} ${errors.enquiryType ? "border-rose-400" : "border-slate-200"}`}
                     {...register("enquiryType")}
                   >
-                    <option value="need-a-quote">I need a quote for a project</option>
-                    <option value="business-idea-consultation">Business idea consultation</option>
-                    <option value="general-query">General query</option>
+                    <option value="need-a-quote">{t("form.enquiryOptions.quote")}</option>
+                    <option value="business-idea-consultation">{t("form.enquiryOptions.consultation")}</option>
+                    <option value="general-query">{t("form.enquiryOptions.general")}</option>
                   </select>
                 </Field>
 
                 {/* Contact info */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <Field
-                    id="name"
-                    label="Full name"
-                    error={errors.name?.message}
-                    required
-                  >
+                  <Field id="name" label={t("form.name")} error={errors.name?.message} required>
                     <input
                       id="name"
                       type="text"
                       autoComplete="name"
-                      placeholder="Jane Murphy"
+                      placeholder={t("form.namePlaceholder")}
                       aria-required="true"
                       aria-describedby={errors.name ? "name-error" : undefined}
                       aria-invalid={!!errors.name}
@@ -332,52 +329,37 @@ export default function Contact() {
                     />
                   </Field>
 
-                  <Field
-                    id="email"
-                    label="Email address"
-                    error={errors.email?.message}
-                    required
-                  >
+                  <Field id="email" label={t("form.email")} error={errors.email?.message} required>
                     <input
                       id="email"
                       type="email"
                       autoComplete="email"
-                      placeholder="jane@company.ie"
+                      placeholder={t("form.emailPlaceholder")}
                       aria-required="true"
-                      aria-describedby={
-                        errors.email ? "email-error" : undefined
-                      }
+                      aria-describedby={errors.email ? "email-error" : undefined}
                       aria-invalid={!!errors.email}
                       className={`${inputBase} ${errors.email ? "border-rose-400" : "border-slate-200"}`}
                       {...register("email")}
                     />
                   </Field>
 
-                  <Field
-                    id="company"
-                    label="Company (optional)"
-                    error={errors.company?.message}
-                  >
+                  <Field id="company" label={t("form.company")} error={errors.company?.message}>
                     <input
                       id="company"
                       type="text"
                       autoComplete="organization"
-                      placeholder="Acme Ltd."
+                      placeholder={t("form.companyPlaceholder")}
                       className={`${inputBase} border-slate-200`}
                       {...register("company")}
                     />
                   </Field>
 
-                  <Field
-                    id="phone"
-                    label="Phone (optional)"
-                    error={errors.phone?.message}
-                  >
+                  <Field id="phone" label={t("form.phone")} error={errors.phone?.message}>
                     <input
                       id="phone"
                       type="tel"
                       autoComplete="tel"
-                      placeholder="+353 ..."
+                      placeholder={t("form.phonePlaceholder")}
                       className={`${inputBase} border-slate-200`}
                       {...register("phone")}
                     />
@@ -385,50 +367,34 @@ export default function Contact() {
                 </div>
 
                 {/* Project type */}
-                <Field
-                  id="projectType"
-                  label="What type of project do you need?"
-                  error={errors.projectType?.message}
-                  required
-                >
+                <Field id="projectType" label={t("form.projectType")} error={errors.projectType?.message} required>
                   <select
                     id="projectType"
                     aria-required="true"
-                    aria-describedby={
-                      errors.projectType ? "projectType-error" : undefined
-                    }
+                    aria-describedby={errors.projectType ? "projectType-error" : undefined}
                     aria-invalid={!!errors.projectType}
                     className={`${selectBase} ${errors.projectType ? "border-rose-400" : "border-slate-200"}`}
                     defaultValue=""
                     {...register("projectType")}
                   >
-                    <option value="" disabled>
-                      Select a type…
-                    </option>
-                    <option value="web-app">Web Application</option>
-                    <option value="mobile-app">Mobile App</option>
-                    <option value="website">Website / Landing Page</option>
-                    <option value="e-commerce">E-Commerce Store</option>
-                    <option value="redesign">Redesign / Rebuild</option>
-                    <option value="other">Other</option>
+                    <option value="" disabled>{t("form.projectTypePlaceholder")}</option>
+                    <option value="web-app">{t("form.projectTypes.webApp")}</option>
+                    <option value="mobile-app">{t("form.projectTypes.mobileApp")}</option>
+                    <option value="website">{t("form.projectTypes.website")}</option>
+                    <option value="e-commerce">{t("form.projectTypes.eCommerce")}</option>
+                    <option value="redesign">{t("form.projectTypes.redesign")}</option>
+                    <option value="other">{t("form.projectTypes.other")}</option>
                   </select>
                 </Field>
 
                 {/* Project description */}
-                <Field
-                  id="description"
-                  label="Describe your project idea"
-                  error={errors.description?.message}
-                  required
-                >
+                <Field id="description" label={t("form.description")} error={errors.description?.message} required>
                   <textarea
                     id="description"
                     rows={4}
-                    placeholder="Tell us what you want to build, who it is for, and what problem it solves…"
+                    placeholder={t("form.descriptionPlaceholder")}
                     aria-required="true"
-                    aria-describedby={
-                      errors.description ? "description-error" : undefined
-                    }
+                    aria-describedby={errors.description ? "description-error" : undefined}
                     aria-invalid={!!errors.description}
                     className={`${inputBase} resize-y min-h-[100px] ${errors.description ? "border-rose-400" : "border-slate-200"}`}
                     {...register("description")}
@@ -437,103 +403,70 @@ export default function Contact() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   {/* Budget */}
-                  <Field
-                    id="budget"
-                    label="Estimated budget"
-                    error={errors.budget?.message}
-                    required
-                  >
+                  <Field id="budget" label={t("form.budget")} error={errors.budget?.message} required>
                     <select
                       id="budget"
                       aria-required="true"
-                      aria-describedby={
-                        errors.budget ? "budget-error" : undefined
-                      }
+                      aria-describedby={errors.budget ? "budget-error" : undefined}
                       aria-invalid={!!errors.budget}
                       className={`${selectBase} ${errors.budget ? "border-rose-400" : "border-slate-200"}`}
                       defaultValue=""
                       {...register("budget")}
                     >
-                      <option value="" disabled>
-                        Select a range…
-                      </option>
-                      <option value="under-5k">Under €5,000</option>
-                      <option value="5k-15k">€5,000 – €15,000</option>
-                      <option value="15k-30k">€15,000 – €30,000</option>
-                      <option value="30k-50k">€30,000 – €50,000</option>
-                      <option value="over-50k">Over €50,000</option>
-                      <option value="not-sure">Not sure yet</option>
+                      <option value="" disabled>{t("form.budgetPlaceholder")}</option>
+                      <option value="under-5k">{t("form.budgetOptions.under5k")}</option>
+                      <option value="5k-15k">{t("form.budgetOptions.5k15k")}</option>
+                      <option value="15k-30k">{t("form.budgetOptions.15k30k")}</option>
+                      <option value="30k-50k">{t("form.budgetOptions.30k50k")}</option>
+                      <option value="over-50k">{t("form.budgetOptions.over50k")}</option>
+                      <option value="not-sure">{t("form.budgetOptions.notSure")}</option>
                     </select>
                   </Field>
 
                   {/* Timeline */}
-                  <Field
-                    id="timeline"
-                    label="Desired timeline"
-                    error={errors.timeline?.message}
-                    required
-                  >
+                  <Field id="timeline" label={t("form.timeline")} error={errors.timeline?.message} required>
                     <select
                       id="timeline"
                       aria-required="true"
-                      aria-describedby={
-                        errors.timeline ? "timeline-error" : undefined
-                      }
+                      aria-describedby={errors.timeline ? "timeline-error" : undefined}
                       aria-invalid={!!errors.timeline}
                       className={`${selectBase} ${errors.timeline ? "border-rose-400" : "border-slate-200"}`}
                       defaultValue=""
                       {...register("timeline")}
                     >
-                      <option value="" disabled>
-                        Select a timeline…
-                      </option>
-                      <option value="asap">As soon as possible</option>
-                      <option value="1-3-months">1 – 3 months</option>
-                      <option value="3-6-months">3 – 6 months</option>
-                      <option value="flexible">Flexible</option>
+                      <option value="" disabled>{t("form.timelinePlaceholder")}</option>
+                      <option value="asap">{t("form.timelineOptions.asap")}</option>
+                      <option value="1-3-months">{t("form.timelineOptions.1to3")}</option>
+                      <option value="3-6-months">{t("form.timelineOptions.3to6")}</option>
+                      <option value="flexible">{t("form.timelineOptions.flexible")}</option>
                     </select>
                   </Field>
                 </div>
 
                 {/* Do you have a design? */}
-                <Field
-                  id="hasDesign"
-                  label="Do you have existing designs or mockups?"
-                  error={errors.hasDesign?.message}
-                  required
-                >
+                <Field id="hasDesign" label={t("form.hasDesign")} error={errors.hasDesign?.message} required>
                   <select
                     id="hasDesign"
                     aria-required="true"
-                    aria-describedby={
-                      errors.hasDesign ? "hasDesign-error" : undefined
-                    }
+                    aria-describedby={errors.hasDesign ? "hasDesign-error" : undefined}
                     aria-invalid={!!errors.hasDesign}
                     className={`${selectBase} ${errors.hasDesign ? "border-rose-400" : "border-slate-200"}`}
                     defaultValue=""
                     {...register("hasDesign")}
                   >
-                    <option value="" disabled>
-                      Select an option…
-                    </option>
-                    <option value="yes">Yes, I have designs ready</option>
-                    <option value="partial">
-                      Partial: I have some ideas or wireframes
-                    </option>
-                    <option value="no">No, starting from scratch</option>
+                    <option value="" disabled>{t("form.hasDesignPlaceholder")}</option>
+                    <option value="yes">{t("form.hasDesignOptions.yes")}</option>
+                    <option value="partial">{t("form.hasDesignOptions.partial")}</option>
+                    <option value="no">{t("form.hasDesignOptions.no")}</option>
                   </select>
                 </Field>
 
                 {/* Competitor quote */}
-                <Field
-                  id="competitorQuote"
-                  label="Have a quote from another company? (optional)"
-                  error={errors.competitorQuote?.message}
-                >
+                <Field id="competitorQuote" label={t("form.competitorQuote")} error={errors.competitorQuote?.message}>
                   <input
                     id="competitorQuote"
                     type="text"
-                    placeholder="e.g. €12,000 from XYZ Agency. We will beat it!"
+                    placeholder={t("form.competitorPlaceholder")}
                     className={`${inputBase} border-slate-200`}
                     {...register("competitorQuote")}
                   />
@@ -551,7 +484,7 @@ export default function Contact() {
                   aria-busy={isSubmitting}
                   className="mt-1 inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 disabled:opacity-60 disabled:cursor-not-allowed transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2"
                 >
-                  {isSubmitting ? "Sending…" : "Send my quote request"}
+                  {isSubmitting ? t("form.submitting") : t("form.submit")}
                 </button>
               </form>
             )}

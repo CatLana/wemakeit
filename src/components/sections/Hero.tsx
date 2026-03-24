@@ -1,10 +1,12 @@
 import { MapPin, Tag } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("hero");
   return (
     <section
       className="relative min-h-screen flex items-center justify-center bg-[#0F172A] overflow-hidden"
-      aria-label="Hero: We Make IT home"
+      aria-label={t("ariaLabel")}
     >
       {/* Geometric background — aria-hidden so screen readers skip it */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none">
@@ -28,7 +30,7 @@ export default function Hero() {
         {/* Eyebrow badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-slate-400 mb-8">
           <MapPin size={14} aria-hidden="true" className="text-slate-400" />
-          <span>Based in Ireland</span>
+          <span>{t("badge")}</span>
         </div>
 
         {/* Headline */}
@@ -41,14 +43,13 @@ export default function Hero() {
 
         {/* Sub-headline */}
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-400 leading-relaxed mb-6">
-          Got a business idea? We help you turn it into a real app or website.
-          No tech knowledge needed. One team, one price, no surprises.
+          {t("subtitle")}
         </p>
 
         {/* Spring sale offer */}
         <div className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-10">
           <Tag size={14} aria-hidden="true" />
-          <span>Spring Sale: 40% off for new clients. Limited spots available.</span>
+          <span>{t("springSale")}</span>
         </div>
 
         {/* CTAs */}
@@ -57,13 +58,13 @@ export default function Hero() {
             href="#quote"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
           >
-            Tell us your idea
+            {t("cta1")}
           </a>
           <a
             href="#process"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-transparent text-white border border-white/20 font-semibold rounded-xl hover:bg-white/5 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
           >
-            How it works
+            {t("cta2")}
           </a>
         </div>
 

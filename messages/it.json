@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "title": "Sviluppo App e Web per Startup e PMI | We Make IT",
+    "description": "Trasformiamo le tue idee in app e siti web su misura. Per imprenditori e PMI, senza basi tecniche. 15+ anni di esperienza. Prima consulenza gratuita.",
+    "ogTitle": "Sviluppo App e Web per Startup e PMI | We Make IT",
+    "ogDescription": "Hai un'idea imprenditoriale? Ti aiutiamo a validarla, pianificarla e realizzarla. Nessuna conoscenza tecnica richiesta. Prima consulenza gratuita."
+  },
+  "header": {
+    "logoAriaLabel": "We Make IT - Home",
+    "nav": {
+      "whatWeDo": "Cosa Facciamo",
+      "aboutUs": "Chi Siamo",
+      "howItWorks": "Come Funziona",
+      "blog": "Blog",
+      "talkToUs": "Parliamo"
+    },
+    "cta": "Richiedi un preventivo",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "mobileNavLabel": "Navigazione mobile",
+    "mainNavLabel": "Navigazione principale"
+  },
+  "hero": {
+    "badge": "Con sede in Irlanda",
+    "h1": "We Make {accent} Happen.",
+    "accent": "IT",
+    "subtitle": "Hai un'idea imprenditoriale? Ti aiutiamo a trasformarla in un'app o un sito web reale. Nessuna conoscenza tecnica richiesta. Un team, un prezzo, nessuna sorpresa.",
+    "springSale": "Offerta Primavera: 40% di sconto per i nuovi clienti. Posti limitati.",
+    "cta1": "Raccontaci la tua idea",
+    "cta2": "Come funziona",
+    "ariaLabel": "Hero: We Make IT home"
+  },
+  "stats": {
+    "ariaLabel": "I nostri numeri",
+    "items": [
+      { "value": "15+", "label": "Anni di Sviluppo App e Web", "ariaLabel": "Oltre 15 anni di sviluppo app e siti web" },
+      { "value": "Gratis", "label": "Prima Consulenza. Senza Impegno.", "ariaLabel": "Prima consulenza gratuita senza impegno" },
+      { "value": "1", "label": "Prezzo Fisso. Nessun Extra.", "ariaLabel": "Un prezzo fisso senza costi nascosti" },
+      { "value": "0", "label": "Conoscenze Tecniche Richieste", "ariaLabel": "Nessuna conoscenza tecnica richiesta da parte tua" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Cosa Facciamo",
+    "heading": "Sviluppo app e web per la tua azienda",
+    "headingPlain": "Sviluppo app e web",
+    "headingAccent": "per la tua azienda",
+    "subheading": "Dalla validazione dell'idea e prototipazione, allo sviluppo di app mobile e applicazioni web, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
+    "cardCta": "Raccontaci la tua idea",
+    "items": [
+      { "title": "Sviluppo App su Misura", "description": "Progettiamo e sviluppiamo applicazioni personalizzate in base al funzionamento della tua azienda. Nessun compromesso. Solo lo strumento giusto, costruito per te." },
+      { "title": "Validazione Idea e MVP", "description": "Non sei sicuro che la tua idea funzioni? Ti aiutiamo a validarla prima di spendere un euro. Realizziamo poi un Prodotto Minimo Vitale (MVP) per testarlo con utenti reali." },
+      { "title": "UX Research", "description": "Hai già un prodotto o prototipo? Come agenzia UX design, ricerchiamo come le persone reali lo usano, troviamo le criticità e ti diamo un elenco chiaro di miglioramenti." },
+      { "title": "Prototipo App", "description": "Prima di impegnarti in uno sviluppo completo, creiamo un prototipo interattivo. Puoi navigarci, testarlo con gli utenti e raccogliere feedback dagli investitori." },
+      { "title": "Sviluppo App Mobile", "description": "Sviluppiamo app mobile che funzionano su iOS e Android con un'unica base di codice, contenendo i costi senza compromettere estetica e funzionalità." },
+      { "title": "Sviluppo Applicazioni Web", "description": "Hai bisogno di qualcosa di più potente di un sito? Sviluppiamo web app: dashboard, sistemi di prenotazione, portali, marketplace. Se puoi immaginarlo, possiamo costruirlo." },
+      { "title": "Audit Accessibilità", "description": "La normativa europea richiede che i prodotti digitali siano accessibili alle persone con disabilità. Analizziamo la tua app o sito e correggiamo ciò che non va." },
+      { "title": "Consulenza Software", "description": "Non sai cosa sviluppare, quale tecnologia scegliere o se la tua idea è realizzabile? Il nostro servizio di consulenza ti dà risposte oneste e senza tecnicismi." },
+      { "title": "Workshop di Discovery", "description": "Una sessione strutturata in cui lavoriamo insieme per mappare la tua idea, definire le esigenze degli utenti e concordare il perimetro prima di scrivere una sola riga di codice." },
+      { "title": "Manutenzione e Supporto", "description": "Hai già un'app che necessita di assistenza? Ci occupiamo del supporto continuo, correggiamo i bug, aggiungiamo nuove funzionalità e manteniamo tutto in funzione." }
+    ]
+  },
+  "founder": {
+    "eyebrow": "Un Messaggio dalla Fondatrice",
+    "opening": "Sono come te: un utente di tutti i giorni che ogni giorno usa decine di app e strumenti. E come molti di voi, la mia pazienza per i software confusi o goffi è molto limitata. Amo le esperienze intuitive, quelle in cui tutto ha semplicemente senso. Ma la realtà è che la maggior parte delle app non le senti così.",
+    "name": "Mi chiamo Lana.",
+    "identity": "Un'utente frustrata diventata innovatrice creativa, consulente tecnica e fondatrice di We Make IT.",
+    "bio": "Da oltre otto anni lavoro nello sviluppo web in grandi aziende e piccoli team. Il mio focus è sempre stato l'ingegneria frontend, i Design System e l'Accessibilità. Sono anche una UX designer certificata con la passione per le interfacce intuitive e le esperienze inclusive. Sono supportata da un team di brillanti ingegneri full-stack con oltre quindici anni di esperienza. Insieme, We Make IT Happen.",
+    "passion": "Ci ho messo anni a capirlo, ma risolvere i problemi di usabilità è la mia vera passione. Mi importa profondamente del software inclusivo e accessibile perché nessuno dovrebbe essere escluso. Le persone sono diverse. Le esigenze sono diverse. Eppure tutti meritiamo di navigare la nostra vita digitale con meno frustrazione possibile. La mia missione è aiutare imprenditori come te a creare prodotti che sembrino senza sforzo per i tuoi clienti.",
+    "differenceHeading": "Cosa rende i nostri servizi diversi?",
+    "differenceHighlight": "Una vera ossessione per la risoluzione dei problemi.",
+    "differenceText": "Se hai un problema, troveremo la soluzione. Chiara, diretta, senza complicazioni inutili.",
+    "quote": "Quando la tua azienda risolve un problema reale per persone reali, è lì che inizia il successo.",
+    "quoteFooter": "E sappiamo come aiutarti a raggiungerlo.",
+    "callout": "Condividi la tua idea nel modulo qui sotto per ricevere un preventivo gratuito. Il tuo prodotto senza frustrazioni inizia qui.",
+    "cta": "Raccontaci la tua idea",
+    "imgAlt": "Lana, fondatrice di We Make IT"
+  },
+  "about": {
+    "eyebrow": "Chi Siamo",
+    "headingLine1": "Trasformiamo la tua idea",
+    "headingLine2": "in un prodotto reale.",
+    "body1": "We Make IT è un piccolo team di ingegneri esperti con sede in Irlanda. Lavoriamo con imprenditori, piccole imprese e fondatori alle prime armi che hanno un'ottima idea ma non sanno come realizzarla.",
+    "body2": "Non hai bisogno di sapere nulla di tecnologia. Avremo una conversazione libera e senza pressioni con te, ti aiuteremo a capire di cosa hai veramente bisogno e ti daremo un piano e un prezzo onesti.",
+    "body3": "Abbiamo aiutato aziende in Irlanda e in Europa a costruire app, siti web e piattaforme digitali da zero. Abbiamo lavorato in grandi aziende tecnologiche e sappiamo come si fa bene. Ora portiamo quella stessa esperienza a team piccoli e startup.",
+    "tagline": "Ovunque tu sia, se hai un'idea, ci farebbe piacere sentirla.",
+    "cta": "Richiedi un preventivo gratuito",
+    "visualLabel": "We Make IT - Irlanda",
+    "visualHeading": "Con sede in Irlanda",
+    "visualSub": "Lavoriamo a livello globale",
+    "visualRegions": "Europa · Remoto · Mondo",
+    "languageNote": "Tra l'altro, parliamo anche",
+    "values": [
+      { "title": "Parliamo in Modo Chiaro", "description": "Nessun tecnicismo, nessuna confusione. Spieghiamo tutto in modo comprensibile e non ti facciamo mai sentire a disagio per le tue domande." },
+      { "title": "Esperienza da Grande Azienda, Cultura da Piccolo Team", "description": "Abbiamo oltre 15 anni di esperienza nello sviluppo di app per grandi aziende. Ora portiamo la stessa qualità a progetti più piccoli, con l'attenzione che una grande agenzia non può offrire." }
+    ]
+  },
+  "process": {
+    "eyebrow": "Come Funziona",
+    "headingLine1": "Dall'idea all'app",
+    "headingLine2": "in cinque semplici passi",
+    "subheading": "Non devi essere un tecnico per iniziare. Raccontaci la tua idea e pensiamo a tutto noi.",
+    "cta": "Raccontaci la tua idea",
+    "steps": [
+      { "number": "01", "title": "Raccontaci la Tua Idea", "description": "Compila il nostro breve modulo e descrivi la tua idea con parole semplici. Nessuna conoscenza tecnica richiesta." },
+      { "number": "02", "title": "Ti Inviamo un Preventivo", "description": "Esaminiamo la tua idea e ti inviamo un'e-mail chiara con il preventivo. Nessuna stima vaga, solo una risposta diretta." },
+      { "number": "03", "title": "Fissiamo una Chiamata", "description": "Se sei soddisfatto e vuoi procedere, ti inviamo un calendario per scegliere la data per una chiamata video o di persona." },
+      { "number": "04", "title": "Stringiamo la Mano", "description": "Quando sei pronto per iniziare, firmiamo un semplice contratto per mettere tutto per iscritto." },
+      { "number": "05", "title": "Iniziamo il Lavoro", "description": "Paghi il deposito e iniziamo a costruire. Semplice così." }
+    ]
+  },
+  "ctaStrip": {
+    "heading": "Non sei sicuro che la tua idea sia pronta?",
+    "body1": "È esattamente il momento di parlarci. Offriamo consulenze gratuite per la validazione delle idee. Nessun impegno, nessun tecnicismo, solo una conversazione onesta.",
+    "body2": "Abbiamo esperienza interna nel Design Thinking e nella progettazione di Prodotti Minimi Vitali. Possiamo aiutarti a capire se la tua idea può diventare un business redditizio o se è meglio perfezionarla prima di investire nello sviluppo.",
+    "cta": "Prenota una consulenza gratuita"
+  },
+  "contact": {
+    "eyebrow": "Richiedi un Preventivo",
+    "heading": "Raccontaci la Tua Idea",
+    "body": "Compila il modulo e descrivi la tua idea con parole tue. Non ci sono risposte sbagliate. Ti risponderemo rapidamente per organizzare una chat gratuita e aiutarti a trovare il percorso migliore.",
+    "springSaleTitle": "Offerta Primavera",
+    "springSaleBody": "40% di sconto per i nuovi clienti questa primavera. Invia la tua richiesta ora e blocca il tasso scontato.",
+    "springSaleBeat": "Hai già un preventivo da un'altra azienda?",
+    "springSaleBeatHighlight": "Mandacelo e lo batteremo.",
+    "officeLabel": "Ufficio",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "linkedinNewTab": "(si apre in una nuova scheda)",
+    "form": {
+      "requiredNote": "I campi contrassegnati",
+      "requiredSr": "con un asterisco",
+      "requiredSuffix": "sono obbligatori.",
+      "enquiryType": "Come possiamo aiutarti?",
+      "enquiryOptions": {
+        "quote": "Ho bisogno di un preventivo per un progetto",
+        "consultation": "Consulenza per un'idea imprenditoriale",
+        "general": "Richiesta generica"
+      },
+      "name": "Nome e cognome",
+      "namePlaceholder": "Mario Rossi",
+      "email": "Indirizzo email",
+      "emailPlaceholder": "mario@azienda.it",
+      "company": "Azienda (opzionale)",
+      "companyPlaceholder": "Acme Srl.",
+      "phone": "Telefono (opzionale)",
+      "phonePlaceholder": "+39 ...",
+      "projectType": "Che tipo di progetto hai bisogno?",
+      "projectTypePlaceholder": "Seleziona un tipo…",
+      "projectTypes": {
+        "webApp": "Applicazione Web",
+        "mobileApp": "App Mobile",
+        "website": "Sito Web / Landing Page",
+        "eCommerce": "Negozio E-Commerce",
+        "redesign": "Redesign / Rifacimento",
+        "other": "Altro"
+      },
+      "description": "Descrivi la tua idea di progetto",
+      "descriptionPlaceholder": "Dicci cosa vuoi costruire, per chi è e quale problema risolve…",
+      "budget": "Budget stimato",
+      "budgetPlaceholder": "Seleziona un range…",
+      "budgetOptions": {
+        "under5k": "Meno di €5.000",
+        "5k15k": "€5.000 – €15.000",
+        "15k30k": "€15.000 – €30.000",
+        "30k50k": "€30.000 – €50.000",
+        "over50k": "Più di €50.000",
+        "notSure": "Non sono sicuro"
+      },
+      "timeline": "Tempistica desiderata",
+      "timelinePlaceholder": "Seleziona una tempistica…",
+      "timelineOptions": {
+        "asap": "Il prima possibile",
+        "1to3": "1 – 3 mesi",
+        "3to6": "3 – 6 mesi",
+        "flexible": "Flessibile"
+      },
+      "hasDesign": "Hai già design o mockup esistenti?",
+      "hasDesignPlaceholder": "Seleziona un'opzione…",
+      "hasDesignOptions": {
+        "yes": "Sì, ho design pronti",
+        "partial": "Parziale: ho alcune idee o wireframe",
+        "no": "No, parto da zero"
+      },
+      "competitorQuote": "Hai un preventivo da un'altra azienda? (opzionale)",
+      "competitorPlaceholder": "es. €12.000 dall'agenzia XYZ. Lo batteremo!",
+      "submit": "Invia la mia richiesta",
+      "submitting": "Invio in corso…",
+      "submitAnother": "Invia un'altra richiesta",
+      "errors": {
+        "enquiryType": "Seleziona il tipo di richiesta",
+        "name": "Inserisci il tuo nome completo",
+        "email": "Inserisci un indirizzo email valido",
+        "projectType": "Seleziona il tipo di progetto",
+        "description": "Descrivi il tuo progetto in almeno 10 caratteri",
+        "budget": "Seleziona un range di budget",
+        "timeline": "Seleziona una tempistica",
+        "hasDesign": "Seleziona un'opzione"
+      },
+      "success": {
+        "consultationTitle": "Richiesta di consulenza inviata!",
+        "consultationBody": "Grazie per averci contattato. Esamineremo la tua idea e ti risponderemo con consigli onesti e senza tecnicismi.",
+        "generalTitle": "Messaggio inviato!",
+        "generalBody": "Grazie per averci contattato. Ti risponderemo a breve.",
+        "quoteTitle": "Richiesta di preventivo inviata!",
+        "quoteBody": "Grazie per averci contattato. Esamineremo la tua richiesta e ti risponderemo rapidamente con un preventivo."
+      },
+      "serverError": "Qualcosa è andato storto. Riprova.",
+      "networkError": "Impossibile raggiungere il server. Controlla la tua connessione e riprova."
+    }
+  },
+  "newsletter": {
+    "heading": "Ricevi Codici Sconto Esclusivi",
+    "body": "Iscriviti alla nostra newsletter e ricevi codici sconto esclusivi e accesso anticipato alle offerte speciali.",
+    "emailLabel": "Indirizzo email",
+    "emailPlaceholder": "tua@email.com",
+    "submit": "Iscriviti",
+    "subscribing": "Iscrizione…",
+    "consentPrefix": "Iscrivendoti accetti la nostra",
+    "consentLink": "Informativa sulla Privacy",
+    "consentSuffix": "e acconsenti a ricevere email di marketing. Puoi disiscriverti in qualsiasi momento.",
+    "success": "Sei dentro! Ti invieremo codici sconto e offerte direttamente nella tua casella.",
+    "alreadySubscribed": "Sei già nella lista. Tieni d'occhio la tua casella!",
+    "error": "Qualcosa è andato storto. Riprova."
+  },
+  "footer": {
+    "tagline": "Aiutiamo imprenditori e piccole imprese a trasformare le loro idee in app e siti web reali. Con sede in Irlanda, lavoriamo a livello globale.",
+    "copyright": "We Make IT è un imprenditore individuale registrato in Irlanda.",
+    "languageNote": "Tra l'altro, parliamo anche l'inglese e il russo.",
+    "footerLabel": "Piè di pagina",
+    "sections": {
+      "services": "Servizi",
+      "company": "Azienda",
+      "legal": "Legale"
+    },
+    "serviceLinks": [
+      "Sviluppo Frontend",
+      "Sviluppo Backend",
+      "Accessibilità (WCAG)",
+      "UX Design",
+      "Sviluppo Siti Web"
+    ],
+    "companyLinks": {
+      "aboutUs": "Chi Siamo",
+      "howItWorks": "Come Funziona",
+      "blog": "Blog",
+      "getAQuote": "Richiedi un Preventivo"
+    },
+    "legalLinks": {
+      "privacyPolicy": "Informativa sulla Privacy",
+      "cookiePolicy": "Informativa sui Cookie",
+      "termsOfService": "Termini di Servizio",
+      "accessibilityStatement": "Dichiarazione di Accessibilità"
+    }
+  },
+  "cookieBanner": {
+    "ariaLabel": "Consenso ai cookie",
+    "text": "Utilizziamo cookie strettamente necessari per il funzionamento del sito. Non utilizziamo cookie di tracciamento o pubblicitari senza il tuo consenso.",
+    "learnMore": "Scopri di più",
+    "essential": "Solo essenziali",
+    "acceptAll": "Accetta tutti i cookie"
+  }
+}

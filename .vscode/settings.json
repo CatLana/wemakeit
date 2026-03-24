@@ -3,6 +3,7 @@
         "npm audit": true,
         "git add": true,
         "git commit": true,
-        "git push": true
+        "git push": true,
+        "Set-Content": true
     }
 }

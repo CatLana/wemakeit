@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -10,7 +11,13 @@ export const metadata: Metadata = {
 
 const LAST_UPDATED = "24 March 2026";
 
-export default function CookiePolicyPage() {
+export default async function CookiePolicyPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <Header />

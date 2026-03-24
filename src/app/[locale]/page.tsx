@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
@@ -10,7 +11,14 @@ import Process from "@/components/sections/Process";
 import CtaStrip from "@/components/sections/CtaStrip";
 import Contact from "@/components/sections/Contact";
 
-export default function Home() {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <Header />

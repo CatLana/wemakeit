@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "title": "Custom App & Web Development Ireland | We Make IT",
+    "description": "Turn your idea into an app or website. Irish-based, 15+ years experience, fixed price. Free first consultation. No tech knowledge needed.",
+    "ogTitle": "Custom App & Web Development Ireland | We Make IT",
+    "ogDescription": "Got a business idea? We help you validate it, plan it, and build it. No tech knowledge needed. Free first consultation."
+  },
+  "header": {
+    "logoAriaLabel": "We Make IT - Home",
+    "nav": {
+      "whatWeDo": "What We Do",
+      "aboutUs": "About Us",
+      "howItWorks": "How It Works",
+      "blog": "Blog",
+      "talkToUs": "Talk to Us"
+    },
+    "cta": "Get a quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileNavLabel": "Mobile navigation",
+    "mainNavLabel": "Main navigation"
+  },
+  "hero": {
+    "badge": "Based in Ireland",
+    "h1": "We Make {accent} Happen.",
+    "accent": "IT",
+    "subtitle": "Got a business idea? We help you turn it into a real app or website. No tech knowledge needed. One team, one price, no surprises.",
+    "springSale": "Spring Sale: 40% off for new clients. Limited spots available.",
+    "cta1": "Tell us your idea",
+    "cta2": "How it works",
+    "ariaLabel": "Hero: We Make IT home"
+  },
+  "stats": {
+    "ariaLabel": "Company highlights",
+    "items": [
+      { "value": "15+", "label": "Years Building Apps and Websites", "ariaLabel": "15 plus years building apps and websites" },
+      { "value": "Free", "label": "First Consultation. No Commitment.", "ariaLabel": "Free first consultation with no commitment required" },
+      { "value": "1", "label": "Fixed Price. No Hidden Extras.", "ariaLabel": "One fixed price with no hidden extras" },
+      { "value": "0", "label": "Tech Knowledge Required From You", "ariaLabel": "Zero technical knowledge required from you" }
+    ]
+  },
+  "services": {
+    "eyebrow": "What We Do",
+    "heading": "App and website development services for your business",
+    "headingPlain": "App and website development",
+    "headingAccent": "services for your business",
+    "subheading": "From idea validation and prototyping, to mobile app development, web applications, IT consulting, and ongoing support. Everything under one roof.",
+    "cardCta": "Tell us your idea",
+    "items": [
+      { "title": "Custom App Development", "description": "We design and build custom applications tailored to exactly how your business works. No off-the-shelf compromises. Just the right tool, built for you." },
+      { "title": "Idea Validation and MVP", "description": "Not sure if your idea will work? We help you validate it before spending a penny on a full build. We then create a Minimum Viable Product (MVP) so you can test it with real users fast." },
+      { "title": "UX Research", "description": "Already have a product or prototype? As a UI UX design agency, we research how real people use it, find what is confusing or broken, and give you a clear, prioritised list of improvements." },
+      { "title": "App Prototype", "description": "Before committing to a full build, we create an interactive prototype of your app. You can click through it, test it with users, and get investor feedback." },
+      { "title": "Mobile App Development", "description": "We build mobile apps that work on both iOS and Android from a single codebase, keeping costs down without compromising on look or feel." },
+      { "title": "Web Application Development", "description": "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces. If you can imagine it, we can build it." },
+      { "title": "Accessibility Audits", "description": "EU law now requires digital products to be accessible to people with disabilities. We audit your existing app or website and fix what needs fixing." },
+      { "title": "Software Consultancy", "description": "Not sure what to build, which technology to choose, or whether your idea is viable? Our software consultancy and app development consulting service gives you honest, jargon-free answers." },
+      { "title": "Discovery Workshops", "description": "A structured session where we work with you to map out your idea, define what your users need, and agree on the scope before a single line of code is written." },
+      { "title": "Maintenance and Support", "description": "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly." }
+    ]
+  },
+  "founder": {
+    "eyebrow": "A Message From Our Founder",
+    "opening": "I am just like you, an everyday user juggling countless apps and tools. And, like many of you, my patience for clunky or confusing software is very short. I love intuitive experiences, the kind where everything simply makes sense. But the truth is that most apps still do not feel that way.",
+    "name": "My name is Lana.",
+    "identity": "A frustrated user who became a creative innovator, a technical consultant, and the founder of We Make IT.",
+    "bio": "For more than eight years, I have worked in web development across large companies and small teams. My focus has always been frontend engineering, Design Systems, and Accessibility. I am also a certified UX designer who thrives on creating intuitive interfaces and inclusive experiences. I am supported by a team of brilliant full-stack engineers with over fifteen years of experience. Together, We Make IT Happen.",
+    "passion": "It took years of reflection to understand this, but solving usability problems is my true passion. I care deeply about inclusive and accessible software because no one should be left behind. People are different. Needs are different. Yet we all deserve to move through our digital lives with as little frustration as possible. Applications shape our everyday experience, whether we like it or not. My mission is to help entrepreneurs like you create products that feel effortless for your customers.",
+    "differenceHeading": "So what makes our services different?",
+    "differenceHighlight": "A genuine obsession with problem solving.",
+    "differenceText": "If you have a problem, we will find the solution. Clear, direct, and without unnecessary complications.",
+    "quote": "When your business solves a real problem for real people, that is where success begins.",
+    "quoteFooter": "And we know how to help you reach that point.",
+    "callout": "Share your idea in the form below to get a free quote. Your frustration-free product starts here.",
+    "cta": "Tell us your idea",
+    "imgAlt": "Lana, founder of We Make IT"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "headingLine1": "We turn your idea",
+    "headingLine2": "into a real product.",
+    "body1": "We Make IT is a small team of experienced engineers based in Ireland. We work with entrepreneurs, small businesses, and first-time founders who have a great idea but are not sure how to get it built.",
+    "body2": "You do not need to know anything about technology. We will have a free, no-pressure conversation with you, help you figure out what you actually need, and give you an honest plan and price.",
+    "body3": "We have helped businesses across Ireland and Europe build apps, websites, and digital platforms from scratch. We have worked at big tech companies and know what good looks like. Now we bring that experience to small teams and startups.",
+    "tagline": "Wherever you are, if you have an idea, we would love to hear it.",
+    "cta": "Get a free quote",
+    "visualLabel": "We Make IT - Ireland",
+    "visualHeading": "Based in Ireland",
+    "visualSub": "Working globally",
+    "visualRegions": "Europe · Remote · Worldwide",
+    "languageNote": "By the way, we also speak",
+    "values": [
+      { "title": "We Speak Plain English", "description": "No jargon, no confusion. We explain everything in a way that makes sense, and we never make you feel bad for asking questions." },
+      { "title": "Big-Company Experience, Small-Team Feel", "description": "We have 15+ years of experience building apps for large companies. Now we bring that same quality to smaller projects, with the attention and care a big agency cannot offer." }
+    ]
+  },
+  "process": {
+    "eyebrow": "How It Works",
+    "headingLine1": "From idea to app",
+    "headingLine2": "in five simple steps",
+    "subheading": "You do not need to be technical to get started. Just tell us your idea and we will take it from there.",
+    "cta": "Tell us your idea",
+    "steps": [
+      { "number": "01", "title": "Tell Us Your Idea", "description": "Fill in our short form below and describe your idea in plain words. No technical knowledge needed." },
+      { "number": "02", "title": "We Send You a Quote", "description": "We review your idea and send you a clear email with the quote. No vague estimates, just a straight answer." },
+      { "number": "03", "title": "We Book a Call", "description": "If you are happy to proceed, we send you a calendar to pick a date for a video or in-person call." },
+      { "number": "04", "title": "We Shake Hands", "description": "When you are ready to start, we sign a simple contract to get everything in writing." },
+      { "number": "05", "title": "We Start the Work", "description": "You pay the deposit and we get building. Easy as that." }
+    ]
+  },
+  "ctaStrip": {
+    "heading": "Not sure if your idea is ready?",
+    "body1": "That is exactly when to talk to us. We offer free idea validation consultations. No commitment, no jargon, just an honest conversation.",
+    "body2": "We have in-house experience in Design Thinking and Minimum Viable Product design. We can help you figure out whether your idea can become a profitable business, or whether it is better to refine it first before spending money on development.",
+    "cta": "Book a free consultation"
+  },
+  "contact": {
+    "eyebrow": "Get a Quote",
+    "heading": "Tell Us Your Idea",
+    "body": "Fill in the form and describe your idea in your own words. There are no wrong answers. We will get back to you quickly to arrange a free chat and help you figure out the best path forward.",
+    "springSaleTitle": "Spring Sale Offer",
+    "springSaleBody": "40% off for new clients this spring. Submit your request now and lock in the discounted rate.",
+    "springSaleBeat": "Already have a quote from another company?",
+    "springSaleBeatHighlight": "Send it to us and we will beat it.",
+    "officeLabel": "Office",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "linkedinNewTab": "(opens in new tab)",
+    "form": {
+      "requiredNote": "Fields marked",
+      "requiredSr": "with an asterisk",
+      "requiredSuffix": "are required.",
+      "enquiryType": "What can we help you with?",
+      "enquiryOptions": {
+        "quote": "I need a quote for a project",
+        "consultation": "Business idea consultation",
+        "general": "General query"
+      },
+      "name": "Full name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Email address",
+      "emailPlaceholder": "jane@company.ie",
+      "company": "Company (optional)",
+      "companyPlaceholder": "Acme Ltd.",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+353 ...",
+      "projectType": "What type of project do you need?",
+      "projectTypePlaceholder": "Select a type…",
+      "projectTypes": {
+        "webApp": "Web Application",
+        "mobileApp": "Mobile App",
+        "website": "Website / Landing Page",
+        "eCommerce": "E-Commerce Store",
+        "redesign": "Redesign / Rebuild",
+        "other": "Other"
+      },
+      "description": "Describe your project idea",
+      "descriptionPlaceholder": "Tell us what you want to build, who it is for, and what problem it solves…",
+      "budget": "Estimated budget",
+      "budgetPlaceholder": "Select a range…",
+      "budgetOptions": {
+        "under5k": "Under €5,000",
+        "5k15k": "€5,000 – €15,000",
+        "15k30k": "€15,000 – €30,000",
+        "30k50k": "€30,000 – €50,000",
+        "over50k": "Over €50,000",
+        "notSure": "Not sure yet"
+      },
+      "timeline": "Desired timeline",
+      "timelinePlaceholder": "Select a timeline…",
+      "timelineOptions": {
+        "asap": "As soon as possible",
+        "1to3": "1 – 3 months",
+        "3to6": "3 – 6 months",
+        "flexible": "Flexible"
+      },
+      "hasDesign": "Do you have existing designs or mockups?",
+      "hasDesignPlaceholder": "Select an option…",
+      "hasDesignOptions": {
+        "yes": "Yes, I have designs ready",
+        "partial": "Partial: I have some ideas or wireframes",
+        "no": "No, starting from scratch"
+      },
+      "competitorQuote": "Have a quote from another company? (optional)",
+      "competitorPlaceholder": "e.g. €12,000 from XYZ Agency. We will beat it!",
+      "submit": "Send my quote request",
+      "submitting": "Sending…",
+      "submitAnother": "Submit another request",
+      "errors": {
+        "enquiryType": "Please select an enquiry type",
+        "name": "Please enter your full name",
+        "email": "Please enter a valid email address",
+        "projectType": "Please select a project type",
+        "description": "Please describe your project in at least 10 characters",
+        "budget": "Please select a budget range",
+        "timeline": "Please select a timeline",
+        "hasDesign": "Please select an option"
+      },
+      "success": {
+        "consultationTitle": "Consultation request sent!",
+        "consultationBody": "Thanks for reaching out. We will review your idea and get back to you with honest, jargon-free advice.",
+        "generalTitle": "Message sent!",
+        "generalBody": "Thanks for getting in touch. We will get back to you shortly.",
+        "quoteTitle": "Quote request sent!",
+        "quoteBody": "Thanks for reaching out. We will review your request and get back to you quickly with a quote."
+      },
+      "serverError": "Something went wrong. Please try again.",
+      "networkError": "Could not reach the server. Please check your connection and try again."
+    }
+  },
+  "newsletter": {
+    "heading": "Get Secret Discount Codes",
+    "body": "Sign up to our newsletter and receive exclusive discount codes and early access to special offers.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "your@email.com",
+    "submit": "Subscribe",
+    "subscribing": "Subscribing…",
+    "consentPrefix": "By subscribing you agree to our",
+    "consentLink": "Privacy Policy",
+    "consentSuffix": "and consent to receive marketing emails. You can unsubscribe at any time.",
+    "success": "You're in! We'll send discount codes and offers straight to your inbox.",
+    "alreadySubscribed": "You're already on the list. Keep an eye on your inbox!",
+    "error": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "tagline": "We help entrepreneurs and small businesses turn their ideas into real apps and websites. Based in Ireland, working globally.",
+    "copyright": "We Make IT Sole Trader company registered in Ireland.",
+    "languageNote": "By the way, we also speak Italiano and \u0420\u0443\u0441\u0441\u043a\u0438\u0439.",
+    "footerLabel": "Site footer",
+    "sections": {
+      "services": "Services",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "serviceLinks": [
+      "Frontend Development",
+      "Backend Development",
+      "Accessibility (WCAG)",
+      "UX Design",
+      "Website Development"
+    ],
+    "companyLinks": {
+      "aboutUs": "About Us",
+      "howItWorks": "How It Works",
+      "blog": "Blog",
+      "getAQuote": "Get a Quote"
+    },
+    "legalLinks": {
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy",
+      "termsOfService": "Terms of Service",
+      "accessibilityStatement": "Accessibility Statement"
+    }
+  },
+  "cookieBanner": {
+    "ariaLabel": "Cookie consent",
+    "text": "We use strictly necessary cookies to keep the site working. We do not use tracking or advertising cookies without your consent.",
+    "learnMore": "Learn more",
+    "essential": "Essential only",
+    "acceptAll": "Accept all cookies"
+  }
+}

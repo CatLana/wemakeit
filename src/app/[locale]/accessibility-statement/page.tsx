@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { CheckCircle, AlertCircle } from "lucide-react";
@@ -33,7 +34,13 @@ const limitations = [
   "PDF documents, if linked from the website, may not be fully accessible. We will provide HTML alternatives on request.",
 ];
 
-export default function AccessibilityStatementPage() {
+export default async function AccessibilityStatementPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <Header />
