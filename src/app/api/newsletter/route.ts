@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
+import { google } from "googleapis";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -9,11 +10,49 @@ const schema = z.object({
   consent: z.literal(true, { message: "Consent is required" }),
 });
 
+async function appendToSheet(email: string): Promise<"subscribed" | "already_subscribed"> {
+  const auth = new google.auth.JWT({
+    email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+    key: (process.env.GOOGLE_PRIVATE_KEY ?? "").replace(/\\n/g, "\n"),
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+  });
+
+  const sheets = google.sheets({ version: "v4", auth });
+  const spreadsheetId = process.env.GOOGLE_SHEET_ID!;
+
+  // Check for duplicate — read existing emails in column A
+  const existing = await sheets.spreadsheets.values.get({
+    spreadsheetId,
+    range: "Sheet1!A:A",
+  });
+  const rows = existing.data.values ?? [];
+  const already = rows.some(
+    (row) => row[0]?.toString().toLowerCase() === email.toLowerCase()
+  );
+  if (already) return "already_subscribed";
+
+  // Append new row: email | date | GDPR consent
+  await sheets.spreadsheets.values.append({
+    spreadsheetId,
+    range: "Sheet1!A:C",
+    valueInputOption: "USER_ENTERED",
+    requestBody: {
+      values: [[email, new Date().toISOString(), "yes — agreed to Privacy Policy"]],
+    },
+  });
+
+  return "subscribed";
+}
+
 export async function POST(req: NextRequest) {
   if (!process.env.RESEND_API_KEY) {
     return NextResponse.json({ error: "Service unavailable" }, { status: 503 });
   }
-  if (!process.env.RESEND_AUDIENCE_ID) {
+  if (
+    !process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL ||
+    !process.env.GOOGLE_PRIVATE_KEY ||
+    !process.env.GOOGLE_SHEET_ID
+  ) {
     return NextResponse.json({ error: "Service unavailable" }, { status: 503 });
   }
 
@@ -34,28 +73,19 @@ export async function POST(req: NextRequest) {
 
   const { email } = result.data;
 
-  // Add contact to Resend Audience
-  const { error: contactError } = await resend.contacts.create({
-    email,
-    audienceId: process.env.RESEND_AUDIENCE_ID,
-    unsubscribed: false,
-  });
-
-  // Resend returns a validation error if email already exists; treat this as already-subscribed
-  if (contactError) {
-    const msg = (contactError as { message?: string }).message ?? "";
-    if (
-      msg.toLowerCase().includes("already") ||
-      msg.toLowerCase().includes("exists") ||
-      msg.toLowerCase().includes("duplicate")
-    ) {
-      return NextResponse.json({ status: "already_subscribed" }, { status: 200 });
-    }
-    console.error("Resend contacts.create error:", contactError);
+  let sheetStatus: "subscribed" | "already_subscribed";
+  try {
+    sheetStatus = await appendToSheet(email);
+  } catch (err) {
+    console.error("Google Sheets error:", err);
     return NextResponse.json({ error: "Could not save subscription" }, { status: 500 });
   }
 
-  // Send admin notification
+  if (sheetStatus === "already_subscribed") {
+    return NextResponse.json({ status: "already_subscribed" }, { status: 200 });
+  }
+
+  // Send admin notification (non-blocking)
   const { error: mailError } = await resend.emails.send({
     from: "We Make IT <onboarding@resend.dev>",
     to: ["ssavchenko8@gmail.com"],
@@ -80,14 +110,13 @@ export async function POST(req: NextRequest) {
           </tr>
         </table>
         <p style="color:#94A3B8;font-size:12px;margin-top:24px;">
-          This contact has been saved to your Resend Audience. You can export all subscribers as CSV/Excel from the Resend dashboard.
+          This contact has been saved to your Google Sheet.
         </p>
       </div>
     `,
   });
 
   if (mailError) {
-    // Notification failure is non-blocking — subscription already saved
     console.error("Resend notification email error:", mailError);
   }
 
