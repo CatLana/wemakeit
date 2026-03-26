@@ -63,25 +63,25 @@
     "eyebrow": "Un Messaggio dalla Fondatrice",
     "opening": "Sono come te: un utente di tutti i giorni che ogni giorno usa decine di app e strumenti. E come molti di voi, la mia pazienza per i software confusi o goffi è molto limitata. Amo le esperienze intuitive, quelle in cui tutto ha semplicemente senso. Ma la realtà è che la maggior parte delle app non le senti così.",
     "name": "Mi chiamo Lana.",
-    "identity": "Innovatrice creativa, consulente tecnica per piccole imprese, sviluppatrice frontend e fondatrice di We Make IT.",
-    "bio": "Da oltre otto anni lavoro nello sviluppo web in grandi aziende e piccoli team. Il mio focus è sempre stato l'ingegneria frontend, i Design System e l'Accessibilità. Sono anche una UX designer certificata con la passione per le interfacce intuitive e le esperienze inclusive. Sono supportata da un team di brillanti ingegneri full-stack con oltre quindici anni di esperienza. Insieme, We Make IT Happen.",
-    "passion": "Ci ho messo anni a capirlo, ma risolvere i problemi di usabilità è la mia vera passione. Mi importa profondamente del software inclusivo e accessibile perché nessuno dovrebbe essere escluso. Le persone sono diverse. Le esigenze sono diverse. Eppure tutti meritiamo di navigare la nostra vita digitale con meno frustrazione possibile. La mia missione è aiutare imprenditori come te a creare prodotti che sembrino senza sforzo per i tuoi clienti.",
+    "identity": "Innovatrice creativa, consulente IT per aspiranti imprenditori IT, sviluppatrice frontend e fondatrice di We Make IT.",
+    "bio": "Da oltre otto anni lavoro nello sviluppo web in grandi aziende e piccoli team. Il mio focus è sempre stato l'ingegneria frontend, il design inclusivo e accessibile. Sono anche una UX designer certificata con la passione per realizzare i miei progetti imprenditoriali personali nel settore tecnologico. Sono supportata da un team di brillanti ingegneri full-stack con oltre quindici anni di esperienza. Insieme, diamo vita ai progetti di altri imprenditori proprio come me.",
+    "passion": "Anni di riflessione mi hanno portato a questa conclusione: risolvere problemi per me stessa e per gli altri, per rendere la vita più semplice e meno stressante, è ciò che amo di più. E soprattutto, ottimizzare l'uso del proprio tempo — quando i servizi che usiamo sono semplici e chiari, resta più tempo per le cose che contano davvero. Per me è importante creare software accessibile a ogni persona, indipendentemente dalle sue esigenze. Tutti meritiamo di vivere la nostra vita digitale con meno frustrazione possibile. Le applicazioni plasmano la nostra esperienza quotidiana, che ci piaccia o no. La mia missione è aiutare aspiranti imprenditori e aziende a creare prodotti che rendano la vita dei loro clienti più semplice e felice.",
     "differenceHeading": "Cosa rende i nostri servizi diversi?",
-    "differenceHighlight": "Una vera ossessione per la risoluzione dei problemi.",
+    "differenceHighlight": "Un sincero interesse per la risoluzione dei problemi.",
     "differenceText": "Se hai un problema, troveremo la soluzione. Chiara, diretta, senza complicazioni inutili.",
     "quote": "Quando la tua azienda risolve un problema reale per persone reali, è lì che inizia il successo.",
     "quoteFooter": "E sappiamo come aiutarti a raggiungerlo.",
-    "callout": "Condividi la tua idea nel modulo qui sotto per ricevere un preventivo gratuito. Il tuo prodotto senza frustrazioni inizia qui.",
+    "callout": "Condividi la tua idea nel modulo qui sotto per scoprire il costo potenziale della realizzazione del tuo progetto. Questo potrebbe essere l'inizio della tua attività.",
     "cta": "Raccontaci la tua idea",
     "imgAlt": "Lana, fondatrice di We Make IT"
   },
   "about": {
     "eyebrow": "Chi Siamo",
     "headingLine1": "Trasformiamo la tua idea",
-    "headingLine2": "in un prodotto reale.",
-    "body1": "We Make IT è un piccolo team di ingegneri esperti con sede in Irlanda. Lavoriamo con imprenditori, piccole imprese e fondatori alle prime armi che hanno un'ottima idea ma non sanno come realizzarla.",
-    "body2": "Non hai bisogno di sapere nulla di tecnologia. Avremo una conversazione libera e senza pressioni con te, ti aiuteremo a capire di cosa hai veramente bisogno e ti daremo un piano e un prezzo onesti.",
-    "body3": "Abbiamo aiutato aziende in Irlanda e in Europa a costruire app, siti web e piattaforme digitali da zero. Abbiamo lavorato in grandi aziende tecnologiche e sappiamo come si fa bene. Ora portiamo quella stessa esperienza a team piccoli e startup.",
+    "headingLine2": "in un prodotto online reale.",
+    "body1": "We Make IT è un piccolo team di sviluppatori e designer esperti con sede in Irlanda. Lavoriamo con imprenditori, piccole imprese e fondatori alle prime armi che hanno un'ottima idea ma non hanno le competenze tecniche per realizzarla.",
+    "body2": "Risponderemo a tutte le tue domande tecniche e ti aiuteremo a realizzare i tuoi obiettivi.",
+    "body3": "Il nostro team offre una combinazione unica di esperienza non solo nello sviluppo full-stack, ma anche nel design accessibile, design inclusivo, processi UX e vendite online. Il nostro lavoro è guidato dall'esperienza nella validazione della proposta di valore delle idee imprenditoriali e nel Design Thinking. Abbiamo lavorato in grandi aziende tecnologiche e ora portiamo quell'esperienza alle piccole e medie imprese.",
     "tagline": "Ovunque tu sia, se hai un'idea, ci farebbe piacere sentirla.",
     "cta": "Richiedi un preventivo gratuito",
     "visualLabel": "We Make IT - Irlanda",
@@ -90,8 +90,8 @@
     "visualRegions": "Europa · Remoto · Mondo",
     "languageNote": "Tra l'altro, parliamo anche",
     "values": [
-      { "title": "Parliamo in Modo Chiaro", "description": "Nessun tecnicismo, nessuna confusione. Spieghiamo tutto in modo comprensibile e non ti facciamo mai sentire a disagio per le tue domande." },
-      { "title": "Esperienza da Grande Azienda, Cultura da Piccolo Team", "description": "Abbiamo oltre 15 anni di esperienza nello sviluppo di app per grandi aziende. Ora portiamo la stessa qualità a progetti più piccoli, con l'attenzione che una grande agenzia non può offrire." }
+      { "title": "Accogliamo Ogni Cliente", "description": "Saremo felici di rispondere a qualsiasi tua domanda." },
+      { "title": "Esperienza da Grande Azienda, Approccio Personale e Attenzione ai Dettagli", "description": "Abbiamo oltre 15 anni di esperienza nello sviluppo di app per grandi aziende. Trattiamo i nostri clienti con un approccio personale — un'attenzione che una grande agenzia non può offrire." }
     ]
   },
   "process": {
@@ -102,22 +102,22 @@
     "cta": "Raccontaci la tua idea",
     "steps": [
       { "number": "01", "title": "Raccontaci la Tua Idea", "description": "Compila il nostro breve modulo e descrivi la tua idea con parole semplici. Nessuna conoscenza tecnica richiesta." },
-      { "number": "02", "title": "Ti Inviamo un Preventivo", "description": "Esaminiamo la tua idea e ti inviamo un'e-mail chiara con il preventivo. Nessuna stima vaga, solo una risposta diretta." },
-      { "number": "03", "title": "Fissiamo una Chiamata", "description": "Se sei soddisfatto e vuoi procedere, ti inviamo un calendario per scegliere la data per una chiamata video o di persona." },
+      { "number": "02", "title": "Ti Inviamo un Preventivo", "description": "Esaminiamo la tua idea e ti inviamo un costo stimato e un potenziale piano di realizzazione." },
+      { "number": "03", "title": "Valuti la Proposta", "description": "Valuti la nostra proposta e se decidi di procedere, fissiamo un appuntamento online o di persona per discutere i dettagli." },
       { "number": "04", "title": "Stringiamo la Mano", "description": "Quando sei pronto per iniziare, firmiamo un semplice contratto per mettere tutto per iscritto." },
       { "number": "05", "title": "Iniziamo il Lavoro", "description": "Paghi il deposito e iniziamo a costruire. Semplice così." }
     ]
   },
   "ctaStrip": {
     "heading": "Non sei sicuro che la tua idea sia pronta?",
-    "body1": "È esattamente il momento di parlarci. Offriamo consulenze gratuite per la validazione delle idee. Nessun impegno, nessun tecnicismo, solo una conversazione onesta.",
+    "body1": "È esattamente il momento di parlarci. Compila il modulo con i dettagli sulla tua idea e ti daremo un feedback.",
     "body2": "Abbiamo esperienza interna nel Design Thinking e nella progettazione di Prodotti Minimi Vitali. Possiamo aiutarti a capire se la tua idea può diventare un business redditizio o se è meglio perfezionarla prima di investire nello sviluppo.",
-    "cta": "Prenota una consulenza gratuita"
+    "cta": "Compila il modulo"
   },
   "contact": {
     "eyebrow": "Richiedi un Preventivo",
     "heading": "Raccontaci la Tua Idea",
-    "body": "Compila il modulo e descrivi la tua idea con parole tue. Non ci sono risposte sbagliate. Ti risponderemo rapidamente per organizzare una chat gratuita e aiutarti a trovare il percorso migliore.",
+    "body": "Compila il modulo e descrivi la tua idea con parole tue. Più dettagli ci fornisci, meglio potremo capire il quadro completo e darti una stima dei costi e un piano di realizzazione più accurati. Non preoccuparti dei termini tecnici — raccontaci semplicemente cosa vuoi creare, per chi è e quale problema risolve.",
     "springSaleTitle": "Offerta Primavera",
     "springSaleBody": "40% di sconto per i nuovi clienti questa primavera. Invia la tua richiesta ora e blocca il tasso scontato.",
     "springSaleBeat": "Hai già un preventivo da un'altra azienda?",
