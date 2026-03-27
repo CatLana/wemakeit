@@ -47,15 +47,15 @@
     "subheading": "From idea validation and prototyping, to mobile app development, web applications, IT consulting, and ongoing support. Everything under one roof.",
     "cardCta": "Tell us your idea",
     "items": [
-      { "title": "Custom App Development", "description": "We design and build custom applications tailored to exactly how your business works. No off-the-shelf compromises. Just the right tool, built for you." },
+      { "title": "Custom App Development", "description": "We design and build custom applications tailored to exactly how your business works. Just the right tool, tailored for your success and your happy customers." },
       { "title": "Idea Validation and MVP", "description": "Not sure if your idea will work? We help you validate it before spending a penny on a full build. We then create a Minimum Viable Product (MVP) so you can test it with real users fast." },
-      { "title": "UX Research", "description": "Already have a product or prototype? As a UI UX design agency, we research how real people use it, find what is confusing or broken, and give you a clear, prioritised list of improvements." },
+      { "title": "UX Research", "description": "Already have a product or prototype? We help handling the research on how real people use your product, find what is confusing or broken, and give you a clear, prioritised list of improvements." },
+    { "title": "UX Design", "description": "UX report is ready? We can help with the development of designs to tackle the usablity. If reuqired we can take over the implementation part on us." },
       { "title": "App Prototype", "description": "Before committing to a full build, we create an interactive prototype of your app. You can click through it, test it with users, and get investor feedback." },
       { "title": "Mobile App Development", "description": "We build mobile apps that work on both iOS and Android from a single codebase, keeping costs down without compromising on look or feel." },
-      { "title": "Web Application Development", "description": "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces. If you can imagine it, we can build it." },
+      { "title": "Web Application Development", "description": "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces and other." },
       { "title": "Accessibility Audits", "description": "EU law now requires digital products to be accessible to people with disabilities. We audit your existing app or website and fix what needs fixing." },
-      { "title": "Software Consultancy", "description": "Not sure what to build, which technology to choose, or whether your idea is viable? Our software consultancy and app development consulting service gives you honest, jargon-free answers." },
-      { "title": "Discovery Workshops", "description": "A structured session where we work with you to map out your idea, define what your users need, and agree on the scope before a single line of code is written." },
+      { "title": "Software Consultancy", "description": "Not sure what to build, which technology to choose, or whether your idea is viable? We are here to help." },
       { "title": "Maintenance and Support", "description": "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly." }
     ]
   },
@@ -65,13 +65,13 @@
     "name": "My name is Lana.",
     "identity": "Creative innovator, IT consultant, frontend developer and the founder of We Make IT.",
     "bio": "For more than eight years, I have worked in web development across large companies and small teams. My focus has always been frontend engineering, inclusive and accessible design. I am also a certified UX designer with a passion for bringing my own entrepreneurial projects in technology to life. I am supported by a team of brilliant full-stack engineers with over fifteen years of experience. Together, we make your IT dreams happen.",
-    "passion": "Years of reflection led me to this conclusion: solving problems for myself and others to make life simpler and less stressful is what I love most. And above all, to optimise the use of our own time — when the services we use are simple and clear, more time is left for the things that truly matter. I care deeply about creating software that is accessible to every person regardless of their needs. We all deserve to move through our digital lives with as little frustration as possible. Applications shape our everyday experience, whether we like it or not. My mission is to help entrepreneurs and businesses create products that make their customers' lives simpler and happier.",
+    "passion": "Years of reflection led me to this conclusion: solving problems for myself and others to make life simpler and less stressful is what I love most. And above all, to optimise the use of our own time — when the services we use are simple and clear, more time is left for the things that truly matter. I care deeply about creating software that is accessible to every person regardless of their needs. We all deserve to move through our digital lives with as little frustration as possible. All of us use applications on daily basis to go through the tasks at work or personal life and, whether we like it or not, but they shape our everyday experience. My mission is to help entrepreneurs and businesses create products that make their customers' lives easier and happier.",
     "differenceHeading": "So what makes our services different?",
-    "differenceHighlight": "A genuine interest in solving problems.",
+    "differenceHighlight": "A genuine interest in solving problems and accessibility-first approach.",
     "differenceText": "If you have a problem, we will find the solution. Clear, direct, and without unnecessary complications.",
     "quote": "When your business solves a real problem for real people, that is where success begins.",
     "quoteFooter": "And we know how to help you reach that point.",
-    "callout": "Share your idea in the form below to get a free quote. Your frustration-free product starts here.",
+    "callout": "Share your idea in the form below to get a free quote. Your clear product for happy customers starts here.",
     "cta": "Tell us your idea",
     "imgAlt": "Lana, founder of We Make IT"
   },
@@ -91,7 +91,7 @@
     "languageNote": "By the way, we also speak",
     "values": [
       { "title": "We Welcome Every Client", "description": "We are happy to answer any of your questions." },
-      { "title": "Big-Company Experience, Personal Approach and Attention to Detail", "description": "We have 15+ years of experience building apps for large companies. We treat our clients with a personal approach — the kind of attention a big agency cannot offer." }
+      { "title": "Big-Company Experience, Personal Approach and Attention to Detail of a Small IT Studio", "description": "We have 15+ years of experience building apps for large companies. We treat our clients with a personal approach - the kind of attention a big agency cannot offer." }
     ]
   },
   "process": {

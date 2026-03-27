@@ -50,18 +50,18 @@
       { "title": "Sviluppo App su Misura", "description": "Progettiamo e sviluppiamo applicazioni personalizzate in base al funzionamento della tua azienda. Nessun compromesso. Solo lo strumento giusto, costruito per te." },
       { "title": "Validazione Idea e MVP", "description": "Non sei sicuro che la tua idea funzioni? Ti aiutiamo a validarla prima di spendere un euro. Realizziamo poi un Prodotto Minimo Vitale (MVP) per testarlo con utenti reali." },
       { "title": "UX Research", "description": "Hai già un prodotto o prototipo? Come agenzia UX design, ricerchiamo come le persone reali lo usano, troviamo le criticità e ti diamo un elenco chiaro di miglioramenti." },
+      { "title": "UX Design", "description": "Il report UX è pronto? Possiamo aiutarti nello sviluppo dei design per affrontare i problemi di usabilità. Se necessario, possiamo occuparci anche della parte di implementazione." },
       { "title": "Prototipo App", "description": "Prima di impegnarti in uno sviluppo completo, creiamo un prototipo interattivo. Puoi navigarci, testarlo con gli utenti e raccogliere feedback dagli investitori." },
       { "title": "Sviluppo App Mobile", "description": "Sviluppiamo app mobile che funzionano su iOS e Android con un'unica base di codice, contenendo i costi senza compromettere estetica e funzionalità." },
       { "title": "Sviluppo Applicazioni Web", "description": "Hai bisogno di qualcosa di più potente di un sito? Sviluppiamo web app: dashboard, sistemi di prenotazione, portali, marketplace. Se puoi immaginarlo, possiamo costruirlo." },
       { "title": "Audit Accessibilità", "description": "La normativa europea richiede che i prodotti digitali siano accessibili alle persone con disabilità. Analizziamo la tua app o sito e correggiamo ciò che non va." },
       { "title": "Consulenza Software", "description": "Non sai cosa sviluppare, quale tecnologia scegliere o se la tua idea è realizzabile? Il nostro servizio di consulenza ti dà risposte oneste e senza tecnicismi." },
-      { "title": "Workshop di Discovery", "description": "Una sessione strutturata in cui lavoriamo insieme per mappare la tua idea, definire le esigenze degli utenti e concordare il perimetro prima di scrivere una sola riga di codice." },
       { "title": "Manutenzione e Supporto", "description": "Hai già un'app che necessita di assistenza? Ci occupiamo del supporto continuo, correggiamo i bug, aggiungiamo nuove funzionalità e manteniamo tutto in funzione." }
     ]
   },
   "founder": {
     "eyebrow": "Un Messaggio dalla Fondatrice",
-    "opening": "Sono come te: un utente di tutti i giorni che ogni giorno usa decine di app e strumenti. E come molti di voi, la mia pazienza per i software confusi o goffi è molto limitata. Amo le esperienze intuitive, quelle in cui tutto ha semplicemente senso. Ma la realtà è che la maggior parte delle app non le senti così.",
+    "opening": "Sono come tutti noi un utente di tutti i giorni che ogni giorno usa decine di app e strumenti. E come molti di noi, la mia pazienza per i software confusi o goffi è molto limitata. Amo le esperienze intuitive, quelle in cui tutto ha semplicemente senso. Ma la realtà è che la maggior parte delle app non le senti così.",
     "name": "Mi chiamo Lana.",
     "identity": "Innovatrice creativa, consulente IT per aspiranti imprenditori IT, sviluppatrice frontend e fondatrice di We Make IT.",
     "bio": "Da oltre otto anni lavoro nello sviluppo web in grandi aziende e piccoli team. Il mio focus è sempre stato l'ingegneria frontend, il design inclusivo e accessibile. Sono anche una UX designer certificata con la passione per realizzare i miei progetti imprenditoriali personali nel settore tecnologico. Sono supportata da un team di brillanti ingegneri full-stack con oltre quindici anni di esperienza. Insieme, diamo vita ai progetti di altri imprenditori proprio come me.",
