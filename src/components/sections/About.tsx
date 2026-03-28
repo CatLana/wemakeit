@@ -1,4 +1,5 @@
-﻿import { Heart, Zap, Globe, MapPin } from "lucide-react";
+﻿"use client";
+import { Heart, Zap, Globe, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const valueIcons = [Heart, Zap];
