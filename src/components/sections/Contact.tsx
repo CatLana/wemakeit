@@ -95,6 +95,11 @@ const inputBase =
 const selectBase =
   "w-full px-4 py-3 rounded-lg border text-sm text-[#1E293B] bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE] appearance-none";
 
+import { scrollToAndFocus } from "@/lib/scrollToAndFocus";
+export function focusContactForm() {
+  scrollToAndFocus("contact-form", "name");
+}
+
 export default function Contact() {
   const t = useTranslations("contact");
   const searchParams = useSearchParams();
@@ -280,6 +285,7 @@ export default function Contact() {
               </div>
             ) : (
               <form
+                id="contact-form"
                 onSubmit={handleSubmit(onSubmit)}
                 noValidate
                 aria-label="Quote request form"

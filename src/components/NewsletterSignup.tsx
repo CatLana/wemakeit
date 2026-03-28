@@ -1,6 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { scrollToAndFocus } from "@/lib/scrollToAndFocus";
+export function focusNewsletterForm() {
+  scrollToAndFocus("newsletter-form", "newsletter-email");
+}
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -73,6 +77,7 @@ export default function NewsletterSignup() {
 
       {!outcome && (
         <form
+          id="newsletter-form"
           onSubmit={handleSubmit(onSubmit)}
           noValidate
           aria-label="Newsletter signup"

@@ -35,12 +35,20 @@ export default function About() {
               <p>{t("body3")}</p>
               <p className="font-semibold text-[#1E293B]">{t("tagline")}</p>
             </div>
-            <a
-              href="#quote"
+            <button
+              type="button"
+              onClick={() => {
+                if (typeof window !== "undefined") {
+                  // Dynamically import to avoid SSR issues
+                  import("@/components/sections/Contact").then(mod => {
+                    if (mod.focusContactForm) mod.focusContactForm();
+                  });
+                }
+              }}
               className="mt-8 inline-flex items-center justify-center min-h-[50px] px-7 bg-[#0F172A] text-white font-semibold rounded-xl hover:bg-slate-800 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
             >
               {t("cta")}
-            </a>
+            </button>
           </div>
 
           {/* Visual */}

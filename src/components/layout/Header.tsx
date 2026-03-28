@@ -114,12 +114,19 @@ export default function Header() {
             {/* Desktop right side: Language switcher + CTA */}
             <div className="hidden md:flex items-center gap-4">
               <LanguageSwitcher />
-              <Link
-                href="/#quote"
+              <button
+                type="button"
+                onClick={() => {
+                  if (typeof window !== "undefined") {
+                    import("@/components/sections/Contact").then(mod => {
+                      if (mod.focusContactForm) mod.focusContactForm();
+                    });
+                  }
+                }}
                 className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] px-5 py-2 bg-[#22D3EE] text-[#0F172A] font-semibold text-sm rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
               >
                 {t("cta")}
-              </Link>
+              </button>
             </div>
 
             {/* Mobile hamburger */}
@@ -185,13 +192,20 @@ export default function Header() {
             </li>
           ))}
           <li className="mt-4">
-            <Link
-              href="/#quote"
-              onClick={() => setOpen(false)}
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                if (typeof window !== "undefined") {
+                  import("@/components/sections/Contact").then(mod => {
+                    if (mod.focusContactForm) mod.focusContactForm();
+                  });
+                }
+              }}
               className="flex items-center justify-center h-11 px-5 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2"
             >
               {t("cta")}
-            </Link>
+            </button>
           </li>
         </ul>
       </nav>
