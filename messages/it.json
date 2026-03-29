@@ -305,7 +305,9 @@
     "consentSuffix": "e email marketing. Disiscriviti quando vuoi.",
     "success": "Iscritto! Codici e offerte arrivano via email.",
     "alreadySubscribed": "Già iscritto. Controlla email!",
-    "error": "Errore. Riprova."
+    "error": "Errore. Riprova.",
+    "emailError": "Inserisci un indirizzo email valido",
+    "consentError": "Devi accettare per continuare"
   },
   "footer": {
     "springSaleTitle": "Offerta Primavera",

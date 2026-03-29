@@ -227,7 +227,7 @@ export default function Contact() {
 
           {/* Right â€” quote form */}
           <div className="lg:col-span-3 rounded-2xl bg-white border border-slate-200 p-6 sm:p-10 shadow-sm">
-            {isSubmitSuccessful ? (
+            {submittedType !== null ? (
               <div
                 role="status"
                 aria-live="polite"

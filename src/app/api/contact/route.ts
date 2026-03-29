@@ -3,7 +3,7 @@ import { Resend } from "resend";
 import { z } from "zod";
 
 const schema = z.object({
-  enquiryType: z.enum(["need-a-quote", "business-idea-consultation", "general-query"]),
+  enquiryType: z.enum(["business-idea-consultation", "general-query"]),
   name: z.string().min(2),
   email: z.string().email(),
   company: z.string().optional(),
@@ -19,7 +19,6 @@ const schema = z.object({
 const RECIPIENT = "ssavchenko8@gmail.com";
 
 const enquiryLabels: Record<string, string> = {
-  "need-a-quote": "I need a quote for a project",
   "business-idea-consultation": "Business idea consultation",
   "general-query": "General query",
 };

@@ -221,7 +221,9 @@
     "consentSuffix": "and consent to receive marketing emails. You can unsubscribe at any time.",
     "success": "You're in! We'll send discount codes and offers straight to your inbox.",
     "alreadySubscribed": "You're already on the list. Keep an eye on your inbox!",
-    "error": "Something went wrong. Please try again."
+    "error": "Something went wrong. Please try again.",
+    "emailError": "Please enter a valid email address",
+    "consentError": "You must agree to continue"
   },
   "footer": {
     "springSaleTitle": "Spring Sale Offer",

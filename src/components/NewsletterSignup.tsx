@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { scrollToAndFocus } from "@/lib/scrollToAndFocus";
 export function focusNewsletterForm() {
   scrollToAndFocus("newsletter-form", "newsletter-email");
@@ -11,12 +11,17 @@ import { z } from "zod";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
-const schema = z.object({
-  email: z.string().email("Please enter a valid email address"),
-  consent: z.literal(true, { message: "You must agree to continue" }),
-});
+function makeSchema(t: (k: string) => string) {
+  return z.object({
+    email: z.string().email(t("emailError")),
+    consent: z.literal(true, { message: t("consentError") }),
+  });
+}
 
-type FormValues = z.infer<typeof schema>;
+type FormValues = {
+  email: string;
+  consent: true;
+};
 
 const inputBase =
   "w-full px-4 py-3 rounded-lg border text-sm text-[#1E293B] placeholder:text-slate-400 bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE]";
@@ -24,6 +29,8 @@ const inputBase =
 export default function NewsletterSignup() {
   const t = useTranslations("newsletter");
   const [outcome, setOutcome] = useState<"subscribed" | "already" | "error" | null>(null);
+
+  const schema = useMemo(() => makeSchema((k) => t(k as Parameters<typeof t>[0])), [t]);
 
   const {
     register,
