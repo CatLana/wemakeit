@@ -33,10 +33,26 @@
   "stats": {
     "ariaLabel": "I nostri numeri",
     "items": [
-      { "value": "15+", "label": "Anni di Sviluppo App e Web", "ariaLabel": "Oltre 15 anni di sviluppo app e siti web" },
-      { "value": "Gratis", "label": "Prima Consulenza. Senza Impegno.", "ariaLabel": "Prima consulenza gratuita senza impegno" },
-      { "value": "1", "label": "Prezzo Fisso. Nessun Extra.", "ariaLabel": "Un prezzo fisso senza costi nascosti" },
-      { "value": "3", "label": "Lingue Parlate", "ariaLabel": "Lavoriamo in tre lingue: inglese, italiano e russo" }
+      {
+        "value": "15+",
+        "label": "Anni di Sviluppo App e Web",
+        "ariaLabel": "Oltre 15 anni di sviluppo app e siti web"
+      },
+      {
+        "value": "Gratis",
+        "label": "Prima Consulenza. Senza Impegno.",
+        "ariaLabel": "Prima consulenza gratuita senza impegno"
+      },
+      {
+        "value": "1",
+        "label": "Prezzo Fisso. Nessun Extra.",
+        "ariaLabel": "Un prezzo fisso senza costi nascosti"
+      },
+      {
+        "value": "3",
+        "label": "Lingue Parlate",
+        "ariaLabel": "Lavoriamo in tre lingue: inglese, italiano e russo"
+      }
     ]
   },
   "services": {
@@ -47,16 +63,46 @@
     "subheading": "Dalla validazione dell'idea e prototipazione, allo sviluppo di app mobile e applicazioni web, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
     "cardCta": "Raccontaci la tua idea",
     "items": [
-      { "title": "Sviluppo App su Misura", "description": "Progettiamo e sviluppiamo applicazioni personalizzate, costruite su come funziona la tua azienda, per il tuo successo e i tuoi clienti." },
-      { "title": "Validazione Idea e MVP", "description": "Non sei sicuro che la tua idea funzioni? Ti aiutiamo a validarla prima di spendere un euro. Realizziamo poi un Prodotto Minimo Vitale (MVP) per testarlo con utenti reali." },
-      { "title": "UX Research", "description": "Hai già un prodotto o prototipo? Come agenzia UX design, ricerchiamo come le persone reali lo usano, troviamo le criticità e ti diamo un elenco chiaro di miglioramenti." },
-      { "title": "UX Design", "description": "Il report UX è pronto? Possiamo aiutarti nello sviluppo dei design per affrontare i problemi di usabilità. Se necessario, possiamo occuparci anche della parte di implementazione." },
-      { "title": "Prototipo App", "description": "Prima di impegnarti in uno sviluppo completo, creiamo un prototipo interattivo. Puoi navigarci, testarlo con gli utenti e raccogliere feedback dagli investitori." },
-      { "title": "Sviluppo App Mobile", "description": "Sviluppiamo app mobile che funzionano su iOS e Android con un'unica base di codice, contenendo i costi senza compromettere estetica e funzionalità." },
-      { "title": "Sviluppo Applicazioni Web", "description": "Hai bisogno di qualcosa di più potente di un sito? Sviluppiamo web app: dashboard, sistemi di prenotazione, portali, marketplace. Se puoi immaginarlo, possiamo costruirlo." },
-      { "title": "Audit Accessibilità", "description": "La normativa europea richiede che i prodotti digitali siano accessibili alle persone con disabilità. Analizziamo la tua app o sito e correggiamo ciò che non va." },
-      { "title": "Consulenza Software", "description": "Non sai cosa sviluppare, quale tecnologia scegliere o se la tua idea è realizzabile? Il nostro servizio di consulenza ti dà risposte oneste e senza tecnicismi." },
-      { "title": "Manutenzione e Supporto", "description": "Hai già un'app che necessita di assistenza? Ci occupiamo del supporto continuo, correggiamo i bug, aggiungiamo nuove funzionalità e manteniamo tutto in funzione." }
+      {
+        "title": "Sviluppo App su Misura",
+        "description": "Progettiamo e sviluppiamo applicazioni personalizzate, costruite su come funziona la tua azienda, per il tuo successo e i tuoi clienti."
+      },
+      {
+        "title": "Validazione Idea e MVP",
+        "description": "Non sei sicuro che la tua idea funzioni? Ti aiutiamo a validarla prima di spendere un euro. Realizziamo poi un Prodotto Minimo Vitale (MVP) per testarlo con utenti reali."
+      },
+      {
+        "title": "UX Research",
+        "description": "Hai già un prodotto o prototipo? Come agenzia UX design, ricerchiamo come le persone reali lo usano, troviamo le criticità e ti diamo un elenco chiaro di miglioramenti."
+      },
+      {
+        "title": "UX Design",
+        "description": "Il report UX è pronto? Possiamo aiutarti nello sviluppo dei design per affrontare i problemi di usabilità. Se necessario, possiamo occuparci anche della parte di implementazione."
+      },
+      {
+        "title": "Prototipo App",
+        "description": "Prima di impegnarti in uno sviluppo completo, creiamo un prototipo interattivo. Puoi navigarci, testarlo con gli utenti e raccogliere feedback dagli investitori."
+      },
+      {
+        "title": "Sviluppo App Mobile",
+        "description": "Sviluppiamo app mobile che funzionano su iOS e Android con un'unica base di codice, contenendo i costi senza compromettere estetica e funzionalità."
+      },
+      {
+        "title": "Sviluppo Applicazioni Web",
+        "description": "Hai bisogno di qualcosa di più potente di un sito? Sviluppiamo web app: dashboard, sistemi di prenotazione, portali, marketplace. Se puoi immaginarlo, possiamo costruirlo."
+      },
+      {
+        "title": "Audit Accessibilità",
+        "description": "La normativa europea richiede che i prodotti digitali siano accessibili alle persone con disabilità. Analizziamo la tua app o sito e correggiamo ciò che non va."
+      },
+      {
+        "title": "Consulenza Software",
+        "description": "Non sai cosa sviluppare, quale tecnologia scegliere o se la tua idea è realizzabile? Il nostro servizio di consulenza ti dà risposte oneste e senza tecnicismi."
+      },
+      {
+        "title": "Manutenzione e Supporto",
+        "description": "Hai già un'app che necessita di assistenza? Ci occupiamo del supporto continuo, correggiamo i bug, aggiungiamo nuove funzionalità e manteniamo tutto in funzione."
+      }
     ]
   },
   "founder": {
@@ -90,8 +136,22 @@
     "visualRegions": "Europa · Remoto · Mondo",
     "languageNote": "Tra l'altro, parliamo anche",
     "values": [
-      { "title": "Accogliamo Ogni Cliente", "description": "Saremo felici di rispondere a qualsiasi tua domanda." },
-      { "title": "Esperienza da Grande Azienda, Approccio Personale e Attenzione ai Dettagli", "description": "Abbiamo oltre 15 anni di esperienza nello sviluppo di app per grandi aziende. Trattiamo i nostri clienti con un approccio personale — un'attenzione che una grande agenzia non può offrire." }
+      {
+        "title": "Accogliamo Ogni Cliente",
+        "description": "Nessuna idea è troppo piccola. Che tu sia un fondatore, un imprenditore o qualcuno che esplora un’idea, siamo felici di parlarne. Prima consulenza gratuita, senza impegno."
+      },
+      {
+        "title": "Esperienza da Grande Azienda",
+        "description": "Il nostro team ha oltre 15 anni di esperienza nello sviluppo di prodotti per grandi aziende tecnologiche. Portiamo quella qualità e competenza in ogni progetto, indipendentemente dalle dimensioni."
+      },
+      {
+        "title": "Attenzione Personale, ad Ogni Passo",
+        "description": "Lavori direttamente con il nostro team, non con un agente commerciale. Risposte rapide, parole dirette e cura genuina dalla prima idea al lancio e oltre."
+      },
+      {
+        "title": "Un Prezzo Fisso. Nessuna Sorpresa.",
+        "description": "Sai esattamente quanto pagherai prima di iniziare. Nessun extra nascosto, nessuna fattura inaspettata. Hai un preventivo da un’altra azienda? Lo batteremo."
+      }
     ]
   },
   "process": {
@@ -101,11 +161,31 @@
     "subheading": "Raccontaci la tua idea e pensiamo a tutto il resto.",
     "cta": "Raccontaci la tua idea",
     "steps": [
-      { "number": "01", "title": "Raccontaci la Tua Idea", "description": "Compila il modulo e descrivi la tua idea con parole semplici." },
-      { "number": "02", "title": "Ti Inviamo un Preventivo", "description": "Esaminiamo la tua idea e ti inviamo un costo stimato e un potenziale piano di realizzazione." },
-      { "number": "03", "title": "Valuti la Proposta", "description": "Valuti la nostra proposta e se decidi di procedere, fissiamo un appuntamento online o di persona per discutere i dettagli." },
-      { "number": "04", "title": "Stringiamo la Mano", "description": "Quando sei pronto per iniziare, firmiamo un semplice contratto per mettere tutto per iscritto." },
-      { "number": "05", "title": "Iniziamo il Lavoro", "description": "Paghi il deposito e iniziamo a costruire. Semplice così." }
+      {
+        "number": "01",
+        "title": "Raccontaci la Tua Idea",
+        "description": "Compila il modulo e descrivi la tua idea con parole semplici."
+      },
+      {
+        "number": "02",
+        "title": "Ti Inviamo un Preventivo",
+        "description": "Esaminiamo la tua idea e ti inviamo un costo stimato e un potenziale piano di realizzazione."
+      },
+      {
+        "number": "03",
+        "title": "Valuti la Proposta",
+        "description": "Valuti la nostra proposta e se decidi di procedere, fissiamo un appuntamento online o di persona per discutere i dettagli."
+      },
+      {
+        "number": "04",
+        "title": "Stringiamo la Mano",
+        "description": "Quando sei pronto per iniziare, firmiamo un semplice contratto per mettere tutto per iscritto."
+      },
+      {
+        "number": "05",
+        "title": "Iniziamo il Lavoro",
+        "description": "Paghi il deposito e iniziamo a costruire. Semplice così."
+      }
     ]
   },
   "ctaStrip": {

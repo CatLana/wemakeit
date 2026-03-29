@@ -1,8 +1,8 @@
-﻿"use client";
-import { Heart, Zap, Globe, MapPin } from "lucide-react";
+"use client";
+import { Heart, Award, Users, ShieldCheck, Globe, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-const valueIcons = [Heart, Zap];
+const valueIcons = [Heart, Award, Users, ShieldCheck];
 
 export default function About() {
   const t = useTranslations("about");
@@ -80,11 +80,11 @@ export default function About() {
         </div>
 
         {/* Values row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-12 border-t border-slate-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-12 border-t border-slate-100">
           {values.map(({ title, description }, i) => {
             const Icon = valueIcons[i] ?? Heart;
             return (
-              <div key={title} className="flex flex-col items-start">
+              <div key={title} className="flex flex-col items-start rounded-2xl border border-slate-100 bg-slate-50 p-6 hover:border-slate-200 hover:bg-white transition-colors">
                 <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#0F172A] mb-4">
                   <Icon size={22} className="text-[#22D3EE]" aria-hidden="true" />
                 </div>

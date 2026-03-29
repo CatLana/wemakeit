@@ -90,8 +90,10 @@
     "visualRegions": "Europe · Remote · Worldwide",
     "languageNote": "By the way, we also speak",
     "values": [
-      { "title": "We Welcome Every Client", "description": "We are happy to answer any of your questions." },
-      { "title": "Big-Company Experience, Personal Approach and Attention to Detail of a Small IT Studio", "description": "We have 15+ years of experience building apps for large companies. We treat our clients with a personal approach - the kind of attention a big agency cannot offer." }
+      { "title": "We Welcome Every Client", "description": "No idea is too small. Whether you are a startup founder, a business owner, or someone just exploring an idea, we are happy to talk. Free first consultation, no commitment required." },
+      { "title": "Big-Company Experience", "description": "Our team has 15+ years of experience building products at major tech companies. We bring that expertise and quality to every project, no matter the size." },
+      { "title": "Personal Attention, Every Step", "description": "You work directly with our team, not a sales rep or account manager. Expect fast replies, straight talk, and genuine care from first idea to launch and beyond." },
+      { "title": "One Fixed Price. No Surprises.", "description": "You know exactly what you are paying before we start. No hidden extras, no surprise invoices. Got a quote from another company? We will beat it." }
     ]
   },
   "process": {
