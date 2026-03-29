@@ -62,6 +62,7 @@
     "headingAccent": "per la tua azienda",
     "subheading": "Dalla validazione dell'idea e prototipazione, allo sviluppo di app mobile e applicazioni web, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
     "cardCta": "Raccontaci la tua idea",
+    "consultationCta": "Prenota una consulenza",
     "items": [
       {
         "title": "Sviluppo App su Misura",
@@ -209,8 +210,7 @@
       "requiredSuffix": "sono obbligatori.",
       "enquiryType": "Come possiamo aiutarti?",
       "enquiryOptions": {
-        "quote": "Ho bisogno di un preventivo per un progetto",
-        "consultation": "Consulenza per un'idea imprenditoriale",
+        "consultation": "Richiesta di consulenza",
         "general": "Richiesta generica"
       },
       "name": "Nome e cognome",

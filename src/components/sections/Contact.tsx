@@ -11,7 +11,7 @@ import { Link } from "@/i18n/navigation";
 
 // Type is stable across locales since enum values are internal codes
 type FormValues = {
-  enquiryType: "need-a-quote" | "business-idea-consultation" | "general-query";
+  enquiryType: "business-idea-consultation" | "general-query";
   name: string;
   email: string;
   company?: string;
@@ -27,7 +27,7 @@ type FormValues = {
 function makeSchema(e: (k: string) => string) {
   return z.object({
     enquiryType: z.enum(
-      ["need-a-quote", "business-idea-consultation", "general-query"],
+      ["business-idea-consultation", "general-query"],
       { message: e("form.errors.enquiryType") }
     ),
     name: z.string().min(2, e("form.errors.name")),
@@ -117,7 +117,7 @@ export default function Contact() {
     setValue,
   } = useForm<FormValues>({
     resolver: zodResolver(schema),
-    defaultValues: { enquiryType: "need-a-quote" },
+    defaultValues: { enquiryType: "business-idea-consultation" },
   });
 
   useEffect(() => {
@@ -125,7 +125,6 @@ export default function Contact() {
     const map: Record<string, FormValues["enquiryType"]> = {
       consultation: "business-idea-consultation",
       general: "general-query",
-      quote: "need-a-quote",
     };
     if (inquiry && map[inquiry]) {
       setValue("enquiryType", map[inquiry]);
@@ -252,16 +251,12 @@ export default function Contact() {
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">
                   {submittedType === "business-idea-consultation"
                     ? t("form.success.consultationTitle")
-                    : submittedType === "general-query"
-                    ? t("form.success.generalTitle")
-                    : t("form.success.quoteTitle")}
+                    : t("form.success.generalTitle")}
                 </h3>
                 <p className="text-slate-500 text-sm mb-6">
                   {submittedType === "business-idea-consultation"
                     ? t("form.success.consultationBody")
-                    : submittedType === "general-query"
-                    ? t("form.success.generalBody")
-                    : t("form.success.quoteBody")}
+                    : t("form.success.generalBody")}
                 </p>
                 <button
                   type="button"
@@ -301,7 +296,6 @@ export default function Contact() {
                     className={`${selectBase} ${errors.enquiryType ? "border-rose-400" : "border-slate-200"}`}
                     {...register("enquiryType")}
                   >
-                    <option value="need-a-quote">{t("form.enquiryOptions.quote")}</option>
                     <option value="business-idea-consultation">{t("form.enquiryOptions.consultation")}</option>
                     <option value="general-query">{t("form.enquiryOptions.general")}</option>
                   </select>

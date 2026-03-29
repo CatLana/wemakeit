@@ -1,4 +1,9 @@
+import { Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
+
+const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string; strokeWidth?: number; "aria-hidden"?: "true" }>> = {
+  Globe,
+};
 
 export default function Stats() {
   const t = useTranslations("stats");
@@ -6,6 +11,7 @@ export default function Stats() {
     value: string;
     label: string;
     ariaLabel: string;
+    icon?: string;
   }>;
 
   return (
@@ -15,14 +21,16 @@ export default function Stats() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <dl className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          {items.map(({ value, label, ariaLabel }) => (
+          {items.map(({ value, label, ariaLabel, icon }) => {
+            const Icon = icon ? iconMap[icon] : null;
+            return (
             <div key={label} className="flex flex-col items-center">
               <dt className="sr-only">{ariaLabel}</dt>
               <dd
                 aria-hidden="true"
                 className="text-4xl sm:text-5xl font-extrabold text-[#0F172A] tracking-tight"
               >
-                {value}
+                {Icon ? <Icon size={44} strokeWidth={1.75} aria-hidden="true" /> : value}
               </dd>
               <dd
                 aria-hidden="true"
@@ -31,7 +39,8 @@ export default function Stats() {
                 {label}
               </dd>
             </div>
-          ))}
+            );
+          })}
         </dl>
       </div>
     </section>

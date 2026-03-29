@@ -46,6 +46,7 @@
     "headingAccent": "services for your business",
     "subheading": "From idea validation and prototyping, to mobile app development, web applications, IT consulting, and ongoing support. Everything under one roof.",
     "cardCta": "Tell us your idea",
+    "consultationCta": "Book a consultation",
     "items": [
       { "title": "Custom App Development", "description": "We design and build custom applications tailored to exactly how your business works, for your success and your customers." },
       { "title": "Idea Validation and MVP", "description": "Not sure if your idea will work? We help you validate it before spending a penny on a full build. We then create a Minimum Viable Product (MVP) so you can test it with real users fast." },
@@ -131,9 +132,8 @@
       "requiredSuffix": "are required.",
       "enquiryType": "What can we help you with?",
       "enquiryOptions": {
-        "quote": "I need a quote for a project",
-        "consultation": "Business idea consultation",
-        "general": "General query"
+        "consultation": "Consultation request",
+        "general": "General question"
       },
       "name": "Full name",
       "namePlaceholder": "Jane Murphy",

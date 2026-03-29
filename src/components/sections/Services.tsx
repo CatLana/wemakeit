@@ -85,11 +85,11 @@ export default function Services() {
                   </p>
 
                   <a
-                    href="#quote"
-                    aria-label={`${t("cardCta")}: ${item.title}`}
+                    href={i === 8 ? "?inquiry=consultation#quote" : "#quote"}
+                    aria-label={`${i === 8 ? t("consultationCta") : t("cardCta")}: ${item.title}`}
                     className="mt-5 inline-flex items-center text-sm font-semibold text-[#0E7490] hover:text-[#0891B2] transition-colors group-hover:gap-2 gap-1 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                   >
-                    {t("cardCta")}
+                    {i === 8 ? t("consultationCta") : t("cardCta")}
                     <span aria-hidden="true">→</span>
                   </a>
                 </article>
