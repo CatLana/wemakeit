@@ -1,126 +1,126 @@
 {
   "metadata": {
     "title": "Sviluppo App e Web per Startup e PMI | We Make IT",
-    "description": "Trasformiamo la tua idea in un'app o sito web. Sede in Irlanda, 15+ anni di esperienza, prezzo fisso. Prima consulenza gratuita.",
+    "description": "Trasformiamo idee in app e siti web. Lavoriamo remotamente in tutto il mondo, oltre 15 anni di esperienza, prezzo fisso. Prima consulenza gratuita.",
     "ogTitle": "Sviluppo App e Web per Startup e PMI | We Make IT",
     "ogDescription": "Hai un'idea imprenditoriale? Ti aiutiamo a validarla, pianificarla e realizzarla. Prima consulenza gratuita."
   },
   "header": {
-    "logoAriaLabel": "We Make IT - Home",
+    "logoAriaLabel": "We Make IT — Home",
     "nav": {
-      "whatWeDo": "Cosa Facciamo",
+      "whatWeDo": "Servizi",
       "aboutUs": "Chi Siamo",
       "howItWorks": "Come Funziona",
       "blog": "Blog",
-      "talkToUs": "Parliamo"
+      "talkToUs": "Contattaci"
     },
-    "cta": "Richiedi un preventivo",
+    "cta": "Richiedi Preventivo",
     "openMenu": "Apri menu",
     "closeMenu": "Chiudi menu",
-    "mobileNavLabel": "Navigazione mobile",
-    "mainNavLabel": "Navigazione principale"
+    "mobileNavLabel": "Menu mobile",
+    "mainNavLabel": "Menu principale"
   },
   "hero": {
-    "badge": "Con sede in Irlanda",
+    "badge": "Lavoriamo remotamente in tutto il mondo",
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
-    "subtitle": "Hai un'idea imprenditoriale? La trasformiamo in una vera app o sito web. Un team, un prezzo, nessuna sorpresa.",
-    "springSale": "Offerta Primavera: 40% di sconto per i nuovi clienti. Posti limitati.",
+    "subtitle": "Hai un'idea imprenditoriale? La trasformiamo in app o sito web. Un team, un prezzo, senza costi nascosti.",
+    "springSale": "Offerta Primavera: 40% sconto per nuovi clienti. Posti limitati.",
     "cta1": "Raccontaci la tua idea",
     "cta2": "Come funziona",
-    "ariaLabel": "Hero: We Make IT home"
+    "ariaLabel": "Schermata principale We Make IT"
   },
   "stats": {
-    "ariaLabel": "I nostri numeri",
+    "ariaLabel": "I nostri punti di forza",
     "items": [
       {
-        "value": "15+",
-        "label": "Anni di Sviluppo App e Web",
-        "ariaLabel": "Oltre 15 anni di sviluppo app e siti web"
+        "value": "100%",
+        "label": "Remotamente da tutto il mondo",
+        "ariaLabel": "Lavoriamo remotamente con clienti di tutto il mondo"
       },
       {
         "value": "Gratis",
-        "label": "Prima Consulenza. Senza Impegno.",
+        "label": "Prima consulenza senza impegno",
         "ariaLabel": "Prima consulenza gratuita senza impegno"
       },
       {
         "value": "1",
-        "label": "Prezzo Fisso. Nessun Extra.",
+        "label": "Prezzo fisso senza costi extra",
         "ariaLabel": "Un prezzo fisso senza costi nascosti"
       },
       {
         "value": "3",
-        "label": "Lingue Parlate",
-        "ariaLabel": "Lavoriamo in tre lingue: inglese, italiano e russo"
+        "label": "Lingue parlate",
+        "ariaLabel": "Lavoriamo in italiano, inglese e russo"
       }
     ]
   },
   "services": {
-    "eyebrow": "Cosa Facciamo",
+    "eyebrow": "Cosa facciamo",
     "heading": "Sviluppo app e web per la tua azienda",
     "headingPlain": "Sviluppo app e web",
     "headingAccent": "per la tua azienda",
-    "subheading": "Dalla validazione dell'idea e prototipazione, allo sviluppo di app mobile e applicazioni web, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
+    "subheading": "Dalla validazione idea e prototipazione, allo sviluppo app mobile e web, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
     "cardCta": "Raccontaci la tua idea",
-    "consultationCta": "Prenota una consulenza",
+    "consultationCta": "Prenota consulenza",
     "items": [
       {
         "title": "Sviluppo App su Misura",
-        "description": "Progettiamo e sviluppiamo applicazioni personalizzate, costruite su come funziona la tua azienda, per il tuo successo e i tuoi clienti."
+        "description": "Progettiamo e sviluppiamo app che rispondono esattamente alle esigenze della tua azienda e dei tuoi clienti."
       },
       {
         "title": "Validazione Idea e MVP",
-        "description": "Non sei sicuro che la tua idea funzioni? Ti aiutiamo a validarla prima di spendere un euro. Realizziamo poi un Prodotto Minimo Vitale (MVP) per testarlo con utenti reali."
+        "description": "Non sicuro che l'idea funzioni? La validiamo prima di sviluppare completamente e creiamo un MVP per testarla."
       },
       {
-        "title": "UX Research",
-        "description": "Hai già un prodotto o prototipo? Come agenzia UX design, ricerchiamo come le persone reali lo usano, troviamo le criticità e ti diamo un elenco chiaro di miglioramenti."
+        "title": "Ricerca UX",
+        "description": "Hai già un prodotto o prototipo? Studiamo come le persone reali lo usano, troviamo i problemi e proponiamo miglioramenti prioritari."
       },
       {
         "title": "UX Design",
-        "description": "Il report UX è pronto? Possiamo aiutarti nello sviluppo dei design per affrontare i problemi di usabilità. Se necessario, possiamo occuparci anche della parte di implementazione."
+        "description": "Report UX pronto? Ti aiutiamo con design e usabilità. Se serve, ci occupiamo anche dell'implementazione."
       },
       {
         "title": "Prototipo App",
-        "description": "Prima di impegnarti in uno sviluppo completo, creiamo un prototipo interattivo. Puoi navigarci, testarlo con gli utenti e raccogliere feedback dagli investitori."
+        "description": "Prima dello sviluppo completo, creiamo un prototipo interattivo da testare con utenti e investitori."
       },
       {
         "title": "Sviluppo App Mobile",
-        "description": "Sviluppiamo app mobile che funzionano su iOS e Android con un'unica base di codice, contenendo i costi senza compromettere estetica e funzionalità."
+        "description": "Sviluppiamo app iOS e Android con un'unica base codice: costi ridotti senza compromettere qualità e funzionalità."
       },
       {
-        "title": "Sviluppo Applicazioni Web",
-        "description": "Hai bisogno di qualcosa di più potente di un sito? Sviluppiamo web app: dashboard, sistemi di prenotazione, portali, marketplace. Se puoi immaginarlo, possiamo costruirlo."
+        "title": "Sviluppo Web App",
+        "description": "Serve qualcosa di più potente di un sito? Creiamo web app: dashboard, sistemi prenotazione, portali, marketplace."
       },
       {
         "title": "Audit Accessibilità",
-        "description": "La normativa europea richiede che i prodotti digitali siano accessibili alle persone con disabilità. Analizziamo la tua app o sito e correggiamo ciò che non va."
+        "description": "Controlliamo i prodotti digitali per conformità accessibilità e apportiamo le correzioni necessarie."
       },
       {
-        "title": "Consulenza Software",
-        "description": "Non sai cosa sviluppare, quale tecnologia scegliere o se la tua idea è realizzabile? Il nostro servizio di consulenza ti dà risposte oneste e senza tecnicismi."
+        "title": "Consulenza IT",
+        "description": "Ti aiutiamo a capire cosa sviluppare, quali tecnologie scegliere e se la tua idea è realistica."
       },
       {
         "title": "Manutenzione e Supporto",
-        "description": "Hai già un'app che necessita di assistenza? Ci occupiamo del supporto continuo, correggiamo i bug, aggiungiamo nuove funzionalità e manteniamo tutto in funzione."
+        "description": "Ci occupiamo della manutenzione app/sito: correggiamo bug, aggiungiamo funzionalità, garantiamo funzionamento stabile."
       }
     ]
   },
   "founder": {
-    "eyebrow": "Un Messaggio dalla Fondatrice",
-    "opening": "Come la maggior parte degli utenti, la mia pazienza per i software goffi è poca. Credo che ogni app dovrebbe avere senso. La maggior parte ancora non ce l'ha.",
-    "name": "Mi chiamo Lana.",
-    "identity": "Innovatrice creativa, consulente IT per aspiranti imprenditori IT, sviluppatrice frontend e fondatrice di We Make IT.",
-    "bio": "Ho oltre otto anni di esperienza nello sviluppo web, con focus sull'ingegneria frontend e il design accessibile. Sono anche una UX designer certificata. Lavoro con un team di ingegneri full-stack con oltre 15 anni di esperienza.",
-    "passion": "Risolvere problemi reali e rendere la vita più semplice è ciò che mi motiva. Mi importa profondamente creare software accessibile. Tutti meritano un'esperienza digitale senza frustrazioni. La mia missione è aiutare gli imprenditori a creare prodotti che i loro clienti amino.",
-    "differenceHeading": "Cosa rende i nostri servizi diversi?",
-    "differenceHighlight": "Un sincero interesse per la risoluzione dei problemi.",
-    "differenceText": "Se hai un problema, troviamo la soluzione. Chiaro e diretto.",
-    "quote": "Quando la tua azienda risolve un problema reale per persone reali, è lì che inizia il successo.",
-    "quoteFooter": "E sappiamo come aiutarti a raggiungerlo.",
-    "callout": "Condividi la tua idea qui sotto per un preventivo gratuito.",
+    "eyebrow": "Parola della Fondatrice",
+    "opening": "Quando uso siti e app complessi, ho l'impressione di sprecare tempo risolvendo problemi che non esisterebbero con un design interfaccia fatto bene. Prodotti digitali poco chiari complicano la vita a tutti noi utenti. Credo che un buon UX e accessibilità per utenti con qualsiasi capacità rendano le aziende di successo e i clienti soddisfatti.",
+    "name": "Mi chiamo Svetlana.",
+    "identity": "Sono consulente IT creativa, sviluppatrice frontend e fondatrice di We Make IT.",
+    "bio": "Oltre otto anni di esperienza nello sviluppo web, specializzata in frontend e design accessibile. Sono anche UX designer certificata. Lavoro con un team di ingegneri full-stack con oltre 15 anni di esperienza.",
+    "passion": "Mi motiva risolvere problemi reali e creare prodotti che semplificano la vita. Curo particolarmente l'accessibilità: ogni persona deve poter usare prodotti digitali senza complicazioni. La mia missione è aiutare gli imprenditori a creare servizi che i clienti amino.",
+    "differenceHeading": "Cosa ci distingue?",
+    "differenceHighlight": "Interesse sincero per risolvere problemi.",
+    "differenceText": "Se c'è un problema, troviamo una soluzione chiara ed efficace.",
+    "quote": "Se la tua azienda risolve un problema reale per persone reali, il primo passo verso il successo è fatto.",
+    "quoteFooter": "E sappiamo come aiutarti a continuare il percorso.",
+    "callout": "Condividi la tua idea qui sotto — preventivo gratuito.",
     "cta": "Raccontaci la tua idea",
-    "imgAlt": "Lana, fondatrice di We Make IT"
+    "imgAlt": "Svetlana, fondatrice We Make IT"
   },
   "about": {
     "eyebrow": "Chi Siamo",
@@ -159,51 +159,51 @@
     "eyebrow": "Come Funziona",
     "headingLine1": "Dall'idea all'app",
     "headingLine2": "in cinque semplici passi",
-    "subheading": "Raccontaci la tua idea e pensiamo a tutto il resto.",
+    "subheading": "Raccontaci la tua idea, al resto pensiamo noi.",
     "cta": "Raccontaci la tua idea",
     "steps": [
       {
         "number": "01",
-        "title": "Raccontaci la Tua Idea",
-        "description": "Compila il modulo e descrivi la tua idea con parole semplici."
+        "title": "Raccontaci la tua idea",
+        "description": "Compila il form e descrivi l'idea con parole semplici."
       },
       {
         "number": "02",
-        "title": "Ti Inviamo un Preventivo",
-        "description": "Esaminiamo la tua idea e ti inviamo un costo stimato e un potenziale piano di realizzazione."
+        "title": "Ti inviamo il preventivo",
+        "description": "Studiamo i dettagli e ti mandiamo costo indicativo e piano."
       },
       {
         "number": "03",
-        "title": "Valuti la Proposta",
-        "description": "Valuti la nostra proposta e se decidi di procedere, fissiamo un appuntamento online o di persona per discutere i dettagli."
+        "title": "Valuti la proposta",
+        "description": "Valuti la nostra offerta e fissiamo incontro online/persona."
       },
       {
         "number": "04",
-        "title": "Stringiamo la Mano",
-        "description": "Quando sei pronto per iniziare, firmiamo un semplice contratto per mettere tutto per iscritto."
+        "title": "Firmiamo il contratto",
+        "description": "Quando sei pronto, formalizziamo con contratto."
       },
       {
         "number": "05",
-        "title": "Iniziamo il Lavoro",
-        "description": "Paghi il deposito e iniziamo a costruire. Semplice così."
+        "title": "Iniziamo a lavorare",
+        "description": "Paghi l'anticipo e partiamo con lo sviluppo."
       }
     ]
   },
   "ctaStrip": {
-    "heading": "Non sei sicuro che la tua idea sia pronta?",
-    "body1": "È esattamente il momento di parlarci. Compila il modulo con i dettagli sulla tua idea e ti daremo un feedback.",
-    "body2": "Con esperienza interna nel Design Thinking e nell'MVP, ti aiutiamo a validare la tua idea prima di impegnarti in uno sviluppo completo.",
-    "cta": "Compila il modulo"
+    "heading": "Non sicuro se l'idea è pronta?",
+    "body1": "È il momento perfetto per parlarne. Compila il form con i dettagli e ti diamo feedback.",
+    "body2": "Con esperienza Design Thinking e MVP, validiamo l'idea prima dello sviluppo completo.",
+    "cta": "Compila il form"
   },
   "contact": {
-    "eyebrow": "Richiedi un Preventivo",
-    "heading": "Raccontaci la Tua Idea",
-    "body": "Compila il modulo con più dettagli possibili. Più ci racconti, più accurati saranno il preventivo e il piano.",
+    "eyebrow": "Richiedi Preventivo",
+    "heading": "Raccontaci la tua idea",
+    "body": "Compila con più dettagli possibile. Più informazioni = preventivo e piano più precisi.",
     "officeLabel": "Ufficio",
     "contactLink": "Domande?",
-    "contactLinkText": "Scrivici un messaggio",
+    "contactLinkText": "Scrivici",
     "linkedinLabel": "LinkedIn",
-    "linkedinNewTab": "(si apre in una nuova scheda)",
+    "linkedinNewTab": "(si apre in nuova scheda)",
     "form": {
       "requiredNote": "I campi contrassegnati",
       "requiredSr": "con un asterisco",
@@ -286,91 +286,91 @@
     }
   },
   "newsletter": {
-    "heading": "Ricevi Codici Sconto Esclusivi",
-    "body": "Iscriviti alla nostra newsletter e ricevi codici sconto esclusivi e accesso anticipato alle offerte speciali.",
-    "emailLabel": "Indirizzo email",
-    "emailPlaceholder": "tua@email.com",
+    "heading": "Codici Sconto Esclusivi",
+    "body": "Iscriviti e ricevi codici sconto esclusivi sulle nostre servizi.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tuo@email.com",
     "submit": "Iscriviti",
-    "subscribing": "Iscrizione…",
-    "consentPrefix": "Iscrivendoti accetti la nostra",
-    "consentLink": "Informativa sulla Privacy",
-    "consentSuffix": "e acconsenti a ricevere email di marketing. Puoi disiscriverti in qualsiasi momento.",
-    "success": "Sei dentro! Ti invieremo codici sconto e offerte direttamente nella tua casella.",
-    "alreadySubscribed": "Sei già nella lista. Tieni d'occhio la tua casella!",
-    "error": "Qualcosa è andato storto. Riprova."
+    "subscribing": "Iscrizione...",
+    "consentPrefix": "Iscrivendoti accetti",
+    "consentLink": "Privacy Policy",
+    "consentSuffix": "e email marketing. Disiscriviti quando vuoi.",
+    "success": "Iscritto! Codici e offerte arrivano via email.",
+    "alreadySubscribed": "Già iscritto. Controlla email!",
+    "error": "Errore. Riprova."
   },
   "footer": {
     "springSaleTitle": "Offerta Primavera",
-    "springSaleBody": "40% di sconto per i nuovi clienti questa primavera. Blocca il tuo tariffe ora.",
-    "springSaleBeat": "Hai già un preventivo da un'altra azienda?",
-    "springSaleSendIt": "Mandacelo",
-    "springSaleBeatSuffix": "e lo batteremo.",
-    "tagline": "Aiutiamo imprenditori e piccole imprese a trasformare le loro idee in app e siti web reali. Con sede in Irlanda, lavoriamo a livello globale.",
-    "copyright": "We Make IT è un imprenditore individuale registrato in Irlanda.",
-    "languageNote": "Tra l'altro, parliamo anche l'inglese e il russo.",
-    "footerLabel": "Piè di pagina",
+    "springSaleBody": "40% sconto nuovi clienti. Blocca il prezzo ora.",
+    "springSaleBeat": "Hai altro preventivo?",
+    "springSaleSendIt": "Inviacelo",
+    "springSaleBeatSuffix": "lo valutiamo.",
+    "tagline": "Aiutiamo PMI e startup a trasformare idee in app/siti reali. Lavoriamo remotamente worldwide.",
+    "copyright": "We Make IT \u2014 imprenditore individuale registrato in Irlanda.",
+    "languageNote": "Parliamo anche inglese e russo.",
+    "footerLabel": "Footer",
     "sections": {
       "services": "Servizi",
       "company": "Azienda",
       "legal": "Legale"
     },
     "serviceLinks": [
-      "Sviluppo Frontend",
-      "Sviluppo Backend",
+      "Frontend",
+      "Backend",
       "Accessibilità (WCAG)",
       "UX Design",
-      "Sviluppo Siti Web"
+      "Siti Web"
     ],
     "companyLinks": {
       "aboutUs": "Chi Siamo",
       "howItWorks": "Come Funziona",
       "blog": "Blog",
-      "getAQuote": "Richiedi un Preventivo"
+      "getAQuote": "Preventivo"
     },
     "legalLinks": {
-      "privacyPolicy": "Informativa sulla Privacy",
-      "cookiePolicy": "Informativa sui Cookie",
-      "termsOfService": "Termini di Servizio",
-      "accessibilityStatement": "Dichiarazione di Accessibilità"
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy",
+      "termsOfService": "Termini",
+      "accessibilityStatement": "Accessibilità"
     }
   },
   "contactPage": {
-    "title": "Contattaci | We Make IT",
-    "description": "Contatta We Make IT. Invia la tua domanda tramite il modulo qui sotto.",
+    "title": "Contatti | We Make IT",
+    "description": "Contatta We Make IT via form.",
     "eyebrow": "Contattaci",
-    "heading": "Inviaci un Messaggio",
-    "body": "Hai una domanda? Compila il modulo e ti risponderemo.",
-    "mapLabel": "Mappa di Ashbourne, Co. Meath, Irlanda",
-    "locationHeading": "Dove Siamo",
+    "heading": "Scrivici",
+    "body": "Hai domande? Compila il form.",
+    "mapLabel": "Mappa Ashbourne, Co. Meath, Irlanda",
+    "locationHeading": "Dove siamo",
     "locationText": "Ashbourne, Co. Meath, Irlanda",
     "form": {
-      "name": "Nome e cognome",
+      "name": "Nome e Cognome",
       "namePlaceholder": "Mario Rossi",
-      "email": "Indirizzo email",
+      "email": "Email",
       "emailPlaceholder": "mario@azienda.it",
-      "phone": "Telefono (opzionale)",
+      "phone": "Telefono (opz.)",
       "phonePlaceholder": "+39 ...",
-      "message": "La tua domanda",
-      "messagePlaceholder": "Dicci come possiamo aiutarti...",
+      "message": "Il tuo messaggio",
+      "messagePlaceholder": "Come possiamo aiutarti...",
       "submit": "Invia",
-      "submitting": "Invio in corso...",
-      "consentText": "Cliccando su Invia, accetti la nostra",
-      "consentLink": "Informativa sulla Privacy",
-      "consentSuffix": "e acconsenti al trattamento di questi dati per rispondere alla tua richiesta.",
-      "successTitle": "Messaggio inviato!",
-      "successBody": "Ti risponderemo al più presto.",
-      "sendAnother": "Invia un altro messaggio",
-      "nameError": "Inserisci il tuo nome e cognome",
-      "emailError": "Inserisci un indirizzo email valido",
-      "messageError": "Inserisci il tuo messaggio",
-      "serverError": "Qualcosa è andato storto. Riprova."
+      "submitting": "Invio...",
+      "consentText": "Cliccando accetti",
+      "consentLink": "Privacy Policy",
+      "consentSuffix": "per rispondere alla tua richiesta.",
+      "successTitle": "Inviato!",
+      "successBody": "Rispondiamo presto.",
+      "sendAnother": "Altro messaggio",
+      "nameError": "Inserisci nome",
+      "emailError": "Email non valida",
+      "messageError": "Inserisci messaggio",
+      "serverError": "Errore. Riprova."
     }
   },
   "cookieBanner": {
-    "ariaLabel": "Consenso ai cookie",
-    "text": "Utilizziamo cookie strettamente necessari per il funzionamento del sito. Non utilizziamo cookie di tracciamento o pubblicitari senza il tuo consenso.",
-    "learnMore": "Scopri di più",
-    "essential": "Solo essenziali",
-    "acceptAll": "Accetta tutti i cookie"
+    "ariaLabel": "Consenso Cookie",
+    "text": "Usiamo solo cookie necessari. Niente tracciamento/pubblicità senza consenso.",
+    "learnMore": "Maggiori info",
+    "essential": "Solo necessari",
+    "acceptAll": "Accetta tutti"
   }
 }
