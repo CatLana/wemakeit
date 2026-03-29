@@ -33,10 +33,26 @@
   "stats": {
     "ariaLabel": "Company highlights",
     "items": [
-      { "value": "15+", "label": "Years Building Apps and Websites", "ariaLabel": "15 plus years building apps and websites" },
-      { "value": "Free", "label": "First Consultation. No Commitment.", "ariaLabel": "Free first consultation with no commitment required" },
-      { "value": "1", "label": "Fixed Price. No Hidden Extras.", "ariaLabel": "One fixed price with no hidden extras" },
-      { "value": "3", "label": "Languages Spoken", "ariaLabel": "We work in three languages: English, Italian and Russian" }
+      {
+        "value": "15+",
+        "label": "Years Building Apps and Websites",
+        "ariaLabel": "15 plus years building apps and websites"
+      },
+      {
+        "value": "Free",
+        "label": "First Consultation. No Commitment.",
+        "ariaLabel": "Free first consultation with no commitment required"
+      },
+      {
+        "value": "1",
+        "label": "Fixed Price. No Hidden Extras.",
+        "ariaLabel": "One fixed price with no hidden extras"
+      },
+      {
+        "value": "3",
+        "label": "Languages Spoken",
+        "ariaLabel": "We work in three languages: English, Italian and Russian"
+      }
     ]
   },
   "services": {
@@ -44,20 +60,58 @@
     "heading": "App and website development services for your business",
     "headingPlain": "App and website development",
     "headingAccent": "services for your business",
-    "subheading": "From idea validation and prototyping, to mobile app development, web applications, IT consulting, and ongoing support. Everything under one roof.",
+    "subheading": "From idea validation and prototyping, to mobile app development, web applications, localisation services, IT consulting, and ongoing support. Everything under one roof.",
     "cardCta": "Tell us your idea",
     "consultationCta": "Book a consultation",
     "items": [
-      { "title": "Custom App Development", "description": "We design and build custom applications tailored to exactly how your business works, for your success and your customers." },
-      { "title": "Idea Validation and MVP", "description": "Not sure if your idea will work? We help you validate it before spending a penny on a full build. We then create a Minimum Viable Product (MVP) so you can test it with real users fast." },
-      { "title": "UX Research", "description": "Already have a product or prototype? We help handling the research on how real people use your product, find what is confusing or broken, and give you a clear, prioritised list of improvements." },
-    { "title": "UX Design", "description": "Got a UX report? We turn findings into polished designs and, if needed, handle implementation too." },
-      { "title": "App Prototype", "description": "Before committing to a full build, we create an interactive prototype of your app. You can click through it, test it with users, and get investor feedback." },
-      { "title": "Mobile App Development", "description": "We build mobile apps that work on both iOS and Android from a single codebase, keeping costs down without compromising on look or feel." },
-      { "title": "Web Application Development", "description": "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces and more." },
-      { "title": "Accessibility Audits", "description": "EU law now requires digital products to be accessible to people with disabilities. We audit your existing app or website and fix what needs fixing." },
-      { "title": "Software Consultancy", "description": "Not sure what to build, which technology to choose, or whether your idea is viable? We are here to help." },
-      { "title": "Maintenance and Support", "description": "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly." }
+      {
+        "title": "Custom App Development",
+        "description": "We design and build custom applications tailored to exactly how your business works, for your success and your customers."
+      },
+      {
+        "title": "Idea Validation and MVP",
+        "description": "Not sure if your idea will work? We help you validate it before spending a penny on a full build. We then create a Minimum Viable Product (MVP) so you can test it with real users fast."
+      },
+      {
+        "title": "UX Research",
+        "description": "Already have a product or prototype? We help handling the research on how real people use your product, find what is confusing or broken, and give you a clear, prioritised list of improvements."
+      },
+      {
+        "title": "UX Design",
+        "description": "Got a UX report? We turn findings into polished designs and, if needed, handle implementation too."
+      },
+      {
+        "title": "App Prototype",
+        "description": "Before committing to a full build, we create an interactive prototype of your app. You can click through it, test it with users, and get investor feedback."
+      },
+      {
+        "title": "Mobile App Development",
+        "description": "We build mobile apps that work on both iOS and Android from a single codebase, keeping costs down without compromising on look or feel."
+      },
+      {
+        "title": "Web Application Development",
+        "description": "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces and more."
+      },
+      {
+        "title": "Accessibility Audits",
+        "description": "EU law now requires digital products to be accessible to people with disabilities. We audit your existing app or website and fix what needs fixing."
+      },
+      {
+        "title": "Software Consultancy",
+        "description": "Not sure what to build, which technology to choose, or whether your idea is viable? We are here to help."
+      },
+      {
+        "title": "Maintenance and Support",
+        "description": "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly."
+      },
+      {
+        "title": "Website & App Localisation",
+        "description": "We handle the full localisation of your website or app — from translating content into multiple languages to integrating i18n tokens in your codebase. Reach new audiences without the headache."
+      },
+      {
+        "title": "Multi-Market Product Development",
+        "description": "Building a product for multiple markets? We design and develop online products localised for different regions, languages, and cultural expectations — so you can launch globally with confidence."
+      }
     ]
   },
   "founder": {
@@ -91,10 +145,22 @@
     "visualRegions": "Europe · Remote · Worldwide",
     "languageNote": "By the way, we also speak",
     "values": [
-      { "title": "We Welcome Every Client", "description": "No idea is too small. Whether you are a startup founder, a business owner, or someone just exploring an idea, we are happy to talk. Free first consultation, no commitment required." },
-      { "title": "Big-Company Experience", "description": "Our team has 15+ years of experience building products at major tech companies. We bring that expertise and quality to every project, no matter the size." },
-      { "title": "Personal Attention, Every Step", "description": "You work directly with our team, not a sales rep or account manager. Expect fast replies, straight talk, and genuine care from first idea to launch and beyond." },
-      { "title": "One Fixed Price. No Surprises.", "description": "You know exactly what you are paying before we start. No hidden extras, no surprise invoices. Got a quote from another company? We will beat it." }
+      {
+        "title": "We Welcome Every Client",
+        "description": "No idea is too small. Whether you are a startup founder, a business owner, or someone just exploring an idea, we are happy to talk. Free first consultation, no commitment required."
+      },
+      {
+        "title": "Big-Company Experience",
+        "description": "Our team has 15+ years of experience building products at major tech companies. We bring that expertise and quality to every project, no matter the size."
+      },
+      {
+        "title": "Personal Attention, Every Step",
+        "description": "You work directly with our team, not a sales rep or account manager. Expect fast replies, straight talk, and genuine care from first idea to launch and beyond."
+      },
+      {
+        "title": "One Fixed Price. No Surprises.",
+        "description": "You know exactly what you are paying before we start. No hidden extras, no surprise invoices. Got a quote from another company? We will beat it."
+      }
     ]
   },
   "process": {
@@ -104,11 +170,31 @@
     "subheading": "Tell us your idea and we will take it from there.",
     "cta": "Tell us your idea",
     "steps": [
-      { "number": "01", "title": "Tell Us Your Idea", "description": "Fill in the form and describe your idea in plain words." },
-      { "number": "02", "title": "We Send You a Quote", "description": "We review your idea and send you an estimated cost range and a potential implementation plan." },
-      { "number": "03", "title": "You Review the Proposal", "description": "You review the proposal and we schedule a consultation meeting online or offline to discuss further details." },
-      { "number": "04", "title": "We Shake Hands", "description": "When you are ready to start, we sign a simple contract to get everything in writing." },
-      { "number": "05", "title": "We Start the Work", "description": "You pay the deposit and we get building. Easy as that." }
+      {
+        "number": "01",
+        "title": "Tell Us Your Idea",
+        "description": "Fill in the form and describe your idea in plain words."
+      },
+      {
+        "number": "02",
+        "title": "We Send You a Quote",
+        "description": "We review your idea and send you an estimated cost range and a potential implementation plan."
+      },
+      {
+        "number": "03",
+        "title": "You Review the Proposal",
+        "description": "You review the proposal and we schedule a consultation meeting online or offline to discuss further details."
+      },
+      {
+        "number": "04",
+        "title": "We Shake Hands",
+        "description": "When you are ready to start, we sign a simple contract to get everything in writing."
+      },
+      {
+        "number": "05",
+        "title": "We Start the Work",
+        "description": "You pay the deposit and we get building. Easy as that."
+      }
     ]
   },
   "ctaStrip": {
@@ -229,7 +315,7 @@
     "springSaleBeatSuffix": "and we will beat it.",
     "tagline": "We help entrepreneurs and small businesses turn their ideas into real apps and websites. Based in Ireland, working globally.",
     "copyright": "We Make IT Sole Trader company registered in Ireland.",
-    "languageNote": "By the way, we also speak Italiano and \u0420\u0443\u0441\u0441\u043a\u0438\u0439.",
+    "languageNote": "By the way, we also speak Italiano and Русский.",
     "footerLabel": "Site footer",
     "sections": {
       "services": "Services",

@@ -60,7 +60,7 @@
     "heading": "Sviluppo app e web per la tua azienda",
     "headingPlain": "Sviluppo app e web",
     "headingAccent": "per la tua azienda",
-    "subheading": "Dalla validazione idea e prototipazione, allo sviluppo app mobile e web, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
+    "subheading": "Dalla validazione idea e prototipazione, allo sviluppo app mobile e web, servizi di localizzazione, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
     "cardCta": "Raccontaci la tua idea",
     "consultationCta": "Prenota consulenza",
     "items": [
@@ -103,6 +103,14 @@
       {
         "title": "Manutenzione e Supporto",
         "description": "Ci occupiamo della manutenzione app/sito: correggiamo bug, aggiungiamo funzionalità, garantiamo funzionamento stabile."
+      },
+      {
+        "title": "Localizzazione Siti e App",
+        "description": "Gestiamo la localizzazione completa del tuo sito o app: dalla traduzione dei contenuti in più lingue all'integrazione dei token i18n nel codice. Raggiungi nuovi mercati senza complicazioni."
+      },
+      {
+        "title": "Sviluppo Prodotti Multi-Mercato",
+        "description": "Stai sviluppando un prodotto per più mercati? Progettiamo e sviluppiamo prodotti online localizzati per diverse regioni, lingue e aspettative culturali — per un lancio globale sicuro."
       }
     ]
   },
@@ -306,7 +314,7 @@
     "springSaleSendIt": "Inviacelo",
     "springSaleBeatSuffix": "lo valutiamo.",
     "tagline": "Aiutiamo PMI e startup a trasformare idee in app/siti reali. Lavoriamo remotamente worldwide.",
-    "copyright": "We Make IT \u2014 imprenditore individuale registrato in Irlanda.",
+    "copyright": "We Make IT — imprenditore individuale registrato in Irlanda.",
     "languageNote": "Parliamo anche inglese e russo.",
     "footerLabel": "Footer",
     "sections": {
