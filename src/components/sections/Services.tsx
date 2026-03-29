@@ -9,6 +9,8 @@ import {
   Briefcase,
   Users,
   Wrench,
+  Languages,
+  Globe2,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -24,6 +26,8 @@ const servicesMeta = [
   { icon: Briefcase,   color: "text-orange-400",  bg: "bg-orange-400/10" },
   { icon: Users,       color: "text-teal-400",    bg: "bg-teal-400/10" },
   { icon: Wrench,      color: "text-slate-400",   bg: "bg-slate-400/10" },
+  { icon: Languages,   color: "text-cyan-400",    bg: "bg-cyan-400/10" },
+  { icon: Globe2,      color: "text-indigo-400",  bg: "bg-indigo-400/10" },
 ];
 
 export default function Services() {

@@ -44,7 +44,7 @@
     "heading": "App and website development services for your business",
     "headingPlain": "App and website development",
     "headingAccent": "services for your business",
-    "subheading": "From idea validation and prototyping, to mobile app development, web applications, IT consulting, and ongoing support. Everything under one roof.",
+    "subheading": "From idea validation and prototyping, to mobile app development, web applications, localisation services, IT consulting, and ongoing support. Everything under one roof.",
     "cardCta": "Tell us your idea",
     "consultationCta": "Book a consultation",
     "items": [
@@ -57,7 +57,9 @@
       { "title": "Web Application Development", "description": "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces and more." },
       { "title": "Accessibility Audits", "description": "EU law now requires digital products to be accessible to people with disabilities. We audit your existing app or website and fix what needs fixing." },
       { "title": "Software Consultancy", "description": "Not sure what to build, which technology to choose, or whether your idea is viable? We are here to help." },
-      { "title": "Maintenance and Support", "description": "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly." }
+      { "title": "Maintenance and Support", "description": "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly." },
+      { "title": "Website & App Localisation", "description": "We handle the full localisation of your website or app — from translating content into multiple languages to integrating i18n tokens in your codebase. Reach new audiences without the headache." },
+      { "title": "Multi-Market Product Development", "description": "Building a product for multiple markets? We design and develop online products localised for different regions, languages, and cultural expectations — so you can launch globally with confidence." }
     ]
   },
   "founder": {
