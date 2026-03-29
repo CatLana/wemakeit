@@ -1,9 +1,9 @@
 {
   "metadata": {
     "title": "Custom App & Web Development Ireland | We Make IT",
-    "description": "Turn your idea into an app or website. Irish-based, 15+ years experience, fixed price. Free first consultation. No tech knowledge needed.",
+    "description": "Turn your idea into an app or website. Irish-based, 15+ years experience, fixed price. Free first consultation.",
     "ogTitle": "Custom App & Web Development Ireland | We Make IT",
-    "ogDescription": "Got a business idea? We help you validate it, plan it, and build it. No tech knowledge needed. Free first consultation."
+    "ogDescription": "Got a business idea? We help you validate it, plan it, and build it. Free first consultation."
   },
   "header": {
     "logoAriaLabel": "We Make IT - Home",
@@ -24,7 +24,7 @@
     "badge": "Based in Ireland",
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
-    "subtitle": "Got a business idea? We help you turn it into a real app or website. No tech knowledge needed. One team, one price, no surprises.",
+    "subtitle": "Got a business idea? We turn it into a real app or website. One team, one price, no surprises.",
     "springSale": "Spring Sale: 40% off for new clients. Limited spots available.",
     "cta1": "Tell us your idea",
     "cta2": "How it works",
@@ -36,7 +36,7 @@
       { "value": "15+", "label": "Years Building Apps and Websites", "ariaLabel": "15 plus years building apps and websites" },
       { "value": "Free", "label": "First Consultation. No Commitment.", "ariaLabel": "Free first consultation with no commitment required" },
       { "value": "1", "label": "Fixed Price. No Hidden Extras.", "ariaLabel": "One fixed price with no hidden extras" },
-      { "value": "0", "label": "Tech Knowledge Required From You", "ariaLabel": "Zero technical knowledge required from you" }
+      { "value": "3", "label": "Languages Spoken", "ariaLabel": "We work in three languages: English, Italian and Russian" }
     ]
   },
   "services": {
@@ -47,13 +47,13 @@
     "subheading": "From idea validation and prototyping, to mobile app development, web applications, IT consulting, and ongoing support. Everything under one roof.",
     "cardCta": "Tell us your idea",
     "items": [
-      { "title": "Custom App Development", "description": "We design and build custom applications tailored to exactly how your business works. Just the right tool, tailored for your success and your happy customers." },
+      { "title": "Custom App Development", "description": "We design and build custom applications tailored to exactly how your business works, for your success and your customers." },
       { "title": "Idea Validation and MVP", "description": "Not sure if your idea will work? We help you validate it before spending a penny on a full build. We then create a Minimum Viable Product (MVP) so you can test it with real users fast." },
       { "title": "UX Research", "description": "Already have a product or prototype? We help handling the research on how real people use your product, find what is confusing or broken, and give you a clear, prioritised list of improvements." },
-    { "title": "UX Design", "description": "UX report is ready? We can help with the development of designs to tackle the usablity. If reuqired we can take over the implementation part on us." },
+    { "title": "UX Design", "description": "Got a UX report? We turn findings into polished designs and, if needed, handle implementation too." },
       { "title": "App Prototype", "description": "Before committing to a full build, we create an interactive prototype of your app. You can click through it, test it with users, and get investor feedback." },
       { "title": "Mobile App Development", "description": "We build mobile apps that work on both iOS and Android from a single codebase, keeping costs down without compromising on look or feel." },
-      { "title": "Web Application Development", "description": "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces and other." },
+      { "title": "Web Application Development", "description": "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces and more." },
       { "title": "Accessibility Audits", "description": "EU law now requires digital products to be accessible to people with disabilities. We audit your existing app or website and fix what needs fixing." },
       { "title": "Software Consultancy", "description": "Not sure what to build, which technology to choose, or whether your idea is viable? We are here to help." },
       { "title": "Maintenance and Support", "description": "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly." }
@@ -61,17 +61,17 @@
   },
   "founder": {
     "eyebrow": "A Message From Our Founder",
-    "opening": "I am just like you, an everyday user juggling countless apps and tools. And, like many of you, my patience for clunky or confusing software is very short. I love intuitive experiences, the kind where everything simply makes sense. But the truth is that most apps still do not feel that way.",
+    "opening": "Like most users, my patience for clunky software is short. I believe every app should just make sense. Most still do not.",
     "name": "My name is Lana.",
     "identity": "Creative innovator, IT consultant, frontend developer and the founder of We Make IT.",
-    "bio": "For more than eight years, I have worked in web development across large companies and small teams. My focus has always been frontend engineering, inclusive and accessible design. I am also a certified UX designer with a passion for bringing my own entrepreneurial projects in technology to life. I am supported by a team of brilliant full-stack engineers with over fifteen years of experience. Together, we make your IT dreams happen.",
-    "passion": "Years of reflection led me to this conclusion: solving problems for myself and others to make life simpler and less stressful is what I love most. And above all, to optimise the use of our own time — when the services we use are simple and clear, more time is left for the things that truly matter. I care deeply about creating software that is accessible to every person regardless of their needs. We all deserve to move through our digital lives with as little frustration as possible. All of us use applications on daily basis to go through the tasks at work or personal life and, whether we like it or not, but they shape our everyday experience. My mission is to help entrepreneurs and businesses create products that make their customers' lives easier and happier.",
+    "bio": "I have over eight years in web development, focused on frontend engineering and accessible design. I am also a certified UX designer. I work with a team of full-stack engineers with over 15 years of experience.",
+    "passion": "Solving real problems and making life simpler is what drives me. I care deeply about accessible software. Everyone deserves a frustration-free digital experience. My mission is to help entrepreneurs build products their customers love.",
     "differenceHeading": "So what makes our services different?",
     "differenceHighlight": "A genuine interest in solving problems and accessibility-first approach.",
-    "differenceText": "If you have a problem, we will find the solution. Clear, direct, and without unnecessary complications.",
+    "differenceText": "If you have a problem, we find the solution. Clear and direct.",
     "quote": "When your business solves a real problem for real people, that is where success begins.",
     "quoteFooter": "And we know how to help you reach that point.",
-    "callout": "Share your idea in the form below to get a free quote. Your clear product for happy customers starts here.",
+    "callout": "Share your idea below for a free quote.",
     "cta": "Tell us your idea",
     "imgAlt": "Lana, founder of We Make IT"
   },
@@ -79,9 +79,9 @@
     "eyebrow": "About Us",
     "headingLine1": "We turn your idea",
     "headingLine2": "into a real digital product.",
-    "body1": "We Make IT is a software development studio based in Ireland. We help small businesses and first-time founders and individuals bring their technical ideas to live, give consultations and improve or maintain their exististing projects.",
-    "body2": "We will answer all your technical questions and help bring your goals to life.",
-    "body3": "Our team brings a unique combination of experience not only in full-stack development, but also in accessible and inclusive design, UX processes, and online sales. Our work is guided by expertise in business idea value proposition validation and Design Thinking. We have worked at large tech companies and now bring that experience to small and medium-sized businesses.",
+    "body1": "We Make IT is a software development studio based in Ireland. We help businesses and founders bring ideas to life, and offer consulting and support for existing projects.",
+    "body2": "From your first question to launch and beyond, we are with you.",
+    "body3": "Our team combines full-stack development, accessible design, UX, and business expertise. We have worked at large tech companies and bring that experience to small and medium-sized businesses.",
     "tagline": "Wherever you are, if you have an idea, we would love to hear it.",
     "cta": "Get a free quote",
     "visualLabel": "We Make IT - Ireland",
@@ -98,12 +98,12 @@
     "eyebrow": "How It Works",
     "headingLine1": "From idea to app",
     "headingLine2": "in five simple steps",
-    "subheading": "You do not need to be technical to get started. Just tell us your idea and we will take it from there.",
+    "subheading": "Tell us your idea and we will take it from there.",
     "cta": "Tell us your idea",
     "steps": [
-      { "number": "01", "title": "Tell Us Your Idea", "description": "Fill in our short form below and describe your idea in plain words. No technical knowledge needed." },
-      { "number": "02", "title": "We Send You a Quote", "description": "We review your idea and send you an estimated cost and a potential implementation plan." },
-      { "number": "03", "title": "You Review the Proposal", "description": "You review our proposal and if you decide to move forward, we schedule a time for an online or in-person meeting to discuss further details." },
+      { "number": "01", "title": "Tell Us Your Idea", "description": "Fill in the form and describe your idea in plain words." },
+      { "number": "02", "title": "We Send You a Quote", "description": "We review your idea and send you an estimated cost range and a potential implementation plan." },
+      { "number": "03", "title": "You Review the Proposal", "description": "You review the proposal and we schedule a consultation meeting online or offline to discuss further details." },
       { "number": "04", "title": "We Shake Hands", "description": "When you are ready to start, we sign a simple contract to get everything in writing." },
       { "number": "05", "title": "We Start the Work", "description": "You pay the deposit and we get building. Easy as that." }
     ]
@@ -111,19 +111,16 @@
   "ctaStrip": {
     "heading": "Not sure if your idea is ready?",
     "body1": "That is exactly when to talk to us. Fill in the form with details about your idea and we will give you feedback.",
-    "body2": "We have in-house experience in Design Thinking and Minimum Viable Product design. We can help you figure out whether your idea can become a profitable business, or whether it is better to refine it first before spending money on development.",
+    "body2": "With in-house experience in Design Thinking and MVP, we help you validate your idea before committing to a full build.",
     "cta": "Fill in the form"
   },
   "contact": {
     "eyebrow": "Get a Quote",
     "heading": "Tell Us Your Idea",
-    "body": "Fill in the form and describe your idea in your own words. The more details you provide, the better we can understand the full picture and give you a more accurate cost estimate and implementation plan. Do not worry about technical terms — just tell us what you want to build, who it is for, and what problem it solves.",
-    "springSaleTitle": "Spring Sale Offer",
-    "springSaleBody": "40% off for new clients this spring. Submit your request now and lock in the discounted rate.",
-    "springSaleBeat": "Already have a quote from another company?",
-    "springSaleBeatHighlight": "Send it to us and we will beat it.",
+    "body": "Fill in the form with as much detail as you can. The more you share, the more accurate your quote and plan will be.",
     "officeLabel": "Office",
-    "emailLabel": "Email",
+    "contactLink": "Questions?",
+    "contactLinkText": "Send us a message",
     "linkedinLabel": "LinkedIn",
     "linkedinNewTab": "(opens in new tab)",
     "form": {
@@ -159,19 +156,19 @@
       "budget": "Estimated budget",
       "budgetPlaceholder": "Select a range…",
       "budgetOptions": {
-        "under5k": "Under €5,000",
-        "5k15k": "€5,000 – €15,000",
-        "15k30k": "€15,000 – €30,000",
-        "30k50k": "€30,000 – €50,000",
-        "over50k": "Over €50,000",
+        "under5k": "Under EUR 5,000",
+        "5k15k": "EUR 5,000 to EUR 15,000",
+        "15k30k": "EUR 15,000 to EUR 30,000",
+        "30k50k": "EUR 30,000 to EUR 50,000",
+        "over50k": "Over EUR 50,000",
         "notSure": "Not sure yet"
       },
       "timeline": "Desired timeline",
       "timelinePlaceholder": "Select a timeline…",
       "timelineOptions": {
         "asap": "As soon as possible",
-        "1to3": "1 – 3 months",
-        "3to6": "3 – 6 months",
+        "1to3": "1 to 3 months",
+        "3to6": "3 to 6 months",
         "flexible": "Flexible"
       },
       "hasDesign": "Do you have existing designs or mockups?",
@@ -198,7 +195,7 @@
       },
       "success": {
         "consultationTitle": "Consultation request sent!",
-        "consultationBody": "Thanks for reaching out. We will review your idea and get back to you with honest, jargon-free advice.",
+        "consultationBody": "Thanks for reaching out. We will review your idea and get back to you with honest advice.",
         "generalTitle": "Message sent!",
         "generalBody": "Thanks for getting in touch. We will get back to you shortly.",
         "quoteTitle": "Quote request sent!",
@@ -223,6 +220,11 @@
     "error": "Something went wrong. Please try again."
   },
   "footer": {
+    "springSaleTitle": "Spring Sale Offer",
+    "springSaleBody": "40% off for new clients this spring. Lock in your rate now.",
+    "springSaleBeat": "Got a quote from another company?",
+    "springSaleSendIt": "Send it to us",
+    "springSaleBeatSuffix": "and we will beat it.",
     "tagline": "We help entrepreneurs and small businesses turn their ideas into real apps and websites. Based in Ireland, working globally.",
     "copyright": "We Make IT Sole Trader company registered in Ireland.",
     "languageNote": "By the way, we also speak Italiano and \u0420\u0443\u0441\u0441\u043a\u0438\u0439.",
@@ -250,6 +252,38 @@
       "cookiePolicy": "Cookie Policy",
       "termsOfService": "Terms of Service",
       "accessibilityStatement": "Accessibility Statement"
+    }
+  },
+  "contactPage": {
+    "title": "Contact | We Make IT",
+    "description": "Get in touch with We Make IT. Send us your question using the form below.",
+    "eyebrow": "Get in Touch",
+    "heading": "Send Us a Message",
+    "body": "Have a question? Fill in the form and we will get back to you.",
+    "mapLabel": "Map of Ashbourne, Co. Meath, Ireland",
+    "locationHeading": "Where We Are",
+    "locationText": "Ashbourne, Co. Meath, Ireland",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Email address",
+      "emailPlaceholder": "jane@company.ie",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+353 ...",
+      "message": "Your question",
+      "messagePlaceholder": "Tell us how we can help...",
+      "submit": "Submit",
+      "submitting": "Sending...",
+      "consentText": "By clicking Submit, you agree to our",
+      "consentLink": "Privacy Policy",
+      "consentSuffix": "and consent to this data being processed to respond to your enquiry.",
+      "successTitle": "Message sent!",
+      "successBody": "We will get back to you shortly.",
+      "sendAnother": "Send another message",
+      "nameError": "Please enter your full name",
+      "emailError": "Please enter a valid email address",
+      "messageError": "Please enter your message",
+      "serverError": "Something went wrong. Please try again."
     }
   },
   "cookieBanner": {

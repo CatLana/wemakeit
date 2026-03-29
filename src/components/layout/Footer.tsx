@@ -1,7 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Mail, MapPin, Globe } from "lucide-react";
+import { Mail, MapPin, Globe, Tag } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Footer() {
@@ -27,6 +27,35 @@ export default function Footer() {
             <p className="text-sm leading-relaxed mb-4 max-w-xs">
               {t("tagline")}
             </p>
+
+            {/* Spring sale banner */}
+            <div className="rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 p-4 mb-6">
+              <p className="text-xs font-semibold text-[#22D3EE] mb-1 flex items-center gap-1.5">
+                <Tag size={12} aria-hidden="true" />
+                {t("springSaleTitle")}
+              </p>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                {t("springSaleBody")}
+              </p>
+              <p className="text-xs text-slate-400 mt-1.5">
+                {t("springSaleBeat")}{" "}
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (typeof window !== "undefined") {
+                      import("@/components/sections/Contact").then((mod) => {
+                        if (mod.focusContactForm) mod.focusContactForm();
+                      });
+                    }
+                  }}
+                  className="text-[#22D3EE] underline underline-offset-2 hover:text-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                >
+                  {t("springSaleSendIt")}
+                </button>{" "}
+                {t("springSaleBeatSuffix")}
+              </p>
+            </div>
+
             <NewsletterSignup />
             {/* Contact info */}
             <address className="not-italic text-sm space-y-3 mt-6">

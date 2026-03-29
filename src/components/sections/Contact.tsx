@@ -5,8 +5,9 @@ import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail, MapPin, Linkedin, Tag } from "lucide-react";
+import { MessageSquare, MapPin, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 // Type is stable across locales since enum values are internal codes
 type FormValues = {
@@ -169,25 +170,11 @@ export default function Contact() {
             >
               {t("heading")}
             </h2>
-            <p className="text-slate-500 leading-relaxed mb-6 text-lg">
+            <p className="text-slate-500 leading-relaxed mb-8 text-lg">
               {t("body")}
             </p>
 
-            {/* Spring sale highlight */}
-            <div className="rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 p-5 mb-8">
-              <p className="text-sm font-semibold text-[#0F172A] mb-1 flex items-center gap-1.5">
-                <Tag size={14} aria-hidden="true" className="text-[#22D3EE]" />
-                {t("springSaleTitle")}
-              </p>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                {t("springSaleBody")}
-              </p>
-              <p className="text-sm text-slate-600 mt-2">
-                {t("springSaleBeat")}{" "}
-                <strong className="text-[#0F172A]">{t("springSaleBeatHighlight")}</strong>
-              </p>
-            </div>
-
+            <div className="hidden lg:block mt-8">
             <address className="not-italic space-y-5">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#22D3EE]/10 flex items-center justify-center">
@@ -205,16 +192,16 @@ export default function Contact() {
 
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#22D3EE]/10 flex items-center justify-center">
-                  <Mail size={18} className="text-[#22D3EE]" aria-hidden="true" />
+                  <MessageSquare size={18} className="text-[#22D3EE]" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#1E293B]">{t("emailLabel")}</p>
-                  <a
-                    href="mailto:info@wemakeit.ie"
+                  <p className="text-sm font-semibold text-[#1E293B]">{t("contactLink")}</p>
+                  <Link
+                    href="/contact"
                     className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                   >
-                    info@wemakeit.ie
-                  </a>
+                    {t("contactLinkText")}
+                  </Link>
                 </div>
               </div>
 
@@ -236,6 +223,7 @@ export default function Contact() {
                 </div>
               </div>
             </address>
+            </div>
           </div>
 
           {/* Right â€” quote form */}
@@ -494,6 +482,48 @@ export default function Contact() {
                 </button>
               </form>
             )}
+          </div>
+
+          {/* Mobile-only address — shown below form */}
+          <div className="lg:hidden">
+            <address className="not-italic space-y-5">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#22D3EE]/10 flex items-center justify-center">
+                  <MapPin size={18} className="text-[#22D3EE]" aria-hidden="true" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[#1E293B]">{t("officeLabel")}</p>
+                  <p className="text-sm text-slate-500">
+                    32 Millbourne Drive,
+                    <br />
+                    Ashbourne, Co. Meath, Ireland
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#22D3EE]/10 flex items-center justify-center">
+                  <MessageSquare size={18} className="text-[#22D3EE]" aria-hidden="true" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[#1E293B]">{t("contactLink")}</p>
+                  <Link href="/contact" className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                    {t("contactLinkText")}
+                  </Link>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#22D3EE]/10 flex items-center justify-center">
+                  <Linkedin size={18} className="text-[#22D3EE]" aria-hidden="true" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[#1E293B]">{t("linkedinLabel")}</p>
+                  <a href="https://linkedin.com/company/wemakeit" target="_blank" rel="noopener noreferrer" className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                    linkedin.com/company/wemakeit
+                    <span className="sr-only"> {t("linkedinNewTab")}</span>
+                  </a>
+                </div>
+              </div>
+            </address>
           </div>
         </div>
       </div>
