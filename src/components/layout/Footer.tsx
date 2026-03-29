@@ -77,7 +77,7 @@ export default function Footer() {
               </div>
             </address>
             {/* Language note */}
-            <p className="mt-5 text-xs text-slate-500 flex items-center gap-1.5">
+            <p className="mt-5 text-xs text-slate-400 flex items-center gap-1.5">
               <Globe size={12} aria-hidden="true" className="shrink-0" />
               <span>{t("languageNote")}</span>
             </p>

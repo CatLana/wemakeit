@@ -10,7 +10,7 @@ export default function Header() {
   const t = useTranslations("header");
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const drawerRef = useRef<HTMLElement>(null);
+  const drawerRef = useRef<HTMLDivElement>(null);
   const hamburgerRef = useRef<HTMLButtonElement>(null);
 
   const navLinks = [
@@ -45,15 +45,7 @@ export default function Header() {
   }, [open]);
 
   useEffect(() => {
-    const mainEl = document.getElementById("main-content");
-    const footerEl = document.querySelector("footer");
-    if (!open) {
-      mainEl?.removeAttribute("aria-hidden");
-      footerEl?.removeAttribute("aria-hidden");
-      return;
-    }
-    mainEl?.setAttribute("aria-hidden", "true");
-    footerEl?.setAttribute("aria-hidden", "true");
+    if (!open) return;
     const el = drawerRef.current;
     if (!el) return;
     const focusableSelectors = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
@@ -70,11 +62,7 @@ export default function Header() {
       }
     }
     document.addEventListener("keydown", trapFocus);
-    return () => {
-      document.removeEventListener("keydown", trapFocus);
-      mainEl?.removeAttribute("aria-hidden");
-      footerEl?.removeAttribute("aria-hidden");
-    };
+    return () => document.removeEventListener("keydown", trapFocus);
   }, [open]);
 
   return (
@@ -154,10 +142,13 @@ export default function Header() {
         />
       )}
 
-      {/* Mobile drawer */}
-      <nav
+      {/* Mobile drawer — role=dialog + aria-modal so AT restricts navigation
+           to this panel; a JS focus trap handles keyboard-only users. */}
+      <div
         ref={drawerRef}
         id="mobile-menu"
+        role="dialog"
+        aria-modal="true"
         aria-label={t("mobileNavLabel")}
         className={`fixed top-0 left-0 h-full w-72 z-50 bg-[#0F172A] transform transition-transform duration-300 md:hidden ${
           open ? "translate-x-0" : "-translate-x-full"
@@ -179,36 +170,38 @@ export default function Header() {
         <div className="px-6 pt-5 pb-2">
           <LanguageSwitcher />
         </div>
-        <ul className="flex flex-col px-6 py-4 gap-2" role="list">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href as "/"}
-                onClick={() => setOpen(false)}
-                className="flex items-center h-11 text-slate-300 hover:text-[#22D3EE] transition-colors font-medium text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+        <nav aria-label={t("mobileNavLabel")}>
+          <ul className="flex flex-col px-6 py-4 gap-2" role="list">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href as "/"}
+                  onClick={() => setOpen(false)}
+                  className="flex items-center h-11 text-slate-300 hover:text-[#22D3EE] transition-colors font-medium text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li className="mt-4">
+              <button
+                type="button"
+                onClick={() => {
+                  setOpen(false);
+                  if (typeof window !== "undefined") {
+                    import("@/components/sections/Contact").then(mod => {
+                      if (mod.focusContactForm) mod.focusContactForm();
+                    });
+                  }
+                }}
+                className="flex items-center justify-center h-11 px-5 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2"
               >
-                {link.label}
-              </Link>
+                {t("cta")}
+              </button>
             </li>
-          ))}
-          <li className="mt-4">
-            <button
-              type="button"
-              onClick={() => {
-                setOpen(false);
-                if (typeof window !== "undefined") {
-                  import("@/components/sections/Contact").then(mod => {
-                    if (mod.focusContactForm) mod.focusContactForm();
-                  });
-                }
-              }}
-              className="flex items-center justify-center h-11 px-5 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2"
-            >
-              {t("cta")}
-            </button>
-          </li>
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      </div>
     </>
   );
 }
