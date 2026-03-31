@@ -181,7 +181,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#1E293B]">{t("officeLabel")}</p>
-                  <p className="text-sm text-slate-500">Remote — working worldwide</p>
+                  <p className="text-sm text-slate-500">{t("officeLocation")}</p>
                 </div>
               </div>
 
@@ -483,7 +483,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#1E293B]">{t("officeLabel")}</p>
-                  <p className="text-sm text-slate-500">Remote — working worldwide</p>
+                  <p className="text-sm text-slate-500">{t("officeLocation")}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
