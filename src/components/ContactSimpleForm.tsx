@@ -114,7 +114,7 @@ export default function ContactSimpleForm() {
           {...register("name")}
         />
         {errors.name && (
-          <p id="sc-name-error" role="alert" className="text-xs text-rose-500 font-medium">
+          <p id="sc-name-error" role="alert" className="text-xs text-rose-700 font-medium">
             {errors.name.message}
           </p>
         )}
@@ -137,7 +137,7 @@ export default function ContactSimpleForm() {
           {...register("email")}
         />
         {errors.email && (
-          <p id="sc-email-error" role="alert" className="text-xs text-rose-500 font-medium">
+          <p id="sc-email-error" role="alert" className="text-xs text-rose-700 font-medium">
             {errors.email.message}
           </p>
         )}
@@ -174,7 +174,7 @@ export default function ContactSimpleForm() {
           {...register("message")}
         />
         {errors.message && (
-          <p id="sc-message-error" role="alert" className="text-xs text-rose-500 font-medium">
+          <p id="sc-message-error" role="alert" className="text-xs text-rose-700 font-medium">
             {errors.message.message}
           </p>
         )}
