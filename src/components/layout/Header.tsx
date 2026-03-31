@@ -75,7 +75,7 @@ export default function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-18">
+          <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link
               href="/"
@@ -87,7 +87,7 @@ export default function Header() {
             </Link>
 
             {/* Desktop nav */}
-            <nav aria-label={t("mainNavLabel")} className="hidden md:flex items-center gap-8">
+            <nav aria-label={t("mainNavLabel")} className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -100,7 +100,7 @@ export default function Header() {
             </nav>
 
             {/* Desktop right side: Language switcher + CTA */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-4">
               <LanguageSwitcher />
               <button
                 type="button"
@@ -125,7 +125,7 @@ export default function Header() {
               aria-expanded={open}
               aria-controls="mobile-menu"
               onClick={() => setOpen(!open)}
-              className="md:hidden flex items-center justify-center w-11 h-11 text-white rounded-lg hover:bg-white/10 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+              className="lg:hidden flex items-center justify-center w-11 h-11 text-white rounded-lg hover:bg-white/10 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
             >
               {open ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
             </button>
@@ -136,7 +136,7 @@ export default function Header() {
       {/* Mobile drawer overlay */}
       {open && (
         <div
-          className="fixed inset-0 z-40 bg-black/60 md:hidden"
+          className="fixed inset-0 z-40 bg-black/60 lg:hidden"
           aria-hidden="true"
           onClick={() => setOpen(false)}
         />
@@ -150,7 +150,7 @@ export default function Header() {
         role="dialog"
         aria-modal="true"
         aria-label={t("mobileNavLabel")}
-        className={`fixed top-0 left-0 h-full w-72 z-50 bg-[#0F172A] transform transition-transform duration-300 md:hidden ${
+        className={`fixed top-0 left-0 h-full w-72 z-50 bg-[#0F172A] transform transition-transform duration-300 lg:hidden ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
