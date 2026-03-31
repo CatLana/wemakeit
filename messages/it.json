@@ -34,11 +34,6 @@
     "ariaLabel": "I nostri punti di forza",
     "items": [
       {
-        "value": "100%",
-        "label": "Remotamente da tutto il mondo",
-        "ariaLabel": "Lavoriamo remotamente con clienti di tutto il mondo"
-      },
-      {
         "value": "Gratis",
         "label": "Prima consulenza senza impegno",
         "ariaLabel": "Prima consulenza gratuita senza impegno"
@@ -49,8 +44,14 @@
         "ariaLabel": "Un prezzo fisso senza costi nascosti"
       },
       {
+        "value": "",
+        "icon": "Globe",
+        "label": "Con sede in Irlanda, lavoriamo in tutto il mondo",
+        "ariaLabel": "Con sede in Irlanda, lavoriamo con clienti in tutto il mondo"
+      },
+      {
         "value": "3",
-        "label": "Lingue parlate",
+        "label": "Tre lingue: italiano, inglese e russo",
         "ariaLabel": "Lavoriamo in italiano, inglese e russo"
       }
     ]

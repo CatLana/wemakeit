@@ -33,10 +33,10 @@
   "stats": {
     "ariaLabel": "Company highlights",
     "items": [
-      { "value": "15+", "label": "Years Building Apps and Websites", "ariaLabel": "15 plus years building apps and websites" },
       { "value": "Free", "label": "First Consultation. No Commitment.", "ariaLabel": "Free first consultation with no commitment required" },
       { "value": "1", "label": "Fixed Price. No Hidden Extras.", "ariaLabel": "One fixed price with no hidden extras" },
-      { "value": "3", "label": "Languages Spoken", "ariaLabel": "We work in three languages: English, Italian and Russian" }
+      { "value": "", "icon": "Globe", "label": "Based in Ireland, working globally", "ariaLabel": "Based in Ireland, working with clients globally" },
+      { "value": "3", "label": "Three languages: English, Italian and Russian", "ariaLabel": "We work in three languages: English, Italian and Russian" }
     ]
   },
   "services": {
