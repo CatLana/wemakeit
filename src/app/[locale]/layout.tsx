@@ -14,24 +14,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const BASE_URL = "https://wemakeit.ie";
-
-// hreflang alternate tags per locale
-const hreflangMap: Record<string, { hreflang: string; href: string }[]> = {
-  en: [
-    { hreflang: "en", href: `${BASE_URL}/en` },
-    { hreflang: "en-IE", href: `${BASE_URL}/en` },
-    { hreflang: "x-default", href: `${BASE_URL}/en` },
-  ],
-  it: [
-    { hreflang: "it", href: `${BASE_URL}/it` },
-    { hreflang: "it-IT", href: `${BASE_URL}/it` },
-    { hreflang: "it-CH", href: `${BASE_URL}/it` },
-  ],
-  ru: [
-    { hreflang: "ru", href: `${BASE_URL}/ru` },
-  ],
-};
+const BASE_URL = "https://www.wemakeit.ie";
 
 const ogLocaleMap: Record<string, string> = {
   en: "en_IE",
@@ -51,11 +34,14 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
 
-  const alts = hreflangMap[locale] ?? [];
-  const languages: Record<string, string> = {};
-  for (const { hreflang, href } of alts) {
-    languages[hreflang] = href;
-  }
+  const languages: Record<string, string> = {
+    "x-default": `${BASE_URL}/en`,
+    en: `${BASE_URL}/en`,
+    "en-IE": `${BASE_URL}/en`,
+    it: `${BASE_URL}/it`,
+    "it-IT": `${BASE_URL}/it`,
+    ru: `${BASE_URL}/ru`,
+  };
 
   return {
     metadataBase: new URL(BASE_URL),

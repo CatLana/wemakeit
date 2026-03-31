@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://wemakeit.ie/sitemap.xml",
+    sitemap: "https://www.wemakeit.ie/sitemap.xml",
   };
 }

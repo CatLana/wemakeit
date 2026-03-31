@@ -10,11 +10,30 @@ export const metadata: Metadata = {
     "Irish Grants for App Development 2026: LEO Grow Digital, Enterprise Ireland & Innovation Vouchers",
   description:
     "Complete guide to Irish government grants for app development in 2026. LEO Grow Digital up to €5,000, Enterprise Ireland Innovation Vouchers (€5k-€10k), and Competitive Start Fund up to €50,000. Eligibility, application steps, and official links.",
+  alternates: {
+    canonical: "https://www.wemakeit.ie/en/blog/irish-grants-for-app-development",
+    languages: {
+      en: "https://www.wemakeit.ie/en/blog/irish-grants-for-app-development",
+      it: "https://www.wemakeit.ie/it/blog/irish-grants-for-app-development",
+      ru: "https://www.wemakeit.ie/ru/blog/irish-grants-for-app-development",
+    },
+  },
   openGraph: {
     title: "Irish Grants for App Development 2026: Official Funding Guide",
     description:
       "Discover how to fund your app development in Ireland. Compare LEO Grow Digital, Innovation Vouchers, and Enterprise Ireland grants. Complete guide with official links and eligibility criteria.",
     type: "article",
+    publishedTime: "2026-03-24T00:00:00.000Z",
+    authors: ["We Make IT"],
+    url: "https://www.wemakeit.ie/en/blog/irish-grants-for-app-development",
+    images: [
+      {
+        url: "https://www.wemakeit.ie/api/og",
+        width: 1200,
+        height: 630,
+        alt: "Irish Grants for App Development 2026",
+      },
+    ],
   },
 };
 
@@ -25,8 +44,33 @@ export default async function ArticlePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Irish Grants for App Development 2026: Official Funding Guide",
+    description:
+      "Complete guide to Irish government grants for app development in 2026. LEO Grow Digital, Enterprise Ireland Innovation Vouchers, and Competitive Start Fund.",
+    datePublished: "2026-03-24T00:00:00.000Z",
+    dateModified: "2026-03-31T00:00:00.000Z",
+    author: { "@type": "Organization", name: "We Make IT", url: "https://www.wemakeit.ie" },
+    publisher: { "@type": "Organization", name: "We Make IT", url: "https://www.wemakeit.ie" },
+    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.wemakeit.ie/en/blog/irish-grants-for-app-development" },
+    inLanguage: "en",
+    about: [
+      { "@type": "Thing", name: "Enterprise Ireland Innovation Vouchers" },
+      { "@type": "Thing", name: "LEO Grow Digital Voucher" },
+      { "@type": "Thing", name: "Irish Business Grants" },
+    ],
+    keywords: "Irish grants app development, LEO Grow Digital, innovation vouchers Ireland, Enterprise Ireland funding, app development funding Ireland 2026",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <main id="main-content" tabIndex={-1}>
         {/* Article header */}
