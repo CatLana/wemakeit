@@ -44,7 +44,7 @@ export default async function PrivacyPolicyPage({
             {/* Introduction */}
             <section>
               <p className="text-base">
-                This Privacy Policy explains how <strong className="text-[#1E293B]">We Make IT</strong>, a sole trader business operated by <strong className="text-[#1E293B]">Lana [Surname]</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;), collects, uses, stores, and protects your personal data when you visit our website at <strong className="text-[#1E293B]">wemakeit.ie</strong> or engage our services.
+                This Privacy Policy explains how <strong className="text-[#1E293B]">We Make IT</strong>, a sole trader business operated by <strong className="text-[#1E293B]">Svetlana Savchenko</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;), collects, uses, stores, and protects your personal data when you visit our website at <strong className="text-[#1E293B]">wemakeit.ie</strong> or engage our services.
               </p>
               <p className="text-base mt-4">
                 We are committed to protecting your privacy and processing your personal data lawfully, fairly, and transparently in accordance with the <strong className="text-[#1E293B]">General Data Protection Regulation (GDPR)</strong> and the <strong className="text-[#1E293B]">Data Protection Acts 2018</strong> (Ireland).
@@ -57,8 +57,8 @@ export default async function PrivacyPolicyPage({
               <p>The data controller for your personal data is:</p>
               <div className="mt-3 rounded-xl bg-white border border-slate-200 p-5 text-sm space-y-1">
                 <p><strong className="text-[#1E293B]">We Make IT</strong></p>
-                <p>Operated by: Lana [Surname] (sole trader)</p>
-                <p>Address: 32 Millbourne Drive, Ashbourne, Co. Meath, Ireland</p>
+                <p>Operated by: Svetlana Savchenko (sole trader)</p>
+                <p>Registered: Ashbourne, Co. Meath, Ireland</p>
                 <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
               </div>
               <p className="mt-3 text-sm text-slate-500">
@@ -268,7 +268,7 @@ export default async function PrivacyPolicyPage({
               </p>
               <div className="mt-3 rounded-xl bg-white border border-slate-200 p-5 text-sm space-y-1">
                 <p><strong className="text-[#1E293B]">We Make IT</strong></p>
-                <p>32 Millbourne Drive, Ashbourne, Co. Meath, Ireland</p>
+                <p>Registered: Ashbourne, Co. Meath, Ireland</p>
                 <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
               </div>
             </section>

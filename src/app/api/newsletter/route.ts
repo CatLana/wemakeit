@@ -3,8 +3,6 @@ import { Resend } from "resend";
 import { z } from "zod";
 import { google } from "googleapis";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const schema = z.object({
   email: z.string().email(),
   consent: z.literal(true, { message: "Consent is required" }),
@@ -86,6 +84,7 @@ export async function POST(req: NextRequest) {
   }
 
   // Send admin notification (non-blocking)
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const { error: mailError } = await resend.emails.send({
     from: "We Make IT <onboarding@resend.dev>",
     to: ["ssavchenko8@gmail.com"],

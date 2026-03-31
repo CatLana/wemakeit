@@ -183,7 +183,7 @@ export default async function CookiePolicyPage({
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">7. Contact</h2>
               <p className="text-sm">
-                For questions about our use of cookies, contact us at <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a> or write to: We Make IT, 32 Millbourne Drive, Ashbourne, Co. Meath, Ireland.
+                For questions about our use of cookies, contact us at <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a> or write to: We Make IT, Ashbourne, Co. Meath, Ireland.
               </p>
             </section>
 

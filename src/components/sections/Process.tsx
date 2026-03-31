@@ -59,7 +59,7 @@ export default function Process() {
             className="inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2"
           >
             {t("cta")}
-            <span aria-hidden="true" className="ml-2">â†“</span>
+            <span aria-hidden="true" className="ml-2">↓</span>
           </a>
         </div>
       </div>

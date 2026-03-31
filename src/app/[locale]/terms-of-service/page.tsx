@@ -50,12 +50,12 @@ export default async function TermsOfServicePage({
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">1. About Us</h2>
               <p className="text-sm">
-                <strong className="text-[#1E293B]">We Make IT</strong> is a sole trader business operated by <strong className="text-[#1E293B]">Lana [Surname]</strong>, registered and trading in Ireland.
+                <strong className="text-[#1E293B]">We Make IT</strong> is a sole trader business operated by <strong className="text-[#1E293B]">Svetlana Savchenko</strong>, registered and trading in Ireland.
               </p>
               <div className="mt-3 rounded-xl bg-white border border-slate-200 p-5 text-sm space-y-1">
                 <p><strong className="text-[#1E293B]">We Make IT</strong></p>
-                <p>Operated by: Lana [Surname] (sole trader)</p>
-                <p>Address: 32 Millbourne Drive, Ashbourne, Co. Meath, Ireland</p>
+                <p>Operated by: Svetlana Savchenko (sole trader)</p>
+                <p>Registered: Ashbourne, Co. Meath, Ireland</p>
                 <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
               </div>
             </section>
@@ -64,7 +64,7 @@ export default async function TermsOfServicePage({
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">2. Definitions</h2>
               <ul className="list-disc pl-5 space-y-2 text-sm">
-                <li><strong className="text-[#1E293B]">&ldquo;We&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;</strong> refers to We Make IT and its operator Lana [Surname].</li>
+                <li><strong className="text-[#1E293B]">&ldquo;We&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;</strong> refers to We Make IT and its operator Svetlana Savchenko.</li>
                 <li><strong className="text-[#1E293B]">&ldquo;You&rdquo;, &ldquo;Client&rdquo;</strong> refers to the individual or business entity that engages our services.</li>
                 <li><strong className="text-[#1E293B]">&ldquo;Services&rdquo;</strong> means web development, mobile app development, UI/UX design, prototyping, software consultancy, UX research, accessibility audits, maintenance, and any other services agreed in writing.</li>
                 <li><strong className="text-[#1E293B]">&ldquo;Deliverables&rdquo;</strong> means the specific outputs produced under an agreed project scope (code, designs, documents, prototypes).</li>
@@ -311,7 +311,7 @@ export default async function TermsOfServicePage({
               <p className="text-sm">For questions about these Terms, please contact:</p>
               <div className="mt-3 rounded-xl bg-white border border-slate-200 p-5 text-sm space-y-1">
                 <p><strong className="text-[#1E293B]">We Make IT</strong></p>
-                <p>32 Millbourne Drive, Ashbourne, Co. Meath, Ireland</p>
+                <p>Registered: Ashbourne, Co. Meath, Ireland</p>
                 <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
               </div>
             </section>

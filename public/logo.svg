@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="64" fill="#0F172A"/>
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
+    font-family="system-ui, sans-serif" font-weight="800" font-size="128"
+    fill="#22D3EE">WM</text>
+  <rect x="64" y="368" width="384" height="6" rx="3" fill="#22D3EE"/>
+</svg>

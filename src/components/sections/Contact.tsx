@@ -158,7 +158,7 @@ export default function Contact() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20">
-          {/* Left â€” copy + contact details */}
+          {/* Left — copy + contact details */}
           <div className="lg:col-span-2">
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-3">
               {t("eyebrow")}
@@ -181,11 +181,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#1E293B]">{t("officeLabel")}</p>
-                  <p className="text-sm text-slate-500">
-                    32 Millbourne Drive,
-                    <br />
-                    Ashbourne, Co. Meath, Ireland
-                  </p>
+                  <p className="text-sm text-slate-500">Remote — working worldwide</p>
                 </div>
               </div>
 
@@ -211,12 +207,12 @@ export default function Contact() {
                 <div>
                   <p className="text-sm font-semibold text-[#1E293B]">{t("linkedinLabel")}</p>
                   <a
-                    href="https://linkedin.com/company/wemakeit"
+                    href="https://www.linkedin.com/in/svetlana-savchenko-08868764"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                   >
-                    linkedin.com/company/wemakeit
+                    linkedin.com/in/svetlana-savchenko-08868764
                     <span className="sr-only"> {t("linkedinNewTab")}</span>
                   </a>
                 </div>
@@ -225,7 +221,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right â€” quote form */}
+          {/* Right — quote form */}
           <div className="lg:col-span-3 rounded-2xl bg-white border border-slate-200 p-6 sm:p-10 shadow-sm">
             {submittedType !== null ? (
               <div
@@ -487,11 +483,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#1E293B]">{t("officeLabel")}</p>
-                  <p className="text-sm text-slate-500">
-                    32 Millbourne Drive,
-                    <br />
-                    Ashbourne, Co. Meath, Ireland
-                  </p>
+                  <p className="text-sm text-slate-500">Remote — working worldwide</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -511,8 +503,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#1E293B]">{t("linkedinLabel")}</p>
-                  <a href="https://linkedin.com/company/wemakeit" target="_blank" rel="noopener noreferrer" className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                    linkedin.com/company/wemakeit
+                  <a href="https://www.linkedin.com/in/svetlana-savchenko-08868764" target="_blank" rel="noopener noreferrer" className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                    linkedin.com/in/svetlana-savchenko-08868764
                     <span className="sr-only"> {t("linkedinNewTab")}</span>
                   </a>
                 </div>

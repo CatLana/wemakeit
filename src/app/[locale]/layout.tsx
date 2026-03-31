@@ -89,7 +89,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: `${BASE_URL}/og-image.jpg`,
+          url: `${BASE_URL}/api/og`,
           width: 1200,
           height: 630,
           alt: "We Make IT – Custom App & Web Development Ireland",
@@ -108,6 +108,9 @@ export async function generateMetadata({
       index: true,
       follow: true,
       googleBot: { index: true, follow: true },
+    },
+    icons: {
+      icon: "/images/favicon.PNG",
     },
   };
 }
@@ -135,13 +138,12 @@ export default async function LocaleLayout({
     "@type": "ProfessionalService",
     name: "We Make IT",
     url: BASE_URL,
-    logo: `${BASE_URL}/logo.png`,
-    image: `${BASE_URL}/og-image.jpg`,
+    logo: `${BASE_URL}/logo.svg`,
+    image: `${BASE_URL}/api/og`,
     description:
       "Custom app and website development for entrepreneurs and small businesses. Based in Ireland, working globally.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "32 Millbourne Drive",
       addressLocality: "Ashbourne",
       addressRegion: "Co. Meath",
       addressCountry: "IE",
@@ -155,7 +157,7 @@ export default async function LocaleLayout({
     areaServed: ["IE", "IT", "CH", "RU", "EU"],
     knowsLanguage: ["en", "it", "ru"],
     priceRange: "€€",
-    sameAs: ["https://linkedin.com/company/wemakeit"],
+    sameAs: ["https://www.linkedin.com/in/svetlana-savchenko-08868764"],
   };
 
   return (

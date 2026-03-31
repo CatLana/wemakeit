@@ -137,7 +137,7 @@ export default async function AccessibilityStatementPage({
               <div className="mt-3 rounded-xl bg-white border border-slate-200 p-5 text-sm space-y-1">
                 <p><strong className="text-[#1E293B]">We Make IT</strong></p>
                 <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
-                <p>Address: 32 Millbourne Drive, Ashbourne, Co. Meath, Ireland</p>
+                <p>Registered: Ashbourne, Co. Meath, Ireland</p>
               </div>
               <p className="mt-3 text-sm">
                 We aim to respond to accessibility feedback within <strong className="text-[#1E293B]">5 business days</strong> and to provide a remediation plan or an accessible alternative within a reasonable timeframe.

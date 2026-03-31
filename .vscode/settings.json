@@ -4,6 +4,11 @@
         "git add": true,
         "git commit": true,
         "git push": true,
-        "Set-Content": true
+        "Set-Content": true,
+        "Test-Path": true,
+        "npx tsc": true,
+        "npx next": true,
+        "Push-Location": true,
+        "Pop-Location": true
     }
 }
