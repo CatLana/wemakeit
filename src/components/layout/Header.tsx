@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback, startTransition } from "react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
@@ -12,6 +12,8 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
   const hamburgerRef = useRef<HTMLButtonElement>(null);
+  // Holds cleanup for the focus-trap listener, set asynchronously via rAF
+  const trapCleanupRef = useRef<(() => void) | null>(null);
 
   const navLinks = [
     { label: t("nav.whatWeDo"), href: "/#services" },
@@ -21,49 +23,71 @@ export default function Header() {
     { label: t("nav.talkToUs"), href: "/#quote" },
   ];
 
+  // Memoised so child onClick props are stable across renders
+  const toggleMenu = useCallback(() => {
+    startTransition(() => setOpen((prev) => !prev));
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    startTransition(() => setOpen(false));
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Single effect for all open-dependent side-effects
   useEffect(() => {
-    if (!open) return;
-    const handleKey = (e: KeyboardEvent) => {
+    document.body.style.overflow = open ? "hidden" : "";
+
+    if (!open) {
+      // Clean up any previously registered focus-trap listener
+      trapCleanupRef.current?.();
+      trapCleanupRef.current = null;
+      return;
+    }
+
+    const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setOpen(false);
+        closeMenu();
         hamburgerRef.current?.focus();
       }
     };
-    document.addEventListener("keydown", handleKey);
-    return () => document.removeEventListener("keydown", handleKey);
-  }, [open]);
+    document.addEventListener("keydown", handleEscape);
 
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
-  }, [open]);
+    // Defer DOM scan + focus + trap registration off the click's critical path.
+    // rAF fires after paint so it doesn't block INP.
+    const rafId = requestAnimationFrame(() => {
+      const el = drawerRef.current;
+      if (!el) return;
+      const sel = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+      const focusables = Array.from(el.querySelectorAll<HTMLElement>(sel));
+      focusables[0]?.focus({ preventScroll: true });
 
-  useEffect(() => {
-    if (!open) return;
-    const el = drawerRef.current;
-    if (!el) return;
-    const focusableSelectors = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
-    const focusables = Array.from(el.querySelectorAll<HTMLElement>(focusableSelectors));
-    if (focusables.length) focusables[0].focus();
-    function trapFocus(e: KeyboardEvent) {
-      if (e.key !== "Tab") return;
-      const first = focusables[0];
-      const last = focusables[focusables.length - 1];
-      if (e.shiftKey) {
-        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
-      } else {
-        if (document.activeElement === last) { e.preventDefault(); first.focus(); }
-      }
-    }
-    document.addEventListener("keydown", trapFocus);
-    return () => document.removeEventListener("keydown", trapFocus);
-  }, [open]);
+      const trapFocus = (e: KeyboardEvent) => {
+        if (e.key !== "Tab") return;
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (e.shiftKey) {
+          if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+        } else {
+          if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+      };
+      document.addEventListener("keydown", trapFocus);
+      trapCleanupRef.current = () => document.removeEventListener("keydown", trapFocus);
+    });
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      cancelAnimationFrame(rafId);
+      trapCleanupRef.current?.();
+      trapCleanupRef.current = null;
+      document.body.style.overflow = "";
+    };
+  }, [open, closeMenu]);
 
   return (
     <>
@@ -124,7 +148,7 @@ export default function Header() {
               aria-label={open ? t("closeMenu") : t("openMenu")}
               aria-expanded={open}
               aria-controls="mobile-menu"
-              onClick={() => setOpen(!open)}
+              onClick={toggleMenu}
               className="lg:hidden flex items-center justify-center w-11 h-11 text-white rounded-lg hover:bg-white/10 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
             >
               {open ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
@@ -133,14 +157,14 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile drawer overlay */}
-      {open && (
-        <div
-          className="fixed inset-0 z-40 bg-black/60 lg:hidden"
-          aria-hidden="true"
-          onClick={() => setOpen(false)}
-        />
-      )}
+      {/* Overlay — always in DOM, toggled via CSS to avoid layout cost of mount/unmount */}
+      <div
+        aria-hidden="true"
+        onClick={closeMenu}
+        className={`fixed inset-0 z-40 bg-black/60 lg:hidden transition-opacity duration-300 ${
+          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      />
 
       {/* Mobile drawer — role=dialog + aria-modal so AT restricts navigation
            to this panel; a JS focus trap handles keyboard-only users. */}
@@ -161,7 +185,7 @@ export default function Header() {
           <button
             type="button"
             aria-label={t("closeMenu")}
-            onClick={() => { setOpen(false); hamburgerRef.current?.focus(); }}
+            onClick={() => { closeMenu(); hamburgerRef.current?.focus(); }}
             className="flex items-center justify-center w-11 h-11 text-white rounded-lg hover:bg-white/10 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
           >
             <X size={22} aria-hidden="true" />
@@ -176,7 +200,7 @@ export default function Header() {
               <li key={link.href}>
                 <Link
                   href={link.href as "/"}
-                  onClick={() => setOpen(false)}
+                  onClick={closeMenu}
                   className="flex items-center h-11 text-slate-300 hover:text-[#22D3EE] transition-colors font-medium text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
                   {link.label}
@@ -187,7 +211,7 @@ export default function Header() {
               <button
                 type="button"
                 onClick={() => {
-                  setOpen(false);
+                  closeMenu();
                   if (typeof window !== "undefined") {
                     import("@/components/sections/Contact").then(mod => {
                       if (mod.focusContactForm) mod.focusContactForm();
