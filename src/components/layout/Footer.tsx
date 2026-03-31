@@ -90,6 +90,10 @@ export default function Footer() {
                 <li key={label}>
                   <Link
                     href="/#services"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                   >
                     {label}
