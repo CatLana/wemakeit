@@ -61,7 +61,7 @@ export default function Footer() {
             <address className="not-italic text-sm space-y-3 mt-6">
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-[#22D3EE]" aria-hidden="true" />
-                <span>Remote — working worldwide</span>
+                <span>{t("remoteText")}</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="shrink-0 text-[#22D3EE]" aria-hidden="true" />
