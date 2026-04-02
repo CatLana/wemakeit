@@ -16,7 +16,7 @@ const schema = z.object({
   competitorQuote: z.string().optional(),
 });
 
-const RECIPIENT = "ssavchenko8@gmail.com";
+const RECIPIENT = ["ssavchenko8@gmail.com", "info@wemakeit.ie"];
 
 const enquiryLabels: Record<string, string> = {
   "business-idea-consultation": "Business idea consultation",
@@ -157,7 +157,7 @@ export async function POST(req: NextRequest) {
 
   const { error } = await resend.emails.send({
     from: "We Make IT <onboarding@resend.dev>",
-    to: [RECIPIENT],
+    to: RECIPIENT,
     replyTo: data.email,
     subject: `[wemakeit.ie] ${subjectTag} from ${data.name}`,
     html: buildHtml(data),

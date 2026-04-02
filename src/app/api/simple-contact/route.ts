@@ -9,7 +9,7 @@ const schema = z.object({
   message: z.string().min(2),
 });
 
-const RECIPIENT = "ssavchenko8@gmail.com";
+const RECIPIENT = ["ssavchenko8@gmail.com", "info@wemakeit.ie"];
 
 function buildHtml(data: z.infer<typeof schema>): string {
   return `<!DOCTYPE html>
@@ -89,7 +89,7 @@ export async function POST(req: NextRequest) {
 
   const { error } = await resend.emails.send({
     from: "We Make IT <onboarding@resend.dev>",
-    to: [RECIPIENT],
+    to: RECIPIENT,
     replyTo: data.email,
     subject: `[wemakeit.ie] Contact message from ${data.name}`,
     html: buildHtml(data),

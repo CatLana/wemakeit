@@ -87,7 +87,7 @@ export async function POST(req: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   const { error: mailError } = await resend.emails.send({
     from: "We Make IT <onboarding@resend.dev>",
-    to: ["ssavchenko8@gmail.com"],
+    to: ["ssavchenko8@gmail.com", "info@wemakeit.ie"],
     replyTo: email,
     subject: "🔔 New newsletter subscriber",
     html: `
