@@ -145,6 +145,7 @@ export default function Contact() {
         return;
       }
       setSubmittedType(data.enquiryType);
+      document.getElementById("contact-form-card")?.scrollIntoView({ behavior: "smooth", block: "center" });
     } catch {
       setServerError(t("form.networkError"));
     }
@@ -222,7 +223,7 @@ export default function Contact() {
           </div>
 
           {/* Right — quote form */}
-          <div className="lg:col-span-3 rounded-2xl bg-white border border-slate-200 p-6 sm:p-10 shadow-sm">
+          <div id="contact-form-card" className="lg:col-span-3 rounded-2xl bg-white border border-slate-200 p-6 sm:p-10 shadow-sm">
             {submittedType !== null ? (
               <div
                 role="status"
