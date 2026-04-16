@@ -17,6 +17,11 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  images: {
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [390, 640, 750, 1080, 1920],
+    minimumCacheTTL: 31536000,
+  },
   experimental: {
     optimizePackageImports: [
       "lucide-react",
