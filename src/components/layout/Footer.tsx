@@ -14,7 +14,7 @@ export default function Footer() {
       aria-label={t("footerLabel")}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-2">
             <Link
@@ -59,8 +59,8 @@ export default function Footer() {
             <NewsletterSignup />
             {/* Contact info */}
             <address className="not-italic text-sm space-y-3 mt-6">
-              <div className="flex items-start gap-3">
-                <MapPin size={16} className="mt-0.5 shrink-0 text-[#22D3EE]" aria-hidden="true" />
+              <div className="flex items-center gap-3">
+                <MapPin size={16} className="shrink-0 text-[#22D3EE]" aria-hidden="true" />
                 <span>{t("remoteText")}</span>
               </div>
               <div className="flex items-center gap-3">
@@ -85,7 +85,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               {t("sections.services")}
             </h3>
-            <ul className="space-y-3" role="list">
+            <ul className="space-y-1" role="list">
               {serviceLabels.map((label) => (
                 <li key={label}>
                   <Link
@@ -94,7 +94,7 @@ export default function Footer() {
                       e.preventDefault();
                       document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                    className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                   >
                     {label}
                   </Link>
@@ -108,19 +108,19 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               {t("sections.company")}
             </h3>
-            <ul className="space-y-3" role="list">
+            <ul className="space-y-1" role="list">
               <li>
-                <Link href="/#about" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                <Link href="/#about" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("companyLinks.aboutUs")}
                 </Link>
               </li>
               <li>
-                <Link href="/#process" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                <Link href="/#process" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("companyLinks.howItWorks")}
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                <Link href="/blog" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("companyLinks.blog")}
                 </Link>
               </li>
@@ -134,7 +134,7 @@ export default function Footer() {
                       });
                     }
                   }}
-                  className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                  className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
                   {t("companyLinks.getAQuote")}
                 </button>
@@ -147,24 +147,24 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               {t("sections.legal")}
             </h3>
-            <ul className="space-y-3" role="list">
+            <ul className="space-y-1" role="list">
               <li>
-                <Link href="/privacy-policy" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                <Link href="/privacy-policy" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("legalLinks.privacyPolicy")}
                 </Link>
               </li>
               <li>
-                <Link href="/cookie-policy" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                <Link href="/cookie-policy" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("legalLinks.cookiePolicy")}
                 </Link>
               </li>
               <li>
-                <Link href="/terms-of-service" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                <Link href="/terms-of-service" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("legalLinks.termsOfService")}
                 </Link>
               </li>
               <li>
-                <Link href="/accessibility-statement" className="text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                <Link href="/accessibility-statement" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("legalLinks.accessibilityStatement")}
                 </Link>
               </li>

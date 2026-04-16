@@ -30,7 +30,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32 text-center">
         {/* Eyebrow badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-slate-400 mb-8">
           <MapPin size={14} aria-hidden="true" className="text-slate-400" />
@@ -51,7 +51,7 @@ export default function Hero() {
         </p>
 
         {/* Spring sale offer */}
-        <div className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-10">
+        <div className="inline-flex flex-wrap items-center gap-2 px-5 py-3 max-w-full rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-10">
           <Tag size={14} aria-hidden="true" />
           <span>{t("springSale")}</span>
         </div>

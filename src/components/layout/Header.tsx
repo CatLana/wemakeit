@@ -174,7 +174,7 @@ export default function Header() {
         role="dialog"
         aria-modal="true"
         aria-label={t("mobileNavLabel")}
-        className={`fixed top-0 left-0 h-full w-72 z-50 bg-[#0F172A] transform transition-transform duration-300 lg:hidden ${
+        className={`fixed top-0 left-0 h-full w-72 max-w-[85vw] z-50 bg-[#0F172A] transform transition-transform duration-300 lg:hidden ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
