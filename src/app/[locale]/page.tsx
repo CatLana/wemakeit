@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -9,7 +10,10 @@ import Founder from "@/components/sections/Founder";
 import About from "@/components/sections/About";
 import Process from "@/components/sections/Process";
 import CtaStrip from "@/components/sections/CtaStrip";
-import Contact from "@/components/sections/Contact";
+
+// Lazy-load the heavy Contact section: defers react-hook-form, zod and
+// @hookform/resolvers from the initial JS bundle (~105 KiB savings).
+const Contact = dynamic(() => import("@/components/sections/Contact"));
 
 export default async function HomePage({
   params,

@@ -9,6 +9,7 @@
         "npx tsc": true,
         "npx next": true,
         "Push-Location": true,
-        "Pop-Location": true
+        "Pop-Location": true,
+        "Rename-Item": true
     }
 }

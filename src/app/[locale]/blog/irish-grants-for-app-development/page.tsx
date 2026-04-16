@@ -178,9 +178,9 @@ export default async function ArticlePage({
               <strong>Eligibility:</strong> Limited companies with fewer than 250 employees and under €50 million turnover, registered with <a href="https://www.cro.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">the Companies Registration Office (CRO)</a>. Vouchers are valid for 12 months.
             </p>
 
-            <h3 className="text-xl font-bold text-[#1E293B] mt-8 mb-4">What Grants Fund (and Don't Fund)</h3>
+            <h3 className="text-xl font-bold text-[#1E293B] mt-8 mb-4">What Grants Fund (and Don&apos;t Fund)</h3>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
-              It's important to understand that most Irish grants do not pay for full, end-to-end app development. Instead, they fund the early, high-risk work that reduces project complexity and cost:
+              It&apos;s important to understand that most Irish grants do not pay for full, end-to-end app development. Instead, they fund the early, high-risk work that reduces project complexity and cost:
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-3">
               <strong>Typically funded by Innovation Vouchers and LEO Feasibility Grants:</strong>
@@ -254,13 +254,13 @@ export default async function ArticlePage({
               <div className="rounded-xl border border-slate-200 p-5">
                 <h3 className="text-base font-bold text-[#1E293B] mb-2">Be specific about your research questions</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  Grants fund unknown work, not known builds. Clearly articulate what you don't know about your app idea (user demand? technical feasibility? market size?) and how the funded research will answer those questions.
+                  Grants fund unknown work, not known builds. Clearly articulate what you don&apos;t know about your app idea (user demand? technical feasibility? market size?) and how the funded research will answer those questions.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200 p-5">
                 <h3 className="text-base font-bold text-[#1E293B] mb-2">Choose the right knowledge provider</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  For Innovation Vouchers, your knowledge provider's experience matters. Look for providers with expertise in your app's domain—whether that's e-commerce, health tech, FinTech, or another sector.
+                  For Innovation Vouchers, your knowledge provider&apos;s experience matters. Look for providers with expertise in your app&apos;s domain—whether that&apos;s e-commerce, health tech, FinTech, or another sector.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200 p-5">

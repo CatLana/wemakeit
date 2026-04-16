@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Link } from "@/i18n/navigation";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | We Make IT",
@@ -95,7 +96,7 @@ export default async function PrivacyPolicyPage({
                 <li>IP address (server logs)</li>
                 <li>Browser type and version</li>
                 <li>Device type and operating system</li>
-                <li>Pages visited and time spent (when analytics tools are in use — see our <a href="/cookie-policy" className="text-[#0E7490] hover:text-[#0891B2]">Cookie Policy</a>)</li>
+                <li>Pages visited and time spent (when analytics tools are in use — see our <Link href="/cookie-policy" className="text-[#0E7490] hover:text-[#0891B2]">Cookie Policy</Link>)</li>
                 <li>Referral source (how you found us)</li>
               </ul>
               <p className="mt-3 text-sm text-slate-500">
@@ -248,7 +249,7 @@ export default async function PrivacyPolicyPage({
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">11. Cookies</h2>
               <p className="text-sm">
-                Our website uses cookies. For full details of the cookies we use, their purposes, and how to manage or opt out of them, please read our <a href="/cookie-policy" className="text-[#0E7490] hover:text-[#0891B2]">Cookie Policy</a>.
+                Our website uses cookies. For full details of the cookies we use, their purposes, and how to manage or opt out of them, please read our <Link href="/cookie-policy" className="text-[#0E7490] hover:text-[#0891B2]">Cookie Policy</Link>.
               </p>
             </section>
 

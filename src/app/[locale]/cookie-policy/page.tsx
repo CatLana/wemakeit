@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Link } from "@/i18n/navigation";
 
 export const metadata: Metadata = {
   title: "Cookie Policy | We Make IT",
@@ -44,7 +45,7 @@ export default async function CookiePolicyPage({
             {/* Introduction */}
             <section>
               <p className="text-base">
-                This Cookie Policy explains what cookies are, which cookies <strong className="text-[#1E293B]">We Make IT</strong> uses on <strong className="text-[#1E293B]">wemakeit.ie</strong>, why we use them, and how you can manage or disable them. It should be read alongside our <a href="/privacy-policy" className="text-[#0E7490] hover:text-[#0891B2]">Privacy Policy</a>.
+                This Cookie Policy explains what cookies are, which cookies <strong className="text-[#1E293B]">We Make IT</strong> uses on <strong className="text-[#1E293B]">wemakeit.ie</strong>, why we use them, and how you can manage or disable them. It should be read alongside our <Link href="/privacy-policy" className="text-[#0E7490] hover:text-[#0891B2]">Privacy Policy</Link>.
               </p>
               <p className="text-base mt-4">
                 We operate under the EU <strong className="text-[#1E293B]">ePrivacy Directive</strong> (transposed in Ireland as the European Communities (Electronic Communications Networks and Services) (Privacy and Electronic Communications) Regulations 2011) and the <strong className="text-[#1E293B]">GDPR</strong>. Certain cookies require your consent before they are set; others are strictly necessary for the website to function and do not require consent.

@@ -112,7 +112,7 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
     reset,
     setValue,
   } = useForm<FormValues>({
@@ -211,10 +211,10 @@ export default function Contact() {
                     href="https://www.linkedin.com/in/svetlana-savchenko-08868764"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`Svetlana Savchenko on LinkedIn — ${t("linkedinNewTab")}`}
                     className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                   >
-                    linkedin.com/in/svetlana-savchenko-08868764
-                    <span className="sr-only"> {t("linkedinNewTab")}</span>
+                    Svetlana Savchenko on LinkedIn
                   </a>
                 </div>
               </div>
@@ -504,9 +504,14 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#1E293B]">{t("linkedinLabel")}</p>
-                  <a href="https://www.linkedin.com/in/svetlana-savchenko-08868764" target="_blank" rel="noopener noreferrer" className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                    linkedin.com/in/svetlana-savchenko-08868764
-                    <span className="sr-only"> {t("linkedinNewTab")}</span>
+                  <a
+                    href="https://www.linkedin.com/in/svetlana-savchenko-08868764"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Svetlana Savchenko on LinkedIn — ${t("linkedinNewTab")}`}
+                    className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                  >
+                    Svetlana Savchenko on LinkedIn
                   </a>
                 </div>
               </div>

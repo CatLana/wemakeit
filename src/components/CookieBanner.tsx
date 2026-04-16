@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, startTransition } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -12,7 +12,7 @@ export function useCookieConsent(): ConsentValue {
   const [consent, setConsent] = useState<ConsentValue>(null);
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY) as ConsentValue | null;
-    setConsent(stored ?? null);
+    startTransition(() => setConsent(stored ?? null));
   }, []);
   return consent;
 }
@@ -24,7 +24,7 @@ export default function CookieBanner() {
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
-    if (!stored) setVisible(true);
+    if (!stored) startTransition(() => setVisible(true));
   }, []);
 
   useEffect(() => {
