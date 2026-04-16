@@ -8,18 +8,21 @@ import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import CookieBannerLoader from "@/components/CookieBannerLoader";
 
-// Latin + extended (EN, IT) — no Cyrillic subset downloaded for these locales
+// Latin only (EN, IT) — Italian accented chars (à è é ì ò ù) are in the base
+// latin subset; latin-ext is only needed for Eastern European (Polish, Czech…)
 const interLatin = Inter({
   variable: "--font-inter",
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   display: "swap",
+  preload: true,
 });
 
-// Latin + Cyrillic (RU) — no latin-ext needed for Russian content
+// Latin + Cyrillic (RU)
 const interCyrillic = Inter({
   variable: "--font-inter",
   subsets: ["latin", "cyrillic"],
   display: "swap",
+  preload: true,
 });
 
 const BASE_URL = "https://www.wemakeit.ie";
