@@ -6,7 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import CookieBanner from "@/components/CookieBanner";
+import CookieBannerLoader from "@/components/CookieBannerLoader";
 
 // Latin + extended (EN, IT) — no Cyrillic subset downloaded for these locales
 const interLatin = Inter({
@@ -201,7 +201,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
           <Suspense fallback={null}>
-            <CookieBanner />
+            <CookieBannerLoader />
           </Suspense>
         </NextIntlClientProvider>
       </body>
