@@ -1,4 +1,11 @@
 {
+    // Copilot customization
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true
+    },
+    "github.copilot.chat.generateTests.codeLens": false,
+
     "chat.tools.terminal.autoApprove": {
         "npm audit": true,
         "git add": true,
