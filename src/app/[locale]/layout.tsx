@@ -8,9 +8,17 @@ import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import CookieBanner from "@/components/CookieBanner";
 
-const inter = Inter({
+// Latin + extended (EN, IT) — no Cyrillic subset downloaded for these locales
+const interLatin = Inter({
   variable: "--font-inter",
-  subsets: ["latin", "latin-ext", "cyrillic"],
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+});
+
+// Latin + Cyrillic (RU) — no latin-ext needed for Russian content
+const interCyrillic = Inter({
+  variable: "--font-inter",
+  subsets: ["latin", "cyrillic"],
   display: "swap",
 });
 
@@ -168,8 +176,10 @@ export default async function LocaleLayout({
     url: BASE_URL,
   };
 
+  const font = locale === "ru" ? interCyrillic : interLatin;
+
   return (
-    <html lang={locale} className={inter.variable}>
+    <html lang={locale} className={font.variable}>
       <head>
         <script
           type="application/ld+json"
