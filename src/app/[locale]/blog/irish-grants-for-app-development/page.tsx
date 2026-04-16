@@ -53,8 +53,9 @@ export default async function ArticlePage({
       "Complete guide to Irish government grants for app development in 2026. LEO Grow Digital, Enterprise Ireland Innovation Vouchers, and Competitive Start Fund.",
     datePublished: "2026-03-24T00:00:00.000Z",
     dateModified: "2026-03-31T00:00:00.000Z",
-    author: { "@type": "Organization", name: "We Make IT", url: "https://www.wemakeit.ie" },
+    author: { "@type": "Person", name: "Svetlana Savchenko", url: "https://www.linkedin.com/in/svetlana-savchenko-08868764" },
     publisher: { "@type": "Organization", name: "We Make IT", url: "https://www.wemakeit.ie" },
+    image: "https://www.wemakeit.ie/api/og",
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.wemakeit.ie/en/blog/irish-grants-for-app-development" },
     inLanguage: "en",
     about: [
@@ -65,11 +66,25 @@ export default async function ArticlePage({
     keywords: "Irish grants app development, LEO Grow Digital, innovation vouchers Ireland, Enterprise Ireland funding, app development funding Ireland 2026",
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `https://www.wemakeit.ie/${locale}` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `https://www.wemakeit.ie/${locale}/blog` },
+      { "@type": "ListItem", position: 3, name: "Irish Grants for App Development 2026" },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Header />
       <main id="main-content" tabIndex={-1}>

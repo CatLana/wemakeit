@@ -1,15 +1,44 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Blog: App and Business Ideas for Irish Entrepreneurs | We Make IT",
-  description:
-    "Practical guides on building apps, finding funding, and turning your business idea into a digital product. Written for Irish entrepreneurs by the We Make IT team.",
-};
+const BASE_URL = "https://www.wemakeit.ie";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "blog" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: `${BASE_URL}/${locale}/blog`,
+      languages: {
+        "x-default": `${BASE_URL}/en/blog`,
+        en: `${BASE_URL}/en/blog`,
+        it: `${BASE_URL}/it/blog`,
+        ru: `${BASE_URL}/ru/blog`,
+      },
+    },
+    openGraph: {
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      url: `${BASE_URL}/${locale}/blog`,
+      siteName: "We Make IT",
+      images: [{ url: `${BASE_URL}/api/og`, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+  };
+}
 
 const articles = [
   {

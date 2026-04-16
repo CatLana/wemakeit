@@ -294,8 +294,13 @@
       "serverError": "Something went wrong. Please try again."
     }
   },
+  "blog": {
+    "title": "Blog: App and Business Ideas for Irish Entrepreneurs | We Make IT",
+    "description": "Practical guides on building apps, finding funding, and turning your business idea into a digital product. Written for Irish entrepreneurs by the We Make IT team.",
+    "ogTitle": "App Development Insights for Irish Entrepreneurs | We Make IT Blog",
+    "ogDescription": "Practical advice on building apps, getting funding, and turning business ideas into real digital products."
+  },
   "cookieBanner": {
-    "ariaLabel": "Cookie consent",
     "text": "We use strictly necessary cookies to keep the site working. We do not use tracking or advertising cookies without your consent.",
     "learnMore": "Learn more",
     "essential": "Essential only",

@@ -53,16 +53,31 @@ export async function generateMetadata({
     keywords: [
       "app development ireland",
       "web development ireland",
+      "web development company ireland",
       "custom app development",
+      "custom web development ireland",
+      "software development company ireland",
+      "bespoke software development ireland",
       "idea validation",
       "mvp development",
+      "mvp development ireland",
       "startup app developer",
+      "startup app developer ireland",
+      "turn idea into app ireland",
       "web application development",
       "mobile app development ireland",
+      "mobile app developer ireland",
       "software consultancy ireland",
       "ux design ireland",
+      "digital transformation ireland",
+      "web development agency meath",
+      "irish grants app development",
       "sviluppo app irlanda",
+      "sviluppo software irlanda",
+      "agenzia web irlanda",
       "развитие приложений",
+      "разработка приложений ирландия",
+      "веб разработка ирландия",
     ],
     authors: [{ name: "We Make IT", url: BASE_URL }],
     creator: "We Make IT",
@@ -146,12 +161,23 @@ export default async function LocaleLayout({
     sameAs: ["https://www.linkedin.com/in/svetlana-savchenko-08868764"],
   };
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "We Make IT",
+    url: BASE_URL,
+  };
+
   return (
     <html lang={locale} className={inter.variable}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
       <body className="antialiased font-sans">

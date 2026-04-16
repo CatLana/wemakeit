@@ -3,24 +3,30 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://www.wemakeit.ie";
 const locales = ["en", "it", "ru"] as const;
 
-const pages: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
-  { path: "",                                        priority: 1.0, changeFrequency: "weekly" },
-  { path: "/blog",                                   priority: 0.8, changeFrequency: "weekly" },
-  { path: "/blog/irish-grants-for-app-development",  priority: 0.7, changeFrequency: "monthly" },
-  { path: "/privacy-policy",                         priority: 0.3, changeFrequency: "yearly" },
-  { path: "/cookie-policy",                          priority: 0.3, changeFrequency: "yearly" },
-  { path: "/terms-of-service",                       priority: 0.3, changeFrequency: "yearly" },
-  { path: "/accessibility-statement",                priority: 0.3, changeFrequency: "yearly" },
+const pages: {
+  path: string;
+  priority: number;
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+  lastModified: Date;
+}[] = [
+  { path: "",                                        priority: 1.0, changeFrequency: "weekly",  lastModified: new Date("2026-04-16") },
+  { path: "/contact",                                priority: 0.6, changeFrequency: "monthly", lastModified: new Date("2026-04-16") },
+  { path: "/blog",                                   priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-03-24") },
+  { path: "/blog/irish-grants-for-app-development",  priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-03-31") },
+  { path: "/privacy-policy",                         priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
+  { path: "/cookie-policy",                          priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
+  { path: "/terms-of-service",                       priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
+  { path: "/accessibility-statement",                priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
-  for (const { path, priority, changeFrequency } of pages) {
+  for (const { path, priority, changeFrequency, lastModified } of pages) {
     for (const locale of locales) {
       entries.push({
         url: `${BASE_URL}/${locale}${path}`,
-        lastModified: new Date(),
+        lastModified,
         changeFrequency,
         priority,
         alternates: {

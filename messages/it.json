@@ -379,8 +379,13 @@
       "serverError": "Errore. Riprova."
     }
   },
+  "blog": {
+    "title": "Blog: Idee e Guide per Imprenditori | We Make IT",
+    "description": "Guide pratiche su come costruire app, trovare finanziamenti e trasformare la tua idea imprenditoriale in un prodotto digitale.",
+    "ogTitle": "Consigli sullo Sviluppo App per Imprenditori | Blog We Make IT",
+    "ogDescription": "Consigli pratici su come costruire app, ottenere finanziamenti e trasformare idee aziendali in prodotti digitali reali."
+  },
   "cookieBanner": {
-    "ariaLabel": "Consenso Cookie",
     "text": "Usiamo solo cookie necessari. Niente tracciamento/pubblicità senza consenso.",
     "learnMore": "Maggiori info",
     "essential": "Solo necessari",
