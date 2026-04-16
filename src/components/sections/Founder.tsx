@@ -24,6 +24,7 @@ export default function Founder() {
               alt={t("imgAlt")}
               width={240}
               height={280}
+              sizes="(max-width: 1024px) 240px, 280px"
               className="rounded-2xl object-cover w-full max-w-[240px] lg:max-w-full border border-white/10"
               priority
             />
