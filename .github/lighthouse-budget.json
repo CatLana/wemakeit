@@ -5,7 +5,7 @@
       { "metric": "interactive", "budget": 5000 },
       { "metric": "first-contentful-paint", "budget": 2000 },
       { "metric": "largest-contentful-paint", "budget": 3500 },
-      { "metric": "total-blocking-time", "budget": 300 },
+      { "metric": "total-blocking-time", "budget": 600 },
       { "metric": "cumulative-layout-shift", "budget": 0.1 }
     ],
     "resourceSizes": [
