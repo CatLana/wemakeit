@@ -174,9 +174,15 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+          <p>{t("copyright")}</p>
           <p>
-            {new Date().getFullYear()} {" "}
-            {t("copyright")}
+            {t("builtBy")}{" "}
+            <a
+              href="https://www.wemakeit.ie"
+              className="text-[#22D3EE] hover:text-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+            >
+              We Make IT
+            </a>
           </p>
         </div>
       </div>

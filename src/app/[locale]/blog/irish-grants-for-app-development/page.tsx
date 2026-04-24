@@ -5,37 +5,58 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowLeft, Calendar, Clock, AlertCircle } from "lucide-react";
 
-export const metadata: Metadata = {
-  title:
-    "Irish Grants for App Development 2026: LEO Grow Digital, Enterprise Ireland & Innovation Vouchers",
-  description:
-    "Complete guide to Irish government grants for app development in 2026. LEO Grow Digital up to €5,000, Enterprise Ireland Innovation Vouchers (€5k-€10k), and Competitive Start Fund up to €50,000. Eligibility, application steps, and official links.",
-  alternates: {
-    canonical: "https://www.wemakeit.ie/en/blog/irish-grants-for-app-development",
-    languages: {
-      en: "https://www.wemakeit.ie/en/blog/irish-grants-for-app-development",
-      it: "https://www.wemakeit.ie/it/blog/irish-grants-for-app-development",
-      ru: "https://www.wemakeit.ie/ru/blog/irish-grants-for-app-development",
-    },
-  },
-  openGraph: {
-    title: "Irish Grants for App Development 2026: Official Funding Guide",
+const BASE_URL = "https://www.wemakeit.ie";
+const SLUG = "irish-grants-for-app-development";
+
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const canonicalUrl = `${BASE_URL}/${locale}/blog/${SLUG}`;
+  const ogLocale =
+    locale === "en" ? "en_IE" : locale === "it" ? "it_IT" : "ru_RU";
+
+  return {
+    title:
+      "Irish Grants for App Development 2026: LEO Grow Digital, Enterprise Ireland & Innovation Vouchers",
     description:
-      "Discover how to fund your app development in Ireland. Compare LEO Grow Digital, Innovation Vouchers, and Enterprise Ireland grants. Complete guide with official links and eligibility criteria.",
-    type: "article",
-    publishedTime: "2026-03-24T00:00:00.000Z",
-    authors: ["We Make IT"],
-    url: "https://www.wemakeit.ie/en/blog/irish-grants-for-app-development",
-    images: [
-      {
-        url: "https://www.wemakeit.ie/api/og",
-        width: 1200,
-        height: 630,
-        alt: "Irish Grants for App Development 2026",
+      "Complete guide to Irish government grants for app development in 2026. LEO Grow Digital up to €5,000, Enterprise Ireland Innovation Vouchers (€5k-€10k), and Competitive Start Fund up to €50,000. Eligibility, application steps, and official links.",
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: `${BASE_URL}/en/blog/${SLUG}`,
+        it: `${BASE_URL}/it/blog/${SLUG}`,
+        ru: `${BASE_URL}/ru/blog/${SLUG}`,
       },
-    ],
-  },
-};
+    },
+    openGraph: {
+      title: "Irish Grants for App Development 2026: Official Funding Guide",
+      description:
+        "Discover how to fund your app development in Ireland. Compare LEO Grow Digital, Innovation Vouchers, and Enterprise Ireland grants. Complete guide with official links and eligibility criteria.",
+      type: "article",
+      publishedTime: "2026-03-24T00:00:00.000Z",
+      authors: ["We Make IT"],
+      url: canonicalUrl,
+      siteName: "We Make IT",
+      locale: ogLocale,
+      images: [
+        {
+          url: `${BASE_URL}/api/og`,
+          width: 1200,
+          height: 630,
+          alt: "Irish Grants for App Development 2026",
+        },
+      ],
+    },
+    twitter: { card: "summary_large_image" },
+  };
+}
 
 export default async function ArticlePage({
   params,
@@ -56,8 +77,8 @@ export default async function ArticlePage({
     author: { "@type": "Person", name: "Svetlana Savchenko", url: "https://www.linkedin.com/in/svetlana-savchenko-08868764" },
     publisher: { "@type": "Organization", name: "We Make IT", url: "https://www.wemakeit.ie" },
     image: "https://www.wemakeit.ie/api/og",
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.wemakeit.ie/en/blog/irish-grants-for-app-development" },
-    inLanguage: "en",
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${BASE_URL}/${locale}/blog/${SLUG}` },
+    inLanguage: locale,
     about: [
       { "@type": "Thing", name: "Enterprise Ireland Innovation Vouchers" },
       { "@type": "Thing", name: "LEO Grow Digital Voucher" },

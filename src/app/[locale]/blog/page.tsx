@@ -7,6 +7,10 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 
 const BASE_URL = "https://www.wemakeit.ie";
 
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+}
+
 export async function generateMetadata({
   params,
 }: {

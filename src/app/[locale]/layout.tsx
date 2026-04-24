@@ -114,6 +114,7 @@ export async function generateMetadata({
       description: t("description"),
     },
     alternates: {
+      canonical: `${BASE_URL}/${locale}`,
       languages,
     },
     robots: {
