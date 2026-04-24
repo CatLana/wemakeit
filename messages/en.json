@@ -302,9 +302,74 @@
     "ogDescription": "Practical advice on building apps, getting funding, and turning business ideas into real digital products."
   },
   "cookieBanner": {
+    "ariaLabel": "Cookie consent dialog",
     "text": "We use strictly necessary cookies to keep the site working. We do not use tracking or advertising cookies without your consent.",
     "learnMore": "Learn more",
     "essential": "Essential only",
     "acceptAll": "Accept all cookies"
+  },
+  "servicePages": {
+    "intro": {
+      "ie": "Based in Ireland. Serving SMEs and starting entrepreneurs across Ireland and Northern Ireland.",
+      "gb": "Based in Ireland. Serving SMEs and starting entrepreneurs across Ireland and the UK.",
+      "it": "Based in Ireland. Serving SMEs and starting entrepreneurs across Italy.",
+      "ch": "Based in Ireland. Serving SMEs and starting entrepreneurs across Switzerland.",
+      "suffixWebDev": "15+ years of experience. Fixed pricing, no surprises.",
+      "suffixAppDev": "Fixed pricing. No hidden costs."
+    },
+    "webDev": {
+      "h1": {
+        "ie": "Web Development in Ireland",
+        "gb": "Web Development in Ireland & the UK",
+        "it": "Web Development in Italy",
+        "ch": "Web Development in Switzerland"
+      },
+      "breadcrumb": "Web Development",
+      "desc": {
+        "ie": "Professional web development services for Irish businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
+        "gb": "Professional web development services for UK and Irish businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
+        "it": "Professional web development services for Italian businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
+        "ch": "Professional web development services for Swiss-Italian businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results."
+      },
+      "ctaHeading": "Ready to build your web presence?"
+    },
+    "appDev": {
+      "h1": {
+        "ie": "App Development in Ireland",
+        "gb": "App Development in Ireland & the UK",
+        "it": "App Development in Italy",
+        "ch": "App Development in Switzerland"
+      },
+      "breadcrumb": "App Development",
+      "desc": {
+        "ie": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps that solve real business problems for Irish businesses.",
+        "gb": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps that solve real business problems for UK and Irish businesses.",
+        "it": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps that solve real business problems for Italian businesses.",
+        "ch": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps that solve real business problems for Swiss and Italian businesses."
+      },
+      "ctaHeading": "Ready to build your app?"
+    },
+    "uxAudit": {
+      "h1": {
+        "ie": "UX & Accessibility Audit for Ireland",
+        "gb": "UX & Accessibility Audit for Ireland & the UK",
+        "it": "UX & Accessibility Audit for Italy",
+        "ch": "UX & Accessibility Audit for Switzerland"
+      },
+      "breadcrumb": "UX & Accessibility Audit",
+      "desc": "Ensure your website or app is accessible to all users and compliant with WCAG 2.1 AA standards. Get a detailed audit report with actionable recommendations.",
+      "descCh": "Ensure your website or app is accessible to all users and compliant with WCAG 2.1 AA standards. Get a detailed audit report with actionable recommendations for Swiss businesses under EU accessibility regulations.",
+      "euTitle": "EU Accessibility Act Compliance",
+      "euBody": "Private sector businesses with 10+ employees or €2M+ turnover must comply by June 2025. We help you meet requirements and avoid legal risk.",
+      "whatHeading": "What You Get",
+      "item1": "Detailed audit report with screenshots",
+      "item2": "Issues categorized by severity (critical, major, minor)",
+      "item3": "Specific recommendations for each issue",
+      "item4": "Overall compliance score and comparison to standards",
+      "item5": "Optional remediation plan with implementation priorities",
+      "item6": "Consultation call to discuss findings",
+      "ctaHeading": "Start with a free 15-minute accessibility health check",
+      "ctaBtn": "Book Your Free Check"
+    }
   }
 }

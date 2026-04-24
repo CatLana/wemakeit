@@ -387,9 +387,74 @@
     "ogDescription": "Consigli pratici su come costruire app, ottenere finanziamenti e trasformare idee aziendali in prodotti digitali reali."
   },
   "cookieBanner": {
+    "ariaLabel": "Finestra di consenso dei cookie",
     "text": "Usiamo solo cookie necessari. Niente tracciamento/pubblicità senza consenso.",
     "learnMore": "Maggiori info",
     "essential": "Solo necessari",
     "acceptAll": "Accetta tutti"
+  },
+  "servicePages": {
+    "intro": {
+      "ie": "Con sede in Irlanda. Al servizio di PMI e imprenditori in Irlanda e Irlanda del Nord.",
+      "gb": "Con sede in Irlanda. Al servizio di PMI e imprenditori in Irlanda e nel Regno Unito.",
+      "it": "Con sede in Irlanda. Al servizio di PMI e imprenditori in tutta Italia.",
+      "ch": "Con sede in Irlanda. Al servizio di PMI e imprenditori in Svizzera.",
+      "suffixWebDev": "Oltre 15 anni di esperienza. Prezzi fissi, nessuna sorpresa.",
+      "suffixAppDev": "Prezzi fissi. Nessun costo nascosto."
+    },
+    "webDev": {
+      "h1": {
+        "ie": "Sviluppo Web in Irlanda",
+        "gb": "Sviluppo Web in Irlanda e nel Regno Unito",
+        "it": "Sviluppo Web in Italia",
+        "ch": "Sviluppo Web in Svizzera"
+      },
+      "breadcrumb": "Sviluppo Web",
+      "desc": {
+        "ie": "Servizi di sviluppo web professionali per le aziende irlandesi. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti.",
+        "gb": "Servizi di sviluppo web professionali per le aziende britanniche e irlandesi. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti.",
+        "it": "Servizi di sviluppo web professionali per le aziende italiane. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti.",
+        "ch": "Servizi di sviluppo web professionali per le aziende svizzere e italiane. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti."
+      },
+      "ctaHeading": "Pronto a costruire la tua presenza online?"
+    },
+    "appDev": {
+      "h1": {
+        "ie": "Sviluppo App in Irlanda",
+        "gb": "Sviluppo App in Irlanda e nel Regno Unito",
+        "it": "Sviluppo App in Italia",
+        "ch": "Sviluppo App in Svizzera"
+      },
+      "breadcrumb": "Sviluppo App",
+      "desc": {
+        "ie": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e progressive web app che risolvono problemi aziendali reali per le aziende irlandesi.",
+        "gb": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e progressive web app che risolvono problemi aziendali reali per le aziende britanniche e irlandesi.",
+        "it": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e progressive web app che risolvono problemi aziendali reali per le aziende italiane.",
+        "ch": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e progressive web app che risolvono problemi aziendali reali per le aziende svizzere e italiane."
+      },
+      "ctaHeading": "Pronto a sviluppare la tua app?"
+    },
+    "uxAudit": {
+      "h1": {
+        "ie": "Audit UX e Accessibilità per l'Irlanda",
+        "gb": "Audit UX e Accessibilità per Irlanda e il Regno Unito",
+        "it": "Audit UX e Accessibilità per l'Italia",
+        "ch": "Audit UX e Accessibilità per la Svizzera"
+      },
+      "breadcrumb": "Audit UX e Accessibilità",
+      "desc": "Assicura che il tuo sito web o app sia accessibile a tutti gli utenti e conforme agli standard WCAG 2.1 AA. Ricevi un report di audit dettagliato con raccomandazioni pratiche.",
+      "descCh": "Assicura che il tuo sito web o app sia accessibile a tutti gli utenti e conforme agli standard WCAG 2.1 AA. Ricevi un report di audit dettagliato con raccomandazioni pratiche per le aziende svizzere soggette alle normative europee sull'accessibilità.",
+      "euTitle": "Conformità alla Legge Europea sull'Accessibilità",
+      "euBody": "Le aziende del settore privato con 10+ dipendenti o fatturato superiore a €2M devono conformarsi entro giugno 2025. Ti aiutiamo a soddisfare i requisiti ed evitare rischi legali.",
+      "whatHeading": "Cosa Ottieni",
+      "item1": "Report di audit dettagliato con screenshot",
+      "item2": "Problemi categorizzati per gravità (critico, maggiore, minore)",
+      "item3": "Raccomandazioni specifiche per ogni problema",
+      "item4": "Punteggio di conformità complessivo e confronto con gli standard",
+      "item5": "Piano di remediation opzionale con priorità di implementazione",
+      "item6": "Call di consultazione per discutere i risultati",
+      "ctaHeading": "Inizia con un controllo gratuito di 15 minuti sull'accessibilità",
+      "ctaBtn": "Prenota il Tuo Controllo Gratuito"
+    }
   }
 }
