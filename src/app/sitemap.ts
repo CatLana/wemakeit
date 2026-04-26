@@ -13,6 +13,7 @@ const pages: {
   { path: "/contact",                                priority: 0.6, changeFrequency: "monthly", lastModified: new Date("2026-04-16") },
   { path: "/blog",                                   priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-03-24") },
   { path: "/blog/irish-grants-for-app-development",  priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-03-31") },
+  { path: "/blog/free-expense-tracking-for-irish-sole-traders", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-04-26") },
   { path: "/privacy-policy",                         priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
   { path: "/cookie-policy",                          priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
   { path: "/terms-of-service",                       priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },

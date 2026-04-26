@@ -46,6 +46,15 @@ export async function generateMetadata({
 
 const articles = [
   {
+    slug: "free-expense-tracking-for-irish-sole-traders",
+    category: "Admin & Finance",
+    title: "Free expense tracking for Irish sole traders: the lean-start guide",
+    excerpt:
+      "Stop losing receipts. A practical, free system — Wave Accounting or Google Drive — to track all your business expenses year-round and be ready for your Form 11 each October.",
+    date: "26 April 2026",
+    readTime: "8 min read",
+  },
+  {
     slug: "irish-grants-for-app-development",
     category: "Funding",
     title: "Did you know you can fund your app idea with an Irish state grant?",
