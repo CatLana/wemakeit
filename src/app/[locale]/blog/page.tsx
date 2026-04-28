@@ -46,6 +46,16 @@ export async function generateMetadata({
 
 const articles = [
   {
+    slug: "web-accessibility-ireland",
+    category: "Accessibility & Legal",
+    title:
+      "Web accessibility in Ireland: what the European Accessibility Act means for your business",
+    excerpt:
+      "From June 2025, the European Accessibility Act extends legal web accessibility requirements to private businesses in Ireland. Here is what you need to know — and practical steps you can take now.",
+    date: "28 April 2026",
+    readTime: "8 min read",
+  },
+  {
     slug: "free-expense-tracking-for-irish-sole-traders",
     category: "Admin & Finance",
     title: "Free expense tracking for Irish sole traders: the lean-start guide",
