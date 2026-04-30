@@ -11,6 +11,7 @@ import {
   Wrench,
   Languages,
   Globe2,
+  ArrowRight,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -70,36 +71,34 @@ export default function Services() {
             if (!item) return null;
             return (
               <li key={i}>
-                <article className="group relative h-full flex flex-col p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#22D3EE]/60 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
-                  {/* Full-card link overlay */}
-                  <Link
-                    href={href}
-                    aria-label={item.title}
-                    className="absolute inset-0 rounded-2xl focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
-                    tabIndex={0}
-                  />
-
-                  {/* Card content — relative z-10 keeps it above the overlay */}
-                  <div className="relative z-10 flex flex-col h-full">
-                    <div
-                      className={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${bg} mb-5`}
-                    >
-                      <Icon
-                        size={24}
-                        className={color}
-                        aria-hidden="true"
-                        strokeWidth={1.75}
-                      />
-                    </div>
-
-                    <h3 className="text-base font-bold text-[#1E293B] mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-slate-500 leading-relaxed flex-1">
-                      {item.description}
-                    </p>
+                <Link
+                  href={href}
+                  className="group flex flex-col h-full p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#22D3EE]/60 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+                  aria-label={item.title}
+                >
+                  <div
+                    className={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${bg} mb-5`}
+                  >
+                    <Icon
+                      size={24}
+                      className={color}
+                      aria-hidden="true"
+                      strokeWidth={1.75}
+                    />
                   </div>
-                </article>
+
+                  <h3 className="text-base font-bold text-[#1E293B] mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-slate-500 leading-relaxed flex-1">
+                    {item.description}
+                  </p>
+
+                  <div className="mt-4 flex items-center gap-1 text-sm font-semibold text-[#0E7490] group-hover:text-[#22D3EE] transition-colors">
+                    {t("learnMore")}
+                    <ArrowRight size={14} aria-hidden="true" />
+                  </div>
+                </Link>
               </li>
             );
           })}
