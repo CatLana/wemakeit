@@ -27,10 +27,13 @@ export async function generateMetadata({
   };
 
   const descriptions: Record<string, string> = {
-    en: "Clear, transparent pricing for web & app development. Fixed projects from €4,200 or monthly retainers from €800. No hidden costs.",
-    it: "Prezzi trasparenti per sviluppo web e app. Progetti fissi da €4.200 o retainer mensili da €800. Nessun costo nascosto.",
-    ru: "Прозрачные цены для веб- и app-разработки. Фиксированные проекты от €4.200 или ежемесячные ретейнеры от €800. Нет скрытых расходов.",
+    en: "Transparent pricing for web & app development in Ireland. Fixed projects from €4,200 or monthly retainers from €800. All prices exclude VAT.",
+    it: "Prezzi trasparenti per sviluppo web e app in Irlanda. Progetti fissi da €4.200 o retainer mensili da €800. Prezzi IVA esclusa.",
+    ru: "Прозрачные цены для веб- и app-разработки. Фиксированные проекты от €4.200 или ежемесячные ретейнеры от €800. Цены без НДС.",
   };
+
+  const ogLocale =
+    locale === "it" ? "it_IT" : locale === "ru" ? "ru_RU" : "en_IE";
 
   return {
     title: titles[locale] || titles["en"],
@@ -48,6 +51,8 @@ export async function generateMetadata({
       title: titles[locale] || titles["en"],
       description: descriptions[locale] || descriptions["en"],
       url: canonicalUrl,
+      siteName: "We Make IT",
+      locale: ogLocale,
       type: "website",
       images: [{ url: `${BASE_URL}/api/og`, width: 1200, height: 630 }],
     },
@@ -63,8 +68,102 @@ export default async function PricingPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const offersJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Web & App Development Services",
+    provider: { "@type": "Organization", name: "We Make IT", url: BASE_URL },
+    areaServed: ["IE", "EU", "GB"],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "We Make IT — Service Packages",
+      itemListElement: [
+        { "@type": "Offer", name: "Starter Retainer", price: "800", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Growth Retainer", price: "1800", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Scale Retainer", price: "3500", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Idea Validation Sprint", price: "6500", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Accessibility & UX Audit", price: "4200", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Website Build", price: "8500", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Custom Web App", price: "18000", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Mobile App Build", price: "22000", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Product Discovery & Build", price: "35000", priceCurrency: "EUR" },
+      ],
+    },
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Are your prices inclusive of VAT?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. All prices shown are exclusive of VAT. Irish VAT at 23% applies to B2B services provided in Ireland. EU businesses with a valid VAT number may be eligible for VAT reverse charge.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer discounts for bundled services?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Combining services (e.g., UX Audit + fixes, or Discovery + Build) typically saves 10–15%. We'll provide a custom quote.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's not included in the prices above?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Third-party service costs (hosting, domains, SMS, payment gateway fees) are billed separately at cost. We always flag these upfront.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I start with Starter and upgrade later?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Absolutely. Many clients start with Starter (€800/mo, 8 hrs), then move to Growth (€1,800/mo, 20 hrs) when they need more. Zero penalty to upgrade.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer payment plans?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. For projects over €10,000, we offer 50/50 split payment (50% upfront, 50% at delivery). For larger projects, staged milestones are available.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What if I need more hours than my retainer includes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Each retainer includes a set allowance: Starter (8 hrs/mo), Growth (20 hrs/mo), Scale (40 hrs/mo). Hours over your plan are billed at €100/hour, or you can upgrade your tier at any time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you work with international clients?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. We serve clients across Ireland, EU, UK, and beyond. We work fully remotely and time zones are rarely an issue.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(offersJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Header />
       <main id="main-content" tabIndex={-1}>
         {/* Hero */}
@@ -81,7 +180,7 @@ export default async function PricingPage({
                 Whether you need a one-time project or ongoing support, we offer flexible plans tailored to your business.
               </p>
               <p className="text-sm text-slate-500">
-                All prices in EUR. Custom enterprise quotes available —{" "}
+                All prices in EUR, exclusive of VAT. Custom enterprise quotes available —{" "}
                 <Link href="/#quote" className="text-[#22D3EE] underline hover:text-cyan-300">
                   get in touch
                 </Link>
@@ -92,14 +191,14 @@ export default async function PricingPage({
         </section>
 
         {/* Monthly Retainers */}
-        <section className="bg-white py-16 lg:py-24">
+        <section aria-labelledby="retainers-heading" className="bg-white py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mb-12">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mb-3">
+              <h2 id="retainers-heading" className="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mb-3">
                 Monthly Support &amp; Retainers
               </h2>
               <p className="text-slate-600 text-lg">
-                Predictable monthly costs. Dedicated support, priority response, and ongoing optimization.
+                Predictable monthly costs. Your development team on tap — support, improvements, and expert advice included.
               </p>
             </div>
 
@@ -108,10 +207,11 @@ export default async function PricingPage({
               <div className="rounded-2xl border border-slate-200 p-8 hover:border-[#22D3EE]/50 hover:shadow-lg transition-all duration-200">
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">Starter</h3>
                 <p className="text-sm text-slate-500 mb-6">For solo founders &amp; early-stage startups</p>
-                <div className="mb-6">
+                <div className="mb-2">
                   <span className="text-4xl font-extrabold text-[#1E293B]">€800</span>
                   <span className="text-slate-500 ml-2">/month</span>
                 </div>
+                <p className="text-xs text-slate-400 mb-6">Up to 8 hours/month included</p>
                 <ul className="space-y-3 mb-8 text-sm text-slate-600">
                   <li className="flex items-start gap-3">
                     <Check size={16} className="text-[#22D3EE] shrink-0 mt-0.5" aria-hidden="true" />
@@ -145,10 +245,11 @@ export default async function PricingPage({
                 </div>
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">Growth</h3>
                 <p className="text-sm text-slate-500 mb-6">For growing SMEs &amp; scaling startups</p>
-                <div className="mb-6">
+                <div className="mb-2">
                   <span className="text-4xl font-extrabold text-[#1E293B]">€1,800</span>
                   <span className="text-slate-500 ml-2">/month</span>
                 </div>
+                <p className="text-xs text-slate-400 mb-6">Up to 20 hours/month included</p>
                 <ul className="space-y-3 mb-8 text-sm text-slate-600">
                   <li className="flex items-start gap-3">
                     <Check size={16} className="text-[#22D3EE] shrink-0 mt-0.5" aria-hidden="true" />
@@ -168,7 +269,7 @@ export default async function PricingPage({
                   </li>
                   <li className="flex items-start gap-3">
                     <Check size={16} className="text-[#22D3EE] shrink-0 mt-0.5" aria-hidden="true" />
-                    <span>Slack channel for quick questions</span>
+                    <span>Dedicated messaging channel for quick questions</span>
                   </li>
                 </ul>
                 <Link
@@ -184,10 +285,11 @@ export default async function PricingPage({
               <div className="rounded-2xl border border-slate-200 p-8 hover:border-[#22D3EE]/50 hover:shadow-lg transition-all duration-200">
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">Scale</h3>
                 <p className="text-sm text-slate-500 mb-6">For established businesses &amp; agencies</p>
-                <div className="mb-6">
+                <div className="mb-2">
                   <span className="text-4xl font-extrabold text-[#1E293B]">€3,500</span>
                   <span className="text-slate-500 ml-2">/month</span>
                 </div>
+                <p className="text-xs text-slate-400 mb-6">Up to 40 hours/month included</p>
                 <ul className="space-y-3 mb-8 text-sm text-slate-600">
                   <li className="flex items-start gap-3">
                     <Check size={16} className="text-[#22D3EE] shrink-0 mt-0.5" aria-hidden="true" />
@@ -226,10 +328,10 @@ export default async function PricingPage({
         </section>
 
         {/* Fixed-Price Projects */}
-        <section className="bg-slate-50 py-16 lg:py-24">
+        <section aria-labelledby="projects-heading" className="bg-slate-50 py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mb-12">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mb-3">
+              <h2 id="projects-heading" className="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mb-3">
                 Fixed-Price Projects
               </h2>
               <p className="text-slate-600 text-lg">
@@ -306,10 +408,10 @@ export default async function PricingPage({
                 </Link>
               </div>
 
-              {/* Website MVP */}
+              {/* Website Build */}
               <div className="rounded-2xl border border-slate-200 bg-white p-8">
-                <h3 className="text-xl font-bold text-[#1E293B] mb-2">Website MVP</h3>
-                <p className="text-sm text-slate-500 mb-4">5–10 pages, CMS, SEO-ready. 6-week delivery.</p>
+                <h3 className="text-xl font-bold text-[#1E293B] mb-2">Website Build</h3>
+                <p className="text-sm text-slate-500 mb-4">5–10 pages, easy content editing, SEO-ready. 6-week delivery.</p>
                 <div className="mb-6">
                   <span className="text-3xl font-extrabold text-[#1E293B]">€8,500</span>
                 </div>
@@ -320,7 +422,7 @@ export default async function PricingPage({
                   </li>
                   <li className="flex items-start gap-2">
                     <Check size={14} className="text-[#22D3EE] shrink-0 mt-1" aria-hidden="true" />
-                    Headless CMS (easy content updates)
+                    Easy content management (update text &amp; images yourself)
                   </li>
                   <li className="flex items-start gap-2">
                     <Check size={14} className="text-[#22D3EE] shrink-0 mt-1" aria-hidden="true" />
@@ -331,13 +433,21 @@ export default async function PricingPage({
                     Contact forms &amp; newsletter signup
                   </li>
                 </ul>
-                <Link
-                  href="/#quote"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#0E7490] hover:text-[#0891B2] transition-colors"
-                >
-                  Build my site
-                  <ArrowRight size={14} aria-hidden="true" />
-                </Link>
+                <div className="flex flex-wrap items-center gap-4">
+                  <Link
+                    href="/#quote"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#0E7490] hover:text-[#0891B2] transition-colors"
+                  >
+                    Build my site
+                    <ArrowRight size={14} aria-hidden="true" />
+                  </Link>
+                  <Link
+                    href="/services/web-development"
+                    className="text-sm text-slate-400 hover:text-slate-600 transition-colors underline underline-offset-2"
+                  >
+                    Full service details
+                  </Link>
+                </div>
               </div>
 
               {/* Custom Web App */}
@@ -374,17 +484,17 @@ export default async function PricingPage({
                 </Link>
               </div>
 
-              {/* Mobile App MVP */}
+              {/* Mobile App Build */}
               <div className="rounded-2xl border border-slate-200 bg-white p-8">
-                <h3 className="text-xl font-bold text-[#1E293B] mb-2">Mobile App MVP</h3>
-                <p className="text-sm text-slate-500 mb-4">iOS + Android, 1 core feature. 10-week delivery.</p>
+                <h3 className="text-xl font-bold text-[#1E293B] mb-2">Mobile App Build</h3>
+                <p className="text-sm text-slate-500 mb-4">iOS &amp; Android, core features. 10-week delivery.</p>
                 <div className="mb-6">
                   <span className="text-3xl font-extrabold text-[#1E293B]">€22,000</span>
                 </div>
                 <ul className="space-y-2 mb-6 text-sm text-slate-600">
                   <li className="flex items-start gap-2">
                     <Check size={14} className="text-[#22D3EE] shrink-0 mt-1" aria-hidden="true" />
-                    Native or cross-platform build
+                    Native or cross-platform build (iOS &amp; Android)
                   </li>
                   <li className="flex items-start gap-2">
                     <Check size={14} className="text-[#22D3EE] shrink-0 mt-1" aria-hidden="true" />
@@ -399,19 +509,27 @@ export default async function PricingPage({
                     Push notifications &amp; analytics
                   </li>
                 </ul>
-                <Link
-                  href="/#quote"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#0E7490] hover:text-[#0891B2] transition-colors"
-                >
-                  Build my app
-                  <ArrowRight size={14} aria-hidden="true" />
-                </Link>
+                <div className="flex flex-wrap items-center gap-4">
+                  <Link
+                    href="/#quote"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#0E7490] hover:text-[#0891B2] transition-colors"
+                  >
+                    Build my app
+                    <ArrowRight size={14} aria-hidden="true" />
+                  </Link>
+                  <Link
+                    href="/services/mobile-app-development"
+                    className="text-sm text-slate-400 hover:text-slate-600 transition-colors underline underline-offset-2"
+                  >
+                    Full service details
+                  </Link>
+                </div>
               </div>
 
-              {/* Design Thinking + Build */}
+              {/* Product Discovery & Build */}
               <div className="rounded-2xl border border-slate-200 bg-white p-8">
-                <h3 className="text-xl font-bold text-[#1E293B] mb-2">Design Thinking + Build</h3>
-                <p className="text-sm text-slate-500 mb-4">Full discovery, design, &amp; MVP. 12-week delivery.</p>
+                <h3 className="text-xl font-bold text-[#1E293B] mb-2">Product Discovery &amp; Build</h3>
+                <p className="text-sm text-slate-500 mb-4">Research, design &amp; full product build. 12-week delivery.</p>
                 <div className="mb-6">
                   <span className="text-3xl font-extrabold text-[#1E293B]">€35,000</span>
                 </div>
@@ -446,18 +564,39 @@ export default async function PricingPage({
         </section>
 
         {/* Add-Ons */}
-        <section className="bg-white py-16 lg:py-24">
+        <section aria-labelledby="addons-heading" className="bg-white py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-[#1E293B] mb-12">
-              Add-Ons &amp; Extras
-            </h2>
+            <div className="max-w-2xl mb-12">
+              <h2 id="addons-heading" className="text-3xl font-extrabold text-[#1E293B] mb-3">
+                Add-Ons &amp; Extras
+              </h2>
+              <p className="text-slate-600 text-lg">
+                Bolt these on to any project or retainer.
+              </p>
+            </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="rounded-xl border border-slate-200 p-6">
+                <h3 className="font-bold text-[#1E293B] mb-2">Interactive App Prototype</h3>
+                <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€2,500–€5,000</p>
+                <p className="text-sm text-slate-600">
+                  Clickable prototype for user testing or investor demos — before a single line of code is written.
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-slate-200 p-6">
+                <h3 className="font-bold text-[#1E293B] mb-2">UX Research &amp; Design</h3>
+                <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€2,000–€6,000</p>
+                <p className="text-sm text-slate-600">
+                  User interviews, usability testing, and polished UI designs for existing or new products.
+                </p>
+              </div>
+
               <div className="rounded-xl border border-slate-200 p-6">
                 <h3 className="font-bold text-[#1E293B] mb-2">Localisation (per market)</h3>
                 <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€3,500</p>
                 <p className="text-sm text-slate-600">
-                  Translation, RTL setup, currency &amp; locale formatting.
+                  Translate content, adapt formats (currency, dates), and integrate multi-language support.
                 </p>
               </div>
 
@@ -465,7 +604,7 @@ export default async function PricingPage({
                 <h3 className="font-bold text-[#1E293B] mb-2">API Integration</h3>
                 <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€2,000–€5,000</p>
                 <p className="text-sm text-slate-600">
-                  Third-party service integration (payment, CRM, email).
+                  Connect your product to third-party services — payments, CRMs, email, maps, and more.
                 </p>
               </div>
 
@@ -473,31 +612,31 @@ export default async function PricingPage({
                 <h3 className="font-bold text-[#1E293B] mb-2">Performance Optimization</h3>
                 <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€1,500–€3,500</p>
                 <p className="text-sm text-slate-600">
-                  Speed tuning, CDN setup, caching, SEO audit.
+                  Speed audit, Core Web Vitals improvement, CDN setup, and image optimization.
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-200 p-6">
                 <h3 className="font-bold text-[#1E293B] mb-2">Team Training</h3>
-                <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€500/hour</p>
+                <p className="text-lg font-extrabold text-[#22D3EE] mb-2">from €150/hour</p>
                 <p className="text-sm text-slate-600">
-                  Teach your team how to use the platform independently.
+                  Hands-on training so your team can manage, update, and extend the product independently.
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-200 p-6">
-                <h3 className="font-bold text-[#1E293B] mb-2">Migration Service</h3>
+                <h3 className="font-bold text-[#1E293B] mb-2">Platform Migration</h3>
                 <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€2,000–€8,000</p>
                 <p className="text-sm text-slate-600">
-                  Move from old platform, data migration, zero downtime.
+                  Move from your old platform with full data migration and minimal downtime.
                 </p>
               </div>
 
               <div className="rounded-xl border border-slate-200 p-6">
-                <h3 className="font-bold text-[#1E293B] mb-2">Custom Reporting</h3>
+                <h3 className="font-bold text-[#1E293B] mb-2">Custom Reporting &amp; Dashboards</h3>
                 <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€1,000–€3,000</p>
                 <p className="text-sm text-slate-600">
-                  Build dashboards, reporting tools, custom metrics.
+                  Business intelligence dashboards, custom metrics, and automated reports.
                 </p>
               </div>
             </div>
@@ -505,19 +644,28 @@ export default async function PricingPage({
         </section>
 
         {/* FAQ */}
-        <section className="bg-slate-50 py-16 lg:py-24">
+        <section aria-labelledby="faq-heading" className="bg-slate-50 py-16 lg:py-24">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-[#1E293B] mb-8">
+            <h2 id="faq-heading" className="text-3xl font-extrabold text-[#1E293B] mb-8">
               Frequently Asked Questions
             </h2>
 
             <div className="space-y-6">
               <div>
                 <h3 className="font-bold text-[#1E293B] mb-2">
+                  Are your prices inclusive of VAT?
+                </h3>
+                <p className="text-slate-600">
+                  No. All prices shown are exclusive of VAT. Irish VAT at 23% applies to B2B services provided in Ireland. EU businesses with a valid VAT number may be eligible for VAT reverse charge — just let us know when you enquire.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-[#1E293B] mb-2">
                   Do you offer discounts for bundled services?
                 </h3>
                 <p className="text-slate-600">
-                  Yes. Combining services (e.g., Design + Build, or UX Audit + fixes) typically saves 10–15%. We&apos;ll provide a custom quote.
+                  Yes. Combining services (e.g., UX Audit + fixes, or Discovery + Build) typically saves 10–15%. We&apos;ll provide a custom quote with the bundle price.
                 </p>
               </div>
 
@@ -526,7 +674,7 @@ export default async function PricingPage({
                   What&apos;s not included in the prices above?
                 </h3>
                 <p className="text-slate-600">
-                  Third-party service costs (hosting, domains, SMS, payment gateway fees) are billed separately at cost.
+                  Third-party costs — hosting, domains, SMS, payment gateway fees — are billed separately at cost. We always flag these upfront so there are no surprises.
                 </p>
               </div>
 
@@ -535,7 +683,7 @@ export default async function PricingPage({
                   Can I start with Starter and upgrade later?
                 </h3>
                 <p className="text-slate-600">
-                  Absolutely. Many clients start with Starter (€800/mo), then move to Growth (€1,800/mo). Zero penalty.
+                  Absolutely. Many clients start with Starter (€800/mo, 8 hrs), then move to Growth (€1,800/mo, 20 hrs) when they need more capacity. You can upgrade or downgrade at any time with 30 days&apos; notice. Zero penalty.
                 </p>
               </div>
 
@@ -544,16 +692,16 @@ export default async function PricingPage({
                   Do you offer payment plans?
                 </h3>
                 <p className="text-slate-600">
-                  Yes. For projects over €10,000, we offer 50/50 split payment (50% upfront, 50% at delivery).
+                  Yes. For projects over €10,000, we offer 50/50 split payment (50% upfront, 50% at delivery). For larger projects, milestone-based payments are available — we&apos;ll agree the schedule before we start.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-bold text-[#1E293B] mb-2">
-                  What if I need hours above my retainer?
+                  What if I need more hours than my retainer includes?
                 </h3>
                 <p className="text-slate-600">
-                  Overage hours are billed at €100/hour. Starter plan can top up at the same rate.
+                  Each plan has a monthly allowance: Starter (8 hrs), Growth (20 hrs), Scale (40 hrs). Any hours above your allowance are billed at €100/hour, or you can upgrade your plan at any time.
                 </p>
               </div>
 
@@ -562,7 +710,7 @@ export default async function PricingPage({
                   Do you work with international clients?
                 </h3>
                 <p className="text-slate-600">
-                  Yes. We serve clients across Ireland, EU, UK, and beyond. Time zone is rarely an issue.
+                  Yes. We serve clients across Ireland, EU, UK, and beyond. We work fully remotely and time zones are rarely an issue — we&apos;ve worked with clients in Ireland, Italy, Switzerland, and further afield.
                 </p>
               </div>
             </div>
@@ -572,7 +720,7 @@ export default async function PricingPage({
                 Still have questions?
               </h3>
               <p className="text-slate-300 mb-6">
-                Every business is different. Let&apos;s discuss your specific needs.
+                Every business is different. Let&apos;s talk through your specific needs — no commitment required.
               </p>
               <Link
                 href="/#quote"
