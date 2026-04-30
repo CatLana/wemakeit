@@ -50,9 +50,9 @@ export default function Hero() {
           {t("subtitle")}
         </p>
 
-        {/* Spring sale offer */}
-        <div className="inline-flex flex-wrap items-center gap-2 px-5 py-3 max-w-full rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-10">
-          <Tag size={14} aria-hidden="true" />
+        {/* Summer sale offer */}
+        <div className="inline-flex items-start gap-2 px-5 py-3 max-w-full rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-10">
+          <Tag size={14} aria-hidden="true" className="mt-0.5 shrink-0" />
           <span>{t("springSale")}</span>
         </div>
 

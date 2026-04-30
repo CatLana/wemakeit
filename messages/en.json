@@ -25,7 +25,7 @@
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
     "subtitle": "Got a business idea? We turn it into a real app or website. One team, one price, no surprises.",
-    "springSale": "Spring Sale: 40% off for new clients. Limited spots available.",
+    "springSale": "Summer Sale: 30% off for new clients. Limited spots available.",
     "cta1": "Tell us your idea",
     "cta2": "How it works",
     "ariaLabel": "Hero: We Make IT home"
@@ -269,8 +269,8 @@
     }
   },
   "footer": {
-    "springSaleTitle": "Spring Sale Offer",
-    "springSaleBody": "40% off for new clients this spring. Lock in your rate now.",
+    "springSaleTitle": "Summer Sale Offer",
+    "springSaleBody": "30% off for new clients this summer. Lock in your rate now.",
     "springSaleBeat": "Got a quote from another company?",
     "springSaleSendIt": "Send it to us",
     "springSaleBeatSuffix": "and we will beat it.",

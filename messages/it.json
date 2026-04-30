@@ -25,7 +25,7 @@
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
     "subtitle": "Hai un'idea imprenditoriale? La trasformiamo in app o sito web. Un team, un prezzo, senza costi nascosti.",
-    "springSale": "Offerta Primavera: 40% sconto per nuovi clienti. Posti limitati.",
+    "springSale": "Offerta Estate: 30% sconto per nuovi clienti. Posti limitati.",
     "cta1": "Raccontaci la tua idea",
     "cta2": "Come funziona",
     "ariaLabel": "Schermata principale We Make IT"
@@ -337,8 +337,8 @@
     }
   },
   "footer": {
-    "springSaleTitle": "Offerta Primavera",
-    "springSaleBody": "40% sconto nuovi clienti. Blocca il prezzo ora.",
+    "springSaleTitle": "Offerta Estate",
+    "springSaleBody": "30% sconto nuovi clienti. Blocca il prezzo ora.",
     "springSaleBeat": "Hai altro preventivo?",
     "springSaleSendIt": "Inviacelo",
     "springSaleBeatSuffix": "lo valutiamo.",
