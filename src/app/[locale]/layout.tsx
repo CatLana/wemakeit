@@ -7,6 +7,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import CookieBannerLoader from "@/components/CookieBannerLoader";
+import ScrollToTop from "@/components/ScrollToTop";
 
 // Latin only (EN, IT) — Italian accented chars (à è é ì ò ù) are in the base
 // latin subset; latin-ext is only needed for Eastern European (Polish, Czech…)
@@ -204,6 +205,7 @@ export default async function LocaleLayout({
         </a>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <ScrollToTop />
           <Suspense fallback={null}>
             <CookieBannerLoader />
           </Suspense>
