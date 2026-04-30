@@ -182,12 +182,12 @@ export default function Footer() {
           <p>{t("copyright")}</p>
           <p>
             {t("builtBy")}{" "}
-            <a
-              href="https://www.wemakeit.ie"
+            <Link
+              href="/"
               className="text-[#22D3EE] hover:text-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
               We Make IT
-            </a>
+            </Link>
           </p>
         </div>
       </div>
