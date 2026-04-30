@@ -46,6 +46,15 @@ export async function generateMetadata({
 
 const articles = [
   {
+    slug: "validate-business-idea-design-thinking-value-proposition",
+    category: "Strategy & Validation",
+    title: "Is your business idea worth pursuing? How to validate profitability with Design Thinking",
+    excerpt:
+      "Most new ventures fail because they solve problems no one pays for. Use Design Thinking and the Value Proposition Canvas to test your idea cheaply before building anything.",
+    date: "30 April 2026",
+    readTime: "7 min read",
+  },
+  {
     slug: "free-expense-tracking-for-irish-sole-traders",
     category: "Admin & Finance",
     title: "Free expense tracking for Irish sole traders: the lean-start guide",

@@ -14,6 +14,7 @@ const pages: {
   { path: "/blog",                                   priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-03-24") },
   { path: "/blog/irish-grants-for-app-development",  priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-03-31") },
   { path: "/blog/free-expense-tracking-for-irish-sole-traders", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-04-26") },
+  { path: "/blog/validate-business-idea-design-thinking-value-proposition", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/services",                               priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/services/web-development",               priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/services/app-development",               priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
