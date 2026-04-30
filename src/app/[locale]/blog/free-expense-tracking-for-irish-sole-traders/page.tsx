@@ -26,7 +26,7 @@ export async function generateMetadata({
     title:
       "Free Expense Tracking for Irish Sole Traders: The Lean-Start Guide 2026",
     description:
-      "A practical, free system for Irish sole traders to track business expenses and upload receipts year-round. Wave Accounting vs Google Sheets — what to use, how to set it up, and what Revenue.ie expects at tax time.",
+      "A practical, genuinely free system for Irish sole traders to track business expenses year-round. Google Sheets, Google Drive, and what Revenue.ie expects at tax time — no subscriptions required.",
     alternates: {
       canonical: canonicalUrl,
       languages: {
@@ -38,7 +38,7 @@ export async function generateMetadata({
     openGraph: {
       title: "Free Expense Tracking for Irish Sole Traders 2026",
       description:
-        "Stop losing receipts. Use Wave Accounting or Google Drive to track all business expenses — free, easy, and ready for your Form 11 each October.",
+        "Stop losing receipts. A practical, free system using Google Sheets and Google Drive to track all your business expenses year-round and be ready for your Form 11.",
       type: "article",
       publishedTime: "2026-04-26T00:00:00.000Z",
       authors: ["We Make IT"],
@@ -72,7 +72,7 @@ export default async function ArticlePage({
     headline:
       "Free Expense Tracking for Irish Sole Traders: The Lean-Start Guide 2026",
     description:
-      "A practical, free system for Irish sole traders to track business expenses and upload receipts year-round. Wave Accounting vs Google Sheets — what to use and how to set it up.",
+      "A practical, genuinely free system for Irish sole traders to track business expenses year-round using Google Sheets and Google Drive.",
     datePublished: "2026-04-26T00:00:00.000Z",
     dateModified: "2026-04-26T00:00:00.000Z",
     author: {
@@ -92,12 +92,12 @@ export default async function ArticlePage({
     },
     inLanguage: locale,
     about: [
-      { "@type": "Thing", name: "Wave Accounting" },
       { "@type": "Thing", name: "Irish sole trader taxes" },
       { "@type": "Thing", name: "Revenue.ie Form 11" },
+      { "@type": "Thing", name: "Google Sheets expense tracking" },
     ],
     keywords:
-      "free expense tracking ireland, sole trader expenses ireland, wave accounting ireland, form 11 ireland, track business expenses ireland 2026",
+      "free expense tracking ireland, sole trader expenses ireland, google sheets expense tracker ireland, form 11 ireland, track business expenses ireland 2026",
   };
 
   const breadcrumbJsonLd = {
@@ -139,23 +139,26 @@ export default async function ArticlePage({
         {/* Article header */}
         <div className="bg-[#0F172A] pt-32 pb-14">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-[#22D3EE] transition-colors mb-8 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-            >
-              <ArrowLeft size={14} aria-hidden="true" />
-              Back to Blog
-            </Link>
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-3">
-              Admin & Finance
-            </span>
+            {/* Back link + category — flex row so they never overlap */}
+            <div className="flex items-center justify-between mb-8">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+              >
+                <ArrowLeft size={14} aria-hidden="true" />
+                Back to Blog
+              </Link>
+              <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE]">
+                Admin &amp; Finance
+              </span>
+            </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6">
               Free Expense Tracking for Irish Sole Traders: The Lean-Start Guide
             </h1>
             <div className="flex items-center gap-5 text-sm text-slate-400">
               <span className="flex items-center gap-1.5">
                 <Calendar size={14} aria-hidden="true" />
-                26 April 2026
+                30 April 2026
               </span>
               <span className="flex items-center gap-1.5">
                 <Clock size={14} aria-hidden="true" />
@@ -234,111 +237,91 @@ export default async function ArticlePage({
             </p>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">
-              The lean recommendation: Wave Accounting (free forever)
+              A word of warning about &ldquo;free forever&rdquo; accounting apps
             </h2>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
-              <a
-                href="https://www.waveapps.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#0E7490] underline"
-              >
-                Wave Accounting
-              </a>{" "}
-              is a completely free double-entry accounting tool used by
-              millions of small businesses worldwide. Unlike most competitors
-              that offer a &ldquo;free trial&rdquo;, Wave&apos;s core accounting
-              features — income, expenses, invoicing, and reports — are free
-              permanently, with no credit card required.
+              Over the last couple of years, several accounting tools that used
+              to advertise free-forever plans have quietly moved to paid
+              subscriptions or changed their sign-up flows. The most widely
+              discussed example is Wave Accounting, which now redirects many
+              new sign-ups through a Zoho Books onboarding process and no
+              longer offers a straightforward free tier in Ireland.
+            </p>
+            <p className="text-slate-600 leading-relaxed text-base mb-10">
+              This is not a knock on any particular product — business models
+              change. But it is a reason to be cautious. Before committing time
+              to set up any new app, always check the current pricing page
+              directly and read recent reviews. For most sole traders just
+              starting out, the simplest genuinely free system is a
+              well-organised Google Drive folder combined with a Google Sheet.
             </p>
 
-            {/* Why Wave table */}
-            <div className="overflow-x-auto mb-10">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="bg-slate-100 border-b-2 border-slate-300">
-                    <th className="text-left px-4 py-3 font-bold text-[#1E293B]">
-                      Feature
-                    </th>
-                    <th className="text-left px-4 py-3 font-bold text-[#1E293B]">
-                      Wave (free)
-                    </th>
-                    <th className="text-left px-4 py-3 font-bold text-[#1E293B]">
-                      Typical paid tools
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ["Income & expense tracking", "✅ Free", "€10–€30/month"],
-                    [
-                      "Upload and store receipts",
-                      "✅ Free (via mobile app)",
-                      "Often paid add-on",
-                    ],
-                    ["Send invoices", "✅ Free", "Often included"],
-                    [
-                      "Profit & Loss report",
-                      "✅ Free",
-                      "Included in most plans",
-                    ],
-                    [
-                      "Multiple currencies",
-                      "✅ Free",
-                      "Usually higher-tier plan",
-                    ],
-                    [
-                      "Payroll",
-                      "Paid add-on (not needed for sole trader)",
-                      "Varies",
-                    ],
-                  ].map(([feature, wave, paid]) => (
-                    <tr key={feature} className="border-b border-slate-200">
-                      <td className="px-4 py-3 font-medium text-[#1E293B]">
-                        {feature}
-                      </td>
-                      <td className="px-4 py-3 text-slate-600">{wave}</td>
-                      <td className="px-4 py-3 text-slate-600">{paid}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">
+              The lean recommendation: Google Sheets + Google Drive
+            </h2>
+            <p className="text-slate-600 leading-relaxed text-base mb-5">
+              Google Drive and Google Sheets are free with any Google account,
+              work on every device, and have been around for two decades. There
+              is no pricing tier to worry about, no credit card required, and
+              your data is accessible wherever you are. For a sole trader with
+              up to 30 transactions per month, this is all you need.
+            </p>
+            <p className="text-slate-600 leading-relaxed text-base mb-3">
+              Set up a folder structure like this in Google Drive:
+            </p>
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 mb-5 font-mono text-sm text-slate-700 leading-relaxed">
+              <p>📁 Business / Finance</p>
+              <p>&nbsp;&nbsp;📁 2026</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;📁 Receipts</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 2026-01-15_hosting_vercel.jpg</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 2026-02-03_coffee_client_meeting.jpg</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;📄 2026 Expenses (Google Sheet)</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;📄 2026 Invoices Sent (Google Sheet)</p>
             </div>
+            <p className="text-slate-600 leading-relaxed text-base mb-5">
+              In your expenses spreadsheet, keep one row per expense with
+              these columns: <strong>Date</strong>, <strong>Supplier</strong>,{" "}
+              <strong>Description</strong>, <strong>Category</strong>,{" "}
+              <strong>Amount EUR</strong>, <strong>VAT EUR</strong>, and{" "}
+              <strong>Receipt filename</strong>. That last column is the key —
+              it links each row to a photo in your Receipts folder so you can
+              find any document in seconds, even two years later.
+            </p>
 
             <h3 className="text-xl font-bold text-[#1E293B] mt-8 mb-4">
-              How to set up Wave in 15 minutes
+              How to get set up in 20 minutes
             </h3>
             <ol className="space-y-6 mb-10">
               {[
                 {
                   n: "01",
-                  title: "Create a free account at waveapps.com",
-                  body: 'Sign up with your email. Choose "I work for myself" and select your country as Ireland. This takes about two minutes.',
+                  title: "Create your folder structure in Google Drive",
+                  body: 'Create a top-level folder called “Business / Finance”. Inside it, create a folder for the current year, and inside that a “Receipts” subfolder. You will repeat this once per year.',
                 },
                 {
                   n: "02",
-                  title: "Set up your business profile",
-                  body: "Enter your business name (your name as a sole trader is fine), set the currency to EUR, and set your fiscal year start to 1 January.",
+                  title: "Create your Expenses spreadsheet",
+                  body: 'Create a new Google Sheet called “2026 Expenses”. Add these column headers in row 1: Date | Supplier | Description | Category | Amount EUR | VAT EUR | Receipt File. Freeze row 1 so headers stay visible as you scroll.',
                 },
                 {
                   n: "03",
-                  title: "Create your expense categories",
-                  body: "Wave comes with standard categories pre-loaded. For an Irish sole trader the most common ones are: Advertising & Marketing, Computer & Internet Expenses, Home Office, Professional Fees (accountant), Travel, and Subcontractors. You can customise to match Revenue allowable expenses.",
+                  title: "Decide on your expense categories",
+                  body: "Common categories for an Irish sole trader in tech or digital services: Software Subscriptions, Hosting & Domains, Hardware, Home Office, Professional Fees, Advertising & Marketing, Training & Development, Travel, Subcontractors, Bank Charges.",
                 },
                 {
                   n: "04",
-                  title: "Download the Wave mobile app",
-                  body: "The iOS and Android app lets you photograph receipts on the spot. Wave reads the date and amount automatically. The photo is stored in the cloud. No more paper receipts going missing.",
+                  title: "Photograph receipts on the spot",
+                  body: "When you receive a receipt — paper or email — photograph or screenshot it immediately. Name each file with the date and supplier, for example 2026-04-15_aws.pdf. Upload it to your Receipts folder straight away. This single habit is what prevents the October panic.",
                 },
                 {
                   n: "05",
-                  title: "Log each expense as it happens",
-                  body: "Spend €12 on a domain renewal? Open Wave, add an expense, choose the category, upload the receipt photo. Takes 30 seconds. Do this every time — it is the single most important habit.",
+                  title: "Log each expense the same day",
+                  body: "Open your sheet, add a row, fill in the details, and type the receipt filename in the last column. Do not leave it for the weekend. A 60-second habit every time beats a two-hour monthly catch-up.",
                 },
                 {
                   n: "06",
-                  title: "Run a Profit & Loss report in October",
-                  body: "Before filing your Form 11, go to Reports → Profit & Loss and select the full tax year. This gives you the income and expense totals your accountant (or you, via ROS) needs.",
+                  title: "Total up at year-end",
+                  body: "Before filing your Form 11, add a SUM formula at the bottom of your Amount column and group totals by category. A simple pivot table works perfectly. Hand the totals to your accountant, or enter them directly into ROS yourself.",
                 },
               ].map(({ n, title, body }) => (
                 <li key={n} className="flex gap-5">
@@ -359,37 +342,90 @@ export default async function ArticlePage({
             </ol>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">
-              The even leaner backup: Google Drive + Sheets
+              Want something more automated?
             </h2>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
-              If you prefer to keep things as simple as possible and are not
-              yet ready for any new app, Google Drive and Google Sheets cost
-              nothing and work perfectly for a starting sole trader.
+              If your transaction volume grows — say, more than 40 expenses a
+              month — a dedicated bookkeeping app starts to save you real time.
+              Here is what to look for, and what to watch out for:
             </p>
-            <p className="text-slate-600 leading-relaxed text-base mb-3">
-              Set up a folder structure like this in Google Drive:
-            </p>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 mb-5 font-mono text-sm text-slate-700 leading-relaxed">
-              <p>📁 Business / Finance</p>
-              <p>&nbsp;&nbsp;📁 2026</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;📁 Receipts</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 2026-01-15_hosting_aws.jpg</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 2026-02-03_coffee_meeting.jpg</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;📄 2026 Expenses (Google Sheet)</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;📄 2026 Invoices Sent (Google Sheet)</p>
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-slate-100 border-b-2 border-slate-300">
+                    <th className="text-left px-4 py-3 font-bold text-[#1E293B]">
+                      What to check
+                    </th>
+                    <th className="text-left px-4 py-3 font-bold text-[#1E293B]">
+                      Why it matters
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    [
+                      "Pricing page — not the landing page",
+                      '"Free forever" claims change. Check the actual pricing page before investing time in setup.',
+                    ],
+                    [
+                      "EUR support and Irish tax categories",
+                      "Some tools are built for the US or UK market and lack Irish-relevant categories.",
+                    ],
+                    [
+                      "Mobile receipt capture",
+                      "A phone camera scanner saves hours over the year. Check it works offline too.",
+                    ],
+                    [
+                      "CSV or PDF export",
+                      "You need to get your data out easily — for your accountant and for switching tools later.",
+                    ],
+                    [
+                      "GDPR and data storage",
+                      "Your financial records are sensitive. Check where data is stored and whether the vendor is EU-based.",
+                    ],
+                  ].map(([what, why]) => (
+                    <tr key={what} className="border-b border-slate-200">
+                      <td className="px-4 py-3 font-medium text-[#1E293B] align-top">
+                        {what}
+                      </td>
+                      <td className="px-4 py-3 text-slate-600 align-top">{why}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-            <p className="text-slate-600 leading-relaxed text-base mb-5">
-              In your expenses spreadsheet, keep one row per expense with
-              columns for: Date, Description, Category, Amount (EUR), VAT if
-              applicable, and Receipt filename. Scan or photograph every receipt
-              with your phone camera and name the file with the date and
-              supplier so you can find it instantly in two years&apos; time.
-            </p>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
-              This approach works fine while your transaction volume is low
-              (under 5–10 expenses a week). As your business grows, you will
-              want to migrate to Wave or a similar tool — but starting here is
-              perfectly valid.
+              At the time of writing (April 2026),{" "}
+              <a
+                href="https://www.zoho.com/books/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0E7490] underline"
+              >
+                Zoho Books
+              </a>{" "}
+              offers a free plan for businesses with annual revenue under
+              €50,000. Irish-built{" "}
+              <a
+                href="https://www.surfaccounts.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0E7490] underline"
+              >
+                Surf Accounts
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.brightbooks.ie/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0E7490] underline"
+              >
+                Bright Books
+              </a>{" "}
+              are worth a look — they are built specifically for the Irish
+              market. Always verify current pricing on each site before
+              committing.
             </p>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">
@@ -449,24 +485,24 @@ export default async function ArticlePage({
             </p>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">
-              Key Irish tax dates for sole traders
+              Key Irish tax dates for sole traders (2026)
             </h2>
             <div className="space-y-4 mb-10">
               {[
                 {
-                  date: "31 October each year",
-                  label: "Self-assessment deadline (paper)",
-                  note: "File your Form 11 and pay any balance of tax owed for the previous year, plus your preliminary tax for the current year.",
+                  date: "31 October 2026",
+                  label: "Self-assessment deadline — paper",
+                  note: "File your Form 11 for the 2025 tax year and pay any balance of tax owed, plus preliminary tax for 2026. This is the general Pay and File deadline.",
                 },
                 {
-                  date: "Mid-November each year",
-                  label: "Self-assessment deadline (online via ROS)",
-                  note: "Revenue Online Service (ROS) filers get an extended deadline. Filing online also makes it easier to import figures directly.",
+                  date: "18 November 2026",
+                  label: "Self-assessment deadline — online via ROS",
+                  note: "Revenue Online Service (ROS) filers get an extended deadline. Revenue confirmed this date via eBrief No. 034/26. Filing online also lets you import pre-populated income data directly.",
                 },
                 {
-                  date: "Ongoing throughout the year",
+                  date: "Throughout the year",
                   label: "Keep records as you go",
-                  note: "Do not wait until September. Log each expense the week it happens. A consistent 5-minute weekly habit beats a frantic October catch-up.",
+                  note: "Do not wait until September. Log each expense the week it happens. A consistent 5-minute weekly habit beats a frantic October catch-up every time.",
                 },
               ].map(({ date, label, note }) => (
                 <div
@@ -496,14 +532,16 @@ export default async function ArticlePage({
             <div className="rounded-xl bg-slate-50 border border-slate-200 p-6 mb-10">
               <ul className="space-y-3 text-sm text-slate-700">
                 {[
-                  "Create a Wave account (or a Google Drive folder) today — not tomorrow",
+                  "Create your Google Drive folder structure today — not tomorrow",
+                  "Set up your Expenses Google Sheet with the seven columns above",
                   "Photograph every receipt the moment you receive it",
-                  "Categorise expenses weekly (takes under 5 minutes)",
-                  "Store all supplier invoices as PDFs in a dated folder",
-                  "Record income (invoices paid) as well as expenses in the same tool",
-                  "At year-end, run a Profit & Loss report and hand it to your accountant",
-                  "Keep all records for 6 years (Revenue requirement)",
-                  "Register with ROS (Revenue Online Service) for online filing",
+                  "Name each file: YYYY-MM-DD_supplier (makes searching easy in 2 years)",
+                  "Log each expense the same day — it takes under a minute",
+                  "Record income (invoices paid) in a separate sheet",
+                  "Do a 5-minute weekly review to catch anything you missed",
+                  "At year-end, total by category and share with your accountant",
+                  "Keep all records for at least 6 years — Revenue can audit up to 4 years back",
+                  "Register with ROS for online filing and get the November deadline",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span
@@ -523,70 +561,61 @@ export default async function ArticlePage({
             </h2>
             <ul className="list-disc list-outside ml-5 space-y-3 mb-10 text-slate-600 leading-relaxed">
               <li>
-                <strong>
-                  <a
-                    href="https://www.waveapps.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#0E7490] underline"
-                  >
-                    Wave Accounting
-                  </a>
-                </strong>{" "}
-                — free forever for income, expenses, and invoicing
+                <a
+                  href="https://www.revenue.ie/en/self-assessment-and-self-employment/index.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0E7490] underline font-semibold"
+                >
+                  Revenue.ie — Self-Assessment and Self-Employment
+                </a>{" "}
+                — the official starting point for registering as a sole trader
+                and understanding your obligations
               </li>
               <li>
-                <strong>
-                  <a
-                    href="https://www.revenue.ie/en/self-assessment-and-self-employment/index.aspx"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#0E7490] underline"
-                  >
-                    Revenue.ie — Self-Assessment and Self-Employment
-                  </a>
-                </strong>{" "}
-                — official guide to registering as a sole trader and filing
-                your return
+                <a
+                  href="https://www.revenue.ie/en/self-assessment-and-self-employment/filing-your-tax-return/index.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0E7490] underline font-semibold"
+                >
+                  Revenue.ie — Filing your tax return (Form 11)
+                </a>{" "}
+                — step-by-step guide and help videos for completing Form 11
               </li>
               <li>
-                <strong>
-                  <a
-                    href="https://www.ros.ie/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#0E7490] underline"
-                  >
-                    ROS (Revenue Online Service)
-                  </a>
-                </strong>{" "}
+                <a
+                  href="https://www.ros.ie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0E7490] underline font-semibold"
+                >
+                  ROS (Revenue Online Service)
+                </a>{" "}
                 — file your Form 11 online and get the extended November
                 deadline
               </li>
               <li>
-                <strong>
-                  <a
-                    href="https://www.revenue.ie/en/self-assessment-and-self-employment/expenses/index.aspx"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#0E7490] underline"
-                  >
-                    Revenue — Allowable Expenses for Self-Employed
-                  </a>
-                </strong>{" "}
-                — official Revenue guidance on what you can and cannot deduct
+                <a
+                  href="https://www.citizensinformation.ie/en/money-and-tax/tax/income-tax/taxation-of-self-employed-people/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0E7490] underline font-semibold"
+                >
+                  Citizens Information — Taxation of self-employed people
+                </a>{" "}
+                — a plain-language overview of how self-employment income is
+                taxed in Ireland
               </li>
               <li>
-                <strong>
-                  <a
-                    href="https://www.localenterprise.ie/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#0E7490] underline"
-                  >
-                    Local Enterprise Office (LEO)
-                  </a>
-                </strong>{" "}
+                <a
+                  href="https://www.localenterprise.ie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0E7490] underline font-semibold"
+                >
+                  Local Enterprise Office (LEO)
+                </a>{" "}
                 — free mentoring and start-your-own-business training for sole
                 traders across Ireland
               </li>
@@ -615,6 +644,8 @@ export default async function ArticlePage({
                   Revenue.ie
                 </a>{" "}
                 or with a qualified accountant before filing your return.
+                Third-party tool pricing mentioned in this article may change —
+                always check each product&apos;s own website for current information.
               </p>
             </div>
 

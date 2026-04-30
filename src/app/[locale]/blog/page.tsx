@@ -50,7 +50,7 @@ const articles = [
     category: "Admin & Finance",
     title: "Free expense tracking for Irish sole traders: the lean-start guide",
     excerpt:
-      "Stop losing receipts. A practical, free system — Wave Accounting or Google Drive — to track all your business expenses year-round and be ready for your Form 11 each October.",
+      "Stop losing receipts. A practical, genuinely free system using Google Sheets and Google Drive to track all your business expenses year-round and be ready for your Form 11 each October.",
     date: "26 April 2026",
     readTime: "8 min read",
   },
