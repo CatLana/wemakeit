@@ -335,7 +335,7 @@ export default async function PricingPage({
                 Fixed-Price Projects
               </h2>
               <p className="text-slate-600 text-lg">
-                One-time builds with clear scope, fixed timeline, and predictable cost.
+                One-time builds with clear scope and predictable cost.
               </p>
             </div>
 
@@ -343,7 +343,7 @@ export default async function PricingPage({
               {/* Idea Validation Sprint */}
               <div className="rounded-2xl border border-slate-200 bg-white p-8">
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">Idea Validation Sprint</h3>
-                <p className="text-sm text-slate-500 mb-4">2-week design sprint + user testing</p>
+                <p className="text-sm text-slate-500 mb-4">Design sprint + user testing</p>
                 <div className="mb-6">
                   <span className="text-3xl font-extrabold text-[#1E293B]">€6,500</span>
                 </div>
@@ -411,7 +411,7 @@ export default async function PricingPage({
               {/* Website Build */}
               <div className="rounded-2xl border border-slate-200 bg-white p-8">
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">Website Build</h3>
-                <p className="text-sm text-slate-500 mb-4">5–10 pages, easy content editing, SEO-ready. 6-week delivery.</p>
+                <p className="text-sm text-slate-500 mb-4">5–10 pages, easy content editing, SEO-ready</p>
                 <div className="mb-6">
                   <span className="text-3xl font-extrabold text-[#1E293B]">€8,500</span>
                 </div>
@@ -453,7 +453,7 @@ export default async function PricingPage({
               {/* Custom Web App */}
               <div className="rounded-2xl border border-slate-200 bg-white p-8">
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">Custom Web App</h3>
-                <p className="text-sm text-slate-500 mb-4">2–3 core features, API, database. 8-week delivery.</p>
+                <p className="text-sm text-slate-500 mb-4">2–3 core features, API, database</p>
                 <div className="mb-6">
                   <span className="text-3xl font-extrabold text-[#1E293B]">€18,000</span>
                 </div>
@@ -487,7 +487,7 @@ export default async function PricingPage({
               {/* Mobile App Build */}
               <div className="rounded-2xl border border-slate-200 bg-white p-8">
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">Mobile App Build</h3>
-                <p className="text-sm text-slate-500 mb-4">iOS &amp; Android, core features. 10-week delivery.</p>
+                <p className="text-sm text-slate-500 mb-4">iOS &amp; Android, core features</p>
                 <div className="mb-6">
                   <span className="text-3xl font-extrabold text-[#1E293B]">€22,000</span>
                 </div>
@@ -529,7 +529,7 @@ export default async function PricingPage({
               {/* Product Discovery & Build */}
               <div className="rounded-2xl border border-slate-200 bg-white p-8">
                 <h3 className="text-xl font-bold text-[#1E293B] mb-2">Product Discovery &amp; Build</h3>
-                <p className="text-sm text-slate-500 mb-4">Research, design &amp; full product build. 12-week delivery.</p>
+                <p className="text-sm text-slate-500 mb-4">Research, design &amp; full product build</p>
                 <div className="mb-6">
                   <span className="text-3xl font-extrabold text-[#1E293B]">€35,000</span>
                 </div>
