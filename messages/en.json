@@ -31,12 +31,13 @@
     "ariaLabel": "Hero: We Make IT home"
   },
   "stats": {
-    "ariaLabel": "Our key advantages",
+    "ariaLabel": "How we work",
+    "heading": "How we work differently",
     "items": [
-      { "value": "Free", "label": "First consultation, no commitment", "ariaLabel": "Free first consultation with no commitment required" },
-      { "value": "1", "label": "Fixed price, no hidden extras", "ariaLabel": "One fixed price with no hidden extras" },
-      { "value": "", "icon": "Globe", "label": "Based in Ireland, working worldwide", "ariaLabel": "Based in Ireland, working with clients globally" },
-      { "value": "3", "label": "Three languages: English, Italian and Russian", "ariaLabel": "We work in three languages: English, Italian and Russian" }
+      { "icon": "ShieldCheck", "label": "Accessibility & UX first", "description": "Every product is built inclusive and usable from day one.", "ariaLabel": "We build every product with accessibility and UX as a foundation" },
+      { "icon": "Lightbulb", "label": "Design Thinking applied", "description": "We validate before we build. You invest in the right thing.", "ariaLabel": "We apply Design Thinking to validate ideas before building" },
+      { "icon": "TrendingUp", "label": "Built to convert", "description": "Sales and marketing strategy is baked into every decision.", "ariaLabel": "We make decisions with your business goals and conversions in mind" },
+      { "icon": "MessageCircle", "label": "No jargon, ever", "description": "Plain English. We listen first and talk tech only when it helps.", "ariaLabel": "We communicate in plain English and always listen before we speak" }
     ]
   },
   "services": {
@@ -47,14 +48,15 @@
     "subheading": "From idea validation and prototyping, to mobile app development, web applications, localisation services, IT consulting, and ongoing support. Everything under one roof.",
     "cardCta": "Tell us your idea",
     "consultationCta": "Book a consultation",
+    "learnMore": "Learn more",
     "items": [
+      { "title": "Website Development", "description": "We design and build custom websites and web applications — fast, accessible, and optimised to convert visitors into customers." },
       { "title": "Custom App Development", "description": "We design and build custom applications tailored to exactly how your business works, for your success and your customers." },
       { "title": "Idea Validation and MVP", "description": "Not sure if your idea will work? We help you validate it before spending a penny on a full build. We then create a Minimum Viable Product (MVP) so you can test it with real users fast." },
       { "title": "UX Research", "description": "Already have a product or prototype? We help handling the research on how real people use your product, find what is confusing or broken, and give you a clear, prioritised list of improvements." },
     { "title": "UX Design", "description": "Got a UX report? We turn findings into polished designs and, if needed, handle implementation too." },
       { "title": "App Prototype", "description": "Before committing to a full build, we create an interactive prototype of your app. You can click through it, test it with users, and get investor feedback." },
       { "title": "Mobile App Development", "description": "We build mobile apps that work on both iOS and Android from a single codebase, keeping costs down without compromising on look or feel." },
-      { "title": "Web Application Development", "description": "Need something more powerful than a website? We build web apps: dashboards, booking systems, portals, marketplaces and more." },
       { "title": "Accessibility Audits", "description": "EU law now requires digital products to be accessible to people with disabilities. We audit your existing app or website and fix what needs fixing." },
       { "title": "Software Consultancy", "description": "Not sure what to build, which technology to choose, or whether your idea is viable? We are here to help." },
       { "title": "Maintenance and Support", "description": "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly." },
@@ -226,6 +228,46 @@
     "emailError": "Please enter a valid email address",
     "consentError": "You must agree to continue"
   },
+  "consultationForm": {
+    "nameLabel": "Your name",
+    "namePlaceholder": "Jane Murphy",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "jane@company.ie",
+    "phoneLabel": "Phone number (optional)",
+    "phonePlaceholder": "+353 ...",
+    "nameError": "Please enter your name",
+    "emailError": "Please enter a valid email address",
+    "messageError": "Please tell us a little about your project",
+    "submitting": "Sending…",
+    "successTitle": "Request sent!",
+    "successBody": "Thanks for getting in touch. We will get back to you within one business day.",
+    "sendAnother": "Send another request",
+    "privacyNote": "We never share your details. No spam.",
+    "serverError": "Something went wrong. Please try again.",
+    "variants": {
+      "consultation": {
+        "heading": "Request a Free Consultation",
+        "subheading": "Tell us about your project and we will get back to you within one business day — no commitment required.",
+        "messageLabel": "Tell us about your project",
+        "messagePlaceholder": "What are you looking to build? Any deadlines, budget range, or context you can share?",
+        "submitLabel": "Request free consultation"
+      },
+      "audit": {
+        "heading": "Request a Free Accessibility Audit",
+        "subheading": "Share your website or app URL and we will run a free initial check and report back within one business day.",
+        "messageLabel": "Your website or app URL",
+        "messagePlaceholder": "e.g. https://yoursite.ie — add any context about your product or concerns.",
+        "submitLabel": "Request free audit"
+      },
+      "retainer": {
+        "heading": "Tell Us About Your Project",
+        "subheading": "Looking for ongoing support? Share what you have and we will put together a support proposal that fits.",
+        "messageLabel": "What does your project need?",
+        "messagePlaceholder": "Tell us about your existing product — tech stack, current issues, what support you are looking for.",
+        "submitLabel": "Get a support proposal"
+      }
+    }
+  },
   "footer": {
     "springSaleTitle": "Spring Sale Offer",
     "springSaleBody": "40% off for new clients this spring. Lock in your rate now.",
@@ -331,7 +373,36 @@
         "it": "Professional web development services for Italian businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
         "ch": "Professional web development services for Swiss-Italian businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results."
       },
-      "ctaHeading": "Ready to build your web presence?"
+      "ctaHeading": "Ready to build your web presence?",
+      "whatWeDoHeading": "What We Build",
+      "whatWeDoSub": "From simple business websites to complex web applications — we cover it all.",
+      "whatWeDo": [
+        { "title": "Business Websites", "description": "Clean, professional websites that represent your brand, rank on Google, and turn visitors into customers." },
+        { "title": "E-Commerce Stores", "description": "Sell online with confidence. We build and configure your store, payment processing, and product management from scratch." },
+        { "title": "CMS-Powered Sites", "description": "Update your content without touching code. We build on trusted platforms so you stay in control after launch." },
+        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces — if your business needs more than a website, we build it." },
+        { "title": "Landing Pages", "description": "Launch fast with a focused, conversion-optimised page for your product, campaign, or service." },
+        { "title": "Website Redesign", "description": "Got a website that's letting you down? We rebuild it properly — faster, better-looking, and easier to manage." }
+      ],
+      "whyHeading": "Why Businesses Choose Us",
+      "why": [
+        { "title": "Fixed Price, No Surprises", "description": "You know the full cost before we start. No hidden extras, no surprise invoices mid-project." },
+        { "title": "Mobile-First by Default", "description": "Every website we build works perfectly on phones, tablets, and desktops. It's not optional — it's how we work." },
+        { "title": "Built for Search Engines", "description": "Clean code, fast loading, proper structure. Your site is ready to rank from day one." },
+        { "title": "Accessible to Everyone", "description": "We build to WCAG 2.1 AA standards so your site works for all users and meets legal requirements." }
+      ],
+      "deliverablesHeading": "What You Get",
+      "deliverables": [
+        "Fully custom website designed to match your brand",
+        "Mobile-friendly, fast-loading pages out of the box",
+        "SEO foundations: meta tags, sitemap, structured data",
+        "Content management system so you can update it yourself",
+        "3 months of post-launch support included",
+        "Full handover with simple documentation"
+      ],
+      "finalCtaHeading": "Ready to talk about your website?",
+      "finalCtaBody": "Tell us what you need and we'll send you a free, no-obligation quote within 48 hours.",
+      "finalCtaBtn": "Get a Free Quote"
     },
     "appDev": {
       "h1": {
@@ -342,12 +413,30 @@
       },
       "breadcrumb": "App Development",
       "desc": {
-        "ie": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps that solve real business problems for Irish businesses.",
-        "gb": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps that solve real business problems for UK and Irish businesses.",
-        "it": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps that solve real business problems for Italian businesses.",
-        "ch": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps that solve real business problems for Swiss and Italian businesses."
+        "ie": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for Irish businesses. Fixed pricing. No hidden costs.",
+        "gb": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for UK and Irish businesses. Fixed pricing. No hidden costs.",
+        "it": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for Italian businesses. Fixed pricing. No hidden costs.",
+        "ch": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for Swiss and Italian businesses. Fixed pricing. No hidden costs."
       },
-      "ctaHeading": "Ready to build your app?"
+      "ctaPrimary": "Tell us your idea",
+      "ctaSecondary": "Request free consultation",
+      "whatWeDoHeading": "What We Build",
+      "whatWeDoSub": "From a first prototype to a full production app — we cover every stage.",
+      "whatWeDo": [
+        { "title": "iOS Apps", "description": "Native and React Native apps for iPhone and iPad. Smooth, performant, App Store ready." },
+        { "title": "Android Apps", "description": "Native and cross-platform Android apps, built to Google Play standards and optimised for a wide range of devices." },
+        { "title": "Cross-Platform Apps", "description": "One codebase, two platforms. We use React Native and Expo so you launch on iOS and Android without doubling the budget." },
+        { "title": "Progressive Web Apps", "description": "Web apps that install and feel like native apps. A cost-effective route to mobile-first experiences." },
+        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces — if your business needs more than a website, we build it." },
+        { "title": "MVP Development", "description": "Launch the smallest version that proves your idea. Real users, real feedback, minimum spend — then we scale." }
+      ],
+      "whyHeading": "Why Irish Businesses Choose Us",
+      "why": [
+        { "number": "01", "title": "Fixed Price from Day One", "description": "You know the full cost before we write a line of code. No hourly billing, no scope creep surprises." },
+        { "number": "02", "title": "Accessibility Built In", "description": "We build to WCAG 2.1 AA so your app works for all users and meets EU accessibility requirements from launch." },
+        { "number": "03", "title": "Design Thinking First", "description": "We validate before we build. Your idea is tested with real users before a single feature is committed to production." },
+        { "number": "04", "title": "15+ Years of Experience", "description": "Our team has shipped products at scale. We bring that experience to every project, no matter the size." }
+      ]
     },
     "uxAudit": {
       "h1": {
@@ -360,7 +449,7 @@
       "desc": "Ensure your website or app is accessible to all users and compliant with WCAG 2.1 AA standards. Get a detailed audit report with actionable recommendations.",
       "descCh": "Ensure your website or app is accessible to all users and compliant with WCAG 2.1 AA standards. Get a detailed audit report with actionable recommendations for Swiss businesses under EU accessibility regulations.",
       "euTitle": "EU Accessibility Act Compliance",
-      "euBody": "Private sector businesses with 10+ employees or €2M+ turnover must comply by June 2025. We help you meet requirements and avoid legal risk.",
+      "euBody": "The EU Accessibility Act deadline passed in June 2025. If your site or app is not yet compliant, you are already at risk. We help you catch up fast and avoid legal exposure.",
       "whatHeading": "What You Get",
       "item1": "Detailed audit report with screenshots",
       "item2": "Issues categorized by severity (critical, major, minor)",
@@ -369,7 +458,207 @@
       "item5": "Optional remediation plan with implementation priorities",
       "item6": "Consultation call to discuss findings",
       "ctaHeading": "Start with a free 15-minute accessibility health check",
-      "ctaBtn": "Book Your Free Check"
+      "ctaBtn": "Book Your Free Check",
+      "consultationAnchor": "Request a free audit"
+    },
+    "ideaMvp": {
+      "h1": {
+        "ie": "Idea Validation & MVP Development in Ireland",
+        "gb": "Idea Validation & MVP Development in Ireland & the UK",
+        "it": "Idea Validation & MVP Development in Italy",
+        "ch": "Idea Validation & MVP Development in Switzerland"
+      },
+      "breadcrumb": "Idea Validation & MVP",
+      "desc": "Not sure if your idea will work? We help you validate it before spending a penny on a full build — then create a lean MVP you can test with real users.",
+      "whatHeading": "What We Do",
+      "whatItems": [
+        { "title": "Idea Workshop", "description": "We run a structured session to explore your idea, identify assumptions, and map out the core problem you are solving." },
+        { "title": "Market & User Research", "description": "We check if the market exists, who your users are, and whether they would pay for what you are building." },
+        { "title": "Prototyping", "description": "We create a clickable prototype you can test with real users before committing to a full build." },
+        { "title": "MVP Build", "description": "We build the smallest version of your product that proves the concept. Then we iterate based on feedback." }
+      ],
+      "whyHeading": "Why Validate Before You Build",
+      "whyItems": [
+        "Save months of development time on the wrong idea",
+        "Get real user feedback before investing in production code",
+        "Impress investors with validated data and a working prototype",
+        "Launch faster and cheaper with a focused MVP"
+      ]
+    },
+    "uxResearch": {
+      "h1": {
+        "ie": "UX Research Services in Ireland",
+        "gb": "UX Research Services in Ireland & the UK",
+        "it": "UX Research Services in Italy",
+        "ch": "UX Research Services in Switzerland"
+      },
+      "breadcrumb": "UX Research",
+      "desc": "Already have a product? We research how real people use it, identify usability problems, and give you a clear prioritised list of improvements.",
+      "whatHeading": "What We Do",
+      "whatItems": [
+        { "title": "User Interviews", "description": "We talk to your real users to understand their goals, frustrations, and mental models." },
+        { "title": "Usability Testing", "description": "We observe users completing real tasks in your product and record exactly where they struggle." },
+        { "title": "Heuristic Evaluation", "description": "We review your product against established UX principles and identify issues without needing users." },
+        { "title": "Research Report", "description": "You receive a clear, prioritised report with screenshots, severity ratings, and specific recommendations." }
+      ],
+      "deliverableHeading": "What You Get",
+      "deliverables": [
+        "Full research report with findings and evidence",
+        "Issues prioritised by impact and effort",
+        "Specific, actionable recommendations",
+        "Optional follow-up call to discuss the report"
+      ]
+    },
+    "uxDesign": {
+      "h1": {
+        "ie": "UX Design Services in Ireland",
+        "gb": "UX Design Services in Ireland & the UK",
+        "it": "UX Design Services in Italy",
+        "ch": "UX Design Services in Switzerland"
+      },
+      "breadcrumb": "UX Design",
+      "desc": "From wireframes to polished UI — we turn research findings and product ideas into designs that are intuitive, accessible, and ready to build.",
+      "whatHeading": "What We Do",
+      "whatItems": [
+        { "title": "Information Architecture", "description": "We structure your content and navigation so users always know where they are and where to go next." },
+        { "title": "Wireframing", "description": "Low-fidelity layouts that define the flow and structure before we invest in visual design." },
+        { "title": "UI Design", "description": "High-fidelity screens in your brand — clean, modern, and built to convert." },
+        { "title": "Design System", "description": "A reusable component library that keeps your product consistent and speeds up future development." }
+      ],
+      "deliverableHeading": "What You Get",
+      "deliverables": [
+        "Figma files with all screens and components",
+        "Annotated designs for developers",
+        "Responsive layouts for mobile, tablet, and desktop",
+        "Accessibility annotations (colour contrast, focus order, ARIA notes)"
+      ]
+    },
+    "appPrototype": {
+      "h1": {
+        "ie": "App Prototyping Service in Ireland",
+        "gb": "App Prototyping Service in Ireland & the UK",
+        "it": "App Prototyping Service in Italy",
+        "ch": "App Prototyping Service in Switzerland"
+      },
+      "breadcrumb": "App Prototype",
+      "desc": "Before committing to a full build, we create an interactive, clickable prototype of your app. Test it with users, share it with investors, and validate every key flow.",
+      "whatHeading": "What We Build",
+      "whatItems": [
+        { "title": "Clickable Figma Prototype", "description": "A fully interactive prototype you can share with a link. No code required, but it feels like the real thing." },
+        { "title": "User Flow Mapping", "description": "We map every key user journey so the prototype covers the flows that matter most." },
+        { "title": "User Testing", "description": "We run a round of user tests on the prototype and report back on what works and what needs changing." },
+        { "title": "Investor-Ready Presentation", "description": "A polished prototype with supporting documentation for investor pitches and product demos." }
+      ],
+      "whyHeading": "Why Prototype First",
+      "whyItems": [
+        "Find usability problems before they are expensive to fix",
+        "Validate your concept with real users at low cost",
+        "Get clearer developer estimates from a detailed prototype",
+        "Pitch with confidence — show, don't just tell"
+      ]
+    },
+    "mobileAppDev": {
+      "h1": {
+        "ie": "Mobile App Development in Ireland",
+        "gb": "Mobile App Development in Ireland & the UK",
+        "it": "Mobile App Development in Italy",
+        "ch": "Mobile App Development in Switzerland"
+      },
+      "breadcrumb": "Mobile App Development",
+      "desc": "We build mobile apps for iOS and Android that your users will love. Cross-platform development means you launch on both platforms without doubling the cost.",
+      "whatHeading": "What We Build",
+      "whatItems": [
+        { "title": "iOS Apps", "description": "Native Swift and React Native apps for iPhone and iPad, optimised for the App Store." },
+        { "title": "Android Apps", "description": "Apps built for the full range of Android devices and optimised for Google Play." },
+        { "title": "Cross-Platform Apps", "description": "One codebase, both platforms. React Native and Expo let you ship to iOS and Android with a shared team and budget." },
+        { "title": "App Maintenance", "description": "Post-launch support, OS updates, bug fixes, and new feature development as your product grows." }
+      ],
+      "whyHeading": "Why Choose Us",
+      "whyItems": [
+        { "title": "Accessibility from Day One", "description": "Every app we build meets WCAG 2.1 AA. VoiceOver, TalkBack, and dynamic text all tested before launch." },
+        { "title": "Design Thinking Approach", "description": "We validate flows and screens with users before we write production code. You ship what users actually want." },
+        { "title": "Fixed Pricing", "description": "You know the cost before we start. No hourly billing, no surprise invoices at the end of a sprint." },
+        { "title": "Full Stack Team", "description": "Design, frontend, backend, and DevOps all under one roof. No handoff problems, no coordination overhead." }
+      ]
+    },
+    "softwareConsultancy": {
+      "h1": {
+        "ie": "Software Consultancy in Ireland",
+        "gb": "Software Consultancy in Ireland & the UK",
+        "it": "Software Consultancy in Italy",
+        "ch": "Software Consultancy in Switzerland"
+      },
+      "breadcrumb": "Software Consultancy",
+      "desc": "Not sure what to build, which technology to choose, or how to get your existing product back on track? We give you clear, honest advice — no jargon, no vendor lock-in.",
+      "whatHeading": "What We Help With",
+      "whatItems": [
+        { "title": "Technology Strategy", "description": "Which stack, which platform, which architecture. We lay out the options clearly and help you choose with confidence." },
+        { "title": "CTO as a Service", "description": "Need senior technical leadership without a full-time hire? We act as your fractional CTO for as long as you need." },
+        { "title": "Product Review", "description": "We review your existing product or codebase and give you a plain-English report on what's working and what isn't." },
+        { "title": "Team Scaling Advice", "description": "Build in-house, outsource, or hybrid? We help you decide what makes sense for your stage and budget." }
+      ],
+      "whyHeading": "Why Consult With Us",
+      "whyItems": [
+        "15+ years of experience building products at scale",
+        "Honest advice — we tell you what you need to hear, not what you want to hear",
+        "No jargon. We speak plain English so you can make informed decisions",
+        "We have no financial interest in recommending specific vendors or tools"
+      ]
+    },
+    "maintenanceSupport": {
+      "h1": {
+        "ie": "App Maintenance & Support in Ireland",
+        "gb": "App Maintenance & Support in Ireland & the UK",
+        "it": "App Maintenance & Support in Italy",
+        "ch": "App Maintenance & Support in Switzerland"
+      },
+      "breadcrumb": "Maintenance & Support",
+      "desc": "Already have an app or website that needs looking after? We take it on — fixing bugs, keeping it up to date, adding features, and ensuring it runs smoothly month to month.",
+      "whatHeading": "What's Included",
+      "whatItems": [
+        { "title": "Bug Fixes", "description": "We respond to issues fast and fix bugs before they impact your users or your reputation." },
+        { "title": "Security Updates", "description": "Regular dependency updates, security patches, and vulnerability monitoring to keep your product safe." },
+        { "title": "Performance Monitoring", "description": "We track uptime, load times, and errors — and fix problems before you or your users notice them." },
+        { "title": "Feature Development", "description": "Retainer clients get dedicated development capacity each month for new features, improvements, and integrations." }
+      ],
+      "retainerHeading": "Support Retainer Plans",
+      "retainerBody": "We offer monthly support retainers starting from a fixed number of development hours. You know exactly what you are getting and what it costs.",
+      "whyHeading": "Why a Retainer Works Better Than Ad-Hoc",
+      "whyItems": [
+        "Predictable monthly cost with no surprise invoices",
+        "Dedicated team who knows your product inside out",
+        "Faster response times than one-off engagements",
+        "Proactive monitoring means fewer emergencies"
+      ]
+    },
+    "localisation": {
+      "h1": {
+        "ie": "Website & App Localisation Services in Ireland",
+        "gb": "Website & App Localisation Services in Ireland & the UK",
+        "it": "Website & App Localisation Services in Italy",
+        "ch": "Website & App Localisation Services in Switzerland"
+      },
+      "breadcrumb": "Website & App Localisation",
+      "desc": "We handle the full localisation of your website or app — from translating content to integrating i18n frameworks in your codebase. We have done it for our own product, and we can do it for yours.",
+      "uniqueHeading": "Why We Are Different",
+      "uniqueBody": "Most localisation agencies translate content but have no idea how to wire it into a React or Next.js app. We do both — in-house linguistic expertise and the technical skills to implement it. No awkward handoffs, no broken layouts from right-to-left text, no missing string keys.",
+      "whatHeading": "What We Do",
+      "whatItems": [
+        { "title": "Content Translation", "description": "Accurate, natural-sounding translation into the target language — not machine translation copy-pasted into a CMS." },
+        { "title": "i18n Framework Integration", "description": "We wire up next-intl, i18next, or your chosen library. All strings externalised, all routes localised." },
+        { "title": "RTL Layout Support", "description": "Arabic, Hebrew, and other right-to-left languages require layout changes. We handle them correctly." },
+        { "title": "Locale Testing", "description": "We test every locale end to end — text overflow, date formats, currency symbols, and number formatting." }
+      ],
+      "languagesHeading": "Languages We Support",
+      "languages": "English, Italian, Russian, French, German, Spanish, Arabic (RTL). Contact us for others.",
+      "whyHeading": "Why Localise",
+      "whyItems": [
+        "Reach new markets without rebuilding your product",
+        "Localised products convert significantly better than translated ones",
+        "Meet legal requirements in jurisdictions that mandate local-language content",
+        "Give every user a native-feeling experience regardless of their language"
+      ]
     }
   }
 }
+

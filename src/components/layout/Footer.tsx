@@ -86,20 +86,25 @@ export default function Footer() {
               {t("sections.services")}
             </h3>
             <ul className="space-y-1" role="list">
-              {serviceLabels.map((label) => (
-                <li key={label}>
-                  <Link
-                    href="/#services"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
+              {serviceLabels.map((label, index) => {
+                const serviceHrefs = [
+                  "/services/web-development",
+                  "/services/web-development",
+                  "/services/ux-accessibility-audit",
+                  "/services/app-development",
+                  "/services/web-development",
+                ];
+                return (
+                  <li key={label}>
+                    <Link
+                      href={serviceHrefs[index] ?? "/services"}
+                      className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 

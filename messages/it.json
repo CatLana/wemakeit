@@ -31,29 +31,13 @@
     "ariaLabel": "Schermata principale We Make IT"
   },
   "stats": {
-    "ariaLabel": "I nostri vantaggi principali",
+    "ariaLabel": "Come lavoriamo",
+    "heading": "Come lavoriamo diversamente",
     "items": [
-      {
-        "value": "Gratis",
-        "label": "Prima consulenza senza impegno",
-        "ariaLabel": "Prima consulenza gratuita senza impegno"
-      },
-      {
-        "value": "1",
-        "label": "Prezzo fisso senza costi extra",
-        "ariaLabel": "Un prezzo fisso senza costi nascosti"
-      },
-      {
-        "value": "",
-        "icon": "Globe",
-        "label": "Con sede in Irlanda, lavoriamo in tutto il mondo",
-        "ariaLabel": "Con sede in Irlanda, lavoriamo con clienti in tutto il mondo"
-      },
-      {
-        "value": "3",
-        "label": "Tre lingue: italiano, inglese e russo",
-        "ariaLabel": "Lavoriamo in italiano, inglese e russo"
-      }
+      { "icon": "ShieldCheck", "label": "Accessibilità e UX prima di tutto", "description": "Ogni prodotto è costruito inclusivo e usabile fin dal primo giorno.", "ariaLabel": "Costruiamo ogni prodotto con accessibilità e UX come fondamenta" },
+      { "icon": "Lightbulb", "label": "Design Thinking applicato", "description": "Validiamo prima di costruire. Investi nella cosa giusta.", "ariaLabel": "Applichiamo il Design Thinking per validare le idee prima di costruire" },
+      { "icon": "TrendingUp", "label": "Costruito per convertire", "description": "Strategia di vendita e marketing integrata in ogni decisione.", "ariaLabel": "Prendiamo decisioni pensando ai tuoi obiettivi di business e alle conversioni" },
+      { "icon": "MessageCircle", "label": "Mai gergo tecnico", "description": "Parole semplici. Ascoltiamo prima e parliamo di tecnologia solo quando serve.", "ariaLabel": "Comunichiamo in modo semplice e ascoltiamo sempre prima di parlare" }
     ]
   },
   "services": {
@@ -64,7 +48,12 @@
     "subheading": "Dalla validazione idea e prototipazione, allo sviluppo app mobile e web, servizi di localizzazione, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
     "cardCta": "Raccontaci la tua idea",
     "consultationCta": "Prenota consulenza",
+    "learnMore": "Scopri di più",
     "items": [
+      {
+        "title": "Sviluppo Siti Web",
+        "description": "Progettiamo e realizziamo siti web e applicazioni web personalizzati — veloci, accessibili e ottimizzati per convertire i visitatori in clienti."
+      },
       {
         "title": "Sviluppo App su Misura",
         "description": "Progettiamo e sviluppiamo app che rispondono esattamente alle esigenze della tua azienda e dei tuoi clienti."
@@ -88,10 +77,6 @@
       {
         "title": "Sviluppo App Mobile",
         "description": "Sviluppiamo app iOS e Android con un'unica base codice: costi ridotti senza compromettere qualità e funzionalità."
-      },
-      {
-        "title": "Sviluppo Web App",
-        "description": "Serve qualcosa di più potente di un sito? Creiamo web app: dashboard, sistemi prenotazione, portali, marketplace."
       },
       {
         "title": "Audit Accessibilità",
@@ -311,6 +296,46 @@
     "emailError": "Inserisci un indirizzo email valido",
     "consentError": "Devi accettare per continuare"
   },
+  "consultationForm": {
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Maria Rossi",
+    "emailLabel": "Indirizzo email",
+    "emailPlaceholder": "maria@azienda.it",
+    "phoneLabel": "Numero di telefono (opzionale)",
+    "phonePlaceholder": "+39 ...",
+    "nameError": "Inserisci il tuo nome",
+    "emailError": "Inserisci un indirizzo email valido",
+    "messageError": "Raccontaci brevemente del tuo progetto",
+    "submitting": "Invio in corso…",
+    "successTitle": "Richiesta inviata!",
+    "successBody": "Grazie per averci contattato. Ti risponderemo entro un giorno lavorativo.",
+    "sendAnother": "Invia un'altra richiesta",
+    "privacyNote": "Non condividiamo mai i tuoi dati. Niente spam.",
+    "serverError": "Qualcosa è andato storto. Riprova.",
+    "variants": {
+      "consultation": {
+        "heading": "Richiedi una Consulenza Gratuita",
+        "subheading": "Raccontaci del tuo progetto e ti risponderemo entro un giorno lavorativo — senza impegno.",
+        "messageLabel": "Parlaci del tuo progetto",
+        "messagePlaceholder": "Cosa vuoi costruire? Scadenze, budget indicativo o qualsiasi contesto utile.",
+        "submitLabel": "Richiedi consulenza gratuita"
+      },
+      "audit": {
+        "heading": "Richiedi un Audit di Accessibilità Gratuito",
+        "subheading": "Condividi l'URL del tuo sito o app e faremo una verifica iniziale gratuita entro un giorno lavorativo.",
+        "messageLabel": "URL del tuo sito o app",
+        "messagePlaceholder": "es. https://tuosito.it — aggiungi contesto sul tuo prodotto o le tue preoccupazioni.",
+        "submitLabel": "Richiedi audit gratuito"
+      },
+      "retainer": {
+        "heading": "Parlaci del Tuo Progetto",
+        "subheading": "Cerchi supporto continuativo? Condividi cosa hai e prepareremo una proposta su misura.",
+        "messageLabel": "Di cosa ha bisogno il tuo progetto?",
+        "messagePlaceholder": "Descrivi il tuo prodotto esistente — stack tecnologico, problemi attuali, supporto che cerchi.",
+        "submitLabel": "Ricevi una proposta di supporto"
+      }
+    }
+  },
   "footer": {
     "springSaleTitle": "Offerta Primavera",
     "springSaleBody": "40% sconto nuovi clienti. Blocca il prezzo ora.",
@@ -416,7 +441,36 @@
         "it": "Servizi di sviluppo web professionali per le aziende italiane. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti.",
         "ch": "Servizi di sviluppo web professionali per le aziende svizzere e italiane. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti."
       },
-      "ctaHeading": "Pronto a costruire la tua presenza online?"
+      "ctaHeading": "Pronto a costruire la tua presenza online?",
+      "whatWeDoHeading": "Cosa Realizziamo",
+      "whatWeDoSub": "Dai semplici siti aziendali alle applicazioni web complesse — copriamo tutto.",
+      "whatWeDo": [
+        { "title": "Siti Web Aziendali", "description": "Siti professionali e puliti che rappresentano il tuo brand, si posizionano su Google e trasformano i visitatori in clienti." },
+        { "title": "Negozi E-Commerce", "description": "Vendi online con fiducia. Costruiamo e configuriamo il tuo negozio, i pagamenti e la gestione dei prodotti da zero." },
+        { "title": "Siti con CMS", "description": "Aggiorna i tuoi contenuti senza toccare il codice. Costruiamo su piattaforme affidabili così rimani in controllo dopo il lancio." },
+        { "title": "Applicazioni Web", "description": "Sistemi di prenotazione, portali clienti, dashboard, marketplace — se la tua azienda ha bisogno di più di un sito, lo costruiamo." },
+        { "title": "Landing Page", "description": "Lancia velocemente con una pagina ottimizzata per le conversioni per il tuo prodotto, campagna o servizio." },
+        { "title": "Redesign del Sito", "description": "Hai un sito che ti delude? Lo ricostruiamo correttamente — più veloce, più bello e più facile da gestire." }
+      ],
+      "whyHeading": "Perché le Aziende Ci Scelgono",
+      "why": [
+        { "title": "Prezzo Fisso, Nessuna Sorpresa", "description": "Conosci il costo completo prima di iniziare. Nessun extra nascosto, nessuna fattura a sorpresa a metà progetto." },
+        { "title": "Mobile-First per Default", "description": "Ogni sito che costruiamo funziona perfettamente su telefoni, tablet e desktop. Non è opzionale — è il nostro standard." },
+        { "title": "Costruito per i Motori di Ricerca", "description": "Codice pulito, caricamento veloce, struttura corretta. Il tuo sito è pronto a posizionarsi fin dal primo giorno." },
+        { "title": "Accessibile a Tutti", "description": "Costruiamo secondo gli standard WCAG 2.1 AA in modo che il tuo sito funzioni per tutti gli utenti e rispetti i requisiti legali." }
+      ],
+      "deliverablesHeading": "Cosa Ottieni",
+      "deliverables": [
+        "Sito web completamente personalizzato per abbinarsi al tuo brand",
+        "Pagine mobile-friendly e a caricamento veloce",
+        "Fondamenta SEO impostate fin dall'inizio: meta tag, sitemap, dati strutturati",
+        "Sistema di gestione dei contenuti per aggiornare tu stesso",
+        "3 mesi di supporto post-lancio inclusi",
+        "Consegna completa con documentazione semplice"
+      ],
+      "finalCtaHeading": "Pronto a parlare del tuo sito web?",
+      "finalCtaBody": "Dicci cosa ti serve e ti invieremo un preventivo gratuito e senza impegno entro 48 ore.",
+      "finalCtaBtn": "Ottieni un Preventivo Gratuito"
     },
     "appDev": {
       "h1": {
@@ -427,12 +481,30 @@
       },
       "breadcrumb": "Sviluppo App",
       "desc": {
-        "ie": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e progressive web app che risolvono problemi aziendali reali per le aziende irlandesi.",
-        "gb": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e progressive web app che risolvono problemi aziendali reali per le aziende britanniche e irlandesi.",
-        "it": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e progressive web app che risolvono problemi aziendali reali per le aziende italiane.",
-        "ch": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e progressive web app che risolvono problemi aziendali reali per le aziende svizzere e italiane."
+        "ie": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e PWA per le aziende irlandesi. Prezzo fisso. Nessun costo nascosto.",
+        "gb": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e PWA per le aziende britanniche e irlandesi. Prezzo fisso. Nessun costo nascosto.",
+        "it": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e PWA per le aziende italiane. Prezzo fisso. Nessun costo nascosto.",
+        "ch": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e PWA per le aziende svizzere e italiane. Prezzo fisso. Nessun costo nascosto."
       },
-      "ctaHeading": "Pronto a sviluppare la tua app?"
+      "ctaPrimary": "Raccontaci la tua idea",
+      "ctaSecondary": "Richiedi una consulenza gratuita",
+      "whatWeDoHeading": "Cosa Realizziamo",
+      "whatWeDoSub": "Dal primo prototipo all'app in produzione — copriamo ogni fase.",
+      "whatWeDo": [
+        { "title": "App iOS", "description": "App native e React Native per iPhone e iPad. Fluide, performanti e pronte per l'App Store." },
+        { "title": "App Android", "description": "App native e cross-platform per Android, conformi agli standard di Google Play e ottimizzate per un'ampia gamma di dispositivi." },
+        { "title": "App Cross-Platform", "description": "Un'unica base codice, due piattaforme. Usiamo React Native ed Expo per lanciare su iOS e Android senza raddoppiare il budget." },
+        { "title": "Progressive Web App", "description": "Web app che si installano e si comportano come app native. Un percorso conveniente verso esperienze mobile-first." },
+        { "title": "Applicazioni Web", "description": "Sistemi di prenotazione, portali clienti, dashboard, marketplace — se la tua azienda ha bisogno di più di un sito, lo costruiamo." },
+        { "title": "Sviluppo MVP", "description": "Lancia la versione più snella che dimostra la tua idea. Utenti reali, feedback reali, spesa minima — poi scaliamo." }
+      ],
+      "whyHeading": "Perché le Aziende Irlandesi Ci Scelgono",
+      "why": [
+        { "number": "01", "title": "Prezzo Fisso dal Primo Giorno", "description": "Conosci il costo completo prima che scriviamo una riga di codice. Nessuna fatturazione oraria, nessuna sorpresa." },
+        { "number": "02", "title": "Accessibilità Integrata", "description": "Costruiamo secondo WCAG 2.1 AA affinché la tua app funzioni per tutti gli utenti e rispetti i requisiti europei sull'accessibilità." },
+        { "number": "03", "title": "Design Thinking Prima di Tutto", "description": "Validiamo prima di costruire. La tua idea viene testata con utenti reali prima che una singola funzionalità vada in produzione." },
+        { "number": "04", "title": "15+ Anni di Esperienza", "description": "Il nostro team ha lanciato prodotti su larga scala. Portiamo quell'esperienza in ogni progetto, qualunque sia la dimensione." }
+      ]
     },
     "uxAudit": {
       "h1": {
@@ -445,7 +517,7 @@
       "desc": "Assicura che il tuo sito web o app sia accessibile a tutti gli utenti e conforme agli standard WCAG 2.1 AA. Ricevi un report di audit dettagliato con raccomandazioni pratiche.",
       "descCh": "Assicura che il tuo sito web o app sia accessibile a tutti gli utenti e conforme agli standard WCAG 2.1 AA. Ricevi un report di audit dettagliato con raccomandazioni pratiche per le aziende svizzere soggette alle normative europee sull'accessibilità.",
       "euTitle": "Conformità alla Legge Europea sull'Accessibilità",
-      "euBody": "Le aziende del settore privato con 10+ dipendenti o fatturato superiore a €2M devono conformarsi entro giugno 2025. Ti aiutiamo a soddisfare i requisiti ed evitare rischi legali.",
+      "euBody": "La scadenza dell'EU Accessibility Act è passata a giugno 2025. Se il tuo sito o app non è ancora conforme, sei già a rischio. Ti aiutiamo a metterti in regola rapidamente ed evitare problemi legali.",
       "whatHeading": "Cosa Ottieni",
       "item1": "Report di audit dettagliato con screenshot",
       "item2": "Problemi categorizzati per gravità (critico, maggiore, minore)",
@@ -454,7 +526,206 @@
       "item5": "Piano di remediation opzionale con priorità di implementazione",
       "item6": "Call di consultazione per discutere i risultati",
       "ctaHeading": "Inizia con un controllo gratuito di 15 minuti sull'accessibilità",
-      "ctaBtn": "Prenota il Tuo Controllo Gratuito"
+      "ctaBtn": "Prenota il Tuo Controllo Gratuito",
+      "consultationAnchor": "Richiedi un audit gratuito"
+    },
+    "ideaMvp": {
+      "h1": {
+        "ie": "Validazione Idea e Sviluppo MVP in Irlanda",
+        "gb": "Validazione Idea e Sviluppo MVP in Irlanda e nel Regno Unito",
+        "it": "Validazione Idea e Sviluppo MVP in Italia",
+        "ch": "Validazione Idea e Sviluppo MVP in Svizzera"
+      },
+      "breadcrumb": "Validazione Idea e MVP",
+      "desc": "Non sai se la tua idea funzionerà? Ti aiutiamo a validarla prima di spendere un euro in sviluppo — poi creiamo un MVP da testare con utenti reali.",
+      "whatHeading": "Cosa Facciamo",
+      "whatItems": [
+        { "title": "Workshop sull'Idea", "description": "Una sessione strutturata per esplorare la tua idea, identificare le ipotesi e mappare il problema principale da risolvere." },
+        { "title": "Ricerca di Mercato e Utenti", "description": "Verifichiamo se il mercato esiste, chi sono i tuoi utenti e se pagherebbero per quello che stai costruendo." },
+        { "title": "Prototipazione", "description": "Creiamo un prototipo cliccabile da testare con utenti reali prima di impegnarsi in uno sviluppo completo." },
+        { "title": "Build MVP", "description": "Costruiamo la versione minima del tuo prodotto che dimostra il concetto. Poi iteriamo in base ai feedback." }
+      ],
+      "whyHeading": "Perché Validare Prima di Costruire",
+      "whyItems": [
+        "Risparmia mesi di sviluppo su un'idea sbagliata",
+        "Ottieni feedback reali prima di investire in codice di produzione",
+        "Impressiona gli investitori con dati validati e un prototipo funzionante",
+        "Lancia più velocemente e a costi ridotti con un MVP mirato"
+      ]
+    },
+    "uxResearch": {
+      "h1": {
+        "ie": "Servizi di Ricerca UX in Irlanda",
+        "gb": "Servizi di Ricerca UX in Irlanda e nel Regno Unito",
+        "it": "Servizi di Ricerca UX in Italia",
+        "ch": "Servizi di Ricerca UX in Svizzera"
+      },
+      "breadcrumb": "Ricerca UX",
+      "desc": "Hai già un prodotto? Ricerchiamo come le persone reali lo usano, identifichiamo i problemi di usabilità e ti forniamo un elenco prioritario di miglioramenti.",
+      "whatHeading": "Cosa Facciamo",
+      "whatItems": [
+        { "title": "Interviste agli Utenti", "description": "Parliamo con i tuoi utenti reali per capire obiettivi, frustrazioni e modelli mentali." },
+        { "title": "Test di Usabilità", "description": "Osserviamo gli utenti mentre completano attività reali e registriamo esattamente dove incontrano difficoltà." },
+        { "title": "Valutazione Euristica", "description": "Analizziamo il prodotto rispetto ai principi UX consolidati e identifichiamo i problemi senza necessità di utenti." },
+        { "title": "Report di Ricerca", "description": "Ricevi un report chiaro e prioritario con screenshot, valutazioni di gravità e raccomandazioni specifiche." }
+      ],
+      "deliverableHeading": "Cosa Ottieni",
+      "deliverables": [
+        "Report completo con risultati ed evidenze",
+        "Problemi prioritizzati per impatto e sforzo",
+        "Raccomandazioni specifiche e attuabili",
+        "Call di follow-up opzionale per discutere il report"
+      ]
+    },
+    "uxDesign": {
+      "h1": {
+        "ie": "Servizi di UX Design in Irlanda",
+        "gb": "Servizi di UX Design in Irlanda e nel Regno Unito",
+        "it": "Servizi di UX Design in Italia",
+        "ch": "Servizi di UX Design in Svizzera"
+      },
+      "breadcrumb": "UX Design",
+      "desc": "Dai wireframe alla UI rifinita — trasformiamo ricerche e idee di prodotto in design intuitivi, accessibili e pronti per lo sviluppo.",
+      "whatHeading": "Cosa Facciamo",
+      "whatItems": [
+        { "title": "Architettura dell'Informazione", "description": "Strutturiamo contenuti e navigazione affinché gli utenti sappiano sempre dove si trovano e dove andare." },
+        { "title": "Wireframing", "description": "Layout a bassa fedeltà che definiscono il flusso e la struttura prima di investire nel design visuale." },
+        { "title": "UI Design", "description": "Schermate ad alta fedeltà nel tuo brand — pulite, moderne e progettate per convertire." },
+        { "title": "Design System", "description": "Una libreria di componenti riutilizzabili che mantiene il prodotto coerente e accelera lo sviluppo futuro." }
+      ],
+      "deliverableHeading": "Cosa Ottieni",
+      "deliverables": [
+        "File Figma con tutte le schermate e i componenti",
+        "Design annotati per gli sviluppatori",
+        "Layout responsive per mobile, tablet e desktop",
+        "Annotazioni di accessibilità (contrasto colori, ordine focus, note ARIA)"
+      ]
+    },
+    "appPrototype": {
+      "h1": {
+        "ie": "Servizio di Prototipazione App in Irlanda",
+        "gb": "Servizio di Prototipazione App in Irlanda e nel Regno Unito",
+        "it": "Servizio di Prototipazione App in Italia",
+        "ch": "Servizio di Prototipazione App in Svizzera"
+      },
+      "breadcrumb": "Prototipo App",
+      "desc": "Prima di impegnarsi in uno sviluppo completo, creiamo un prototipo interattivo della tua app. Testalo con gli utenti, condividilo con gli investitori e valida ogni flusso chiave.",
+      "whatHeading": "Cosa Realizziamo",
+      "whatItems": [
+        { "title": "Prototipo Figma Cliccabile", "description": "Un prototipo completamente interattivo condivisibile con un link. Nessun codice richiesto, ma sembra la cosa reale." },
+        { "title": "Mappatura del Flusso Utente", "description": "Mappiamo ogni percorso utente chiave affinché il prototipo copra i flussi più importanti." },
+        { "title": "Test con Utenti", "description": "Conduciamo un round di test con utenti sul prototipo e riferiamo cosa funziona e cosa va cambiato." },
+        { "title": "Presentazione per Investitori", "description": "Un prototipo rifinito con documentazione di supporto per pitch agli investitori e demo di prodotto." }
+      ],
+      "whyHeading": "Perché Prima il Prototipo",
+      "whyItems": [
+        "Trova problemi di usabilità prima che siano costosi da correggere",
+        "Valida il tuo concetto con utenti reali a basso costo",
+        "Ottieni stime degli sviluppatori più accurate da un prototipo dettagliato",
+        "Proponi con fiducia — mostra, non solo raccontare"
+      ]
+    },
+    "mobileAppDev": {
+      "h1": {
+        "ie": "Sviluppo App Mobile in Irlanda",
+        "gb": "Sviluppo App Mobile in Irlanda e nel Regno Unito",
+        "it": "Sviluppo App Mobile in Italia",
+        "ch": "Sviluppo App Mobile in Svizzera"
+      },
+      "breadcrumb": "Sviluppo App Mobile",
+      "desc": "Costruiamo app mobile per iOS e Android che i tuoi utenti ameranno. Lo sviluppo cross-platform significa che lanci su entrambe le piattaforme senza raddoppiare i costi.",
+      "whatHeading": "Cosa Realizziamo",
+      "whatItems": [
+        { "title": "App iOS", "description": "App native in Swift e React Native per iPhone e iPad, ottimizzate per l'App Store." },
+        { "title": "App Android", "description": "App costruite per l'intera gamma di dispositivi Android e ottimizzate per Google Play." },
+        { "title": "App Cross-Platform", "description": "Un'unica base codice, entrambe le piattaforme. React Native ed Expo permettono di lanciare su iOS e Android con un team e un budget condivisi." },
+        { "title": "Manutenzione App", "description": "Supporto post-lancio, aggiornamenti OS, correzione bug e sviluppo di nuove funzionalità mentre il prodotto cresce." }
+      ],
+      "whyHeading": "Perché Sceglierci",
+      "whyItems": [
+        { "title": "Accessibilità fin dal Primo Giorno", "description": "Ogni app che costruiamo soddisfa WCAG 2.1 AA. VoiceOver, TalkBack e testo dinamico testati prima del lancio." },
+        { "title": "Approccio Design Thinking", "description": "Validiamo flussi e schermate con gli utenti prima di scrivere codice di produzione. Lanci ciò che gli utenti vogliono davvero." },
+        { "title": "Prezzo Fisso", "description": "Conosci il costo prima di iniziare. Nessuna fatturazione oraria, nessuna fattura a sorpresa alla fine di uno sprint." },
+        { "title": "Team Full Stack", "description": "Design, frontend, backend e DevOps tutti sotto un unico tetto. Nessun problema di handoff, nessun overhead di coordinamento." }
+      ]
+    },
+    "softwareConsultancy": {
+      "h1": {
+        "ie": "Consulenza Software in Irlanda",
+        "gb": "Consulenza Software in Irlanda e nel Regno Unito",
+        "it": "Consulenza Software in Italia",
+        "ch": "Consulenza Software in Svizzera"
+      },
+      "breadcrumb": "Consulenza Software",
+      "desc": "Non sai cosa costruire, quale tecnologia scegliere, o come rimettere in carreggiata il tuo prodotto esistente? Ti diamo consigli chiari e onesti — senza gergo, senza lock-in.",
+      "whatHeading": "In Cosa Ti Aiutiamo",
+      "whatItems": [
+        { "title": "Strategia Tecnologica", "description": "Quale stack, quale piattaforma, quale architettura. Esponiamo chiaramente le opzioni e ti aiutiamo a scegliere con fiducia." },
+        { "title": "CTO as a Service", "description": "Hai bisogno di leadership tecnica senior senza un'assunzione a tempo pieno? Agiamo come il tuo CTO frazionale per tutto il tempo che ti serve." },
+        { "title": "Revisione del Prodotto", "description": "Revisioniamo il tuo prodotto o codebase esistente e ti forniamo un report in linguaggio semplice su cosa funziona e cosa no." },
+        { "title": "Consigli sulla Crescita del Team", "description": "Costruire internamente, esternalizzare o ibrido? Ti aiutiamo a decidere cosa ha senso per la tua fase e budget." }
+      ],
+      "whyHeading": "Perché Consultarci",
+      "whyItems": [
+        "15+ anni di esperienza nella costruzione di prodotti su larga scala",
+        "Consigli onesti — ti diciamo ciò che devi sentire, non ciò che vuoi sentire",
+        "Nessun gergo. Parliamo in modo semplice affinché tu possa prendere decisioni informate",
+        "Non abbiamo interesse finanziario a raccomandare vendor o strumenti specifici"
+      ]
+    },
+    "maintenanceSupport": {
+      "h1": {
+        "ie": "Manutenzione e Supporto App in Irlanda",
+        "gb": "Manutenzione e Supporto App in Irlanda e nel Regno Unito",
+        "it": "Manutenzione e Supporto App in Italia",
+        "ch": "Manutenzione e Supporto App in Svizzera"
+      },
+      "breadcrumb": "Manutenzione e Supporto",
+      "desc": "Hai già un'app o sito web che ha bisogno di cura? Ce ne occupiamo noi — correggendo bug, tenendolo aggiornato, aggiungendo funzionalità e garantendo un funzionamento fluido.",
+      "whatHeading": "Cosa Include",
+      "whatItems": [
+        { "title": "Correzione Bug", "description": "Rispondiamo rapidamente ai problemi e correggiamo i bug prima che impattino i tuoi utenti o la tua reputazione." },
+        { "title": "Aggiornamenti di Sicurezza", "description": "Aggiornamenti regolari delle dipendenze, patch di sicurezza e monitoraggio delle vulnerabilità per mantenere il prodotto al sicuro." },
+        { "title": "Monitoraggio delle Performance", "description": "Monitoriamo uptime, tempi di caricamento ed errori — e risolviamo i problemi prima che tu o i tuoi utenti li notiate." },
+        { "title": "Sviluppo di Funzionalità", "description": "I clienti con retainer ottengono capacità di sviluppo dedicata ogni mese per nuove funzionalità, miglioramenti e integrazioni." }
+      ],
+      "retainerHeading": "Piani di Supporto Retainer",
+      "retainerBody": "Offriamo retainer mensili di supporto a partire da un numero fisso di ore di sviluppo. Sai esattamente cosa ottieni e quanto costa.",
+      "whyHeading": "Perché un Retainer Funziona Meglio dell'Ad-Hoc",
+      "whyItems": [
+        "Costo mensile prevedibile senza fatture a sorpresa",
+        "Team dedicato che conosce il tuo prodotto a fondo",
+        "Tempi di risposta più rapidi rispetto agli incarichi occasionali",
+        "Il monitoraggio proattivo significa meno emergenze"
+      ]
+    },
+    "localisation": {
+      "h1": {
+        "ie": "Servizi di Localizzazione Siti e App in Irlanda",
+        "gb": "Servizi di Localizzazione Siti e App in Irlanda e nel Regno Unito",
+        "it": "Servizi di Localizzazione Siti e App in Italia",
+        "ch": "Servizi di Localizzazione Siti e App in Svizzera"
+      },
+      "breadcrumb": "Localizzazione Siti e App",
+      "desc": "Gestiamo la localizzazione completa del tuo sito o app — dalla traduzione dei contenuti all'integrazione dei framework i18n nel codice. Lo abbiamo fatto per il nostro prodotto, e possiamo farlo per il tuo.",
+      "uniqueHeading": "Perché Siamo Diversi",
+      "uniqueBody": "La maggior parte delle agenzie di localizzazione traduce i contenuti ma non sa come integrarli in un'app React o Next.js. Noi facciamo entrambe le cose — competenze linguistiche interne e le competenze tecniche per implementarle. Nessun handoff difficile, nessun layout rotto da testo da destra a sinistra, nessuna chiave stringa mancante.",
+      "whatHeading": "Cosa Facciamo",
+      "whatItems": [
+        { "title": "Traduzione dei Contenuti", "description": "Traduzione accurata e naturale nella lingua target — non traduzione automatica incollata in un CMS." },
+        { "title": "Integrazione Framework i18n", "description": "Colleghiamo next-intl, i18next o la libreria scelta. Tutte le stringhe esternalizzate, tutti i percorsi localizzati." },
+        { "title": "Supporto Layout RTL", "description": "Arabo, ebraico e altre lingue da destra a sinistra richiedono modifiche al layout. Le gestiamo correttamente." },
+        { "title": "Test per Locale", "description": "Testiamo ogni locale end-to-end — overflow del testo, formati di data, simboli di valuta e formattazione dei numeri." }
+      ],
+      "languagesHeading": "Lingue Supportate",
+      "languages": "Inglese, Italiano, Russo, Francese, Tedesco, Spagnolo, Arabo (RTL). Contattaci per altre lingue.",
+      "whyHeading": "Perché Localizzare",
+      "whyItems": [
+        "Raggiungi nuovi mercati senza ricostruire il prodotto",
+        "I prodotti localizzati convertono molto meglio di quelli semplicemente tradotti",
+        "Soddisfa i requisiti legali nelle giurisdizioni che richiedono contenuti in lingua locale",
+        "Dai a ogni utente un'esperienza nativa indipendentemente dalla loro lingua"
+      ]
     }
   }
 }

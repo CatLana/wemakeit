@@ -62,22 +62,59 @@ export default async function ServicesPage({
 
   const services = [
     {
-      title: "Web Development",
+      title: "Website Development",
       description: "Custom business websites, CMS platforms, and e-commerce solutions",
       href: "/services/web-development",
-      icon: "🌐",
     },
     {
       title: "App Development",
       description: "Mobile apps (iOS/Android), web apps, and progressive web apps",
       href: "/services/app-development",
-      icon: "📱",
+    },
+    {
+      title: "Idea Validation & MVP",
+      description: "Test your idea with real users before committing to full development",
+      href: "/services/idea-validation-mvp",
+    },
+    {
+      title: "UX Research",
+      description: "Usability testing and user research to inform better product decisions",
+      href: "/services/ux-research",
+    },
+    {
+      title: "UX Design",
+      description: "From wireframes to high-fidelity screens — interfaces people love to use",
+      href: "/services/ux-design",
+    },
+    {
+      title: "App Prototype",
+      description: "Interactive clickable prototypes to validate your concept before coding",
+      href: "/services/app-prototype",
+    },
+    {
+      title: "Mobile App Development",
+      description: "Native and cross-platform iOS and Android apps built for growth",
+      href: "/services/mobile-app-development",
     },
     {
       title: "UX & Accessibility Audit",
-      description: "WCAG compliance, accessibility audits, and UX improvements",
+      description: "WCAG 2.1 AA compliance, accessibility audits, and UX improvements",
       href: "/services/ux-accessibility-audit",
-      icon: "♿",
+    },
+    {
+      title: "Software Consultancy",
+      description: "Independent technology strategy, architecture reviews, and vendor selection",
+      href: "/services/software-consultancy",
+    },
+    {
+      title: "Maintenance & Support",
+      description: "Ongoing security updates, performance monitoring, and priority support",
+      href: "/services/maintenance-support",
+    },
+    {
+      title: "Localisation",
+      description: "App and website localisation for any market — UI, content, and formats",
+      href: "/services/localisation",
     },
   ];
 
@@ -110,8 +147,7 @@ export default async function ServicesPage({
                   href={service.href}
                   className="group bg-slate-800 p-8 rounded-lg hover:bg-slate-700 transition-colors"
                 >
-                  <div className="text-4xl mb-4">{service.icon}</div>
-                  <h2 className="text-2xl font-bold text-cyan-400 mb-3 group-hover:text-cyan-300">
+                  <h2 className="text-xl font-bold text-cyan-400 mb-3 group-hover:text-cyan-300">
                     {service.title}
                   </h2>
                   <p className="text-slate-300 group-hover:text-slate-200">
