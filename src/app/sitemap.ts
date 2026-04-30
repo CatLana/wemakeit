@@ -11,6 +11,7 @@ const pages: {
 }[] = [
   { path: "",                                        priority: 1.0, changeFrequency: "weekly",  lastModified: new Date("2026-04-16") },
   { path: "/contact",                                priority: 0.6, changeFrequency: "monthly", lastModified: new Date("2026-04-16") },
+  { path: "/pricing",                                priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/blog",                                   priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-03-24") },
   { path: "/blog/irish-grants-for-app-development",  priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-03-31") },
   { path: "/blog/free-expense-tracking-for-irish-sole-traders", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-04-26") },
