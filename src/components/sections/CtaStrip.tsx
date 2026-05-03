@@ -12,7 +12,7 @@ export default function CtaStrip() {
         <div>
           <h2
             id="cta-heading"
-            className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight"
+            className="text-2xl sm:text-3xl lg:text-4xl font-extrabold chalk-heading leading-tight"
           >
             {t("heading")}
           </h2>

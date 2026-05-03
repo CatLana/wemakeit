@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white leading-[1.07] tracking-tight mb-6">
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold chalk-display leading-[1.07] tracking-tight mb-6">
           We Make{" "}
           <span className="text-[#22D3EE]">IT</span>
           <br className="hidden sm:block" />
@@ -46,7 +46,7 @@ export default function Hero() {
         </h1>
 
         {/* Sub-headline */}
-        <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-400 leading-relaxed mb-6">
+        <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 font-medium leading-relaxed mb-6">
           {t("subtitle")}
         </p>
 

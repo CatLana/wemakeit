@@ -16,13 +16,25 @@ body {
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
 
-  /* We Make IT brand tokens */
+  /* We Make IT brand tokens — core palette */
   --color-brand-dark:    var(--brand-dark);
   --color-brand-cyan:    var(--brand-cyan);
   --color-brand-purple:  var(--brand-purple);
   --color-brand-light:   var(--brand-light);
   --color-brand-body:    var(--brand-body);
   --color-brand-border:  var(--brand-border);
+
+  /* Supporting palette — functional / category use */
+  --color-brand-deep-cyan:   var(--brand-deep-cyan);
+  --color-brand-sky:         var(--brand-sky);
+  --color-brand-emerald:     var(--brand-emerald);
+  --color-brand-amber:       var(--brand-amber);
+  --color-brand-rose:        var(--brand-rose);
+  --color-brand-violet:      var(--brand-violet);
+  --color-brand-orange:      var(--brand-orange);
+  --color-brand-teal:        var(--brand-teal);
+  --color-brand-indigo:      var(--brand-indigo);
+  --color-brand-slate-mid:   var(--brand-slate-mid);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -64,13 +76,50 @@ body {
 :root {
   --radius: 0.5rem;
 
-  /* We Make IT brand palette */
-  --brand-dark:    oklch(0.115 0.016 256);   /* #0F172A – Slate 950            */
-  --brand-cyan:    oklch(0.818 0.119 213);   /* #22D3EE – Cyan 400 (CTA)       */
-  --brand-purple:  oklch(0.688 0.269 303);   /* #A855F7 – Purple 500 (accent)  */
-  --brand-light:   oklch(0.985 0.003 247);   /* #F8FAFC – Slate 50 (sections)  */
-  --brand-body:    oklch(0.29 0.025 250);    /* #1E293B – Slate 800 (text)     */
-  --brand-border:  oklch(0.922 0.008 250);   /* #E2E8F0 – Slate 200            */
+  /* We Make IT brand palette — core (60% light / 25% dark / 10% cyan / 5% accent) */
+  --brand-dark:    oklch(0.115 0.016 256);   /* #0F172A – Slate 950  — Headers, footers, hero, dark UI   */
+  --brand-cyan:    oklch(0.818 0.119 213);   /* #22D3EE – Cyan 400   — CTAs, links, focus, icons          */
+  --brand-purple:  oklch(0.688 0.269 303);   /* #A855F7 – Purple 500 — Accent (use sparingly, no compete) */
+  --brand-light:   oklch(0.985 0.003 247);   /* #F8FAFC – Slate 50   — Backgrounds, light sections        */
+  --brand-body:    oklch(0.29 0.025 250);    /* #1E293B – Slate 800  — Primary text on light bg           */
+  --brand-border:  oklch(0.922 0.008 250);   /* #E2E8F0 – Slate 200  — Borders, dividers, UI structure    */
+
+  /* Supporting palette — functional / category use only
+   * Do not overpower the core cyan-dark identity.
+   * Use contextually, not decoratively; avoid mixing multiple in one component. */
+  --brand-deep-cyan:   oklch(0.502 0.153 209);   /* #0E7490 – Labels, links on light bg      */
+  --brand-sky:         oklch(0.744 0.147 225);   /* #38BDF8 – Innovation, strategy           */
+  --brand-emerald:     oklch(0.826 0.147 158);   /* #34D399 – Success, delivery              */
+  --brand-amber:       oklch(0.849 0.173 82);    /* #FBBF24 – Warnings, timelines            */
+  --brand-rose:        oklch(0.714 0.187 13);    /* #FB7185 – Product/design accents         */
+  --brand-violet:      oklch(0.742 0.219 302);   /* #A78BFA – Accessibility, specialist      */
+  --brand-orange:      oklch(0.742 0.188 43);    /* #FB923C – Commercial, consulting         */
+  --brand-teal:        oklch(0.826 0.137 178);   /* #2DD4BF – Collaboration, partnerships    */
+  --brand-indigo:      oklch(0.656 0.185 265);   /* #818CF8 – Global, technical              */
+  --brand-slate-mid:   oklch(0.626 0.026 256);   /* #94A3B8 – Secondary UI, neutral detail   */
+
+  /* Typography scale
+   * Primary typeface: Inter  |  Fallback: Helvetica Neue, Arial, sans-serif
+   *
+   * Display   800  56–96px    Hero/campaign headlines         "We Make IT Happen"
+   * H1        700  40–56px    Page titles, value props        "Build practical digital products"
+   * H2        700  32–40px    Major section headers           "Turn ideas into reality"
+   * H3        700  24–30px    Component / subsection titles   "Custom applications"
+   * Subhead   600  18–20px    Supporting statements           "Clear process, practical advice…"
+   * Body      400  16px       Paragraphs, feature descs       "We help founders and small…"
+   * Body Sm   400  14px       Secondary text, captions        "Professional, friendly, calm"
+   * Labels    600  12–14px    Eyebrows, tags, metadata        "BRAND CORE"
+   *
+   * Rules: bold for confidence not decoration · comfortably spaced · no condensed/decorative
+   *        do not mix sans-serif families · Inter supports EN / IT / RU        */
+  --type-display-weight:  800;
+  --type-h1-weight:       700;
+  --type-h2-weight:       700;
+  --type-h3-weight:       700;
+  --type-subhead-weight:  600;
+  --type-body-weight:     400;
+  --type-body-sm-weight:  400;
+  --type-label-weight:    600;
 
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -188,5 +237,27 @@ body {
     font-weight: 700;
     border-radius: 0.25rem;
     z-index: 9999;
+  }
+}
+
+/* ─── Chalk-on-blackboard typography utilities ────────────────────────────
+ * Matches the visual language of the We Make IT logo: bold white letterforms
+ * on a dark (#0F172A) background, with the cyan accent as the only colour
+ * highlight. Off-white (#F8FAFC) instead of pure white gives the slight
+ * warmth of chalk; the subtle text-shadow adds depth like chalk strokes.
+ *
+ * .chalk-display — hero / campaign headlines (Display, weight 800)
+ * .chalk-heading — section / component headings on dark backgrounds
+ * ──────────────────────────────────────────────────────────────────────── */
+@layer utilities {
+  .chalk-display {
+    color: #F8FAFC;
+    text-shadow:
+      0 0 60px rgba(34, 211, 238, 0.10),
+      0 1px 3px rgba(0, 0, 0, 0.50);
+  }
+  .chalk-heading {
+    color: #F8FAFC;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
   }
 }

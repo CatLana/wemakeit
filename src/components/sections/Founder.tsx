@@ -31,7 +31,7 @@ export default function Founder() {
             <div className="mt-5 text-center lg:text-left">
               <h2
                 id="founder-heading"
-                className="text-2xl font-extrabold text-white"
+                className="text-2xl font-extrabold chalk-heading"
               >
                 {t("name")}
               </h2>
