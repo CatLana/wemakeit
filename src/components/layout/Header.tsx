@@ -105,16 +105,16 @@ export default function Header() {
             <Link
               href="/"
               aria-label={t("logoAriaLabel")}
-              className="flex items-center focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+              className="flex flex-col items-start focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
               <Image
-                src="/images/wemakeit_logo.svg"
-                alt=""
-                width={124}
-                height={26}
-                className="h-8 w-auto"
-                priority
-              />
+                  src="/images/wemakeit_logo_transparent.svg"
+                  alt=""
+                  width={420}
+                  height={100}
+                  className="h-14 w-auto block"
+                  priority
+                />
             </Link>
 
             {/* Desktop nav */}

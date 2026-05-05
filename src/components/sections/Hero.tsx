@@ -10,13 +10,21 @@ export default function Hero() {
     >
       {/* Geometric background — aria-hidden so screen readers skip it */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none">
-        {/* Large blurred circle — cyan */}
-        <div className="absolute -top-40 -right-40 w-[700px] h-[700px] motion-safe:lg:animate-[pulse_8s_ease-in-out_infinite]">
-          <div className="w-full h-full rounded-full bg-[#22D3EE]/10 blur-xl lg:blur-3xl" />
+        {/* Centered radial glow — sits directly behind the headline text */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          {/* Outer soft halo — wide, very faint cyan */}
+          <div className="w-[900px] h-[420px] rounded-full bg-[#22D3EE]/[0.07] blur-3xl" />
         </div>
-        {/* Large blurred circle — purple */}
-        <div className="absolute -bottom-60 -left-40 w-[600px] h-[600px] motion-safe:lg:animate-[pulse_10s_ease-in-out_2s_infinite]">
-          <div className="w-full h-full rounded-full bg-[#A855F7]/10 blur-xl lg:blur-3xl" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          {/* Inner tighter glow — brighter core under the text */}
+          <div className="w-[500px] h-[220px] rounded-full bg-[#22D3EE]/[0.10] blur-2xl" />
+        </div>
+        {/* Subtle purple edge accents — keep depth, pulled to corners so they don't compete */}
+        <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px]">
+          <div className="w-full h-full rounded-full bg-[#A855F7]/[0.07] blur-3xl" />
+        </div>
+        <div className="absolute -top-40 -right-40 w-[400px] h-[400px]">
+          <div className="w-full h-full rounded-full bg-[#A855F7]/[0.05] blur-3xl" />
         </div>
         {/* Grid overlay */}
         <div
@@ -38,10 +46,10 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold chalk-display leading-[1.07] tracking-tight mb-6">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold chalk-display leading-[1.07] tracking-tight mb-6">
           We Make{" "}
           <span className="text-[#22D3EE]">IT</span>
-          <br className="hidden sm:block" />
+          <br />
           {" "}Happen.
         </h1>
 

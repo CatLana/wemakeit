@@ -24,11 +24,11 @@ export default function Footer() {
               className="inline-flex items-center mb-4 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
               <Image
-                src="/images/wemakeit_logo.svg"
+                src="/images/wemakeit_logo_transparent.svg"
                 alt=""
-                width={124}
-                height={26}
-                className="h-8 w-auto"
+                width={420}
+                height={100}
+                className="h-14 w-auto"
               />
             </Link>
             <p className="text-sm leading-relaxed mb-4 max-w-xs">

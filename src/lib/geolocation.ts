@@ -9,7 +9,7 @@ export async function getUserCountry(): Promise<Country> {
     const headersList = await headers();
     const country = headersList.get('x-vercel-ip-country') || 'IE'; // Default to Ireland
     return country;
-  } catch (error) {
+  } catch {
     return 'IE'; // Fallback to Ireland if headers unavailable
   }
 }

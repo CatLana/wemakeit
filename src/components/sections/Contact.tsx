@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { MessageSquare, MapPin, Linkedin } from "lucide-react";
+import { MessageSquare, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -198,24 +198,6 @@ export default function Contact() {
                   >
                     {t("contactLinkText")}
                   </Link>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#22D3EE]/10 flex items-center justify-center">
-                  <Linkedin size={18} className="text-[#22D3EE]" aria-hidden="true" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[#1E293B]">{t("linkedinLabel")}</p>
-                  <a
-                    href="https://www.linkedin.com/in/svetlana-savchenko-08868764"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Svetlana Savchenko on LinkedIn — ${t("linkedinNewTab")}`}
-                    className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                  >
-                    Svetlana Savchenko on LinkedIn
-                  </a>
                 </div>
               </div>
             </address>
@@ -496,23 +478,6 @@ export default function Contact() {
                   <Link href="/contact" className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                     {t("contactLinkText")}
                   </Link>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#22D3EE]/10 flex items-center justify-center">
-                  <Linkedin size={18} className="text-[#22D3EE]" aria-hidden="true" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[#1E293B]">{t("linkedinLabel")}</p>
-                  <a
-                    href="https://www.linkedin.com/in/svetlana-savchenko-08868764"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Svetlana Savchenko on LinkedIn — ${t("linkedinNewTab")}`}
-                    className="text-sm text-[#0E7490] hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                  >
-                    Svetlana Savchenko on LinkedIn
-                  </a>
                 </div>
               </div>
             </address>
