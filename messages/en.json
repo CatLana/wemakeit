@@ -37,7 +37,7 @@
       { "icon": "ShieldCheck", "label": "Accessibility & UX first", "description": "Every product is built inclusive and usable from day one.", "ariaLabel": "We build every product with accessibility and UX as a foundation" },
       { "icon": "Lightbulb", "label": "Design Thinking applied", "description": "We validate before we build. You invest in the right thing.", "ariaLabel": "We apply Design Thinking to validate ideas before building" },
       { "icon": "TrendingUp", "label": "Built to convert", "description": "Sales and marketing strategy is baked into every decision.", "ariaLabel": "We make decisions with your business goals and conversions in mind" },
-      { "icon": "MessageCircle", "label": "No jargon, ever", "description": "Plain English. We listen first and talk tech only when it helps.", "ariaLabel": "We communicate in plain English and always listen before we speak" }
+      { "icon": "MessageCircle", "label": "We speak plain English", "description": "We are easy to speak with. If you are not a technical person, we explain everything in simple terms.", "ariaLabel": "We communicate in plain English and always listen to our clients to clearly understand their needs" }
     ]
   },
   "services": {
@@ -73,7 +73,7 @@
     "passion": "It took years of reflection to realise it, but helping people solve real problems is my true passion. I care deeply about inclusive and accessible software — because no one should be left behind when navigating their digital world. People are different, and needs are different, yet everyone deserves a smooth, frustration-free experience. Applications shape our everyday lives, whether we realise it or not. My mission is to help entrepreneurs just like you build products that your customers genuinely enjoy using.",
     "differenceHeading": "So what makes our services different?",
     "differenceHighlight": "A genuine obsession with solving the right problems in the right way.",
-    "differenceText": "If you have a challenge, we will find you a clear and practical solution — without unnecessary complexity or jargon getting in the way.",
+    "differenceText": "If you have a challenge, we will find you a clear and practical solution without unnecessary complexity or technical language getting in the way.",
     "quote": "When your business solves a real problem for real people, that is where success begins.",
     "quoteFooter": "And we know how to help you reach that point.",
     "callout": "Ready to share your idea? Fill in the form below and we will send you a free, no-obligation quote. Your customers deserve a better experience — and it all starts here.",
@@ -589,7 +589,7 @@
         "ch": "Software Consultancy in Switzerland"
       },
       "breadcrumb": "Software Consultancy",
-      "desc": "Not sure what to build, which technology to choose, or how to get your existing product back on track? We give you clear, honest advice — no jargon, no vendor lock-in.",
+      "desc": "Not sure what to build, which technology to choose, or how to get your existing product back on track? We give you clear, honest advice in plain language — no vendor lock-in.",
       "whatHeading": "What We Help With",
       "whatItems": [
         { "title": "Technology Strategy", "description": "Which stack, which platform, which architecture. We lay out the options clearly and help you choose with confidence." },
@@ -601,7 +601,7 @@
       "whyItems": [
         "15+ years of experience building products at scale",
         "Honest advice — we tell you what you need to hear, not what you want to hear",
-        "No jargon. We speak plain English so you can make informed decisions",
+        "We speak plain English so you can make informed decisions",
         "We have no financial interest in recommending specific vendors or tools"
       ]
     },

@@ -37,7 +37,7 @@
       { "icon": "ShieldCheck", "label": "Accessibilità e UX prima di tutto", "description": "Ogni prodotto è costruito inclusivo e usabile fin dal primo giorno.", "ariaLabel": "Costruiamo ogni prodotto con accessibilità e UX come fondamenta" },
       { "icon": "Lightbulb", "label": "Design Thinking applicato", "description": "Validiamo prima di costruire. Investi nella cosa giusta.", "ariaLabel": "Applichiamo il Design Thinking per validare le idee prima di costruire" },
       { "icon": "TrendingUp", "label": "Costruito per convertire", "description": "Strategia di vendita e marketing integrata in ogni decisione.", "ariaLabel": "Prendiamo decisioni pensando ai tuoi obiettivi di business e alle conversioni" },
-      { "icon": "MessageCircle", "label": "Mai gergo tecnico", "description": "Parole semplici. Ascoltiamo prima e parliamo di tecnologia solo quando serve.", "ariaLabel": "Comunichiamo in modo semplice e ascoltiamo sempre prima di parlare" }
+      { "icon": "MessageCircle", "label": "Linguaggio semplice, sempre", "description": "Con noi è facile comunicare. Se non sei un esperto di tecnologia, ti spieghiamo tutto in modo chiaro e comprensibile.", "ariaLabel": "Comunichiamo in modo semplice e ascoltiamo sempre per capire le tue esigenze" }
     ]
   },
   "services": {
@@ -109,7 +109,7 @@
     "passion": "Ci sono voluti anni di riflessione per capirlo, ma aiutare le persone a risolvere problemi reali è la mia vera passione. Tengo molto al software inclusivo e accessibile — perché nessuno dovrebbe sentirsi escluso nel navigare il proprio mondo digitale. Le persone sono diverse, i bisogni sono diversi, eppure tutti meritano un'esperienza fluida e senza frustrazioni. Le applicazioni plasmano la nostra vita quotidiana, che ne siamo consapevoli o meno. La mia missione è aiutare imprenditori come te a costruire prodotti che i tuoi clienti amino davvero usare.",
     "differenceHeading": "Cosa rende i nostri servizi diversi?",
     "differenceHighlight": "Una vera ossessione nel risolvere i problemi giusti nel modo giusto.",
-    "differenceText": "Se hai una sfida, ti troveremo una soluzione chiara e concreta — senza complessità inutili né gergo tecnico che si mette in mezzo.",
+    "differenceText": "Se hai una sfida, ti troveremo una soluzione chiara e concreta — senza complessità inutili né linguaggio tecnico inaccessibile.",
     "quote": "Quando la tua azienda risolve un problema reale per persone reali, è lì che inizia il successo.",
     "quoteFooter": "E noi sappiamo come aiutarti ad arrivare a quel punto.",
     "callout": "Pronta a condividere la tua idea? Compila il modulo qui sotto e ti invieremo un preventivo gratuito e senza impegno. I tuoi clienti meritano un'esperienza migliore — e tutto inizia qui.",
@@ -657,7 +657,7 @@
         "ch": "Consulenza Software in Svizzera"
       },
       "breadcrumb": "Consulenza Software",
-      "desc": "Non sai cosa costruire, quale tecnologia scegliere, o come rimettere in carreggiata il tuo prodotto esistente? Ti diamo consigli chiari e onesti — senza gergo, senza lock-in.",
+      "desc": "Non sai cosa costruire, quale tecnologia scegliere, o come rimettere in carreggiata il tuo prodotto esistente? Ti diamo consigli chiari e onesti in linguaggio semplice — senza lock-in.",
       "whatHeading": "In Cosa Ti Aiutiamo",
       "whatItems": [
         { "title": "Strategia Tecnologica", "description": "Quale stack, quale piattaforma, quale architettura. Esponiamo chiaramente le opzioni e ti aiutiamo a scegliere con fiducia." },
@@ -669,7 +669,7 @@
       "whyItems": [
         "15+ anni di esperienza nella costruzione di prodotti su larga scala",
         "Consigli onesti — ti diciamo ciò che devi sentire, non ciò che vuoi sentire",
-        "Nessun gergo. Parliamo in modo semplice affinché tu possa prendere decisioni informate",
+        "Parliamo in modo semplice affinché tu possa prendere decisioni informate",
         "Non abbiamo interesse finanziario a raccomandare vendor o strumenti specifici"
       ]
     },
