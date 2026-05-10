@@ -46,6 +46,69 @@ export async function generateMetadata({
 
 const articles = [
   {
+    slug: "got-an-idea-turn-it-into-a-real-product",
+    category: "Product & Strategy",
+    title: "Got a product idea? Here is how to turn it into something real",
+    excerpt:
+      "You have an idea but are not sure where to start. This guide walks you through every step from concept to working product, without wasting time or budget.",
+    date: "1 May 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "is-your-website-helping-your-business-grow",
+    category: "Web Development",
+    title: "Is your website helping your business grow? Here is how to tell",
+    excerpt:
+      "A website that sits there doing nothing is a missed opportunity. Learn how to tell if your site is generating business and what to do if it is not.",
+    date: "1 May 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "better-digital-presence-that-actually-works",
+    category: "Digital Strategy",
+    title: "How to build a digital presence that actually brings in business",
+    excerpt:
+      "Being online is not the same as being found. Learn how to audit your digital presence and make the changes that actually drive enquiries.",
+    date: "1 May 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "turn-business-problem-into-digital-solution",
+    category: "Digital Transformation",
+    title: "How to turn a business problem into a digital solution",
+    excerpt:
+      "Most recurring business problems have a digital fix. Learn how to identify what is costing you time and money, and how a custom digital tool can solve it.",
+    date: "1 May 2026",
+    readTime: "6 min read",
+  },
+  {
+    slug: "have-an-idea-worth-building",
+    category: "Product & Strategy",
+    title: "Have an app idea? Here is how to know if it is worth building",
+    excerpt:
+      "Not every idea should be built into a product. Here is a practical way to stress-test your app idea before you spend time and money on development.",
+    date: "1 May 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "website-that-works-for-your-users",
+    category: "Web Development & UX",
+    title: "What does it mean for a website to work for your users?",
+    excerpt:
+      "A good-looking website that confuses visitors costs your business leads every day. Here is how to make your site work the way your users actually need it to.",
+    date: "1 May 2026",
+    readTime: "5 min read",
+  },
+  {
+    slug: "validate-business-idea-design-thinking-value-proposition",
+    category: "Strategy & Validation",
+    title: "Is your business idea worth pursuing? How to validate profitability with Design Thinking",
+    excerpt:
+      "Most new ventures fail because they solve problems no one pays for. Use Design Thinking and the Value Proposition Canvas to test your idea cheaply before building anything.",
+    date: "30 April 2026",
+    readTime: "7 min read",
+  },
+  {
     slug: "web-accessibility-ireland",
     category: "Accessibility & Legal",
     title:
@@ -60,7 +123,7 @@ const articles = [
     category: "Admin & Finance",
     title: "Free expense tracking for Irish sole traders: the lean-start guide",
     excerpt:
-      "Stop losing receipts. A practical, free system — Wave Accounting or Google Drive — to track all your business expenses year-round and be ready for your Form 11 each October.",
+      "Stop losing receipts. A practical, genuinely free system using Google Sheets and Google Drive to track all your business expenses year-round and be ready for your Form 11 each October.",
     date: "26 April 2026",
     readTime: "8 min read",
   },

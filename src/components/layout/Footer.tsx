@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Mail, MapPin, Globe, Tag } from "lucide-react";
@@ -20,9 +21,15 @@ export default function Footer() {
             <Link
               href="/"
               aria-label="We Make IT - Home"
-              className="inline-flex items-center text-white font-bold text-2xl mb-4 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+              className="inline-flex items-center mb-4 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
-              We Make <span className="text-[#22D3EE] ml-1">IT</span>
+              <Image
+                src="/images/wemakeit_logo_transparent.svg"
+                alt=""
+                width={420}
+                height={100}
+                className="h-14 w-auto"
+              />
             </Link>
             <p className="text-sm leading-relaxed mb-4 max-w-xs">
               {t("tagline")}
@@ -82,30 +89,35 @@ export default function Footer() {
 
           {/* Services column */}
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+            <h3 className="chalk-heading font-semibold text-sm uppercase tracking-wider mb-4">
               {t("sections.services")}
             </h3>
             <ul className="space-y-1" role="list">
-              {serviceLabels.map((label) => (
-                <li key={label}>
-                  <Link
-                    href="/#services"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
+              {serviceLabels.map((label, index) => {
+                const serviceHrefs = [
+                  "/services/web-development",
+                  "/services/web-development",
+                  "/services/ux-accessibility-audit",
+                  "/services/app-development",
+                  "/services/web-development",
+                ];
+                return (
+                  <li key={label}>
+                    <Link
+                      href={serviceHrefs[index] ?? "/services"}
+                      className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           {/* Company column */}
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+            <h3 className="chalk-heading font-semibold text-sm uppercase tracking-wider mb-4">
               {t("sections.company")}
             </h3>
             <ul className="space-y-1" role="list">
@@ -144,7 +156,7 @@ export default function Footer() {
 
           {/* Legal column */}
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+            <h3 className="chalk-heading font-semibold text-sm uppercase tracking-wider mb-4">
               {t("sections.legal")}
             </h3>
             <ul className="space-y-1" role="list">
@@ -177,12 +189,12 @@ export default function Footer() {
           <p>{t("copyright")}</p>
           <p>
             {t("builtBy")}{" "}
-            <a
-              href="https://www.wemakeit.ie"
+            <Link
+              href="/"
               className="text-[#22D3EE] hover:text-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
               We Make IT
-            </a>
+            </Link>
           </p>
         </div>
       </div>

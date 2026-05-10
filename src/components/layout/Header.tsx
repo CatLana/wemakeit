@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback, startTransition } from "react";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
@@ -104,10 +105,16 @@ export default function Header() {
             <Link
               href="/"
               aria-label={t("logoAriaLabel")}
-              className="flex items-center gap-1 text-white font-bold text-xl focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+              className="flex flex-col items-start focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
-              <span>We Make&nbsp;</span>
-              <span className="text-[#22D3EE]">IT</span>
+              <Image
+                  src="/images/wemakeit_logo_transparent.svg"
+                  alt=""
+                  width={420}
+                  height={100}
+                  className="h-14 w-auto block"
+                  priority
+                />
             </Link>
 
             {/* Desktop nav */}

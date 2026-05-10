@@ -10,9 +10,13 @@ export default function LanguageSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
 
+  // Blog content is English-only — hide other locale options on blog routes
+  const isBlog = pathname.startsWith("/blog");
+  const visibleLocales: readonly string[] = isBlog ? ["en"] : routing.locales;
+
   return (
     <div className="flex items-center text-sm" aria-label="Language selector">
-      {routing.locales.map((loc, i) => (
+      {visibleLocales.map((loc, i) => (
         <span key={loc} className="flex items-center">
           {i > 0 && (
             <span aria-hidden="true" className="text-slate-600 mx-1">|</span>
