@@ -23,6 +23,7 @@ const pages: {
   { path: "/blog/free-expense-tracking-for-irish-sole-traders", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-04-26") },
   { path: "/blog/web-accessibility-ireland",                    priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-04-28") },
   { path: "/blog/validate-business-idea-design-thinking-value-proposition", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
+  { path: "/audit/bank2brick",                      priority: 0.4, changeFrequency: "monthly", lastModified: new Date("2026-05-11") },
   { path: "/services",                               priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/services/web-development",               priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/services/app-development",               priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
