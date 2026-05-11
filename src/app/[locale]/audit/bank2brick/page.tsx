@@ -81,7 +81,7 @@ export default async function Bank2BrickAuditPage({
   const opportunities = t.raw("opportunities") as Opportunity[];
   const actionPlan = t.raw("actionPlan") as string[];
   const sections = t.raw("severitySections") as Record<SeverityKey, SeveritySection>;
-  const feedbackSubject = encodeURIComponent(t("feedbackSubject"));
+  const feedbackSubjectText = t("feedbackSubject");
   const sectionOrder: SeverityKey[] = ["critical", "high", "medium", "low"];
 
   const sectionStyles: Record<SeverityKey, { shell: string; badge: string }> = {
@@ -352,7 +352,7 @@ export default async function Bank2BrickAuditPage({
                   <ArrowRight size={16} aria-hidden="true" />
                 </Link>
                 <a
-                  href={`mailto:info@wemakeit.ie?subject=${feedbackSubject}`}
+                  href={`mailto:info@wemakeit.ie?subject=${encodeURIComponent(feedbackSubjectText)}`}
                   className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/40 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
                 >
                   {t("secondaryCta")}
