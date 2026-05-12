@@ -52,6 +52,7 @@ export async function generateMetadata({
       description: t("ogDescription"),
       url: `${BASE_URL}/${locale}/${SLUG}`,
       siteName: "We Make IT",
+      locale: locale === "en" ? "en_IE" : locale === "it" ? "it_IT" : "ru_RU",
       images: [{ url: `${BASE_URL}/api/og`, width: 1200, height: 630 }],
     },
     twitter: {
@@ -189,7 +190,7 @@ export default async function Bank2BrickAuditPage({
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/#quote"
+                href={`/${locale}/#quote`}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#22D3EE] px-6 py-3 text-sm font-semibold text-[#0F172A] transition-colors hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
               >
                 {t("primaryCta")}
