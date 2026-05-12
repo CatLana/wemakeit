@@ -662,225 +662,85 @@
   }
 ,
     "clientAuditReports": {
-      "bank2brick": {
-        "metadata": {
-          "title": "Bank2Brick website audit",
-          "description": "Independent audit of bank2brick.ie covering reachability, UX risk, accessibility, SEO, and digital presence recommendations.",
-          "ogTitle": "Bank2Brick website audit report",
-          "ogDescription": "Independent review of bank2brick.ie with priority issues, recovery steps, and SEO recommendations."
-        },
-        "eyebrow": "Independent website audit",
-        "title": "Bank2Brick: UX, accessibility and SEO audit",
-        "subtitle": "A live review of bank2brick.ie carried out on 11 May 2026. The main issue is not design polish — the domain could not be reached, so visibility, trust, and lead generation are currently blocked.",
-        "auditDateLabel": "Audit date",
-        "auditDateValue": "11 May 2026",
-        "statusLabel": "Current status",
-        "statusValue": "Live domain not reachable",
-        "scopeLabel": "Scope checked",
-        "scopeValue": "Reachability, crawlability, public SEO signals, and digital presence",
-        "summaryTitle": "Executive summary",
-        "summary": [
-          "The website could not be reached during live checks. Both bank2brick.ie and www.bank2brick.ie returned DNS resolution errors.",
-          "Because the site is offline, users cannot browse it and search engines cannot crawl or index it.",
-          "No public-facing pages, metadata, robots.txt, or sitemap could be reviewed, which means the current SEO baseline is effectively zero.",
-          "We also could not find a meaningful off-site digital footprint for the brand, so trust and discoverability are very low right now."
-        ],
-        "limitationsTitle": "Important note",
-        "limitationsBody": "This report is based on live checks completed on 11 May 2026. Once the website is online again, a second pass should review real page layouts, copy, forms, mobile UX, contrast, keyboard navigation, and performance.",
-        "issuesTitle": "Issues, sorted by severity",
-        "issuesIntro": "Start with the blockers below. There is little value in polishing design or copy until people and search engines can actually reach the site.",
-        "severityLabels": {
-          "critical": "Critical",
-          "high": "High",
-          "medium": "Medium",
-          "low": "Low"
-        },
-        "impactLabel": "Why this matters",
-        "evidenceLabel": "Evidence",
-        "recommendationsLabel": "Recommended fix",
-        "severitySections": {
-          "critical": {
-            "title": "Critical issues",
-            "intro": "These block access and make every other improvement secondary.",
-            "items": [
-              {
-                "title": "The domain does not resolve",
-                "summary": "Both the root domain and the www version failed DNS resolution during live checks.",
-                "impact": "If the domain cannot resolve, nobody can open the site, shared links fail, and every campaign or referral loses value immediately.",
-                "evidence": [
-                  "bank2brick.ie returned “No address associated with hostname”.",
-                  "www.bank2brick.ie returned the same DNS resolution failure.",
-                  "No homepage HTML could be retrieved for audit."
-                ],
-                "recommendations": [
-                  "Check the domain registrar settings and confirm the domain is connected to the correct hosting provider.",
-                  "Restore working A, AAAA, or CNAME records for the live site and test both the root domain and www version.",
-                  "Choose one preferred canonical host and redirect the other version consistently."
-                ]
-              },
-              {
-                "title": "Search engines have nothing crawlable to index",
-                "summary": "Because the site is unavailable, crawlers cannot access pages, internal links, metadata, structured data, or media.",
-                "impact": "Even a well-designed site cannot rank or generate organic leads if bots cannot fetch it.",
-                "evidence": [
-                  "Live fetches of the homepage failed.",
-                  "No crawlable pages were available for review.",
-                  "The domain is effectively invisible to search engines until availability is restored."
-                ],
-                "recommendations": [
-                  "Bring the site online before investing more effort in on-page SEO.",
-                  "Verify indexing with Google Search Console and Bing Webmaster Tools as soon as the site is reachable.",
-                  "Submit a working sitemap after launch and confirm robots.txt is accessible."
-                ]
-              }
-            ]
-          },
-          "high": {
-            "title": "High-priority issues",
-            "intro": "These directly affect discoverability, trust, and launch readiness once the site is back online.",
-            "items": [
-              {
-                "title": "robots.txt and sitemap.xml are not publicly accessible right now",
-                "summary": "The usual technical SEO files could not be reached because the domain itself is unavailable.",
-                "impact": "Without these basics, search engines get weaker crawl guidance and troubleshooting becomes harder after launch.",
-                "evidence": [
-                  "Live requests for /robots.txt failed.",
-                  "Live requests for /sitemap.xml failed.",
-                  "No crawl directives or sitemap locations could be verified."
-                ],
-                "recommendations": [
-                  "Publish a valid robots.txt file on the live domain.",
-                  "Generate and submit an XML sitemap that includes the main pages you want indexed.",
-                  "Recheck both files after DNS is fixed to confirm they return HTTP 200 responses."
-                ]
-              },
-              {
-                "title": "No discoverable brand footprint or trust signals were found",
-                "summary": "Public searches did not surface meaningful profiles, reviews, or directory listings tied to Bank2Brick.",
-                "impact": "For a young or niche brand, off-site trust signals help both people and search engines validate that the business is real.",
-                "evidence": [
-                  "No meaningful public company profiles were surfaced in quick discovery checks.",
-                  "No obvious review footprint could be verified.",
-                  "No directory presence appeared to support the brand name."
-                ],
-                "recommendations": [
-                  "Create or complete a Google Business Profile if the business serves a real local market.",
-                  "Set up or refresh LinkedIn and any relevant social profiles with consistent business naming and descriptions.",
-                  "List the business on trusted Irish directories and start collecting a small number of genuine reviews."
-                ]
-              }
-            ]
-          },
-          "medium": {
-            "title": "Medium-priority issues",
-            "intro": "These need a second live review once the website is reachable, because they affect usability and conversion quality.",
-            "items": [
-              {
-                "title": "No public content could be assessed for accessibility or UX",
-                "summary": "There may be page-level issues, but the current blocker is that no live experience exists to audit.",
-                "impact": "Once the site is back online, accessibility gaps such as missing focus states, weak contrast, or poor mobile layouts can still hurt conversions and compliance.",
-                "evidence": [
-                  "No page templates could be opened in a browser.",
-                  "No forms, navigation, headings, or media could be inspected.",
-                  "No mobile or keyboard interaction checks were possible on a live page."
-                ],
-                "recommendations": [
-                  "Run a second-pass audit on real page templates once the site is live.",
-                  "Check keyboard navigation, form labels, alt text, heading order, colour contrast, and tap target sizes.",
-                  "Test the main user journeys on both mobile and desktop with real users."
-                ]
-              },
-              {
-                "title": "No conversion path could be verified",
-                "summary": "Because no live pages were available, we could not confirm whether the site gives visitors a clear next step such as calling, booking, or messaging.",
-                "impact": "Even after launch, a site without a clear CTA and contact path tends to leak enquiries.",
-                "evidence": [
-                  "No live header, footer, or contact page could be reached.",
-                  "No form or phone or email CTA could be validated.",
-                  "No thank-you or lead-capture flow could be checked."
-                ],
-                "recommendations": [
-                  "Put one clear primary CTA in the header and hero on every key page.",
-                  "Keep the first contact form short — name, email, and message is usually enough.",
-                  "Make phone, email, and service area visible without forcing people to scroll."
-                ]
-              }
-            ]
-          },
-          "low": {
-            "title": "Lower-priority issues",
-            "intro": "These will matter after the site is stable, especially if the goal is to grow search traffic over time.",
-            "items": [
-              {
-                "title": "There is no visible content footprint for long-tail SEO yet",
-                "summary": "We could not find indexed articles, FAQs, or service pages that target search intent around the business category.",
-                "impact": "Without content depth, the site will struggle to earn non-brand traffic even after it comes back online.",
-                "evidence": [
-                  "No accessible pages were surfaced for topic coverage review.",
-                  "No blog, FAQ, or resource content could be checked.",
-                  "Search visibility appears close to zero at the moment."
-                ],
-                "recommendations": [
-                  "Launch a small set of focused pages around core services and customer questions.",
-                  "Add FAQ sections, clear service explanations, and location signals where relevant.",
-                  "Publish a handful of genuinely helpful articles or guides before chasing aggressive SEO targets."
-                ]
-              },
-              {
-                "title": "No measurement setup could be verified",
-                "summary": "Analytics, conversion tracking, and search monitoring could not be confirmed from a non-live site.",
-                "impact": "Without measurement, it becomes hard to tell whether traffic, enquiries, and rankings are improving after launch.",
-                "evidence": [
-                  "No live source code or scripts were available to inspect.",
-                  "No public verification of Search Console or analytics setup was possible.",
-                  "Performance and indexing trends cannot be monitored until the site is online."
-                ],
-                "recommendations": [
-                  "Install Google Analytics 4 or an equivalent privacy-aware analytics tool.",
-                  "Connect Google Search Console and Bing Webmaster Tools on day one.",
-                  "Track form submissions, call clicks, and any core lead actions as conversions."
-                ]
-              }
-            ]
-          }
-        },
-        "opportunitiesTitle": "SEO and digital presence recommendations",
-        "opportunitiesIntro": "Once the domain is live again, these are the highest-leverage actions to improve discoverability and credibility.",
-        "opportunities": [
-          {
-            "title": "Build a clean homepage message",
-            "body": "Say clearly what Bank2Brick does, who it helps, and what action visitors should take next within the first screen."
-          },
-          {
-            "title": "Create service-led landing pages",
-            "body": "Give each main service its own page with a clear problem, solution, proof, and CTA. This works much better for SEO than one generic brochure page."
-          },
-          {
-            "title": "Strengthen local and trust signals",
-            "body": "Show a real business address or service area, direct contact details, testimonials, and any relevant credentials or partnerships."
-          },
-          {
-            "title": "Set up search and review foundations",
-            "body": "Connect Search Console, submit the sitemap, and start collecting a few genuine reviews on the platforms your customers already trust."
-          },
-          {
-            "title": "Publish helpful expert content",
-            "body": "Use FAQs, explainers, and short articles to answer the questions customers type into Google before they are ready to contact you."
-          }
-        ],
-        "actionPlanTitle": "Suggested order of work",
-        "actionPlan": [
-          "Restore DNS and hosting so the website is reachable on a stable primary domain.",
-          "Add the core technical SEO basics: page titles, meta descriptions, canonical URLs, robots.txt, sitemap.xml, and Search Console verification.",
-          "Review the live site for mobile UX and accessibility, especially navigation, forms, contrast, headings, and focus states.",
-          "Tighten the conversion path with one clear CTA per page, short contact forms, and visible contact details.",
-          "Start building off-site trust with a consistent business profile, directories, and a small number of genuine reviews."
-        ],
-        "ctaTitle": "Need help turning this into a practical fix list?",
-        "ctaBody": "We can review the site again once it is live, prioritise the fixes, and turn this audit into a simple implementation plan.",
-        "primaryCta": "Ask for help with the fixes",
-        "secondaryCta": "Send feedback on this audit",
-        "feedbackSubject": "Feedback on the Bank2Brick audit"
-      }
+        "bank2brick": {
+            "metadata": {
+                "title": "Bank2Brick quick audit report",
+                "description": "Private, brief audit report for Bank2Brick with constructive feedback, severe issues, recommended fixes, and a downloadable PDF.",
+                "ogTitle": "Bank2Brick quick audit report",
+                "ogDescription": "Private review for Bank2Brick with positive feedback, severe issues, and recommended next steps."
+            },
+            "eyebrow": "Private client report",
+            "title": "Bank2Brick: brief website review",
+            "subtitle": "A shorter, constructive report designed to help you scan the key points quickly, recognise what is already working, and fix the most important issues first.",
+            "reviewedLabel": "Reviewed",
+            "reviewedValue": "12 May 2026",
+            "visibilityLabel": "Visibility",
+            "visibilityValue": "Private link · excluded from search indexing",
+            "reviewNoteTitle": "Review note",
+            "reviewNoteBody": "We re-ran public checks on 12 May 2026. From our audit environment, the public domain still did not resolve reliably, so the severe items below stay focused on reachability, visibility, and trust first. Once the public site is consistently reachable, a second visual pass should review the live pages themselves.",
+            "positiveBadge": "Good foundations",
+            "strengthsTitle": "What is already working well",
+            "strengthsIntro": "Even before the next fixes, there are a few things worth keeping and building on.",
+            "strengths": [
+                {
+                    "title": "The brand is memorable",
+                    "body": "Bank2Brick is a focused, distinctive name. That gives you a stronger starting point than a generic brand because it is easier to remember and easier to explain."
+                },
+                {
+                    "title": "Using a dedicated domain is the right move",
+                    "body": "A branded domain is the right long-term foundation for trust, marketing, and search visibility. Once the technical access issue is stable, this becomes a real asset."
+                },
+                {
+                    "title": "Reviewing the site early is a smart decision",
+                    "body": "Getting feedback before wider promotion is exactly the right timing. It is much easier to improve messaging, trust, and conversion paths now than after spending time or money on traffic."
+                }
+            ],
+            "severeBadge": "Severe",
+            "severeTitle": "Fix these first",
+            "severeIntro": "These are the issues most likely to block trust, visibility, and enquiries.",
+            "severe": [
+                {
+                    "title": "Public access still looks inconsistent",
+                    "body": "Our live checks still could not reliably reach bank2brick.ie from outside. If the site is not consistently reachable for users and bots, every other improvement becomes harder to benefit from."
+                },
+                {
+                    "title": "Search visibility is still at risk",
+                    "body": "When a site cannot be fetched consistently, Google and Bing cannot crawl it properly. That means the website may fail to appear in search at all, even if the design and copy are improved."
+                },
+                {
+                    "title": "Trust is weakened before a visitor even reads the content",
+                    "body": "If the domain fails intermittently or appears unstable, users lose confidence quickly. For a brand that needs credibility, technical reliability is part of the user experience."
+                }
+            ],
+            "recommendedBadge": "Recommended",
+            "recommendedTitle": "Recommended next improvements",
+            "recommendedIntro": "Once the site is reliably reachable, these are the best next upgrades to make the experience stronger.",
+            "recommended": [
+                {
+                    "title": "Sharpen the first-screen message",
+                    "body": "Make it obvious in the first few seconds what Bank2Brick does, who it is for, and what the visitor should do next. Clarity will do more work here than clever wording."
+                },
+                {
+                    "title": "Add visible trust signals",
+                    "body": "Include clear contact details, a real person or team presence, and any proof that makes the business feel real and safe to contact. Even a small amount of visible reassurance can make a big difference."
+                },
+                {
+                    "title": "Give every page one clear next step",
+                    "body": "Choose a primary call to action and repeat it consistently. If visitors have to guess whether to call, message, or keep searching, some of them will leave instead."
+                },
+                {
+                    "title": "Tighten the SEO basics once access is stable",
+                    "body": "After the domain issue is fully solved, confirm indexability, robots.txt, sitemap.xml, page titles, meta descriptions, and basic keyword coverage. Those are the foundations before chasing broader SEO growth."
+                }
+            ],
+            "ctaTitle": "Ready to turn this into a fix list?",
+            "ctaBody": "Use the quote form if you want help prioritising the work, rewriting the message, or improving the site structure and SEO basics.",
+            "primaryCta": "Go to the quote form",
+            "downloadCta": "Download PDF report",
+            "downloadTitle": "Download",
+            "downloadBody": "A PDF copy of this short report is available below if you want to share it internally or keep it for your review cycle.",
+            "retentionTitle": "Retention window",
+            "retentionBody": "This private report link and its downloadable PDF are scheduled to be removed on 26 May 2026."
+        }
     }
 }

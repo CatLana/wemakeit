@@ -730,225 +730,85 @@
   }
 ,
     "clientAuditReports": {
-      "bank2brick": {
-        "metadata": {
-          "title": "Audit del sito Bank2Brick",
-          "description": "Audit indipendente di bank2brick.ie su raggiungibilità, rischi UX, accessibilità, SEO e presenza digitale.",
-          "ogTitle": "Report di audit del sito Bank2Brick",
-          "ogDescription": "Revisione indipendente di bank2brick.ie con problemi prioritari, passi di recupero e raccomandazioni SEO."
-        },
-        "eyebrow": "Audit indipendente del sito",
-        "title": "Bank2Brick: audit UX, accessibilità e SEO",
-        "subtitle": "Revisione live di bank2brick.ie eseguita l’11 maggio 2026. Il problema principale non è la grafica: il dominio non era raggiungibile, quindi visibilità, fiducia e lead generation sono attualmente bloccate.",
-        "auditDateLabel": "Data audit",
-        "auditDateValue": "11 maggio 2026",
-        "statusLabel": "Stato attuale",
-        "statusValue": "Dominio live non raggiungibile",
-        "scopeLabel": "Ambito controllato",
-        "scopeValue": "Raggiungibilità, crawlability, segnali SEO pubblici e presenza digitale",
-        "summaryTitle": "Sintesi esecutiva",
-        "summary": [
-          "Il sito non era raggiungibile durante i controlli live. Sia bank2brick.ie sia www.bank2brick.ie hanno restituito errori di risoluzione DNS.",
-          "Poiché il sito è offline, gli utenti non possono navigarlo e i motori di ricerca non possono scansionarlo né indicizzarlo.",
-          "Non è stato possibile esaminare pagine pubbliche, metadati, robots.txt o sitemap, quindi la base SEO attuale è di fatto pari a zero.",
-          "Non è stata trovata nemmeno un’impronta digitale esterna significativa del brand, quindi fiducia e trovabilità sono molto basse in questo momento."
-        ],
-        "limitationsTitle": "Nota importante",
-        "limitationsBody": "Questo report si basa su controlli live completati l’11 maggio 2026. Quando il sito tornerà online, servirà una seconda revisione su layout reali, copy, form, UX mobile, contrasto, navigazione da tastiera e performance.",
-        "issuesTitle": "Problemi ordinati per gravità",
-        "issuesIntro": "Parti dai blocchi principali qui sotto. Ha poco senso rifinire design o copy finché persone e motori di ricerca non riescono davvero a raggiungere il sito.",
-        "severityLabels": {
-          "critical": "Critico",
-          "high": "Alto",
-          "medium": "Medio",
-          "low": "Basso"
-        },
-        "impactLabel": "Perché è importante",
-        "evidenceLabel": "Evidenze",
-        "recommendationsLabel": "Correzione consigliata",
-        "severitySections": {
-          "critical": {
-            "title": "Problemi critici",
-            "intro": "Questi bloccano l’accesso e rendono secondario qualsiasi altro miglioramento.",
-            "items": [
-              {
-                "title": "Il dominio non si risolve",
-                "summary": "Sia il dominio principale sia la versione www hanno fallito la risoluzione DNS durante i controlli live.",
-                "impact": "Se il dominio non si risolve, nessuno può aprire il sito, i link condivisi falliscono e ogni campagna o referral perde valore immediatamente.",
-                "evidence": [
-                  "bank2brick.ie ha restituito “No address associated with hostname”.",
-                  "www.bank2brick.ie ha restituito lo stesso errore di risoluzione DNS.",
-                  "Non è stato possibile recuperare l’HTML della homepage per l’audit."
-                ],
-                "recommendations": [
-                  "Controlla le impostazioni del registrar e conferma che il dominio punti al provider di hosting corretto.",
-                  "Ripristina record A, AAAA o CNAME funzionanti per il sito live e testa sia il dominio root sia la versione www.",
-                  "Scegli un host canonico preferito e reindirizza in modo coerente l’altra versione."
-                ]
-              },
-              {
-                "title": "I motori di ricerca non hanno nulla di scansionabile da indicizzare",
-                "summary": "Poiché il sito non è disponibile, i crawler non possono accedere a pagine, link interni, metadati, dati strutturati o media.",
-                "impact": "Anche un sito ben progettato non può posizionarsi né generare lead organici se i bot non riescono a recuperarlo.",
-                "evidence": [
-                  "I fetch live della homepage sono falliti.",
-                  "Nessuna pagina scansionabile era disponibile per la revisione.",
-                  "Il dominio è di fatto invisibile ai motori di ricerca finché la disponibilità non viene ripristinata."
-                ],
-                "recommendations": [
-                  "Rimetti online il sito prima di investire altro tempo sulla SEO on-page.",
-                  "Verifica l’indicizzazione con Google Search Console e Bing Webmaster Tools non appena il sito sarà raggiungibile.",
-                  "Invia una sitemap funzionante dopo il lancio e conferma che robots.txt sia accessibile."
-                ]
-              }
-            ]
-          },
-          "high": {
-            "title": "Problemi ad alta priorità",
-            "intro": "Questi influenzano direttamente trovabilità, fiducia e prontezza al lancio una volta che il sito tornerà online.",
-            "items": [
-              {
-                "title": "robots.txt e sitemap.xml non sono accessibili pubblicamente in questo momento",
-                "summary": "I consueti file tecnici SEO non erano raggiungibili perché il dominio stesso non è disponibile.",
-                "impact": "Senza queste basi, i motori di ricerca ricevono indicazioni di crawl più deboli e la diagnosi dei problemi diventa più difficile dopo il lancio.",
-                "evidence": [
-                  "Le richieste live a /robots.txt sono fallite.",
-                  "Le richieste live a /sitemap.xml sono fallite.",
-                  "Non è stato possibile verificare direttive di crawl o posizioni della sitemap."
-                ],
-                "recommendations": [
-                  "Pubblica un file robots.txt valido sul dominio live.",
-                  "Genera e invia una sitemap XML che includa le pagine principali da indicizzare.",
-                  "Ricontrolla entrambi i file dopo la correzione del DNS per confermare risposte HTTP 200."
-                ]
-              },
-              {
-                "title": "Non è stata trovata un’impronta del brand o segnali di fiducia rilevabili",
-                "summary": "Le ricerche pubbliche non hanno mostrato profili significativi, recensioni o directory collegate a Bank2Brick.",
-                "impact": "Per un brand giovane o di nicchia, i segnali di fiducia off-site aiutano sia le persone sia i motori di ricerca a capire che l’attività è reale.",
-                "evidence": [
-                  "Nei controlli rapidi non sono emersi profili pubblici aziendali significativi.",
-                  "Non è stato possibile verificare una presenza recensioni evidente.",
-                  "Non è apparsa una presenza in directory che supporti il nome del brand."
-                ],
-                "recommendations": [
-                  "Crea o completa un Google Business Profile se l’attività serve un mercato locale reale.",
-                  "Attiva o aggiorna LinkedIn e gli eventuali profili social rilevanti con naming e descrizioni coerenti.",
-                  "Inserisci l’attività in directory affidabili irlandesi e inizia a raccogliere un piccolo numero di recensioni autentiche."
-                ]
-              }
-            ]
-          },
-          "medium": {
-            "title": "Problemi a priorità media",
-            "intro": "Richiedono una seconda revisione live quando il sito sarà raggiungibile, perché incidono su usabilità e qualità delle conversioni.",
-            "items": [
-              {
-                "title": "Nessun contenuto pubblico è stato valutabile per accessibilità o UX",
-                "summary": "Potrebbero esserci problemi a livello di pagina, ma il blocco attuale è che non esiste un’esperienza live da auditare.",
-                "impact": "Una volta tornato online, gap di accessibilità come focus mancanti, contrasto debole o layout mobile scadenti possono comunque danneggiare conversioni e conformità.",
-                "evidence": [
-                  "Nessun template di pagina è stato apribile nel browser.",
-                  "Non è stato possibile ispezionare form, navigazione, heading o media.",
-                  "Non erano possibili controlli reali su mobile o interazione da tastiera."
-                ],
-                "recommendations": [
-                  "Esegui un secondo audit sui template reali non appena il sito sarà live.",
-                  "Controlla navigazione da tastiera, label dei form, alt text, ordine degli heading, contrasto colori e dimensione dei target touch.",
-                  "Testa i principali percorsi utente sia su mobile sia su desktop con utenti reali."
-                ]
-              },
-              {
-                "title": "Nessun percorso di conversione verificabile",
-                "summary": "Poiché non erano disponibili pagine live, non è stato possibile confermare se il sito dia ai visitatori un passo successivo chiaro come chiamare, prenotare o scrivere.",
-                "impact": "Anche dopo il lancio, un sito senza CTA chiara e percorso contatto tende a perdere richieste.",
-                "evidence": [
-                  "Nessun header, footer o pagina contatti live era raggiungibile.",
-                  "Nessuna CTA via form, telefono o email ha potuto essere validata.",
-                  "Nessun flusso di thank-you o lead capture ha potuto essere controllato."
-                ],
-                "recommendations": [
-                  "Metti una CTA primaria chiara nell’header e nell’hero di ogni pagina chiave.",
-                  "Mantieni il primo form di contatto corto: nome, email e messaggio di solito bastano.",
-                  "Rendi visibili telefono, email e area di servizio senza costringere l’utente a scorrere."
-                ]
-              }
-            ]
-          },
-          "low": {
-            "title": "Problemi a priorità più bassa",
-            "intro": "Diventeranno importanti quando il sito sarà stabile, soprattutto se l’obiettivo è far crescere il traffico organico nel tempo.",
-            "items": [
-              {
-                "title": "Non esiste ancora un’impronta contenutistica visibile per la SEO long-tail",
-                "summary": "Non sono stati trovati articoli indicizzati, FAQ o pagine servizio che intercettino intenti di ricerca legati alla categoria di business.",
-                "impact": "Senza profondità di contenuto, il sito farà fatica a ottenere traffico non brand anche quando tornerà online.",
-                "evidence": [
-                  "Non sono emerse pagine accessibili per una revisione della copertura tematica.",
-                  "Non è stato possibile controllare blog, FAQ o contenuti risorsa.",
-                  "La visibilità in ricerca appare vicina allo zero in questo momento."
-                ],
-                "recommendations": [
-                  "Lancia un piccolo set di pagine focalizzate su servizi core e domande reali dei clienti.",
-                  "Aggiungi sezioni FAQ, spiegazioni chiare dei servizi e segnali geografici dove rilevante.",
-                  "Pubblica alcuni articoli o guide davvero utili prima di inseguire obiettivi SEO aggressivi."
-                ]
-              },
-              {
-                "title": "Nessuna configurazione di misurazione verificabile",
-                "summary": "Analytics, tracciamento conversioni e monitoraggio ricerca non potevano essere confermati da un sito non live.",
-                "impact": "Senza misurazione diventa difficile capire se traffico, richieste e ranking migliorano dopo il lancio.",
-                "evidence": [
-                  "Nessun codice sorgente live o script era disponibile per l’ispezione.",
-                  "Non era possibile una verifica pubblica di Search Console o analytics.",
-                  "Trend di performance e indicizzazione non possono essere monitorati finché il sito non torna online."
-                ],
-                "recommendations": [
-                  "Installa Google Analytics 4 o uno strumento analytics equivalente attento alla privacy.",
-                  "Collega Google Search Console e Bing Webmaster Tools dal primo giorno.",
-                  "Traccia invii form, click su chiamata e ogni azione chiave come conversione."
-                ]
-              }
-            ]
-          }
-        },
-        "opportunitiesTitle": "Raccomandazioni SEO e di presenza digitale",
-        "opportunitiesIntro": "Quando il dominio tornerà live, queste saranno le azioni a più alto impatto per migliorare trovabilità e credibilità.",
-        "opportunities": [
-          {
-            "title": "Costruisci un messaggio homepage chiaro",
-            "body": "Spiega subito cosa fa Bank2Brick, per chi lo fa e quale azione vuoi che il visitatore compia già nella prima schermata."
-          },
-          {
-            "title": "Crea landing page guidate dai servizi",
-            "body": "Dai a ogni servizio principale una pagina dedicata con problema, soluzione, prove e CTA. Per la SEO funziona molto meglio di una pagina brochure generica."
-          },
-          {
-            "title": "Rafforza segnali locali e di fiducia",
-            "body": "Mostra un indirizzo reale o area di servizio, contatti diretti, testimonianze e eventuali credenziali o partnership rilevanti."
-          },
-          {
-            "title": "Imposta le basi per ricerca e recensioni",
-            "body": "Collega Search Console, invia la sitemap e inizia a raccogliere alcune recensioni autentiche sulle piattaforme che i clienti già usano."
-          },
-          {
-            "title": "Pubblica contenuti utili e competenti",
-            "body": "Usa FAQ, spiegazioni e brevi articoli per rispondere alle domande che i clienti digitano su Google prima di essere pronti a contattarti."
-          }
-        ],
-        "actionPlanTitle": "Ordine di lavoro suggerito",
-        "actionPlan": [
-          "Ripristina DNS e hosting in modo che il sito sia raggiungibile su un dominio primario stabile.",
-          "Aggiungi le basi della SEO tecnica: page title, meta description, URL canonici, robots.txt, sitemap.xml e verifica Search Console.",
-          "Rivedi il sito live per UX mobile e accessibilità, soprattutto navigazione, form, contrasto, heading e focus state.",
-          "Rafforza il percorso di conversione con una CTA chiara per pagina, form brevi e dettagli contatto ben visibili.",
-          "Inizia a costruire fiducia off-site con un profilo business coerente, directory e un piccolo numero di recensioni autentiche."
-        ],
-        "ctaTitle": "Hai bisogno di trasformare tutto questo in una lista pratica di fix?",
-        "ctaBody": "Possiamo rivedere il sito quando tornerà online, dare priorità alle correzioni e trasformare questo audit in un piano semplice da implementare.",
-        "primaryCta": "Chiedi aiuto per le correzioni",
-        "secondaryCta": "Invia feedback su questo audit",
-        "feedbackSubject": "Feedback sull’audit Bank2Brick"
-      }
+        "bank2brick": {
+            "metadata": {
+                "title": "Report rapido di audit Bank2Brick",
+                "description": "Report privato e breve per Bank2Brick con feedback costruttivo, problemi severi, correzioni consigliate e PDF scaricabile.",
+                "ogTitle": "Report rapido di audit Bank2Brick",
+                "ogDescription": "Revisione privata per Bank2Brick con feedback positivo, problemi severi e prossimi passi consigliati."
+            },
+            "eyebrow": "Report privato per il cliente",
+            "title": "Bank2Brick: breve revisione del sito",
+            "subtitle": "Una versione più breve e costruttiva del report, pensata per farti leggere i punti chiave in pochi minuti, riconoscere ciò che sta già funzionando e correggere prima i problemi più importanti.",
+            "reviewedLabel": "Revisionato",
+            "reviewedValue": "12 maggio 2026",
+            "visibilityLabel": "Visibilità",
+            "visibilityValue": "Link privato · escluso dall’indicizzazione",
+            "reviewNoteTitle": "Nota di revisione",
+            "reviewNoteBody": "Abbiamo ripetuto i controlli pubblici il 12 maggio 2026. Dal nostro ambiente di audit, il dominio pubblico non risultava ancora raggiungibile in modo affidabile, quindi i punti severi qui sotto restano concentrati prima su raggiungibilità, visibilità e fiducia. Quando il sito sarà pubblicamente stabile, servirà una seconda revisione visiva delle pagine live.",
+            "positiveBadge": "Buone basi",
+            "strengthsTitle": "Cosa sta già funzionando bene",
+            "strengthsIntro": "Anche prima delle prossime correzioni, ci sono alcuni aspetti che vale la pena mantenere e rafforzare.",
+            "strengths": [
+                {
+                    "title": "Il brand è memorabile",
+                    "body": "Bank2Brick è un nome focalizzato e distintivo. È un punto di partenza più forte di un brand generico perché è più facile da ricordare e da spiegare."
+                },
+                {
+                    "title": "Usare un dominio dedicato è la scelta giusta",
+                    "body": "Un dominio brandizzato è la base corretta per fiducia, marketing e visibilità organica nel lungo periodo. Quando il problema tecnico di accesso sarà stabile, diventerà un vero asset."
+                },
+                {
+                    "title": "Chiedere una revisione presto è una decisione intelligente",
+                    "body": "Ricevere feedback prima di una promozione più ampia è il momento giusto. È molto più semplice migliorare messaggio, fiducia e conversione adesso che dopo aver investito tempo o budget nel traffico."
+                }
+            ],
+            "severeBadge": "Severo",
+            "severeTitle": "Da correggere per primo",
+            "severeIntro": "Questi sono i problemi che più probabilmente bloccano fiducia, visibilità e richieste di contatto.",
+            "severe": [
+                {
+                    "title": "L’accesso pubblico appare ancora instabile",
+                    "body": "I nostri controlli live non sono ancora riusciti a raggiungere bank2brick.ie in modo affidabile dall’esterno. Se il sito non è raggiungibile con continuità per utenti e bot, ogni altro miglioramento perde valore."
+                },
+                {
+                    "title": "La visibilità sui motori di ricerca resta a rischio",
+                    "body": "Quando un sito non può essere recuperato in modo stabile, Google e Bing non riescono a scansionarlo correttamente. Questo può impedire al sito di comparire in ricerca anche se design e copy migliorano."
+                },
+                {
+                    "title": "La fiducia si indebolisce prima ancora che il visitatore legga il contenuto",
+                    "body": "Se il dominio fallisce in modo intermittente o appare instabile, la fiducia cala subito. Per un brand che ha bisogno di credibilità, l’affidabilità tecnica è parte integrante dell’esperienza utente."
+                }
+            ],
+            "recommendedBadge": "Consigliato",
+            "recommendedTitle": "Prossimi miglioramenti consigliati",
+            "recommendedIntro": "Quando il sito sarà raggiungibile in modo stabile, questi saranno gli upgrade migliori per rendere l’esperienza più forte.",
+            "recommended": [
+                {
+                    "title": "Rendi più chiaro il messaggio nella prima schermata",
+                    "body": "Nei primi secondi deve essere evidente cosa fa Bank2Brick, per chi è e quale azione dovrebbe fare il visitatore. Qui la chiarezza farà più lavoro di un testo troppo creativo."
+                },
+                {
+                    "title": "Aggiungi segnali di fiducia ben visibili",
+                    "body": "Inserisci contatti chiari, la presenza di una persona o di un team reale e qualsiasi prova che faccia percepire l’attività come concreta e sicura da contattare. Anche poca rassicurazione visibile può fare una grande differenza."
+                },
+                {
+                    "title": "Dai a ogni pagina un solo passo successivo chiaro",
+                    "body": "Scegli una CTA primaria e ripetila con coerenza. Se i visitatori devono indovinare se chiamare, scrivere o continuare a cercare, una parte di loro uscirà dal sito."
+                },
+                {
+                    "title": "Stringi le basi SEO quando l’accesso sarà stabile",
+                    "body": "Dopo aver risolto del tutto il problema del dominio, verifica indicizzazione, robots.txt, sitemap.xml, title, meta description e copertura base delle keyword. Sono queste le fondamenta prima di inseguire una crescita SEO più ampia."
+                }
+            ],
+            "ctaTitle": "Vuoi trasformarlo in una lista operativa di fix?",
+            "ctaBody": "Usa il form preventivo se vuoi aiuto per dare priorità al lavoro, riscrivere il messaggio o migliorare struttura del sito e basi SEO.",
+            "primaryCta": "Vai al form preventivo",
+            "downloadCta": "Scarica il report PDF",
+            "downloadTitle": "Download",
+            "downloadBody": "Qui sotto trovi una copia PDF di questo report breve, utile se vuoi condividerlo internamente o conservarlo per il prossimo ciclo di revisione.",
+            "retentionTitle": "Finestra di conservazione",
+            "retentionBody": "Questo link privato al report e il suo PDF scaricabile sono programmati per essere rimossi il 26 maggio 2026."
+        }
     }
 }
