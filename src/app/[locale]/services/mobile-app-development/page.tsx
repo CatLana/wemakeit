@@ -110,12 +110,12 @@ export default async function MobileAppDevelopmentPage({
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#22D3EE]">{h1}</h1>
             <p className="text-lg text-slate-300 mb-10 max-w-2xl leading-relaxed">{t("servicePages.mobileAppDev.desc")}</p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="inline-block px-8 py-3 bg-[#22D3EE] text-slate-950 rounded-lg font-bold hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2">
+              <a href="#consultation" className="inline-block px-8 py-3 bg-[#22D3EE] text-slate-950 rounded-lg font-bold hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2">
                 {t("servicePages.appDev.ctaPrimary")}
-              </Link>
-              <a href="#consultation" className="inline-block px-8 py-3 border border-[#22D3EE] text-[#22D3EE] rounded-lg font-bold hover:bg-[#22D3EE]/10 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2">
-                {t("servicePages.appDev.ctaSecondary")}
               </a>
+              <Link href="/project-brief" className="inline-block px-8 py-3 border border-[#22D3EE] text-[#22D3EE] rounded-lg font-bold hover:bg-[#22D3EE]/10 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2">
+                {t("servicePages.appDev.ctaSecondary")}
+              </Link>
             </div>
           </div>
         </section>

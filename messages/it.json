@@ -190,33 +190,102 @@
     "cta": "Compila il form"
   },
   "contact": {
-    "eyebrow": "Richiedi Preventivo",
-    "heading": "Raccontaci la tua idea",
-    "body": "Compila con più dettagli possibile. Più informazioni = preventivo e piano più precisi.",
+    "eyebrow": "Siamo felici di sentirti",
+    "heading": "Scrivici un messaggio",
+    "body": "Hai bisogno di un preventivo o di una consulenza gratuita? Siamo qui per aiutarti!",
     "officeLabel": "Dove Lavoriamo",
     "officeLocation": "Da remoto",
     "contactLink": "Domande?",
     "contactLinkText": "Scrivici",
     "linkedinLabel": "LinkedIn",
     "linkedinNewTab": "(si apre in nuova scheda)",
+    "trustLabel": "Perché sceglierci",
+    "trustPoints": [
+      "Preventivo gratuito, senza impegno",
+      "Rispondiamo entro 1 giorno lavorativo"
+    ],
+    "whatNextHeading": "Cosa succede dopo?",
+    "whatNextSteps": [
+      "Revisioniamo la tua richiesta",
+      "Ti inviamo un preventivo o fissiamo una call",
+      "Decidi tu, senza pressioni"
+    ],
     "form": {
-      "requiredNote": "I campi contrassegnati",
-      "requiredSr": "con un asterisco",
-      "requiredSuffix": "sono obbligatori.",
-      "enquiryType": "Come possiamo aiutarti?",
-      "enquiryOptions": {
-        "consultation": "Richiesta di consulenza",
-        "general": "Richiesta generica"
+      "ariaLabel": "Richiedi un preventivo gratuito",
+      "service": "Come possiamo aiutarti?",
+      "serviceOptions": {
+        "consultation": "Consulenza Gratuita",
+        "quote": "Richiesta Preventivo",
+        "general": "Richiesta Generica",
+        "audit": "Richiesta Audit Gratuito"
       },
+      "name": "Il tuo nome",
+      "namePlaceholder": "Mario Rossi",
+      "email": "Indirizzo email",
+      "emailPlaceholder": "mario@azienda.it",
+      "phone": "Telefono (opzionale)",
+      "phonePlaceholder": "+39 ...",
+      "message": "Qualcosa da condividere? (opzionale)",
+      "messagePlaceholder": "Descrivi brevemente il tuo progetto o idea…",
+      "messageHint": "Non servono dettagli — ti chiederemo di più se necessario.",
+      "submit": "Invia il Messaggio",
+      "submitting": "Invio in corso…",
+      "submitAnother": "Invia un'altra richiesta",
+      "errors": {
+        "service": "Seleziona il tipo di servizio",
+        "name": "Inserisci il tuo nome",
+        "email": "Inserisci un indirizzo email valido"
+      },
+      "success": {
+        "title": "Richiesta inviata!",
+        "body": "Grazie! Revisioneremo la tua richiesta e ti risponderemo entro 1 giorno lavorativo. Potremmo inviarti un breve brief per capire meglio le tue esigenze."
+      },
+      "serverError": "Qualcosa è andato storto. Riprova.",
+      "networkError": "Impossibile raggiungere il server. Controlla la connessione e riprova.",
+      "privacyNote": "I tuoi dati vengono usati solo per risponderti.",
+      "heading": "Contattaci",
+      "consentText": "Inviando questo modulo accetti i nostri",
+      "consentTerms": "Termini di Servizio",
+      "consentAnd": "e la nostra",
+      "consentPrivacy": "Informativa sulla Privacy",
+      "consentPost": ". I tuoi dati vengono usati solo per risponderti.",
+      "marketingConsent": "Iscrivimi agli aggiornamenti e a un codice sconto per nuovi clienti."
+    }
+  },
+  "projectBrief": {
+    "title": "Brief di Progetto | We Make IT",
+    "description": "Condividi i dettagli del tuo progetto per aiutarci a preparare un preventivo accurato.",
+    "eyebrow": "Brief di Progetto",
+    "heading": "Parlaci del tuo progetto",
+    "subheading": "Questo brief ci aiuta a darti un preventivo e piano accurati. Condividi quanto vuoi — nessuna conoscenza tecnica richiesta.",
+    "intro": "Hai ricevuto questo link dopo aver inviato una richiesta di preventivo. Più dettagli condividi, più precisa sarà la nostra proposta.",
+    "form": {
+      "ariaLabel": "Modulo brief di progetto",
       "name": "Nome e cognome",
       "namePlaceholder": "Mario Rossi",
       "email": "Indirizzo email",
       "emailPlaceholder": "mario@azienda.it",
-      "company": "Azienda (opzionale)",
+      "company": "Azienda o organizzazione (opzionale)",
       "companyPlaceholder": "Acme Srl.",
       "phone": "Telefono (opzionale)",
       "phonePlaceholder": "+39 ...",
-      "projectType": "Che tipo di progetto hai bisogno?",
+      "service": "Servizio di interesse",
+      "serviceOptions": {
+        "consultation": "Consulenza Gratuita",
+        "webDevelopment": "Sito Web o App Web",
+        "appDevelopment": "Sviluppo App su Misura",
+        "mobileApp": "Sviluppo App Mobile",
+        "ideaValidation": "Validazione Idea & MVP",
+        "uxResearch": "Ricerca UX",
+        "uxDesign": "UX Design",
+        "prototype": "Prototipo App",
+        "accessibilityAudit": "Audit Accessibilità & UX",
+        "consultancy": "Consulenza Software",
+        "maintenance": "Manutenzione e Supporto",
+        "localisation": "Localizzazione",
+        "other": "Altro"
+      },
+      "projectType": "Tipo di progetto?",
       "projectTypePlaceholder": "Seleziona un tipo…",
       "projectTypes": {
         "webApp": "Applicazione Web",
@@ -226,8 +295,8 @@
         "redesign": "Redesign / Rifacimento",
         "other": "Altro"
       },
-      "description": "Descrivi la tua idea di progetto",
-      "descriptionPlaceholder": "Dicci cosa vuoi costruire, per chi è e quale problema risolve…",
+      "description": "Descrivi il tuo progetto",
+      "descriptionPlaceholder": "Cosa stai costruendo? Per chi è? Quale problema risolve?",
       "budget": "Budget stimato",
       "budgetPlaceholder": "Seleziona un range…",
       "budgetOptions": {
@@ -246,38 +315,33 @@
         "3to6": "3 – 6 mesi",
         "flexible": "Flessibile"
       },
-      "hasDesign": "Hai già design o mockup esistenti?",
+      "hasDesign": "Hai già design o mockup?",
       "hasDesignPlaceholder": "Seleziona un'opzione…",
       "hasDesignOptions": {
         "yes": "Sì, ho design pronti",
-        "partial": "Parziale: ho alcune idee o wireframe",
+        "partial": "Ho alcune idee o wireframe",
         "no": "No, parto da zero"
       },
       "competitorQuote": "Hai un preventivo da un'altra azienda? (opzionale)",
-      "competitorPlaceholder": "es. €12.000 dall'agenzia XYZ. Lo batteremo!",
-      "submit": "Invia la mia richiesta",
+      "competitorPlaceholder": "es. €12.000 dall'agenzia XYZ — lo batteremo.",
+      "submit": "Invia il Mio Brief",
       "submitting": "Invio in corso…",
-      "submitAnother": "Invia un'altra richiesta",
       "errors": {
-        "enquiryType": "Seleziona il tipo di richiesta",
-        "name": "Inserisci il tuo nome completo",
-        "email": "Inserisci un indirizzo email valido",
+        "service": "Seleziona un servizio",
+        "name": "Inserisci il tuo nome",
+        "email": "Inserisci un'email valida",
         "projectType": "Seleziona il tipo di progetto",
-        "description": "Descrivi il tuo progetto in almeno 10 caratteri",
+        "description": "Descrivi il progetto (min. 10 caratteri)",
         "budget": "Seleziona un range di budget",
         "timeline": "Seleziona una tempistica",
         "hasDesign": "Seleziona un'opzione"
       },
       "success": {
-        "consultationTitle": "Richiesta di consulenza inviata!",
-        "consultationBody": "Grazie per averci contattato. Esamineremo la tua idea e ti risponderemo con consigli onesti.",
-        "generalTitle": "Messaggio inviato!",
-        "generalBody": "Grazie per averci contattato. Ti risponderemo a breve.",
-        "quoteTitle": "Richiesta di preventivo inviata!",
-        "quoteBody": "Grazie per averci contattato. Esamineremo la tua richiesta e ti risponderemo rapidamente con un preventivo."
+        "title": "Brief ricevuto!",
+        "body": "Grazie! Abbiamo ricevuto il tuo brief e lo revisioneremo con attenzione. Ci sentiamo presto."
       },
       "serverError": "Qualcosa è andato storto. Riprova.",
-      "networkError": "Impossibile raggiungere il server. Controlla la tua connessione e riprova."
+      "networkError": "Impossibile raggiungere il server. Controlla la connessione e riprova."
     }
   },
   "newsletter": {
@@ -379,6 +443,8 @@
     "eyebrow": "Contattaci",
     "heading": "Scrivici",
     "body": "Hai domande? Compila il form.",
+    "quotePrompt": "Cerchi un preventivo?",
+    "quotePromptLink": "Compila il nostro modulo gratuito →",
     "mapLabel": "Mappa Ashbourne, Co. Meath, Irlanda",
     "locationHeading": "Dove siamo",
     "locationText": "Ashbourne, Co. Meath, Irlanda",

@@ -133,18 +133,18 @@ export default async function AppDevelopmentPage({
               {geoDesc}
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/contact"
+              <a
+                href="#consultation"
                 className="inline-block px-8 py-3 bg-[#22D3EE] text-slate-950 rounded-lg font-bold hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
               >
                 {t("servicePages.appDev.ctaPrimary")}
-              </Link>
-              <a
-                href="#consultation"
+              </a>
+              <Link
+                href="/project-brief"
                 className="inline-block px-8 py-3 border border-[#22D3EE] text-[#22D3EE] rounded-lg font-bold hover:bg-[#22D3EE]/10 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
               >
                 {t("servicePages.appDev.ctaSecondary")}
-              </a>
+              </Link>
             </div>
           </div>
         </section>
