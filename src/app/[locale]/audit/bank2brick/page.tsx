@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowRight, BadgeCheck, Download, ShieldAlert, Sparkles, TimerReset } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import { ArrowRight, BadgeCheck, ShieldAlert, Sparkles } from "lucide-react";
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "audit/bank2brick";
@@ -73,8 +72,6 @@ export default async function Bank2BrickAuditPage({
   const strengths = t.raw("strengths") as SectionItem[];
   const severe = t.raw("severe") as SectionItem[];
   const recommended = t.raw("recommended") as SectionItem[];
-  const pdfHref = `/reports/bank2brick-audit-${locale}-${REPORT_DATE}.pdf`;
-
   return (
     <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#F8FAFC]">
       <section className="bg-[#0F172A] pt-24 pb-16">
@@ -183,47 +180,20 @@ export default async function Bank2BrickAuditPage({
       </section>
 
       <section className="pb-20 pt-4 sm:pb-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl bg-[#0F172A] p-8 text-white sm:p-10">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl bg-[#0F172A] p-8 text-center text-white sm:p-12">
             <h2 className="text-3xl font-extrabold">{t("ctaTitle")}</h2>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300">{t("ctaBody")}</p>
-
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Link
-                href={`/${locale}/#quote`}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#22D3EE] px-6 py-3 text-sm font-semibold text-[#0F172A] transition-colors hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+            <p className="mt-4 text-base leading-7 text-slate-300">{t("ctaBody")}</p>
+            <div className="mt-8">
+              <a
+                href="https://www.wemakeit.ie/en#quote"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#22D3EE] px-8 py-3 text-sm font-semibold text-[#0F172A] transition-colors hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
               >
                 {t("primaryCta")}
                 <ArrowRight size={16} aria-hidden="true" />
-              </Link>
-              <a
-                href={pdfHref}
-                download
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/40 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
-              >
-                {t("downloadCta")}
-                <Download size={16} aria-hidden="true" />
               </a>
-            </div>
-
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#22D3EE]">
-                  {t("downloadTitle")}
-                </p>
-                <p className="mt-2 text-sm leading-7 text-slate-300">{t("downloadBody")}</p>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <div className="flex items-start gap-3">
-                  <TimerReset className="mt-0.5 text-[#22D3EE]" size={18} aria-hidden="true" />
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#22D3EE]">
-                      {t("retentionTitle")}
-                    </p>
-                    <p className="mt-2 text-sm leading-7 text-slate-300">{t("retentionBody")}</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

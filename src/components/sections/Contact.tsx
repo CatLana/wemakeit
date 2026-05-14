@@ -129,6 +129,19 @@ export default function Contact() {
     if (inquiry && map[inquiry]) {
       setValue("enquiryType", map[inquiry]);
     }
+
+    const service = searchParams.get("service");
+    const serviceMap: Record<string, FormValues["projectType"]> = {
+      "web-app": "web-app",
+      "mobile-app": "mobile-app",
+      "website": "website",
+      "e-commerce": "e-commerce",
+      "redesign": "redesign",
+      "other": "other",
+    };
+    if (service && serviceMap[service]) {
+      setValue("projectType", serviceMap[service]);
+    }
   }, [searchParams, setValue]);
 
   async function onSubmit(data: FormValues) {

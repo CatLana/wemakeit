@@ -28,6 +28,7 @@
     "springSale": "Offerta Estate: 30% sconto per nuovi clienti. Posti limitati.",
     "cta1": "Raccontaci la tua idea",
     "cta2": "Come funziona",
+    "auditCta": "Audit gratuito del sito. Scopri il tuo punteggio",
     "ariaLabel": "Schermata principale We Make IT"
   },
   "stats": {
@@ -732,83 +733,166 @@
     "clientAuditReports": {
         "bank2brick": {
             "metadata": {
-                "title": "Report rapido di audit Bank2Brick",
-                "description": "Report privato e breve per Bank2Brick con feedback costruttivo, problemi severi, correzioni consigliate e PDF scaricabile.",
-                "ogTitle": "Report rapido di audit Bank2Brick",
-                "ogDescription": "Revisione privata per Bank2Brick con feedback positivo, problemi severi e prossimi passi consigliati."
+                "title": "Report di audit Bank2Brick",
+                "description": "Report privato per Bank2Brick che copre UX, SEO, design visivo e accessibilita — con problemi specifici evidenziati per gravita e PDF scaricabile.",
+                "ogTitle": "Report di audit Bank2Brick",
+                "ogDescription": "Revisione completa privata per Bank2Brick su UX, SEO, UI e accessibilita."
             },
             "eyebrow": "Report privato per il cliente",
-            "title": "Bank2Brick: breve revisione del sito",
-            "subtitle": "Una versione più breve e costruttiva del report, pensata per farti leggere i punti chiave in pochi minuti, riconoscere ciò che sta già funzionando e correggere prima i problemi più importanti.",
+            "title": "Bank2Brick: revisione completa del sito",
+            "subtitle": "Una revisione strutturata su esperienza utente, SEO, design visivo e accessibilita — con risultati chiari, correzioni prioritizzate e cio che funziona gia bene.",
             "reviewedLabel": "Revisionato",
-            "reviewedValue": "12 maggio 2026",
-            "visibilityLabel": "Visibilità",
-            "visibilityValue": "Link privato · escluso dall’indicizzazione",
+            "reviewedValue": "13 maggio 2026",
+            "visibilityLabel": "Visibilita",
+            "visibilityValue": "Link privato · escluso dall'indicizzazione",
             "reviewNoteTitle": "Nota di revisione",
-            "reviewNoteBody": "Abbiamo ripetuto i controlli pubblici il 12 maggio 2026. Dal nostro ambiente di audit, il dominio pubblico non risultava ancora raggiungibile in modo affidabile, quindi i punti severi qui sotto restano concentrati prima su raggiungibilità, visibilità e fiducia. Quando il sito sarà pubblicamente stabile, servirà una seconda revisione visiva delle pagine live.",
-            "positiveBadge": "Buone basi",
-            "strengthsTitle": "Cosa sta già funzionando bene",
-            "strengthsIntro": "Anche prima delle prossime correzioni, ci sono alcuni aspetti che vale la pena mantenere e rafforzare.",
-            "strengths": [
+            "reviewNoteBody": "Questo report e stato prodotto il 13 maggio 2026 attraverso una combinazione di ispezione manuale del sito live su https://www.bank2brick.ie e controlli automatizzati. Il sito era pubblicamente accessibile al momento della revisione. Il sito e costruito sulla piattaforma Webador, che limita cio che puo essere valutato o migliorato senza migrare a una build personalizzata.",
+            "uxTitle": "Esperienza Utente (UX)",
+            "uxStrengths": [
                 {
-                    "title": "Il brand è memorabile",
-                    "body": "Bank2Brick è un nome focalizzato e distintivo. È un punto di partenza più forte di un brand generico perché è più facile da ricordare e da spiegare."
+                    "title": "Struttura delle pagine chiara e progressiva",
+                    "body": "Sei pagine logiche (Home, Come funziona, Perche investire con noi, Piani d'investimento, Proprieta in evidenza, FAQ) guidano il visitatore progressivamente dalla prima impressione a un impegno piu profondo."
                 },
                 {
-                    "title": "Usare un dominio dedicato è la scelta giusta",
-                    "body": "Un dominio brandizzato è la base corretta per fiducia, marketing e visibilità organica nel lungo periodo. Quando il problema tecnico di accesso sarà stabile, diventerà un vero asset."
+                    "title": "La riprova sociale e presente",
+                    "body": "Tre testimonianze con nomi irlandesi (Aoife Kelly, Conor Byrne, Fiona O'Sullivan) offrono credibilita iniziale per un prodotto finanziario sensibile alla fiducia."
                 },
                 {
-                    "title": "Chiedere una revisione presto è una decisione intelligente",
-                    "body": "Ricevere feedback prima di una promozione più ampia è il momento giusto. È molto più semplice migliorare messaggio, fiducia e conversione adesso che dopo aver investito tempo o budget nel traffico."
+                    "title": "Piu opzioni di contatto",
+                    "body": "Sia un form web che i contatti diretti (email + telefono) sono disponibili, offrendo a tipi diversi di visitatori un punto d'ingresso comodo."
                 }
             ],
-            "severeBadge": "Severo",
-            "severeTitle": "Da correggere per primo",
-            "severeIntro": "Questi sono i problemi che più probabilmente bloccano fiducia, visibilità e richieste di contatto.",
-            "severe": [
+            "uxIssues": [
                 {
-                    "title": "L’accesso pubblico appare ancora instabile",
-                    "body": "I nostri controlli live non sono ancora riusciti a raggiungere bank2brick.ie in modo affidabile dall’esterno. Se il sito non è raggiungibile con continuità per utenti e bot, ogni altro miglioramento perde valore."
+                    "title": "I piani d'investimento non mostrano prezzi ne cifre di ingresso",
+                    "body": "Tutti e quattro i livelli (Starter, Growth, Seasoned, Custom) sono descritti senza alcuna informazione su prezzi, importo minimo o rendimento atteso. I visitatori che devono auto-qualificarsi o confrontare le opzioni non possono farlo — aumentando la frizione e portando all'abbandono prima dell'acquisizione.",
+                    "severity": "severe"
                 },
                 {
-                    "title": "La visibilità sui motori di ricerca resta a rischio",
-                    "body": "Quando un sito non può essere recuperato in modo stabile, Google e Bing non riescono a scansionarlo correttamente. Questo può impedire al sito di comparire in ricerca anche se design e copy migliorano."
+                    "title": "Le CTA sono passive e generiche",
+                    "body": "Le chiamate all'azione principali — 'Unisciti a noi oggi' e 'Scopri come funziona' — non dicono ai visitatori cosa succede specificatamente dopo. Alternative orientate all'obiettivo come 'Vedi le proprieta disponibili' o 'Prenota una call gratuita' riducono l'ambiguita e migliorano la conversione.",
+                    "severity": "average"
                 },
                 {
-                    "title": "La fiducia si indebolisce prima ancora che il visitatore legga il contenuto",
-                    "body": "Se il dominio fallisce in modo intermittente o appare instabile, la fiducia cala subito. Per un brand che ha bisogno di credibilità, l’affidabilità tecnica è parte integrante dell’esperienza utente."
+                    "title": "Nessuna navigazione fissa durante lo scorrimento",
+                    "body": "Su una pagina a scorrimento lungo, non c'e una barra di navigazione persistente mentre l'utente scorre verso il basso. Tornare in cima richiede di scorrere all'indietro — una frizione inutile, soprattutto su mobile.",
+                    "severity": "average"
                 }
             ],
-            "recommendedBadge": "Consigliato",
-            "recommendedTitle": "Prossimi miglioramenti consigliati",
-            "recommendedIntro": "Quando il sito sarà raggiungibile in modo stabile, questi saranno gli upgrade migliori per rendere l’esperienza più forte.",
-            "recommended": [
+            "seoTitle": "SEO",
+            "seoStrengths": [
                 {
-                    "title": "Rendi più chiaro il messaggio nella prima schermata",
-                    "body": "Nei primi secondi deve essere evidente cosa fa Bank2Brick, per chi è e quale azione dovrebbe fare il visitatore. Qui la chiarezza farà più lavoro di un testo troppo creativo."
+                    "title": "Il dominio .ie brandizzato e correttamente configurato",
+                    "body": "Il sito risolve in modo stabile su un TLD .ie brandizzato — il segnale geografico giusto per un prodotto d'investimento focalizzato sull'Irlanda."
                 },
                 {
-                    "title": "Aggiungi segnali di fiducia ben visibili",
-                    "body": "Inserisci contatti chiari, la presenza di una persona o di un team reale e qualsiasi prova che faccia percepire l’attività come concreta e sicura da contattare. Anche poca rassicurazione visibile può fare una grande differenza."
+                    "title": "Slug URL logici e descrittivi",
+                    "body": "Le sottopagine come /how-it-works, /investment-plans e /faq sono leggibili dagli utenti e pertinenti alle keyword, offrendo un piccolo vantaggio SEO."
+                }
+            ],
+            "seoIssues": [
+                {
+                    "title": "Costruito su Webador — un website builder per consumatori",
+                    "body": "Webador ospita e genera l'intera infrastruttura del sito. Non hai alcun controllo sulla configurazione del server, gli header HTTP, il robots.txt o il sitemap.xml. Questo e un soffitto rigido sulle performance SEO tecniche: le ottimizzazioni avanzate non sono possibili senza migrare a una piattaforma adeguata.",
+                    "severity": "severe"
                 },
                 {
-                    "title": "Dai a ogni pagina un solo passo successivo chiaro",
-                    "body": "Scegli una CTA primaria e ripetila con coerenza. Se i visitatori devono indovinare se chiamare, scrivere o continuare a cercare, una parte di loro uscirà dal sito."
+                    "title": "Link 'Powered by Webador' nel footer",
+                    "body": "Il footer contiene un link al sito di Webador. Questo disperde l'autorita del dominio verso un sito esterno e segnala a utenti sofisticati e motori di ricerca che si tratta di un prodotto costruito su template — riducendo la fiducia in un settore dove la fiducia e il principale fattore di conversione.",
+                    "severity": "severe"
                 },
                 {
-                    "title": "Stringi le basi SEO quando l’accesso sarà stabile",
-                    "body": "Dopo aver risolto del tutto il problema del dominio, verifica indicizzazione, robots.txt, sitemap.xml, title, meta description e copertura base delle keyword. Sono queste le fondamenta prima di inseguire una crescita SEO più ampia."
+                    "title": "Nessun dato strutturato / schema JSON-LD",
+                    "body": "I siti di servizi finanziari beneficiano significativamente degli schema LocalBusiness, FAQPage e Review. Senza questi, Google non puo generare risultati di ricerca arricchiti per le tue pagine.",
+                    "severity": "average"
+                },
+                {
+                    "title": "Titoli e meta description probabilmente generati da Webador",
+                    "body": "Senza tag meta configurati su misura, le pagine si posizioneranno male per frasi target come 'investimento immobiliare Irlanda' o 'reddito passivo immobiliare Irlanda'.",
+                    "severity": "average"
+                }
+            ],
+            "uiTitle": "Design Visivo (UI)",
+            "uiStrengths": [
+                {
+                    "title": "Layout leggibile con sezioni ben separate",
+                    "body": "La pagina evita il disordine visivo. I contenuti sono raggruppati in sezioni riconoscibili e le dimensioni del testo sono comode da leggere sia su desktop che su mobile."
+                },
+                {
+                    "title": "La denominazione dei livelli d'investimento e intuitiva",
+                    "body": "Starter / Growth / Seasoned / Custom si mappa naturalmente ai livelli di esperienza degli investitori, riducendo il carico cognitivo nella sezione di pianificazione."
+                }
+            ],
+            "uiIssues": [
+                {
+                    "title": "Identita visiva generica da website builder",
+                    "body": "I template Webador sono visivamente riconoscibili. Per un prodotto di servizi finanziari che chiede alle persone di investire i propri risparmi, il design deve comunicare professionalita su misura. Attualmente il sito appare come un prodotto template, il che mina direttamente la fiducia.",
+                    "severity": "severe"
+                },
+                {
+                    "title": "Il logo viene servito dal CDN di Webador (jwwb.nl)",
+                    "body": "L'immagine del logo si carica da jwwb.nl — un dominio di terze parti. Alcuni browser, strumenti privacy o firewall aziendali possono bloccare questa richiesta, causando il mancato caricamento del logo per alcuni visitatori.",
+                    "severity": "average"
+                },
+                {
+                    "title": "La sezione dei piani manca di gerarchia visiva",
+                    "body": "I quattro livelli sono elencati come blocchi di testo semplice senza prezzi, senza un livello consigliato evidenziato e senza differenziazione visiva. Aggiungere questi elementi migliorerebbe significativamente la fiducia nelle decisioni.",
+                    "severity": "average"
+                }
+            ],
+            "accessibilityTitle": "Accessibilita",
+            "accessibilityStrengths": [
+                {
+                    "title": "Gerarchia dei titoli logica",
+                    "body": "H1 per il nome del sito, H2 per ogni sezione principale — questo offre agli screen reader una struttura documentale navigabile per titolo."
+                },
+                {
+                    "title": "I campi del form di contatto sembrano etichettati",
+                    "body": "I campi Nome, Indirizzo email e Messaggio sono etichettati, il che e il criterio di accessibilita dei form piu frequentemente non soddisfatto."
+                }
+            ],
+            "accessibilityIssues": [
+                {
+                    "title": "Nessun link 'salta al contenuto principale'",
+                    "body": "Gli utenti che usano solo la tastiera o gli screen reader devono scorrere l'intera navigazione dell'intestazione ad ogni caricamento di pagina. Un link di salto e richiesto dallo standard WCAG 2.1 Livello A (Criterio 2.4.1) ed e un'aggiunta da una riga.",
+                    "severity": "average"
+                },
+                {
+                    "title": "L'HTML generato da Webador limita il controllo sull'accessibilita",
+                    "body": "I website builder per consumatori producono costantemente ruoli ARIA non accessibili, landmark mancanti e gestione del focus inaffidabile. Senza migrare a una build personalizzata, non puoi verificare ne correggere completamente questi problemi.",
+                    "severity": "average"
+                },
+                {
+                    "title": "Il testo alternativo sulle immagini non puo essere verificato completamente",
+                    "body": "Il logo e le immagini delle proprieta servite dal CDN di Webador richiedono una revisione individuale del testo alternativo. I website builder spesso compilano automaticamente gli attributi alt con i nomi dei file, che non e significativo per gli screen reader.",
+                    "severity": "average"
                 }
             ],
             "ctaTitle": "Vuoi trasformarlo in una lista operativa di fix?",
-            "ctaBody": "Usa il form preventivo se vuoi aiuto per dare priorità al lavoro, riscrivere il messaggio o migliorare struttura del sito e basi SEO.",
+            "ctaBody": "Possiamo aiutarti a dare priorita al lavoro, ridisegnare per la fiducia e costruire qualcosa che ti dia pieno controllo. Richiedi un preventivo gratuito e senza impegno: ti risponderemo entro 48 ore.",
             "primaryCta": "Vai al form preventivo",
-            "downloadCta": "Scarica il report PDF",
-            "downloadTitle": "Download",
-            "downloadBody": "Qui sotto trovi una copia PDF di questo report breve, utile se vuoi condividerlo internamente o conservarlo per il prossimo ciclo di revisione.",
-            "retentionTitle": "Finestra di conservazione",
-            "retentionBody": "Questo link privato al report e il suo PDF scaricabile sono programmati per essere rimossi il 26 maggio 2026."
+            "downloadCta": "Scarica il report PDF"
+        }
+    },
+    "audit": {
+        "eyebrow": "Strumento gratuito",
+        "title": "Esegui un audit del sito",
+        "subtitle": "Inserisci l'URL di qualsiasi sito live per ottenere un report automatico su UX, SEO, qualita visiva e accessibilita — basato su Google Lighthouse.",
+        "urlLabel": "URL del sito",
+        "urlPlaceholder": "https://iltuosito.com",
+        "submitBtn": "Avvia audit",
+        "exampleLabel": "Esempio",
+        "exampleUrl": "https://www.yourwebsite.com",
+        "limitationsTitle": "Informazioni su questo strumento",
+        "limitationsBody": "Questo strumento esegue un'analisi automatica con Lighthouse e identifica problemi tecnici. Non puo valutare la qualita dei contenuti, le scelte di design UX, il messaggio del brand o il contesto specifico del business. Per una revisione completa da un esperto, contattaci.",
+        "ctaTitle": "Ti serve un esperto umano oltre a questo?",
+        "ctaBody": "Gli strumenti automatici trovano i problemi tecnici. Un vero esperto trova tutto il resto.",
+        "ctaBtn": "Richiedi un audit gratuito",
+        "results": {
+            "errorTitle": "Audit non completato",
+            "errorBody": "Il sito potrebbe non essere raggiungibile, richiedere autenticazione, o il servizio di audit e temporaneamente non disponibile.",
+            "tryAgainBtn": "Prova un altro URL",
+            "runningMsg": "Esecuzione audit Lighthouse — richiede circa 15 secondi..."
         }
     }
 }
