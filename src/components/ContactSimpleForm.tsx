@@ -217,6 +217,16 @@ export default function ContactSimpleForm() {
       >
         {isSubmitting ? t("form.submitting") : t("form.submit")}
       </button>
+
+      <p className="text-center text-sm text-slate-500">
+        {t("quotePrompt")}{" "}
+        <Link
+          href={{ pathname: "/", hash: "quote" } as never}
+          className="text-[#0E7490] underline underline-offset-2 hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+        >
+          {t("quotePromptLink")}
+        </Link>
+      </p>
     </form>
   );
 }

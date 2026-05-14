@@ -162,9 +162,9 @@ export default async function ServicesPage({
 
             <div className="cta-section text-center">
               <h3 className="text-xl font-bold text-slate-50 mb-4">Not sure which service fits your needs?</h3>
-              <Link href="/contact" className="inline-block px-8 py-3 bg-cyan-400 text-slate-950 rounded-lg font-bold hover:bg-cyan-300">
+              <a href="/#quote" className="inline-block px-8 py-3 bg-cyan-400 text-slate-950 rounded-lg font-bold hover:bg-cyan-300">
                 Book a Free Consultation
-              </Link>
+              </a>
             </div>
           </div>
         </section>

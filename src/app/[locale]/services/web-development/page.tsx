@@ -119,12 +119,12 @@ export default async function WebDevelopmentPage({
               {" "}{t("servicePages.intro.suffixWebDev")}
             </p>
 
-            <Link
-              href="/contact"
+            <a
+              href="#consultation"
               className="inline-block px-8 py-3 bg-cyan-400 text-slate-950 rounded-lg font-bold hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
             >
               {t("hero.cta1")}
-            </Link>
+            </a>
           </div>
         </section>
 
@@ -199,12 +199,12 @@ export default async function WebDevelopmentPage({
               <p className="text-slate-400 mb-6 max-w-md mx-auto">
                 {t("servicePages.webDev.finalCtaBody")}
               </p>
-              <Link
-                href="/contact"
+              <a
+                href="#consultation"
                 className="inline-block px-8 py-3 bg-cyan-400 text-slate-950 rounded-lg font-bold hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
               >
                 {t("servicePages.webDev.finalCtaBtn")}
-              </Link>
+              </a>
             </div>
           </div>
         </section>

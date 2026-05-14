@@ -97,7 +97,7 @@ export default async function AuditPage({
             <h2 className="text-xl font-extrabold">{t("ctaTitle")}</h2>
             <p className="mt-2 text-sm leading-6 text-slate-300">{t("ctaBody")}</p>
             <Link
-              href={{ pathname: "/", query: { inquiry: "consultation", service: "website" }, hash: "quote" } as never}
+              href={{ pathname: "/", query: { service: "audit" }, hash: "quote" } as never}
               className="mt-5 inline-flex items-center justify-center gap-2 rounded-xl bg-[#22D3EE] px-6 py-3 text-sm font-semibold text-[#0F172A] transition-colors hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
             >
               {t("ctaBtn")}
