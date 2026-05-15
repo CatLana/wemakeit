@@ -46,6 +46,24 @@ export async function generateMetadata({
 
 const articles = [
   {
+    slug: "accessibility-law-ireland-eaa-guide",
+    category: "Accessibility & Legal",
+    title: "Accessibility law in Ireland: EAA compliance guide for your website or application",
+    excerpt:
+      "Detailed information on who must comply, which services are in scope, penalties, and practical WCAG 2.1 AA steps for Irish and EU-facing website and software businesses.",
+    date: "15 May 2026",
+    readTime: "12 min read",
+  },
+  {
+    slug: "legal-requirements-diy-brand-website",
+    category: "Compliance & Legal",
+    title: "DIY brand website legal checklist: forms, GDPR, cookies, accessibility",
+    excerpt:
+      "All you need to know when creating your brand website yourself: legal requirements for forms, GDPR, cookie consent, and accessibility in Ireland and the EU.",
+    date: "15 May 2026",
+    readTime: "9 min read",
+  },
+  {
     slug: "got-an-idea-turn-it-into-a-real-product",
     category: "Product & Strategy",
     title: "Got a product idea? Here is how to turn it into something real",

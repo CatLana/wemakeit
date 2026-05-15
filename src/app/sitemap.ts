@@ -14,6 +14,8 @@ const pages: {
   { path: "/contact",                                priority: 0.6, changeFrequency: "monthly", lastModified: new Date("2026-04-16") },
   { path: "/pricing",                                priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/blog",                                   priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-05-01") },
+  { path: "/blog/legal-requirements-diy-brand-website", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
+  { path: "/blog/accessibility-law-ireland-eaa-guide", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/blog/got-an-idea-turn-it-into-a-real-product", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-01") },
   { path: "/blog/is-your-website-helping-your-business-grow", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-01") },
   { path: "/blog/better-digital-presence-that-actually-works", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-01") },
