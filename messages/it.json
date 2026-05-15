@@ -190,6 +190,17 @@
     "body2": "Con esperienza Design Thinking e MVP, validiamo l'idea prima dello sviluppo completo.",
     "cta": "Compila il form"
   },
+  "auditBanner": {
+    "eyebrow": "Controllo sito gratuito",
+    "betaLabel": "Beta",
+    "heading": "Esegui un audit gratuito del tuo sito",
+    "body": "Ottieni una panoramica immediata su performance, accessibilità e SEO per sapere cosa migliorare prima.",
+    "cta": "Avvia audit gratuito",
+    "metricPerformance": "Performance",
+    "metricAccessibility": "Accessibilità",
+    "metricSeo": "SEO",
+    "visualNote": "Anteprima punteggi"
+  },
   "contact": {
     "eyebrow": "Siamo felici di sentirti",
     "heading": "Scrivici un messaggio",
@@ -416,6 +427,7 @@
     "sections": {
       "services": "Servizi",
       "company": "Azienda",
+      "freeTools": "Servizi gratuiti",
       "legal": "Legale"
     },
     "serviceLinks": [
@@ -430,6 +442,9 @@
       "howItWorks": "Come Funziona",
       "blog": "Blog",
       "getAQuote": "Preventivo"
+    },
+    "freeToolLinks": {
+      "websiteAudit": "Audit sito gratuito"
     },
     "legalLinks": {
       "privacyPolicy": "Privacy Policy",

@@ -122,6 +122,17 @@
     "body2": "With in-house experience in Design Thinking and MVP, we help you validate your idea before committing to a full build.",
     "cta": "Fill in the form"
   },
+  "auditBanner": {
+    "eyebrow": "Free website check",
+    "betaLabel": "Beta",
+    "heading": "Run a free audit for your website",
+    "body": "Get an instant snapshot of your performance, accessibility, and SEO so you know what to improve first.",
+    "cta": "Run free audit",
+    "metricPerformance": "Performance",
+    "metricAccessibility": "Accessibility",
+    "metricSeo": "SEO",
+    "visualNote": "Sample score preview"
+  },
   "contact": {
     "eyebrow": "We are happy to hear from you",
     "heading": "Send us a message",
@@ -348,6 +359,7 @@
     "sections": {
       "services": "Services",
       "company": "Company",
+      "freeTools": "Free Services",
       "legal": "Legal"
     },
     "serviceLinks": [
@@ -362,6 +374,9 @@
       "howItWorks": "How It Works",
       "blog": "Blog",
       "getAQuote": "Get a Quote"
+    },
+    "freeToolLinks": {
+      "websiteAudit": "Free Website Audit"
     },
     "legalLinks": {
       "privacyPolicy": "Privacy Policy",
