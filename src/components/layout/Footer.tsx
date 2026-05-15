@@ -15,7 +15,7 @@ export default function Footer() {
       aria-label={t("footerLabel")}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-2">
             <Link
@@ -150,6 +150,23 @@ export default function Footer() {
                 >
                   {t("companyLinks.getAQuote")}
                 </button>
+              </li>
+            </ul>
+          </div>
+
+          {/* Free Tools column */}
+          <div>
+            <h3 className="chalk-heading font-semibold text-sm uppercase tracking-wider mb-4">
+              {t("sections.freeTools")}
+            </h3>
+            <ul className="space-y-1" role="list">
+              <li>
+                <Link
+                  href="/audit"
+                  className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                >
+                  {t("freeToolLinks.websiteAudit")}
+                </Link>
               </li>
             </ul>
           </div>
