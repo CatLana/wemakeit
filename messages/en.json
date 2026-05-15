@@ -881,6 +881,57 @@
                     "severity": "average"
                 }
             ],
+            "positiveBadge": "What is working",
+            "strengthsTitle": "Current strengths",
+            "strengthsIntro": "These points are currently supporting trust and clarity on the site.",
+            "strengths": [
+              {
+                "title": "Clear page flow",
+                "body": "The main pages guide visitors from first impression to practical next steps in a logical order."
+              },
+              {
+                "title": "Social proof included",
+                "body": "Visible testimonials help reduce early-stage trust friction for new visitors."
+              },
+              {
+                "title": "Multiple contact channels",
+                "body": "Users can reach out via form, email, or phone based on preference."
+              }
+            ],
+            "severeBadge": "High priority",
+            "severeTitle": "Critical fixes",
+            "severeIntro": "These issues should be addressed first because they affect trust, conversion, or technical control.",
+            "severe": [
+              {
+                "title": "No investment figures in plans",
+                "body": "The plan tiers do not show concrete pricing or entry thresholds, making decision-making difficult."
+              },
+              {
+                "title": "Website builder trust signal",
+                "body": "Template-style presentation and builder branding reduce perceived credibility in a high-trust sector."
+              },
+              {
+                "title": "Webador platform ceiling",
+                "body": "Limited control over technical SEO and infrastructure blocks advanced optimisation work."
+              }
+            ],
+            "recommendedBadge": "Next step",
+            "recommendedTitle": "Recommended improvements",
+            "recommendedIntro": "These actions improve usability and long-term growth after critical fixes.",
+            "recommended": [
+              {
+                "title": "Clarify CTA outcomes",
+                "body": "Use explicit action labels so users understand exactly what happens after each click."
+              },
+              {
+                "title": "Improve plan comparison UX",
+                "body": "Add visual hierarchy and side-by-side cues to make the four tiers easier to compare."
+              },
+              {
+                "title": "Strengthen accessibility baseline",
+                "body": "Add skip links and validate image alt text and focus behavior across key flows."
+              }
+            ],
             "ctaTitle": "Ready to turn this into a fix list?",
             "ctaBody": "We can help you prioritise the work, redesign for trust, and build something that gives you full control. Request a free, no-obligation quote and we'll get back to you within 48 hours.",
             "primaryCta": "Go to the quote form",

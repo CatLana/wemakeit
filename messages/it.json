@@ -949,6 +949,57 @@
                     "severity": "average"
                 }
             ],
+            "positiveBadge": "Cosa funziona",
+            "strengthsTitle": "Punti di forza attuali",
+            "strengthsIntro": "Questi aspetti stanno gia supportando fiducia e chiarezza nel sito.",
+            "strengths": [
+              {
+                "title": "Flusso pagine chiaro",
+                "body": "Le pagine principali accompagnano il visitatore dalla prima impressione ai passi successivi in modo logico."
+              },
+              {
+                "title": "Presenza di riprova sociale",
+                "body": "Le testimonianze visibili riducono la frizione iniziale legata alla fiducia."
+              },
+              {
+                "title": "Canali di contatto multipli",
+                "body": "Gli utenti possono contattare il team via form, email o telefono in base alle preferenze."
+              }
+            ],
+            "severeBadge": "Alta priorita",
+            "severeTitle": "Correzioni critiche",
+            "severeIntro": "Questi problemi vanno risolti per primi perche impattano fiducia, conversione o controllo tecnico.",
+            "severe": [
+              {
+                "title": "Nessuna cifra nei piani d'investimento",
+                "body": "I livelli non mostrano prezzi o soglie minime di ingresso, rendendo difficile la valutazione."
+              },
+              {
+                "title": "Segnali da website builder",
+                "body": "Aspetto template e branding della piattaforma riducono la credibilita percepita in un settore ad alta fiducia."
+              },
+              {
+                "title": "Limiti della piattaforma Webador",
+                "body": "Il controllo limitato su SEO tecnica e infrastruttura blocca ottimizzazioni avanzate."
+              }
+            ],
+            "recommendedBadge": "Passo successivo",
+            "recommendedTitle": "Miglioramenti consigliati",
+            "recommendedIntro": "Queste azioni migliorano usabilita e crescita dopo le correzioni critiche.",
+            "recommended": [
+              {
+                "title": "CTA piu esplicite",
+                "body": "Usa etichette orientate al risultato per chiarire cosa succede dopo il click."
+              },
+              {
+                "title": "Confronto piani piu chiaro",
+                "body": "Aggiungi gerarchia visiva e confronto tra livelli per facilitare la scelta."
+              },
+              {
+                "title": "Rafforzare base accessibilita",
+                "body": "Aggiungi skip link e verifica alt text e gestione del focus nei flussi principali."
+              }
+            ],
             "ctaTitle": "Vuoi trasformarlo in una lista operativa di fix?",
             "ctaBody": "Possiamo aiutarti a dare priorita al lavoro, ridisegnare per la fiducia e costruire qualcosa che ti dia pieno controllo. Richiedi un preventivo gratuito e senza impegno: ti risponderemo entro 48 ore.",
             "primaryCta": "Vai al form preventivo",
