@@ -8,6 +8,11 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 export default function Footer() {
   const t = useTranslations("footer");
   const serviceLabels = t.raw("serviceLinks") as string[];
+  const freeToolLinks = t.raw("freeToolLinks") as {
+    websiteAudit: string;
+    appAudit: string;
+    freeConsultation: string;
+  };
 
   return (
     <footer
@@ -165,7 +170,23 @@ export default function Footer() {
                   href="/audit"
                   className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
-                  {t("freeToolLinks.websiteAudit")}
+                  {freeToolLinks.websiteAudit}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={{ pathname: "/", query: { service: "audit" }, hash: "quote" } as never}
+                  className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                >
+                  {freeToolLinks.appAudit}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={{ pathname: "/", query: { service: "consultation" }, hash: "quote" } as never}
+                  className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                >
+                  {freeToolLinks.freeConsultation}
                 </Link>
               </li>
             </ul>

@@ -1,10 +1,13 @@
 import { redirect } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import AuditReportTemplate from "@/components/audit/AuditReportTemplate";
 import {
   transformPageSpeedToAuditReport,
-  type PageSpeedApiResponse,
 } from "@/lib/audit-transform";
+import { runHybridAudit } from "@/lib/audit-service";
 
 // Dynamic page — results are fetched live on every request.
 export const dynamic = "force-dynamic";
@@ -19,6 +22,8 @@ export default async function AuditResultsPage({
   params,
 }: AuditResultsPageProps) {
   const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "audit" });
   const { url, strategy = "mobile" } = await searchParams;
 
   if (!url) {
@@ -36,53 +41,58 @@ export default async function AuditResultsPage({
     redirect(`/${locale}/audit`);
   }
 
-  // Call the PageSpeed Insights API directly from the server
-  const apiUrl = new URL("https://www.googleapis.com/pagespeedonline/v5/runPagespeed");
-  apiUrl.searchParams.set("url", normalised);
-  apiUrl.searchParams.set("strategy", strategy === "desktop" ? "desktop" : "mobile");
-  for (const cat of ["accessibility", "best-practices", "performance", "seo"]) {
-    apiUrl.searchParams.append("category", cat);
-  }
-  if (process.env.PAGESPEED_API_KEY) {
-    apiUrl.searchParams.set("key", process.env.PAGESPEED_API_KEY);
-  }
-
   let report;
   try {
-    const res = await fetch(apiUrl.toString(), {
-      signal: AbortSignal.timeout(45_000),
-      next: { revalidate: 0 },
-    });
+    const strategyMode = strategy === "desktop" ? "desktop" : "mobile";
+    const result = await runHybridAudit(normalised, strategyMode);
+    report = transformPageSpeedToAuditReport(result.data, result.normalisedUrl);
 
-    if (!res.ok) {
-      throw new Error(`PageSpeed API error ${res.status}`);
+    if (result.source === "cache") {
+      report.visibilityValue = t("results.fallbackUsed");
     }
 
-    const data = (await res.json()) as PageSpeedApiResponse;
-    report = transformPageSpeedToAuditReport(data, normalised);
-  } catch {
+    const expiresAt = Date.now() + 48 * 60 * 60 * 1000;
+    const downloadHref = `/api/audit/pdf?url=${encodeURIComponent(result.normalisedUrl)}&strategy=${encodeURIComponent(
+      strategyMode,
+    )}&expires=${expiresAt}`;
+    report.cta.downloadHref = downloadHref;
+  } catch (err) {
+    const reason = err instanceof Error ? err.message : "Unknown upstream failure";
+
     // Render a friendly error state
     return (
-      <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#F8FAFC]">
-        <section className="bg-[#0F172A] pt-16 pb-16">
+      <>
+        <Header />
+        <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#F8FAFC]">
+        <section className="bg-[#0F172A] pt-24 pb-16">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl font-extrabold text-white">Audit could not be completed</h1>
+            <h1 className="text-3xl font-extrabold text-white">{t("results.errorTitle")}</h1>
             <p className="mt-4 text-slate-300">
-              The site may be unreachable, require authentication, or the audit service is
-              temporarily unavailable.
+              {t("results.errorBody")}
+            </p>
+            <p className="mt-5 rounded-xl border border-amber-300/25 bg-amber-300/10 px-4 py-3 text-left text-xs leading-6 text-amber-100">
+              {t("results.errorReasonPrefix")}: {reason}
             </p>
             <a
               href={`/${locale}/audit`}
               className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#22D3EE] px-6 py-3 text-sm font-semibold text-[#0F172A] hover:bg-cyan-300 transition-colors"
             >
               <ArrowLeft size={16} aria-hidden="true" />
-              Try another URL
+              {t("results.tryAgainBtn")}
             </a>
           </div>
         </section>
       </main>
+      <Footer />
+      </>
     );
   }
 
-  return <AuditReportTemplate report={report} />;
+  return (
+    <>
+      <Header />
+      <AuditReportTemplate report={report} locale={locale} />
+      <Footer />
+    </>
+  );
 }

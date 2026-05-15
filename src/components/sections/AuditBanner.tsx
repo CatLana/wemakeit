@@ -1,15 +1,15 @@
-import { ArrowRight, Zap, BarChart2, Eye, Search } from "lucide-react";
+import { ArrowRight, Zap } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-
-const metrics = [
-  { icon: BarChart2, labelKey: "metricPerformance", score: 72, color: "#F59E0B" },
-  { icon: Eye,       labelKey: "metricAccessibility", score: 58, color: "#EF4444" },
-  { icon: Search,    labelKey: "metricSeo",           score: 81, color: "#22D3EE" },
-];
+import AuditScoreCards, { type AuditScoreMetric } from "@/components/audit/AuditScoreCards";
 
 export default function AuditBanner() {
   const t = useTranslations("auditBanner");
+  const metrics: AuditScoreMetric[] = [
+    { id: "performance", label: t("metricPerformance"), score: 72 },
+    { id: "accessibility", label: t("metricAccessibility"), score: 58 },
+    { id: "seo", label: t("metricSeo"), score: 81 },
+  ];
 
   return (
     <section
@@ -67,33 +67,9 @@ export default function AuditBanner() {
             </Link>
           </div>
 
-          {/* Right — decorative score cards */}
+          {/* Right - decorative score cards */}
           <div aria-hidden="true" className="flex shrink-0 flex-col gap-4 w-full max-w-xs">
-            {metrics.map(({ icon: Icon, labelKey, score, color }) => (
-              <div
-                key={labelKey}
-                className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-4"
-              >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/5">
-                  <Icon size={18} style={{ color }} />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-xs font-semibold text-slate-300 mb-1.5">
-                    {t(labelKey as Parameters<typeof t>[0])}
-                  </p>
-                  <div className="h-1.5 w-full rounded-full bg-white/10">
-                    <div
-                      className="h-1.5 rounded-full"
-                      style={{ width: `${score}%`, backgroundColor: color }}
-                    />
-                  </div>
-                </div>
-                <span className="text-sm font-bold tabular-nums" style={{ color }}>
-                  {score}
-                </span>
-              </div>
-            ))}
-            <p className="text-center text-xs text-slate-500">{t("visualNote")}</p>
+            <AuditScoreCards metrics={metrics} note={t("visualNote")} ariaHidden />
           </div>
 
         </div>

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowLeft, ArrowRight, Zap } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
@@ -17,7 +19,8 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("subtitle"),
-    robots: { index: false, follow: false },
+    keywords: t.raw("seoKeywords") as string[],
+    robots: { index: true, follow: true },
   };
 }
 
@@ -31,14 +34,30 @@ export default async function AuditPage({
   const t = await getTranslations({ locale, namespace: "audit" });
 
   return (
-    <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#F8FAFC]">
+    <>
+      <Header />
+      <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#F8FAFC]">
       {/* Hero */}
-      <section className="bg-[#0F172A] pt-20 pb-16">
+      <section className="bg-[#0F172A] pt-24 pb-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#22D3EE]">
-            <Zap size={12} aria-hidden="true" />
-            {t("eyebrow")}
-          </span>
+          <div className="mb-5 text-left">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-slate-200 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+            >
+              <ArrowLeft size={14} aria-hidden="true" />
+              {t("backToHome")}
+            </Link>
+          </div>
+          <div className="inline-flex items-center gap-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#22D3EE]">
+              <Zap size={12} aria-hidden="true" />
+              {t("eyebrow")}
+            </span>
+            <span className="inline-flex items-center rounded-full border border-[#22D3EE]/40 bg-[#22D3EE]/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-[#22D3EE]">
+              {t("betaLabel")}
+            </span>
+          </div>
           <h1 className="mt-5 text-4xl font-extrabold leading-tight text-white sm:text-5xl">
             {t("title")}
           </h1>
@@ -106,6 +125,8 @@ export default async function AuditPage({
           </div>
         </div>
       </section>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

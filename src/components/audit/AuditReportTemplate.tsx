@@ -1,5 +1,6 @@
 import { ArrowRight, Download, Eye, Gauge, Palette, Search } from "lucide-react";
 import type { AuditReportData, AuditSectionData, AuditSectionId } from "@/lib/audit-types";
+import AuditScoreCards, { type AuditScoreMetric } from "@/components/audit/AuditScoreCards";
 
 // ---------------------------------------------------------------------------
 // Section icons
@@ -117,15 +118,43 @@ function AuditSectionCard({ section }: { section: AuditSectionData }) {
 // ---------------------------------------------------------------------------
 // Main template
 // ---------------------------------------------------------------------------
-export default function AuditReportTemplate({ report }: { report: AuditReportData }) {
+export default function AuditReportTemplate({
+  report,
+  locale,
+}: {
+  report: AuditReportData;
+  locale: string;
+}) {
   const hasDownload = report.cta.downloadHref !== "#";
+  const metrics: AuditScoreMetric[] = [
+    {
+      id: "performance",
+      label: "Performance",
+      score: report.sections.find((section) => section.id === "ux")?.score ?? 0,
+    },
+    {
+      id: "accessibility",
+      label: "Accessibility",
+      score: report.sections.find((section) => section.id === "accessibility")?.score ?? 0,
+    },
+    {
+      id: "seo",
+      label: "SEO",
+      score: report.sections.find((section) => section.id === "seo")?.score ?? 0,
+    },
+    {
+      id: "bestPractices",
+      label: "Best Practices",
+      score: report.sections.find((section) => section.id === "ui")?.score ?? 0,
+    },
+  ];
 
   return (
     <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#F8FAFC]">
       {/* ------------------------------------------------------------------ */}
       {/* Header                                                              */}
       {/* ------------------------------------------------------------------ */}
-      <section className="bg-[#0F172A] pt-16 pb-16 print:pt-8 print:pb-8">
+      <section className="bg-[#0F172A] pt-24 pb-16 print:pt-8 print:pb-8">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#22D3EE]">
             {report.eyebrow}
@@ -137,34 +166,38 @@ export default function AuditReportTemplate({ report }: { report: AuditReportDat
             {report.subtitle}
           </p>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#22D3EE]">
-                {report.reviewedLabel}
-              </p>
-              <p className="mt-2 text-sm text-white">{report.reviewedValue}</p>
+          <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_320px]">
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#22D3EE]">
+                  {report.reviewedLabel}
+                </p>
+                <p className="mt-2 text-sm text-white">{report.reviewedValue}</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#22D3EE]">
+                  {report.visibilityLabel}
+                </p>
+                <p className="mt-2 text-sm text-white">{report.visibilityValue}</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#22D3EE]">
+                  Website
+                </p>
+                <p className="mt-2 text-sm text-white break-all">
+                  <a
+                    href={report.siteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-white/40 hover:decoration-white transition-colors"
+                  >
+                    {report.siteUrl}
+                  </a>
+                </p>
+              </div>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#22D3EE]">
-                {report.visibilityLabel}
-              </p>
-              <p className="mt-2 text-sm text-white">{report.visibilityValue}</p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#22D3EE]">
-                Website
-              </p>
-              <p className="mt-2 text-sm text-white break-all">
-                <a
-                  href={report.siteUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline decoration-white/40 hover:decoration-white transition-colors"
-                >
-                  {report.siteUrl}
-                </a>
-              </p>
-            </div>
+
+            <AuditScoreCards metrics={metrics} note="These are your current Lighthouse scores" />
           </div>
 
           {report.reviewNote && (
@@ -203,7 +236,7 @@ export default function AuditReportTemplate({ report }: { report: AuditReportDat
             {/* Screen: show buttons */}
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center print:hidden">
               <a
-                href="https://www.wemakeit.ie/en#quote"
+                href={`https://www.wemakeit.ie/${locale}?service=audit#quote`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#22D3EE] px-8 py-3 text-sm font-semibold text-[#0F172A] transition-colors hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
@@ -228,10 +261,10 @@ export default function AuditReportTemplate({ report }: { report: AuditReportDat
               <p className="text-sm text-slate-300">
                 Request a free quote at{" "}
                 <a
-                  href="https://www.wemakeit.ie/en#quote"
+                  href={`https://www.wemakeit.ie/${locale}#quote`}
                   className="text-[#22D3EE] underline"
                 >
-                  wemakeit.ie/en#quote
+                  {`wemakeit.ie/${locale}#quote`}
                 </a>
               </p>
             </div>

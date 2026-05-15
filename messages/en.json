@@ -376,7 +376,9 @@
       "getAQuote": "Get a Quote"
     },
     "freeToolLinks": {
-      "websiteAudit": "Free Website Audit"
+      "websiteAudit": "Free Website Audit",
+      "appAudit": "Free App Audit",
+      "freeConsultation": "Free Consultation"
     },
     "legalLinks": {
       "privacyPolicy": "Privacy Policy",
@@ -940,8 +942,22 @@
     },
     "audit": {
         "eyebrow": "Free tool",
+      "betaLabel": "Beta",
         "title": "Run a website audit",
         "subtitle": "Enter any live website URL to get an automated report covering UX, SEO, visual quality, and accessibility — powered by Google Lighthouse.",
+      "backToHome": "Back to home",
+      "seoKeywords": [
+        "website audit",
+        "free website audit",
+        "SEO audit",
+        "accessibility audit",
+        "performance audit",
+        "Lighthouse audit",
+        "website speed test",
+        "technical SEO audit",
+        "UX audit",
+        "web accessibility check"
+      ],
         "urlLabel": "Website URL",
         "urlPlaceholder": "https://yourwebsite.com",
         "submitBtn": "Run audit",
@@ -955,6 +971,8 @@
         "results": {
             "errorTitle": "Audit could not be completed",
             "errorBody": "The site may be unreachable, require authentication, or the audit service is temporarily unavailable.",
+          "errorReasonPrefix": "Technical reason",
+          "fallbackUsed": "Cached fallback result (generated in the last 48 hours)",
             "tryAgainBtn": "Try another URL",
             "runningMsg": "Running Lighthouse audit — this takes about 15 seconds…"
         }

@@ -444,7 +444,9 @@
       "getAQuote": "Preventivo"
     },
     "freeToolLinks": {
-      "websiteAudit": "Audit sito gratuito"
+      "websiteAudit": "Audit sito gratuito",
+      "appAudit": "Audit app gratuito",
+      "freeConsultation": "Consulenza gratuita"
     },
     "legalLinks": {
       "privacyPolicy": "Privacy Policy",
@@ -1008,8 +1010,22 @@
     },
     "audit": {
         "eyebrow": "Strumento gratuito",
+      "betaLabel": "Beta",
         "title": "Esegui un audit del sito",
         "subtitle": "Inserisci l'URL di qualsiasi sito live per ottenere un report automatico su UX, SEO, qualita visiva e accessibilita — basato su Google Lighthouse.",
+      "backToHome": "Torna alla home",
+      "seoKeywords": [
+        "audit sito web",
+        "audit sito web gratuito",
+        "audit SEO",
+        "audit accessibilita",
+        "audit performance sito",
+        "audit Lighthouse",
+        "test velocita sito",
+        "audit SEO tecnico",
+        "audit UX",
+        "controllo accessibilita web"
+      ],
         "urlLabel": "URL del sito",
         "urlPlaceholder": "https://iltuosito.com",
         "submitBtn": "Avvia audit",
@@ -1023,6 +1039,8 @@
         "results": {
             "errorTitle": "Audit non completato",
             "errorBody": "Il sito potrebbe non essere raggiungibile, richiedere autenticazione, o il servizio di audit e temporaneamente non disponibile.",
+          "errorReasonPrefix": "Motivo tecnico",
+          "fallbackUsed": "Risultato da cache (generato nelle ultime 48 ore)",
             "tryAgainBtn": "Prova un altro URL",
             "runningMsg": "Esecuzione audit Lighthouse — richiede circa 15 secondi..."
         }

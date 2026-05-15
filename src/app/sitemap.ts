@@ -10,6 +10,7 @@ const pages: {
   lastModified: Date;
 }[] = [
   { path: "",                                        priority: 1.0, changeFrequency: "weekly",  lastModified: new Date("2026-04-16") },
+  { path: "/audit",                                  priority: 0.9, changeFrequency: "weekly",  lastModified: new Date("2026-05-15") },
   { path: "/contact",                                priority: 0.6, changeFrequency: "monthly", lastModified: new Date("2026-04-16") },
   { path: "/pricing",                                priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/blog",                                   priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-05-01") },
