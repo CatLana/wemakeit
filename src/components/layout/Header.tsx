@@ -108,10 +108,10 @@ export default function Header() {
               className="flex flex-col items-start focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
               <Image
-                  src="/images/wemakeit_logo_transparent.svg"
+                  src="/images/logo_wemakeit.svg"
                   alt=""
-                  width={420}
-                  height={100}
+                  width={350}
+                  height={110}
                   className="h-14 w-auto block"
                   priority
                 />
