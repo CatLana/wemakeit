@@ -4,14 +4,7 @@ import { z } from "zod";
 const auditRequestSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
-  website: z
-    .string()
-    .min(3, "Website URL is required")
-    .transform((val) => {
-      const trimmed = val.trim();
-      return /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
-    })
-    .pipe(z.string().url("Please enter a valid website URL")),
+  website: z.string().optional(),
   business: z.string().min(10, "Business description must be at least 10 characters"),
   focus: z.string().optional(),
   locale: z.enum(["en", "it", "ru"]).default("en"),
@@ -34,7 +27,10 @@ export async function POST(request: NextRequest) {
 
     const emailContent = formatAuditRequestEmail(validatedData);
 
-    const response = await fetch("https://api.resend.com/emails", {
+    // Confirmation to the user — non-blocking (onboarding@resend.dev can only
+    // send to the Resend account email on the free plan, so don't fail the
+    // submission if this bounces)
+    fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -46,17 +42,9 @@ export async function POST(request: NextRequest) {
         subject: "Your Free Audit Request - We Make IT",
         html: emailContent.userEmail,
       }),
-    });
+    }).catch((err) => console.error("User confirmation email error:", err));
 
-    if (!response.ok) {
-      console.error("Resend API error:", await response.text());
-      return NextResponse.json(
-        { error: "Failed to send confirmation email" },
-        { status: 500 }
-      );
-    }
-
-    // Send notification to We Make IT
+    // Notification to We Make IT
     await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
