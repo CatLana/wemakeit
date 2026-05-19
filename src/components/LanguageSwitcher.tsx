@@ -9,7 +9,11 @@ import { Check, ChevronDown } from "lucide-react";
 
 const labels: Record<string, string> = { en: "EN", it: "IT", ru: "RU" };
 
+// Language switcher is temporarily hidden — only EN is active
+const LANGUAGE_SWITCHER_ENABLED = false;
+
 export default function LanguageSwitcher() {
+  if (!LANGUAGE_SWITCHER_ENABLED) return null;
   const t = useTranslations("languageSwitcher");
   const locale = useLocale();
   const pathname = usePathname();

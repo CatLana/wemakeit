@@ -9,7 +9,7 @@ const schema = z.object({
   message: z.string().min(2),
 });
 
-const RECIPIENT = ["ssavchenko8@gmail.com", "info@wemakeit.ie"];
+const RECIPIENT = ["ssavchenko8@gmail.com"];
 
 function buildHtml(data: z.infer<typeof schema>): string {
   return `<!DOCTYPE html>

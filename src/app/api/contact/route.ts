@@ -16,7 +16,7 @@ const schema = z.object({
   competitorQuote: z.string().optional(),
 });
 
-const RECIPIENT = ["ssavchenko8@gmail.com", "info@wemakeit.ie"];
+const RECIPIENT = ["ssavchenko8@gmail.com"];
 
 const enquiryLabels: Record<string, string> = {
   "business-idea-consultation": "Business idea consultation",

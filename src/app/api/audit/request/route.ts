@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify({
         from: "We Make IT <onboarding@resend.dev>",
-        to: "info@wemakeit.ie",
+        to: "ssavchenko8@gmail.com",
         subject: `New Free Audit Request from ${validatedData.name}`,
         html: emailContent.adminEmail,
       }),

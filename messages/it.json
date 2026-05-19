@@ -8,92 +8,92 @@
   "header": {
     "logoAriaLabel": "We Make IT - Home",
     "nav": {
-      "whatWeDo": "Services",
-      "aboutUs": "About",
-      "howItWorks": "How It Works",
-      "blog": "Resources",
-      "talkToUs": "Contact"
+      "whatWeDo": "Servizi",
+      "aboutUs": "Chi siamo",
+      "howItWorks": "Come funziona",
+      "blog": "Risorse",
+      "talkToUs": "Contatti"
     },
     "cta": "Audit gratuito",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "mobileNavLabel": "Mobile navigation",
-    "mainNavLabel": "Main navigation"
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "mobileNavLabel": "Navigazione mobile",
+    "mainNavLabel": "Navigazione principale"
   },
   "languageSwitcher": {
-    "selectorAriaLabel": "Language selector",
-    "menuAriaLabel": "Select language",
-    "currentLanguage": "Current language: {language}",
-    "switchTo": "Switch to {language}"
+    "selectorAriaLabel": "Selettore lingua",
+    "menuAriaLabel": "Seleziona lingua",
+    "currentLanguage": "Lingua corrente: {language}",
+    "switchTo": "Passa a {language}"
   },
   "hero": {
-    "badge": "Based in Ireland",
+    "badge": "Con sede in Irlanda",
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
     "subtitleBody": "Aiutiamo le aziende irlandesi a crescere costruendo soluzioni digitali su misura. Che tu abbia bisogno di un sito web che vende o di una soluzione IT personalizzata per risparmiare tempo e denaro — sappiamo come aiutarti.",
     "subtitleCta": "Prenota oggi la tua consulenza gratuita di 30 minuti.",
-    "springSale": "Summer Sale: 30% off for new clients. Limited spots available.",
+    "springSale": "Saldi estivi: 30% di sconto per nuovi clienti. Posti limitati.",
     "cta1": "Contattaci",
     "cta2": "Come funziona",
-    "auditCta": "Free website audit. See how your site scores",
-    "ariaLabel": "Hero: We Make IT home"
+    "auditCta": "Audit gratuito del sito. Scopri il punteggio del tuo sito",
+    "ariaLabel": "Home di We Make IT"
   },
   "stats": {
-    "ariaLabel": "How we work",
-    "heading": "How we work differently",
+    "ariaLabel": "Come lavoriamo",
+    "heading": "Come lavoriamo in modo diverso",
     "items": [
-      { "icon": "ShieldCheck", "label": "Accessibility & UX first", "description": "Every product is built inclusive and usable from day one.", "ariaLabel": "We build every product with accessibility and UX as a foundation" },
-      { "icon": "Lightbulb", "label": "Design Thinking applied", "description": "We validate before we build. You invest in the right thing.", "ariaLabel": "We apply Design Thinking to validate ideas before building" },
-      { "icon": "TrendingUp", "label": "Built to convert", "description": "Sales and marketing strategy is baked into every decision.", "ariaLabel": "We make decisions with your business goals and conversions in mind" },
-      { "icon": "MessageCircle", "label": "We speak plain English", "description": "We are easy to speak with. If you are not a technical person, we explain everything in simple terms.", "ariaLabel": "We communicate in plain English and always listen to our clients to clearly understand their needs" }
+      { "icon": "ShieldCheck", "label": "Accessibilità e UX prima di tutto", "description": "Ogni prodotto è costruito inclusivo e utilizzabile fin dal primo giorno.", "ariaLabel": "Costruiamo ogni prodotto con accessibilità e UX come fondamento" },
+      { "icon": "Lightbulb", "label": "Design Thinking applicato", "description": "Validiamo prima di costruire. Tu investi nella cosa giusta.", "ariaLabel": "Applichiamo il Design Thinking per validare le idee prima di costruire" },
+      { "icon": "TrendingUp", "label": "Costruito per convertire", "description": "La strategia di vendita e marketing è integrata in ogni decisione.", "ariaLabel": "Prendiamo decisioni tenendo a mente i tuoi obiettivi di business e le conversioni" },
+      { "icon": "MessageCircle", "label": "Parliamo in modo semplice", "description": "Siamo facili da capire. Se non sei un tecnico, spieghiamo tutto in termini semplici.", "ariaLabel": "Comunichiamo in modo semplice e ascoltiamo sempre i nostri clienti per capire chiaramente le loro esigenze" }
     ]
   },
   "services": {
-    "eyebrow": "Services",
+    "eyebrow": "Servizi",
     "heading": "Che la tua attività sia grande o piccola, ti aiutiamo a crescere.",
     "headingPlain": "Che la tua attività sia grande o piccola,",
     "headingAccent": "ti aiutiamo a crescere.",
     "subheading": "Scegli la direzione più adatta ai tuoi obiettivi.",
-    "servicePreviewLabel": "Service preview for {category}",
+    "servicePreviewLabel": "Anteprima servizio per {category}",
     "categories": [
       {
-        "title": "For Small Entrepreneurs",
-        "tagline": "We help entrepreneurs create digital products that actually sell. If you want to earn more - build your brand online with us.",
-        "description": "Websites and digital presence services for entrepreneurs looking to attract customers and strengthen their online brand.",
+        "title": "Per i piccoli imprenditori",
+        "tagline": "Aiutiamo gli imprenditori a creare prodotti digitali che vendono davvero. Se vuoi guadagnare di più — costruisci il tuo brand online con noi.",
+        "description": "Siti web e servizi di presenza digitale per imprenditori che vogliono attrarre clienti e rafforzare il proprio brand online.",
         "href": "/solutions/for-entrepreneurs",
         "previewItems": [
-          "Website development and redesign",
-          "SEO and digital marketing support",
-          "Graphic design and campaign assets",
-          "Website management and updates"
+          "Sviluppo e redesign di siti web",
+          "Supporto SEO e marketing digitale",
+          "Graphic design e materiali per campagne",
+          "Gestione e aggiornamento del sito"
         ],
-        "cta": "Explore for small entrepreneurs"
+        "cta": "Esplora per piccoli imprenditori"
       },
       {
-        "title": "For SMEs",
-        "tagline": "We help business of all sizes to grow revenue and optimise resources through custom software solutions made to tackle their unique problems. Automation can save you a lot of time and money.",
-        "description": "Custom software, IT outsourcing, and maintenance services for small and medium businesses seeking growth and efficiency.",
+        "title": "Per le PMI",
+        "tagline": "Aiutiamo aziende di ogni dimensione a far crescere i ricavi e ottimizzare le risorse con soluzioni software su misura. L'automazione può farti risparmiare molto tempo e denaro.",
+        "description": "Software personalizzato, outsourcing IT e servizi di manutenzione per piccole e medie imprese che puntano alla crescita e all'efficienza.",
         "href": "/solutions/for-smes",
         "previewItems": [
-          "Custom software development",
-          "Business process automation",
-          "IT project outsourcing and support",
-          "Maintenance and system optimization"
+          "Sviluppo software personalizzato",
+          "Automazione dei processi aziendali",
+          "Outsourcing e supporto progetti IT",
+          "Manutenzione e ottimizzazione dei sistemi"
         ],
-        "cta": "Explore for SMEs"
+        "cta": "Esplora per PMI"
       },
       {
-        "title": "For Startups",
-        "tagline": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Fixed pricing or flexible equity partnerships available.",
-        "description": "MVP development, prototypes, design thinking, UX strategy, and IT consultations for founders validating and building early-stage companies.",
+        "title": "Per le startup",
+        "tagline": "Aiutiamo i fondatori di startup a validare idee, costruire MVP e lanciare prodotti con basi solide. Prezzi fissi o partnership azionarie flessibili disponibili.",
+        "description": "Sviluppo MVP, prototipi, design thinking, strategia UX e consulenze IT per fondatori che validano idee e costruiscono aziende nelle fasi iniziali.",
         "href": "/solutions/for-startups",
         "previewItems": [
-          "MVP development and rapid validation",
-          "Product prototyping and iteration",
-          "Design Thinking workshops and strategy",
-          "UX research and architecture consulting"
+          "Sviluppo MVP e validazione rapida",
+          "Prototipazione e iterazione del prodotto",
+          "Workshop e strategia di Design Thinking",
+          "Ricerca UX e consulenza sull'architettura"
         ],
-        "cta": "Explore for startups"
+        "cta": "Esplora per startup"
       }
     ]
   },
@@ -153,15 +153,15 @@
     "cta": "Contattaci"
   },
   "auditBanner": {
-    "eyebrow": "Free website check",
+    "eyebrow": "Verifica gratuita del sito",
     "betaLabel": "Beta",
-    "heading": "Run a free audit for your website",
-    "body": "Get an instant snapshot of your performance, accessibility, and SEO so you know what to improve first.",
-    "cta": "Run free audit",
-    "metricPerformance": "Performance",
-    "metricAccessibility": "Accessibility",
+    "heading": "Esegui un audit gratuito del tuo sito web",
+    "body": "Ottieni uno snapshot immediato di prestazioni, accessibilità e SEO così sai cosa migliorare per primo.",
+    "cta": "Esegui audit gratuito",
+    "metricPerformance": "Prestazioni",
+    "metricAccessibility": "Accessibilità",
     "metricSeo": "SEO",
-    "visualNote": "Sample score preview"
+    "visualNote": "Anteprima del punteggio"
   },
   "contact": {
     "eyebrow": "We are happy to hear from you",
@@ -1286,8 +1286,8 @@
     "teamHeading": "Meet Our Team",
     "teamSubheading": "We combine design, development, strategy, and business expertise. Most importantly, we genuinely care about your success.",
     "team": [
-      { "name": "Andrea Contarino", "title": "Chief Architect & Backend Engineer", "bio": "15+ years building scalable systems and technical foundations for products at scale. Architect of our approach to custom software and project delivery." },
-      { "name": "Svetlana Savchenko", "title": "Founder & Senior Frontend Engineer", "bio": "Frontend specialist and UX advocate. Over 8 years building interfaces that are intuitive, accessible, and genuinely usable. Founder of We Make IT." },
+      { "name": "Andrea Contarino", "title": "Chief Architect & Senior Backend Engineer", "bio": "15+ years building scalable systems and technical foundations for products at scale. Architect of our approach to custom software and project delivery." },
+      { "name": "Svetlana Savchenko", "title": "UX Engineer & Frontend Developer", "bio": "Frontend specialist and UX advocate. Over 8 years building interfaces that are intuitive, accessible, and genuinely usable. Founder of We Make IT." },
       { "name": "Seamus O'Brien", "title": "Web and Marketing", "bio": "Brings brand strategy, content, and go-to-market expertise. Helps translate our work into clear messaging that resonates with clients and users." },
       { "name": "Sheila McLoughlin", "title": "Junior Software Engineer", "bio": "Growing her expertise in full-stack development. Brings fresh perspective to problem-solving and brings quality and care to every feature delivered." }
     ],

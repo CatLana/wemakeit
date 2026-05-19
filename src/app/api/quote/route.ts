@@ -11,7 +11,7 @@ const schema = z.object({
   marketingConsent: z.boolean().optional(),
 });
 
-const RECIPIENT = ["ssavchenko8@gmail.com", "info@wemakeit.ie"];
+const RECIPIENT = ["ssavchenko8@gmail.com"];
 
 const SERVICE_LABELS: Record<string, string> = {
   consultation: "Free Consultation",
@@ -95,6 +95,10 @@ export async function POST(req: NextRequest) {
 
   const data = parsed.data;
   const serviceLabel = SERVICE_LABELS[data.service] ?? data.service;
+
+  if (!process.env.RESEND_API_KEY) {
+    return NextResponse.json({ error: "Email service not configured." }, { status: 503 });
+  }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
   const { error } = await resend.emails.send({
