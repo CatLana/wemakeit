@@ -3,6 +3,12 @@
 export const runtime = "edge";
 
 export async function GET() {
+  // Load Inter Variable font bundled alongside this route file.
+  // Satori (used by ImageResponse) requires TTF/OTF — woff2 is not supported.
+  const fontData = await fetch(
+    new URL("./Inter-Variable.ttf", import.meta.url)
+  ).then((r) => r.arrayBuffer());
+
   return new ImageResponse(
     (
       <div
@@ -11,11 +17,10 @@ export async function GET() {
           height: "630px",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
           background: "#0F172A",
-          padding: "68px 80px",
-          fontFamily: "sans-serif",
+          fontFamily: "'Inter', sans-serif",
           position: "relative",
+          overflow: "hidden",
         }}
       >
         {/* Cyan top bar */}
@@ -25,156 +30,173 @@ export async function GET() {
             top: 0,
             left: 0,
             width: "100%",
-            height: "6px",
+            height: "8px",
             background: "#22D3EE",
             display: "flex",
           }}
         />
 
-        {/* Domain pill â€” top right */}
+        {/* Decorative circles — bottom right, subtle */}
         <div
           style={{
             position: "absolute",
-            top: "32px",
-            right: "80px",
+            bottom: "-80px",
+            right: "-80px",
+            width: "400px",
+            height: "400px",
+            borderRadius: "50%",
+            border: "2px solid #22D3EE",
+            opacity: 0.08,
+            display: "flex",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            bottom: "-20px",
+            right: "-20px",
+            width: "260px",
+            height: "260px",
+            borderRadius: "50%",
+            border: "2px solid #22D3EE",
+            opacity: 0.12,
+            display: "flex",
+          }}
+        />
+
+        {/* Domain pill — top right */}
+        <div
+          style={{
+            position: "absolute",
+            top: "36px",
+            right: "72px",
             display: "flex",
             alignItems: "center",
-            background: "rgba(255,255,255,0.05)",
+            background: "rgba(255,255,255,0.06)",
             border: "1px solid rgba(255,255,255,0.12)",
             borderRadius: "999px",
-            padding: "8px 20px",
+            padding: "8px 22px",
             color: "#64748B",
-            fontSize: "16px",
+            fontSize: "17px",
+            letterSpacing: "0.04em",
           }}
         >
           wemakeit.ie
         </div>
 
-        {/* Eyebrow */}
+        {/* Main content — vertically centred */}
         <div
           style={{
-            fontSize: "14px",
-            letterSpacing: "0.18em",
-            textTransform: "uppercase",
-            color: "#22D3EE",
-            marginBottom: "18px",
-            display: "flex",
-          }}
-        >
-          Web &amp; App Development Â· Ireland
-        </div>
-
-        {/* Headline: "We Make IT" */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "baseline",
-            marginBottom: "26px",
-          }}
-        >
-          <span
-            style={{
-              fontSize: "84px",
-              fontWeight: 800,
-              color: "#FFFFFF",
-              lineHeight: 1.05,
-              display: "flex",
-            }}
-          >
-            We Make&nbsp;
-          </span>
-          <span
-            style={{
-              fontSize: "84px",
-              fontWeight: 800,
-              color: "#22D3EE",
-              lineHeight: 1.05,
-              display: "flex",
-            }}
-          >
-            IT
-          </span>
-        </div>
-
-        {/* Primary value prop */}
-        <div
-          style={{
-            fontSize: "22px",
-            color: "#E2E8F0",
-            maxWidth: "740px",
-            lineHeight: 1.5,
-            marginBottom: "18px",
-            display: "flex",
-            flexWrap: "wrap",
-          }}
-        >
-          We help entrepreneurs to grow revenue through building digital solutions.
-        </div>
-
-        {/* Hook + summary */}
-        <div
-          style={{
-            fontSize: "18px",
-            color: "#64748B",
-            maxWidth: "700px",
-            lineHeight: 1.55,
-            marginBottom: "36px",
-            display: "flex",
-            flexWrap: "wrap",
-          }}
-        >
-          Need to improve your digital presence or a custom software? We build websites & apps that help your business grow.
-        </div>
-
-        {/* Badge */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-            background: "rgba(34,211,238,0.08)",
-            border: "1px solid rgba(34,211,238,0.30)",
-            borderRadius: "999px",
-            padding: "10px 24px",
-            color: "#22D3EE",
-            fontSize: "16px",
-            width: "fit-content",
-          }}
-        >
-          ðŸ‡®ðŸ‡ª Based in Ireland Â· Helping local businesses succeed.
-        </div>
-
-        {/* Decorative circles â€” right side */}
-        <div
-          style={{
-            position: "absolute",
-            right: "72px",
-            top: "50%",
-            transform: "translateY(-50%)",
             display: "flex",
             flexDirection: "column",
-            gap: "18px",
-            opacity: 0.1,
+            justifyContent: "center",
+            flex: 1,
+            paddingLeft: "80px",
+            paddingRight: "80px",
+            paddingTop: "28px",
           }}
         >
-          {[180, 130, 80].map((size, i) => (
-            <div
-              key={i}
+          {/* Eyebrow */}
+          <div
+            style={{
+              fontSize: "13px",
+              fontWeight: 700,
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+              color: "#22D3EE",
+              marginBottom: "24px",
+              display: "flex",
+            }}
+          >
+            Web &amp; App Development &nbsp;&middot;&nbsp; Ireland
+          </div>
+
+          {/* Headline */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "baseline",
+              marginBottom: "28px",
+            }}
+          >
+            <span
               style={{
-                width: `${size}px`,
-                height: `${size}px`,
-                borderRadius: "50%",
-                border: "2px solid #22D3EE",
+                fontSize: "96px",
+                fontWeight: 800,
+                color: "#FFFFFF",
+                lineHeight: 1,
                 display: "flex",
+                letterSpacing: "-0.02em",
               }}
-            />
-          ))}
+            >
+              We Make&nbsp;
+            </span>
+            <span
+              style={{
+                fontSize: "96px",
+                fontWeight: 800,
+                color: "#22D3EE",
+                lineHeight: 1,
+                display: "flex",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              IT
+            </span>
+          </div>
+
+          {/* Value prop — single line */}
+          <div
+            style={{
+              fontSize: "28px",
+              fontWeight: 500,
+              color: "#94A3B8",
+              lineHeight: 1.4,
+              marginBottom: "40px",
+              display: "flex",
+            }}
+          >
+            Websites &amp; Apps for Irish Businesses
+          </div>
+
+          {/* Cyan accent divider */}
+          <div
+            style={{
+              width: "64px",
+              height: "3px",
+              background: "#22D3EE",
+              borderRadius: "99px",
+              marginBottom: "28px",
+              display: "flex",
+            }}
+          />
+
+          {/* Bottom tag */}
+          <div
+            style={{
+              fontSize: "16px",
+              fontWeight: 500,
+              color: "#475569",
+              letterSpacing: "0.04em",
+              display: "flex",
+            }}
+          >
+            Based in Ireland&nbsp;&nbsp;|&nbsp;&nbsp;15+ Years Experience&nbsp;&nbsp;|&nbsp;&nbsp;Free Quote
+          </div>
         </div>
       </div>
     ),
     {
       width: 1200,
       height: 630,
+      fonts: [
+        {
+          name: "Inter",
+          data: fontData,
+          style: "normal",
+          weight: 700,
+        },
+      ],
     }
   );
 }

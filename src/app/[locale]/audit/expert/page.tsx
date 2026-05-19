@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import AuditRequestForm from "@/components/AuditRequestForm";
+import QuoteForm from "@/components/QuoteForm";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
@@ -115,7 +116,9 @@ export default async function AuditExpertPage({
                 {t("requestFormSubtitle")}
               </p>
             </div>
-            <AuditRequestForm />
+            <Suspense fallback={<div className="rounded-2xl bg-white border border-slate-200 h-[480px] animate-pulse" />}>
+              <QuoteForm defaultService="audit" />
+            </Suspense>
           </div>
         </section>
       </main>

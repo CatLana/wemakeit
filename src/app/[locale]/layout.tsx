@@ -153,7 +153,25 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
-  const messages = await getMessages();
+  const allMessages = await getMessages();
+
+  // Only pass namespaces used by "use client" components to the browser.
+  // Server components call getTranslations() directly and never read from this
+  // provider, so we can safely omit server-only keys (servicePages, clientAuditReports,
+  // solutions*, hero, stats, process, etc.) — saving ~80 KB raw / ~30 KB compressed.
+  const messages = {
+    header:           allMessages.header,
+    footer:           allMessages.footer,
+    about:            allMessages.about,
+    contact:          allMessages.contact,
+    projectBrief:     allMessages.projectBrief,
+    consultationForm: allMessages.consultationForm,
+    contactPage:      allMessages.contactPage,
+    cookieBanner:     allMessages.cookieBanner,
+    languageSwitcher: allMessages.languageSwitcher,
+    newsletter:       allMessages.newsletter,
+    audit:            allMessages.audit,
+  };
 
   // JSON-LD organisation schema
   const jsonLd = {

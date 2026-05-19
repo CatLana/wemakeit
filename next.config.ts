@@ -17,6 +17,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Ensure large server-only packages never slip into edge/client bundles.
+  serverExternalPackages: ["googleapis"],
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [390, 640, 750, 1080, 1920],
