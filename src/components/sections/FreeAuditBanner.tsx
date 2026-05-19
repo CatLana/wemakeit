@@ -59,7 +59,7 @@ export default function FreeAuditBanner() {
             This is free because we are researching the real needs of local businesses to create solutions that truly deliver results.
           </p>
           <Link
-            href="/audit"
+            href="/audit/expert"
             className="inline-flex items-center justify-center min-h-[48px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
           >
             Start your free audit now
