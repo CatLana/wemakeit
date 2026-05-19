@@ -1,1146 +1,1338 @@
 {
   "metadata": {
-    "title": "Разработка приложений для бизнеса",
-    "description": "Превращаем идеи в приложения и сайты. Работаем из Ирландии, более 15 лет опыта, фиксированная цена. Первая консультация — бесплатно.",
-    "ogTitle": "Разработка приложений для бизнеса",
-    "ogDescription": "Есть бизнес-идея? Поможем проверить её, спланировать и реализовать. Первая консультация — бесплатно."
+    "title": "Разработка сайтов и приложений в Ирландии | We Make IT",
+    "description": "Сайты, мобильные приложения и цифровые решения для бизнеса. Фиксированные цены, бесплатная консультация. 15+ лет опыта.",
+    "ogTitle": "Разработка сайтов и приложений в Ирландии | We Make IT",
+    "ogDescription": "Создаём сайты и приложения под ключ — от идеи до запуска. Фиксированная цена, без сюрпризов. Запишитесь на бесплатную консультацию."
   },
   "header": {
-    "logoAriaLabel": "We Make IT — главная",
+    "logoAriaLabel": "We Make IT - Home",
     "nav": {
-      "whatWeDo": "Услуги",
-      "aboutUs": "О нас",
-      "howItWorks": "Как это работает",
-      "blog": "Блог",
-      "talkToUs": "Связаться"
+      "whatWeDo": "Services",
+      "aboutUs": "About",
+      "howItWorks": "How It Works",
+      "blog": "Resources",
+      "talkToUs": "Contact"
     },
-    "cta": "Узнать стоимость",
-    "openMenu": "Открыть меню",
-    "closeMenu": "Закрыть меню",
-    "mobileNavLabel": "Мобильное меню",
-    "mainNavLabel": "Основное меню"
+    "cta": "Бесплатный аудит",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileNavLabel": "Mobile navigation",
+    "mainNavLabel": "Main navigation"
   },
   "languageSwitcher": {
-    "selectorAriaLabel": "Выбор языка",
-    "menuAriaLabel": "Выберите язык",
-    "currentLanguage": "Текущий язык: {language}",
-    "switchTo": "Переключить на {language}"
+    "selectorAriaLabel": "Language selector",
+    "menuAriaLabel": "Select language",
+    "currentLanguage": "Current language: {language}",
+    "switchTo": "Switch to {language}"
   },
   "hero": {
-    "badge": "Базируемся в Ирландии",
-    "h1": "We Make {accent} happen.",
+    "badge": "Based in Ireland",
+    "h1": "We Make {accent} Happen.",
     "accent": "IT",
-    "subtitle": "Мы помогаем ирландскому бизнесу расти через удобные цифровые продукты без лишней фрустрации. От сайтов и маркетинга до кастомного ПО, мы создаем решения, которые реально двигают бизнес вперед.",
-    "springSale": "Летняя акция: скидка 30% для новых клиентов. Количество мест ограничено.",
-    "cta1": "Расскажите о вашей идее",
+    "subtitleBody": "Мы помогаем ирландским компаниям расти, создавая индивидуальные цифровые решения. Нужен сайт, который продаёт, или IT-решение, которое экономит ваше время и деньги — мы знаем, как помочь.",
+    "subtitleCta": "Запишитесь на бесплатную 30-минутную консультацию сегодня.",
+    "springSale": "Summer Sale: 30% off for new clients. Limited spots available.",
+    "cta1": "Связаться с нами",
     "cta2": "Как это работает",
-    "auditCta": "Бесплатный аудит сайта. Узнайте ваш балл",
-    "ariaLabel": "Главный экран We Make IT"
+    "auditCta": "Free website audit. See how your site scores",
+    "ariaLabel": "Hero: We Make IT home"
   },
   "stats": {
-    "ariaLabel": "Наш подход",
-    "heading": "Чем мы отличаемся",
+    "ariaLabel": "How we work",
+    "heading": "How we work differently",
     "items": [
-      { "icon": "ShieldCheck", "label": "Доступность и UX на первом месте", "description": "Каждый продукт строится инклюзивным и удобным с первого дня.", "ariaLabel": "Мы строим каждый продукт с доступностью и UX в основе" },
-      { "icon": "Lightbulb", "label": "Дизайн-мышление на практике", "description": "Мы валидируем идею до разработки. Вы инвестируете в нужное.", "ariaLabel": "Мы применяем Дизайн-мышление для валидации идей перед разработкой" },
-      { "icon": "TrendingUp", "label": "Создано для конверсии", "description": "Стратегия продаж и маркетинга встроена в каждое решение.", "ariaLabel": "Мы принимаем решения, имея в виду цели вашего бизнеса и конверсию" },
-      { "icon": "MessageCircle", "label": "Говорим нетехническим языком", "description": "С нами легко общаться. Если вы не разбираетесь в технологиях, мы объясним всё простым языком.", "ariaLabel": "Мы общаемся простым языком и всегда слушаем наших клиентов, чтобы определить четко ваши потребности" }
+      { "icon": "ShieldCheck", "label": "Accessibility & UX first", "description": "Every product is built inclusive and usable from day one.", "ariaLabel": "We build every product with accessibility and UX as a foundation" },
+      { "icon": "Lightbulb", "label": "Design Thinking applied", "description": "We validate before we build. You invest in the right thing.", "ariaLabel": "We apply Design Thinking to validate ideas before building" },
+      { "icon": "TrendingUp", "label": "Built to convert", "description": "Sales and marketing strategy is baked into every decision.", "ariaLabel": "We make decisions with your business goals and conversions in mind" },
+      { "icon": "MessageCircle", "label": "We speak plain English", "description": "We are easy to speak with. If you are not a technical person, we explain everything in simple terms.", "ariaLabel": "We communicate in plain English and always listen to our clients to clearly understand their needs" }
     ]
   },
   "services": {
-    "eyebrow": "Что мы делаем",
-    "heading": "Два понятных направления для роста бизнеса",
-    "headingPlain": "Два понятных направления",
-    "headingAccent": "для роста вашего бизнеса",
-    "subheading": "Выберите направление под ваши цели. Мы делаем первый шаг простым, а дальше углубляемся в то, что действительно нужно вашему бизнесу.",
-    "servicePreviewLabel": "Краткий список услуг для категории {category}",
+    "eyebrow": "Services",
+    "heading": "Независимо от размера вашего бизнеса, мы поможем вам расти.",
+    "headingPlain": "Независимо от размера вашего бизнеса,",
+    "headingAccent": "мы поможем вам расти.",
+    "subheading": "Выберите направление, соответствующее вашим целям.",
+    "servicePreviewLabel": "Service preview for {category}",
     "categories": [
       {
-        "title": "Сайты",
-        "description": "Помогаем малому бизнесу улучшать цифровое присутствие и привлекать больше клиентов через сайты и маркетинг.",
-        "href": "/solutions/websites",
+        "title": "For Small Entrepreneurs",
+        "tagline": "We help entrepreneurs create digital products that actually sell. If you want to earn more - build your brand online with us.",
+        "description": "Websites and digital presence services for entrepreneurs looking to attract customers and strengthen their online brand.",
+        "href": "/solutions/for-entrepreneurs",
         "previewItems": [
-          "Разработка и редизайн сайтов",
-          "SEO и поддержка цифрового маркетинга",
-          "Графический дизайн и материалы кампаний",
-          "Поддержка и обновление сайта"
+          "Website development and redesign",
+          "SEO and digital marketing support",
+          "Graphic design and campaign assets",
+          "Website management and updates"
         ],
-        "cta": "Смотреть все услуги для сайтов"
+        "cta": "Explore for small entrepreneurs"
       },
       {
-        "title": "Программное обеспечение",
-        "description": "Помогаем фаундерам и SME превращать идеи в работающие продукты через UX-ориентированную разработку.",
-        "href": "/solutions/software",
+        "title": "For SMEs",
+        "tagline": "We help business of all sizes to grow revenue and optimise resources through custom software solutions made to tackle their unique problems. Automation can save you a lot of time and money.",
+        "description": "Custom software, IT outsourcing, and maintenance services for small and medium businesses seeking growth and efficiency.",
+        "href": "/solutions/for-smes",
         "previewItems": [
-          "MVP, веб-приложения и мобильные приложения",
-          "Кастомное ПО для бизнес-процессов",
-          "Аудит ПО и доступности",
-          "Консалтинг и вебинары для команд"
+          "Custom software development",
+          "Business process automation",
+          "IT project outsourcing and support",
+          "Maintenance and system optimization"
         ],
-        "cta": "Смотреть все software-услуги"
+        "cta": "Explore for SMEs"
+      },
+      {
+        "title": "For Startups",
+        "tagline": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Fixed pricing or flexible equity partnerships available.",
+        "description": "MVP development, prototypes, design thinking, UX strategy, and IT consultations for founders validating and building early-stage companies.",
+        "href": "/solutions/for-startups",
+        "previewItems": [
+          "MVP development and rapid validation",
+          "Product prototyping and iteration",
+          "Design Thinking workshops and strategy",
+          "UX research and architecture consulting"
+        ],
+        "cta": "Explore for startups"
       }
     ]
   },
   "founder": {
-    "eyebrow": "Слово основателя",
-    "opening": "Я инженер-программист с особым интересом к UX и доступности, но я также просто обычный пользователь десятков приложений, которыми мы все вынуждены пользоваться каждый день, чтобы справляться с рабочими и жизненными задачами. Я считаю по-настоящему утомительными сайты и приложения с неудобным интерфейсом — они отнимают энергию и время, которые могли бы уйти на действительно важные вещи. Я обожаю интерфейсы, которые просто работают — те, где никогда не нужно останавливаться и думать, что делать дальше. Правда в том, что большинство приложений до сих пор не дают такого ощущения. И именно этот пробел мы помогаем закрыть.",
-    "name": "Меня зовут Света.",
-    "identity": "Креативный инноватор, технический консультант для малого бизнеса, фронтенд-разработчик и основатель We Make IT.",
-    "bio": "Более восьми лет я работаю в сфере веб-разработки — в крупных компаниях и небольших сплочённых командах. Моя специализация — фронтенд-инжиниринг, Design Systems и доступность. Я также сертифицированный UX-дизайнер, и мне по-настоящему нравится создавать интуитивные и инклюзивные интерфейсы. Рядом со мной — замечательная команда full-stack инженеров с более чем пятнадцатилетним опытом. Вместе мы делаем это реальностью.",
-    "passion": "Годы размышлений привели меня к одному выводу: помогать людям решать настоящие проблемы — это то, чем я люблю заниматься больше всего. Мне очень важно создавать инклюзивное и доступное программное обеспечение — потому что никто не должен чувствовать себя исключённым в цифровом мире. Люди разные, потребности разные, но каждый заслуживает комфортного и безупречного цифрового опыта. Приложения формируют нашу повседневную жизнь, осознаём мы это или нет. Моя миссия — помогать предпринимателям, таким как вы, создавать продукты, которыми ваши клиенты будут искренне рады пользоваться.",
-    "differenceHeading": "Чем наши услуги отличаются от других?",
-    "differenceHighlight": "Продукты, которые мы разрабатываем, отличаются тем, что действительно решают проблемы ваших пользователей, а UX и интегрированая доступность, в соответствии с Европейской нормативой - неотъемлемая часть разработки.",
-    "differenceText": "Если у вас есть проблема, мы найдём чёткое и практичное решение — без лишней сложности и непонятных технических терминов.",
-    "quote": "Когда ваш бизнес решает настоящую проблему реальных людей — вот где начинается успех.",
-    "quoteFooter": "И мы знаем, как помочь вам прийти к этому.",
-    "callout": "Готовы поделиться своей идеей? Заполните форму ниже, и мы пришлём вам бесплатный расчёт без каких-либо обязательств. Ваши клиенты заслуживают лучшего — и всё начинается прямо здесь.",
-    "cta": "Расскажите о вашей идее",
-    "imgAlt": "Лана, основатель We Make IT"
+    "eyebrow": "A Message From Our Founder",
+    "opening": "I am a software engineer with a particular interest in UX and Accessibility, but I am also just a normal user of dozens of apps we all have to operate on a daily basis to get our work and life tasks done. I find websites and apps that have bad usability genuinely draining — it takes energy and time that could have gone towards things that actually matter. I love experiences that simply make sense, where you never have to stop and wonder what to do next. The truth is, most apps still do not feel that way. And that is exactly the gap we help close.",
+    "name": "My name is Lana.",
+    "identity": "Creative innovator, technical consultant for small businesses, frontend developer, and the founder of We Make IT.",
+    "bio": "For more than eight years, I have worked across web development in both large companies and small, close-knit teams. My focus has always been frontend engineering, Design Systems, and Accessibility. I am also a certified UX designer, and I genuinely love building interfaces that feel intuitive and inclusive. I work alongside a fantastic team of full-stack engineers with over fifteen years of experience. Together, We Make IT Happen.",
+    "passion": "It took years of reflection to realise it, but helping people solve real problems is my true passion. I care deeply about inclusive and accessible software — because no one should be left behind when navigating their digital world. People are different, and needs are different, yet everyone deserves a smooth, frustration-free experience. Applications shape our everyday lives, whether we realise it or not. My mission is to help entrepreneurs just like you build products that your customers genuinely enjoy using.",
+    "differenceHeading": "So what makes our services different?",
+    "differenceHighlight": "A genuine obsession with solving the right problems in the right way.",
+    "differenceText": "If you have a challenge, we will find you a clear and practical solution without unnecessary complexity or technical language getting in the way.",
+    "quote": "When your business solves a real problem for real people, that is where success begins.",
+    "quoteFooter": "And we know how to help you reach that point.",
+    "callout": "Ready to share your idea? Fill in the form below and we will send you a free, no-obligation quote. Your customers deserve a better experience — and it all starts here.",
+    "cta": "Tell us your idea",
+    "imgAlt": "Lana, founder of We Make IT"
   },
   "about": {
-    "eyebrow": "О нас",
-    "headingLine1": "Превращаем вашу идею",
-    "headingLine2": "в реальный онлайн-продукт.",
-    "body1": "We Make IT — студия разработки программного обеспечения в Ирландии. Нам важно помогать местному бизнесу расти, потому что качественный цифровой опыт делает повседневную жизнь людей проще.",
-    "body2": "От первого разговора до запуска и после него — мы рядом.",
-    "body3": "Наша команда сочетает full-stack разработку, доступный дизайн, UX и бизнес-экспертизу. Наш фокус — Ирландия, но мы открыты к сотрудничеству и с другими рынками.",
-    "tagline": "Где бы вы ни находились, если у вас есть идея, мы хотим её услышать.",
-    "cta": "Узнать стоимость",
-    "visualLabel": "We Make IT — находимся в Ирландии, работаем с клиентами по всей Европе, США и Великобритании",
-    "visualHeading": "Работаем c клиентами из Европы, СЩА и Великобритании",
-    "visualSub": "Находимся в Ирландии.",
-    "visualRegions": "Европа · США · Великобритания",
-    "languageNote": "Кстати, мы также говорим на английском и итальянском.",
+    "eyebrow": "About Us",
+    "body1": "We Make IT is a software development studio based in Ireland. We care deeply about helping local businesses grow because better digital experiences make everyday life easier for everyone.",
+    "body2": "From your first question to launch and beyond, we are with you.",
+    "body3": "Our team combines full-stack development, accessible design, UX, and business expertise. We focus on Ireland while warmly welcoming clients from other markets too.",
+    "tagline": "Wherever you are, if you have an idea, we would love to hear it.",
+    "cta": "Get a free quote",
+    "visualLabel": "We Make IT - Ireland",
+    "visualHeading": "Based in Ireland",
+    "visualSub": "Working globally",
+    "visualRegions": "Europe · Remote · Worldwide",
+    "languageNote": "By the way, we also speak",
     "values": [
-      {
-        "title": "Мы рады каждому клиенту",
-        "description": "Ни одна идея не бывает слишком маленькой. Если вы стартап, владелец бизнеса или просто ищете, с чего начать, мы готовы обсудить ваш проект. Первая консультация бесплатна и ни к чему не обязывает."
-      },
-      {
-        "title": "Опыт крупных компаний",
-        "description": "У нашей команды более 15 лет опыта в разработке продуктов для технологических компаний. Этот опыт мы привносим в каждый проект, независимо от его масштаба."
-      },
-      {
-        "title": "Личное внимание на каждом этапе",
-        "description": "Вы общаетесь напрямую с нашей командой, а не через отдел продаж. Быстрые ответы, честный диалог и внимательное отношение — от первой идеи до запуска и дальше."
-      },
-      {
-        "title": "Фиксированная цена без сюрпризов",
-        "description": "Вы заранее знаете стоимость работы. Без скрытых расходов и неожиданных счетов. Если у вас есть предложение от другой компании, мы готовы его рассмотреть."
-      }
+      { "title": "We Welcome Every Client", "description": "No idea is too small. Whether you are a startup founder, a business owner, or someone just exploring an idea, we are happy to talk. Free first consultation, no commitment required." },
+      { "title": "Big-Company Experience", "description": "Our team has 15+ years of experience building products at major tech companies. We bring that expertise and quality to every project, no matter the size." },
+      { "title": "Personal Attention, Every Step", "description": "You work directly with our team, not a sales rep or account manager. Expect fast replies, straight talk, and genuine care from first idea to launch and beyond." },
+      { "title": "One Fixed Price. No Surprises.", "description": "You know exactly what you are paying before we start. No hidden extras, no surprise invoices. Got a quote from another company? We will beat it." }
     ]
   },
   "process": {
-    "eyebrow": "Как это работает",
-    "headingLine1": "От идеи до приложения",
-    "headingLine2": "за пять простых шагов",
-    "subheading": "Расскажите нам о своей идее — остальное мы возьмём на себя.",
-    "cta": "Расскажите о вашей идее",
+    "eyebrow": "How It Works",
+    "headingLine1": "From idea to app",
+    "headingLine2": "in five simple steps",
+    "subheading": "Tell us your idea and we will take it from there.",
+    "cta": "Tell us your idea",
     "steps": [
-      {
-        "number": "01",
-        "title": "Расскажите о своей идее",
-        "description": "Заполните форму и опишите идею простыми словами."
-      },
-      {
-        "number": "02",
-        "title": "Мы отправим стоимость",
-        "description": "Изучим детали и пришлём ориентировочную стоимость и план реализации."
-      },
-      {
-        "number": "03",
-        "title": "Вы рассмотрите предложение",
-        "description": "Вы изучите наш вариант, и если всё подходит, мы назначим онлайн- или личную встречу."
-      },
-      {
-        "number": "04",
-        "title": "Подпишем договор",
-        "description": "Когда вы будете готовы начать, мы оформим договор."
-      },
-      {
-        "number": "05",
-        "title": "Начинаем работу",
-        "description": "Вы вносите предоплату, и мы приступаем к разработке."
-      }
+      { "number": "01", "title": "Tell Us Your Idea", "description": "Fill in the form and describe your idea in plain words." },
+      { "number": "02", "title": "We Send You a Quote", "description": "We review your idea and send you an estimated cost range and a potential implementation plan." },
+      { "number": "03", "title": "You Review the Proposal", "description": "You review the proposal and we schedule a consultation meeting online or offline to discuss further details." },
+      { "number": "04", "title": "We Shake Hands", "description": "When you are ready to start, we sign a simple contract to get everything in writing." },
+      { "number": "05", "title": "We Start the Work", "description": "You pay the deposit and we get building. Easy as that." }
     ]
   },
   "ctaStrip": {
-    "heading": "Не уверены, готова ли ваша идея?",
-    "body1": "Это как раз тот случай, когда стоит поговорить с нами. Заполните форму с деталями, и мы дадим вам обратную связь.",
-    "body2": "Благодаря опыту в Design Thinking и MVP мы поможем проверить идею ещё до начала полноценной разработки.",
-    "cta": "Заполнить форму"
+    "heading": "Готовы перейти на новый уровень и увеличить доход?",
+    "body1": "Свяжитесь с нами — неважно, начинающий предприниматель вы или крупная компания. Мы рады вас слышать! Помогаем локальным бизнесам становиться успешнее, создавая цифровое присутствие и индивидуальные IT-решения.",
+    "body2": "",
+    "cta": "Связаться с нами"
   },
   "auditBanner": {
-    "eyebrow": "Бесплатная проверка сайта",
+    "eyebrow": "Free website check",
     "betaLabel": "Beta",
-    "heading": "Запустите бесплатный аудит вашего сайта",
-    "body": "Получите быстрый срез по производительности, доступности и SEO, чтобы понять, что улучшать в первую очередь.",
-    "cta": "Запустить бесплатный аудит",
-    "metricPerformance": "Производительность",
-    "metricAccessibility": "Доступность",
+    "heading": "Run a free audit for your website",
+    "body": "Get an instant snapshot of your performance, accessibility, and SEO so you know what to improve first.",
+    "cta": "Run free audit",
+    "metricPerformance": "Performance",
+    "metricAccessibility": "Accessibility",
     "metricSeo": "SEO",
-    "visualNote": "Пример оценки"
+    "visualNote": "Sample score preview"
   },
   "contact": {
-    "eyebrow": "Спасибо, что обратились к нам",
-    "heading": "Напишите нам",
-    "body": "Хотели бы узнать стоимость или получить бесплатную консультацию? Будем рады помочь!",
-    "officeLabel": "Где мы",
-    "officeLocation": "Ирландия. Работаем по всей Европе и Великобритании.",
-    "contactLink": "Вопросы?",
-    "contactLinkText": "Напишите нам",
+    "eyebrow": "We are happy to hear from you",
+    "heading": "Send us a message",
+    "body": "Need a free quote or consultation request? We are here to help!",
+    "officeLabel": "Location",
+    "officeLocation": "Remote",
+    "contactLink": "Questions?",
+    "contactLinkText": "Send us a message",
     "linkedinLabel": "LinkedIn",
-    "linkedinNewTab": "(открывается в новой вкладке)",
-    "trustLabel": "Почему мы",
+    "linkedinNewTab": "(opens in new tab)",
+    "trustLabel": "Why work with us",
     "trustPoints": [
-      "Бесплатный расчёт стоимости, без обязательств",
-      "Отвечаем в течение 1 рабочего дня"
+      "Free quote, no commitment required",
+      "We reply within 1 business day"
     ],
-    "whatNextHeading": "Что будет дальше?",
+    "whatNextHeading": "What happens next?",
     "whatNextSteps": [
-      "Мы изучим вашу заявку",
-      "Пришлём расчёт или предложим созвониться"
+      "We review your request",
+      "We send a quote or schedule a quick call",
+      "You decide, no pressure"
     ],
     "form": {
-      "ariaLabel": "Получить бесплатный расчёт",
-      "service": "Чем мы можем помочь?",
+      "ariaLabel": "Get a free quote",
+      "service": "How can we help?",
       "serviceOptions": {
-        "consultation": "Бесплатная консультация",
-        "quote": "Запрос расчёта",
-        "general": "Общий вопрос",
-        "audit": "Бесплатный аудит"
+        "consultation": "Free Consultation",
+        "quote": "Quote Request",
+        "general": "General Query",
+        "audit": "Free Audit Request"
       },
-      "name": "Ваше имя",
-      "namePlaceholder": "Иван Иванов",
-      "email": "Адрес эл. почты",
-      "emailPlaceholder": "ivan@kompaniya.com",
-      "phone": "Телефон (необязательно)",
-      "phonePlaceholder": "+7 / +49 ...",
-      "message": "Хотите что-то добавить? (необязательно)",
-      "messagePlaceholder": "Кратко опишите ваш проект или идею…",
-      "messageHint": "Детали не нужны — мы уточним, если понадобится.",
-      "submit": "Отправить сообщение",
-      "submitting": "Отправляем…",
-      "submitAnother": "Отправить ещё одну заявку",
+      "name": "Your name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Email address",
+      "emailPlaceholder": "jane@company.ie",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+353 ...",
+      "message": "Anything to share? (optional)",
+      "messagePlaceholder": "Briefly describe your project or idea…",
+      "messageHint": "Describe your project briefly. We'll follow up by email if we need more details.",
+      "submit": "Send Message",
+      "submitting": "Sending…",
+      "submitAnother": "Send another request",
       "errors": {
-        "service": "Выберите тип услуги",
-        "name": "Введите ваше имя",
-        "email": "Введите корректный адрес эл. почты"
+        "service": "Please select a service type",
+        "name": "Please enter your name",
+        "email": "Please enter a valid email address"
       },
       "success": {
-        "title": "Ваше сообщение отправлено!",
-        "body": "Спасибо! Мы изучим вашу заявку и свяжемся с вами в течение 1 рабочего дня. Возможно, мы пришлём вам краткий бриф для уточнения деталей."
+        "title": "Request sent!",
+        "body": "Thanks! We'll review your request and get back to you within 1 business day. We may send you a short project brief to better understand your needs."
       },
-      "serverError": "Что-то пошло не так. Пожалуйста, попробуйте ещё раз.",
-      "networkError": "Не удалось связаться с сервером. Проверьте подключение и попробуйте снова.",
-      "privacyNote": "Ваши данные используются только для ответа на ваш запрос.",
-      "heading": "Напишите нам",
-      "consentText": "Отправляя форму, вы принимаете наши",
-      "consentTerms": "Условия использования",
-      "consentAnd": "и",
-      "consentPrivacy": "Политику конфиденциальности",
-      "consentPost": ". Ваши данные используются только для ответа на ваш запрос.",
-      "marketingConsent": "Подпишите меня на обновления и на получение скидочного кода для новых клиентов."
+      "serverError": "Something went wrong. Please try again.",
+      "networkError": "Could not reach the server. Please check your connection and try again.",
+      "privacyNote": "Your details are kept private and used only to respond to your request.",
+      "heading": "Contact Us",
+      "consentText": "By submitting this form you agree to our",
+      "consentTerms": "Terms of Service",
+      "consentAnd": "and",
+      "consentPrivacy": "Privacy Policy",
+      "consentPost": ". Your contact details are used to respond to your request.",
+      "marketingConsent": "Sign me up for occasional updates and a discount code for new clients."
     }
   },
   "projectBrief": {
-    "title": "Бриф проекта",
-    "description": "Расскажите подробнее о проекте, чтобы мы смогли сформулировать расчет стоимости.",
-    "eyebrow": "Бриф проекта",
-    "heading": "Расскажите о вашем проекте",
-    "subheading": "Этот бриф помогает нам подготовить точный расчёт и план. Делитесь столько, сколько знаете — технические знания не нужны.",
-    "intro": "Вы получили ссылку на эту форму после отправки заявки. Чем больше деталей вы укажете, тем точнее будет наше предложение.",
+    "title": "Project Brief",
+    "description": "Share details about your project to help us prepare an accurate quote and proposal.",
+    "eyebrow": "Project Brief",
+    "heading": "Tell us about your project",
+    "subheading": "This brief helps us give you an accurate quote and plan. Share as much or as little as you know — no technical knowledge needed.",
+    "intro": "You received a link to this form after submitting a quote request. The more detail you share, the more accurate our proposal.",
     "form": {
-      "ariaLabel": "Форма брифа проекта",
-      "name": "Имя и фамилия",
-      "namePlaceholder": "Иван Иванов",
-      "email": "Адрес эл. почты",
-      "emailPlaceholder": "ivan@kompaniya.com",
-      "company": "Компания или организация (необязательно)",
-      "companyPlaceholder": "ООО Пример",
-      "phone": "Телефон (необязательно)",
-      "phonePlaceholder": "+7 / +49 ...",
-      "service": "Интересующая услуга",
+      "ariaLabel": "Project brief form",
+      "name": "Full name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Email address",
+      "emailPlaceholder": "jane@company.ie",
+      "company": "Company or organisation (optional)",
+      "companyPlaceholder": "Acme Ltd.",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+353 ...",
+      "service": "Service you're interested in",
       "serviceOptions": {
-        "consultation": "Бесплатная консультация",
-        "webDevelopment": "Сайт или веб-приложение",
-        "appDevelopment": "Разработка приложения",
-        "mobileApp": "Мобильное приложение",
-        "ideaValidation": "Валидация идеи и MVP",
-        "uxResearch": "UX-исследование",
-        "uxDesign": "UX-дизайн",
-        "prototype": "Прототип приложения",
-        "accessibilityAudit": "Аудит доступности и UX",
-        "consultancy": "IT-консультация",
-        "maintenance": "Поддержка и обслуживание",
-        "localisation": "Локализация",
-        "other": "Другое"
+        "consultation": "Free Consultation",
+        "webDevelopment": "Website or Web App",
+        "appDevelopment": "Custom App Development",
+        "mobileApp": "Mobile App Development",
+        "ideaValidation": "Idea Validation & MVP",
+        "uxResearch": "UX Research",
+        "uxDesign": "UX Design",
+        "prototype": "App Prototype",
+        "accessibilityAudit": "Accessibility & UX Audit",
+        "consultancy": "Software Consultancy",
+        "maintenance": "Maintenance & Support",
+        "localisation": "Localisation",
+        "other": "Something Else"
       },
-      "projectType": "Тип проекта?",
-      "projectTypePlaceholder": "Выберите тип…",
+      "projectType": "What type of project?",
+      "projectTypePlaceholder": "Select a type…",
       "projectTypes": {
-        "webApp": "Веб-приложение",
-        "mobileApp": "Мобильное приложение",
-        "website": "Сайт / Лендинг",
-        "eCommerce": "Интернет-магазин",
-        "redesign": "Редизайн / Переработка",
-        "other": "Другое"
+        "webApp": "Web Application",
+        "mobileApp": "Mobile App",
+        "website": "Website / Landing Page",
+        "eCommerce": "E-Commerce Store",
+        "redesign": "Redesign / Rebuild",
+        "other": "Other"
       },
-      "description": "Опишите ваш проект",
-      "descriptionPlaceholder": "Что вы создаёте? Для кого? Какую проблему это решает?",
-      "budget": "Примерный бюджет",
-      "budgetPlaceholder": "Выберите диапазон…",
+      "description": "Describe your project",
+      "descriptionPlaceholder": "What are you building? Who is it for? What problem does it solve?",
+      "budget": "Estimated budget",
+      "budgetPlaceholder": "Select a range…",
       "budgetOptions": {
-        "under5k": "До €5 000",
-        "5k15k": "€5 000 – €15 000",
-        "15k30k": "€15 000 – €30 000",
-        "30k50k": "€30 000 – €50 000",
-        "over50k": "Более €50 000",
-        "notSure": "Пока не уверен"
+        "under5k": "Under €5,000",
+        "5k15k": "€5,000 – €15,000",
+        "15k30k": "€15,000 – €30,000",
+        "30k50k": "€30,000 – €50,000",
+        "over50k": "Over €50,000",
+        "notSure": "Not sure yet"
       },
-      "timeline": "Желаемые сроки",
-      "timelinePlaceholder": "Выберите сроки…",
+      "timeline": "Desired timeline",
+      "timelinePlaceholder": "Select a timeline…",
       "timelineOptions": {
-        "asap": "Как можно скорее",
-        "1to3": "1 – 3 месяца",
-        "3to6": "3 – 6 месяцев",
-        "flexible": "Гибко"
+        "asap": "As soon as possible",
+        "1to3": "1 – 3 months",
+        "3to6": "3 – 6 months",
+        "flexible": "Flexible"
       },
-      "hasDesign": "Есть ли у вас дизайн или макеты?",
-      "hasDesignPlaceholder": "Выберите вариант…",
+      "hasDesign": "Do you have existing designs or mockups?",
+      "hasDesignPlaceholder": "Select an option…",
       "hasDesignOptions": {
-        "yes": "Да, дизайн готов",
-        "partial": "Есть идеи или вайрфреймы",
-        "no": "Нет, начинаем с нуля"
+        "yes": "Yes, I have designs ready",
+        "partial": "I have some ideas or wireframes",
+        "no": "No, starting from scratch"
       },
-      "competitorQuote": "Есть предложение от другой компании? (необязательно)",
-      "competitorPlaceholder": "напр. €12 000 от агентства XYZ — предложим лучше.",
-      "submit": "Отправить бриф проекта",
-      "submitting": "Отправляем…",
+      "competitorQuote": "Have a quote from another company? (optional)",
+      "competitorPlaceholder": "e.g. €12,000 from XYZ Agency — we'll beat it.",
+      "submit": "Submit My Project Brief",
+      "submitting": "Sending…",
       "errors": {
-        "service": "Выберите услугу",
-        "name": "Введите ваше имя",
-        "email": "Введите корректный адрес эл. почты",
-        "projectType": "Выберите тип проекта",
-        "description": "Опишите проект (минимум 10 символов)",
-        "budget": "Выберите диапазон бюджета",
-        "timeline": "Выберите сроки",
-        "hasDesign": "Выберите вариант"
+        "service": "Please select a service",
+        "name": "Please enter your name",
+        "email": "Please enter a valid email",
+        "projectType": "Please select a project type",
+        "description": "Please describe your project (min. 10 characters)",
+        "budget": "Please select a budget range",
+        "timeline": "Please select a timeline",
+        "hasDesign": "Please select an option"
       },
       "success": {
-        "title": "Бриф получен!",
-        "body": "Спасибо! Мы получили ваш бриф и внимательно его изучим. Скоро свяжемся с вами."
+        "title": "Brief received!",
+        "body": "Thank you! We've got your project brief and will review it carefully. We'll be in touch soon."
       },
-      "serverError": "Что-то пошло не так. Пожалуйста, попробуйте ещё раз.",
-      "networkError": "Не удалось связаться с сервером. Проверьте подключение и попробуйте снова."
+      "serverError": "Something went wrong. Please try again.",
+      "networkError": "Could not reach the server. Please check your connection and try again."
     }
   },
   "newsletter": {
-    "heading": "Получайте секретные промокоды",
-    "body": "Подпишитесь на нашу рассылку и получайте эксклюзивные промокоды для скидок на наши услуги.",
-    "emailLabel": "Адрес эл. почты",
-    "emailPlaceholder": "ваш@email.com",
-    "submit": "Подписаться",
-    "subscribing": "Подписка…",
-    "consentPrefix": "Подписываясь, вы соглашаетесь с нашей",
-    "consentLink": "Политикой конфиденциальности",
-    "consentSuffix": "и даёте согласие на получение маркетинговых писем. Вы можете отписаться в любой момент.",
-    "success": "Вы подписаны! Промокоды и предложения будут приходить на вашу почту.",
-    "alreadySubscribed": "Вы уже в нашем списке. Следите за входящими!",
-    "error": "Что-то пошло не так. Пожалуйста, попробуйте ещё раз.",
-    "emailError": "Введите корректный адрес эл. почты",
-    "consentError": "Необходимо дать согласие для продолжения"
+    "heading": "Get Secret Discount Codes",
+    "body": "Sign up to our newsletter and receive exclusive discount codes and early access to special offers.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "your@email.com",
+    "submit": "Subscribe",
+    "subscribing": "Subscribing…",
+    "consentPrefix": "By subscribing you agree to our",
+    "consentLink": "Privacy Policy",
+    "consentSuffix": "and consent to receive marketing emails. You can unsubscribe at any time.",
+    "success": "You're in! We'll send discount codes and offers straight to your inbox.",
+    "alreadySubscribed": "You're already on the list. Keep an eye on your inbox!",
+    "error": "Something went wrong. Please try again.",
+    "emailError": "Please enter a valid email address",
+    "consentError": "You must agree to continue"
   },
   "consultationForm": {
-    "nameLabel": "Ваше имя",
-    "namePlaceholder": "Иван Иванов",
-    "emailLabel": "Адрес эл. почты",
-    "emailPlaceholder": "ivan@компания.ru",
-    "phoneLabel": "Номер телефона (необязательно)",
-    "phonePlaceholder": "+7 ...",
-    "nameError": "Введите ваше имя",
-    "emailError": "Введите корректный адрес эл. почты",
-    "messageError": "Расскажите немного о вашем проекте",
-    "submitting": "Отправка…",
-    "successTitle": "Запрос отправлен!",
-    "successBody": "Спасибо за обращение. Мы свяжемся с вами в течение одного рабочего дня.",
-    "sendAnother": "Отправить ещё один запрос",
-    "privacyNote": "Мы никогда не передаём ваши данные третьим лицам. Без спама.",
-    "serverError": "Что-то пошло не так. Пожалуйста, попробуйте ещё раз.",
+    "nameLabel": "Your name",
+    "namePlaceholder": "Jane Murphy",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "jane@company.ie",
+    "phoneLabel": "Phone number (optional)",
+    "phonePlaceholder": "+353 ...",
+    "nameError": "Please enter your name",
+    "emailError": "Please enter a valid email address",
+    "messageError": "Please tell us a little about your project",
+    "submitting": "Sending…",
+    "successTitle": "Request sent!",
+    "successBody": "Thanks for getting in touch. We will get back to you within one business day.",
+    "sendAnother": "Send another request",
+    "privacyNote": "We never share your details. No spam.",
+    "serverError": "Something went wrong. Please try again.",
     "variants": {
       "consultation": {
-        "heading": "Запросить бесплатную консультацию",
-        "subheading": "Расскажите о своём проекте, и мы ответим в течение одного рабочего дня — без каких-либо обязательств.",
-        "messageLabel": "Расскажите о вашем проекте",
-        "messagePlaceholder": "Что вы хотите создать? Сроки, примерный бюджет или любой полезный контекст.",
-        "submitLabel": "Запросить бесплатную консультацию"
+        "heading": "Request a Free Consultation",
+        "subheading": "Tell us about your project and we will get back to you within one business day — no commitment required.",
+        "messageLabel": "Tell us about your project",
+        "messagePlaceholder": "What are you looking to build? Any deadlines, budget range, or context you can share?",
+        "submitLabel": "Request free consultation"
       },
       "audit": {
-        "heading": "Запросить бесплатный аудит доступности",
-        "subheading": "Укажите URL вашего сайта или приложения, и мы проведём бесплатную первичную проверку в течение одного рабочего дня.",
-        "messageLabel": "URL вашего сайта или приложения",
-        "messagePlaceholder": "напр. https://yoursite.ie — добавьте контекст о вашем продукте или вопросы.",
-        "submitLabel": "Запросить бесплатный аудит"
+        "heading": "Request a Free Accessibility Audit",
+        "subheading": "Share your website or app URL and we will run a free initial check and report back within one business day.",
+        "messageLabel": "Your website or app URL",
+        "messagePlaceholder": "e.g. https://yoursite.ie — add any context about your product or concerns.",
+        "submitLabel": "Request free audit"
       },
       "retainer": {
-        "heading": "Расскажите о вашем проекте",
-        "subheading": "Ищете постоянную поддержку? Поделитесь деталями, и мы подготовим предложение, которое вам подойдёт.",
-        "messageLabel": "Что нужно вашему проекту?",
-        "messagePlaceholder": "Опишите ваш существующий продукт — стек технологий, текущие проблемы, какая поддержка вам нужна.",
-        "submitLabel": "Получить предложение по поддержке"
+        "heading": "Tell Us About Your Project",
+        "subheading": "Looking for ongoing support? Share what you have and we will put together a support proposal that fits.",
+        "messageLabel": "What does your project need?",
+        "messagePlaceholder": "Tell us about your existing product — tech stack, current issues, what support you are looking for.",
+        "submitLabel": "Get a support proposal"
       }
     }
   },
   "footer": {
-    "springSaleTitle": "Летняя акция",
-    "springSaleBody": "Скидка 30% для новых клиентов этим летом. Зафиксируйте тариф сейчас.",
-    "springSaleBeat": "Есть предложение от другой компании?",
-    "springSaleSendIt": "Пришлите нам",
-    "springSaleBeatSuffix": "и мы предложим лучше.",
-    "tagline": "Помогаем предпринимателям и малому бизнесу превращать идеи в реальные приложения и сайты. Находимся в Ирландии, работаем по всему миру.",
-    "copyright": "© We Make IT — индивидуальный предприниматель, зарегистрированный в Ирландии.",
-    "builtBy": "Разработано",
-    "languageNote": "Инклюзивность для нас важна: поддержка доступна на английском, итальянском и русском языках.",
-    "footerLabel": "Нижний колонтитул",
-    "remoteText": "Зарегистрированы в Ирландии. Работаем в Европе и Соединённом Королевстве.",
+    "springSaleTitle": "Summer Sale Offer",
+    "springSaleBody": "30% off for new clients this summer. Lock in your rate now.",
+    "springSaleBeat": "Got a quote from another company?",
+    "springSaleSendIt": "Send it to us",
+    "springSaleBeatSuffix": "and we will beat it.",
+    "tagline": "We help entrepreneurs and small businesses turn their ideas into real apps and websites. Based in Ireland, working globally.",
+    "copyright": "© We Make IT Sole Trader company registered in Ireland.",
+    "builtBy": "Built by",
+    "languageNote": "Inclusive by design: support available in English, Italian, and Russian.",
+    "footerLabel": "Site footer",
+    "remoteText": "Registered in Ireland. Operating in Europe and the United Kingdom.",
     "sections": {
-      "services": "Услуги",
-      "company": "Компания",
-      "freeTools": "Бесплатные сервисы",
-      "legal": "Правовая информация"
+      "services": "Services",
+      "company": "Company",
+      "freeTools": "Free Services",
+      "legal": "Legal"
     },
     "serviceLinks": [
-      "Разработка сайтов",
-      "SEO и маркетинг",
-      "Графический дизайн",
-      "Кастомное ПО",
-      "MVP и разработка приложений"
+      "Website Development",
+      "SEO & Marketing",
+      "Graphic Design",
+      "Custom Software",
+      "MVP & App Development"
     ],
     "companyLinks": {
-      "aboutUs": "О нас",
-      "howItWorks": "Как это работает",
-      "blog": "Блог",
-      "getAQuote": "Узнать стоимость"
+      "aboutUs": "About Us",
+      "howItWorks": "How It Works",
+      "blog": "Blog",
+      "getAQuote": "Get a Quote"
     },
     "freeToolLinks": {
-      "websiteAudit": "Бесплатный аудит сайта",
-      "appAudit": "Бесплатный аудит приложения",
-      "freeConsultation": "Бесплатная консультация"
+      "websiteAudit": "Free Website Audit",
+      "appAudit": "Free App Audit",
+      "freeConsultation": "Free Consultation"
     },
     "legalLinks": {
-      "privacyPolicy": "Политика конфиденциальности",
-      "cookiePolicy": "Политика использования файлов cookie",
-      "termsOfService": "Условия использования",
-      "accessibilityStatement": "Заявление о доступности"
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy",
+      "termsOfService": "Terms of Service",
+      "accessibilityStatement": "Accessibility Statement"
     }
   },
   "contactPage": {
-    "title": "Контакты",
-    "description": "Свяжитесь с We Make IT. Отправьте ваш вопрос через форму ниже.",
-    "eyebrow": "Свяжитесь с нами",
-    "heading": "Напишите нам",
-    "body": "Есть вопрос? Заполните форму и мы ответим.",
-    "quotePrompt": "Нужен расчёт стоимости?",
-    "quotePromptLink": "Заполните нашу бесплатную форму →",
-    "mapLabel": "Карта Ашберна, графство Мит, Ирландия",
-    "locationHeading": "Где мы находимся",
-    "locationText": "Ашберн, графство Мит, Ирландия",
+    "title": "Contact",
+    "description": "Get in touch with We Make IT. Send us your question using the form below.",
+    "eyebrow": "Get in Touch",
+    "heading": "Send Us a Message",
+    "body": "Have a question? Fill in the form and we will get back to you.",
+    "quotePrompt": "Looking for a quote?",
+    "quotePromptLink": "Fill in our free quote form →",
+    "mapLabel": "Map of Ashbourne, Co. Meath, Ireland",
+    "locationHeading": "Where We Are",
+    "locationText": "Ashbourne, Co. Meath, Ireland",
     "form": {
-      "name": "Имя и фамилия",
-      "namePlaceholder": "Иван Иванов",
-      "email": "Адрес эл. почты",
-      "emailPlaceholder": "ivan@kompaniya.com",
-      "phone": "Телефон (необязательно)",
-      "phonePlaceholder": "+7 ...",
-      "message": "Ваш вопрос",
-      "messagePlaceholder": "Расскажите, как мы можем помочь...",
-      "submit": "Отправить",
-      "submitting": "Отправка...",
-      "consentText": "Нажимая Отправить, вы соглашаетесь с нашей",
-      "consentLink": "Политикой конфиденциальности",
-      "consentSuffix": "и даёте согласие на обработку этих данных для ответа на ваш запрос.",
-      "successTitle": "Сообщение отправлено!",
-      "successBody": "Мы свяжемся с вами в ближайшее время.",
-      "sendAnother": "Отправить ещё одно сообщение",
-      "nameError": "Введите имя и фамилию",
-      "emailError": "Введите действительный адрес эл. почты",
-      "messageError": "Введите ваше сообщение",
-      "serverError": "Произошла ошибка. Пожалуйста, попробуйте ещё раз."
+      "name": "Full name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Email address",
+      "emailPlaceholder": "jane@company.ie",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+353 ...",
+      "message": "Your question",
+      "messagePlaceholder": "Tell us how we can help...",
+      "submit": "Submit",
+      "submitting": "Sending...",
+      "consentText": "By clicking Submit, you agree to our",
+      "consentLink": "Privacy Policy",
+      "consentSuffix": "and consent to this data being processed to respond to your enquiry.",
+      "successTitle": "Message sent!",
+      "successBody": "We will get back to you shortly.",
+      "sendAnother": "Send another message",
+      "nameError": "Please enter your full name",
+      "emailError": "Please enter a valid email address",
+      "messageError": "Please enter your message",
+      "serverError": "Something went wrong. Please try again."
     }
   },
   "blog": {
-    "title": "Блог: Идеи и руководства для предпринимателей",
-    "description": "Практические руководства по созданию приложений, поиску финансирования и превращению бизнес-идеи в цифровой продукт.",
-    "ogTitle": "Советы по разработке приложений | Блог We Make IT",
-    "ogDescription": "Практические советы по созданию приложений, получению финансирования и превращению бизнес-идей в реальные цифровые продукты."
+    "title": "Blog: App and Business Ideas for Irish Entrepreneurs",
+    "description": "Practical guides on building apps, finding funding, and turning your business idea into a digital product. Written for Irish entrepreneurs by the We Make IT team.",
+    "ogTitle": "App Development Insights for Irish Entrepreneurs | We Make IT Blog",
+    "ogDescription": "Practical advice on building apps, getting funding, and turning business ideas into real digital products."
   },
   "cookieBanner": {
-    "ariaLabel": "Диалоговое окно согласия на использование файлов cookie",
-    "text": "Мы используем только необходимые файлы cookie для работы сайта. Мы не используем файлы cookie для отслеживания или рекламы без вашего согласия.",
-    "learnMore": "Узнать больше",
-    "essential": "Только необходимые",
-    "acceptAll": "Принять все файлы cookie"
+    "ariaLabel": "Cookie consent dialog",
+    "text": "We use strictly necessary cookies to keep the site working. We do not use tracking or advertising cookies without your consent.",
+    "learnMore": "Learn more",
+    "essential": "Essential only",
+    "acceptAll": "Accept all cookies"
   },
   "solutionsGeneralPage": {
     "metadata": {
-      "title": "Решения для ирландского бизнеса",
-      "description": "Понятный путь для компаний, которым нужны более сильные сайты или кастомное программное обеспечение. Спокойная коммуникация и практический результат.",
-      "ogTitle": "Решения для ирландского бизнеса",
-      "ogDescription": "Веб- и software-решения, которые помогают ирландскому бизнесу расти через более удобный цифровой опыт."
+      "title": "Solutions for Irish SMEs",
+      "description": "A clear path for Irish businesses that need stronger websites or tailored software. Practical support, calm communication, and measurable outcomes.",
+      "ogTitle": "Solutions for Irish SMEs",
+      "ogDescription": "Website and software solutions that help Irish businesses grow with smoother digital experiences."
     },
-    "eyebrow": "Решения",
-    "heading": "Мы помогаем ирландскому бизнесу расти",
-    "subheading": "Нужен ли вам более сильный сайт или кастомное ПО, мы создаем удобный пользовательский опыт, который уменьшает трение и повышает результат.",
+    "eyebrow": "Solutions",
+    "heading": "We help Irish businesses grow",
+    "subheading": "Whether you need a stronger website presence or custom software, we focus on smooth user experiences that reduce friction and improve results.",
     "cards": [
       {
-        "title": "Решения для сайтов",
-        "body": "Для владельцев бизнеса, которым нужна лучшая видимость, выше конверсия и более сильное цифровое присутствие.",
-        "cta": "Смотреть решения для сайтов",
+        "title": "Website Solutions",
+        "body": "For business owners who want better visibility, better conversion, and a stronger digital presence.",
+        "cta": "Explore website solutions",
         "href": "/solutions/for-websites"
       },
       {
-        "title": "Software-решения",
-        "body": "Для команд и фаундеров, которые развивают продукты, автоматизируют процессы или передают delivery на аутсорс.",
-        "cta": "Смотреть software-решения",
+        "title": "Software Solutions",
+        "body": "For teams and founders building products, automating workflows, or outsourcing project delivery.",
+        "cta": "Explore software solutions",
         "href": "/solutions/for-software"
       }
     ],
-    "finalCtaHeading": "Не уверены, какое направление подходит лучше?",
-    "finalCtaBody": "Напишите нам короткое сообщение. Мы поможем выбрать наиболее полезный следующий шаг.",
-    "finalCta": "Связаться"
+    "finalCtaHeading": "Not sure which direction fits best?",
+    "finalCtaBody": "Send us a short message. We will help you choose the most useful next step for your business.",
+    "finalCta": "Get in touch"
   },
   "solutionsWebsitesPage": {
     "metadata": {
-      "title": "Услуги по сайтам для малого бизнеса",
-      "description": "Разработка сайтов и поддержка цифрового присутствия для малого бизнеса в Ирландии: SEO, маркетинг и материалы для кампаний.",
-      "ogTitle": "Услуги по сайтам для малого бизнеса",
-      "ogDescription": "Улучшайте цифровое присутствие через сайты, SEO, маркетинг и дизайн, ориентированные на рост."
+      "title": "Website Services for Small Businesses",
+      "description": "Website development and digital presence services for Irish small businesses, from SEO to campaign assets.",
+      "ogTitle": "Website Services for Small Businesses",
+      "ogDescription": "Improve your digital presence with websites, SEO, marketing support, and design services built for growth."
     },
-    "schemaName": "Решения по сайтам для малого бизнеса",
-    "eyebrow": "Решения для сайтов",
-    "heading": "Сайты и маркетинговая поддержка для малого бизнеса",
-    "subheading": "Мы помогаем малому бизнесу улучшать цифровое присутствие через разработку сайтов и маркетинг. Если вам нужно больше клиентов, будем рады пообщаться.",
-    "servicesHeading": "Что мы можем сделать для вашего онлайн-присутствия",
+    "schemaName": "Website Solutions for Small Businesses",
+    "eyebrow": "Website Solutions",
+    "heading": "Websites and marketing support for small businesses",
+    "subheading": "We help small businesses improve digital presence through website development and marketing. If you are looking to gain more customers, we will be happy to hear from you.",
+    "servicesHeading": "What we can do for your website presence",
     "services": [
-      { "name": "Разработка сайтов", "detail": "Кастомные сайты: понятные, быстрые, доступные и ориентированные на конверсию." },
-      { "name": "Управление сайтом", "detail": "Регулярные обновления, исправления и улучшения, чтобы сайт продолжал приносить результат." },
-      { "name": "SEO", "detail": "Практическая SEO-основа и улучшения, чтобы вас легче находили потенциальные клиенты." },
-      { "name": "Маркетинговая поддержка", "detail": "Лендинги и контент для кампаний, согласованные с вашими целями продаж." },
-      { "name": "Графический дизайн", "detail": "Визуальные материалы для сайта и кампаний в едином фирменном стиле." },
-      { "name": "Sales-материалы", "detail": "Материалы для веба и печати для кампаний, outreach и коммуникации с клиентами." }
+      { "name": "Website Development", "detail": "Custom websites that are clear, fast, accessible, and built to convert." },
+      { "name": "Website Management", "detail": "Ongoing updates, fixes, and improvements so your website keeps working for your business." },
+      { "name": "SEO", "detail": "On-page SEO foundations and practical improvements to help your business get found." },
+      { "name": "Marketing Support", "detail": "Campaign landing pages and content support aligned with your sales goals." },
+      { "name": "Graphic Design", "detail": "Visual assets for your website and campaigns that keep your brand consistent." },
+      { "name": "Sales Materials", "detail": "Web and print-ready sales materials for campaigns, outreach, and customer communication." }
     ],
-    "finalCtaHeading": "Готовы усилить цифровое присутствие?",
-    "finalCtaBody": "Расскажите, что вам нужно, и мы предложим понятный практический план.",
-    "finalCta": "Написать нам"
+    "finalCtaHeading": "Ready to improve your digital presence?",
+    "finalCtaBody": "Tell us what you need and we will suggest a clear, practical plan.",
+    "finalCta": "Send us a message"
   },
   "solutionsSoftwarePage": {
     "metadata": {
-      "title": "Кастомная разработка ПО для SME",
-      "description": "Кастомная разработка ПО для SME и фаундеров: MVP, веб-приложения, мобильные приложения, аудит и консалтинг.",
-      "ogTitle": "Кастомная разработка ПО для SME",
-      "ogDescription": "Превращаем software-идеи в рабочие продукты через UX-ориентированную разработку и практическую техподдержку."
+      "title": "Custom Software Services for SMEs",
+      "description": "Custom software development for Irish SMEs and founders: MVPs, web apps, mobile apps, audits, and consulting.",
+      "ogTitle": "Custom Software Services for SMEs",
+      "ogDescription": "Turn your software idea into a real product with UX-led development and practical technical support."
     },
-    "schemaName": "Software-решения для SME",
-    "eyebrow": "Software-решения",
-    "heading": "Разработка кастомного ПО для растущего бизнеса",
-    "subheading": "Мы помогаем предпринимателям и SME превращать идеи в реальные продукты через разработку приложений, UX и design thinking. Есть идея, которую стоит реализовать? Получите бесплатную консультацию.",
-    "servicesHeading": "Software-услуги, которые мы предоставляем",
+    "schemaName": "Software Solutions for SMEs",
+    "eyebrow": "Software Solutions",
+    "heading": "Custom software development for growing businesses",
+    "subheading": "We help early entrepreneurs turn software ideas into live products through application development, UX, and design thinking. Have an idea worth building? Get a free consultation.",
+    "servicesHeading": "Software services we provide",
     "services": [
-      { "name": "MVP", "detail": "Собираем первую рабочую версию продукта, чтобы быстро проверить спрос и снизить риски." },
-      { "name": "Веб-приложения", "detail": "Кастомные веб-приложения под ваши процессы и потребности клиентов." },
-      { "name": "Мобильные приложения", "detail": "Разработка iOS и Android приложений с реалистичным scope и предсказуемым delivery." },
-      { "name": "Кастомное ПО", "detail": "Индивидуальные решения, которые устраняют узкие места и ручные операции в бизнесе." },
-      { "name": "Аудит ПО", "detail": "Технический аудит текущих систем для выявления рисков, потерь и приоритетов развития." },
-      { "name": "Аудит доступности", "detail": "Выявляем проблемы доступности и улучшаем соответствие требованиям и удобство для всех пользователей." },
-      { "name": "UX-исследования", "detail": "Реальные пользовательские инсайты для более точных продуктовых решений." },
-      { "name": "Консультации", "detail": "Практические сессии по scope, roadmap и ключевым решениям по delivery." },
-      { "name": "Индивидуальные тех-вебинары", "detail": "Обучающие сессии для вашей команды под ваши инструменты и процессы." }
+      { "name": "MVP Software", "detail": "Build a focused first version to validate demand quickly and reduce risk." },
+      { "name": "Web Apps", "detail": "Custom web applications designed around your operations and customer needs." },
+      { "name": "Mobile Apps", "detail": "iOS and Android app development with practical scope and reliable delivery." },
+      { "name": "Custom Software", "detail": "Tailored software that fixes specific business bottlenecks and manual processes." },
+      { "name": "Software Audits", "detail": "Technical review of existing systems to identify risk, waste, and upgrade priorities." },
+      { "name": "Accessibility Audits", "detail": "Identify accessibility gaps and improve compliance and usability for all users." },
+      { "name": "UX Research", "detail": "Evidence-based user insight to shape product decisions and reduce rework." },
+      { "name": "Consultations", "detail": "Practical planning sessions for product scope, roadmap, and delivery decisions." },
+      { "name": "Custom Tech Webinars", "detail": "Tailored training sessions for your employees focused on your tools and workflows." }
     ],
-    "finalCtaHeading": "Нужно ПО, которое действительно подходит вашему бизнесу?",
-    "finalCtaBody": "Отправьте ваши цели и ограничения, и мы поможем сформировать правильный путь развития продукта.",
-    "finalCta": "Записаться на консультацию"
+    "finalCtaHeading": "Need software that truly fits your business?",
+    "finalCtaBody": "Send us your goals and constraints. We will help you shape the right product path.",
+    "finalCta": "Book a consultation"
   },
   "valuePropWebsitesPage": {
     "metadata": {
-      "title": "Для малого бизнеса: Больше результата от сайта",
-      "description": "Четкое ценностное предложение для малого бизнеса в Ирландии, который хочет получать больше клиентов через сильное онлайн-присутствие.",
-      "ogTitle": "Для малого бизнеса: Больше результата от сайта",
-      "ogDescription": "Практическая поддержка по сайту и маркетингу для измеримого роста малого бизнеса."
+      "title": "For Small Businesses: Better Website Results",
+      "description": "A clear value proposition for Irish small businesses that want more customers through a stronger online presence.",
+      "ogTitle": "For Small Businesses: Better Website Results",
+      "ogDescription": "Practical website and marketing support for Irish small businesses that want measurable growth."
     },
-    "eyebrow": "Для малого бизнеса",
-    "heading": "Больше видимости, больше доверия, больше заявок",
-    "subheading": "Если ваш сайт не помогает бизнесу расти, мы исправим это практическими улучшениями в сообщении, удобстве и конверсии.",
+    "eyebrow": "For Small Businesses",
+    "heading": "More visibility, more trust, more enquiries",
+    "subheading": "If your website is not helping your business grow, we can fix that with practical changes that improve discoverability, credibility, and conversion.",
     "points": [
-      "Понятное сообщение, которое объясняет ваш оффер за несколько секунд",
-      "Быстрые и доступные страницы, удобные на любом устройстве",
-      "SEO-структура и контент, которые помогают клиентам находить вас",
-      "Кампанийные и sales-материалы, привязанные к вашим целям"
+      "Clear messaging that explains your offer in seconds",
+      "Fast, accessible pages that are easy to use on any device",
+      "SEO and content structure that helps customers find you",
+      "Campaign assets and sales materials aligned with your goals"
     ],
-    "finalCtaHeading": "Хотите, чтобы сайт приносил больше пользы бизнесу?",
-    "finalCtaBody": "Расскажите, где вы сейчас и куда хотите прийти. Мы поможем закрыть этот разрыв.",
-    "finalCta": "Связаться"
+    "finalCtaHeading": "Want your website to work harder for your business?",
+    "finalCtaBody": "Tell us where you are now and where you want to get. We will help you bridge that gap.",
+    "finalCta": "Get in touch"
   },
   "valuePropSoftwarePage": {
+    "headingLine1": "Мы превращаем вашу идею",
+    "headingLine2": "в реальный цифровой продукт.",
     "metadata": {
-      "title": "Для SME: ПО, которое решает реальные задачи",
-      "description": "Четкое ценностное предложение для SME, которым нужно кастомное ПО, развитие продукта или outsourcing delivery.",
-      "ogTitle": "Для SME: ПО, которое решает реальные задачи",
-      "ogDescription": "От MVP до production-решений: помогаем SME снижать риск и повышать удовлетворенность пользователей."
+      "title": "For SMEs: Build Software That Solves Real Problems",
+      "description": "A clear value proposition for SMEs that need custom software, product development, or outsourced delivery support.",
+      "ogTitle": "For SMEs: Build Software That Solves Real Problems",
+      "ogDescription": "From MVP to production software, we help SMEs ship useful products with less risk and better user outcomes."
     },
     "eyebrow": "Для малого и среднего бизнеса",
-    "heading": "Создавайте ПО, которым действительно удобно пользоваться",
-    "subheading": "Мы поддерживаем SME, которым нужно кастомное ПО, более надежный delivery или партнер для аутсорс-разработки.",
+    "heading": "Программное обеспечение, которым люди действительно пользуются",
+    "subheading": "Мы помогаем компаниям, которым нужно кастомное ПО, более сильная команда доставки или надёжный партнёр для аутсорсинга проекта.",
     "points": [
-      "MVP-first планирование для снижения рисков и защиты бюджета",
-      "UX-ориентированная разработка для роста внедрения и удовлетворенности",
-      "Гибкая поддержка delivery, когда внутренняя команда перегружена",
-      "Понятная коммуникация для технических и нетехнических stakeholders"
+      "MVP-подход для снижения рисков и защиты бюджета",
+      "Разработка на основе UX для повышения вовлечённости",
+      "Гибкая поддержка, когда ваша внутренняя команда перегружена",
+      "Чёткая коммуникация для технических и нетехнических участников"
     ],
-    "finalCtaHeading": "Есть software-задача, которую нужно решить?",
-    "finalCtaBody": "Отправьте ваш контекст, и мы предложим практичный путь вперед.",
+    "process": {
+      "eyebrow": "Как это работает",
+      "title": "От идеи до продукта",
+      "titleAccent": "за пять простых шагов",
+      "subheading": "Расскажите нам свою идею, а мы возьмём всё в свои руки.",
+      "steps": [
+        { "number": "01", "title": "Бриф и объём", "description": "Вы делитесь идеей, целями и ограничениями. Мы задаём правильные вопросы, чтобы глубоко понять ваш бизнес." },
+        { "number": "02", "title": "Дизайн и план", "description": "Вместе определяем архитектуру решения, пользовательские сценарии и дорожную карту — без сюрпризов." },
+        { "number": "03", "title": "Разработка MVP", "description": "Быстро строим ядро продукта, фокусируясь на том, что создаёт наибольшую ценность в первую очередь." },
+        { "number": "04", "title": "Тест и доработка", "description": "Вы тестируете с реальными пользователями. Мы итерируем на основе реальных отзывов, а не предположений." },
+        { "number": "05", "title": "Запуск и рост", "description": "Деплоим, передаём проект и остаёмся доступны по мере масштабирования продукта." }
+      ]
+    },
+    "finalCtaHeading": "Есть задача в области разработки ПО?",
+    "finalCtaBody": "Опишите ситуацию — мы предложим практичный путь вперёд.",
     "finalCta": "Написать нам"
   },
   "servicePages": {
     "intro": {
-      "ie": "Базируемся в Ирландии. Работаем с МСБ и начинающими предпринимателями по всей Ирландии и Северной Ирландии.",
-      "gb": "Базируемся в Ирландии. Работаем с МСБ и начинающими предпринимателями по всей Ирландии и Великобритании.",
-      "it": "Базируемся в Ирландии. Работаем с МСБ и начинающими предпринимателями по всей Италии.",
-      "ch": "Базируемся в Ирландии. Работаем с МСБ и начинающими предпринимателями по всей Швейцарии.",
-      "suffixWebDev": "Более 15 лет опыта. Фиксированные цены, без неожиданностей.",
-      "suffixAppDev": "Фиксированные цены. Никаких скрытых расходов."
+      "ie": "Based in Ireland. Serving SMEs and starting entrepreneurs across Ireland and Northern Ireland.",
+      "gb": "Based in Ireland. Serving SMEs and starting entrepreneurs across Ireland and the UK.",
+      "it": "Based in Ireland. Serving SMEs and starting entrepreneurs across Italy.",
+      "ch": "Based in Ireland. Serving SMEs and starting entrepreneurs across Switzerland.",
+      "suffixWebDev": "15+ years of experience. Fixed pricing, no surprises.",
+      "suffixAppDev": "Fixed pricing. No hidden costs."
     },
     "webDev": {
       "h1": {
-        "ie": "Веб-разработка в Ирландии",
-        "gb": "Веб-разработка в Ирландии и Великобритании",
-        "it": "Веб-разработка в Италии",
-        "ch": "Веб-разработка в Швейцарии"
+        "ie": "Web Development in Ireland",
+        "gb": "Web Development in Ireland & the UK",
+        "it": "Web Development in Italy",
+        "ch": "Web Development in Switzerland"
       },
-      "breadcrumb": "Веб-разработка",
+      "breadcrumb": "Web Development",
       "desc": {
-        "ie": "Профессиональные услуги веб-разработки для ирландских компаний. Мы создаём сайты под заказ, бизнес-платформы и решения для электронной коммерции, которые приносят реальные результаты.",
-        "gb": "Профессиональные услуги веб-разработки для компаний Великобритании и Ирландии. Мы создаём сайты под заказ, бизнес-платформы и решения для электронной коммерции, которые приносят реальные результаты.",
-        "it": "Профессиональные услуги веб-разработки для итальянских компаний. Мы создаём сайты под заказ, бизнес-платформы и решения для электронной коммерции, которые приносят реальные результаты.",
-        "ch": "Профессиональные услуги веб-разработки для швейцарских компаний. Мы создаём сайты под заказ, бизнес-платформы и решения для электронной коммерции, которые приносят реальные результаты."
+        "ie": "Professional web development services for Irish businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
+        "gb": "Professional web development services for UK and Irish businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
+        "it": "Professional web development services for Italian businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
+        "ch": "Professional web development services for Swiss-Italian businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results."
       },
-      "ctaHeading": "Готовы создать ваш сайт?",
-      "whatWeDoHeading": "Что Мы Создаём",
-      "whatWeDoSub": "От простых бизнес-сайтов до сложных веб-приложений — мы делаем всё.",
+      "ctaHeading": "Ready to build your web presence?",
+      "whatWeDoHeading": "What We Build",
+      "whatWeDoSub": "From simple business websites to complex web applications — we cover it all.",
       "whatWeDo": [
-        { "title": "Корпоративные Сайты", "description": "Чистые, профессиональные сайты, которые представляют ваш бренд, продвигаются в Google и превращают посетителей в клиентов." },
-        { "title": "Интернет-Магазины", "description": "Продавайте онлайн с уверенностью. Мы создаём и настраиваем ваш магазин, платёжные системы и управление товарами с нуля." },
-        { "title": "Сайты на CMS", "description": "Обновляйте контент без знания кода. Мы работаем на проверенных платформах, чтобы вы оставались у руля после запуска." },
-        { "title": "Веб-Приложения", "description": "Системы бронирования, клиентские порталы, дашборды, маркетплейсы — если бизнесу нужно больше, чем сайт, мы это создадим." },
-        { "title": "Лендинги", "description": "Запуститесь быстро с целевой страницей, оптимизированной под конверсии для вашего продукта, кампании или услуги." },
-        { "title": "Редизайн Сайта", "description": "Сайт не работает так, как нужно? Мы перестроим его правильно — быстрее, красивее и проще в управлении." }
+        { "title": "Business Websites", "description": "Clean, professional websites that represent your brand, rank on Google, and turn visitors into customers." },
+        { "title": "E-Commerce Stores", "description": "Sell online with confidence. We build and configure your store, payment processing, and product management from scratch." },
+        { "title": "CMS-Powered Sites", "description": "Update your content without touching code. We build on trusted platforms so you stay in control after launch." },
+        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces — if your business needs more than a website, we build it." },
+        { "title": "Landing Pages", "description": "Launch fast with a focused, conversion-optimised page for your product, campaign, or service." },
+        { "title": "Website Redesign", "description": "Got a website that's letting you down? We rebuild it properly — faster, better-looking, and easier to manage." }
       ],
-      "whyHeading": "Почему Компании Выбирают Нас",
+      "whyHeading": "Why Businesses Choose Us",
       "why": [
-        { "title": "Фиксированная Цена, Без Сюрпризов", "description": "Вы знаете полную стоимость до начала работы. Никаких скрытых доплат, никаких неожиданных счетов посреди проекта." },
-        { "title": "Mobile-First по Умолчанию", "description": "Каждый сайт, который мы создаём, отлично работает на телефонах, планшетах и компьютерах. Это не опция — это наш стандарт." },
-        { "title": "Создан для Поисковых Систем", "description": "Чистый код, быстрая загрузка, правильная структура. Ваш сайт готов к ранжированию с первого дня." },
-        { "title": "Доступен для Всех", "description": "Мы строим по стандартам WCAG 2.1 AA, чтобы сайт работал для всех пользователей и соответствовал правовым требованиям." }
+        { "title": "Fixed Price, No Surprises", "description": "You know the full cost before we start. No hidden extras, no surprise invoices mid-project." },
+        { "title": "Mobile-First by Default", "description": "Every website we build works perfectly on phones, tablets, and desktops. It's not optional — it's how we work." },
+        { "title": "Built for Search Engines", "description": "Clean code, fast loading, proper structure. Your site is ready to rank from day one." },
+        { "title": "Accessible to Everyone", "description": "We build to WCAG 2.1 AA standards so your site works for all users and meets legal requirements." }
       ],
-      "deliverablesHeading": "Что Вы Получаете",
+      "deliverablesHeading": "What You Get",
       "deliverables": [
-        "Полностью индивидуальный сайт, разработанный под ваш бренд",
-        "Страницы, адаптированные для мобильных устройств и быстро загружающиеся",
-        "SEO-основа настроена с первого дня: мета-теги, карта сайта, структурированные данные",
-        "CMS-система для самостоятельного обновления контента",
-        "3 месяца поддержки после запуска включены",
-        "Полная передача с простой документацией"
+        "Fully custom website designed to match your brand",
+        "Mobile-friendly, fast-loading pages out of the box",
+        "SEO foundations: meta tags, sitemap, structured data",
+        "Content management system so you can update it yourself",
+        "3 months of post-launch support included",
+        "Full handover with simple documentation"
       ],
-      "finalCtaHeading": "Готовы обсудить ваш сайт?",
-      "finalCtaBody": "Расскажите, что вам нужно, и мы пришлём бесплатное предложение без обязательств в течение 48 часов.",
-      "finalCtaBtn": "Получить Бесплатное Предложение"
+      "finalCtaHeading": "Ready to talk about your website?",
+      "finalCtaBody": "Tell us what you need and we'll send you a free, no-obligation quote within 48 hours.",
+      "finalCtaBtn": "Get a Free Quote"
     },
     "appDev": {
       "h1": {
-        "ie": "Разработка приложений в Ирландии",
-        "gb": "Разработка приложений в Ирландии и Великобритании",
-        "it": "Разработка приложений в Италии",
-        "ch": "Разработка приложений в Швейцарии"
+        "ie": "App Development in Ireland",
+        "gb": "App Development in Ireland & the UK",
+        "it": "App Development in Italy",
+        "ch": "App Development in Switzerland"
       },
-      "breadcrumb": "Разработка приложений",
+      "breadcrumb": "App Development",
       "desc": {
-        "ie": "От MVP до готового продукта. Создаём мобильные приложения, веб-приложения и PWA для ирландских компаний. Фиксированная цена. Никаких скрытых расходов.",
-        "gb": "От MVP до готового продукта. Создаём мобильные приложения, веб-приложения и PWA для компаний Великобритании и Ирландии. Фиксированная цена. Никаких скрытых расходов.",
-        "it": "От MVP до готового продукта. Создаём мобильные приложения, веб-приложения и PWA для итальянских компаний. Фиксированная цена. Никаких скрытых расходов.",
-        "ch": "От MVP до готового продукта. Создаём мобильные приложения, веб-приложения и PWA для швейцарских и итальянских компаний. Фиксированная цена. Никаких скрытых расходов."
+        "ie": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for Irish businesses. Fixed pricing. No hidden costs.",
+        "gb": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for UK and Irish businesses. Fixed pricing. No hidden costs.",
+        "it": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for Italian businesses. Fixed pricing. No hidden costs.",
+        "ch": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for Swiss and Italian businesses. Fixed pricing. No hidden costs."
       },
-      "ctaPrimary": "Расскажите о вашей идее",
-      "ctaSecondary": "Запросить бесплатную консультацию",
-      "whatWeDoHeading": "Что Мы Создаём",
-      "whatWeDoSub": "От первого прототипа до готового продукта — мы охватываем каждый этап.",
+      "ctaPrimary": "Tell us your idea",
+      "ctaSecondary": "Request free consultation",
+      "whatWeDoHeading": "What We Build",
+      "whatWeDoSub": "From a first prototype to a full production app — we cover every stage.",
       "whatWeDo": [
-        { "title": "iOS-приложения", "description": "Нативные и React Native приложения для iPhone и iPad. Плавные, производительные, готовые для App Store." },
-        { "title": "Android-приложения", "description": "Нативные и кросс-платформенные приложения Android, отвечающие стандартам Google Play и оптимизированные для широкого круга устройств." },
-        { "title": "Кросс-платформенные приложения", "description": "Одна кодовая база, две платформы. Используем React Native и Expo, чтобы запустить приложение на iOS и Android без удвоения бюджета." },
-        { "title": "Прогрессивные веб-приложения", "description": "Веб-приложения, которые устанавливаются и работают как нативные. Экономичный путь к мобильному опыту." },
-        { "title": "Веб-приложения", "description": "Системы бронирования, клиентские порталы, дашборды, маркетплейсы — если вашему бизнесу нужно больше, чем сайт, мы это создадим." },
-        { "title": "Разработка MVP", "description": "Запускаем минимальную версию, которая доказывает идею. Реальные пользователи, реальная обратная связь, минимальные расходы — затем масштабируем." }
+        { "title": "iOS Apps", "description": "Native and React Native apps for iPhone and iPad. Smooth, performant, App Store ready." },
+        { "title": "Android Apps", "description": "Native and cross-platform Android apps, built to Google Play standards and optimised for a wide range of devices." },
+        { "title": "Cross-Platform Apps", "description": "One codebase, two platforms. We use React Native and Expo so you launch on iOS and Android without doubling the budget." },
+        { "title": "Progressive Web Apps", "description": "Web apps that install and feel like native apps. A cost-effective route to mobile-first experiences." },
+        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces — if your business needs more than a website, we build it." },
+        { "title": "MVP Development", "description": "Launch the smallest version that proves your idea. Real users, real feedback, minimum spend — then we scale." }
       ],
-      "whyHeading": "Почему Нас Выбирают Ирландские Компании",
+      "whyHeading": "Why Irish Businesses Choose Us",
       "why": [
-        { "number": "01", "title": "Фиксированная цена с первого дня", "description": "Вы знаете полную стоимость до того, как мы напишем строку кода. Никакой почасовой оплаты, никаких неожиданных счетов." },
-        { "number": "02", "title": "Доступность встроена", "description": "Мы строим по стандартам WCAG 2.1 AA, чтобы ваше приложение работало для всех пользователей и соответствовало европейским требованиям." },
-        { "number": "03", "title": "Дизайн-мышление на первом месте", "description": "Валидируем идею до разработки. Идея тестируется с реальными пользователями до того, как хоть одна функция попадёт в продакшн." },
-        { "number": "04", "title": "15+ лет опыта", "description": "Наша команда запускала продукты в промышленных масштабах. Мы приносим этот опыт в каждый проект, независимо от его размера." }
+        { "number": "01", "title": "Fixed Price from Day One", "description": "You know the full cost before we write a line of code. No hourly billing, no scope creep surprises." },
+        { "number": "02", "title": "Accessibility Built In", "description": "We build to WCAG 2.1 AA so your app works for all users and meets EU accessibility requirements from launch." },
+        { "number": "03", "title": "Design Thinking First", "description": "We validate before we build. Your idea is tested with real users before a single feature is committed to production." },
+        { "number": "04", "title": "15+ Years of Experience", "description": "Our team has shipped products at scale. We bring that experience to every project, no matter the size." }
       ]
     },
     "uxAudit": {
       "h1": {
-        "ie": "Аудит UX и доступности для Ирландии",
-        "gb": "Аудит UX и доступности для Ирландии и Великобритании",
-        "it": "Аудит UX и доступности для Италии",
-        "ch": "Аудит UX и доступности для Швейцарии"
+        "ie": "UX & Accessibility Audit for Ireland",
+        "gb": "UX & Accessibility Audit for Ireland & the UK",
+        "it": "UX & Accessibility Audit for Italy",
+        "ch": "UX & Accessibility Audit for Switzerland"
       },
-      "breadcrumb": "Аудит UX и доступности",
-      "desc": "Убедитесь, что ваш сайт или приложение доступны для всех пользователей и соответствуют стандартам WCAG 2.1 AA. Получите подробный отчёт с практическими рекомендациями.",
-      "descCh": "Убедитесь, что ваш сайт или приложение доступны для всех пользователей и соответствуют стандартам WCAG 2.1 AA. Получите подробный отчёт с практическими рекомендациями для швейцарских компаний в соответствии с европейскими требованиями доступности.",
-      "euTitle": "Соответствие Европейскому закону о доступности",
-      "euBody": "Срок действия закона ЕС о доступности истёк в июне 2025 года. Если ваш сайт или приложение всё ещё не соответствует требованиям, вы уже несёте юридические риски. Мы поможем быстро исправить ситуацию.",
-      "whatHeading": "Что вы получаете",
-      "item1": "Подробный отчёт об аудите со скриншотами",
-      "item2": "Проблемы, сгруппированные по серьёзности (критические, значимые, незначительные)",
-      "item3": "Конкретные рекомендации для каждой проблемы",
-      "item4": "Общий балл соответствия и сравнение со стандартами",
-      "item5": "Необязательный план устранения с приоритетами внедрения",
-      "item6": "Консультационный звонок для обсуждения результатов",
-      "ctaHeading": "Начните с бесплатной 15-минутной проверки доступности",
-      "ctaBtn": "Забронировать бесплатную проверку",
-      "consultationAnchor": "Запросить бесплатный аудит"
+      "breadcrumb": "UX & Accessibility Audit",
+      "desc": "Ensure your website or app is accessible to all users and compliant with WCAG 2.1 AA standards. Get a detailed audit report with actionable recommendations.",
+      "descCh": "Ensure your website or app is accessible to all users and compliant with WCAG 2.1 AA standards. Get a detailed audit report with actionable recommendations for Swiss businesses under EU accessibility regulations.",
+      "euTitle": "EU Accessibility Act Compliance",
+      "euBody": "The EU Accessibility Act deadline passed in June 2025. If your site or app is not yet compliant, you are already at risk. We help you catch up fast and avoid legal exposure.",
+      "whatHeading": "What You Get",
+      "item1": "Detailed audit report with screenshots",
+      "item2": "Issues categorized by severity (critical, major, minor)",
+      "item3": "Specific recommendations for each issue",
+      "item4": "Overall compliance score and comparison to standards",
+      "item5": "Optional remediation plan with implementation priorities",
+      "item6": "Consultation call to discuss findings",
+      "ctaHeading": "Start with a free 15-minute accessibility health check",
+      "ctaBtn": "Book Your Free Check",
+      "consultationAnchor": "Request a free audit"
     },
     "ideaMvp": {
       "h1": {
-        "ie": "Проверка идеи и разработка MVP в Ирландии",
-        "gb": "Проверка идеи и разработка MVP в Ирландии и Великобритании",
-        "it": "Проверка идеи и разработка MVP в Италии",
-        "ch": "Проверка идеи и разработка MVP в Швейцарии"
+        "ie": "Idea Validation & MVP Development in Ireland",
+        "gb": "Idea Validation & MVP Development in Ireland & the UK",
+        "it": "Idea Validation & MVP Development in Italy",
+        "ch": "Idea Validation & MVP Development in Switzerland"
       },
-      "breadcrumb": "Проверка идеи и MVP",
-      "desc": "Не уверены, сработает ли ваша идея? Мы поможем проверить её до начала разработки — затем создадим MVP для тестирования с реальными пользователями.",
-      "whatHeading": "Что Мы Делаем",
+      "breadcrumb": "Idea Validation & MVP",
+      "desc": "Not sure if your idea will work? We help you validate it before spending a penny on a full build — then create a lean MVP you can test with real users.",
+      "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Воркшоп по идее", "description": "Структурированная сессия для анализа идеи, выявления гипотез и определения ключевой проблемы, которую вы решаете." },
-        { "title": "Исследование рынка и пользователей", "description": "Проверяем, существует ли рынок, кто ваши пользователи и готовы ли они платить за то, что вы строите." },
-        { "title": "Прототипирование", "description": "Создаём кликабельный прототип для тестирования с реальными пользователями до начала полноценной разработки." },
-        { "title": "Разработка MVP", "description": "Создаём минимальную версию продукта, доказывающую концепцию. Затем итерируем на основе обратной связи." }
+        { "title": "Idea Workshop", "description": "We run a structured session to explore your idea, identify assumptions, and map out the core problem you are solving." },
+        { "title": "Market & User Research", "description": "We check if the market exists, who your users are, and whether they would pay for what you are building." },
+        { "title": "Prototyping", "description": "We create a clickable prototype you can test with real users before committing to a full build." },
+        { "title": "MVP Build", "description": "We build the smallest version of your product that proves the concept. Then we iterate based on feedback." }
       ],
-      "whyHeading": "Почему Стоит Валидировать До Разработки",
+      "whyHeading": "Why Validate Before You Build",
       "whyItems": [
-        "Сэкономьте месяцы разработки на неправильной идее",
-        "Получите реальную обратную связь до инвестиций в производственный код",
-        "Впечатлите инвесторов валидированными данными и рабочим прототипом",
-        "Запуститесь быстрее и дешевле с сфокусированным MVP"
+        "Save months of development time on the wrong idea",
+        "Get real user feedback before investing in production code",
+        "Impress investors with validated data and a working prototype",
+        "Launch faster and cheaper with a focused MVP"
       ]
     },
     "uxResearch": {
       "h1": {
-        "ie": "UX-исследования в Ирландии",
-        "gb": "UX-исследования в Ирландии и Великобритании",
-        "it": "UX-исследования в Италии",
-        "ch": "UX-исследования в Швейцарии"
+        "ie": "UX Research Services in Ireland",
+        "gb": "UX Research Services in Ireland & the UK",
+        "it": "UX Research Services in Italy",
+        "ch": "UX Research Services in Switzerland"
       },
-      "breadcrumb": "UX-исследования",
-      "desc": "Уже есть продукт? Мы исследуем, как реальные люди им пользуются, выявим проблемы юзабилити и дадим чёткий приоритизированный список улучшений.",
-      "whatHeading": "Что Мы Делаем",
+      "breadcrumb": "UX Research",
+      "desc": "Already have a product? We research how real people use it, identify usability problems, and give you a clear prioritised list of improvements.",
+      "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Интервью с пользователями", "description": "Беседуем с вашими реальными пользователями, чтобы понять их цели, разочарования и ментальные модели." },
-        { "title": "Юзабилити-тестирование", "description": "Наблюдаем, как пользователи выполняют реальные задачи, и фиксируем, где именно возникают трудности." },
-        { "title": "Эвристическая оценка", "description": "Анализируем продукт по установленным принципам UX и выявляем проблемы без участия пользователей." },
-        { "title": "Отчёт по исследованию", "description": "Получаете чёткий приоритизированный отчёт со скриншотами, оценками серьёзности и конкретными рекомендациями." }
+        { "title": "User Interviews", "description": "We talk to your real users to understand their goals, frustrations, and mental models." },
+        { "title": "Usability Testing", "description": "We observe users completing real tasks in your product and record exactly where they struggle." },
+        { "title": "Heuristic Evaluation", "description": "We review your product against established UX principles and identify issues without needing users." },
+        { "title": "Research Report", "description": "You receive a clear, prioritised report with screenshots, severity ratings, and specific recommendations." }
       ],
-      "deliverableHeading": "Что Вы Получаете",
+      "deliverableHeading": "What You Get",
       "deliverables": [
-        "Полный отчёт с результатами и доказательствами",
-        "Проблемы, приоритизированные по влиянию и трудозатратам",
-        "Конкретные, применимые рекомендации",
-        "Необязательный follow-up звонок для обсуждения отчёта"
+        "Full research report with findings and evidence",
+        "Issues prioritised by impact and effort",
+        "Specific, actionable recommendations",
+        "Optional follow-up call to discuss the report"
       ]
     },
     "uxDesign": {
       "h1": {
-        "ie": "UX-дизайн в Ирландии",
-        "gb": "UX-дизайн в Ирландии и Великобритании",
-        "it": "UX-дизайн в Италии",
-        "ch": "UX-дизайн в Швейцарии"
+        "ie": "UX Design Services in Ireland",
+        "gb": "UX Design Services in Ireland & the UK",
+        "it": "UX Design Services in Italy",
+        "ch": "UX Design Services in Switzerland"
       },
-      "breadcrumb": "UX-дизайн",
-      "desc": "От вайрфреймов до готового UI — превращаем результаты исследований и идеи продукта в интуитивные, доступные дизайны, готовые к разработке.",
-      "whatHeading": "Что Мы Делаем",
+      "breadcrumb": "UX Design",
+      "desc": "From wireframes to polished UI — we turn research findings and product ideas into designs that are intuitive, accessible, and ready to build.",
+      "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Информационная архитектура", "description": "Структурируем контент и навигацию так, чтобы пользователи всегда знали, где они находятся и куда идти." },
-        { "title": "Вайрфреймирование", "description": "Низкодетальные макеты, определяющие структуру и потоки до инвестиций в визуальный дизайн." },
-        { "title": "UI-дизайн", "description": "Высокодетальные экраны в вашем бренде — чистые, современные и созданные для конверсии." },
-        { "title": "Дизайн-система", "description": "Библиотека переиспользуемых компонентов, обеспечивающая единообразие продукта и ускоряющая разработку." }
+        { "title": "Information Architecture", "description": "We structure your content and navigation so users always know where they are and where to go next." },
+        { "title": "Wireframing", "description": "Low-fidelity layouts that define the flow and structure before we invest in visual design." },
+        { "title": "UI Design", "description": "High-fidelity screens in your brand — clean, modern, and built to convert." },
+        { "title": "Design System", "description": "A reusable component library that keeps your product consistent and speeds up future development." }
       ],
-      "deliverableHeading": "Что Вы Получаете",
+      "deliverableHeading": "What You Get",
       "deliverables": [
-        "Figma-файлы со всеми экранами и компонентами",
-        "Аннотированные дизайны для разработчиков",
-        "Адаптивные макеты для мобильных, планшетов и десктопа",
-        "Аннотации доступности (контраст цветов, порядок фокуса, ARIA-заметки)"
+        "Figma files with all screens and components",
+        "Annotated designs for developers",
+        "Responsive layouts for mobile, tablet, and desktop",
+        "Accessibility annotations (colour contrast, focus order, ARIA notes)"
       ]
     },
     "appPrototype": {
       "h1": {
-        "ie": "Прототипирование приложений в Ирландии",
-        "gb": "Прототипирование приложений в Ирландии и Великобритании",
-        "it": "Прототипирование приложений в Италии",
-        "ch": "Прототипирование приложений в Швейцарии"
+        "ie": "App Prototyping Service in Ireland",
+        "gb": "App Prototyping Service in Ireland & the UK",
+        "it": "App Prototyping Service in Italy",
+        "ch": "App Prototyping Service in Switzerland"
       },
-      "breadcrumb": "Прототип приложения",
-      "desc": "Прежде чем начинать полноценную разработку, мы создаём интерактивный кликабельный прототип. Тестируйте с пользователями, показывайте инвесторам, проверяйте каждый ключевой сценарий.",
-      "whatHeading": "Что Мы Создаём",
+      "breadcrumb": "App Prototype",
+      "desc": "Before committing to a full build, we create an interactive, clickable prototype of your app. Test it with users, share it with investors, and validate every key flow.",
+      "whatHeading": "What We Build",
       "whatItems": [
-        { "title": "Кликабельный прототип в Figma", "description": "Полностью интерактивный прототип, которым можно поделиться по ссылке. Без кода, но ощущается как реальный продукт." },
-        { "title": "Карта пользовательских сценариев", "description": "Проектируем каждый ключевой сценарий, чтобы прототип охватывал самые важные потоки." },
-        { "title": "Тестирование с пользователями", "description": "Проводим раунд пользовательских тестов на прототипе и докладываем, что работает, а что нужно изменить." },
-        { "title": "Презентация для инвесторов", "description": "Полированный прототип с сопровождающей документацией для питчей инвесторам и демонстраций продукта." }
+        { "title": "Clickable Figma Prototype", "description": "A fully interactive prototype you can share with a link. No code required, but it feels like the real thing." },
+        { "title": "User Flow Mapping", "description": "We map every key user journey so the prototype covers the flows that matter most." },
+        { "title": "User Testing", "description": "We run a round of user tests on the prototype and report back on what works and what needs changing." },
+        { "title": "Investor-Ready Presentation", "description": "A polished prototype with supporting documentation for investor pitches and product demos." }
       ],
-      "whyHeading": "Почему Сначала Прототип",
+      "whyHeading": "Why Prototype First",
       "whyItems": [
-        "Найдите проблемы юзабилити до того, как их будет дорого исправлять",
-        "Валидируйте концепцию с реальными пользователями за небольшие деньги",
-        "Получайте более точные оценки разработчиков на основе детального прототипа",
-        "Выступайте уверенно — показывайте, а не просто рассказывайте"
+        "Find usability problems before they are expensive to fix",
+        "Validate your concept with real users at low cost",
+        "Get clearer developer estimates from a detailed prototype",
+        "Pitch with confidence — show, don't just tell"
       ]
     },
     "mobileAppDev": {
       "h1": {
-        "ie": "Разработка мобильных приложений в Ирландии",
-        "gb": "Разработка мобильных приложений в Ирландии и Великобритании",
-        "it": "Разработка мобильных приложений в Италии",
-        "ch": "Разработка мобильных приложений в Швейцарии"
+        "ie": "Mobile App Development in Ireland",
+        "gb": "Mobile App Development in Ireland & the UK",
+        "it": "Mobile App Development in Italy",
+        "ch": "Mobile App Development in Switzerland"
       },
-      "breadcrumb": "Разработка мобильных приложений",
-      "desc": "Создаём мобильные приложения для iOS и Android, которые полюбят ваши пользователи. Кросс-платформенная разработка — запуск на обеих платформах без удвоения затрат.",
-      "whatHeading": "Что Мы Создаём",
+      "breadcrumb": "Mobile App Development",
+      "desc": "We build mobile apps for iOS and Android that your users will love. Cross-platform development means you launch on both platforms without doubling the cost.",
+      "whatHeading": "What We Build",
       "whatItems": [
-        { "title": "iOS-приложения", "description": "Нативные Swift и React Native приложения для iPhone и iPad, оптимизированные для App Store." },
-        { "title": "Android-приложения", "description": "Приложения для всего спектра Android-устройств, оптимизированные для Google Play." },
-        { "title": "Кросс-платформенные приложения", "description": "Одна кодовая база, обе платформы. React Native и Expo позволяют запускать на iOS и Android с общей командой и бюджетом." },
-        { "title": "Поддержка приложений", "description": "Пост-релизная поддержка, обновления ОС, исправление ошибок и разработка новых функций по мере роста продукта." }
+        { "title": "iOS Apps", "description": "Native Swift and React Native apps for iPhone and iPad, optimised for the App Store." },
+        { "title": "Android Apps", "description": "Apps built for the full range of Android devices and optimised for Google Play." },
+        { "title": "Cross-Platform Apps", "description": "One codebase, both platforms. React Native and Expo let you ship to iOS and Android with a shared team and budget." },
+        { "title": "App Maintenance", "description": "Post-launch support, OS updates, bug fixes, and new feature development as your product grows." }
       ],
-      "whyHeading": "Почему Выбирают Нас",
+      "whyHeading": "Why Choose Us",
       "whyItems": [
-        { "title": "Доступность с первого дня", "description": "Каждое приложение соответствует WCAG 2.1 AA. VoiceOver, TalkBack и динамический текст тестируются до запуска." },
-        { "title": "Подход Design Thinking", "description": "Валидируем потоки и экраны с пользователями до написания производственного кода. Вы запускаете то, что нужно пользователям." },
-        { "title": "Фиксированная цена", "description": "Стоимость известна до начала работы. Никакой почасовой оплаты, никаких неожиданных счетов в конце спринта." },
-        { "title": "Полная команда", "description": "Дизайн, фронтенд, бэкенд и DevOps под одной крышей. Никаких проблем с передачей задач, никаких накладных расходов на координацию." }
+        { "title": "Accessibility from Day One", "description": "Every app we build meets WCAG 2.1 AA. VoiceOver, TalkBack, and dynamic text all tested before launch." },
+        { "title": "Design Thinking Approach", "description": "We validate flows and screens with users before we write production code. You ship what users actually want." },
+        { "title": "Fixed Pricing", "description": "You know the cost before we start. No hourly billing, no surprise invoices at the end of a sprint." },
+        { "title": "Full Stack Team", "description": "Design, frontend, backend, and DevOps all under one roof. No handoff problems, no coordination overhead." }
       ]
     },
     "softwareConsultancy": {
       "h1": {
-        "ie": "IT-консалтинг в Ирландии",
-        "gb": "IT-консалтинг в Ирландии и Великобритании",
-        "it": "IT-консалтинг в Италии",
-        "ch": "IT-консалтинг в Швейцарии"
+        "ie": "Software Consultancy in Ireland",
+        "gb": "Software Consultancy in Ireland & the UK",
+        "it": "Software Consultancy in Italy",
+        "ch": "Software Consultancy in Switzerland"
       },
-      "breadcrumb": "IT-консалтинг",
-      "desc": "Не уверены, что строить, какую технологию выбрать или как вернуть существующий продукт на правильный путь? Даём чёткие честные советы на понятном языке — без привязки к вендорам.",
-      "whatHeading": "С Чем Мы Помогаем",
+      "breadcrumb": "Software Consultancy",
+      "desc": "Not sure what to build, which technology to choose, or how to get your existing product back on track? We give you clear, honest advice in plain language — no vendor lock-in.",
+      "whatHeading": "What We Help With",
       "whatItems": [
-        { "title": "Технологическая стратегия", "description": "Стек, платформа, архитектура. Излагаем варианты понятно и помогаем выбрать с уверенностью." },
-        { "title": "CTO как услуга", "description": "Нужно старшее техническое руководство без найма на полную ставку? Мы выступаем как ваш дробный CTO столько, сколько нужно." },
-        { "title": "Аудит продукта", "description": "Анализируем ваш существующий продукт или кодовую базу и даём понятный отчёт о том, что работает, а что нет." },
-        { "title": "Советы по масштабированию команды", "description": "Строить внутри, аутсорсить или гибридно? Помогаем решить, что имеет смысл для вашего этапа и бюджета." }
+        { "title": "Technology Strategy", "description": "Which stack, which platform, which architecture. We lay out the options clearly and help you choose with confidence." },
+        { "title": "CTO as a Service", "description": "Need senior technical leadership without a full-time hire? We act as your fractional CTO for as long as you need." },
+        { "title": "Product Review", "description": "We review your existing product or codebase and give you a plain-English report on what's working and what isn't." },
+        { "title": "Team Scaling Advice", "description": "Build in-house, outsource, or hybrid? We help you decide what makes sense for your stage and budget." }
       ],
-      "whyHeading": "Почему Обратиться К Нам",
+      "whyHeading": "Why Consult With Us",
       "whyItems": [
-        "15+ лет опыта создания продуктов в промышленных масштабах",
-        "Честные советы — говорим то, что нужно услышать, а не то, что хочется",
-        "Общаемся понятным языком, чтобы вы принимали взвешенные решения",
-        "У нас нет финансовой заинтересованности в рекомендации конкретных вендоров или инструментов"
+        "15+ years of experience building products at scale",
+        "Honest advice — we tell you what you need to hear, not what you want to hear",
+        "We speak plain English so you can make informed decisions",
+        "We have no financial interest in recommending specific vendors or tools"
       ]
     },
     "maintenanceSupport": {
       "h1": {
-        "ie": "Поддержка и обслуживание приложений в Ирландии",
-        "gb": "Поддержка и обслуживание приложений в Ирландии и Великобритании",
-        "it": "Поддержка и обслуживание приложений в Италии",
-        "ch": "Поддержка и обслуживание приложений в Швейцарии"
+        "ie": "App Maintenance & Support in Ireland",
+        "gb": "App Maintenance & Support in Ireland & the UK",
+        "it": "App Maintenance & Support in Italy",
+        "ch": "App Maintenance & Support in Switzerland"
       },
-      "breadcrumb": "Сопровождение и поддержка",
-      "desc": "Уже есть приложение или сайт, которому нужен уход? Берём его на себя — исправляем баги, обновляем, добавляем функции и обеспечиваем стабильную работу каждый месяц.",
-      "whatHeading": "Что Включено",
+      "breadcrumb": "Maintenance & Support",
+      "desc": "Already have an app or website that needs looking after? We take it on — fixing bugs, keeping it up to date, adding features, and ensuring it runs smoothly month to month.",
+      "whatHeading": "What's Included",
       "whatItems": [
-        { "title": "Исправление ошибок", "description": "Быстро реагируем на проблемы и устраняем баги до того, как они скажутся на пользователях или репутации." },
-        { "title": "Обновления безопасности", "description": "Регулярное обновление зависимостей, патчи безопасности и мониторинг уязвимостей для защиты продукта." },
-        { "title": "Мониторинг производительности", "description": "Отслеживаем доступность, время загрузки и ошибки — и устраняем проблемы до того, как их заметите вы или ваши пользователи." },
-        { "title": "Разработка функций", "description": "Клиенты с ретейнером получают выделенную мощность разработки каждый месяц для новых функций, улучшений и интеграций." }
+        { "title": "Bug Fixes", "description": "We respond to issues fast and fix bugs before they impact your users or your reputation." },
+        { "title": "Security Updates", "description": "Regular dependency updates, security patches, and vulnerability monitoring to keep your product safe." },
+        { "title": "Performance Monitoring", "description": "We track uptime, load times, and errors — and fix problems before you or your users notice them." },
+        { "title": "Feature Development", "description": "Retainer clients get dedicated development capacity each month for new features, improvements, and integrations." }
       ],
-      "retainerHeading": "Планы ретейнерной поддержки",
-      "retainerBody": "Предлагаем ежемесячные ретейнеры поддержки, начиная с фиксированного количества часов разработки. Вы точно знаете, что получаете и сколько это стоит.",
-      "whyHeading": "Почему Ретейнер Лучше Разовых Работ",
+      "retainerHeading": "Support Retainer Plans",
+      "retainerBody": "We offer monthly support retainers starting from a fixed number of development hours. You know exactly what you are getting and what it costs.",
+      "whyHeading": "Why a Retainer Works Better Than Ad-Hoc",
       "whyItems": [
-        "Предсказуемые ежемесячные расходы без неожиданных счетов",
-        "Выделенная команда, знающая ваш продукт изнутри",
-        "Более быстрое время реакции, чем при разовых обращениях",
-        "Проактивный мониторинг означает меньше экстренных ситуаций"
+        "Predictable monthly cost with no surprise invoices",
+        "Dedicated team who knows your product inside out",
+        "Faster response times than one-off engagements",
+        "Proactive monitoring means fewer emergencies"
       ]
     },
     "localisation": {
       "h1": {
-        "ie": "Локализация сайтов и приложений в Ирландии",
-        "gb": "Локализация сайтов и приложений в Ирландии и Великобритании",
-        "it": "Локализация сайтов и приложений в Италии",
-        "ch": "Локализация сайтов и приложений в Швейцарии"
+        "ie": "Website & App Localisation Services in Ireland",
+        "gb": "Website & App Localisation Services in Ireland & the UK",
+        "it": "Website & App Localisation Services in Italy",
+        "ch": "Website & App Localisation Services in Switzerland"
       },
-      "breadcrumb": "Локализация сайтов и приложений",
-      "desc": "Берём на себя полную локализацию вашего сайта или приложения — от перевода контента до интеграции i18n-фреймворков в кодовую базу. Мы сделали это для нашего собственного продукта и можем сделать для вашего.",
-      "uniqueHeading": "Чем Мы Отличаемся",
-      "uniqueBody": "Большинство агентств локализации переводят контент, но понятия не имеют, как интегрировать его в React или Next.js приложение. Мы делаем и то и другое — лингвистическая экспертиза in-house и технические навыки для внедрения. Никаких неловких передач, никаких сломанных макетов от RTL-текста, никаких пропущенных ключей строк.",
-      "whatHeading": "Что Мы Делаем",
+      "breadcrumb": "Website & App Localisation",
+      "desc": "We handle the full localisation of your website or app — from translating content to integrating i18n frameworks in your codebase. We have done it for our own product, and we can do it for yours.",
+      "uniqueHeading": "Why We Are Different",
+      "uniqueBody": "Most localisation agencies translate content but have no idea how to wire it into a React or Next.js app. We do both — in-house linguistic expertise and the technical skills to implement it. No awkward handoffs, no broken layouts from right-to-left text, no missing string keys.",
+      "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Перевод контента", "description": "Точный, естественно звучащий перевод на целевой язык — не машинный перевод, вставленный в CMS." },
-        { "title": "Интеграция i18n-фреймворка", "description": "Подключаем next-intl, i18next или выбранную библиотеку. Все строки вынесены, все маршруты локализованы." },
-        { "title": "Поддержка RTL-макетов", "description": "Арабский, иврит и другие языки с написанием справа налево требуют изменений макета. Мы делаем это правильно." },
-        { "title": "Тестирование по локалям", "description": "Тестируем каждую локаль от начала до конца — переполнение текста, форматы дат, символы валют и форматирование чисел." }
+        { "title": "Content Translation", "description": "Accurate, natural-sounding translation into the target language — not machine translation copy-pasted into a CMS." },
+        { "title": "i18n Framework Integration", "description": "We wire up next-intl, i18next, or your chosen library. All strings externalised, all routes localised." },
+        { "title": "RTL Layout Support", "description": "Arabic, Hebrew, and other right-to-left languages require layout changes. We handle them correctly." },
+        { "title": "Locale Testing", "description": "We test every locale end to end — text overflow, date formats, currency symbols, and number formatting." }
       ],
-      "languagesHeading": "Поддерживаемые языки",
-      "languages": "Английский, итальянский, русский, французский, немецкий, испанский, арабский (RTL). Свяжитесь с нами для других языков.",
-      "whyHeading": "Зачем Локализовать",
+      "languagesHeading": "Languages We Support",
+      "languages": "English, Italian, Russian, French, German, Spanish, Arabic (RTL). Contact us for others.",
+      "whyHeading": "Why Localise",
       "whyItems": [
-        "Выходите на новые рынки без перестройки продукта",
-        "Локализованные продукты конвертируют значительно лучше переведённых",
-        "Соответствуйте юридическим требованиям в юрисдикциях с обязательным контентом на местном языке",
-        "Дайте каждому пользователю нативный опыт независимо от его языка"
+        "Reach new markets without rebuilding your product",
+        "Localised products convert significantly better than translated ones",
+        "Meet legal requirements in jurisdictions that mandate local-language content",
+        "Give every user a native-feeling experience regardless of their language"
       ]
     }
-  }
-,
-    "clientAuditReports": {
-        "bank2brick": {
-            "metadata": {
-                "title": "Аудит сайта Bank2Brick",
-                "description": "Приватный отчёт об аудите для Bank2Brick, охватывающий UX, SEO, визуальный дизайн и доступность — с проблемами, выделенными по серьёзности, и PDF для скачивания.",
-                "ogTitle": "Аудит сайта Bank2Brick",
-                "ogDescription": "Полный приватный обзор Bank2Brick по UX, SEO, UI и доступности."
-            },
-            "eyebrow": "Приватный клиентский отчёт",
-            "title": "Bank2Brick: полный обзор сайта",
-            "subtitle": "Структурированный обзор по пользовательскому опыту, SEO, визуальному дизайну и доступности — с чёткими выводами, приоритизированными исправлениями и тем, что уже работает хорошо.",
-            "reviewedLabel": "Проверено",
-            "reviewedValue": "13 мая 2026",
-            "visibilityLabel": "Видимость",
-            "visibilityValue": "Приватная ссылка · исключено из индексации",
-            "reviewNoteTitle": "Примечание к проверке",
-            "reviewNoteBody": "Этот отчёт подготовлен 13 мая 2026 года путём сочетания ручной проверки живого сайта на https://www.bank2brick.ie и автоматизированных тестов. Сайт был публично доступен на момент проверки. Сайт построен на платформе Webador, что ограничивает возможности оценки и улучшения без миграции на собственную сборку.",
-            "uxTitle": "Пользовательский опыт (UX)",
-            "uxStrengths": [
-                {
-                    "title": "Чёткая, прогрессивная структура страниц",
-                    "body": "Шесть логичных страниц (Главная, Как это работает, Почему инвестировать с нами, Инвестиционные планы, Объекты в фокусе, FAQ) последовательно ведут посетителя от первого впечатления к более глубокому вовлечению."
-                },
-                {
-                    "title": "Социальные доказательства присутствуют",
-                    "body": "Три отзыва с ирландскими именами (Aoife Kelly, Conor Byrne, Fiona O'Sullivan) обеспечивают начальную доверительность для финансового продукта, чувствительного к репутации."
-                },
-                {
-                    "title": "Несколько вариантов связи",
-                    "body": "Доступны как веб-форма, так и прямые контактные данные (email + телефон), что даёт разным типам посетителей удобную точку входа."
-                }
-            ],
-            "uxIssues": [
-                {
-                    "title": "В инвестиционных планах нет ценников или порогов входа",
-                    "body": "Все четыре уровня (Starter, Growth, Seasoned, Custom) описаны без информации о ценах, минимальном размере инвестиций или ожидаемой доходности. Посетители, которым нужно оценить себя или сравнить варианты, не могут этого сделать — что увеличивает трение и приводит к уходу до обращения.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "CTA пассивные и обобщённые",
-                    "body": "Основные призывы к действию — 'Присоединяйтесь сегодня' и 'Узнайте, как это работает' — не говорят посетителям, что конкретно произойдёт дальше. Ориентированные на цель альтернативы снижают неопределённость и улучшают конверсию.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Нет фиксированной навигации при прокрутке",
-                    "body": "На длинной прокручиваемой странице нет постоянной панели навигации. Чтобы вернуться наверх, нужно прокручивать назад — лишнее трение, особенно на мобильных.",
-                    "severity": "average"
-                }
-            ],
-            "seoTitle": "SEO",
-            "seoStrengths": [
-                {
-                    "title": "Брендированный домен .ie настроен корректно",
-                    "body": "Сайт стабильно открывается по брендированному домену .ie — правильный географический сигнал для ирландского инвестиционного продукта."
-                },
-                {
-                    "title": "Логичные и понятные URL-слаги",
-                    "body": "Подстраницы вроде /how-it-works, /investment-plans и /faq читаемы пользователями и содержат ключевые слова, что даёт небольшое SEO-преимущество."
-                }
-            ],
-            "seoIssues": [
-                {
-                    "title": "Сайт построен на Webador — конструкторе для потребителей",
-                    "body": "Webador управляет всей инфраструктурой сайта. У вас нет контроля над конфигурацией сервера, HTTP-заголовками, robots.txt или sitemap.xml. Это жёсткое ограничение технической SEO-производительности: расширенные оптимизации недоступны без миграции на собственную платформу.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "Ссылка 'Powered by Webador' в подвале",
-                    "body": "В подвале есть ссылка на сайт Webador. Это отводит авторитет домена в пользу стороннего ресурса и сигнализирует поисковым системам, что продукт построен на шаблоне — снижая доверие в отрасли, где доверие является главным фактором конверсии.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "Нет структурированных данных / схемы JSON-LD",
-                    "body": "Сайты финансовых услуг значительно выигрывают от схем LocalBusiness, FAQPage и Review. Без них Google не может формировать расширенные сниппеты, и вы теряете сигналы доверия в выдаче.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Заголовки страниц и meta description вероятно заданы Webador по умолчанию",
-                    "body": "Без настроенных тегов страницы будут плохо ранжироваться по целевым фразам вроде 'инвестиции в недвижимость Ирландия' или 'пассивный доход от недвижимости Ирландия'.",
-                    "severity": "average"
-                }
-            ],
-            "uiTitle": "Визуальный дизайн (UI)",
-            "uiStrengths": [
-                {
-                    "title": "Читабельный макет с чёткими разделами",
-                    "body": "Страница не перегружена. Контент разбит на узнаваемые секции, размер шрифта комфортен для чтения как на компьютере, так и на мобильном."
-                },
-                {
-                    "title": "Названия инвестиционных уровней интуитивны",
-                    "body": "Starter / Growth / Seasoned / Custom естественно соответствует уровням опыта инвесторов, снижая когнитивную нагрузку в секции выбора плана."
-                }
-            ],
-            "uiIssues": [
-                {
-                    "title": "Типичный визуальный стиль конструктора сайтов",
-                    "body": "Шаблоны Webador визуально узнаваемы. Для финансового продукта, в который люди вкладывают свои сбережения, дизайн должен говорить о профессионализме и индивидуальной разработке. Сейчас сайт выглядит как шаблонный продукт, что напрямую подрывает доверие.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "Логотип загружается с CDN Webador (jwwb.nl)",
-                    "body": "Изображение логотипа загружается с jwwb.nl — стороннего домена. Некоторые браузеры, блокировщики или корпоративные фаерволы могут заблокировать этот запрос, из-за чего логотип не будет отображаться у части посетителей.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Секция инвестиционных планов лишена визуальной иерархии",
-                    "body": "Четыре уровня представлены как обычные текстовые блоки без ценников, без выделенного рекомендуемого варианта и без визуального разграничения. Добавление этих элементов значительно повысит уверенность при принятии решения.",
-                    "severity": "average"
-                }
-            ],
-            "accessibilityTitle": "Доступность",
-            "accessibilityStrengths": [
-                {
-                    "title": "Логичная иерархия заголовков",
-                    "body": "H1 для названия сайта, H2 для каждого основного раздела — это даёт скринридерам правильно структурированный документ, по которому пользователи могут навигировать по заголовкам."
-                },
-                {
-                    "title": "Поля формы обратной связи имеют метки",
-                    "body": "Поля Имя, Email и Сообщение снабжены метками — это наиболее часто нарушаемый критерий доступности форм."
-                }
-            ],
-            "accessibilityIssues": [
-                {
-                    "title": "Нет ссылки 'перейти к основному содержимому'",
-                    "body": "Пользователи, работающие только с клавиатурой или скринридерами, должны обходить всю навигацию шапки при каждой загрузке страницы. Ссылка-пропуск обязательна по WCAG 2.1 Уровень A (Критерий 2.4.1) и добавляется одной строкой кода.",
-                    "severity": "average"
-                },
-                {
-                    "title": "HTML от Webador ограничивает контроль над доступностью",
-                    "body": "Конструкторы сайтов стабильно генерируют недоступные ARIA-роли, отсутствующие ориентиры и ненадёжное управление фокусом. Без миграции на собственную сборку невозможно полностью проверить и исправить эти проблемы.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Alt-текст на изображениях не поддаётся полной проверке",
-                    "body": "Логотип и изображения объектов с CDN Webador требуют индивидуальной проверки alt-текста. Конструкторы часто автоматически заполняют атрибуты alt именами файлов, что лишено смысла для скринридеров.",
-                    "severity": "average"
-                }
-            ],
-            "positiveBadge": "Что уже работает",
-            "strengthsTitle": "Текущие сильные стороны",
-            "strengthsIntro": "Эти пункты уже поддерживают ясность и доверие на сайте.",
-            "strengths": [
-              {
-                "title": "Понятный маршрут по страницам",
-                "body": "Основные страницы ведут посетителя от первого знакомства к следующим шагам в логичном порядке."
-              },
-              {
-                "title": "Есть социальные доказательства",
-                "body": "Видимые отзывы помогают снизить начальный барьер доверия у новых посетителей."
-              },
-              {
-                "title": "Несколько каналов связи",
-                "body": "Пользователь может обратиться через форму, email или телефон, как ему удобнее."
-              }
-            ],
-            "severeBadge": "Высокий приоритет",
-            "severeTitle": "Критические исправления",
-            "severeIntro": "Эти проблемы нужно решить в первую очередь, так как они влияют на доверие, конверсию и технический контроль.",
-            "severe": [
-              {
-                "title": "В тарифах нет конкретных цифр",
-                "body": "Инвестиционные уровни не содержат цен и порогов входа, что затрудняет принятие решения."
-              },
-              {
-                "title": "Сигналы шаблонного конструктора",
-                "body": "Шаблонный стиль и брендинг платформы снижают воспринимаемую надёжность в чувствительной финансовой сфере."
-              },
-              {
-                "title": "Ограничения платформы Webador",
-                "body": "Слабый контроль над техническим SEO и инфраструктурой мешает внедрять продвинутые улучшения."
-              }
-            ],
-            "recommendedBadge": "Следующий шаг",
-            "recommendedTitle": "Рекомендуемые улучшения",
-            "recommendedIntro": "После критических исправлений эти действия усилят удобство и долгосрочный рост.",
-            "recommended": [
-              {
-                "title": "Сделать CTA конкретнее",
-                "body": "Используйте формулировки с понятным результатом, чтобы пользователю было ясно, что произойдёт дальше."
-              },
-              {
-                "title": "Улучшить сравнение тарифов",
-                "body": "Добавьте визуальную иерархию и элементы сравнения, чтобы уровни было проще оценивать."
-              },
-              {
-                "title": "Укрепить базовую доступность",
-                "body": "Добавьте skip link и проверьте alt-тексты и фокус в ключевых пользовательских сценариях."
-              }
-            ],
-            "ctaTitle": "Готовы превратить это в понятный список задач?",
-            "ctaBody": "Мы поможем расставить приоритеты, перепроектировать для доверия и построить то, что даст вам полный контроль. Запросите бесплатное предложение без обязательств — ответим в течение 48 часов.",
-            "primaryCta": "Перейти к форме запроса стоимости",
-            "downloadCta": "Скачать PDF-отчёт"
+  },
+  "clientAuditReports": {
+    "bank2brick": {
+      "metadata": {
+        "title": "Bank2Brick website audit report",
+        "description": "Private audit report for Bank2Brick covering UX, SEO, visual design, and accessibility — with specific issues highlighted by severity and a downloadable PDF.",
+        "ogTitle": "Bank2Brick website audit report",
+        "ogDescription": "Private full-scope review for Bank2Brick across UX, SEO, UI, and accessibility."
+      },
+      "eyebrow": "Private client report",
+      "title": "Bank2Brick: full website review",
+      "subtitle": "A structured review across user experience, SEO, visual design, and accessibility — with clear findings, prioritised fixes, and what is already working well.",
+      "reviewedLabel": "Reviewed",
+      "reviewedValue": "13 May 2026",
+      "visibilityLabel": "Visibility",
+      "visibilityValue": "Private link · excluded from search indexing",
+      "reviewNoteTitle": "Review note",
+      "reviewNoteBody": "This report was produced on 13 May 2026 through a combination of manual inspection of the live site at https://www.bank2brick.ie and automated checks. The site was publicly accessible at the time of the review. Note that the site is built on the Webador platform, which limits what can be assessed or improved without migrating to a custom build.",
+      "uxTitle": "User Experience (UX)",
+      "uxStrengths": [
+        {
+          "title": "Clear, layered page structure",
+          "body": "Six logical pages (Home, How It Works, Why Invest with Us, Investment Plans, Properties in Focus, FAQ) guide a visitor progressively from first impression to deeper commitment — a well-structured information journey."
+        },
+        {
+          "title": "Social proof is present",
+          "body": "Three named, Irish-sounding testimonials (Aoife Kelly, Conor Byrne, Fiona O'Sullivan) provide early-stage credibility for a trust-sensitive financial product."
+        },
+        {
+          "title": "Multiple contact options",
+          "body": "Both a web form and direct contact details (email + phone) are available, giving different visitor types a comfortable entry point."
         }
-    },
-    "audit": {
-        "eyebrow": "Бесплатный инструмент",
-      "betaLabel": "Beta",
-        "title": "Запустить аудит сайта",
-        "subtitle": "Введите URL любого живого сайта, чтобы получить автоматический отчёт по UX, SEO, визуальному качеству и доступности — на базе Google Lighthouse.",
-      "backToHome": "Назад на главную",
-      "seoKeywords": [
-        "аудит сайта",
-        "бесплатный аудит сайта",
-        "SEO аудит",
-        "аудит доступности",
-        "аудит производительности сайта",
-        "Lighthouse аудит",
-        "тест скорости сайта",
-        "технический SEO аудит",
-        "UX аудит",
-        "проверка веб-доступности"
       ],
-        "urlLabel": "URL сайта",
-        "urlPlaceholder": "https://вашсайт.com",
-        "submitBtn": "Запустить аудит",
-        "exampleLabel": "Пример",
-        "exampleUrl": "https://www.yourwebsite.com",
-        "limitationsTitle": "Об этом инструменте",
-        "limitationsBody": "Инструмент запускает автоматический анализ Lighthouse и выявляет технические проблемы. Он не оценивает качество контента, решения в области UX-дизайна, бренд-сообщение или бизнес-специфичный контекст. Для полной экспертной проверки свяжитесь с нами.",
-        "ctaTitle": "Нужен эксперт-человек в дополнение к этому?",
-        "ctaBody": "Автоматические инструменты находят технические проблемы. Настоящий эксперт находит всё остальное.",
-        "ctaBtn": "Получить бесплатный аудит",
-        "results": {
-            "errorTitle": "Аудит не удалось завершить",
-            "errorBody": "Сайт может быть недоступен, требовать аутентификацию, или сервис аудита временно недоступен.",
-          "errorReasonPrefix": "Техническая причина",
-          "fallbackUsed": "Результат из кэша (сформирован за последние 48 часов)",
-            "tryAgainBtn": "Попробовать другой URL",
-            "runningMsg": "Выполняется аудит Lighthouse — займёт около 15 секунд…"
+      "uxIssues": [
+        {
+          "title": "Investment plans show no pricing or entry figures",
+          "body": "All four tiers (Starter, Growth, Seasoned, Custom) are described without any pricing, minimum investment amounts, or expected return ranges. Visitors who need to self-qualify or compare options cannot do so — increasing friction and causing drop-off before enquiry.",
+          "severity": "severe"
+        },
+        {
+          "title": "CTAs are passive and generic",
+          "body": "The primary calls to action — 'Join us today' and 'Discover how it works' — do not tell visitors what specifically happens next. Goal-oriented alternatives like 'See available properties' or 'Book a free 20-minute call' reduce ambiguity and improve conversion.",
+          "severity": "average"
+        },
+        {
+          "title": "No sticky or scroll-aware navigation",
+          "body": "On a long-scroll page, there is no persistent navigation bar as the user scrolls. Returning to the top requires scrolling back — unnecessary friction, especially on mobile.",
+          "severity": "average"
         }
+      ],
+      "seoTitle": "SEO",
+      "seoStrengths": [
+        {
+          "title": "Branded .ie domain is correctly set up",
+          "body": "The site resolves consistently on a branded .ie TLD — the right geographic signal for an Irish-focused investment product that wants to rank locally."
+        },
+        {
+          "title": "Logical, descriptive URL slugs",
+          "body": "Sub-pages like /how-it-works, /investment-plans, and /faq are human-readable and keyword-relevant, which gives a small SEO benefit over generic URL patterns."
+        }
+      ],
+      "seoIssues": [
+        {
+          "title": "Built on Webador — a consumer website builder",
+          "body": "Webador hosts and generates the entire site infrastructure. You have no control over server configuration, HTTP headers, robots.txt, or sitemap.xml. This is a hard ceiling on technical SEO performance and means you cannot implement advanced optimisations without migrating to a proper platform.",
+          "severity": "severe"
+        },
+        {
+          "title": "'Powered by Webador' footer link",
+          "body": "The footer contains a link to Webador's own website. This leaks domain authority away from your site and signals to sophisticated users and search engines that this is a template-built product — reducing brand trust in a sector where trust is the primary conversion factor.",
+          "severity": "severe"
+        },
+        {
+          "title": "No structured data / JSON-LD schema",
+          "body": "Financial services sites benefit significantly from LocalBusiness, FAQPage, and Review schema. Without these, Google cannot generate rich search results for your pages and you miss trust signals in the SERPs.",
+          "severity": "average"
+        },
+        {
+          "title": "Meta titles and descriptions are likely Webador defaults",
+          "body": "Without custom-configured meta tags, pages will rank poorly for target phrases like 'property investment Ireland', 'collective property investment Co. Clare', or 'passive income property Ireland'.",
+          "severity": "average"
+        }
+      ],
+      "uiTitle": "Visual Design (UI)",
+      "uiStrengths": [
+        {
+          "title": "Readable layout with clear section separation",
+          "body": "The page avoids visual clutter. Content is grouped into recognisable sections and the font size is comfortable for reading on both desktop and mobile."
+        },
+        {
+          "title": "Investment tier naming is intuitive",
+          "body": "Starter / Growth / Seasoned / Custom maps naturally to investor experience levels, reducing cognitive load in the conversion-critical planning section."
+        }
+      ],
+      "uiIssues": [
+        {
+          "title": "Generic website-builder visual identity",
+          "body": "Webador templates are visually recognisable. For a financial services product asking people to invest their savings, the design needs to communicate bespoke professionalism. Currently the site reads as a template product, which directly undermines trust in a sector where design quality signals safety.",
+          "severity": "severe"
+        },
+        {
+          "title": "Logo is served from Webador's CDN (jwwb.nl)",
+          "body": "The logo image loads from jwwb.nl — a third-party domain. Some browsers, privacy tools, or corporate firewalls may block this request, causing the logo to fail to load for some visitors. Self-hosting brand assets is a basic requirement.",
+          "severity": "average"
+        },
+        {
+          "title": "Investment plans section lacks visual hierarchy",
+          "body": "The four tiers are listed as plain text blocks with no pricing, no highlighted recommended tier, and no visual differentiation (icons, colour bands, or feature comparison). Adding these would significantly improve decision-making confidence.",
+          "severity": "average"
+        }
+      ],
+      "accessibilityTitle": "Accessibility",
+      "accessibilityStrengths": [
+        {
+          "title": "Logical heading hierarchy",
+          "body": "H1 for the site name, H2 for each major section — this gives screen readers a properly structured document outline that users can navigate by heading."
+        },
+        {
+          "title": "Contact form fields appear labelled",
+          "body": "The Name, Email address, and Message fields are labelled, which is the most commonly failed form accessibility criterion."
+        }
+      ],
+      "accessibilityIssues": [
+        {
+          "title": "No skip-to-main-content link",
+          "body": "Keyboard-only and screen-reader users must tab through the entire header navigation on every page load before reaching main content. A skip link is required under WCAG 2.1 Level A (Success Criterion 2.4.1) and is a one-line fix.",
+          "severity": "average"
+        },
+        {
+          "title": "Webador-generated HTML limits accessibility control",
+          "body": "Consumer website builders consistently produce inaccessible ARIA roles, missing landmarks, and unreliable focus management. Without migrating to a custom build, you cannot fully audit or remediate these issues — meaning you cannot make confident WCAG compliance claims.",
+          "severity": "average"
+        },
+        {
+          "title": "Alt text on images cannot be fully verified",
+          "body": "The logo and property images served from Webador's CDN need individual alt-text review. Website builders frequently auto-populate alt attributes with file names (e.g. 'logo-high-irqhh5.jpg') which is not meaningful to screen reader users.",
+          "severity": "average"
+        }
+      ],
+      "positiveBadge": "What is working",
+      "strengthsTitle": "Current strengths",
+      "strengthsIntro": "These points are currently supporting trust and clarity on the site.",
+      "strengths": [
+        {
+          "title": "Clear page flow",
+          "body": "The main pages guide visitors from first impression to practical next steps in a logical order."
+        },
+        {
+          "title": "Social proof included",
+          "body": "Visible testimonials help reduce early-stage trust friction for new visitors."
+        },
+        {
+          "title": "Multiple contact channels",
+          "body": "Users can reach out via form, email, or phone based on preference."
+        }
+      ],
+      "severeBadge": "High priority",
+      "severeTitle": "Critical fixes",
+      "severeIntro": "These issues should be addressed first because they affect trust, conversion, or technical control.",
+      "severe": [
+        {
+          "title": "No investment figures in plans",
+          "body": "The plan tiers do not show concrete pricing or entry thresholds, making decision-making difficult."
+        },
+        {
+          "title": "Website builder trust signal",
+          "body": "Template-style presentation and builder branding reduce perceived credibility in a high-trust sector."
+        },
+        {
+          "title": "Webador platform ceiling",
+          "body": "Limited control over technical SEO and infrastructure blocks advanced optimisation work."
+        }
+      ],
+      "recommendedBadge": "Next step",
+      "recommendedTitle": "Recommended improvements",
+      "recommendedIntro": "These actions improve usability and long-term growth after critical fixes.",
+      "recommended": [
+        {
+          "title": "Clarify CTA outcomes",
+          "body": "Use explicit action labels so users understand exactly what happens after each click."
+        },
+        {
+          "title": "Improve plan comparison UX",
+          "body": "Add visual hierarchy and side-by-side cues to make the four tiers easier to compare."
+        },
+        {
+          "title": "Strengthen accessibility baseline",
+          "body": "Add skip links and validate image alt text and focus behavior across key flows."
+        }
+      ],
+      "ctaTitle": "Ready to turn this into a fix list?",
+      "ctaBody": "We can help you prioritise the work, redesign for trust, and build something that gives you full control. Request a free, no-obligation quote and we'll get back to you within 48 hours.",
+      "primaryCta": "Go to the quote form",
+      "downloadCta": "Download PDF report"
     }
+  },
+  "audit": {
+    "eyebrow": "Бесплатный инструмент",
+    "betaLabel": "Бета",
+    "title": "Заказать аудит сайта",
+    "subtitle": "Введите адрес сайта, чтобы получить автоматизированный отчет по UX, SEO, визуальному качеству и доступности — на базе Google Lighthouse.",
+    "backToHome": "На главную",
+    "seoKeywords": [
+      "аудит сайта",
+      "бесплатный аудит сайта",
+      "SEO аудит",
+      "аудит доступности",
+      "аудит производительности",
+      "Lighthouse аудит",
+      "тест скорости сайта",
+      "технический SEO аудит",
+      "UX аудит",
+      "проверка доступности сайта"
+    ],
+    "urlLabel": "URL сайта",
+    "urlPlaceholder": "https://вашсайт.рф",
+    "submitBtn": "Запустить аудит",
+    "exampleLabel": "Пример",
+    "exampleUrl": "https://www.вашсайт.рф",
+    "limitationsTitle": "О сервисе",
+    "limitationsBody": "Этот инструмент проводит автоматический анализ Lighthouse и выявляет технические проблемы. Он не оценивает качество контента, UX-дизайн, бренд или бизнес-контекст. Для экспертной оценки свяжитесь с нами.",
+    "ctaTitle": "Нужна экспертная оценка?",
+    "ctaBody": "Автоматические инструменты находят технические ошибки. Эксперт видит всё остальное.",
+    "ctaBtn": "Получить бесплатный аудит",
+    "results": {
+      "errorTitle": "Аудит не выполнен",
+      "errorBody": "Сайт недоступен, требует авторизации или сервис временно недоступен.",
+      "errorReasonPrefix": "Техническая причина",
+      "fallbackUsed": "Использован кэшированный результат (за последние 48 часов)",
+      "tryAgainBtn": "Попробовать другой адрес",
+      "runningMsg": "Выполняется аудит — это займет около 15 секунд…"
+    },
+    "howItWorksTitle": "Как проходит бесплатный аудит",
+    "howItWorksIntro": "Наш процесс аудита — это прозрачность, глубина и поддержка. Вот как всё происходит:",
+    "processSteps": [
+      {
+        "step": "1",
+        "title": "Заполните заявку",
+        "description": "Расскажите о бизнесе, сайте и проблемах, которые хотите решить. Это займет 2-3 минуты."
+      },
+      {
+        "step": "2",
+        "title": "Получите короткую анкету",
+        "description": "Мы пришлем вопросы о целях и задачах, чтобы аудит был максимально полезен."
+      },
+      {
+        "step": "3",
+        "title": "Экспертный анализ и рекомендации",
+        "description": "Команда изучит сайт и подготовит подробный план: как привлечь клиентов, устранить ошибки и улучшить опыт пользователей."
+      },
+      {
+        "step": "4",
+        "title": "Выберите формат",
+        "description": "Вы сами выбираете: онлайн-звонок, встреча (в РФ/ЕС) или подробный отчет на email."
+      },
+      {
+        "step": "5",
+        "title": "Обсуждение и вопросы",
+        "description": "Вместе разберём рекомендации, ответим на вопросы и обсудим, как это поможет вашему бизнесу."
+      },
+      {
+        "step": "6",
+        "title": "Обратная связь и дальнейшие шаги",
+        "description": "Попросим ваш отзыв и обсудим, кто будет внедрять изменения — мы или ваша команда."
+      }
+    ],
+    "requestFormTitle": "Запросить бесплатный аудит",
+    "requestFormSubtitle": "Заполните форму — мы свяжемся с вами в течение 24 часов для подтверждения и дальнейших шагов.",
+    "nameLabel": "Ваше имя",
+    "emailLabel": "Электронная почта",
+    "websiteLabel": "URL вашего сайта",
+    "businessLabel": "Расскажите о вашем бизнесе",
+    "focusLabel": "Что вас беспокоит? (необязательно)",
+    "focusPlaceholder": "Например: 'Сайт не продаёт', 'Проблемы на мобильных', 'Нужен аудит доступности'",
+    "submitBtnText": "Отправить заявку",
+    "successMessage": "Спасибо! Мы получили вашу заявку. Подтверждение придет на email в течение 24 часов."
+  },
+  "solutionsEntrepreneursPage": {
+    "metadata": {
+      "title": "For Small Entrepreneurs: Build Your Brand Online",
+      "description": "Website development and digital marketing services designed for small business owners who want to attract more customers online.",
+      "ogTitle": "For Small Entrepreneurs: Build Your Brand Online",
+      "ogDescription": "Get a website that works for your business — clear, fast, and built to convert."
+    },
+    "eyebrow": "For Small Entrepreneurs",
+    "heading": "Build your brand online and attract more customers",
+    "subheading": "We help small business owners improve their digital presence with practical websites and marketing support. If you want to earn more, building your brand online is the place to start.",
+    "servicesHeading": "What we can do for you",
+    "services": [
+      { "name": "Website Development", "detail": "Custom websites that are clear, fast, accessible, and built to convert enquiries into customers." },
+      { "name": "Website Management", "detail": "Ongoing updates and improvements so your website keeps working for your business." },
+      { "name": "SEO and Local Search", "detail": "On-page SEO and local search optimisation to help customers find you when they search for your services." },
+      { "name": "Marketing Support", "detail": "Campaign landing pages and content support aligned with your sales and growth goals." },
+      { "name": "Graphic Design", "detail": "Visual assets for your website, campaigns, and printed materials that keep your brand consistent." },
+      { "name": "Sales Materials", "detail": "Web and print-ready sales materials for campaigns, outreach, and customer communication." }
+    ],
+    "tagline": "We help entrepreneurs create digital products that actually sell. If you want to earn more - build your brand online with us.",
+    "finalCtaHeading": "Ready to improve your digital presence?",
+    "finalCtaBody": "Tell us what you need and we will suggest a clear, practical plan that fits your budget.",
+    "finalCta": "Ask for a Quote"
+  },
+  "solutionsSMEsPage": {
+    "metadata": {
+      "title": "For SMEs: Custom Software and IT Support",
+      "description": "Software development, IT project outsourcing, and technical support for small and medium businesses that need to grow and optimise.",
+      "ogTitle": "For SMEs: Custom Software and IT Support",
+      "ogDescription": "Grow your revenue and optimise resources with custom software solutions and IT support designed for your business."
+    },
+    "eyebrow": "For Small and Medium Businesses",
+    "heading": "Grow revenue and save time with custom software",
+    "subheading": "We help businesses of all sizes grow revenue and optimise resources through custom software solutions made to tackle unique problems. Automation can save you a lot of time and money.",
+    "servicesHeading": "Software services we provide",
+    "services": [
+      { "name": "Custom Software Development", "detail": "Tailored software built to fix specific business bottlenecks, automate manual processes, and improve efficiency." },
+      { "name": "Business Process Automation", "detail": "Workflow automation and integration to reduce manual work, improve accuracy, and save your team time." },
+      { "name": "IT Project Outsourcing", "detail": "End-to-end project delivery when your internal team is stretched or you need specialised expertise." },
+      { "name": "Maintenance and Support", "detail": "Ongoing technical support, bug fixes, and system optimisation for your software and IT infrastructure." },
+      { "name": "Software Audits", "detail": "Technical review of existing systems to identify risk, performance issues, and upgrade priorities." },
+      { "name": "Consulting", "detail": "Strategic planning and technical guidance for product roadmap, architecture, and development decisions." }
+    ],
+    "tagline": "We help business of all sizes to grow revenue and optimise resources through custom software solutions made to tackle their unique problems. Automation can save you a lot of time and money.",
+    "finalCtaHeading": "Need software that truly fits your business?",
+    "finalCtaBody": "Tell us about your challenge and we will propose a practical way forward.",
+    "finalCta": "Send us a Message"
+  },
+  "solutionsStartupsPage": {
+    "metadata": {
+      "title": "For Startups: From Idea to MVP to Market",
+      "description": "MVP development, product prototyping, design thinking workshops, and IT consulting for startup founders validating ideas and building early-stage companies.",
+      "ogTitle": "For Startups: From Idea to MVP to Market",
+      "ogDescription": "Validate your startup idea, build your MVP, and launch with confidence. Fixed pricing or flexible equity partnerships available."
+    },
+    "eyebrow": "For Startup Founders",
+    "heading": "Ship fast, learn faster, validate your startup idea",
+    "subheading": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Choose fixed pricing or discuss a flexible equity partnership if you are a promising early-stage company.",
+    "servicesHeading": "What we build for startups",
+    "services": [
+      { "name": "MVP Development", "detail": "Build a focused first version to validate demand quickly, reduce risk, and prove your concept to investors." },
+      { "name": "Rapid Prototyping", "detail": "Clickable, interactive prototypes to test with users and investors before committing to a full build." },
+      { "name": "Design Thinking Workshops", "detail": "Structured sessions to explore your idea, identify core assumptions, and validate your business model with users." },
+      { "name": "Product Strategy", "detail": "Help with roadmap, feature prioritisation, and go-to-market planning so you launch the right thing." },
+      { "name": "UX Research and Design", "detail": "User research, wireframing, and UI design to ensure your product is intuitive and people actually want to use it." },
+      { "name": "IT Consultation", "detail": "Technical guidance on architecture, tech stack, infrastructure, and scaling decisions as you grow." }
+    ],
+    "tagline": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Fixed pricing or flexible equity partnerships available.",
+    "whyHeading": "Why startups choose us",
+    "why": [
+      "Fixed pricing or flexible equity partnership options — choose what fits your stage",
+      "Rapid MVP delivery — validate your idea with real users in weeks, not months",
+      "Design Thinking methodology — proven framework to reduce risk and test assumptions",
+      "Founder-friendly communication — we explain tech in plain English and actually listen",
+      "Post-launch support — we don't disappear after launch; we help you iterate based on user feedback"
+    ],
+    "finalCtaHeading": "Ready to validate your startup idea?",
+    "finalCtaBody": "Let's talk about your vision. We'll help you shape the right MVP roadmap and discuss options.",
+    "finalCta": "Send us a Message"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "About We Make IT - Meet Our Team",
+      "description": "Learn about We Make IT, our mission, and the team behind your project. Based in Ireland, serving global clients.",
+      "ogTitle": "About We Make IT",
+      "ogDescription": "We are a software development studio based in Ireland, helping entrepreneurs and SMEs build digital products that their customers love."
+    },
+    "eyebrow": "About Us",
+    "heroHeading": "We turn ideas into real digital products",
+    "heroSubheading": "We Make IT is a software development studio based in Ireland. We care deeply about helping local businesses grow because better digital experiences make everyday life easier for everyone.",
+    "missionHeading": "Our Mission",
+    "missionBody": "To help entrepreneurs and small businesses build digital products that their customers genuinely enjoy using. From first idea to launch and beyond, we are with you.",
+    "valuesHeading": "What We Stand For",
+    "values": [
+      { "title": "Accessibility & Inclusion", "description": "Every product we build is inclusive and accessible from day one. No one should be left behind in the digital world." },
+      { "title": "Honest Communication", "description": "We speak plain English, explain technical decisions clearly, and always listen to understand your real needs." },
+      { "title": "Quality Over Speed", "description": "We build for the long term. Your product is designed to scale, improve, and adapt as your business grows." },
+      { "title": "Fixed Pricing", "description": "You know the full cost before we start. No hidden extras, no surprise invoices. Transparency is not optional." }
+    ],
+    "teamHeading": "Meet Our Team",
+    "teamSubheading": "We combine design, development, strategy, and business expertise. Most importantly, we genuinely care about your success.",
+    "team": [
+      { "name": "Andrea Contarino", "title": "Chief Architect & Backend Engineer", "bio": "15+ years building scalable systems and technical foundations for products at scale. Architect of our approach to custom software and project delivery." },
+      { "name": "Svetlana Savchenko", "title": "Founder & Senior Frontend Engineer", "bio": "Frontend specialist and UX advocate. Over 8 years building interfaces that are intuitive, accessible, and genuinely usable. Founder of We Make IT." },
+      { "name": "Seamus O'Brien", "title": "Web and Marketing", "bio": "Brings brand strategy, content, and go-to-market expertise. Helps translate our work into clear messaging that resonates with clients and users." },
+      { "name": "Sheila McLoughlin", "title": "Junior Software Engineer", "bio": "Growing her expertise in full-stack development. Brings fresh perspective to problem-solving and brings quality and care to every feature delivered." }
+    ],
+    "teamPlaceholder": "Photo coming soon"
+  },
+  "auditExpert": {
+    "title": "Free Audits by Tech Experts",
+    "subtitle": "Get a comprehensive audit from our team of experts. We review your website or app, identify opportunities, and provide a clear, practical plan to improve your digital presence.",
+    "backToHome": "Back to home",
+    "eyebrow": "How it works",
+    "howItWorksTitle": "How our free audit works",
+    "howItWorksIntro": "We've designed our audit process to be thorough, transparent, and collaborative. Here's exactly what happens:",
+    "processSteps": [
+      {
+        "step": "1",
+        "title": "Fill in the request form",
+        "description": "Tell us about your business, your website, and any specific problems you want us to focus on. This takes about 2-3 minutes."
+      },
+      {
+        "step": "2",
+        "title": "We send you a brief questionnaire",
+        "description": "We'll ask more detailed questions about your business, goals, and current challenges. This helps us tailor the audit to what matters most to you."
+      },
+      {
+        "step": "3",
+        "title": "Expert review & suggestions",
+        "description": "Our team reviews your website and creates a detailed plan showing what you can do to gain more customers, fix technical issues, or improve user experience."
+      },
+      {
+        "step": "4",
+        "title": "Choose your format",
+        "description": "You decide how you'd like to discuss the results: an online video call, an in-person meetup (if you're in Ireland), or a detailed email report."
+      },
+      {
+        "step": "5",
+        "title": "Review & Q&A",
+        "description": "We go through the suggestions together, answer your questions, and discuss what the changes could mean for your business."
+      },
+      {
+        "step": "6",
+        "title": "Feedback & next steps",
+        "description": "We ask for your feedback and discuss next steps—whether you want us to implement changes or you'd prefer to work with your own team."
+      }
+    ],
+    "requestFormTitle": "Get your free audit started",
+    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps."
+  }
 }

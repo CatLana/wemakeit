@@ -9,10 +9,11 @@ const pages: {
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
   lastModified: Date;
 }[] = [
-  { path: "",                                        priority: 1.0, changeFrequency: "weekly",  lastModified: new Date("2026-04-16") },
+  { path: "",                                        priority: 1.0, changeFrequency: "weekly",  lastModified: new Date("2026-05-19") },
   { path: "/audit",                                  priority: 0.9, changeFrequency: "weekly",  lastModified: new Date("2026-05-15") },
   { path: "/contact",                                priority: 0.6, changeFrequency: "monthly", lastModified: new Date("2026-04-16") },
   { path: "/pricing",                                priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
+  { path: "/about",                                  priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-19") },
   { path: "/blog",                                   priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-05-01") },
   { path: "/blog/legal-requirements-diy-brand-website", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/blog/accessibility-law-ireland-eaa-guide", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
@@ -29,6 +30,9 @@ const pages: {
   { path: "/solutions",                              priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/solutions/websites",                     priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/solutions/software",                     priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
+  { path: "/solutions/for-entrepreneurs",            priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-19") },
+  { path: "/solutions/for-smes",                     priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-19") },
+  { path: "/solutions/for-startups",                 priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-19") },
   { path: "/solutions/for-websites",                 priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/solutions/for-software",                 priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/services",                               priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },

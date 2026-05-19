@@ -1,4 +1,4 @@
-import { ArrowRight, LayoutTemplate, Workflow } from "lucide-react";
+import { ArrowRight, LayoutTemplate, Workflow, Rocket, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -6,13 +6,14 @@ export default function Services() {
   const t = useTranslations("services");
   const categories = t.raw("categories") as Array<{
     title: string;
+    tagline?: string;
     description: string;
     href: string;
     previewItems: string[];
     cta: string;
   }>;
 
-  const categoryIcons = [LayoutTemplate, Workflow];
+  const categoryIcons = [LayoutTemplate, Workflow, Rocket];
 
   return (
     <section
@@ -41,7 +42,7 @@ export default function Services() {
         {/* Service categories */}
         <ul
           role="list"
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {categories.map((category, i) => {
             const Icon = categoryIcons[i] ?? LayoutTemplate;
@@ -59,14 +60,23 @@ export default function Services() {
                   <h3 className="text-2xl font-extrabold text-[#1E293B] mb-2">
                     {category.title}
                   </h3>
+
+                  {category.tagline && (
+                    <p className="text-sm font-semibold text-[#0E7490] mb-3 leading-relaxed">
+                      {category.tagline}
+                    </p>
+                  )}
+
                   <p className="text-sm text-slate-500 leading-relaxed mb-5">
                     {category.description}
                   </p>
 
-                  <ul className="space-y-2 mb-5" role="list" aria-label={t("servicePreviewLabel", { category: category.title })}>
+                  <ul className="space-y-2.5 mb-5" role="list" aria-label={t("servicePreviewLabel", { category: category.title })}>
                     {category.previewItems.map((item) => (
-                      <li key={item} className="text-sm text-[#1E293B] leading-relaxed">
-                        <span aria-hidden="true" className="mr-2 text-[#0E7490]">•</span>
+                      <li key={item} className="flex items-start gap-2.5 text-sm text-[#1E293B] leading-relaxed">
+                        <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#22D3EE]/15">
+                          <Check size={10} className="text-[#0E7490]" aria-hidden="true" strokeWidth={2.5} />
+                        </span>
                         {item}
                       </li>
                     ))}

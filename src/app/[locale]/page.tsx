@@ -7,10 +7,8 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import Services from "@/components/sections/Services";
-import Founder from "@/components/sections/Founder";
-import About from "@/components/sections/About";
-import Process from "@/components/sections/Process";
 import CtaStrip from "@/components/sections/CtaStrip";
+import FreeAuditBanner from "@/components/sections/FreeAuditBanner";
 
 // Lazy-load the heavy Contact section: defers react-hook-form, zod and
 // @hookform/resolvers from the initial JS bundle (~105 KiB savings).
@@ -30,15 +28,15 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const titles: Record<string, string> = {
-    en: "Web Development & App Development Ireland | We Make IT",
-    it: "Sviluppo Web e App Italia | We Make IT",
-    ru: "Веб-разработка и разработка приложений Ирландия | We Make IT",
+    en: "Websites and Applications Development that Grow Your Business | We Make IT",
+    it: "Sviluppo di Siti Web e Applicazioni per Far Crescere la Tua Azienda | We Make IT",
+    ru: "Разработка сайтов и приложений для роста вашего бизнеса | We Make IT",
   };
 
   const descriptions: Record<string, string> = {
-    en: "Custom web development and app development in Ireland. Build your business idea from MVP to production. 15+ years experience, fixed pricing. Free consultation.",
-    it: "Sviluppo web personalizzato e app development in Italia. Dalla validazione dell'idea alla produzione. Consulenza gratuita.",
-    ru: "Разработка веб-сайтов и приложений в Ирландии. От валидации идеи до производства. Бесплатная консультация.",
+    en: "Custom digital solutions to improve your online presence. Free consultations and technical audits. Over 15 years of experience in IT, fixed pricing.",
+    it: "Soluzioni digitali su misura per migliorare la tua presenza online. Consulenze gratuite e audit tecnici. Oltre 15 anni di esperienza in IT, prezzi fissi.",
+    ru: "Индивидуальные цифровые решения для улучшения вашего бренда онлайн. Бесплатные консультации и технические аудиты. Более 15 лет опыта в IT, фиксированные цены.",
   };
 
   const canonicalUrl = `${BASE_URL}/${locale}`;
@@ -46,11 +44,36 @@ export async function generateMetadata({
   return {
     title: titles[locale] || titles["en"],
     description: descriptions[locale] || descriptions["en"],
-    keywords: locale === "en" 
-      ? "web development Ireland, app development Ireland, web developer Ireland, custom software development, MVP development"
+    keywords: locale === "en"
+      ? [
+          "web development ireland",
+          "website design ireland",
+          "web design ireland",
+          "app development ireland",
+          "web designer ireland",
+          "digital agency ireland",
+          "small business website ireland",
+          "custom software development ireland",
+          "mvp development ireland",
+          "mobile app development ireland",
+          "web development agency meath",
+          "web developer ashbourne",
+        ]
       : locale === "it"
-      ? "sviluppo web Italia, app development Italia, sviluppatore web, software personalizzato"
-      : "веб-разработка Ирландия, разработка приложений, разработчик веб",
+      ? [
+          "sviluppo web irlanda",
+          "sviluppo app irlanda",
+          "agenzia web irlanda",
+          "sviluppo siti web personalizzati",
+          "sviluppo software irlanda",
+          "sviluppo app mobili irlanda",
+        ]
+      : [
+          "веб разработка ирландия",
+          "разработка приложений ирландия",
+          "разработка сайтов ирландия",
+          "разработка мобильных приложений ирландия",
+        ],
     alternates: {
       canonical: canonicalUrl,
       languages: {
@@ -66,6 +89,20 @@ export async function generateMetadata({
       url: canonicalUrl,
       type: "website",
       siteName: "We Make IT",
+      images: [
+        {
+          url: `${BASE_URL}/api/og`,
+          width: 1200,
+          height: 630,
+          alt: "We Make IT — Web & App Development Ireland",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: titles[locale] || titles["en"],
+      description: descriptions[locale] || descriptions["en"],
+      images: [`${BASE_URL}/api/og`],
     },
   };
 }
@@ -83,11 +120,9 @@ export default async function HomePage({
       <Header />
       <main id="main-content" tabIndex={-1}>
         <Hero />
-        <Stats />
         <Services />
-        <Founder />
-        <About />
-        <Process />
+        <Stats />
+        <FreeAuditBanner />
         <CtaStrip />
         <Suspense fallback={null}>
           <Contact />
@@ -101,12 +136,12 @@ export default async function HomePage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
+            "@type": ["LocalBusiness", "ProfessionalService"],
             name: "We Make IT",
             description:
               "Web development and app development services in Ireland, Italy, and Switzerland. 15+ years experience.",
             url: BASE_URL,
-            image: `${BASE_URL}/og-image.png`,
+            image: `${BASE_URL}/api/og`,
             address: {
               "@type": "PostalAddress",
               streetAddress: "Ashbourne",
@@ -150,7 +185,7 @@ export default async function HomePage({
             contactPoint: {
               "@type": "ContactPoint",
               contactType: "Customer Service",
-              email: "contact@wemakeit.ie",
+              email: "info@wemakeit.ie",
             },
           }),
         }}

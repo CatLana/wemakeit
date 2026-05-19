@@ -17,7 +17,7 @@ export default function CtaStrip() {
             {t("heading")}
           </h2>
           <p className="mt-2 text-slate-400 text-base lg:text-lg">{t("body1")}</p>
-          <p className="mt-3 text-slate-400 text-base lg:text-lg">{t("body2")}</p>
+          {t("body2") && <p className="mt-3 text-slate-400 text-base lg:text-lg">{t("body2")}</p>}
         </div>
         <Link
           href={{ pathname: "/", query: { service: "consultation" }, hash: "quote" } as never}

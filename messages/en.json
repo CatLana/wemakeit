@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "title": "Custom App & Web Development Ireland",
-    "description": "Turn your idea into an app or website. Irish-based, 15+ years experience, fixed price. Free first consultation.",
-    "ogTitle": "Custom App & Web Development Ireland",
-    "ogDescription": "Got a business idea? We help you validate it, plan it, and build it. Free first consultation."
+    "title": "Web & App Development Ireland | We Make IT",
+    "description": "Custom websites, mobile apps and digital solutions for Irish businesses. Fixed pricing, free consultation. 15+ years of experience.",
+    "ogTitle": "Web & App Development Ireland | We Make IT",
+    "ogDescription": "We build custom websites and apps for Irish businesses — from idea to launch. Fixed price, no surprises. Book your free consultation today."
   },
   "header": {
     "logoAriaLabel": "We Make IT - Home",
     "nav": {
-      "whatWeDo": "What We Do",
-      "aboutUs": "About Us",
+      "whatWeDo": "Services",
+      "aboutUs": "About",
       "howItWorks": "How It Works",
-      "blog": "Blog",
-      "talkToUs": "Talk to Us"
+      "blog": "Resources",
+      "talkToUs": "Contact"
     },
-    "cta": "Get a quote",
+    "cta": "Get FREE Audit",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "mobileNavLabel": "Mobile navigation",
@@ -30,9 +30,10 @@
     "badge": "Based in Ireland",
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
-    "subtitle": "We help Irish businesses grow through building websites and custom applications. We develop smooth and frustration-free digital experiences websites and marketing to custom software, we build what helps your business move forward.",
+    "subtitleBody": "We help Irish businesses grow through building bespoke digital solutions. Whether you need a website that sells or a custom IT solution to save you time and money — we know how to help.",
+    "subtitleCta": "Book your FREE 30-min consultation today.",
     "springSale": "Summer Sale: 30% off for new clients. Limited spots available.",
-    "cta1": "Tell us your idea",
+    "cta1": "Contact Us",
     "cta2": "How it works",
     "auditCta": "Free website audit. See how your site scores",
     "ariaLabel": "Hero: We Make IT home"
@@ -48,36 +49,51 @@
     ]
   },
   "services": {
-    "eyebrow": "What We Do",
-    "heading": "Two clear paths to help your business grow",
-    "headingPlain": "Two clear paths",
-    "headingAccent": "to help your business grow",
-    "subheading": "Choose the direction that fits your goals. We keep the first step simple, then guide you deeper based on what your business actually needs.",
+    "eyebrow": "Services",
+    "heading": "Whether your business is big or small, we help you grow.",
+    "headingPlain": "Whether your business is big or small,",
+    "headingAccent": "we help you grow.",
+    "subheading": "Choose the direction that fits your goals.",
     "servicePreviewLabel": "Service preview for {category}",
     "categories": [
       {
-        "title": "Websites",
-        "description": "We help small businesses improve digital presence and attract more customers through practical website and marketing work.",
-        "href": "/solutions/websites",
+        "title": "For Small Entrepreneurs",
+        "tagline": "We help entrepreneurs create digital products that actually sell. If you want to earn more - build your brand online with us.",
+        "description": "Websites and digital presence services for entrepreneurs looking to attract customers and strengthen their online brand.",
+        "href": "/solutions/for-entrepreneurs",
         "previewItems": [
           "Website development and redesign",
           "SEO and digital marketing support",
           "Graphic design and campaign assets",
           "Website management and updates"
         ],
-        "cta": "See all website services"
+        "cta": "Explore for small entrepreneurs"
       },
       {
-        "title": "Software",
-        "description": "We help founders and SMEs turn ideas into working software with UX-led product development and technical guidance.",
-        "href": "/solutions/software",
+        "title": "For SMEs",
+        "tagline": "We help business of all sizes to grow revenue and optimise resources through custom software solutions made to tackle their unique problems. Automation can save you a lot of time and money.",
+        "description": "Custom software, IT outsourcing, and maintenance services for small and medium businesses seeking growth and efficiency.",
+        "href": "/solutions/for-smes",
         "previewItems": [
-          "MVPs, web apps, and mobile apps",
-          "Custom software for business workflows",
-          "Software and accessibility audits",
-          "Consulting and team webinars"
+          "Custom software development",
+          "Business process automation",
+          "IT project outsourcing and support",
+          "Maintenance and system optimization"
         ],
-        "cta": "See all software services"
+        "cta": "Explore for SMEs"
+      },
+      {
+        "title": "For Startups",
+        "tagline": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Fixed pricing or flexible equity partnerships available.",
+        "description": "MVP development, prototypes, design thinking, UX strategy, and IT consultations for founders validating and building early-stage companies.",
+        "href": "/solutions/for-startups",
+        "previewItems": [
+          "MVP development and rapid validation",
+          "Product prototyping and iteration",
+          "Design Thinking workshops and strategy",
+          "UX research and architecture consulting"
+        ],
+        "cta": "Explore for startups"
       }
     ]
   },
@@ -99,8 +115,6 @@
   },
   "about": {
     "eyebrow": "About Us",
-    "headingLine1": "We turn your idea",
-    "headingLine2": "into a real digital product.",
     "body1": "We Make IT is a software development studio based in Ireland. We care deeply about helping local businesses grow because better digital experiences make everyday life easier for everyone.",
     "body2": "From your first question to launch and beyond, we are with you.",
     "body3": "Our team combines full-stack development, accessible design, UX, and business expertise. We focus on Ireland while warmly welcoming clients from other markets too.",
@@ -133,10 +147,10 @@
     ]
   },
   "ctaStrip": {
-    "heading": "Not sure if your idea is ready?",
-    "body1": "That is exactly when to talk to us. Fill in the form with details about your idea and we will give you feedback.",
-    "body2": "With in-house experience in Design Thinking and MVP, we help you validate your idea before committing to a full build.",
-    "cta": "Fill in the form"
+    "heading": "Are you ready to take your business to the next level and grow your revenue?",
+    "body1": "Contact us whether you are an early entrepreneur or a big established business. We are happy to hear from you! We help local businesses become more successful by building bespoke digital presence and custom IT solutions.",
+    "body2": "",
+    "cta": "Get in Touch"
   },
   "auditBanner": {
     "eyebrow": "Free website check",
@@ -550,6 +564,8 @@
     "finalCta": "Get in touch"
   },
   "valuePropSoftwarePage": {
+    "headingLine1": "We turn your idea",
+    "headingLine2": "into a real digital product.",
     "metadata": {
       "title": "For SMEs: Build Software That Solves Real Problems",
       "description": "A clear value proposition for SMEs that need custom software, product development, or outsourced delivery support.",
@@ -565,6 +581,19 @@
       "Flexible delivery support when your internal team is stretched",
       "Clear communication for technical and non-technical stakeholders"
     ],
+    "process": {
+      "eyebrow": "How it works",
+      "title": "From idea to product",
+      "titleAccent": "in five simple steps",
+      "subheading": "Tell us your idea and we will take it from there.",
+      "steps": [
+        { "number": "01", "title": "Brief & Scope", "description": "Share your idea, goals, and constraints. We ask the right questions to understand your business fully." },
+        { "number": "02", "title": "Design & Plan", "description": "We map out the solution, user flows, and timeline together so there are no surprises." },
+        { "number": "03", "title": "Build MVP", "description": "We build the core product fast, focusing on what creates the most value first." },
+        { "number": "04", "title": "Test & Refine", "description": "You test with real users. We iterate based on actual feedback, not assumptions." },
+        { "number": "05", "title": "Launch & Grow", "description": "We deploy, hand over, and stay available as your product scales." }
+      ]
+    },
     "finalCtaHeading": "Have a software challenge you need to solve?",
     "finalCtaBody": "Send us your context and we will propose a practical way forward.",
     "finalCta": "Send us a message"
@@ -878,238 +907,432 @@
         "Give every user a native-feeling experience regardless of their language"
       ]
     }
-  }
-,
-    "clientAuditReports": {
-        "bank2brick": {
-            "metadata": {
-                "title": "Bank2Brick website audit report",
-                "description": "Private audit report for Bank2Brick covering UX, SEO, visual design, and accessibility — with specific issues highlighted by severity and a downloadable PDF.",
-                "ogTitle": "Bank2Brick website audit report",
-                "ogDescription": "Private full-scope review for Bank2Brick across UX, SEO, UI, and accessibility."
-            },
-            "eyebrow": "Private client report",
-            "title": "Bank2Brick: full website review",
-            "subtitle": "A structured review across user experience, SEO, visual design, and accessibility — with clear findings, prioritised fixes, and what is already working well.",
-            "reviewedLabel": "Reviewed",
-            "reviewedValue": "13 May 2026",
-            "visibilityLabel": "Visibility",
-            "visibilityValue": "Private link · excluded from search indexing",
-            "reviewNoteTitle": "Review note",
-            "reviewNoteBody": "This report was produced on 13 May 2026 through a combination of manual inspection of the live site at https://www.bank2brick.ie and automated checks. The site was publicly accessible at the time of the review. Note that the site is built on the Webador platform, which limits what can be assessed or improved without migrating to a custom build.",
-            "uxTitle": "User Experience (UX)",
-            "uxStrengths": [
-                {
-                    "title": "Clear, layered page structure",
-                    "body": "Six logical pages (Home, How It Works, Why Invest with Us, Investment Plans, Properties in Focus, FAQ) guide a visitor progressively from first impression to deeper commitment — a well-structured information journey."
-                },
-                {
-                    "title": "Social proof is present",
-                    "body": "Three named, Irish-sounding testimonials (Aoife Kelly, Conor Byrne, Fiona O'Sullivan) provide early-stage credibility for a trust-sensitive financial product."
-                },
-                {
-                    "title": "Multiple contact options",
-                    "body": "Both a web form and direct contact details (email + phone) are available, giving different visitor types a comfortable entry point."
-                }
-            ],
-            "uxIssues": [
-                {
-                    "title": "Investment plans show no pricing or entry figures",
-                    "body": "All four tiers (Starter, Growth, Seasoned, Custom) are described without any pricing, minimum investment amounts, or expected return ranges. Visitors who need to self-qualify or compare options cannot do so — increasing friction and causing drop-off before enquiry.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "CTAs are passive and generic",
-                    "body": "The primary calls to action — 'Join us today' and 'Discover how it works' — do not tell visitors what specifically happens next. Goal-oriented alternatives like 'See available properties' or 'Book a free 20-minute call' reduce ambiguity and improve conversion.",
-                    "severity": "average"
-                },
-                {
-                    "title": "No sticky or scroll-aware navigation",
-                    "body": "On a long-scroll page, there is no persistent navigation bar as the user scrolls. Returning to the top requires scrolling back — unnecessary friction, especially on mobile.",
-                    "severity": "average"
-                }
-            ],
-            "seoTitle": "SEO",
-            "seoStrengths": [
-                {
-                    "title": "Branded .ie domain is correctly set up",
-                    "body": "The site resolves consistently on a branded .ie TLD — the right geographic signal for an Irish-focused investment product that wants to rank locally."
-                },
-                {
-                    "title": "Logical, descriptive URL slugs",
-                    "body": "Sub-pages like /how-it-works, /investment-plans, and /faq are human-readable and keyword-relevant, which gives a small SEO benefit over generic URL patterns."
-                }
-            ],
-            "seoIssues": [
-                {
-                    "title": "Built on Webador — a consumer website builder",
-                    "body": "Webador hosts and generates the entire site infrastructure. You have no control over server configuration, HTTP headers, robots.txt, or sitemap.xml. This is a hard ceiling on technical SEO performance and means you cannot implement advanced optimisations without migrating to a proper platform.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "'Powered by Webador' footer link",
-                    "body": "The footer contains a link to Webador's own website. This leaks domain authority away from your site and signals to sophisticated users and search engines that this is a template-built product — reducing brand trust in a sector where trust is the primary conversion factor.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "No structured data / JSON-LD schema",
-                    "body": "Financial services sites benefit significantly from LocalBusiness, FAQPage, and Review schema. Without these, Google cannot generate rich search results for your pages and you miss trust signals in the SERPs.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Meta titles and descriptions are likely Webador defaults",
-                    "body": "Without custom-configured meta tags, pages will rank poorly for target phrases like 'property investment Ireland', 'collective property investment Co. Clare', or 'passive income property Ireland'.",
-                    "severity": "average"
-                }
-            ],
-            "uiTitle": "Visual Design (UI)",
-            "uiStrengths": [
-                {
-                    "title": "Readable layout with clear section separation",
-                    "body": "The page avoids visual clutter. Content is grouped into recognisable sections and the font size is comfortable for reading on both desktop and mobile."
-                },
-                {
-                    "title": "Investment tier naming is intuitive",
-                    "body": "Starter / Growth / Seasoned / Custom maps naturally to investor experience levels, reducing cognitive load in the conversion-critical planning section."
-                }
-            ],
-            "uiIssues": [
-                {
-                    "title": "Generic website-builder visual identity",
-                    "body": "Webador templates are visually recognisable. For a financial services product asking people to invest their savings, the design needs to communicate bespoke professionalism. Currently the site reads as a template product, which directly undermines trust in a sector where design quality signals safety.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "Logo is served from Webador's CDN (jwwb.nl)",
-                    "body": "The logo image loads from jwwb.nl — a third-party domain. Some browsers, privacy tools, or corporate firewalls may block this request, causing the logo to fail to load for some visitors. Self-hosting brand assets is a basic requirement.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Investment plans section lacks visual hierarchy",
-                    "body": "The four tiers are listed as plain text blocks with no pricing, no highlighted recommended tier, and no visual differentiation (icons, colour bands, or feature comparison). Adding these would significantly improve decision-making confidence.",
-                    "severity": "average"
-                }
-            ],
-            "accessibilityTitle": "Accessibility",
-            "accessibilityStrengths": [
-                {
-                    "title": "Logical heading hierarchy",
-                    "body": "H1 for the site name, H2 for each major section — this gives screen readers a properly structured document outline that users can navigate by heading."
-                },
-                {
-                    "title": "Contact form fields appear labelled",
-                    "body": "The Name, Email address, and Message fields are labelled, which is the most commonly failed form accessibility criterion."
-                }
-            ],
-            "accessibilityIssues": [
-                {
-                    "title": "No skip-to-main-content link",
-                    "body": "Keyboard-only and screen-reader users must tab through the entire header navigation on every page load before reaching main content. A skip link is required under WCAG 2.1 Level A (Success Criterion 2.4.1) and is a one-line fix.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Webador-generated HTML limits accessibility control",
-                    "body": "Consumer website builders consistently produce inaccessible ARIA roles, missing landmarks, and unreliable focus management. Without migrating to a custom build, you cannot fully audit or remediate these issues — meaning you cannot make confident WCAG compliance claims.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Alt text on images cannot be fully verified",
-                    "body": "The logo and property images served from Webador's CDN need individual alt-text review. Website builders frequently auto-populate alt attributes with file names (e.g. 'logo-high-irqhh5.jpg') which is not meaningful to screen reader users.",
-                    "severity": "average"
-                }
-            ],
-            "positiveBadge": "What is working",
-            "strengthsTitle": "Current strengths",
-            "strengthsIntro": "These points are currently supporting trust and clarity on the site.",
-            "strengths": [
-              {
-                "title": "Clear page flow",
-                "body": "The main pages guide visitors from first impression to practical next steps in a logical order."
-              },
-              {
-                "title": "Social proof included",
-                "body": "Visible testimonials help reduce early-stage trust friction for new visitors."
-              },
-              {
-                "title": "Multiple contact channels",
-                "body": "Users can reach out via form, email, or phone based on preference."
-              }
-            ],
-            "severeBadge": "High priority",
-            "severeTitle": "Critical fixes",
-            "severeIntro": "These issues should be addressed first because they affect trust, conversion, or technical control.",
-            "severe": [
-              {
-                "title": "No investment figures in plans",
-                "body": "The plan tiers do not show concrete pricing or entry thresholds, making decision-making difficult."
-              },
-              {
-                "title": "Website builder trust signal",
-                "body": "Template-style presentation and builder branding reduce perceived credibility in a high-trust sector."
-              },
-              {
-                "title": "Webador platform ceiling",
-                "body": "Limited control over technical SEO and infrastructure blocks advanced optimisation work."
-              }
-            ],
-            "recommendedBadge": "Next step",
-            "recommendedTitle": "Recommended improvements",
-            "recommendedIntro": "These actions improve usability and long-term growth after critical fixes.",
-            "recommended": [
-              {
-                "title": "Clarify CTA outcomes",
-                "body": "Use explicit action labels so users understand exactly what happens after each click."
-              },
-              {
-                "title": "Improve plan comparison UX",
-                "body": "Add visual hierarchy and side-by-side cues to make the four tiers easier to compare."
-              },
-              {
-                "title": "Strengthen accessibility baseline",
-                "body": "Add skip links and validate image alt text and focus behavior across key flows."
-              }
-            ],
-            "ctaTitle": "Ready to turn this into a fix list?",
-            "ctaBody": "We can help you prioritise the work, redesign for trust, and build something that gives you full control. Request a free, no-obligation quote and we'll get back to you within 48 hours.",
-            "primaryCta": "Go to the quote form",
-            "downloadCta": "Download PDF report"
+  },
+  "clientAuditReports": {
+    "bank2brick": {
+      "metadata": {
+        "title": "Bank2Brick website audit report",
+        "description": "Private audit report for Bank2Brick covering UX, SEO, visual design, and accessibility — with specific issues highlighted by severity and a downloadable PDF.",
+        "ogTitle": "Bank2Brick website audit report",
+        "ogDescription": "Private full-scope review for Bank2Brick across UX, SEO, UI, and accessibility."
+      },
+      "eyebrow": "Private client report",
+      "title": "Bank2Brick: full website review",
+      "subtitle": "A structured review across user experience, SEO, visual design, and accessibility — with clear findings, prioritised fixes, and what is already working well.",
+      "reviewedLabel": "Reviewed",
+      "reviewedValue": "13 May 2026",
+      "visibilityLabel": "Visibility",
+      "visibilityValue": "Private link · excluded from search indexing",
+      "reviewNoteTitle": "Review note",
+      "reviewNoteBody": "This report was produced on 13 May 2026 through a combination of manual inspection of the live site at https://www.bank2brick.ie and automated checks. The site was publicly accessible at the time of the review. Note that the site is built on the Webador platform, which limits what can be assessed or improved without migrating to a custom build.",
+      "uxTitle": "User Experience (UX)",
+      "uxStrengths": [
+        {
+          "title": "Clear, layered page structure",
+          "body": "Six logical pages (Home, How It Works, Why Invest with Us, Investment Plans, Properties in Focus, FAQ) guide a visitor progressively from first impression to deeper commitment — a well-structured information journey."
+        },
+        {
+          "title": "Social proof is present",
+          "body": "Three named, Irish-sounding testimonials (Aoife Kelly, Conor Byrne, Fiona O'Sullivan) provide early-stage credibility for a trust-sensitive financial product."
+        },
+        {
+          "title": "Multiple contact options",
+          "body": "Both a web form and direct contact details (email + phone) are available, giving different visitor types a comfortable entry point."
         }
-    },
-    "audit": {
-        "eyebrow": "Free tool",
-      "betaLabel": "Beta",
-        "title": "Run a website audit",
-        "subtitle": "Enter any live website URL to get an automated report covering UX, SEO, visual quality, and accessibility — powered by Google Lighthouse.",
-      "backToHome": "Back to home",
-      "seoKeywords": [
-        "website audit",
-        "free website audit",
-        "SEO audit",
-        "accessibility audit",
-        "performance audit",
-        "Lighthouse audit",
-        "website speed test",
-        "technical SEO audit",
-        "UX audit",
-        "web accessibility check"
       ],
-        "urlLabel": "Website URL",
-        "urlPlaceholder": "https://yourwebsite.com",
-        "submitBtn": "Run audit",
-        "exampleLabel": "Example",
-        "exampleUrl": "https://www.yourwebsite.com",
-        "limitationsTitle": "About this tool",
-        "limitationsBody": "This tool runs an automated Lighthouse analysis and identifies technical issues. It cannot assess content quality, UX design decisions, brand messaging, or business-specific context. For a full expert review, get in touch.",
-        "ctaTitle": "Need a human expert on top of this?",
-        "ctaBody": "Automated tools catch technical issues. A real expert catches everything else.",
-        "ctaBtn": "Get a free audit quote",
-        "results": {
-            "errorTitle": "Audit could not be completed",
-            "errorBody": "The site may be unreachable, require authentication, or the audit service is temporarily unavailable.",
-          "errorReasonPrefix": "Technical reason",
-          "fallbackUsed": "Cached fallback result (generated in the last 48 hours)",
-            "tryAgainBtn": "Try another URL",
-            "runningMsg": "Running Lighthouse audit — this takes about 15 seconds…"
+      "uxIssues": [
+        {
+          "title": "Investment plans show no pricing or entry figures",
+          "body": "All four tiers (Starter, Growth, Seasoned, Custom) are described without any pricing, minimum investment amounts, or expected return ranges. Visitors who need to self-qualify or compare options cannot do so — increasing friction and causing drop-off before enquiry.",
+          "severity": "severe"
+        },
+        {
+          "title": "CTAs are passive and generic",
+          "body": "The primary calls to action — 'Join us today' and 'Discover how it works' — do not tell visitors what specifically happens next. Goal-oriented alternatives like 'See available properties' or 'Book a free 20-minute call' reduce ambiguity and improve conversion.",
+          "severity": "average"
+        },
+        {
+          "title": "No sticky or scroll-aware navigation",
+          "body": "On a long-scroll page, there is no persistent navigation bar as the user scrolls. Returning to the top requires scrolling back — unnecessary friction, especially on mobile.",
+          "severity": "average"
         }
+      ],
+      "seoTitle": "SEO",
+      "seoStrengths": [
+        {
+          "title": "Branded .ie domain is correctly set up",
+          "body": "The site resolves consistently on a branded .ie TLD — the right geographic signal for an Irish-focused investment product that wants to rank locally."
+        },
+        {
+          "title": "Logical, descriptive URL slugs",
+          "body": "Sub-pages like /how-it-works, /investment-plans, and /faq are human-readable and keyword-relevant, which gives a small SEO benefit over generic URL patterns."
+        }
+      ],
+      "seoIssues": [
+        {
+          "title": "Built on Webador — a consumer website builder",
+          "body": "Webador hosts and generates the entire site infrastructure. You have no control over server configuration, HTTP headers, robots.txt, or sitemap.xml. This is a hard ceiling on technical SEO performance and means you cannot implement advanced optimisations without migrating to a proper platform.",
+          "severity": "severe"
+        },
+        {
+          "title": "'Powered by Webador' footer link",
+          "body": "The footer contains a link to Webador's own website. This leaks domain authority away from your site and signals to sophisticated users and search engines that this is a template-built product — reducing brand trust in a sector where trust is the primary conversion factor.",
+          "severity": "severe"
+        },
+        {
+          "title": "No structured data / JSON-LD schema",
+          "body": "Financial services sites benefit significantly from LocalBusiness, FAQPage, and Review schema. Without these, Google cannot generate rich search results for your pages and you miss trust signals in the SERPs.",
+          "severity": "average"
+        },
+        {
+          "title": "Meta titles and descriptions are likely Webador defaults",
+          "body": "Without custom-configured meta tags, pages will rank poorly for target phrases like 'property investment Ireland', 'collective property investment Co. Clare', or 'passive income property Ireland'.",
+          "severity": "average"
+        }
+      ],
+      "uiTitle": "Visual Design (UI)",
+      "uiStrengths": [
+        {
+          "title": "Readable layout with clear section separation",
+          "body": "The page avoids visual clutter. Content is grouped into recognisable sections and the font size is comfortable for reading on both desktop and mobile."
+        },
+        {
+          "title": "Investment tier naming is intuitive",
+          "body": "Starter / Growth / Seasoned / Custom maps naturally to investor experience levels, reducing cognitive load in the conversion-critical planning section."
+        }
+      ],
+      "uiIssues": [
+        {
+          "title": "Generic website-builder visual identity",
+          "body": "Webador templates are visually recognisable. For a financial services product asking people to invest their savings, the design needs to communicate bespoke professionalism. Currently the site reads as a template product, which directly undermines trust in a sector where design quality signals safety.",
+          "severity": "severe"
+        },
+        {
+          "title": "Logo is served from Webador's CDN (jwwb.nl)",
+          "body": "The logo image loads from jwwb.nl — a third-party domain. Some browsers, privacy tools, or corporate firewalls may block this request, causing the logo to fail to load for some visitors. Self-hosting brand assets is a basic requirement.",
+          "severity": "average"
+        },
+        {
+          "title": "Investment plans section lacks visual hierarchy",
+          "body": "The four tiers are listed as plain text blocks with no pricing, no highlighted recommended tier, and no visual differentiation (icons, colour bands, or feature comparison). Adding these would significantly improve decision-making confidence.",
+          "severity": "average"
+        }
+      ],
+      "accessibilityTitle": "Accessibility",
+      "accessibilityStrengths": [
+        {
+          "title": "Logical heading hierarchy",
+          "body": "H1 for the site name, H2 for each major section — this gives screen readers a properly structured document outline that users can navigate by heading."
+        },
+        {
+          "title": "Contact form fields appear labelled",
+          "body": "The Name, Email address, and Message fields are labelled, which is the most commonly failed form accessibility criterion."
+        }
+      ],
+      "accessibilityIssues": [
+        {
+          "title": "No skip-to-main-content link",
+          "body": "Keyboard-only and screen-reader users must tab through the entire header navigation on every page load before reaching main content. A skip link is required under WCAG 2.1 Level A (Success Criterion 2.4.1) and is a one-line fix.",
+          "severity": "average"
+        },
+        {
+          "title": "Webador-generated HTML limits accessibility control",
+          "body": "Consumer website builders consistently produce inaccessible ARIA roles, missing landmarks, and unreliable focus management. Without migrating to a custom build, you cannot fully audit or remediate these issues — meaning you cannot make confident WCAG compliance claims.",
+          "severity": "average"
+        },
+        {
+          "title": "Alt text on images cannot be fully verified",
+          "body": "The logo and property images served from Webador's CDN need individual alt-text review. Website builders frequently auto-populate alt attributes with file names (e.g. 'logo-high-irqhh5.jpg') which is not meaningful to screen reader users.",
+          "severity": "average"
+        }
+      ],
+      "positiveBadge": "What is working",
+      "strengthsTitle": "Current strengths",
+      "strengthsIntro": "These points are currently supporting trust and clarity on the site.",
+      "strengths": [
+        {
+          "title": "Clear page flow",
+          "body": "The main pages guide visitors from first impression to practical next steps in a logical order."
+        },
+        {
+          "title": "Social proof included",
+          "body": "Visible testimonials help reduce early-stage trust friction for new visitors."
+        },
+        {
+          "title": "Multiple contact channels",
+          "body": "Users can reach out via form, email, or phone based on preference."
+        }
+      ],
+      "severeBadge": "High priority",
+      "severeTitle": "Critical fixes",
+      "severeIntro": "These issues should be addressed first because they affect trust, conversion, or technical control.",
+      "severe": [
+        {
+          "title": "No investment figures in plans",
+          "body": "The plan tiers do not show concrete pricing or entry thresholds, making decision-making difficult."
+        },
+        {
+          "title": "Website builder trust signal",
+          "body": "Template-style presentation and builder branding reduce perceived credibility in a high-trust sector."
+        },
+        {
+          "title": "Webador platform ceiling",
+          "body": "Limited control over technical SEO and infrastructure blocks advanced optimisation work."
+        }
+      ],
+      "recommendedBadge": "Next step",
+      "recommendedTitle": "Recommended improvements",
+      "recommendedIntro": "These actions improve usability and long-term growth after critical fixes.",
+      "recommended": [
+        {
+          "title": "Clarify CTA outcomes",
+          "body": "Use explicit action labels so users understand exactly what happens after each click."
+        },
+        {
+          "title": "Improve plan comparison UX",
+          "body": "Add visual hierarchy and side-by-side cues to make the four tiers easier to compare."
+        },
+        {
+          "title": "Strengthen accessibility baseline",
+          "body": "Add skip links and validate image alt text and focus behavior across key flows."
+        }
+      ],
+      "ctaTitle": "Ready to turn this into a fix list?",
+      "ctaBody": "We can help you prioritise the work, redesign for trust, and build something that gives you full control. Request a free, no-obligation quote and we'll get back to you within 48 hours.",
+      "primaryCta": "Go to the quote form",
+      "downloadCta": "Download PDF report"
     }
+  },
+  "audit": {
+    "eyebrow": "Free tool",
+    "betaLabel": "Beta",
+    "title": "Run a website audit",
+    "subtitle": "Enter any live website URL to get an automated report covering UX, SEO, visual quality, and accessibility — powered by Google Lighthouse.",
+    "backToHome": "Back to home",
+    "seoKeywords": [
+      "website audit",
+      "free website audit",
+      "SEO audit",
+      "accessibility audit",
+      "performance audit",
+      "Lighthouse audit",
+      "website speed test",
+      "technical SEO audit",
+      "UX audit",
+      "web accessibility check"
+    ],
+    "urlLabel": "Website URL",
+    "urlPlaceholder": "https://yourwebsite.com",
+    "submitBtn": "Run audit",
+    "exampleLabel": "Example",
+    "exampleUrl": "https://www.yourwebsite.com",
+    "limitationsTitle": "About this tool",
+    "limitationsBody": "This tool runs an automated Lighthouse analysis and identifies technical issues. It cannot assess content quality, UX design decisions, brand messaging, or business-specific context. For a full expert review, get in touch.",
+    "ctaTitle": "Need a human expert on top of this?",
+    "ctaBody": "Automated tools catch technical issues. A real expert catches everything else.",
+    "ctaBtn": "Get a free audit quote",
+    "results": {
+      "errorTitle": "Audit could not be completed",
+      "errorBody": "The site may be unreachable, require authentication, or the audit service is temporarily unavailable.",
+      "errorReasonPrefix": "Technical reason",
+      "fallbackUsed": "Cached fallback result (generated in the last 48 hours)",
+      "tryAgainBtn": "Try another URL",
+      "runningMsg": "Running Lighthouse audit — this takes about 15 seconds…"
+    },
+    "howItWorksTitle": "How our free audit works",
+    "howItWorksIntro": "We've designed our audit process to be thorough, transparent, and collaborative. Here's exactly what happens:",
+    "processSteps": [
+      {
+        "step": "1",
+        "title": "Fill in the request form",
+        "description": "Tell us about your business, your website, and any specific problems you want us to focus on. This takes about 2-3 minutes."
+      },
+      {
+        "step": "2",
+        "title": "We send you a brief questionnaire",
+        "description": "We'll ask more detailed questions about your business, goals, and current challenges. This helps us tailor the audit to what matters most to you."
+      },
+      {
+        "step": "3",
+        "title": "Expert review & suggestions",
+        "description": "Our team reviews your website and creates a detailed plan showing what you can do to gain more customers, fix technical issues, or improve user experience."
+      },
+      {
+        "step": "4",
+        "title": "Choose your format",
+        "description": "You decide how you'd like to discuss the results: an online video call, an in-person meetup (if you're in Ireland), or a detailed email report."
+      },
+      {
+        "step": "5",
+        "title": "Review & Q&A",
+        "description": "We go through the suggestions together, answer your questions, and discuss what the changes could mean for your business."
+      },
+      {
+        "step": "6",
+        "title": "Feedback & next steps",
+        "description": "We ask for your feedback and discuss next steps—whether you want us to implement changes or you'd prefer to work with your own team."
+      }
+    ],
+    "requestFormTitle": "Get your free audit started",
+    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps.",
+    "nameLabel": "Your name",
+    "emailLabel": "Email address",
+    "websiteLabel": "Your website URL",
+    "businessLabel": "Tell us about your business",
+    "focusLabel": "What's your main concern? (optional)",
+    "focusPlaceholder": "E.g., 'My site doesn't convert', 'Mobile users bounce', 'Needs an accessibility audit'",
+    "submitBtnText": "Request my free audit",
+    "successMessage": "Thank you! We've received your audit request. We'll send you a confirmation email within 24 hours."
+  },
+  "solutionsEntrepreneursPage": {
+    "metadata": {
+      "title": "For Small Entrepreneurs: Build Your Brand Online",
+      "description": "Website development and digital marketing services designed for small business owners who want to attract more customers online.",
+      "ogTitle": "For Small Entrepreneurs: Build Your Brand Online",
+      "ogDescription": "Get a website that works for your business — clear, fast, and built to convert."
+    },
+    "eyebrow": "For Small Entrepreneurs",
+    "heading": "Build your brand online and attract more customers",
+    "subheading": "We help small business owners improve their digital presence with practical websites and marketing support. If you want to earn more, building your brand online is the place to start.",
+    "servicesHeading": "What we can do for you",
+    "services": [
+      { "name": "Website Development", "detail": "Custom websites that are clear, fast, accessible, and built to convert enquiries into customers." },
+      { "name": "Website Management", "detail": "Ongoing updates and improvements so your website keeps working for your business." },
+      { "name": "SEO and Local Search", "detail": "On-page SEO and local search optimisation to help customers find you when they search for your services." },
+      { "name": "Marketing Support", "detail": "Campaign landing pages and content support aligned with your sales and growth goals." },
+      { "name": "Graphic Design", "detail": "Visual assets for your website, campaigns, and printed materials that keep your brand consistent." },
+      { "name": "Sales Materials", "detail": "Web and print-ready sales materials for campaigns, outreach, and customer communication." }
+    ],
+    "tagline": "We help entrepreneurs create digital products that actually sell. If you want to earn more - build your brand online with us.",
+    "finalCtaHeading": "Ready to improve your digital presence?",
+    "finalCtaBody": "Tell us what you need and we will suggest a clear, practical plan that fits your budget.",
+    "finalCta": "Ask for a Quote"
+  },
+  "solutionsSMEsPage": {
+    "metadata": {
+      "title": "For SMEs: Custom Software and IT Support",
+      "description": "Software development, IT project outsourcing, and technical support for small and medium businesses that need to grow and optimise.",
+      "ogTitle": "For SMEs: Custom Software and IT Support",
+      "ogDescription": "Grow your revenue and optimise resources with custom software solutions and IT support designed for your business."
+    },
+    "eyebrow": "For Small and Medium Businesses",
+    "heading": "Grow revenue and save time with custom software",
+    "subheading": "We help businesses of all sizes grow revenue and optimise resources through custom software solutions made to tackle unique problems. Automation can save you a lot of time and money.",
+    "servicesHeading": "Software services we provide",
+    "services": [
+      { "name": "Custom Software Development", "detail": "Tailored software built to fix specific business bottlenecks, automate manual processes, and improve efficiency." },
+      { "name": "Business Process Automation", "detail": "Workflow automation and integration to reduce manual work, improve accuracy, and save your team time." },
+      { "name": "IT Project Outsourcing", "detail": "End-to-end project delivery when your internal team is stretched or you need specialised expertise." },
+      { "name": "Maintenance and Support", "detail": "Ongoing technical support, bug fixes, and system optimisation for your software and IT infrastructure." },
+      { "name": "Software Audits", "detail": "Technical review of existing systems to identify risk, performance issues, and upgrade priorities." },
+      { "name": "Consulting", "detail": "Strategic planning and technical guidance for product roadmap, architecture, and development decisions." }
+    ],
+    "tagline": "We help business of all sizes to grow revenue and optimise resources through custom software solutions made to tackle their unique problems. Automation can save you a lot of time and money.",
+    "finalCtaHeading": "Need software that truly fits your business?",
+    "finalCtaBody": "Tell us about your challenge and we will propose a practical way forward.",
+    "finalCta": "Send us a Message"
+  },
+  "solutionsStartupsPage": {
+    "metadata": {
+      "title": "For Startups: From Idea to MVP to Market",
+      "description": "MVP development, product prototyping, design thinking workshops, and IT consulting for startup founders validating ideas and building early-stage companies.",
+      "ogTitle": "For Startups: From Idea to MVP to Market",
+      "ogDescription": "Validate your startup idea, build your MVP, and launch with confidence. Fixed pricing or flexible equity partnerships available."
+    },
+    "eyebrow": "For Startup Founders",
+    "heading": "Ship fast, learn faster, validate your startup idea",
+    "subheading": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Choose fixed pricing or discuss a flexible equity partnership if you are a promising early-stage company.",
+    "servicesHeading": "What we build for startups",
+    "services": [
+      { "name": "MVP Development", "detail": "Build a focused first version to validate demand quickly, reduce risk, and prove your concept to investors." },
+      { "name": "Rapid Prototyping", "detail": "Clickable, interactive prototypes to test with users and investors before committing to a full build." },
+      { "name": "Design Thinking Workshops", "detail": "Structured sessions to explore your idea, identify core assumptions, and validate your business model with users." },
+      { "name": "Product Strategy", "detail": "Help with roadmap, feature prioritisation, and go-to-market planning so you launch the right thing." },
+      { "name": "UX Research and Design", "detail": "User research, wireframing, and UI design to ensure your product is intuitive and people actually want to use it." },
+      { "name": "IT Consultation", "detail": "Technical guidance on architecture, tech stack, infrastructure, and scaling decisions as you grow." }
+    ],
+    "tagline": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Fixed pricing or flexible equity partnerships available.",
+    "whyHeading": "Why startups choose us",
+    "why": [
+      "Fixed pricing or flexible equity partnership options — choose what fits your stage",
+      "Rapid MVP delivery — validate your idea with real users in weeks, not months",
+      "Design Thinking methodology — proven framework to reduce risk and test assumptions",
+      "Founder-friendly communication — we explain tech in plain English and actually listen",
+      "Post-launch support — we don't disappear after launch; we help you iterate based on user feedback"
+    ],
+    "finalCtaHeading": "Ready to validate your startup idea?",
+    "finalCtaBody": "Let's talk about your vision. We'll help you shape the right MVP roadmap and discuss options.",
+    "finalCta": "Send us a Message"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "About We Make IT - Meet Our Team",
+      "description": "Learn about We Make IT, our mission, and the team behind your project. Based in Ireland, serving global clients.",
+      "ogTitle": "About We Make IT",
+      "ogDescription": "We are a software development studio based in Ireland, helping entrepreneurs and SMEs build digital products that their customers love."
+    },
+    "eyebrow": "About Us",
+    "heroHeading": "We turn ideas into real digital products",
+    "heroSubheading": "We Make IT is a software development studio based in Ireland. We care deeply about helping local businesses grow because better digital experiences make everyday life easier for everyone.",
+    "missionHeading": "Our Mission",
+    "missionBody": "To help entrepreneurs and small businesses build digital products that their customers genuinely enjoy using. From first idea to launch and beyond, we are with you.",
+    "valuesHeading": "What We Stand For",
+    "values": [
+      { "title": "Accessibility & Inclusion", "description": "Every product we build is inclusive and accessible from day one. No one should be left behind in the digital world." },
+      { "title": "Honest Communication", "description": "We speak plain English, explain technical decisions clearly, and always listen to understand your real needs." },
+      { "title": "Quality Over Speed", "description": "We build for the long term. Your product is designed to scale, improve, and adapt as your business grows." },
+      { "title": "Fixed Pricing", "description": "You know the full cost before we start. No hidden extras, no surprise invoices. Transparency is not optional." }
+    ],
+    "teamHeading": "Meet Our Team",
+    "teamSubheading": "We combine design, development, strategy, and business expertise. Most importantly, we genuinely care about your success.",
+    "team": [
+      { "name": "Andrea Contarino", "title": "Chief Architect & Backend Engineer", "bio": "15+ years building scalable systems and technical foundations for products at scale. Architect of our approach to custom software and project delivery." },
+      { "name": "Svetlana Savchenko", "title": "Founder & Senior Frontend Engineer", "bio": "Frontend specialist and UX advocate. Over 8 years building interfaces that are intuitive, accessible, and genuinely usable. Founder of We Make IT." },
+      { "name": "Seamus O'Brien", "title": "Web and Marketing", "bio": "Brings brand strategy, content, and go-to-market expertise. Helps translate our work into clear messaging that resonates with clients and users." },
+      { "name": "Sheila McLoughlin", "title": "Junior Software Engineer", "bio": "Growing her expertise in full-stack development. Brings fresh perspective to problem-solving and brings quality and care to every feature delivered." }
+    ],
+    "teamPlaceholder": "Photo coming soon"
+  },
+  "auditExpert": {
+    "title": "Free Audits by Tech Experts",
+    "subtitle": "Get a comprehensive audit from our team of experts. We review your website or app, identify opportunities, and provide a clear, practical plan to improve your digital presence.",
+    "backToHome": "Back to home",
+    "eyebrow": "How it works",
+    "howItWorksTitle": "How our free audit works",
+    "howItWorksIntro": "We've designed our audit process to be thorough, transparent, and collaborative. Here's exactly what happens:",
+    "processSteps": [
+      {
+        "step": "1",
+        "title": "Fill in the request form",
+        "description": "Tell us about your business, your website, and any specific problems you want us to focus on. This takes about 2-3 minutes."
+      },
+      {
+        "step": "2",
+        "title": "We send you a brief questionnaire",
+        "description": "We'll ask more detailed questions about your business, goals, and current challenges. This helps us tailor the audit to what matters most to you."
+      },
+      {
+        "step": "3",
+        "title": "Expert review & suggestions",
+        "description": "Our team reviews your website and creates a detailed plan showing what you can do to gain more customers, fix technical issues, or improve user experience."
+      },
+      {
+        "step": "4",
+        "title": "Choose your format",
+        "description": "You decide how you'd like to discuss the results: an online video call, an in-person meetup (if you're in Ireland), or a detailed email report."
+      },
+      {
+        "step": "5",
+        "title": "Review & Q&A",
+        "description": "We go through the suggestions together, answer your questions, and discuss what the changes could mean for your business."
+      },
+      {
+        "step": "6",
+        "title": "Feedback & next steps",
+        "description": "We ask for your feedback and discuss next steps—whether you want us to implement changes or you'd prefer to work with your own team."
+      }
+    ],
+    "requestFormTitle": "Get your free audit started",
+    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps."
+  }
 }

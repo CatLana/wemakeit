@@ -55,7 +55,9 @@ export default function Hero() {
 
         {/* Sub-headline */}
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 font-medium leading-relaxed mb-6">
-          {t("subtitle")}
+          {t("subtitleBody")}
+          <br />
+          <span className="text-[#22D3EE] font-bold">{t("subtitleCta")}</span>
         </p>
 
         {/* Summer sale offer */}
@@ -81,9 +83,10 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div
-          aria-hidden="true"
-          className="mt-20 flex justify-center motion-safe:animate-bounce"
+        <a
+          href="#services"
+          aria-label="Scroll to services section"
+          className="mt-20 flex justify-center motion-safe:animate-bounce transition-opacity hover:opacity-70 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
         >
           <svg
             width="24"
@@ -98,7 +101,7 @@ export default function Hero() {
           >
             <polyline points="6 9 12 15 18 9" />
           </svg>
-        </div>
+        </a>
       </div>
     </section>
   );

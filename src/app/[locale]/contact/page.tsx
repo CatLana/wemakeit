@@ -1,23 +1,8 @@
-import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Suspense } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ContactSimpleForm from "@/components/ContactSimpleForm";
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "contactPage" });
-  return {
-    title: t("title"),
-    description: t("description"),
-    robots: { index: true, follow: true },
-  };
-}
 
 export default async function ContactPage({
   params,
