@@ -249,15 +249,14 @@ body {
  * .chalk-display — hero / campaign headlines (Display, weight 800)
  * .chalk-heading — section / component headings on dark backgrounds
  * ──────────────────────────────────────────────────────────────────────── */
-@layer utilities {
-  .chalk-display {
-    color: #F8FAFC;
-    text-shadow:
-      0 0 60px rgba(34, 211, 238, 0.10),
-      0 1px 3px rgba(0, 0, 0, 0.50);
-  }
-  .chalk-heading {
-    color: #F8FAFC;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
-  }
+@utility chalk-display {
+  color: #F8FAFC;
+  text-shadow:
+    0 0 60px rgba(34, 211, 238, 0.10),
+    0 1px 3px rgba(0, 0, 0, 0.50);
+}
+
+@utility chalk-heading {
+  color: #F8FAFC;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }

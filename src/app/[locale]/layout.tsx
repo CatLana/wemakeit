@@ -124,7 +124,7 @@ export async function generateMetadata({
       googleBot: { index: true, follow: true },
     },
     icons: {
-      icon: "/images/favicon.PNG",
+      icon: "/images/favicon.svg",
     },
   };
 }
@@ -152,7 +152,7 @@ export default async function LocaleLayout({
     "@type": "ProfessionalService",
     name: "We Make IT",
     url: BASE_URL,
-    logo: `${BASE_URL}/logo.svg`,
+    logo: `${BASE_URL}/images/logo_wemakeit.svg`,
     image: `${BASE_URL}/api/og`,
     description:
       "Custom app and website development for entrepreneurs and small businesses. Based in Ireland, working globally.",
