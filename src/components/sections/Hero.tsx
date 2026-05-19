@@ -1,6 +1,5 @@
-import { MapPin, Tag, Zap } from "lucide-react";
+import { MapPin, Tag } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -56,7 +55,9 @@ export default function Hero() {
 
         {/* Sub-headline */}
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 font-medium leading-relaxed mb-6">
-          {t("subtitle")}
+          {t("subtitleBody")}
+          <br />
+          <span className="text-[#22D3EE] font-bold">{t("subtitleCta")}</span>
         </p>
 
         {/* Summer sale offer */}
@@ -81,24 +82,11 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Free audit nudge */}
-        <div className="mt-5 inline-flex items-center gap-2">
-          <Link
-            href="/audit"
-            className="inline-flex items-center gap-1.5 text-sm text-[#22D3EE] hover:text-cyan-300 transition-colors hover:underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-          >
-            <Zap size={13} aria-hidden="true" />
-            {t("auditCta")}
-          </Link>
-          <span className="inline-flex items-center rounded-full border border-[#22D3EE]/40 bg-[#22D3EE]/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-[#22D3EE]">
-            Beta
-          </span>
-        </div>
-
         {/* Scroll indicator */}
-        <div
-          aria-hidden="true"
-          className="mt-20 flex justify-center motion-safe:animate-bounce"
+        <a
+          href="#services"
+          aria-label="Scroll to services section"
+          className="mt-20 flex justify-center motion-safe:animate-bounce transition-opacity hover:opacity-70 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
         >
           <svg
             width="24"
@@ -113,7 +101,7 @@ export default function Hero() {
           >
             <polyline points="6 9 12 15 18 9" />
           </svg>
-        </div>
+        </a>
       </div>
     </section>
   );

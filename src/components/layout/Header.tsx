@@ -19,7 +19,6 @@ export default function Header() {
   const navLinks = [
     { label: t("nav.whatWeDo"), href: "/#services" },
     { label: t("nav.aboutUs"), href: "/#about" },
-    { label: t("nav.howItWorks"), href: "/#process" },
     { label: t("nav.blog"), href: "/blog" },
     { label: t("nav.talkToUs"), href: "/#quote" },
   ];
@@ -108,13 +107,13 @@ export default function Header() {
               className="flex flex-col items-start focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
             >
               <Image
-                  src="/images/logo_wemakeit.svg"
-                  alt=""
-                  width={350}
-                  height={110}
-                  className="h-14 w-auto block"
-                  priority
-                />
+                src="/images/logo_wemakeit.svg"
+                alt=""
+                width={350}
+                height={110}
+                className="h-14 w-auto block"
+                priority
+              />
             </Link>
 
             {/* Desktop nav */}
@@ -133,19 +132,12 @@ export default function Header() {
             {/* Desktop right side: Language switcher + CTA */}
             <div className="hidden lg:flex items-center gap-4">
               <LanguageSwitcher />
-              <button
-                type="button"
-                onClick={() => {
-                  if (typeof window !== "undefined") {
-                    import("@/components/sections/Contact").then(mod => {
-                      if (mod.focusContactForm) mod.focusContactForm();
-                    });
-                  }
-                }}
+              <Link
+                href="/audit/expert"
                 className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] px-5 py-2 bg-[#22D3EE] text-[#0F172A] font-semibold text-sm rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
               >
                 {t("cta")}
-              </button>
+              </Link>
             </div>
 
             {/* Mobile hamburger */}

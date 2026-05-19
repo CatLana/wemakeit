@@ -20,9 +20,9 @@ export default function Footer() {
       aria-label={t("footerLabel")}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10">
           {/* Brand column */}
-          <div className="lg:col-span-2">
+          <div className="col-span-2 md:col-span-4 lg:col-span-2">
             <Link
               href="/"
               aria-label="We Make IT - Home"
@@ -69,7 +69,7 @@ export default function Footer() {
             </div>
 
             <NewsletterSignup />
-            {/* Contact info */}
+            {/* Contact info with small map */}
             <address className="not-italic text-sm space-y-3 mt-6">
               <div className="flex items-center gap-3">
                 <MapPin size={16} className="shrink-0 text-[#22D3EE]" aria-hidden="true" />
@@ -83,6 +83,67 @@ export default function Footer() {
                 >
                   info@wemakeit.ie
                 </a>
+              </div>
+              {/* Location card */}
+              <div className="mt-6 relative w-full rounded-xl overflow-hidden border border-white/10">
+                {/* Dot-grid map background */}
+                <svg
+                  className="absolute inset-0 w-full h-full"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                >
+                  <defs>
+                    <pattern id="footer-map-dots" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+                      <circle cx="1" cy="1" r="0.9" fill="#22D3EE" opacity="0.22" />
+                    </pattern>
+                    <radialGradient id="footer-map-vignette" cx="50%" cy="45%" r="65%">
+                      <stop offset="0%" stopColor="#0B1628" stopOpacity="0" />
+                      <stop offset="100%" stopColor="#0B1628" stopOpacity="0.85" />
+                    </radialGradient>
+                  </defs>
+                  <rect width="100%" height="100%" fill="#0B1628" />
+                  <rect width="100%" height="100%" fill="url(#footer-map-dots)" />
+                  <rect width="100%" height="100%" fill="url(#footer-map-vignette)" />
+                </svg>
+
+                {/* Card content */}
+                <div className="relative z-10 px-5 pt-5 pb-4">
+                  {/* Pin row */}
+                  <div className="flex items-start gap-3">
+                    <div className="relative mt-0.5 shrink-0">
+                      <span className="absolute inset-0 rounded-full bg-[#22D3EE]/30 animate-ping [animation-duration:2s]" />
+                      <span className="relative flex h-5 w-5 items-center justify-center rounded-full bg-[#22D3EE]/20 ring-1 ring-[#22D3EE]/50">
+                        <MapPin size={11} className="text-[#22D3EE]" aria-hidden="true" />
+                      </span>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-white leading-snug">
+                        Ashbourne, Co. Meath
+                      </p>
+                      <p className="text-xs text-slate-400 mt-0.5">Republic of Ireland</p>
+                    </div>
+                  </div>
+
+                  {/* Divider */}
+                  <div className="my-3.5 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+                  {/* Footer row */}
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-slate-500">Based in Ireland, working locally and globally</span>
+                    <a
+                      href="https://maps.google.com/?q=Ashbourne,+Co.+Meath,+Ireland"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-[#22D3EE]/70 hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                      aria-label="Open Ashbourne, Co. Meath in Google Maps (opens in new tab)"
+                    >
+                      View on map ↗
+                    </a>
+                  </div>
+                </div>
+
+                {/* Bottom accent line */}
+                <div className="h-[2px] bg-gradient-to-r from-transparent via-[#22D3EE]/50 to-transparent" />
               </div>
             </address>
             {/* Language note */}
@@ -100,16 +161,16 @@ export default function Footer() {
             <ul className="space-y-1" role="list">
               {serviceLabels.map((label, index) => {
                 const serviceHrefs = [
-                  "/services/web-development",
-                  "/services/web-development",
-                  "/services/ux-accessibility-audit",
-                  "/services/app-development",
-                  "/services/web-development",
+                  "/solutions/websites",
+                  "/solutions/websites",
+                  "/solutions/websites",
+                  "/solutions/software",
+                  "/solutions/software",
                 ];
                 return (
                   <li key={label}>
                     <Link
-                      href={serviceHrefs[index] ?? "/services"}
+                      href={serviceHrefs[index] ?? "/solutions"}
                       className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                     >
                       {label}
@@ -127,13 +188,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1" role="list">
               <li>
-                <Link href="/#about" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                <Link href="/about" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("companyLinks.aboutUs")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/#process" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                  {t("companyLinks.howItWorks")}
                 </Link>
               </li>
               <li>
@@ -142,19 +198,29 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (typeof window !== "undefined") {
-                      import("@/components/sections/Contact").then(mod => {
-                        if (mod.focusContactForm) mod.focusContactForm();
-                      });
-                    }
-                  }}
-                  className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                >
+                <Link href="/contact" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("companyLinks.getAQuote")}
-                </button>
+                </Link>
+              </li>
+              <li>
+                <Link href="/solutions/for-entrepreneurs" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  For Small Entrepreneurs
+                </Link>
+              </li>
+              <li>
+                <Link href="/solutions/for-smes" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  For SMEs
+                </Link>
+              </li>
+              <li>
+                <Link href="/solutions/for-startups" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  For Startups
+                </Link>
+              </li>
+              <li>
+                <Link href="/solutions/for-software" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  Custom Software Solutions
+                </Link>
               </li>
             </ul>
           </div>

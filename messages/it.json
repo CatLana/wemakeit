@@ -1,1048 +1,1338 @@
 {
   "metadata": {
-    "title": "Sviluppo App e Web per Startup e PMI | We Make IT",
-    "description": "Trasformiamo idee in app e siti web. Lavoriamo remotamente in tutto il mondo, oltre 15 anni di esperienza, prezzo fisso. Prima consulenza gratuita.",
-    "ogTitle": "Sviluppo App e Web per Startup e PMI | We Make IT",
-    "ogDescription": "Hai un'idea imprenditoriale? Ti aiutiamo a validarla, pianificarla e realizzarla. Prima consulenza gratuita."
+    "title": "Sviluppo Web e App in Irlanda | We Make IT",
+    "description": "Siti web, app mobili e soluzioni digitali su misura per aziende italiane. Prezzi fissi, consulenza gratuita. 15+ anni di esperienza.",
+    "ogTitle": "Sviluppo Web e App in Irlanda | We Make IT",
+    "ogDescription": "Realizziamo siti web e app personalizzate — dall'idea al lancio. Prezzo fisso, nessuna sorpresa. Prenota una consulenza gratuita."
   },
   "header": {
-    "logoAriaLabel": "We Make IT — Home",
+    "logoAriaLabel": "We Make IT - Home",
     "nav": {
-      "whatWeDo": "Servizi",
-      "aboutUs": "Chi Siamo",
-      "howItWorks": "Come Funziona",
-      "blog": "Blog",
-      "talkToUs": "Contattaci"
+      "whatWeDo": "Services",
+      "aboutUs": "About",
+      "howItWorks": "How It Works",
+      "blog": "Resources",
+      "talkToUs": "Contact"
     },
-    "cta": "Richiedi Preventivo",
-    "openMenu": "Apri menu",
-    "closeMenu": "Chiudi menu",
-    "mobileNavLabel": "Menu mobile",
-    "mainNavLabel": "Menu principale"
+    "cta": "Audit gratuito",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileNavLabel": "Mobile navigation",
+    "mainNavLabel": "Main navigation"
+  },
+  "languageSwitcher": {
+    "selectorAriaLabel": "Language selector",
+    "menuAriaLabel": "Select language",
+    "currentLanguage": "Current language: {language}",
+    "switchTo": "Switch to {language}"
   },
   "hero": {
-    "badge": "Lavoriamo remotamente in tutto il mondo",
+    "badge": "Based in Ireland",
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
-    "subtitle": "Hai un'idea imprenditoriale? La trasformiamo in app o sito web. Un team, un prezzo, senza costi nascosti.",
-    "springSale": "Offerta Estate: 30% sconto per nuovi clienti. Posti limitati.",
-    "cta1": "Raccontaci la tua idea",
+    "subtitleBody": "Aiutiamo le aziende irlandesi a crescere costruendo soluzioni digitali su misura. Che tu abbia bisogno di un sito web che vende o di una soluzione IT personalizzata per risparmiare tempo e denaro — sappiamo come aiutarti.",
+    "subtitleCta": "Prenota oggi la tua consulenza gratuita di 30 minuti.",
+    "springSale": "Summer Sale: 30% off for new clients. Limited spots available.",
+    "cta1": "Contattaci",
     "cta2": "Come funziona",
-    "auditCta": "Audit gratuito del sito. Scopri il tuo punteggio",
-    "ariaLabel": "Schermata principale We Make IT"
+    "auditCta": "Free website audit. See how your site scores",
+    "ariaLabel": "Hero: We Make IT home"
   },
   "stats": {
-    "ariaLabel": "Come lavoriamo",
-    "heading": "Come lavoriamo diversamente",
+    "ariaLabel": "How we work",
+    "heading": "How we work differently",
     "items": [
-      { "icon": "ShieldCheck", "label": "Accessibilità e UX prima di tutto", "description": "Ogni prodotto è costruito inclusivo e usabile fin dal primo giorno.", "ariaLabel": "Costruiamo ogni prodotto con accessibilità e UX come fondamenta" },
-      { "icon": "Lightbulb", "label": "Design Thinking applicato", "description": "Validiamo prima di costruire. Investi nella cosa giusta.", "ariaLabel": "Applichiamo il Design Thinking per validare le idee prima di costruire" },
-      { "icon": "TrendingUp", "label": "Costruito per convertire", "description": "Strategia di vendita e marketing integrata in ogni decisione.", "ariaLabel": "Prendiamo decisioni pensando ai tuoi obiettivi di business e alle conversioni" },
-      { "icon": "MessageCircle", "label": "Linguaggio semplice, sempre", "description": "Con noi è facile comunicare. Se non sei un esperto di tecnologia, ti spieghiamo tutto in modo chiaro e comprensibile.", "ariaLabel": "Comunichiamo in modo semplice e ascoltiamo sempre per capire le tue esigenze" }
+      { "icon": "ShieldCheck", "label": "Accessibility & UX first", "description": "Every product is built inclusive and usable from day one.", "ariaLabel": "We build every product with accessibility and UX as a foundation" },
+      { "icon": "Lightbulb", "label": "Design Thinking applied", "description": "We validate before we build. You invest in the right thing.", "ariaLabel": "We apply Design Thinking to validate ideas before building" },
+      { "icon": "TrendingUp", "label": "Built to convert", "description": "Sales and marketing strategy is baked into every decision.", "ariaLabel": "We make decisions with your business goals and conversions in mind" },
+      { "icon": "MessageCircle", "label": "We speak plain English", "description": "We are easy to speak with. If you are not a technical person, we explain everything in simple terms.", "ariaLabel": "We communicate in plain English and always listen to our clients to clearly understand their needs" }
     ]
   },
   "services": {
-    "eyebrow": "Cosa facciamo",
-    "heading": "Sviluppo app e web per la tua azienda",
-    "headingPlain": "Sviluppo app e web",
-    "headingAccent": "per la tua azienda",
-    "subheading": "Dalla validazione idea e prototipazione, allo sviluppo app mobile e web, servizi di localizzazione, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
-    "cardCta": "Raccontaci la tua idea",
-    "consultationCta": "Prenota consulenza",
-    "learnMore": "Scopri di più",
-    "items": [
+    "eyebrow": "Services",
+    "heading": "Che la tua attività sia grande o piccola, ti aiutiamo a crescere.",
+    "headingPlain": "Che la tua attività sia grande o piccola,",
+    "headingAccent": "ti aiutiamo a crescere.",
+    "subheading": "Scegli la direzione più adatta ai tuoi obiettivi.",
+    "servicePreviewLabel": "Service preview for {category}",
+    "categories": [
       {
-        "title": "Sviluppo Siti Web",
-        "description": "Progettiamo e realizziamo siti web e applicazioni web personalizzati — veloci, accessibili e ottimizzati per convertire i visitatori in clienti."
+        "title": "For Small Entrepreneurs",
+        "tagline": "We help entrepreneurs create digital products that actually sell. If you want to earn more - build your brand online with us.",
+        "description": "Websites and digital presence services for entrepreneurs looking to attract customers and strengthen their online brand.",
+        "href": "/solutions/for-entrepreneurs",
+        "previewItems": [
+          "Website development and redesign",
+          "SEO and digital marketing support",
+          "Graphic design and campaign assets",
+          "Website management and updates"
+        ],
+        "cta": "Explore for small entrepreneurs"
       },
       {
-        "title": "Sviluppo App su Misura",
-        "description": "Progettiamo e sviluppiamo app che rispondono esattamente alle esigenze della tua azienda e dei tuoi clienti."
+        "title": "For SMEs",
+        "tagline": "We help business of all sizes to grow revenue and optimise resources through custom software solutions made to tackle their unique problems. Automation can save you a lot of time and money.",
+        "description": "Custom software, IT outsourcing, and maintenance services for small and medium businesses seeking growth and efficiency.",
+        "href": "/solutions/for-smes",
+        "previewItems": [
+          "Custom software development",
+          "Business process automation",
+          "IT project outsourcing and support",
+          "Maintenance and system optimization"
+        ],
+        "cta": "Explore for SMEs"
       },
       {
-        "title": "Validazione Idea e MVP",
-        "description": "Non sicuro che l'idea funzioni? La validiamo prima di sviluppare completamente e creiamo un MVP per testarla."
-      },
-      {
-        "title": "Ricerca UX",
-        "description": "Hai già un prodotto o prototipo? Studiamo come le persone reali lo usano, troviamo i problemi e proponiamo miglioramenti prioritari."
-      },
-      {
-        "title": "UX Design",
-        "description": "Report UX pronto? Ti aiutiamo con design e usabilità. Se serve, ci occupiamo anche dell'implementazione."
-      },
-      {
-        "title": "Prototipo App",
-        "description": "Prima dello sviluppo completo, creiamo un prototipo interattivo da testare con utenti e investitori."
-      },
-      {
-        "title": "Sviluppo App Mobile",
-        "description": "Sviluppiamo app iOS e Android con un'unica base codice: costi ridotti senza compromettere qualità e funzionalità."
-      },
-      {
-        "title": "Audit Accessibilità",
-        "description": "Controlliamo i prodotti digitali per conformità accessibilità e apportiamo le correzioni necessarie."
-      },
-      {
-        "title": "Consulenza IT",
-        "description": "Ti aiutiamo a capire cosa sviluppare, quali tecnologie scegliere e se la tua idea è realistica."
-      },
-      {
-        "title": "Manutenzione e Supporto",
-        "description": "Ci occupiamo della manutenzione app/sito: correggiamo bug, aggiungiamo funzionalità, garantiamo funzionamento stabile."
-      },
-      {
-        "title": "Localizzazione Siti e App",
-        "description": "Gestiamo la localizzazione completa del tuo sito o app: dalla traduzione dei contenuti in più lingue all'integrazione dei token i18n nel codice. Raggiungi nuovi mercati senza complicazioni."
-      },
-      {
-        "title": "Sviluppo Prodotti Multi-Mercato",
-        "description": "Stai sviluppando un prodotto per più mercati? Progettiamo e sviluppiamo prodotti online localizzati per diverse regioni, lingue e aspettative culturali — per un lancio globale sicuro."
+        "title": "For Startups",
+        "tagline": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Fixed pricing or flexible equity partnerships available.",
+        "description": "MVP development, prototypes, design thinking, UX strategy, and IT consultations for founders validating and building early-stage companies.",
+        "href": "/solutions/for-startups",
+        "previewItems": [
+          "MVP development and rapid validation",
+          "Product prototyping and iteration",
+          "Design Thinking workshops and strategy",
+          "UX research and architecture consulting"
+        ],
+        "cta": "Explore for startups"
       }
     ]
   },
   "founder": {
-    "eyebrow": "Parola della Fondatrice",
-    "opening": "Sono un'ingegnera del software con una particolare passione per UX e Accessibilità, ma sono anche una normale utente di decine di app che tutti noi siamo costretti a usare ogni giorno per portare a termine il lavoro e le attività quotidiane. Trovo davvero logorante usare siti e app con una cattiva usabilità — sottraggono energia e tempo che avrebbero potuto andare verso cose che contano davvero. Adoro le esperienze che hanno semplicemente senso, quelle in cui non devi mai fermarti a chiederti cosa fare dopo. La verità è che la maggior parte delle app ancora non funziona così. Ed è esattamente questa la lacuna che noi aiutiamo a colmare.",
-    "name": "Mi chiamo Lana.",
-    "identity": "Innovatrice creativa, consulente tecnica per piccole imprese, sviluppatrice frontend e fondatrice di We Make IT.",
-    "bio": "Da più di otto anni lavoro nello sviluppo web, sia in grandi aziende che in team più piccoli e affiatati. La mia specializzazione è sempre stata il frontend engineering, i Design System e l'Accessibilità. Sono anche UX designer certificata, e mi appassiona davvero creare interfacce intuitive e inclusive. Lavoro insieme a un fantastico team di ingegneri full-stack con oltre quindici anni di esperienza. Insieme, We Make IT Happen.",
-    "passion": "Ci sono voluti anni di riflessione per capirlo, ma aiutare le persone a risolvere problemi reali è la mia vera passione. Tengo molto al software inclusivo e accessibile — perché nessuno dovrebbe sentirsi escluso nel navigare il proprio mondo digitale. Le persone sono diverse, i bisogni sono diversi, eppure tutti meritano un'esperienza fluida e senza frustrazioni. Le applicazioni plasmano la nostra vita quotidiana, che ne siamo consapevoli o meno. La mia missione è aiutare imprenditori come te a costruire prodotti che i tuoi clienti amino davvero usare.",
-    "differenceHeading": "Cosa rende i nostri servizi diversi?",
-    "differenceHighlight": "Una vera ossessione nel risolvere i problemi giusti nel modo giusto.",
-    "differenceText": "Se hai una sfida, ti troveremo una soluzione chiara e concreta — senza complessità inutili né linguaggio tecnico inaccessibile.",
-    "quote": "Quando la tua azienda risolve un problema reale per persone reali, è lì che inizia il successo.",
-    "quoteFooter": "E noi sappiamo come aiutarti ad arrivare a quel punto.",
-    "callout": "Pronta a condividere la tua idea? Compila il modulo qui sotto e ti invieremo un preventivo gratuito e senza impegno. I tuoi clienti meritano un'esperienza migliore — e tutto inizia qui.",
-    "cta": "Raccontaci la tua idea",
-    "imgAlt": "Lana, fondatrice di We Make IT"
+    "eyebrow": "A Message From Our Founder",
+    "opening": "I am a software engineer with a particular interest in UX and Accessibility, but I am also just a normal user of dozens of apps we all have to operate on a daily basis to get our work and life tasks done. I find websites and apps that have bad usability genuinely draining — it takes energy and time that could have gone towards things that actually matter. I love experiences that simply make sense, where you never have to stop and wonder what to do next. The truth is, most apps still do not feel that way. And that is exactly the gap we help close.",
+    "name": "My name is Lana.",
+    "identity": "Creative innovator, technical consultant for small businesses, frontend developer, and the founder of We Make IT.",
+    "bio": "For more than eight years, I have worked across web development in both large companies and small, close-knit teams. My focus has always been frontend engineering, Design Systems, and Accessibility. I am also a certified UX designer, and I genuinely love building interfaces that feel intuitive and inclusive. I work alongside a fantastic team of full-stack engineers with over fifteen years of experience. Together, We Make IT Happen.",
+    "passion": "It took years of reflection to realise it, but helping people solve real problems is my true passion. I care deeply about inclusive and accessible software — because no one should be left behind when navigating their digital world. People are different, and needs are different, yet everyone deserves a smooth, frustration-free experience. Applications shape our everyday lives, whether we realise it or not. My mission is to help entrepreneurs just like you build products that your customers genuinely enjoy using.",
+    "differenceHeading": "So what makes our services different?",
+    "differenceHighlight": "A genuine obsession with solving the right problems in the right way.",
+    "differenceText": "If you have a challenge, we will find you a clear and practical solution without unnecessary complexity or technical language getting in the way.",
+    "quote": "When your business solves a real problem for real people, that is where success begins.",
+    "quoteFooter": "And we know how to help you reach that point.",
+    "callout": "Ready to share your idea? Fill in the form below and we will send you a free, no-obligation quote. Your customers deserve a better experience — and it all starts here.",
+    "cta": "Tell us your idea",
+    "imgAlt": "Lana, founder of We Make IT"
   },
   "about": {
-    "eyebrow": "Chi Siamo",
-    "headingLine1": "Trasformiamo la tua idea",
-    "headingLine2": "in un prodotto online reale.",
-    "body1": "We Make IT è uno studio di sviluppo software con sede in Irlanda. Aiutiamo imprese e fondatori a dare vita alle loro idee, e offriamo consulenza e supporto per progetti esistenti.",
-    "body2": "Dalla tua prima domanda al lancio e oltre, siamo con te.",
-    "body3": "Il nostro team combina sviluppo full-stack, design accessibile, UX ed esperienza aziendale. Abbiamo lavorato in grandi aziende tecnologiche e ora portiamo questa esperienza alle piccole e medie imprese.",
-    "tagline": "Ovunque tu sia, se hai un'idea, ci farebbe piacere sentirla.",
-    "cta": "Richiedi un preventivo gratuito",
-    "visualLabel": "We Make IT - Irlanda",
-    "visualHeading": "Con sede in Irlanda",
-    "visualSub": "Lavoriamo a livello globale",
-    "visualRegions": "Europa · Remoto · Mondo",
-    "languageNote": "Tra l'altro, parliamo anche",
+    "eyebrow": "About Us",
+    "body1": "We Make IT is a software development studio based in Ireland. We care deeply about helping local businesses grow because better digital experiences make everyday life easier for everyone.",
+    "body2": "From your first question to launch and beyond, we are with you.",
+    "body3": "Our team combines full-stack development, accessible design, UX, and business expertise. We focus on Ireland while warmly welcoming clients from other markets too.",
+    "tagline": "Wherever you are, if you have an idea, we would love to hear it.",
+    "cta": "Get a free quote",
+    "visualLabel": "We Make IT - Ireland",
+    "visualHeading": "Based in Ireland",
+    "visualSub": "Working globally",
+    "visualRegions": "Europe · Remote · Worldwide",
+    "languageNote": "By the way, we also speak",
     "values": [
-      {
-        "title": "Accogliamo Ogni Cliente",
-        "description": "Nessuna idea è troppo piccola. Che tu sia un fondatore, un imprenditore o qualcuno che esplora un’idea, siamo felici di parlarne. Prima consulenza gratuita, senza impegno."
-      },
-      {
-        "title": "Esperienza da Grande Azienda",
-        "description": "Il nostro team ha oltre 15 anni di esperienza nello sviluppo di prodotti per grandi aziende tecnologiche. Portiamo quella qualità e competenza in ogni progetto, indipendentemente dalle dimensioni."
-      },
-      {
-        "title": "Attenzione Personale, ad Ogni Passo",
-        "description": "Lavori direttamente con il nostro team, non con un agente commerciale. Risposte rapide, parole dirette e cura genuina dalla prima idea al lancio e oltre."
-      },
-      {
-        "title": "Un Prezzo Fisso. Nessuna Sorpresa.",
-        "description": "Sai esattamente quanto pagherai prima di iniziare. Nessun extra nascosto, nessuna fattura inaspettata. Hai un preventivo da un’altra azienda? Lo batteremo."
-      }
+      { "title": "We Welcome Every Client", "description": "No idea is too small. Whether you are a startup founder, a business owner, or someone just exploring an idea, we are happy to talk. Free first consultation, no commitment required." },
+      { "title": "Big-Company Experience", "description": "Our team has 15+ years of experience building products at major tech companies. We bring that expertise and quality to every project, no matter the size." },
+      { "title": "Personal Attention, Every Step", "description": "You work directly with our team, not a sales rep or account manager. Expect fast replies, straight talk, and genuine care from first idea to launch and beyond." },
+      { "title": "One Fixed Price. No Surprises.", "description": "You know exactly what you are paying before we start. No hidden extras, no surprise invoices. Got a quote from another company? We will beat it." }
     ]
   },
   "process": {
-    "eyebrow": "Come Funziona",
-    "headingLine1": "Dall'idea all'app",
-    "headingLine2": "in cinque semplici passi",
-    "subheading": "Raccontaci la tua idea, al resto pensiamo noi.",
-    "cta": "Raccontaci la tua idea",
+    "eyebrow": "How It Works",
+    "headingLine1": "From idea to app",
+    "headingLine2": "in five simple steps",
+    "subheading": "Tell us your idea and we will take it from there.",
+    "cta": "Tell us your idea",
     "steps": [
-      {
-        "number": "01",
-        "title": "Raccontaci la tua idea",
-        "description": "Compila il form e descrivi l'idea con parole semplici."
-      },
-      {
-        "number": "02",
-        "title": "Ti inviamo il preventivo",
-        "description": "Studiamo i dettagli e ti mandiamo costo indicativo e piano."
-      },
-      {
-        "number": "03",
-        "title": "Valuti la proposta",
-        "description": "Valuti la nostra offerta e fissiamo incontro online/persona."
-      },
-      {
-        "number": "04",
-        "title": "Firmiamo il contratto",
-        "description": "Quando sei pronto, formalizziamo con contratto."
-      },
-      {
-        "number": "05",
-        "title": "Iniziamo a lavorare",
-        "description": "Paghi l'anticipo e partiamo con lo sviluppo."
-      }
+      { "number": "01", "title": "Tell Us Your Idea", "description": "Fill in the form and describe your idea in plain words." },
+      { "number": "02", "title": "We Send You a Quote", "description": "We review your idea and send you an estimated cost range and a potential implementation plan." },
+      { "number": "03", "title": "You Review the Proposal", "description": "You review the proposal and we schedule a consultation meeting online or offline to discuss further details." },
+      { "number": "04", "title": "We Shake Hands", "description": "When you are ready to start, we sign a simple contract to get everything in writing." },
+      { "number": "05", "title": "We Start the Work", "description": "You pay the deposit and we get building. Easy as that." }
     ]
   },
   "ctaStrip": {
-    "heading": "Non sicuro se l'idea è pronta?",
-    "body1": "È il momento perfetto per parlarne. Compila il form con i dettagli e ti diamo feedback.",
-    "body2": "Con esperienza Design Thinking e MVP, validiamo l'idea prima dello sviluppo completo.",
-    "cta": "Compila il form"
+    "heading": "Sei pronto a portare la tua azienda al livello successivo e a far crescere i tuoi ricavi?",
+    "body1": "Contattaci, che tu sia un imprenditore all'inizio o un'azienda consolidata. Siamo felici di sentirti! Aiutiamo le imprese locali a diventare più di successo costruendo presenze digitali su misura e soluzioni IT personalizzate.",
+    "body2": "",
+    "cta": "Contattaci"
   },
   "auditBanner": {
-    "eyebrow": "Controllo sito gratuito",
+    "eyebrow": "Free website check",
     "betaLabel": "Beta",
-    "heading": "Esegui un audit gratuito del tuo sito",
-    "body": "Ottieni una panoramica immediata su performance, accessibilità e SEO per sapere cosa migliorare prima.",
-    "cta": "Avvia audit gratuito",
+    "heading": "Run a free audit for your website",
+    "body": "Get an instant snapshot of your performance, accessibility, and SEO so you know what to improve first.",
+    "cta": "Run free audit",
     "metricPerformance": "Performance",
-    "metricAccessibility": "Accessibilità",
+    "metricAccessibility": "Accessibility",
     "metricSeo": "SEO",
-    "visualNote": "Anteprima punteggi"
+    "visualNote": "Sample score preview"
   },
   "contact": {
-    "eyebrow": "Siamo felici di sentirti",
-    "heading": "Scrivici un messaggio",
-    "body": "Hai bisogno di un preventivo o di una consulenza gratuita? Siamo qui per aiutarti!",
-    "officeLabel": "Dove Lavoriamo",
-    "officeLocation": "Da remoto",
-    "contactLink": "Domande?",
-    "contactLinkText": "Scrivici",
+    "eyebrow": "We are happy to hear from you",
+    "heading": "Send us a message",
+    "body": "Need a free quote or consultation request? We are here to help!",
+    "officeLabel": "Location",
+    "officeLocation": "Remote",
+    "contactLink": "Questions?",
+    "contactLinkText": "Send us a message",
     "linkedinLabel": "LinkedIn",
-    "linkedinNewTab": "(si apre in nuova scheda)",
-    "trustLabel": "Perché sceglierci",
+    "linkedinNewTab": "(opens in new tab)",
+    "trustLabel": "Why work with us",
     "trustPoints": [
-      "Preventivo gratuito, senza impegno",
-      "Rispondiamo entro 1 giorno lavorativo"
+      "Free quote, no commitment required",
+      "We reply within 1 business day"
     ],
-    "whatNextHeading": "Cosa succede dopo?",
+    "whatNextHeading": "What happens next?",
     "whatNextSteps": [
-      "Revisioniamo la tua richiesta",
-      "Ti inviamo un preventivo o fissiamo una call",
-      "Decidi tu, senza pressioni"
+      "We review your request",
+      "We send a quote or schedule a quick call",
+      "You decide, no pressure"
     ],
     "form": {
-      "ariaLabel": "Richiedi un preventivo gratuito",
-      "service": "Come possiamo aiutarti?",
+      "ariaLabel": "Get a free quote",
+      "service": "How can we help?",
       "serviceOptions": {
-        "consultation": "Consulenza Gratuita",
-        "quote": "Richiesta Preventivo",
-        "general": "Richiesta Generica",
-        "audit": "Richiesta Audit Gratuito"
+        "consultation": "Free Consultation",
+        "quote": "Quote Request",
+        "general": "General Query",
+        "audit": "Free Audit Request"
       },
-      "name": "Il tuo nome",
-      "namePlaceholder": "Mario Rossi",
-      "email": "Indirizzo email",
-      "emailPlaceholder": "mario@azienda.it",
-      "phone": "Telefono (opzionale)",
-      "phonePlaceholder": "+39 ...",
-      "message": "Qualcosa da condividere? (opzionale)",
-      "messagePlaceholder": "Descrivi brevemente il tuo progetto o idea…",
-      "messageHint": "Non servono dettagli — ti chiederemo di più se necessario.",
-      "submit": "Invia il Messaggio",
-      "submitting": "Invio in corso…",
-      "submitAnother": "Invia un'altra richiesta",
+      "name": "Your name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Email address",
+      "emailPlaceholder": "jane@company.ie",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+353 ...",
+      "message": "Anything to share? (optional)",
+      "messagePlaceholder": "Briefly describe your project or idea…",
+      "messageHint": "Describe your project briefly. We'll follow up by email if we need more details.",
+      "submit": "Send Message",
+      "submitting": "Sending…",
+      "submitAnother": "Send another request",
       "errors": {
-        "service": "Seleziona il tipo di servizio",
-        "name": "Inserisci il tuo nome",
-        "email": "Inserisci un indirizzo email valido"
+        "service": "Please select a service type",
+        "name": "Please enter your name",
+        "email": "Please enter a valid email address"
       },
       "success": {
-        "title": "Richiesta inviata!",
-        "body": "Grazie! Revisioneremo la tua richiesta e ti risponderemo entro 1 giorno lavorativo. Potremmo inviarti un breve brief per capire meglio le tue esigenze."
+        "title": "Request sent!",
+        "body": "Thanks! We'll review your request and get back to you within 1 business day. We may send you a short project brief to better understand your needs."
       },
-      "serverError": "Qualcosa è andato storto. Riprova.",
-      "networkError": "Impossibile raggiungere il server. Controlla la connessione e riprova.",
-      "privacyNote": "I tuoi dati vengono usati solo per risponderti.",
-      "heading": "Contattaci",
-      "consentText": "Inviando questo modulo accetti i nostri",
-      "consentTerms": "Termini di Servizio",
-      "consentAnd": "e la nostra",
-      "consentPrivacy": "Informativa sulla Privacy",
-      "consentPost": ". I tuoi dati vengono usati solo per risponderti.",
-      "marketingConsent": "Iscrivimi agli aggiornamenti e a un codice sconto per nuovi clienti."
+      "serverError": "Something went wrong. Please try again.",
+      "networkError": "Could not reach the server. Please check your connection and try again.",
+      "privacyNote": "Your details are kept private and used only to respond to your request.",
+      "heading": "Contact Us",
+      "consentText": "By submitting this form you agree to our",
+      "consentTerms": "Terms of Service",
+      "consentAnd": "and",
+      "consentPrivacy": "Privacy Policy",
+      "consentPost": ". Your contact details are used to respond to your request.",
+      "marketingConsent": "Sign me up for occasional updates and a discount code for new clients."
     }
   },
   "projectBrief": {
-    "title": "Brief di Progetto | We Make IT",
-    "description": "Condividi i dettagli del tuo progetto per aiutarci a preparare un preventivo accurato.",
-    "eyebrow": "Brief di Progetto",
-    "heading": "Parlaci del tuo progetto",
-    "subheading": "Questo brief ci aiuta a darti un preventivo e piano accurati. Condividi quanto vuoi — nessuna conoscenza tecnica richiesta.",
-    "intro": "Hai ricevuto questo link dopo aver inviato una richiesta di preventivo. Più dettagli condividi, più precisa sarà la nostra proposta.",
+    "title": "Project Brief",
+    "description": "Share details about your project to help us prepare an accurate quote and proposal.",
+    "eyebrow": "Project Brief",
+    "heading": "Tell us about your project",
+    "subheading": "This brief helps us give you an accurate quote and plan. Share as much or as little as you know — no technical knowledge needed.",
+    "intro": "You received a link to this form after submitting a quote request. The more detail you share, the more accurate our proposal.",
     "form": {
-      "ariaLabel": "Modulo brief di progetto",
-      "name": "Nome e cognome",
-      "namePlaceholder": "Mario Rossi",
-      "email": "Indirizzo email",
-      "emailPlaceholder": "mario@azienda.it",
-      "company": "Azienda o organizzazione (opzionale)",
-      "companyPlaceholder": "Acme Srl.",
-      "phone": "Telefono (opzionale)",
-      "phonePlaceholder": "+39 ...",
-      "service": "Servizio di interesse",
+      "ariaLabel": "Project brief form",
+      "name": "Full name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Email address",
+      "emailPlaceholder": "jane@company.ie",
+      "company": "Company or organisation (optional)",
+      "companyPlaceholder": "Acme Ltd.",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+353 ...",
+      "service": "Service you're interested in",
       "serviceOptions": {
-        "consultation": "Consulenza Gratuita",
-        "webDevelopment": "Sito Web o App Web",
-        "appDevelopment": "Sviluppo App su Misura",
-        "mobileApp": "Sviluppo App Mobile",
-        "ideaValidation": "Validazione Idea & MVP",
-        "uxResearch": "Ricerca UX",
+        "consultation": "Free Consultation",
+        "webDevelopment": "Website or Web App",
+        "appDevelopment": "Custom App Development",
+        "mobileApp": "Mobile App Development",
+        "ideaValidation": "Idea Validation & MVP",
+        "uxResearch": "UX Research",
         "uxDesign": "UX Design",
-        "prototype": "Prototipo App",
-        "accessibilityAudit": "Audit Accessibilità & UX",
-        "consultancy": "Consulenza Software",
-        "maintenance": "Manutenzione e Supporto",
-        "localisation": "Localizzazione",
-        "other": "Altro"
+        "prototype": "App Prototype",
+        "accessibilityAudit": "Accessibility & UX Audit",
+        "consultancy": "Software Consultancy",
+        "maintenance": "Maintenance & Support",
+        "localisation": "Localisation",
+        "other": "Something Else"
       },
-      "projectType": "Tipo di progetto?",
-      "projectTypePlaceholder": "Seleziona un tipo…",
+      "projectType": "What type of project?",
+      "projectTypePlaceholder": "Select a type…",
       "projectTypes": {
-        "webApp": "Applicazione Web",
-        "mobileApp": "App Mobile",
-        "website": "Sito Web / Landing Page",
-        "eCommerce": "Negozio E-Commerce",
-        "redesign": "Redesign / Rifacimento",
-        "other": "Altro"
+        "webApp": "Web Application",
+        "mobileApp": "Mobile App",
+        "website": "Website / Landing Page",
+        "eCommerce": "E-Commerce Store",
+        "redesign": "Redesign / Rebuild",
+        "other": "Other"
       },
-      "description": "Descrivi il tuo progetto",
-      "descriptionPlaceholder": "Cosa stai costruendo? Per chi è? Quale problema risolve?",
-      "budget": "Budget stimato",
-      "budgetPlaceholder": "Seleziona un range…",
+      "description": "Describe your project",
+      "descriptionPlaceholder": "What are you building? Who is it for? What problem does it solve?",
+      "budget": "Estimated budget",
+      "budgetPlaceholder": "Select a range…",
       "budgetOptions": {
-        "under5k": "Meno di €5.000",
-        "5k15k": "€5.000 – €15.000",
-        "15k30k": "€15.000 – €30.000",
-        "30k50k": "€30.000 – €50.000",
-        "over50k": "Più di €50.000",
-        "notSure": "Non sono sicuro"
+        "under5k": "Under €5,000",
+        "5k15k": "€5,000 – €15,000",
+        "15k30k": "€15,000 – €30,000",
+        "30k50k": "€30,000 – €50,000",
+        "over50k": "Over €50,000",
+        "notSure": "Not sure yet"
       },
-      "timeline": "Tempistica desiderata",
-      "timelinePlaceholder": "Seleziona una tempistica…",
+      "timeline": "Desired timeline",
+      "timelinePlaceholder": "Select a timeline…",
       "timelineOptions": {
-        "asap": "Il prima possibile",
-        "1to3": "1 – 3 mesi",
-        "3to6": "3 – 6 mesi",
-        "flexible": "Flessibile"
+        "asap": "As soon as possible",
+        "1to3": "1 – 3 months",
+        "3to6": "3 – 6 months",
+        "flexible": "Flexible"
       },
-      "hasDesign": "Hai già design o mockup?",
-      "hasDesignPlaceholder": "Seleziona un'opzione…",
+      "hasDesign": "Do you have existing designs or mockups?",
+      "hasDesignPlaceholder": "Select an option…",
       "hasDesignOptions": {
-        "yes": "Sì, ho design pronti",
-        "partial": "Ho alcune idee o wireframe",
-        "no": "No, parto da zero"
+        "yes": "Yes, I have designs ready",
+        "partial": "I have some ideas or wireframes",
+        "no": "No, starting from scratch"
       },
-      "competitorQuote": "Hai un preventivo da un'altra azienda? (opzionale)",
-      "competitorPlaceholder": "es. €12.000 dall'agenzia XYZ — lo batteremo.",
-      "submit": "Invia il Mio Brief",
-      "submitting": "Invio in corso…",
+      "competitorQuote": "Have a quote from another company? (optional)",
+      "competitorPlaceholder": "e.g. €12,000 from XYZ Agency — we'll beat it.",
+      "submit": "Submit My Project Brief",
+      "submitting": "Sending…",
       "errors": {
-        "service": "Seleziona un servizio",
-        "name": "Inserisci il tuo nome",
-        "email": "Inserisci un'email valida",
-        "projectType": "Seleziona il tipo di progetto",
-        "description": "Descrivi il progetto (min. 10 caratteri)",
-        "budget": "Seleziona un range di budget",
-        "timeline": "Seleziona una tempistica",
-        "hasDesign": "Seleziona un'opzione"
+        "service": "Please select a service",
+        "name": "Please enter your name",
+        "email": "Please enter a valid email",
+        "projectType": "Please select a project type",
+        "description": "Please describe your project (min. 10 characters)",
+        "budget": "Please select a budget range",
+        "timeline": "Please select a timeline",
+        "hasDesign": "Please select an option"
       },
       "success": {
-        "title": "Brief ricevuto!",
-        "body": "Grazie! Abbiamo ricevuto il tuo brief e lo revisioneremo con attenzione. Ci sentiamo presto."
+        "title": "Brief received!",
+        "body": "Thank you! We've got your project brief and will review it carefully. We'll be in touch soon."
       },
-      "serverError": "Qualcosa è andato storto. Riprova.",
-      "networkError": "Impossibile raggiungere il server. Controlla la connessione e riprova."
+      "serverError": "Something went wrong. Please try again.",
+      "networkError": "Could not reach the server. Please check your connection and try again."
     }
   },
   "newsletter": {
-    "heading": "Codici Sconto Esclusivi",
-    "body": "Iscriviti e ricevi codici sconto esclusivi sulle nostre servizi.",
-    "emailLabel": "Email",
-    "emailPlaceholder": "tuo@email.com",
-    "submit": "Iscriviti",
-    "subscribing": "Iscrizione...",
-    "consentPrefix": "Iscrivendoti accetti",
+    "heading": "Get Secret Discount Codes",
+    "body": "Sign up to our newsletter and receive exclusive discount codes and early access to special offers.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "your@email.com",
+    "submit": "Subscribe",
+    "subscribing": "Subscribing…",
+    "consentPrefix": "By subscribing you agree to our",
     "consentLink": "Privacy Policy",
-    "consentSuffix": "e email marketing. Disiscriviti quando vuoi.",
-    "success": "Iscritto! Codici e offerte arrivano via email.",
-    "alreadySubscribed": "Già iscritto. Controlla email!",
-    "error": "Errore. Riprova.",
-    "emailError": "Inserisci un indirizzo email valido",
-    "consentError": "Devi accettare per continuare"
+    "consentSuffix": "and consent to receive marketing emails. You can unsubscribe at any time.",
+    "success": "You're in! We'll send discount codes and offers straight to your inbox.",
+    "alreadySubscribed": "You're already on the list. Keep an eye on your inbox!",
+    "error": "Something went wrong. Please try again.",
+    "emailError": "Please enter a valid email address",
+    "consentError": "You must agree to continue"
   },
   "consultationForm": {
-    "nameLabel": "Il tuo nome",
-    "namePlaceholder": "Maria Rossi",
-    "emailLabel": "Indirizzo email",
-    "emailPlaceholder": "maria@azienda.it",
-    "phoneLabel": "Numero di telefono (opzionale)",
-    "phonePlaceholder": "+39 ...",
-    "nameError": "Inserisci il tuo nome",
-    "emailError": "Inserisci un indirizzo email valido",
-    "messageError": "Raccontaci brevemente del tuo progetto",
-    "submitting": "Invio in corso…",
-    "successTitle": "Richiesta inviata!",
-    "successBody": "Grazie per averci contattato. Ti risponderemo entro un giorno lavorativo.",
-    "sendAnother": "Invia un'altra richiesta",
-    "privacyNote": "Non condividiamo mai i tuoi dati. Niente spam.",
-    "serverError": "Qualcosa è andato storto. Riprova.",
+    "nameLabel": "Your name",
+    "namePlaceholder": "Jane Murphy",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "jane@company.ie",
+    "phoneLabel": "Phone number (optional)",
+    "phonePlaceholder": "+353 ...",
+    "nameError": "Please enter your name",
+    "emailError": "Please enter a valid email address",
+    "messageError": "Please tell us a little about your project",
+    "submitting": "Sending…",
+    "successTitle": "Request sent!",
+    "successBody": "Thanks for getting in touch. We will get back to you within one business day.",
+    "sendAnother": "Send another request",
+    "privacyNote": "We never share your details. No spam.",
+    "serverError": "Something went wrong. Please try again.",
     "variants": {
       "consultation": {
-        "heading": "Richiedi una Consulenza Gratuita",
-        "subheading": "Raccontaci del tuo progetto e ti risponderemo entro un giorno lavorativo — senza impegno.",
-        "messageLabel": "Parlaci del tuo progetto",
-        "messagePlaceholder": "Cosa vuoi costruire? Scadenze, budget indicativo o qualsiasi contesto utile.",
-        "submitLabel": "Richiedi consulenza gratuita"
+        "heading": "Request a Free Consultation",
+        "subheading": "Tell us about your project and we will get back to you within one business day — no commitment required.",
+        "messageLabel": "Tell us about your project",
+        "messagePlaceholder": "What are you looking to build? Any deadlines, budget range, or context you can share?",
+        "submitLabel": "Request free consultation"
       },
       "audit": {
-        "heading": "Richiedi un Audit di Accessibilità Gratuito",
-        "subheading": "Condividi l'URL del tuo sito o app e faremo una verifica iniziale gratuita entro un giorno lavorativo.",
-        "messageLabel": "URL del tuo sito o app",
-        "messagePlaceholder": "es. https://tuosito.it — aggiungi contesto sul tuo prodotto o le tue preoccupazioni.",
-        "submitLabel": "Richiedi audit gratuito"
+        "heading": "Request a Free Accessibility Audit",
+        "subheading": "Share your website or app URL and we will run a free initial check and report back within one business day.",
+        "messageLabel": "Your website or app URL",
+        "messagePlaceholder": "e.g. https://yoursite.ie — add any context about your product or concerns.",
+        "submitLabel": "Request free audit"
       },
       "retainer": {
-        "heading": "Parlaci del Tuo Progetto",
-        "subheading": "Cerchi supporto continuativo? Condividi cosa hai e prepareremo una proposta su misura.",
-        "messageLabel": "Di cosa ha bisogno il tuo progetto?",
-        "messagePlaceholder": "Descrivi il tuo prodotto esistente — stack tecnologico, problemi attuali, supporto che cerchi.",
-        "submitLabel": "Ricevi una proposta di supporto"
+        "heading": "Tell Us About Your Project",
+        "subheading": "Looking for ongoing support? Share what you have and we will put together a support proposal that fits.",
+        "messageLabel": "What does your project need?",
+        "messagePlaceholder": "Tell us about your existing product — tech stack, current issues, what support you are looking for.",
+        "submitLabel": "Get a support proposal"
       }
     }
   },
   "footer": {
-    "springSaleTitle": "Offerta Estate",
-    "springSaleBody": "30% sconto nuovi clienti. Blocca il prezzo ora.",
-    "springSaleBeat": "Hai altro preventivo?",
-    "springSaleSendIt": "Inviacelo",
-    "springSaleBeatSuffix": "lo valutiamo.",
-    "tagline": "Aiutiamo PMI e startup a trasformare idee in app/siti reali. Lavoriamo remotamente worldwide.",
-    "copyright": "© We Make IT — imprenditore individuale registrato in Irlanda.",
-    "builtBy": "Sviluppato da",
-    "languageNote": "Parliamo anche inglese e russo.",
-    "footerLabel": "Footer",
-    "remoteText": "Registrata in Irlanda. Operante in Europa e nel Regno Unito.",
+    "springSaleTitle": "Summer Sale Offer",
+    "springSaleBody": "30% off for new clients this summer. Lock in your rate now.",
+    "springSaleBeat": "Got a quote from another company?",
+    "springSaleSendIt": "Send it to us",
+    "springSaleBeatSuffix": "and we will beat it.",
+    "tagline": "We help entrepreneurs and small businesses turn their ideas into real apps and websites. Based in Ireland, working globally.",
+    "copyright": "© We Make IT Sole Trader company registered in Ireland.",
+    "builtBy": "Built by",
+    "languageNote": "Inclusive by design: support available in English, Italian, and Russian.",
+    "footerLabel": "Site footer",
+    "remoteText": "Registered in Ireland. Operating in Europe and the United Kingdom.",
     "sections": {
-      "services": "Servizi",
-      "company": "Azienda",
-      "freeTools": "Servizi gratuiti",
-      "legal": "Legale"
+      "services": "Services",
+      "company": "Company",
+      "freeTools": "Free Services",
+      "legal": "Legal"
     },
     "serviceLinks": [
-      "Frontend",
-      "Backend",
-      "Accessibilità (WCAG)",
-      "UX Design",
-      "Siti Web"
+      "Website Development",
+      "SEO & Marketing",
+      "Graphic Design",
+      "Custom Software",
+      "MVP & App Development"
     ],
     "companyLinks": {
-      "aboutUs": "Chi Siamo",
-      "howItWorks": "Come Funziona",
+      "aboutUs": "About Us",
+      "howItWorks": "How It Works",
       "blog": "Blog",
-      "getAQuote": "Preventivo"
+      "getAQuote": "Get a Quote"
     },
     "freeToolLinks": {
-      "websiteAudit": "Audit sito gratuito",
-      "appAudit": "Audit app gratuito",
-      "freeConsultation": "Consulenza gratuita"
+      "websiteAudit": "Free Website Audit",
+      "appAudit": "Free App Audit",
+      "freeConsultation": "Free Consultation"
     },
     "legalLinks": {
       "privacyPolicy": "Privacy Policy",
       "cookiePolicy": "Cookie Policy",
-      "termsOfService": "Termini",
-      "accessibilityStatement": "Accessibilità"
+      "termsOfService": "Terms of Service",
+      "accessibilityStatement": "Accessibility Statement"
     }
   },
   "contactPage": {
-    "title": "Contatti | We Make IT",
-    "description": "Contatta We Make IT via form.",
-    "eyebrow": "Contattaci",
-    "heading": "Scrivici",
-    "body": "Hai domande? Compila il form.",
-    "quotePrompt": "Cerchi un preventivo?",
-    "quotePromptLink": "Compila il nostro modulo gratuito →",
-    "mapLabel": "Mappa Ashbourne, Co. Meath, Irlanda",
-    "locationHeading": "Dove siamo",
-    "locationText": "Ashbourne, Co. Meath, Irlanda",
+    "title": "Contact",
+    "description": "Get in touch with We Make IT. Send us your question using the form below.",
+    "eyebrow": "Get in Touch",
+    "heading": "Send Us a Message",
+    "body": "Have a question? Fill in the form and we will get back to you.",
+    "quotePrompt": "Looking for a quote?",
+    "quotePromptLink": "Fill in our free quote form →",
+    "mapLabel": "Map of Ashbourne, Co. Meath, Ireland",
+    "locationHeading": "Where We Are",
+    "locationText": "Ashbourne, Co. Meath, Ireland",
     "form": {
-      "name": "Nome e Cognome",
-      "namePlaceholder": "Mario Rossi",
-      "email": "Email",
-      "emailPlaceholder": "mario@azienda.it",
-      "phone": "Telefono (opz.)",
-      "phonePlaceholder": "+39 ...",
-      "message": "Il tuo messaggio",
-      "messagePlaceholder": "Come possiamo aiutarti...",
-      "submit": "Invia",
-      "submitting": "Invio...",
-      "consentText": "Cliccando accetti",
+      "name": "Full name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Email address",
+      "emailPlaceholder": "jane@company.ie",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+353 ...",
+      "message": "Your question",
+      "messagePlaceholder": "Tell us how we can help...",
+      "submit": "Submit",
+      "submitting": "Sending...",
+      "consentText": "By clicking Submit, you agree to our",
       "consentLink": "Privacy Policy",
-      "consentSuffix": "per rispondere alla tua richiesta.",
-      "successTitle": "Inviato!",
-      "successBody": "Rispondiamo presto.",
-      "sendAnother": "Altro messaggio",
-      "nameError": "Inserisci nome",
-      "emailError": "Email non valida",
-      "messageError": "Inserisci messaggio",
-      "serverError": "Errore. Riprova."
+      "consentSuffix": "and consent to this data being processed to respond to your enquiry.",
+      "successTitle": "Message sent!",
+      "successBody": "We will get back to you shortly.",
+      "sendAnother": "Send another message",
+      "nameError": "Please enter your full name",
+      "emailError": "Please enter a valid email address",
+      "messageError": "Please enter your message",
+      "serverError": "Something went wrong. Please try again."
     }
   },
   "blog": {
-    "title": "Blog: Idee e Guide per Imprenditori | We Make IT",
-    "description": "Guide pratiche su come costruire app, trovare finanziamenti e trasformare la tua idea imprenditoriale in un prodotto digitale.",
-    "ogTitle": "Consigli sullo Sviluppo App per Imprenditori | Blog We Make IT",
-    "ogDescription": "Consigli pratici su come costruire app, ottenere finanziamenti e trasformare idee aziendali in prodotti digitali reali."
+    "title": "Blog: App and Business Ideas for Irish Entrepreneurs",
+    "description": "Practical guides on building apps, finding funding, and turning your business idea into a digital product. Written for Irish entrepreneurs by the We Make IT team.",
+    "ogTitle": "App Development Insights for Irish Entrepreneurs | We Make IT Blog",
+    "ogDescription": "Practical advice on building apps, getting funding, and turning business ideas into real digital products."
   },
   "cookieBanner": {
-    "ariaLabel": "Finestra di consenso dei cookie",
-    "text": "Usiamo solo cookie necessari. Niente tracciamento/pubblicità senza consenso.",
-    "learnMore": "Maggiori info",
-    "essential": "Solo necessari",
-    "acceptAll": "Accetta tutti"
+    "ariaLabel": "Cookie consent dialog",
+    "text": "We use strictly necessary cookies to keep the site working. We do not use tracking or advertising cookies without your consent.",
+    "learnMore": "Learn more",
+    "essential": "Essential only",
+    "acceptAll": "Accept all cookies"
+  },
+  "solutionsGeneralPage": {
+    "metadata": {
+      "title": "Solutions for Irish SMEs",
+      "description": "A clear path for Irish businesses that need stronger websites or tailored software. Practical support, calm communication, and measurable outcomes.",
+      "ogTitle": "Solutions for Irish SMEs",
+      "ogDescription": "Website and software solutions that help Irish businesses grow with smoother digital experiences."
+    },
+    "eyebrow": "Solutions",
+    "heading": "We help Irish businesses grow",
+    "subheading": "Whether you need a stronger website presence or custom software, we focus on smooth user experiences that reduce friction and improve results.",
+    "cards": [
+      {
+        "title": "Website Solutions",
+        "body": "For business owners who want better visibility, better conversion, and a stronger digital presence.",
+        "cta": "Explore website solutions",
+        "href": "/solutions/for-websites"
+      },
+      {
+        "title": "Software Solutions",
+        "body": "For teams and founders building products, automating workflows, or outsourcing project delivery.",
+        "cta": "Explore software solutions",
+        "href": "/solutions/for-software"
+      }
+    ],
+    "finalCtaHeading": "Not sure which direction fits best?",
+    "finalCtaBody": "Send us a short message. We will help you choose the most useful next step for your business.",
+    "finalCta": "Get in touch"
+  },
+  "solutionsWebsitesPage": {
+    "metadata": {
+      "title": "Website Services for Small Businesses",
+      "description": "Website development and digital presence services for Irish small businesses, from SEO to campaign assets.",
+      "ogTitle": "Website Services for Small Businesses",
+      "ogDescription": "Improve your digital presence with websites, SEO, marketing support, and design services built for growth."
+    },
+    "schemaName": "Website Solutions for Small Businesses",
+    "eyebrow": "Website Solutions",
+    "heading": "Websites and marketing support for small businesses",
+    "subheading": "We help small businesses improve digital presence through website development and marketing. If you are looking to gain more customers, we will be happy to hear from you.",
+    "servicesHeading": "What we can do for your website presence",
+    "services": [
+      { "name": "Website Development", "detail": "Custom websites that are clear, fast, accessible, and built to convert." },
+      { "name": "Website Management", "detail": "Ongoing updates, fixes, and improvements so your website keeps working for your business." },
+      { "name": "SEO", "detail": "On-page SEO foundations and practical improvements to help your business get found." },
+      { "name": "Marketing Support", "detail": "Campaign landing pages and content support aligned with your sales goals." },
+      { "name": "Graphic Design", "detail": "Visual assets for your website and campaigns that keep your brand consistent." },
+      { "name": "Sales Materials", "detail": "Web and print-ready sales materials for campaigns, outreach, and customer communication." }
+    ],
+    "finalCtaHeading": "Ready to improve your digital presence?",
+    "finalCtaBody": "Tell us what you need and we will suggest a clear, practical plan.",
+    "finalCta": "Send us a message"
+  },
+  "solutionsSoftwarePage": {
+    "metadata": {
+      "title": "Custom Software Services for SMEs",
+      "description": "Custom software development for Irish SMEs and founders: MVPs, web apps, mobile apps, audits, and consulting.",
+      "ogTitle": "Custom Software Services for SMEs",
+      "ogDescription": "Turn your software idea into a real product with UX-led development and practical technical support."
+    },
+    "schemaName": "Software Solutions for SMEs",
+    "eyebrow": "Software Solutions",
+    "heading": "Custom software development for growing businesses",
+    "subheading": "We help early entrepreneurs turn software ideas into live products through application development, UX, and design thinking. Have an idea worth building? Get a free consultation.",
+    "servicesHeading": "Software services we provide",
+    "services": [
+      { "name": "MVP Software", "detail": "Build a focused first version to validate demand quickly and reduce risk." },
+      { "name": "Web Apps", "detail": "Custom web applications designed around your operations and customer needs." },
+      { "name": "Mobile Apps", "detail": "iOS and Android app development with practical scope and reliable delivery." },
+      { "name": "Custom Software", "detail": "Tailored software that fixes specific business bottlenecks and manual processes." },
+      { "name": "Software Audits", "detail": "Technical review of existing systems to identify risk, waste, and upgrade priorities." },
+      { "name": "Accessibility Audits", "detail": "Identify accessibility gaps and improve compliance and usability for all users." },
+      { "name": "UX Research", "detail": "Evidence-based user insight to shape product decisions and reduce rework." },
+      { "name": "Consultations", "detail": "Practical planning sessions for product scope, roadmap, and delivery decisions." },
+      { "name": "Custom Tech Webinars", "detail": "Tailored training sessions for your employees focused on your tools and workflows." }
+    ],
+    "finalCtaHeading": "Need software that truly fits your business?",
+    "finalCtaBody": "Send us your goals and constraints. We will help you shape the right product path.",
+    "finalCta": "Book a consultation"
+  },
+  "valuePropWebsitesPage": {
+    "metadata": {
+      "title": "For Small Businesses: Better Website Results",
+      "description": "A clear value proposition for Irish small businesses that want more customers through a stronger online presence.",
+      "ogTitle": "For Small Businesses: Better Website Results",
+      "ogDescription": "Practical website and marketing support for Irish small businesses that want measurable growth."
+    },
+    "eyebrow": "For Small Businesses",
+    "heading": "More visibility, more trust, more enquiries",
+    "subheading": "If your website is not helping your business grow, we can fix that with practical changes that improve discoverability, credibility, and conversion.",
+    "points": [
+      "Clear messaging that explains your offer in seconds",
+      "Fast, accessible pages that are easy to use on any device",
+      "SEO and content structure that helps customers find you",
+      "Campaign assets and sales materials aligned with your goals"
+    ],
+    "finalCtaHeading": "Want your website to work harder for your business?",
+    "finalCtaBody": "Tell us where you are now and where you want to get. We will help you bridge that gap.",
+    "finalCta": "Get in touch"
+  },
+  "valuePropSoftwarePage": {
+    "headingLine1": "Trasformiamo la tua idea",
+    "headingLine2": "in un vero prodotto digitale.",
+    "metadata": {
+      "title": "For SMEs: Build Software That Solves Real Problems",
+      "description": "A clear value proposition for SMEs that need custom software, product development, or outsourced delivery support.",
+      "ogTitle": "For SMEs: Build Software That Solves Real Problems",
+      "ogDescription": "From MVP to production software, we help SMEs ship useful products with less risk and better user outcomes."
+    },
+    "eyebrow": "Per le piccole e medie imprese",
+    "heading": "Software che le persone amano usare",
+    "subheading": "Supportiamo le PMI che hanno bisogno di software personalizzato, di una consegna pi\u00f9 solida o di un partner affidabile a cui affidare l'esecuzione del progetto.",
+    "points": [
+      "Pianificazione MVP-first per ridurre i rischi e proteggere il budget",
+      "Sviluppo guidato dalla UX per migliorare adozione e soddisfazione",
+      "Supporto alla consegna flessibile quando il tuo team interno \u00e8 sotto pressione",
+      "Comunicazione chiara per stakeholder tecnici e non tecnici"
+    ],
+    "process": {
+      "eyebrow": "Come funziona",
+      "title": "Dall'idea al prodotto",
+      "titleAccent": "in cinque semplici passi",
+      "subheading": "Raccontaci la tua idea e ci pensiamo noi.",
+      "steps": [
+        { "number": "01", "title": "Brief & Scope", "description": "Condividi la tua idea, gli obiettivi e i vincoli. Facciamo le domande giuste per capire a fondo la tua attivit\u00e0." },
+        { "number": "02", "title": "Design & Piano", "description": "Definiamo insieme la soluzione, i flussi utente e il piano di lavoro, senza sorprese." },
+        { "number": "03", "title": "Sviluppo MVP", "description": "Costruiamo il prodotto principale rapidamente, concentrandoci prima su ci\u00f2 che crea pi\u00f9 valore." },
+        { "number": "04", "title": "Test & Affinamento", "description": "Tu testi con utenti reali. Noi iteriamo sulla base di feedback concreti, non di supposizioni." },
+        { "number": "05", "title": "Lancio & Crescita", "description": "Distribuiamo, consegniamo e rimaniamo disponibili mentre il tuo prodotto scala." }
+      ]
+    },
+    "finalCtaHeading": "Hai una sfida software da risolvere?",
+    "finalCtaBody": "Mandaci il contesto e ti proporremo una via pratica da seguire.",
+    "finalCta": "Inviaci un messaggio"
   },
   "servicePages": {
     "intro": {
-      "ie": "Con sede in Irlanda. Al servizio di PMI e imprenditori in Irlanda e Irlanda del Nord.",
-      "gb": "Con sede in Irlanda. Al servizio di PMI e imprenditori in Irlanda e nel Regno Unito.",
-      "it": "Con sede in Irlanda. Al servizio di PMI e imprenditori in tutta Italia.",
-      "ch": "Con sede in Irlanda. Al servizio di PMI e imprenditori in Svizzera.",
-      "suffixWebDev": "Oltre 15 anni di esperienza. Prezzi fissi, nessuna sorpresa.",
-      "suffixAppDev": "Prezzi fissi. Nessun costo nascosto."
+      "ie": "Based in Ireland. Serving SMEs and starting entrepreneurs across Ireland and Northern Ireland.",
+      "gb": "Based in Ireland. Serving SMEs and starting entrepreneurs across Ireland and the UK.",
+      "it": "Based in Ireland. Serving SMEs and starting entrepreneurs across Italy.",
+      "ch": "Based in Ireland. Serving SMEs and starting entrepreneurs across Switzerland.",
+      "suffixWebDev": "15+ years of experience. Fixed pricing, no surprises.",
+      "suffixAppDev": "Fixed pricing. No hidden costs."
     },
     "webDev": {
       "h1": {
-        "ie": "Sviluppo Web in Irlanda",
-        "gb": "Sviluppo Web in Irlanda e nel Regno Unito",
-        "it": "Sviluppo Web in Italia",
-        "ch": "Sviluppo Web in Svizzera"
+        "ie": "Web Development in Ireland",
+        "gb": "Web Development in Ireland & the UK",
+        "it": "Web Development in Italy",
+        "ch": "Web Development in Switzerland"
       },
-      "breadcrumb": "Sviluppo Web",
+      "breadcrumb": "Web Development",
       "desc": {
-        "ie": "Servizi di sviluppo web professionali per le aziende irlandesi. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti.",
-        "gb": "Servizi di sviluppo web professionali per le aziende britanniche e irlandesi. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti.",
-        "it": "Servizi di sviluppo web professionali per le aziende italiane. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti.",
-        "ch": "Servizi di sviluppo web professionali per le aziende svizzere e italiane. Creiamo siti web personalizzati, piattaforme aziendali e soluzioni e-commerce che portano risultati concreti."
+        "ie": "Professional web development services for Irish businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
+        "gb": "Professional web development services for UK and Irish businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
+        "it": "Professional web development services for Italian businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results.",
+        "ch": "Professional web development services for Swiss-Italian businesses. We build custom websites, business platforms, and e-commerce solutions that drive real results."
       },
-      "ctaHeading": "Pronto a costruire la tua presenza online?",
-      "whatWeDoHeading": "Cosa Realizziamo",
-      "whatWeDoSub": "Dai semplici siti aziendali alle applicazioni web complesse — copriamo tutto.",
+      "ctaHeading": "Ready to build your web presence?",
+      "whatWeDoHeading": "What We Build",
+      "whatWeDoSub": "From simple business websites to complex web applications — we cover it all.",
       "whatWeDo": [
-        { "title": "Siti Web Aziendali", "description": "Siti professionali e puliti che rappresentano il tuo brand, si posizionano su Google e trasformano i visitatori in clienti." },
-        { "title": "Negozi E-Commerce", "description": "Vendi online con fiducia. Costruiamo e configuriamo il tuo negozio, i pagamenti e la gestione dei prodotti da zero." },
-        { "title": "Siti con CMS", "description": "Aggiorna i tuoi contenuti senza toccare il codice. Costruiamo su piattaforme affidabili così rimani in controllo dopo il lancio." },
-        { "title": "Applicazioni Web", "description": "Sistemi di prenotazione, portali clienti, dashboard, marketplace — se la tua azienda ha bisogno di più di un sito, lo costruiamo." },
-        { "title": "Landing Page", "description": "Lancia velocemente con una pagina ottimizzata per le conversioni per il tuo prodotto, campagna o servizio." },
-        { "title": "Redesign del Sito", "description": "Hai un sito che ti delude? Lo ricostruiamo correttamente — più veloce, più bello e più facile da gestire." }
+        { "title": "Business Websites", "description": "Clean, professional websites that represent your brand, rank on Google, and turn visitors into customers." },
+        { "title": "E-Commerce Stores", "description": "Sell online with confidence. We build and configure your store, payment processing, and product management from scratch." },
+        { "title": "CMS-Powered Sites", "description": "Update your content without touching code. We build on trusted platforms so you stay in control after launch." },
+        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces — if your business needs more than a website, we build it." },
+        { "title": "Landing Pages", "description": "Launch fast with a focused, conversion-optimised page for your product, campaign, or service." },
+        { "title": "Website Redesign", "description": "Got a website that's letting you down? We rebuild it properly — faster, better-looking, and easier to manage." }
       ],
-      "whyHeading": "Perché le Aziende Ci Scelgono",
+      "whyHeading": "Why Businesses Choose Us",
       "why": [
-        { "title": "Prezzo Fisso, Nessuna Sorpresa", "description": "Conosci il costo completo prima di iniziare. Nessun extra nascosto, nessuna fattura a sorpresa a metà progetto." },
-        { "title": "Mobile-First per Default", "description": "Ogni sito che costruiamo funziona perfettamente su telefoni, tablet e desktop. Non è opzionale — è il nostro standard." },
-        { "title": "Costruito per i Motori di Ricerca", "description": "Codice pulito, caricamento veloce, struttura corretta. Il tuo sito è pronto a posizionarsi fin dal primo giorno." },
-        { "title": "Accessibile a Tutti", "description": "Costruiamo secondo gli standard WCAG 2.1 AA in modo che il tuo sito funzioni per tutti gli utenti e rispetti i requisiti legali." }
+        { "title": "Fixed Price, No Surprises", "description": "You know the full cost before we start. No hidden extras, no surprise invoices mid-project." },
+        { "title": "Mobile-First by Default", "description": "Every website we build works perfectly on phones, tablets, and desktops. It's not optional — it's how we work." },
+        { "title": "Built for Search Engines", "description": "Clean code, fast loading, proper structure. Your site is ready to rank from day one." },
+        { "title": "Accessible to Everyone", "description": "We build to WCAG 2.1 AA standards so your site works for all users and meets legal requirements." }
       ],
-      "deliverablesHeading": "Cosa Ottieni",
+      "deliverablesHeading": "What You Get",
       "deliverables": [
-        "Sito web completamente personalizzato per abbinarsi al tuo brand",
-        "Pagine mobile-friendly e a caricamento veloce",
-        "Fondamenta SEO impostate fin dall'inizio: meta tag, sitemap, dati strutturati",
-        "Sistema di gestione dei contenuti per aggiornare tu stesso",
-        "3 mesi di supporto post-lancio inclusi",
-        "Consegna completa con documentazione semplice"
+        "Fully custom website designed to match your brand",
+        "Mobile-friendly, fast-loading pages out of the box",
+        "SEO foundations: meta tags, sitemap, structured data",
+        "Content management system so you can update it yourself",
+        "3 months of post-launch support included",
+        "Full handover with simple documentation"
       ],
-      "finalCtaHeading": "Pronto a parlare del tuo sito web?",
-      "finalCtaBody": "Dicci cosa ti serve e ti invieremo un preventivo gratuito e senza impegno entro 48 ore.",
-      "finalCtaBtn": "Ottieni un Preventivo Gratuito"
+      "finalCtaHeading": "Ready to talk about your website?",
+      "finalCtaBody": "Tell us what you need and we'll send you a free, no-obligation quote within 48 hours.",
+      "finalCtaBtn": "Get a Free Quote"
     },
     "appDev": {
       "h1": {
-        "ie": "Sviluppo App in Irlanda",
-        "gb": "Sviluppo App in Irlanda e nel Regno Unito",
-        "it": "Sviluppo App in Italia",
-        "ch": "Sviluppo App in Svizzera"
+        "ie": "App Development in Ireland",
+        "gb": "App Development in Ireland & the UK",
+        "it": "App Development in Italy",
+        "ch": "App Development in Switzerland"
       },
-      "breadcrumb": "Sviluppo App",
+      "breadcrumb": "App Development",
       "desc": {
-        "ie": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e PWA per le aziende irlandesi. Prezzo fisso. Nessun costo nascosto.",
-        "gb": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e PWA per le aziende britanniche e irlandesi. Prezzo fisso. Nessun costo nascosto.",
-        "it": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e PWA per le aziende italiane. Prezzo fisso. Nessun costo nascosto.",
-        "ch": "Dall'MVP al prodotto pronto per il mercato. Creiamo app mobile personalizzate, applicazioni web e PWA per le aziende svizzere e italiane. Prezzo fisso. Nessun costo nascosto."
+        "ie": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for Irish businesses. Fixed pricing. No hidden costs.",
+        "gb": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for UK and Irish businesses. Fixed pricing. No hidden costs.",
+        "it": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for Italian businesses. Fixed pricing. No hidden costs.",
+        "ch": "From MVP to market-ready product. We build custom mobile apps, web applications, and progressive web apps for Swiss and Italian businesses. Fixed pricing. No hidden costs."
       },
-      "ctaPrimary": "Raccontaci la tua idea",
-      "ctaSecondary": "Richiedi una consulenza gratuita",
-      "whatWeDoHeading": "Cosa Realizziamo",
-      "whatWeDoSub": "Dal primo prototipo all'app in produzione — copriamo ogni fase.",
+      "ctaPrimary": "Tell us your idea",
+      "ctaSecondary": "Request free consultation",
+      "whatWeDoHeading": "What We Build",
+      "whatWeDoSub": "From a first prototype to a full production app — we cover every stage.",
       "whatWeDo": [
-        { "title": "App iOS", "description": "App native e React Native per iPhone e iPad. Fluide, performanti e pronte per l'App Store." },
-        { "title": "App Android", "description": "App native e cross-platform per Android, conformi agli standard di Google Play e ottimizzate per un'ampia gamma di dispositivi." },
-        { "title": "App Cross-Platform", "description": "Un'unica base codice, due piattaforme. Usiamo React Native ed Expo per lanciare su iOS e Android senza raddoppiare il budget." },
-        { "title": "Progressive Web App", "description": "Web app che si installano e si comportano come app native. Un percorso conveniente verso esperienze mobile-first." },
-        { "title": "Applicazioni Web", "description": "Sistemi di prenotazione, portali clienti, dashboard, marketplace — se la tua azienda ha bisogno di più di un sito, lo costruiamo." },
-        { "title": "Sviluppo MVP", "description": "Lancia la versione più snella che dimostra la tua idea. Utenti reali, feedback reali, spesa minima — poi scaliamo." }
+        { "title": "iOS Apps", "description": "Native and React Native apps for iPhone and iPad. Smooth, performant, App Store ready." },
+        { "title": "Android Apps", "description": "Native and cross-platform Android apps, built to Google Play standards and optimised for a wide range of devices." },
+        { "title": "Cross-Platform Apps", "description": "One codebase, two platforms. We use React Native and Expo so you launch on iOS and Android without doubling the budget." },
+        { "title": "Progressive Web Apps", "description": "Web apps that install and feel like native apps. A cost-effective route to mobile-first experiences." },
+        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces — if your business needs more than a website, we build it." },
+        { "title": "MVP Development", "description": "Launch the smallest version that proves your idea. Real users, real feedback, minimum spend — then we scale." }
       ],
-      "whyHeading": "Perché le Aziende Irlandesi Ci Scelgono",
+      "whyHeading": "Why Irish Businesses Choose Us",
       "why": [
-        { "number": "01", "title": "Prezzo Fisso dal Primo Giorno", "description": "Conosci il costo completo prima che scriviamo una riga di codice. Nessuna fatturazione oraria, nessuna sorpresa." },
-        { "number": "02", "title": "Accessibilità Integrata", "description": "Costruiamo secondo WCAG 2.1 AA affinché la tua app funzioni per tutti gli utenti e rispetti i requisiti europei sull'accessibilità." },
-        { "number": "03", "title": "Design Thinking Prima di Tutto", "description": "Validiamo prima di costruire. La tua idea viene testata con utenti reali prima che una singola funzionalità vada in produzione." },
-        { "number": "04", "title": "15+ Anni di Esperienza", "description": "Il nostro team ha lanciato prodotti su larga scala. Portiamo quell'esperienza in ogni progetto, qualunque sia la dimensione." }
+        { "number": "01", "title": "Fixed Price from Day One", "description": "You know the full cost before we write a line of code. No hourly billing, no scope creep surprises." },
+        { "number": "02", "title": "Accessibility Built In", "description": "We build to WCAG 2.1 AA so your app works for all users and meets EU accessibility requirements from launch." },
+        { "number": "03", "title": "Design Thinking First", "description": "We validate before we build. Your idea is tested with real users before a single feature is committed to production." },
+        { "number": "04", "title": "15+ Years of Experience", "description": "Our team has shipped products at scale. We bring that experience to every project, no matter the size." }
       ]
     },
     "uxAudit": {
       "h1": {
-        "ie": "Audit UX e Accessibilità per l'Irlanda",
-        "gb": "Audit UX e Accessibilità per Irlanda e il Regno Unito",
-        "it": "Audit UX e Accessibilità per l'Italia",
-        "ch": "Audit UX e Accessibilità per la Svizzera"
+        "ie": "UX & Accessibility Audit for Ireland",
+        "gb": "UX & Accessibility Audit for Ireland & the UK",
+        "it": "UX & Accessibility Audit for Italy",
+        "ch": "UX & Accessibility Audit for Switzerland"
       },
-      "breadcrumb": "Audit UX e Accessibilità",
-      "desc": "Assicura che il tuo sito web o app sia accessibile a tutti gli utenti e conforme agli standard WCAG 2.1 AA. Ricevi un report di audit dettagliato con raccomandazioni pratiche.",
-      "descCh": "Assicura che il tuo sito web o app sia accessibile a tutti gli utenti e conforme agli standard WCAG 2.1 AA. Ricevi un report di audit dettagliato con raccomandazioni pratiche per le aziende svizzere soggette alle normative europee sull'accessibilità.",
-      "euTitle": "Conformità alla Legge Europea sull'Accessibilità",
-      "euBody": "La scadenza dell'EU Accessibility Act è passata a giugno 2025. Se il tuo sito o app non è ancora conforme, sei già a rischio. Ti aiutiamo a metterti in regola rapidamente ed evitare problemi legali.",
-      "whatHeading": "Cosa Ottieni",
-      "item1": "Report di audit dettagliato con screenshot",
-      "item2": "Problemi categorizzati per gravità (critico, maggiore, minore)",
-      "item3": "Raccomandazioni specifiche per ogni problema",
-      "item4": "Punteggio di conformità complessivo e confronto con gli standard",
-      "item5": "Piano di remediation opzionale con priorità di implementazione",
-      "item6": "Call di consultazione per discutere i risultati",
-      "ctaHeading": "Inizia con un controllo gratuito di 15 minuti sull'accessibilità",
-      "ctaBtn": "Prenota il Tuo Controllo Gratuito",
-      "consultationAnchor": "Richiedi un audit gratuito"
+      "breadcrumb": "UX & Accessibility Audit",
+      "desc": "Ensure your website or app is accessible to all users and compliant with WCAG 2.1 AA standards. Get a detailed audit report with actionable recommendations.",
+      "descCh": "Ensure your website or app is accessible to all users and compliant with WCAG 2.1 AA standards. Get a detailed audit report with actionable recommendations for Swiss businesses under EU accessibility regulations.",
+      "euTitle": "EU Accessibility Act Compliance",
+      "euBody": "The EU Accessibility Act deadline passed in June 2025. If your site or app is not yet compliant, you are already at risk. We help you catch up fast and avoid legal exposure.",
+      "whatHeading": "What You Get",
+      "item1": "Detailed audit report with screenshots",
+      "item2": "Issues categorized by severity (critical, major, minor)",
+      "item3": "Specific recommendations for each issue",
+      "item4": "Overall compliance score and comparison to standards",
+      "item5": "Optional remediation plan with implementation priorities",
+      "item6": "Consultation call to discuss findings",
+      "ctaHeading": "Start with a free 15-minute accessibility health check",
+      "ctaBtn": "Book Your Free Check",
+      "consultationAnchor": "Request a free audit"
     },
     "ideaMvp": {
       "h1": {
-        "ie": "Validazione Idea e Sviluppo MVP in Irlanda",
-        "gb": "Validazione Idea e Sviluppo MVP in Irlanda e nel Regno Unito",
-        "it": "Validazione Idea e Sviluppo MVP in Italia",
-        "ch": "Validazione Idea e Sviluppo MVP in Svizzera"
+        "ie": "Idea Validation & MVP Development in Ireland",
+        "gb": "Idea Validation & MVP Development in Ireland & the UK",
+        "it": "Idea Validation & MVP Development in Italy",
+        "ch": "Idea Validation & MVP Development in Switzerland"
       },
-      "breadcrumb": "Validazione Idea e MVP",
-      "desc": "Non sai se la tua idea funzionerà? Ti aiutiamo a validarla prima di spendere un euro in sviluppo — poi creiamo un MVP da testare con utenti reali.",
-      "whatHeading": "Cosa Facciamo",
+      "breadcrumb": "Idea Validation & MVP",
+      "desc": "Not sure if your idea will work? We help you validate it before spending a penny on a full build — then create a lean MVP you can test with real users.",
+      "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Workshop sull'Idea", "description": "Una sessione strutturata per esplorare la tua idea, identificare le ipotesi e mappare il problema principale da risolvere." },
-        { "title": "Ricerca di Mercato e Utenti", "description": "Verifichiamo se il mercato esiste, chi sono i tuoi utenti e se pagherebbero per quello che stai costruendo." },
-        { "title": "Prototipazione", "description": "Creiamo un prototipo cliccabile da testare con utenti reali prima di impegnarsi in uno sviluppo completo." },
-        { "title": "Build MVP", "description": "Costruiamo la versione minima del tuo prodotto che dimostra il concetto. Poi iteriamo in base ai feedback." }
+        { "title": "Idea Workshop", "description": "We run a structured session to explore your idea, identify assumptions, and map out the core problem you are solving." },
+        { "title": "Market & User Research", "description": "We check if the market exists, who your users are, and whether they would pay for what you are building." },
+        { "title": "Prototyping", "description": "We create a clickable prototype you can test with real users before committing to a full build." },
+        { "title": "MVP Build", "description": "We build the smallest version of your product that proves the concept. Then we iterate based on feedback." }
       ],
-      "whyHeading": "Perché Validare Prima di Costruire",
+      "whyHeading": "Why Validate Before You Build",
       "whyItems": [
-        "Risparmia mesi di sviluppo su un'idea sbagliata",
-        "Ottieni feedback reali prima di investire in codice di produzione",
-        "Impressiona gli investitori con dati validati e un prototipo funzionante",
-        "Lancia più velocemente e a costi ridotti con un MVP mirato"
+        "Save months of development time on the wrong idea",
+        "Get real user feedback before investing in production code",
+        "Impress investors with validated data and a working prototype",
+        "Launch faster and cheaper with a focused MVP"
       ]
     },
     "uxResearch": {
       "h1": {
-        "ie": "Servizi di Ricerca UX in Irlanda",
-        "gb": "Servizi di Ricerca UX in Irlanda e nel Regno Unito",
-        "it": "Servizi di Ricerca UX in Italia",
-        "ch": "Servizi di Ricerca UX in Svizzera"
+        "ie": "UX Research Services in Ireland",
+        "gb": "UX Research Services in Ireland & the UK",
+        "it": "UX Research Services in Italy",
+        "ch": "UX Research Services in Switzerland"
       },
-      "breadcrumb": "Ricerca UX",
-      "desc": "Hai già un prodotto? Ricerchiamo come le persone reali lo usano, identifichiamo i problemi di usabilità e ti forniamo un elenco prioritario di miglioramenti.",
-      "whatHeading": "Cosa Facciamo",
+      "breadcrumb": "UX Research",
+      "desc": "Already have a product? We research how real people use it, identify usability problems, and give you a clear prioritised list of improvements.",
+      "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Interviste agli Utenti", "description": "Parliamo con i tuoi utenti reali per capire obiettivi, frustrazioni e modelli mentali." },
-        { "title": "Test di Usabilità", "description": "Osserviamo gli utenti mentre completano attività reali e registriamo esattamente dove incontrano difficoltà." },
-        { "title": "Valutazione Euristica", "description": "Analizziamo il prodotto rispetto ai principi UX consolidati e identifichiamo i problemi senza necessità di utenti." },
-        { "title": "Report di Ricerca", "description": "Ricevi un report chiaro e prioritario con screenshot, valutazioni di gravità e raccomandazioni specifiche." }
+        { "title": "User Interviews", "description": "We talk to your real users to understand their goals, frustrations, and mental models." },
+        { "title": "Usability Testing", "description": "We observe users completing real tasks in your product and record exactly where they struggle." },
+        { "title": "Heuristic Evaluation", "description": "We review your product against established UX principles and identify issues without needing users." },
+        { "title": "Research Report", "description": "You receive a clear, prioritised report with screenshots, severity ratings, and specific recommendations." }
       ],
-      "deliverableHeading": "Cosa Ottieni",
+      "deliverableHeading": "What You Get",
       "deliverables": [
-        "Report completo con risultati ed evidenze",
-        "Problemi prioritizzati per impatto e sforzo",
-        "Raccomandazioni specifiche e attuabili",
-        "Call di follow-up opzionale per discutere il report"
+        "Full research report with findings and evidence",
+        "Issues prioritised by impact and effort",
+        "Specific, actionable recommendations",
+        "Optional follow-up call to discuss the report"
       ]
     },
     "uxDesign": {
       "h1": {
-        "ie": "Servizi di UX Design in Irlanda",
-        "gb": "Servizi di UX Design in Irlanda e nel Regno Unito",
-        "it": "Servizi di UX Design in Italia",
-        "ch": "Servizi di UX Design in Svizzera"
+        "ie": "UX Design Services in Ireland",
+        "gb": "UX Design Services in Ireland & the UK",
+        "it": "UX Design Services in Italy",
+        "ch": "UX Design Services in Switzerland"
       },
       "breadcrumb": "UX Design",
-      "desc": "Dai wireframe alla UI rifinita — trasformiamo ricerche e idee di prodotto in design intuitivi, accessibili e pronti per lo sviluppo.",
-      "whatHeading": "Cosa Facciamo",
+      "desc": "From wireframes to polished UI — we turn research findings and product ideas into designs that are intuitive, accessible, and ready to build.",
+      "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Architettura dell'Informazione", "description": "Strutturiamo contenuti e navigazione affinché gli utenti sappiano sempre dove si trovano e dove andare." },
-        { "title": "Wireframing", "description": "Layout a bassa fedeltà che definiscono il flusso e la struttura prima di investire nel design visuale." },
-        { "title": "UI Design", "description": "Schermate ad alta fedeltà nel tuo brand — pulite, moderne e progettate per convertire." },
-        { "title": "Design System", "description": "Una libreria di componenti riutilizzabili che mantiene il prodotto coerente e accelera lo sviluppo futuro." }
+        { "title": "Information Architecture", "description": "We structure your content and navigation so users always know where they are and where to go next." },
+        { "title": "Wireframing", "description": "Low-fidelity layouts that define the flow and structure before we invest in visual design." },
+        { "title": "UI Design", "description": "High-fidelity screens in your brand — clean, modern, and built to convert." },
+        { "title": "Design System", "description": "A reusable component library that keeps your product consistent and speeds up future development." }
       ],
-      "deliverableHeading": "Cosa Ottieni",
+      "deliverableHeading": "What You Get",
       "deliverables": [
-        "File Figma con tutte le schermate e i componenti",
-        "Design annotati per gli sviluppatori",
-        "Layout responsive per mobile, tablet e desktop",
-        "Annotazioni di accessibilità (contrasto colori, ordine focus, note ARIA)"
+        "Figma files with all screens and components",
+        "Annotated designs for developers",
+        "Responsive layouts for mobile, tablet, and desktop",
+        "Accessibility annotations (colour contrast, focus order, ARIA notes)"
       ]
     },
     "appPrototype": {
       "h1": {
-        "ie": "Servizio di Prototipazione App in Irlanda",
-        "gb": "Servizio di Prototipazione App in Irlanda e nel Regno Unito",
-        "it": "Servizio di Prototipazione App in Italia",
-        "ch": "Servizio di Prototipazione App in Svizzera"
+        "ie": "App Prototyping Service in Ireland",
+        "gb": "App Prototyping Service in Ireland & the UK",
+        "it": "App Prototyping Service in Italy",
+        "ch": "App Prototyping Service in Switzerland"
       },
-      "breadcrumb": "Prototipo App",
-      "desc": "Prima di impegnarsi in uno sviluppo completo, creiamo un prototipo interattivo della tua app. Testalo con gli utenti, condividilo con gli investitori e valida ogni flusso chiave.",
-      "whatHeading": "Cosa Realizziamo",
+      "breadcrumb": "App Prototype",
+      "desc": "Before committing to a full build, we create an interactive, clickable prototype of your app. Test it with users, share it with investors, and validate every key flow.",
+      "whatHeading": "What We Build",
       "whatItems": [
-        { "title": "Prototipo Figma Cliccabile", "description": "Un prototipo completamente interattivo condivisibile con un link. Nessun codice richiesto, ma sembra la cosa reale." },
-        { "title": "Mappatura del Flusso Utente", "description": "Mappiamo ogni percorso utente chiave affinché il prototipo copra i flussi più importanti." },
-        { "title": "Test con Utenti", "description": "Conduciamo un round di test con utenti sul prototipo e riferiamo cosa funziona e cosa va cambiato." },
-        { "title": "Presentazione per Investitori", "description": "Un prototipo rifinito con documentazione di supporto per pitch agli investitori e demo di prodotto." }
+        { "title": "Clickable Figma Prototype", "description": "A fully interactive prototype you can share with a link. No code required, but it feels like the real thing." },
+        { "title": "User Flow Mapping", "description": "We map every key user journey so the prototype covers the flows that matter most." },
+        { "title": "User Testing", "description": "We run a round of user tests on the prototype and report back on what works and what needs changing." },
+        { "title": "Investor-Ready Presentation", "description": "A polished prototype with supporting documentation for investor pitches and product demos." }
       ],
-      "whyHeading": "Perché Prima il Prototipo",
+      "whyHeading": "Why Prototype First",
       "whyItems": [
-        "Trova problemi di usabilità prima che siano costosi da correggere",
-        "Valida il tuo concetto con utenti reali a basso costo",
-        "Ottieni stime degli sviluppatori più accurate da un prototipo dettagliato",
-        "Proponi con fiducia — mostra, non solo raccontare"
+        "Find usability problems before they are expensive to fix",
+        "Validate your concept with real users at low cost",
+        "Get clearer developer estimates from a detailed prototype",
+        "Pitch with confidence — show, don't just tell"
       ]
     },
     "mobileAppDev": {
       "h1": {
-        "ie": "Sviluppo App Mobile in Irlanda",
-        "gb": "Sviluppo App Mobile in Irlanda e nel Regno Unito",
-        "it": "Sviluppo App Mobile in Italia",
-        "ch": "Sviluppo App Mobile in Svizzera"
+        "ie": "Mobile App Development in Ireland",
+        "gb": "Mobile App Development in Ireland & the UK",
+        "it": "Mobile App Development in Italy",
+        "ch": "Mobile App Development in Switzerland"
       },
-      "breadcrumb": "Sviluppo App Mobile",
-      "desc": "Costruiamo app mobile per iOS e Android che i tuoi utenti ameranno. Lo sviluppo cross-platform significa che lanci su entrambe le piattaforme senza raddoppiare i costi.",
-      "whatHeading": "Cosa Realizziamo",
+      "breadcrumb": "Mobile App Development",
+      "desc": "We build mobile apps for iOS and Android that your users will love. Cross-platform development means you launch on both platforms without doubling the cost.",
+      "whatHeading": "What We Build",
       "whatItems": [
-        { "title": "App iOS", "description": "App native in Swift e React Native per iPhone e iPad, ottimizzate per l'App Store." },
-        { "title": "App Android", "description": "App costruite per l'intera gamma di dispositivi Android e ottimizzate per Google Play." },
-        { "title": "App Cross-Platform", "description": "Un'unica base codice, entrambe le piattaforme. React Native ed Expo permettono di lanciare su iOS e Android con un team e un budget condivisi." },
-        { "title": "Manutenzione App", "description": "Supporto post-lancio, aggiornamenti OS, correzione bug e sviluppo di nuove funzionalità mentre il prodotto cresce." }
+        { "title": "iOS Apps", "description": "Native Swift and React Native apps for iPhone and iPad, optimised for the App Store." },
+        { "title": "Android Apps", "description": "Apps built for the full range of Android devices and optimised for Google Play." },
+        { "title": "Cross-Platform Apps", "description": "One codebase, both platforms. React Native and Expo let you ship to iOS and Android with a shared team and budget." },
+        { "title": "App Maintenance", "description": "Post-launch support, OS updates, bug fixes, and new feature development as your product grows." }
       ],
-      "whyHeading": "Perché Sceglierci",
+      "whyHeading": "Why Choose Us",
       "whyItems": [
-        { "title": "Accessibilità fin dal Primo Giorno", "description": "Ogni app che costruiamo soddisfa WCAG 2.1 AA. VoiceOver, TalkBack e testo dinamico testati prima del lancio." },
-        { "title": "Approccio Design Thinking", "description": "Validiamo flussi e schermate con gli utenti prima di scrivere codice di produzione. Lanci ciò che gli utenti vogliono davvero." },
-        { "title": "Prezzo Fisso", "description": "Conosci il costo prima di iniziare. Nessuna fatturazione oraria, nessuna fattura a sorpresa alla fine di uno sprint." },
-        { "title": "Team Full Stack", "description": "Design, frontend, backend e DevOps tutti sotto un unico tetto. Nessun problema di handoff, nessun overhead di coordinamento." }
+        { "title": "Accessibility from Day One", "description": "Every app we build meets WCAG 2.1 AA. VoiceOver, TalkBack, and dynamic text all tested before launch." },
+        { "title": "Design Thinking Approach", "description": "We validate flows and screens with users before we write production code. You ship what users actually want." },
+        { "title": "Fixed Pricing", "description": "You know the cost before we start. No hourly billing, no surprise invoices at the end of a sprint." },
+        { "title": "Full Stack Team", "description": "Design, frontend, backend, and DevOps all under one roof. No handoff problems, no coordination overhead." }
       ]
     },
     "softwareConsultancy": {
       "h1": {
-        "ie": "Consulenza Software in Irlanda",
-        "gb": "Consulenza Software in Irlanda e nel Regno Unito",
-        "it": "Consulenza Software in Italia",
-        "ch": "Consulenza Software in Svizzera"
+        "ie": "Software Consultancy in Ireland",
+        "gb": "Software Consultancy in Ireland & the UK",
+        "it": "Software Consultancy in Italy",
+        "ch": "Software Consultancy in Switzerland"
       },
-      "breadcrumb": "Consulenza Software",
-      "desc": "Non sai cosa costruire, quale tecnologia scegliere, o come rimettere in carreggiata il tuo prodotto esistente? Ti diamo consigli chiari e onesti in linguaggio semplice — senza lock-in.",
-      "whatHeading": "In Cosa Ti Aiutiamo",
+      "breadcrumb": "Software Consultancy",
+      "desc": "Not sure what to build, which technology to choose, or how to get your existing product back on track? We give you clear, honest advice in plain language — no vendor lock-in.",
+      "whatHeading": "What We Help With",
       "whatItems": [
-        { "title": "Strategia Tecnologica", "description": "Quale stack, quale piattaforma, quale architettura. Esponiamo chiaramente le opzioni e ti aiutiamo a scegliere con fiducia." },
-        { "title": "CTO as a Service", "description": "Hai bisogno di leadership tecnica senior senza un'assunzione a tempo pieno? Agiamo come il tuo CTO frazionale per tutto il tempo che ti serve." },
-        { "title": "Revisione del Prodotto", "description": "Revisioniamo il tuo prodotto o codebase esistente e ti forniamo un report in linguaggio semplice su cosa funziona e cosa no." },
-        { "title": "Consigli sulla Crescita del Team", "description": "Costruire internamente, esternalizzare o ibrido? Ti aiutiamo a decidere cosa ha senso per la tua fase e budget." }
+        { "title": "Technology Strategy", "description": "Which stack, which platform, which architecture. We lay out the options clearly and help you choose with confidence." },
+        { "title": "CTO as a Service", "description": "Need senior technical leadership without a full-time hire? We act as your fractional CTO for as long as you need." },
+        { "title": "Product Review", "description": "We review your existing product or codebase and give you a plain-English report on what's working and what isn't." },
+        { "title": "Team Scaling Advice", "description": "Build in-house, outsource, or hybrid? We help you decide what makes sense for your stage and budget." }
       ],
-      "whyHeading": "Perché Consultarci",
+      "whyHeading": "Why Consult With Us",
       "whyItems": [
-        "15+ anni di esperienza nella costruzione di prodotti su larga scala",
-        "Consigli onesti — ti diciamo ciò che devi sentire, non ciò che vuoi sentire",
-        "Parliamo in modo semplice affinché tu possa prendere decisioni informate",
-        "Non abbiamo interesse finanziario a raccomandare vendor o strumenti specifici"
+        "15+ years of experience building products at scale",
+        "Honest advice — we tell you what you need to hear, not what you want to hear",
+        "We speak plain English so you can make informed decisions",
+        "We have no financial interest in recommending specific vendors or tools"
       ]
     },
     "maintenanceSupport": {
       "h1": {
-        "ie": "Manutenzione e Supporto App in Irlanda",
-        "gb": "Manutenzione e Supporto App in Irlanda e nel Regno Unito",
-        "it": "Manutenzione e Supporto App in Italia",
-        "ch": "Manutenzione e Supporto App in Svizzera"
+        "ie": "App Maintenance & Support in Ireland",
+        "gb": "App Maintenance & Support in Ireland & the UK",
+        "it": "App Maintenance & Support in Italy",
+        "ch": "App Maintenance & Support in Switzerland"
       },
-      "breadcrumb": "Manutenzione e Supporto",
-      "desc": "Hai già un'app o sito web che ha bisogno di cura? Ce ne occupiamo noi — correggendo bug, tenendolo aggiornato, aggiungendo funzionalità e garantendo un funzionamento fluido.",
-      "whatHeading": "Cosa Include",
+      "breadcrumb": "Maintenance & Support",
+      "desc": "Already have an app or website that needs looking after? We take it on — fixing bugs, keeping it up to date, adding features, and ensuring it runs smoothly month to month.",
+      "whatHeading": "What's Included",
       "whatItems": [
-        { "title": "Correzione Bug", "description": "Rispondiamo rapidamente ai problemi e correggiamo i bug prima che impattino i tuoi utenti o la tua reputazione." },
-        { "title": "Aggiornamenti di Sicurezza", "description": "Aggiornamenti regolari delle dipendenze, patch di sicurezza e monitoraggio delle vulnerabilità per mantenere il prodotto al sicuro." },
-        { "title": "Monitoraggio delle Performance", "description": "Monitoriamo uptime, tempi di caricamento ed errori — e risolviamo i problemi prima che tu o i tuoi utenti li notiate." },
-        { "title": "Sviluppo di Funzionalità", "description": "I clienti con retainer ottengono capacità di sviluppo dedicata ogni mese per nuove funzionalità, miglioramenti e integrazioni." }
+        { "title": "Bug Fixes", "description": "We respond to issues fast and fix bugs before they impact your users or your reputation." },
+        { "title": "Security Updates", "description": "Regular dependency updates, security patches, and vulnerability monitoring to keep your product safe." },
+        { "title": "Performance Monitoring", "description": "We track uptime, load times, and errors — and fix problems before you or your users notice them." },
+        { "title": "Feature Development", "description": "Retainer clients get dedicated development capacity each month for new features, improvements, and integrations." }
       ],
-      "retainerHeading": "Piani di Supporto Retainer",
-      "retainerBody": "Offriamo retainer mensili di supporto a partire da un numero fisso di ore di sviluppo. Sai esattamente cosa ottieni e quanto costa.",
-      "whyHeading": "Perché un Retainer Funziona Meglio dell'Ad-Hoc",
+      "retainerHeading": "Support Retainer Plans",
+      "retainerBody": "We offer monthly support retainers starting from a fixed number of development hours. You know exactly what you are getting and what it costs.",
+      "whyHeading": "Why a Retainer Works Better Than Ad-Hoc",
       "whyItems": [
-        "Costo mensile prevedibile senza fatture a sorpresa",
-        "Team dedicato che conosce il tuo prodotto a fondo",
-        "Tempi di risposta più rapidi rispetto agli incarichi occasionali",
-        "Il monitoraggio proattivo significa meno emergenze"
+        "Predictable monthly cost with no surprise invoices",
+        "Dedicated team who knows your product inside out",
+        "Faster response times than one-off engagements",
+        "Proactive monitoring means fewer emergencies"
       ]
     },
     "localisation": {
       "h1": {
-        "ie": "Servizi di Localizzazione Siti e App in Irlanda",
-        "gb": "Servizi di Localizzazione Siti e App in Irlanda e nel Regno Unito",
-        "it": "Servizi di Localizzazione Siti e App in Italia",
-        "ch": "Servizi di Localizzazione Siti e App in Svizzera"
+        "ie": "Website & App Localisation Services in Ireland",
+        "gb": "Website & App Localisation Services in Ireland & the UK",
+        "it": "Website & App Localisation Services in Italy",
+        "ch": "Website & App Localisation Services in Switzerland"
       },
-      "breadcrumb": "Localizzazione Siti e App",
-      "desc": "Gestiamo la localizzazione completa del tuo sito o app — dalla traduzione dei contenuti all'integrazione dei framework i18n nel codice. Lo abbiamo fatto per il nostro prodotto, e possiamo farlo per il tuo.",
-      "uniqueHeading": "Perché Siamo Diversi",
-      "uniqueBody": "La maggior parte delle agenzie di localizzazione traduce i contenuti ma non sa come integrarli in un'app React o Next.js. Noi facciamo entrambe le cose — competenze linguistiche interne e le competenze tecniche per implementarle. Nessun handoff difficile, nessun layout rotto da testo da destra a sinistra, nessuna chiave stringa mancante.",
-      "whatHeading": "Cosa Facciamo",
+      "breadcrumb": "Website & App Localisation",
+      "desc": "We handle the full localisation of your website or app — from translating content to integrating i18n frameworks in your codebase. We have done it for our own product, and we can do it for yours.",
+      "uniqueHeading": "Why We Are Different",
+      "uniqueBody": "Most localisation agencies translate content but have no idea how to wire it into a React or Next.js app. We do both — in-house linguistic expertise and the technical skills to implement it. No awkward handoffs, no broken layouts from right-to-left text, no missing string keys.",
+      "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Traduzione dei Contenuti", "description": "Traduzione accurata e naturale nella lingua target — non traduzione automatica incollata in un CMS." },
-        { "title": "Integrazione Framework i18n", "description": "Colleghiamo next-intl, i18next o la libreria scelta. Tutte le stringhe esternalizzate, tutti i percorsi localizzati." },
-        { "title": "Supporto Layout RTL", "description": "Arabo, ebraico e altre lingue da destra a sinistra richiedono modifiche al layout. Le gestiamo correttamente." },
-        { "title": "Test per Locale", "description": "Testiamo ogni locale end-to-end — overflow del testo, formati di data, simboli di valuta e formattazione dei numeri." }
+        { "title": "Content Translation", "description": "Accurate, natural-sounding translation into the target language — not machine translation copy-pasted into a CMS." },
+        { "title": "i18n Framework Integration", "description": "We wire up next-intl, i18next, or your chosen library. All strings externalised, all routes localised." },
+        { "title": "RTL Layout Support", "description": "Arabic, Hebrew, and other right-to-left languages require layout changes. We handle them correctly." },
+        { "title": "Locale Testing", "description": "We test every locale end to end — text overflow, date formats, currency symbols, and number formatting." }
       ],
-      "languagesHeading": "Lingue Supportate",
-      "languages": "Inglese, Italiano, Russo, Francese, Tedesco, Spagnolo, Arabo (RTL). Contattaci per altre lingue.",
-      "whyHeading": "Perché Localizzare",
+      "languagesHeading": "Languages We Support",
+      "languages": "English, Italian, Russian, French, German, Spanish, Arabic (RTL). Contact us for others.",
+      "whyHeading": "Why Localise",
       "whyItems": [
-        "Raggiungi nuovi mercati senza ricostruire il prodotto",
-        "I prodotti localizzati convertono molto meglio di quelli semplicemente tradotti",
-        "Soddisfa i requisiti legali nelle giurisdizioni che richiedono contenuti in lingua locale",
-        "Dai a ogni utente un'esperienza nativa indipendentemente dalla loro lingua"
+        "Reach new markets without rebuilding your product",
+        "Localised products convert significantly better than translated ones",
+        "Meet legal requirements in jurisdictions that mandate local-language content",
+        "Give every user a native-feeling experience regardless of their language"
       ]
     }
-  }
-,
-    "clientAuditReports": {
-        "bank2brick": {
-            "metadata": {
-                "title": "Report di audit Bank2Brick",
-                "description": "Report privato per Bank2Brick che copre UX, SEO, design visivo e accessibilita — con problemi specifici evidenziati per gravita e PDF scaricabile.",
-                "ogTitle": "Report di audit Bank2Brick",
-                "ogDescription": "Revisione completa privata per Bank2Brick su UX, SEO, UI e accessibilita."
-            },
-            "eyebrow": "Report privato per il cliente",
-            "title": "Bank2Brick: revisione completa del sito",
-            "subtitle": "Una revisione strutturata su esperienza utente, SEO, design visivo e accessibilita — con risultati chiari, correzioni prioritizzate e cio che funziona gia bene.",
-            "reviewedLabel": "Revisionato",
-            "reviewedValue": "13 maggio 2026",
-            "visibilityLabel": "Visibilita",
-            "visibilityValue": "Link privato · escluso dall'indicizzazione",
-            "reviewNoteTitle": "Nota di revisione",
-            "reviewNoteBody": "Questo report e stato prodotto il 13 maggio 2026 attraverso una combinazione di ispezione manuale del sito live su https://www.bank2brick.ie e controlli automatizzati. Il sito era pubblicamente accessibile al momento della revisione. Il sito e costruito sulla piattaforma Webador, che limita cio che puo essere valutato o migliorato senza migrare a una build personalizzata.",
-            "uxTitle": "Esperienza Utente (UX)",
-            "uxStrengths": [
-                {
-                    "title": "Struttura delle pagine chiara e progressiva",
-                    "body": "Sei pagine logiche (Home, Come funziona, Perche investire con noi, Piani d'investimento, Proprieta in evidenza, FAQ) guidano il visitatore progressivamente dalla prima impressione a un impegno piu profondo."
-                },
-                {
-                    "title": "La riprova sociale e presente",
-                    "body": "Tre testimonianze con nomi irlandesi (Aoife Kelly, Conor Byrne, Fiona O'Sullivan) offrono credibilita iniziale per un prodotto finanziario sensibile alla fiducia."
-                },
-                {
-                    "title": "Piu opzioni di contatto",
-                    "body": "Sia un form web che i contatti diretti (email + telefono) sono disponibili, offrendo a tipi diversi di visitatori un punto d'ingresso comodo."
-                }
-            ],
-            "uxIssues": [
-                {
-                    "title": "I piani d'investimento non mostrano prezzi ne cifre di ingresso",
-                    "body": "Tutti e quattro i livelli (Starter, Growth, Seasoned, Custom) sono descritti senza alcuna informazione su prezzi, importo minimo o rendimento atteso. I visitatori che devono auto-qualificarsi o confrontare le opzioni non possono farlo — aumentando la frizione e portando all'abbandono prima dell'acquisizione.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "Le CTA sono passive e generiche",
-                    "body": "Le chiamate all'azione principali — 'Unisciti a noi oggi' e 'Scopri come funziona' — non dicono ai visitatori cosa succede specificatamente dopo. Alternative orientate all'obiettivo come 'Vedi le proprieta disponibili' o 'Prenota una call gratuita' riducono l'ambiguita e migliorano la conversione.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Nessuna navigazione fissa durante lo scorrimento",
-                    "body": "Su una pagina a scorrimento lungo, non c'e una barra di navigazione persistente mentre l'utente scorre verso il basso. Tornare in cima richiede di scorrere all'indietro — una frizione inutile, soprattutto su mobile.",
-                    "severity": "average"
-                }
-            ],
-            "seoTitle": "SEO",
-            "seoStrengths": [
-                {
-                    "title": "Il dominio .ie brandizzato e correttamente configurato",
-                    "body": "Il sito risolve in modo stabile su un TLD .ie brandizzato — il segnale geografico giusto per un prodotto d'investimento focalizzato sull'Irlanda."
-                },
-                {
-                    "title": "Slug URL logici e descrittivi",
-                    "body": "Le sottopagine come /how-it-works, /investment-plans e /faq sono leggibili dagli utenti e pertinenti alle keyword, offrendo un piccolo vantaggio SEO."
-                }
-            ],
-            "seoIssues": [
-                {
-                    "title": "Costruito su Webador — un website builder per consumatori",
-                    "body": "Webador ospita e genera l'intera infrastruttura del sito. Non hai alcun controllo sulla configurazione del server, gli header HTTP, il robots.txt o il sitemap.xml. Questo e un soffitto rigido sulle performance SEO tecniche: le ottimizzazioni avanzate non sono possibili senza migrare a una piattaforma adeguata.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "Link 'Powered by Webador' nel footer",
-                    "body": "Il footer contiene un link al sito di Webador. Questo disperde l'autorita del dominio verso un sito esterno e segnala a utenti sofisticati e motori di ricerca che si tratta di un prodotto costruito su template — riducendo la fiducia in un settore dove la fiducia e il principale fattore di conversione.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "Nessun dato strutturato / schema JSON-LD",
-                    "body": "I siti di servizi finanziari beneficiano significativamente degli schema LocalBusiness, FAQPage e Review. Senza questi, Google non puo generare risultati di ricerca arricchiti per le tue pagine.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Titoli e meta description probabilmente generati da Webador",
-                    "body": "Senza tag meta configurati su misura, le pagine si posizioneranno male per frasi target come 'investimento immobiliare Irlanda' o 'reddito passivo immobiliare Irlanda'.",
-                    "severity": "average"
-                }
-            ],
-            "uiTitle": "Design Visivo (UI)",
-            "uiStrengths": [
-                {
-                    "title": "Layout leggibile con sezioni ben separate",
-                    "body": "La pagina evita il disordine visivo. I contenuti sono raggruppati in sezioni riconoscibili e le dimensioni del testo sono comode da leggere sia su desktop che su mobile."
-                },
-                {
-                    "title": "La denominazione dei livelli d'investimento e intuitiva",
-                    "body": "Starter / Growth / Seasoned / Custom si mappa naturalmente ai livelli di esperienza degli investitori, riducendo il carico cognitivo nella sezione di pianificazione."
-                }
-            ],
-            "uiIssues": [
-                {
-                    "title": "Identita visiva generica da website builder",
-                    "body": "I template Webador sono visivamente riconoscibili. Per un prodotto di servizi finanziari che chiede alle persone di investire i propri risparmi, il design deve comunicare professionalita su misura. Attualmente il sito appare come un prodotto template, il che mina direttamente la fiducia.",
-                    "severity": "severe"
-                },
-                {
-                    "title": "Il logo viene servito dal CDN di Webador (jwwb.nl)",
-                    "body": "L'immagine del logo si carica da jwwb.nl — un dominio di terze parti. Alcuni browser, strumenti privacy o firewall aziendali possono bloccare questa richiesta, causando il mancato caricamento del logo per alcuni visitatori.",
-                    "severity": "average"
-                },
-                {
-                    "title": "La sezione dei piani manca di gerarchia visiva",
-                    "body": "I quattro livelli sono elencati come blocchi di testo semplice senza prezzi, senza un livello consigliato evidenziato e senza differenziazione visiva. Aggiungere questi elementi migliorerebbe significativamente la fiducia nelle decisioni.",
-                    "severity": "average"
-                }
-            ],
-            "accessibilityTitle": "Accessibilita",
-            "accessibilityStrengths": [
-                {
-                    "title": "Gerarchia dei titoli logica",
-                    "body": "H1 per il nome del sito, H2 per ogni sezione principale — questo offre agli screen reader una struttura documentale navigabile per titolo."
-                },
-                {
-                    "title": "I campi del form di contatto sembrano etichettati",
-                    "body": "I campi Nome, Indirizzo email e Messaggio sono etichettati, il che e il criterio di accessibilita dei form piu frequentemente non soddisfatto."
-                }
-            ],
-            "accessibilityIssues": [
-                {
-                    "title": "Nessun link 'salta al contenuto principale'",
-                    "body": "Gli utenti che usano solo la tastiera o gli screen reader devono scorrere l'intera navigazione dell'intestazione ad ogni caricamento di pagina. Un link di salto e richiesto dallo standard WCAG 2.1 Livello A (Criterio 2.4.1) ed e un'aggiunta da una riga.",
-                    "severity": "average"
-                },
-                {
-                    "title": "L'HTML generato da Webador limita il controllo sull'accessibilita",
-                    "body": "I website builder per consumatori producono costantemente ruoli ARIA non accessibili, landmark mancanti e gestione del focus inaffidabile. Senza migrare a una build personalizzata, non puoi verificare ne correggere completamente questi problemi.",
-                    "severity": "average"
-                },
-                {
-                    "title": "Il testo alternativo sulle immagini non puo essere verificato completamente",
-                    "body": "Il logo e le immagini delle proprieta servite dal CDN di Webador richiedono una revisione individuale del testo alternativo. I website builder spesso compilano automaticamente gli attributi alt con i nomi dei file, che non e significativo per gli screen reader.",
-                    "severity": "average"
-                }
-            ],
-            "positiveBadge": "Cosa funziona",
-            "strengthsTitle": "Punti di forza attuali",
-            "strengthsIntro": "Questi aspetti stanno gia supportando fiducia e chiarezza nel sito.",
-            "strengths": [
-              {
-                "title": "Flusso pagine chiaro",
-                "body": "Le pagine principali accompagnano il visitatore dalla prima impressione ai passi successivi in modo logico."
-              },
-              {
-                "title": "Presenza di riprova sociale",
-                "body": "Le testimonianze visibili riducono la frizione iniziale legata alla fiducia."
-              },
-              {
-                "title": "Canali di contatto multipli",
-                "body": "Gli utenti possono contattare il team via form, email o telefono in base alle preferenze."
-              }
-            ],
-            "severeBadge": "Alta priorita",
-            "severeTitle": "Correzioni critiche",
-            "severeIntro": "Questi problemi vanno risolti per primi perche impattano fiducia, conversione o controllo tecnico.",
-            "severe": [
-              {
-                "title": "Nessuna cifra nei piani d'investimento",
-                "body": "I livelli non mostrano prezzi o soglie minime di ingresso, rendendo difficile la valutazione."
-              },
-              {
-                "title": "Segnali da website builder",
-                "body": "Aspetto template e branding della piattaforma riducono la credibilita percepita in un settore ad alta fiducia."
-              },
-              {
-                "title": "Limiti della piattaforma Webador",
-                "body": "Il controllo limitato su SEO tecnica e infrastruttura blocca ottimizzazioni avanzate."
-              }
-            ],
-            "recommendedBadge": "Passo successivo",
-            "recommendedTitle": "Miglioramenti consigliati",
-            "recommendedIntro": "Queste azioni migliorano usabilita e crescita dopo le correzioni critiche.",
-            "recommended": [
-              {
-                "title": "CTA piu esplicite",
-                "body": "Usa etichette orientate al risultato per chiarire cosa succede dopo il click."
-              },
-              {
-                "title": "Confronto piani piu chiaro",
-                "body": "Aggiungi gerarchia visiva e confronto tra livelli per facilitare la scelta."
-              },
-              {
-                "title": "Rafforzare base accessibilita",
-                "body": "Aggiungi skip link e verifica alt text e gestione del focus nei flussi principali."
-              }
-            ],
-            "ctaTitle": "Vuoi trasformarlo in una lista operativa di fix?",
-            "ctaBody": "Possiamo aiutarti a dare priorita al lavoro, ridisegnare per la fiducia e costruire qualcosa che ti dia pieno controllo. Richiedi un preventivo gratuito e senza impegno: ti risponderemo entro 48 ore.",
-            "primaryCta": "Vai al form preventivo",
-            "downloadCta": "Scarica il report PDF"
+  },
+  "clientAuditReports": {
+    "bank2brick": {
+      "metadata": {
+        "title": "Bank2Brick website audit report",
+        "description": "Private audit report for Bank2Brick covering UX, SEO, visual design, and accessibility — with specific issues highlighted by severity and a downloadable PDF.",
+        "ogTitle": "Bank2Brick website audit report",
+        "ogDescription": "Private full-scope review for Bank2Brick across UX, SEO, UI, and accessibility."
+      },
+      "eyebrow": "Private client report",
+      "title": "Bank2Brick: full website review",
+      "subtitle": "A structured review across user experience, SEO, visual design, and accessibility — with clear findings, prioritised fixes, and what is already working well.",
+      "reviewedLabel": "Reviewed",
+      "reviewedValue": "13 May 2026",
+      "visibilityLabel": "Visibility",
+      "visibilityValue": "Private link · excluded from search indexing",
+      "reviewNoteTitle": "Review note",
+      "reviewNoteBody": "This report was produced on 13 May 2026 through a combination of manual inspection of the live site at https://www.bank2brick.ie and automated checks. The site was publicly accessible at the time of the review. Note that the site is built on the Webador platform, which limits what can be assessed or improved without migrating to a custom build.",
+      "uxTitle": "User Experience (UX)",
+      "uxStrengths": [
+        {
+          "title": "Clear, layered page structure",
+          "body": "Six logical pages (Home, How It Works, Why Invest with Us, Investment Plans, Properties in Focus, FAQ) guide a visitor progressively from first impression to deeper commitment — a well-structured information journey."
+        },
+        {
+          "title": "Social proof is present",
+          "body": "Three named, Irish-sounding testimonials (Aoife Kelly, Conor Byrne, Fiona O'Sullivan) provide early-stage credibility for a trust-sensitive financial product."
+        },
+        {
+          "title": "Multiple contact options",
+          "body": "Both a web form and direct contact details (email + phone) are available, giving different visitor types a comfortable entry point."
         }
-    },
-    "audit": {
-        "eyebrow": "Strumento gratuito",
-      "betaLabel": "Beta",
-        "title": "Esegui un audit del sito",
-        "subtitle": "Inserisci l'URL di qualsiasi sito live per ottenere un report automatico su UX, SEO, qualita visiva e accessibilita — basato su Google Lighthouse.",
-      "backToHome": "Torna alla home",
-      "seoKeywords": [
-        "audit sito web",
-        "audit sito web gratuito",
-        "audit SEO",
-        "audit accessibilita",
-        "audit performance sito",
-        "audit Lighthouse",
-        "test velocita sito",
-        "audit SEO tecnico",
-        "audit UX",
-        "controllo accessibilita web"
       ],
-        "urlLabel": "URL del sito",
-        "urlPlaceholder": "https://iltuosito.com",
-        "submitBtn": "Avvia audit",
-        "exampleLabel": "Esempio",
-        "exampleUrl": "https://www.yourwebsite.com",
-        "limitationsTitle": "Informazioni su questo strumento",
-        "limitationsBody": "Questo strumento esegue un'analisi automatica con Lighthouse e identifica problemi tecnici. Non puo valutare la qualita dei contenuti, le scelte di design UX, il messaggio del brand o il contesto specifico del business. Per una revisione completa da un esperto, contattaci.",
-        "ctaTitle": "Ti serve un esperto umano oltre a questo?",
-        "ctaBody": "Gli strumenti automatici trovano i problemi tecnici. Un vero esperto trova tutto il resto.",
-        "ctaBtn": "Richiedi un audit gratuito",
-        "results": {
-            "errorTitle": "Audit non completato",
-            "errorBody": "Il sito potrebbe non essere raggiungibile, richiedere autenticazione, o il servizio di audit e temporaneamente non disponibile.",
-          "errorReasonPrefix": "Motivo tecnico",
-          "fallbackUsed": "Risultato da cache (generato nelle ultime 48 ore)",
-            "tryAgainBtn": "Prova un altro URL",
-            "runningMsg": "Esecuzione audit Lighthouse — richiede circa 15 secondi..."
+      "uxIssues": [
+        {
+          "title": "Investment plans show no pricing or entry figures",
+          "body": "All four tiers (Starter, Growth, Seasoned, Custom) are described without any pricing, minimum investment amounts, or expected return ranges. Visitors who need to self-qualify or compare options cannot do so — increasing friction and causing drop-off before enquiry.",
+          "severity": "severe"
+        },
+        {
+          "title": "CTAs are passive and generic",
+          "body": "The primary calls to action — 'Join us today' and 'Discover how it works' — do not tell visitors what specifically happens next. Goal-oriented alternatives like 'See available properties' or 'Book a free 20-minute call' reduce ambiguity and improve conversion.",
+          "severity": "average"
+        },
+        {
+          "title": "No sticky or scroll-aware navigation",
+          "body": "On a long-scroll page, there is no persistent navigation bar as the user scrolls. Returning to the top requires scrolling back — unnecessary friction, especially on mobile.",
+          "severity": "average"
         }
+      ],
+      "seoTitle": "SEO",
+      "seoStrengths": [
+        {
+          "title": "Branded .ie domain is correctly set up",
+          "body": "The site resolves consistently on a branded .ie TLD — the right geographic signal for an Irish-focused investment product that wants to rank locally."
+        },
+        {
+          "title": "Logical, descriptive URL slugs",
+          "body": "Sub-pages like /how-it-works, /investment-plans, and /faq are human-readable and keyword-relevant, which gives a small SEO benefit over generic URL patterns."
+        }
+      ],
+      "seoIssues": [
+        {
+          "title": "Built on Webador — a consumer website builder",
+          "body": "Webador hosts and generates the entire site infrastructure. You have no control over server configuration, HTTP headers, robots.txt, or sitemap.xml. This is a hard ceiling on technical SEO performance and means you cannot implement advanced optimisations without migrating to a proper platform.",
+          "severity": "severe"
+        },
+        {
+          "title": "'Powered by Webador' footer link",
+          "body": "The footer contains a link to Webador's own website. This leaks domain authority away from your site and signals to sophisticated users and search engines that this is a template-built product — reducing brand trust in a sector where trust is the primary conversion factor.",
+          "severity": "severe"
+        },
+        {
+          "title": "No structured data / JSON-LD schema",
+          "body": "Financial services sites benefit significantly from LocalBusiness, FAQPage, and Review schema. Without these, Google cannot generate rich search results for your pages and you miss trust signals in the SERPs.",
+          "severity": "average"
+        },
+        {
+          "title": "Meta titles and descriptions are likely Webador defaults",
+          "body": "Without custom-configured meta tags, pages will rank poorly for target phrases like 'property investment Ireland', 'collective property investment Co. Clare', or 'passive income property Ireland'.",
+          "severity": "average"
+        }
+      ],
+      "uiTitle": "Visual Design (UI)",
+      "uiStrengths": [
+        {
+          "title": "Readable layout with clear section separation",
+          "body": "The page avoids visual clutter. Content is grouped into recognisable sections and the font size is comfortable for reading on both desktop and mobile."
+        },
+        {
+          "title": "Investment tier naming is intuitive",
+          "body": "Starter / Growth / Seasoned / Custom maps naturally to investor experience levels, reducing cognitive load in the conversion-critical planning section."
+        }
+      ],
+      "uiIssues": [
+        {
+          "title": "Generic website-builder visual identity",
+          "body": "Webador templates are visually recognisable. For a financial services product asking people to invest their savings, the design needs to communicate bespoke professionalism. Currently the site reads as a template product, which directly undermines trust in a sector where design quality signals safety.",
+          "severity": "severe"
+        },
+        {
+          "title": "Logo is served from Webador's CDN (jwwb.nl)",
+          "body": "The logo image loads from jwwb.nl — a third-party domain. Some browsers, privacy tools, or corporate firewalls may block this request, causing the logo to fail to load for some visitors. Self-hosting brand assets is a basic requirement.",
+          "severity": "average"
+        },
+        {
+          "title": "Investment plans section lacks visual hierarchy",
+          "body": "The four tiers are listed as plain text blocks with no pricing, no highlighted recommended tier, and no visual differentiation (icons, colour bands, or feature comparison). Adding these would significantly improve decision-making confidence.",
+          "severity": "average"
+        }
+      ],
+      "accessibilityTitle": "Accessibility",
+      "accessibilityStrengths": [
+        {
+          "title": "Logical heading hierarchy",
+          "body": "H1 for the site name, H2 for each major section — this gives screen readers a properly structured document outline that users can navigate by heading."
+        },
+        {
+          "title": "Contact form fields appear labelled",
+          "body": "The Name, Email address, and Message fields are labelled, which is the most commonly failed form accessibility criterion."
+        }
+      ],
+      "accessibilityIssues": [
+        {
+          "title": "No skip-to-main-content link",
+          "body": "Keyboard-only and screen-reader users must tab through the entire header navigation on every page load before reaching main content. A skip link is required under WCAG 2.1 Level A (Success Criterion 2.4.1) and is a one-line fix.",
+          "severity": "average"
+        },
+        {
+          "title": "Webador-generated HTML limits accessibility control",
+          "body": "Consumer website builders consistently produce inaccessible ARIA roles, missing landmarks, and unreliable focus management. Without migrating to a custom build, you cannot fully audit or remediate these issues — meaning you cannot make confident WCAG compliance claims.",
+          "severity": "average"
+        },
+        {
+          "title": "Alt text on images cannot be fully verified",
+          "body": "The logo and property images served from Webador's CDN need individual alt-text review. Website builders frequently auto-populate alt attributes with file names (e.g. 'logo-high-irqhh5.jpg') which is not meaningful to screen reader users.",
+          "severity": "average"
+        }
+      ],
+      "positiveBadge": "What is working",
+      "strengthsTitle": "Current strengths",
+      "strengthsIntro": "These points are currently supporting trust and clarity on the site.",
+      "strengths": [
+        {
+          "title": "Clear page flow",
+          "body": "The main pages guide visitors from first impression to practical next steps in a logical order."
+        },
+        {
+          "title": "Social proof included",
+          "body": "Visible testimonials help reduce early-stage trust friction for new visitors."
+        },
+        {
+          "title": "Multiple contact channels",
+          "body": "Users can reach out via form, email, or phone based on preference."
+        }
+      ],
+      "severeBadge": "High priority",
+      "severeTitle": "Critical fixes",
+      "severeIntro": "These issues should be addressed first because they affect trust, conversion, or technical control.",
+      "severe": [
+        {
+          "title": "No investment figures in plans",
+          "body": "The plan tiers do not show concrete pricing or entry thresholds, making decision-making difficult."
+        },
+        {
+          "title": "Website builder trust signal",
+          "body": "Template-style presentation and builder branding reduce perceived credibility in a high-trust sector."
+        },
+        {
+          "title": "Webador platform ceiling",
+          "body": "Limited control over technical SEO and infrastructure blocks advanced optimisation work."
+        }
+      ],
+      "recommendedBadge": "Next step",
+      "recommendedTitle": "Recommended improvements",
+      "recommendedIntro": "These actions improve usability and long-term growth after critical fixes.",
+      "recommended": [
+        {
+          "title": "Clarify CTA outcomes",
+          "body": "Use explicit action labels so users understand exactly what happens after each click."
+        },
+        {
+          "title": "Improve plan comparison UX",
+          "body": "Add visual hierarchy and side-by-side cues to make the four tiers easier to compare."
+        },
+        {
+          "title": "Strengthen accessibility baseline",
+          "body": "Add skip links and validate image alt text and focus behavior across key flows."
+        }
+      ],
+      "ctaTitle": "Ready to turn this into a fix list?",
+      "ctaBody": "We can help you prioritise the work, redesign for trust, and build something that gives you full control. Request a free, no-obligation quote and we'll get back to you within 48 hours.",
+      "primaryCta": "Go to the quote form",
+      "downloadCta": "Download PDF report"
     }
+  },
+  "audit": {
+    "eyebrow": "Strumento gratuito",
+    "betaLabel": "Beta",
+    "title": "Richiedi un audit del sito web",
+    "subtitle": "Inserisci l’URL del tuo sito per ricevere un report automatico su UX, SEO, qualità visiva e accessibilità — alimentato da Google Lighthouse.",
+    "backToHome": "Torna alla home",
+    "seoKeywords": [
+      "audit sito web",
+      "audit gratuito sito",
+      "SEO audit",
+      "audit accessibilità",
+      "audit performance",
+      "Lighthouse audit",
+      "test velocità sito",
+      "audit tecnico SEO",
+      "audit UX",
+      "verifica accessibilità web"
+    ],
+    "urlLabel": "URL del sito web",
+    "urlPlaceholder": "https://iltuosito.com",
+    "submitBtn": "Esegui audit",
+    "exampleLabel": "Esempio",
+    "exampleUrl": "https://www.tuosito.com",
+    "limitationsTitle": "Informazioni su questo strumento",
+    "limitationsBody": "Questo strumento esegue un’analisi automatica con Lighthouse e identifica problemi tecnici. Non valuta la qualità dei contenuti, le scelte di UX, il messaggio del brand o il contesto aziendale. Per una revisione completa da parte di un esperto, contattaci.",
+    "ctaTitle": "Vuoi anche una revisione umana?",
+    "ctaBody": "Gli strumenti automatici trovano i problemi tecnici. Un vero esperto vede tutto il resto.",
+    "ctaBtn": "Richiedi audit gratuito",
+    "results": {
+      "errorTitle": "Audit non completato",
+      "errorBody": "Il sito potrebbe essere irraggiungibile, richiedere autenticazione o il servizio di audit non è disponibile.",
+      "errorReasonPrefix": "Motivo tecnico",
+      "fallbackUsed": "Risultato di backup (generato nelle ultime 48 ore)",
+      "tryAgainBtn": "Prova un altro URL",
+      "runningMsg": "Audit in corso — ci vorranno circa 15 secondi…"
+    },
+    "howItWorksTitle": "Come funziona il nostro audit gratuito",
+    "howItWorksIntro": "Abbiamo progettato il nostro processo di audit per essere approfondito, trasparente e collaborativo. Ecco cosa succede:",
+    "processSteps": [
+      {
+        "step": "1",
+        "title": "Compila il modulo di richiesta",
+        "description": "Raccontaci della tua azienda, del sito e dei problemi che vuoi risolvere. Bastano 2-3 minuti."
+      },
+      {
+        "step": "2",
+        "title": "Ricevi un breve questionario",
+        "description": "Ti invieremo alcune domande dettagliate su obiettivi e sfide. Così l’audit sarà davvero su misura."
+      },
+      {
+        "step": "3",
+        "title": "Analisi esperta & suggerimenti",
+        "description": "Il nostro team esamina il sito e prepara un piano dettagliato su come ottenere più clienti, risolvere problemi tecnici o migliorare l’esperienza utente."
+      },
+      {
+        "step": "4",
+        "title": "Scegli il formato",
+        "description": "Decidi tu come ricevere i risultati: videochiamata, incontro di persona (in Italia) o report via email."
+      },
+      {
+        "step": "5",
+        "title": "Revisione & domande",
+        "description": "Analizziamo insieme i suggerimenti, rispondiamo alle tue domande e discutiamo l’impatto per il tuo business."
+      },
+      {
+        "step": "6",
+        "title": "Feedback & prossimi passi",
+        "description": "Ti chiediamo un feedback e valutiamo i prossimi passi — se vuoi che implementiamo noi le modifiche o preferisci il tuo team."
+      }
+    ],
+    "requestFormTitle": "Richiedi subito il tuo audit gratuito",
+    "requestFormSubtitle": "Compila i dati qui sotto: ti ricontatteremo entro 24 ore per confermare l’audit e inviarti i prossimi passi.",
+    "nameLabel": "Il tuo nome",
+    "emailLabel": "Indirizzo email",
+    "websiteLabel": "URL del tuo sito",
+    "businessLabel": "Parlaci della tua azienda",
+    "focusLabel": "Qual è la tua principale preoccupazione? (opzionale)",
+    "focusPlaceholder": "Es: 'Il sito non converte', 'Gli utenti mobile abbandonano', 'Serve audit accessibilità'",
+    "submitBtnText": "Richiedi audit gratuito",
+    "successMessage": "Grazie! Abbiamo ricevuto la tua richiesta. Ti invieremo una conferma via email entro 24 ore."
+  },
+  "solutionsEntrepreneursPage": {
+    "metadata": {
+      "title": "For Small Entrepreneurs: Build Your Brand Online",
+      "description": "Website development and digital marketing services designed for small business owners who want to attract more customers online.",
+      "ogTitle": "For Small Entrepreneurs: Build Your Brand Online",
+      "ogDescription": "Get a website that works for your business — clear, fast, and built to convert."
+    },
+    "eyebrow": "For Small Entrepreneurs",
+    "heading": "Build your brand online and attract more customers",
+    "subheading": "We help small business owners improve their digital presence with practical websites and marketing support. If you want to earn more, building your brand online is the place to start.",
+    "servicesHeading": "What we can do for you",
+    "services": [
+      { "name": "Website Development", "detail": "Custom websites that are clear, fast, accessible, and built to convert enquiries into customers." },
+      { "name": "Website Management", "detail": "Ongoing updates and improvements so your website keeps working for your business." },
+      { "name": "SEO and Local Search", "detail": "On-page SEO and local search optimisation to help customers find you when they search for your services." },
+      { "name": "Marketing Support", "detail": "Campaign landing pages and content support aligned with your sales and growth goals." },
+      { "name": "Graphic Design", "detail": "Visual assets for your website, campaigns, and printed materials that keep your brand consistent." },
+      { "name": "Sales Materials", "detail": "Web and print-ready sales materials for campaigns, outreach, and customer communication." }
+    ],
+    "tagline": "We help entrepreneurs create digital products that actually sell. If you want to earn more - build your brand online with us.",
+    "finalCtaHeading": "Ready to improve your digital presence?",
+    "finalCtaBody": "Tell us what you need and we will suggest a clear, practical plan that fits your budget.",
+    "finalCta": "Ask for a Quote"
+  },
+  "solutionsSMEsPage": {
+    "metadata": {
+      "title": "For SMEs: Custom Software and IT Support",
+      "description": "Software development, IT project outsourcing, and technical support for small and medium businesses that need to grow and optimise.",
+      "ogTitle": "For SMEs: Custom Software and IT Support",
+      "ogDescription": "Grow your revenue and optimise resources with custom software solutions and IT support designed for your business."
+    },
+    "eyebrow": "For Small and Medium Businesses",
+    "heading": "Grow revenue and save time with custom software",
+    "subheading": "We help businesses of all sizes grow revenue and optimise resources through custom software solutions made to tackle unique problems. Automation can save you a lot of time and money.",
+    "servicesHeading": "Software services we provide",
+    "services": [
+      { "name": "Custom Software Development", "detail": "Tailored software built to fix specific business bottlenecks, automate manual processes, and improve efficiency." },
+      { "name": "Business Process Automation", "detail": "Workflow automation and integration to reduce manual work, improve accuracy, and save your team time." },
+      { "name": "IT Project Outsourcing", "detail": "End-to-end project delivery when your internal team is stretched or you need specialised expertise." },
+      { "name": "Maintenance and Support", "detail": "Ongoing technical support, bug fixes, and system optimisation for your software and IT infrastructure." },
+      { "name": "Software Audits", "detail": "Technical review of existing systems to identify risk, performance issues, and upgrade priorities." },
+      { "name": "Consulting", "detail": "Strategic planning and technical guidance for product roadmap, architecture, and development decisions." }
+    ],
+    "tagline": "We help business of all sizes to grow revenue and optimise resources through custom software solutions made to tackle their unique problems. Automation can save you a lot of time and money.",
+    "finalCtaHeading": "Need software that truly fits your business?",
+    "finalCtaBody": "Tell us about your challenge and we will propose a practical way forward.",
+    "finalCta": "Send us a Message"
+  },
+  "solutionsStartupsPage": {
+    "metadata": {
+      "title": "For Startups: From Idea to MVP to Market",
+      "description": "MVP development, product prototyping, design thinking workshops, and IT consulting for startup founders validating ideas and building early-stage companies.",
+      "ogTitle": "For Startups: From Idea to MVP to Market",
+      "ogDescription": "Validate your startup idea, build your MVP, and launch with confidence. Fixed pricing or flexible equity partnerships available."
+    },
+    "eyebrow": "For Startup Founders",
+    "heading": "Ship fast, learn faster, validate your startup idea",
+    "subheading": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Choose fixed pricing or discuss a flexible equity partnership if you are a promising early-stage company.",
+    "servicesHeading": "What we build for startups",
+    "services": [
+      { "name": "MVP Development", "detail": "Build a focused first version to validate demand quickly, reduce risk, and prove your concept to investors." },
+      { "name": "Rapid Prototyping", "detail": "Clickable, interactive prototypes to test with users and investors before committing to a full build." },
+      { "name": "Design Thinking Workshops", "detail": "Structured sessions to explore your idea, identify core assumptions, and validate your business model with users." },
+      { "name": "Product Strategy", "detail": "Help with roadmap, feature prioritisation, and go-to-market planning so you launch the right thing." },
+      { "name": "UX Research and Design", "detail": "User research, wireframing, and UI design to ensure your product is intuitive and people actually want to use it." },
+      { "name": "IT Consultation", "detail": "Technical guidance on architecture, tech stack, infrastructure, and scaling decisions as you grow." }
+    ],
+    "tagline": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Fixed pricing or flexible equity partnerships available.",
+    "whyHeading": "Why startups choose us",
+    "why": [
+      "Fixed pricing or flexible equity partnership options — choose what fits your stage",
+      "Rapid MVP delivery — validate your idea with real users in weeks, not months",
+      "Design Thinking methodology — proven framework to reduce risk and test assumptions",
+      "Founder-friendly communication — we explain tech in plain English and actually listen",
+      "Post-launch support — we don't disappear after launch; we help you iterate based on user feedback"
+    ],
+    "finalCtaHeading": "Ready to validate your startup idea?",
+    "finalCtaBody": "Let's talk about your vision. We'll help you shape the right MVP roadmap and discuss options.",
+    "finalCta": "Send us a Message"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "About We Make IT - Meet Our Team",
+      "description": "Learn about We Make IT, our mission, and the team behind your project. Based in Ireland, serving global clients.",
+      "ogTitle": "About We Make IT",
+      "ogDescription": "We are a software development studio based in Ireland, helping entrepreneurs and SMEs build digital products that their customers love."
+    },
+    "eyebrow": "About Us",
+    "heroHeading": "We turn ideas into real digital products",
+    "heroSubheading": "We Make IT is a software development studio based in Ireland. We care deeply about helping local businesses grow because better digital experiences make everyday life easier for everyone.",
+    "missionHeading": "Our Mission",
+    "missionBody": "To help entrepreneurs and small businesses build digital products that their customers genuinely enjoy using. From first idea to launch and beyond, we are with you.",
+    "valuesHeading": "What We Stand For",
+    "values": [
+      { "title": "Accessibility & Inclusion", "description": "Every product we build is inclusive and accessible from day one. No one should be left behind in the digital world." },
+      { "title": "Honest Communication", "description": "We speak plain English, explain technical decisions clearly, and always listen to understand your real needs." },
+      { "title": "Quality Over Speed", "description": "We build for the long term. Your product is designed to scale, improve, and adapt as your business grows." },
+      { "title": "Fixed Pricing", "description": "You know the full cost before we start. No hidden extras, no surprise invoices. Transparency is not optional." }
+    ],
+    "teamHeading": "Meet Our Team",
+    "teamSubheading": "We combine design, development, strategy, and business expertise. Most importantly, we genuinely care about your success.",
+    "team": [
+      { "name": "Andrea Contarino", "title": "Chief Architect & Backend Engineer", "bio": "15+ years building scalable systems and technical foundations for products at scale. Architect of our approach to custom software and project delivery." },
+      { "name": "Svetlana Savchenko", "title": "Founder & Senior Frontend Engineer", "bio": "Frontend specialist and UX advocate. Over 8 years building interfaces that are intuitive, accessible, and genuinely usable. Founder of We Make IT." },
+      { "name": "Seamus O'Brien", "title": "Web and Marketing", "bio": "Brings brand strategy, content, and go-to-market expertise. Helps translate our work into clear messaging that resonates with clients and users." },
+      { "name": "Sheila McLoughlin", "title": "Junior Software Engineer", "bio": "Growing her expertise in full-stack development. Brings fresh perspective to problem-solving and brings quality and care to every feature delivered." }
+    ],
+    "teamPlaceholder": "Photo coming soon"
+  },
+  "auditExpert": {
+    "title": "Free Audits by Tech Experts",
+    "subtitle": "Get a comprehensive audit from our team of experts. We review your website or app, identify opportunities, and provide a clear, practical plan to improve your digital presence.",
+    "backToHome": "Back to home",
+    "eyebrow": "How it works",
+    "howItWorksTitle": "How our free audit works",
+    "howItWorksIntro": "We've designed our audit process to be thorough, transparent, and collaborative. Here's exactly what happens:",
+    "processSteps": [
+      {
+        "step": "1",
+        "title": "Fill in the request form",
+        "description": "Tell us about your business, your website, and any specific problems you want us to focus on. This takes about 2-3 minutes."
+      },
+      {
+        "step": "2",
+        "title": "We send you a brief questionnaire",
+        "description": "We'll ask more detailed questions about your business, goals, and current challenges. This helps us tailor the audit to what matters most to you."
+      },
+      {
+        "step": "3",
+        "title": "Expert review & suggestions",
+        "description": "Our team reviews your website and creates a detailed plan showing what you can do to gain more customers, fix technical issues, or improve user experience."
+      },
+      {
+        "step": "4",
+        "title": "Choose your format",
+        "description": "You decide how you'd like to discuss the results: an online video call, an in-person meetup (if you're in Ireland), or a detailed email report."
+      },
+      {
+        "step": "5",
+        "title": "Review & Q&A",
+        "description": "We go through the suggestions together, answer your questions, and discuss what the changes could mean for your business."
+      },
+      {
+        "step": "6",
+        "title": "Feedback & next steps",
+        "description": "We ask for your feedback and discuss next steps—whether you want us to implement changes or you'd prefer to work with your own team."
+      }
+    ],
+    "requestFormTitle": "Get your free audit started",
+    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps."
+  }
 }
