@@ -4,7 +4,14 @@ import { z } from "zod";
 const auditRequestSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
-  website: z.string().url("Invalid website URL"),
+  website: z
+    .string()
+    .min(3, "Website URL is required")
+    .transform((val) => {
+      const trimmed = val.trim();
+      return /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+    })
+    .pipe(z.string().url("Please enter a valid website URL")),
   business: z.string().min(10, "Business description must be at least 10 characters"),
   focus: z.string().optional(),
   locale: z.enum(["en", "it", "ru"]).default("en"),

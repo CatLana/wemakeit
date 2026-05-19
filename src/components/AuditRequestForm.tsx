@@ -30,15 +30,23 @@ export default function AuditRequestForm() {
     setSuccessMessage("");
     setErrorMessage("");
 
+    // Normalise the website URL — prepend https:// if no protocol given
+    const rawWebsite = formData.website.trim();
+    const normalisedWebsite =
+      rawWebsite && !/^https?:\/\//i.test(rawWebsite)
+        ? `https://${rawWebsite}`
+        : rawWebsite;
+
     try {
       const response = await fetch("/api/audit/request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, website: normalisedWebsite }),
       });
 
       if (!response.ok) {
-        throw new Error("Failed to submit form");
+        const json = await response.json().catch(() => ({}));
+        throw new Error((json as { error?: string }).error ?? "Failed to submit form");
       }
 
       setSuccessMessage(t("successMessage"));
@@ -112,13 +120,13 @@ export default function AuditRequestForm() {
         </label>
         <input
           id="audit-website"
-          type="url"
+          type="text"
           name="website"
           value={formData.website}
           onChange={handleChange}
           required
           className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm text-[#1E293B] placeholder:text-slate-400 focus:border-[#22D3EE] focus:outline-none focus:ring-2 focus:ring-[#22D3EE]/20"
-          placeholder="https://yourwebsite.com"
+          placeholder="yourwebsite.ie or www.yourwebsite.ie"
         />
       </div>
 
