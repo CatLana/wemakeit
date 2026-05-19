@@ -51,7 +51,8 @@ export default async function AuditResultsPage({
       report.visibilityValue = t("results.fallbackUsed");
     }
 
-    const expiresAt = Date.now() + 48 * 60 * 60 * 1000;
+    const reportDateMs = Date.parse(report.reportDate);
+    const expiresAt = (Number.isFinite(reportDateMs) ? reportDateMs : 0) + 48 * 60 * 60 * 1000;
     const downloadHref = `/api/audit/pdf?url=${encodeURIComponent(result.normalisedUrl)}&strategy=${encodeURIComponent(
       strategyMode,
     )}&expires=${expiresAt}`;

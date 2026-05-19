@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Sviluppo App e Web per Startup e PMI | We Make IT",
+    "title": "Sviluppo App e Web per Startup e PMI",
     "description": "Trasformiamo idee in app e siti web. Lavoriamo remotamente in tutto il mondo, oltre 15 anni di esperienza, prezzo fisso. Prima consulenza gratuita.",
-    "ogTitle": "Sviluppo App e Web per Startup e PMI | We Make IT",
+    "ogTitle": "Sviluppo App e Web per Startup e PMI",
     "ogDescription": "Hai un'idea imprenditoriale? Ti aiutiamo a validarla, pianificarla e realizzarla. Prima consulenza gratuita."
   },
   "header": {
@@ -20,11 +20,17 @@
     "mobileNavLabel": "Menu mobile",
     "mainNavLabel": "Menu principale"
   },
+  "languageSwitcher": {
+    "selectorAriaLabel": "Selettore lingua",
+    "menuAriaLabel": "Seleziona lingua",
+    "currentLanguage": "Lingua corrente: {language}",
+    "switchTo": "Passa a {language}"
+  },
   "hero": {
     "badge": "Lavoriamo remotamente in tutto il mondo",
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
-    "subtitle": "Hai un'idea imprenditoriale? La trasformiamo in app o sito web. Un team, un prezzo, senza costi nascosti.",
+    "subtitle": "Aiutiamo le imprese irlandesi a crescere con esperienze digitali fluide e senza frustrazioni. Da siti web e marketing fino al software su misura, costruiamo ciò che serve davvero al tuo business.",
     "springSale": "Offerta Estate: 30% sconto per nuovi clienti. Posti limitati.",
     "cta1": "Raccontaci la tua idea",
     "cta2": "Come funziona",
@@ -43,61 +49,35 @@
   },
   "services": {
     "eyebrow": "Cosa facciamo",
-    "heading": "Sviluppo app e web per la tua azienda",
-    "headingPlain": "Sviluppo app e web",
-    "headingAccent": "per la tua azienda",
-    "subheading": "Dalla validazione idea e prototipazione, allo sviluppo app mobile e web, servizi di localizzazione, consulenza IT e supporto continuativo. Tutto sotto un unico tetto.",
-    "cardCta": "Raccontaci la tua idea",
-    "consultationCta": "Prenota consulenza",
-    "learnMore": "Scopri di più",
-    "items": [
+    "heading": "Due percorsi chiari per far crescere il tuo business",
+    "headingPlain": "Due percorsi chiari",
+    "headingAccent": "per far crescere il tuo business",
+    "subheading": "Scegli il percorso più adatto ai tuoi obiettivi. Manteniamo il primo passo semplice e poi approfondiamo in base alle reali esigenze della tua azienda.",
+    "servicePreviewLabel": "Anteprima servizi per {category}",
+    "categories": [
       {
-        "title": "Sviluppo Siti Web",
-        "description": "Progettiamo e realizziamo siti web e applicazioni web personalizzati — veloci, accessibili e ottimizzati per convertire i visitatori in clienti."
+        "title": "Siti Web",
+        "description": "Aiutiamo le piccole imprese a migliorare la presenza digitale e ad acquisire più clienti con siti e marketing pratico.",
+        "href": "/solutions/websites",
+        "previewItems": [
+          "Sviluppo e restyling siti web",
+          "SEO e supporto marketing digitale",
+          "Graphic design e materiali campagna",
+          "Gestione e aggiornamento sito"
+        ],
+        "cta": "Vedi tutti i servizi web"
       },
       {
-        "title": "Sviluppo App su Misura",
-        "description": "Progettiamo e sviluppiamo app che rispondono esattamente alle esigenze della tua azienda e dei tuoi clienti."
-      },
-      {
-        "title": "Validazione Idea e MVP",
-        "description": "Non sicuro che l'idea funzioni? La validiamo prima di sviluppare completamente e creiamo un MVP per testarla."
-      },
-      {
-        "title": "Ricerca UX",
-        "description": "Hai già un prodotto o prototipo? Studiamo come le persone reali lo usano, troviamo i problemi e proponiamo miglioramenti prioritari."
-      },
-      {
-        "title": "UX Design",
-        "description": "Report UX pronto? Ti aiutiamo con design e usabilità. Se serve, ci occupiamo anche dell'implementazione."
-      },
-      {
-        "title": "Prototipo App",
-        "description": "Prima dello sviluppo completo, creiamo un prototipo interattivo da testare con utenti e investitori."
-      },
-      {
-        "title": "Sviluppo App Mobile",
-        "description": "Sviluppiamo app iOS e Android con un'unica base codice: costi ridotti senza compromettere qualità e funzionalità."
-      },
-      {
-        "title": "Audit Accessibilità",
-        "description": "Controlliamo i prodotti digitali per conformità accessibilità e apportiamo le correzioni necessarie."
-      },
-      {
-        "title": "Consulenza IT",
-        "description": "Ti aiutiamo a capire cosa sviluppare, quali tecnologie scegliere e se la tua idea è realistica."
-      },
-      {
-        "title": "Manutenzione e Supporto",
-        "description": "Ci occupiamo della manutenzione app/sito: correggiamo bug, aggiungiamo funzionalità, garantiamo funzionamento stabile."
-      },
-      {
-        "title": "Localizzazione Siti e App",
-        "description": "Gestiamo la localizzazione completa del tuo sito o app: dalla traduzione dei contenuti in più lingue all'integrazione dei token i18n nel codice. Raggiungi nuovi mercati senza complicazioni."
-      },
-      {
-        "title": "Sviluppo Prodotti Multi-Mercato",
-        "description": "Stai sviluppando un prodotto per più mercati? Progettiamo e sviluppiamo prodotti online localizzati per diverse regioni, lingue e aspettative culturali — per un lancio globale sicuro."
+        "title": "Software",
+        "description": "Aiutiamo founder e PMI a trasformare idee in software funzionante con sviluppo prodotto orientato alla UX.",
+        "href": "/solutions/software",
+        "previewItems": [
+          "MVP, web app e app mobile",
+          "Software su misura per processi aziendali",
+          "Audit software e accessibilità",
+          "Consulenza e webinar per team"
+        ],
+        "cta": "Vedi tutti i servizi software"
       }
     ]
   },
@@ -121,9 +101,9 @@
     "eyebrow": "Chi Siamo",
     "headingLine1": "Trasformiamo la tua idea",
     "headingLine2": "in un prodotto online reale.",
-    "body1": "We Make IT è uno studio di sviluppo software con sede in Irlanda. Aiutiamo imprese e fondatori a dare vita alle loro idee, e offriamo consulenza e supporto per progetti esistenti.",
+    "body1": "We Make IT è uno studio di sviluppo software con sede in Irlanda. Ci sta a cuore aiutare le imprese locali a crescere, perché esperienze digitali migliori rendono la vita quotidiana più semplice per tutti.",
     "body2": "Dalla tua prima domanda al lancio e oltre, siamo con te.",
-    "body3": "Il nostro team combina sviluppo full-stack, design accessibile, UX ed esperienza aziendale. Abbiamo lavorato in grandi aziende tecnologiche e ora portiamo questa esperienza alle piccole e medie imprese.",
+    "body3": "Il nostro team unisce sviluppo full-stack, design accessibile, UX ed esperienza di business. Il nostro focus è l'Irlanda, ma lavoriamo con piacere anche con clienti di altri mercati.",
     "tagline": "Ovunque tu sia, se hai un'idea, ci farebbe piacere sentirla.",
     "cta": "Richiedi un preventivo gratuito",
     "visualLabel": "We Make IT - Irlanda",
@@ -265,7 +245,7 @@
     }
   },
   "projectBrief": {
-    "title": "Brief di Progetto | We Make IT",
+    "title": "Brief di Progetto",
     "description": "Condividi i dettagli del tuo progetto per aiutarci a preparare un preventivo accurato.",
     "eyebrow": "Brief di Progetto",
     "heading": "Parlaci del tuo progetto",
@@ -421,7 +401,7 @@
     "tagline": "Aiutiamo PMI e startup a trasformare idee in app/siti reali. Lavoriamo remotamente worldwide.",
     "copyright": "© We Make IT — imprenditore individuale registrato in Irlanda.",
     "builtBy": "Sviluppato da",
-    "languageNote": "Parliamo anche inglese e russo.",
+    "languageNote": "Inclusivi per scelta: supporto disponibile in inglese, italiano e russo.",
     "footerLabel": "Footer",
     "remoteText": "Registrata in Irlanda. Operante in Europa e nel Regno Unito.",
     "sections": {
@@ -431,11 +411,11 @@
       "legal": "Legale"
     },
     "serviceLinks": [
-      "Frontend",
-      "Backend",
-      "Accessibilità (WCAG)",
-      "UX Design",
-      "Siti Web"
+      "Sviluppo Siti Web",
+      "SEO e Marketing",
+      "Graphic Design",
+      "Software su Misura",
+      "MVP e App"
     ],
     "companyLinks": {
       "aboutUs": "Chi Siamo",
@@ -456,7 +436,7 @@
     }
   },
   "contactPage": {
-    "title": "Contatti | We Make IT",
+    "title": "Contatti",
     "description": "Contatta We Make IT via form.",
     "eyebrow": "Contattaci",
     "heading": "Scrivici",
@@ -490,7 +470,7 @@
     }
   },
   "blog": {
-    "title": "Blog: Idee e Guide per Imprenditori | We Make IT",
+    "title": "Blog: Idee e Guide per Imprenditori",
     "description": "Guide pratiche su come costruire app, trovare finanziamenti e trasformare la tua idea imprenditoriale in un prodotto digitale.",
     "ogTitle": "Consigli sullo Sviluppo App per Imprenditori | Blog We Make IT",
     "ogDescription": "Consigli pratici su come costruire app, ottenere finanziamenti e trasformare idee aziendali in prodotti digitali reali."
@@ -501,6 +481,125 @@
     "learnMore": "Maggiori info",
     "essential": "Solo necessari",
     "acceptAll": "Accetta tutti"
+  },
+  "solutionsGeneralPage": {
+    "metadata": {
+      "title": "Soluzioni per PMI irlandesi",
+      "description": "Un percorso chiaro per aziende che hanno bisogno di siti web migliori o software su misura. Comunicazione semplice e risultati concreti.",
+      "ogTitle": "Soluzioni per PMI irlandesi",
+      "ogDescription": "Soluzioni web e software per aiutare le imprese irlandesi a crescere con esperienze digitali più fluide."
+    },
+    "eyebrow": "Soluzioni",
+    "heading": "Aiutiamo le imprese irlandesi a crescere",
+    "subheading": "Che tu abbia bisogno di una presenza web più forte o di software personalizzato, puntiamo a esperienze utente fluide che migliorano i risultati.",
+    "cards": [
+      {
+        "title": "Soluzioni Web",
+        "body": "Per imprenditori che vogliono più visibilità, più conversioni e una presenza digitale più solida.",
+        "cta": "Scopri le soluzioni web",
+        "href": "/solutions/for-websites"
+      },
+      {
+        "title": "Soluzioni Software",
+        "body": "Per team e founder che sviluppano prodotti, automatizzano processi o esternalizzano la delivery.",
+        "cta": "Scopri le soluzioni software",
+        "href": "/solutions/for-software"
+      }
+    ],
+    "finalCtaHeading": "Non sai quale direzione scegliere?",
+    "finalCtaBody": "Inviaci un messaggio breve. Ti aiutiamo a scegliere il prossimo passo più utile per il tuo business.",
+    "finalCta": "Contattaci"
+  },
+  "solutionsWebsitesPage": {
+    "metadata": {
+      "title": "Servizi Web per Piccole Imprese",
+      "description": "Servizi di sviluppo web e presenza digitale per piccole imprese irlandesi: SEO, marketing e materiali campagna.",
+      "ogTitle": "Servizi Web per Piccole Imprese",
+      "ogDescription": "Migliora la tua presenza digitale con siti web, SEO, marketing e design orientati alla crescita."
+    },
+    "schemaName": "Soluzioni Web per Piccole Imprese",
+    "eyebrow": "Soluzioni Web",
+    "heading": "Siti web e supporto marketing per piccole imprese",
+    "subheading": "Aiutiamo le piccole imprese a migliorare la presenza digitale con sviluppo siti e marketing. Se vuoi acquisire più clienti, siamo felici di ascoltarti.",
+    "servicesHeading": "Cosa possiamo fare per la tua presenza online",
+    "services": [
+      { "name": "Sviluppo Siti Web", "detail": "Siti personalizzati chiari, veloci, accessibili e orientati alla conversione." },
+      { "name": "Gestione Sito", "detail": "Aggiornamenti, correzioni e miglioramenti continui per mantenere il sito efficace." },
+      { "name": "SEO", "detail": "Fondamenta SEO on-page e miglioramenti pratici per farti trovare dai clienti." },
+      { "name": "Supporto Marketing", "detail": "Landing page di campagna e contenuti allineati ai tuoi obiettivi commerciali." },
+      { "name": "Graphic Design", "detail": "Asset visivi per sito e campagne con coerenza di brand." },
+      { "name": "Materiali Sales", "detail": "Materiali commerciali per web e stampa per campagne e comunicazioni clienti." }
+    ],
+    "finalCtaHeading": "Pronto a migliorare la tua presenza digitale?",
+    "finalCtaBody": "Raccontaci cosa ti serve e ti proponiamo un piano chiaro e concreto.",
+    "finalCta": "Scrivici"
+  },
+  "solutionsSoftwarePage": {
+    "metadata": {
+      "title": "Servizi Software su Misura per PMI",
+      "description": "Sviluppo software personalizzato per PMI e founder: MVP, web app, mobile app, audit e consulenza.",
+      "ogTitle": "Servizi Software su Misura per PMI",
+      "ogDescription": "Trasforma la tua idea software in un prodotto reale con sviluppo guidato da UX e supporto tecnico pratico."
+    },
+    "schemaName": "Soluzioni Software per PMI",
+    "eyebrow": "Soluzioni Software",
+    "heading": "Sviluppo software su misura per aziende in crescita",
+    "subheading": "Aiutiamo imprenditori e PMI a trasformare idee in prodotti reali con sviluppo applicativo, UX e design thinking. Hai un'idea che vale la pena costruire? Prenota una consulenza gratuita.",
+    "servicesHeading": "Servizi software che offriamo",
+    "services": [
+      { "name": "MVP Software", "detail": "Prima versione essenziale per validare la domanda e ridurre il rischio." },
+      { "name": "Web App", "detail": "Applicazioni web personalizzate progettate sui tuoi processi e sui bisogni dei clienti." },
+      { "name": "Mobile App", "detail": "Sviluppo app iOS e Android con scope pratico e delivery affidabile." },
+      { "name": "Software su Misura", "detail": "Soluzioni personalizzate per eliminare colli di bottiglia e attività manuali." },
+      { "name": "Audit Software", "detail": "Analisi tecnica dei sistemi esistenti per individuare rischi, sprechi e priorità." },
+      { "name": "Audit Accessibilità", "detail": "Individuiamo gap di accessibilità e miglioriamo conformità e usabilità." },
+      { "name": "Ricerca UX", "detail": "Insight reali sugli utenti per decisioni di prodotto più solide." },
+      { "name": "Consulenze", "detail": "Sessioni pratiche per definire scope, roadmap e scelte di delivery." },
+      { "name": "Webinar Tecnici Custom", "detail": "Formazione su misura per i tuoi dipendenti, centrata sui vostri strumenti." }
+    ],
+    "finalCtaHeading": "Hai bisogno di software che si adatti davvero al tuo business?",
+    "finalCtaBody": "Condividi obiettivi e vincoli. Ti aiutiamo a definire il percorso prodotto giusto.",
+    "finalCta": "Prenota una consulenza"
+  },
+  "valuePropWebsitesPage": {
+    "metadata": {
+      "title": "Per Piccole Imprese: Più Risultati dal Tuo Sito",
+      "description": "Una proposta di valore chiara per piccole imprese irlandesi che vogliono più clienti grazie a una presenza online più forte.",
+      "ogTitle": "Per Piccole Imprese: Più Risultati dal Tuo Sito",
+      "ogDescription": "Supporto pratico su sito e marketing per piccole imprese che vogliono crescere in modo misurabile."
+    },
+    "eyebrow": "Per Piccole Imprese",
+    "heading": "Più visibilità, più fiducia, più richieste",
+    "subheading": "Se il tuo sito non sta aiutando la crescita, possiamo migliorarlo con interventi pratici su contenuto, usabilità e conversione.",
+    "points": [
+      "Messaggi chiari che spiegano la tua offerta in pochi secondi",
+      "Pagine veloci e accessibili, semplici su ogni dispositivo",
+      "Struttura SEO e contenuti per farti trovare più facilmente",
+      "Materiali campagna e sales allineati ai tuoi obiettivi"
+    ],
+    "finalCtaHeading": "Vuoi che il tuo sito lavori meglio per il tuo business?",
+    "finalCtaBody": "Raccontaci dove sei oggi e dove vuoi arrivare. Ti aiutiamo a colmare il divario.",
+    "finalCta": "Contattaci"
+  },
+  "valuePropSoftwarePage": {
+    "metadata": {
+      "title": "Per PMI: Software che Risolve Problemi Reali",
+      "description": "Una proposta di valore chiara per PMI che cercano software su misura, sviluppo prodotto o supporto delivery in outsourcing.",
+      "ogTitle": "Per PMI: Software che Risolve Problemi Reali",
+      "ogDescription": "Da MVP a software in produzione, aiutiamo le PMI a ridurre il rischio e migliorare l'esperienza utente."
+    },
+    "eyebrow": "Per Piccole e Medie Imprese",
+    "heading": "Crea software che le persone usano con piacere",
+    "subheading": "Supportiamo le PMI che hanno bisogno di software su misura, delivery più solida o un partner affidabile in outsourcing.",
+    "points": [
+      "Pianificazione MVP-first per ridurre rischio e costi",
+      "Sviluppo guidato dalla UX per aumentare adozione e soddisfazione",
+      "Supporto delivery flessibile quando il team interno è saturo",
+      "Comunicazione chiara per stakeholder tecnici e non tecnici"
+    ],
+    "finalCtaHeading": "Hai una sfida software da risolvere?",
+    "finalCtaBody": "Mandaci il tuo contesto e ti proporremo un percorso pratico.",
+    "finalCta": "Scrivici"
   },
   "servicePages": {
     "intro": {

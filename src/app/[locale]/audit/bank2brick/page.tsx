@@ -4,7 +4,6 @@ import { ArrowRight, BadgeCheck, ShieldAlert, Sparkles } from "lucide-react";
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "audit/bank2brick";
-const REPORT_DATE = "2026-05-12";
 
 interface SectionItem {
   title: string;

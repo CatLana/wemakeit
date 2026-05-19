@@ -442,7 +442,7 @@ export default async function PricingPage({
                     <ArrowRight size={14} aria-hidden="true" />
                   </Link>
                   <Link
-                    href="/services/web-development"
+                    href="/solutions/websites"
                     className="text-sm text-slate-400 hover:text-slate-600 transition-colors underline underline-offset-2"
                   >
                     Full service details
@@ -518,7 +518,7 @@ export default async function PricingPage({
                     <ArrowRight size={14} aria-hidden="true" />
                   </Link>
                   <Link
-                    href="/services/mobile-app-development"
+                    href="/solutions/software"
                     className="text-sm text-slate-400 hover:text-slate-600 transition-colors underline underline-offset-2"
                   >
                     Full service details

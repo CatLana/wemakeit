@@ -100,16 +100,16 @@ export default function Footer() {
             <ul className="space-y-1" role="list">
               {serviceLabels.map((label, index) => {
                 const serviceHrefs = [
-                  "/services/web-development",
-                  "/services/web-development",
-                  "/services/ux-accessibility-audit",
-                  "/services/app-development",
-                  "/services/web-development",
+                  "/solutions/websites",
+                  "/solutions/websites",
+                  "/solutions/websites",
+                  "/solutions/software",
+                  "/solutions/software",
                 ];
                 return (
                   <li key={label}>
                     <Link
-                      href={serviceHrefs[index] ?? "/services"}
+                      href={serviceHrefs[index] ?? "/solutions"}
                       className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                     >
                       {label}

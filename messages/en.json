@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Custom App & Web Development Ireland | We Make IT",
+    "title": "Custom App & Web Development Ireland",
     "description": "Turn your idea into an app or website. Irish-based, 15+ years experience, fixed price. Free first consultation.",
-    "ogTitle": "Custom App & Web Development Ireland | We Make IT",
+    "ogTitle": "Custom App & Web Development Ireland",
     "ogDescription": "Got a business idea? We help you validate it, plan it, and build it. Free first consultation."
   },
   "header": {
@@ -20,11 +20,17 @@
     "mobileNavLabel": "Mobile navigation",
     "mainNavLabel": "Main navigation"
   },
+  "languageSwitcher": {
+    "selectorAriaLabel": "Language selector",
+    "menuAriaLabel": "Select language",
+    "currentLanguage": "Current language: {language}",
+    "switchTo": "Switch to {language}"
+  },
   "hero": {
     "badge": "Based in Ireland",
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
-    "subtitle": "Got a business idea? We turn it into a real app or website. One team, one price, no surprises.",
+    "subtitle": "We help Irish businesses grow through building websites and custom applications. We develop smooth and frustration-free digital experiences websites and marketing to custom software, we build what helps your business move forward.",
     "springSale": "Summer Sale: 30% off for new clients. Limited spots available.",
     "cta1": "Tell us your idea",
     "cta2": "How it works",
@@ -43,26 +49,36 @@
   },
   "services": {
     "eyebrow": "What We Do",
-    "heading": "App and website development services for your business",
-    "headingPlain": "App and website development",
-    "headingAccent": "services for your business",
-    "subheading": "From idea validation and prototyping, to mobile app development, web applications, localisation services, IT consulting, and ongoing support. Everything under one roof.",
-    "cardCta": "Tell us your idea",
-    "consultationCta": "Book a consultation",
-    "learnMore": "Learn more",
-    "items": [
-      { "title": "Website Development", "description": "We design and build custom websites and web applications — fast, accessible, and optimised to convert visitors into customers." },
-      { "title": "Custom App Development", "description": "We design and build custom applications tailored to exactly how your business works, for your success and your customers." },
-      { "title": "Idea Validation and MVP", "description": "Not sure if your idea will work? We help you validate it before spending a penny on a full build. We then create a Minimum Viable Product (MVP) so you can test it with real users fast." },
-      { "title": "UX Research", "description": "Already have a product or prototype? We help handling the research on how real people use your product, find what is confusing or broken, and give you a clear, prioritised list of improvements." },
-    { "title": "UX Design", "description": "Got a UX report? We turn findings into polished designs and, if needed, handle implementation too." },
-      { "title": "App Prototype", "description": "Before committing to a full build, we create an interactive prototype of your app. You can click through it, test it with users, and get investor feedback." },
-      { "title": "Mobile App Development", "description": "We build mobile apps that work on both iOS and Android from a single codebase, keeping costs down without compromising on look or feel." },
-      { "title": "Accessibility Audits", "description": "EU law now requires digital products to be accessible to people with disabilities. We audit your existing app or website and fix what needs fixing." },
-      { "title": "Software Consultancy", "description": "Not sure what to build, which technology to choose, or whether your idea is viable? We are here to help." },
-      { "title": "Maintenance and Support", "description": "Already have an app that needs looking after? We take on ongoing support, fix bugs, add new features, and keep things running smoothly." },
-      { "title": "Website & App Localisation", "description": "We handle the full localisation of your website or app — from translating content into multiple languages to integrating i18n tokens in your codebase. Reach new audiences without the headache." },
-      { "title": "Multi-Market Product Development", "description": "Building a product for multiple markets? We design and develop online products localised for different regions, languages, and cultural expectations — so you can launch globally with confidence." }
+    "heading": "Two clear paths to help your business grow",
+    "headingPlain": "Two clear paths",
+    "headingAccent": "to help your business grow",
+    "subheading": "Choose the direction that fits your goals. We keep the first step simple, then guide you deeper based on what your business actually needs.",
+    "servicePreviewLabel": "Service preview for {category}",
+    "categories": [
+      {
+        "title": "Websites",
+        "description": "We help small businesses improve digital presence and attract more customers through practical website and marketing work.",
+        "href": "/solutions/websites",
+        "previewItems": [
+          "Website development and redesign",
+          "SEO and digital marketing support",
+          "Graphic design and campaign assets",
+          "Website management and updates"
+        ],
+        "cta": "See all website services"
+      },
+      {
+        "title": "Software",
+        "description": "We help founders and SMEs turn ideas into working software with UX-led product development and technical guidance.",
+        "href": "/solutions/software",
+        "previewItems": [
+          "MVPs, web apps, and mobile apps",
+          "Custom software for business workflows",
+          "Software and accessibility audits",
+          "Consulting and team webinars"
+        ],
+        "cta": "See all software services"
+      }
     ]
   },
   "founder": {
@@ -85,9 +101,9 @@
     "eyebrow": "About Us",
     "headingLine1": "We turn your idea",
     "headingLine2": "into a real digital product.",
-    "body1": "We Make IT is a software development studio based in Ireland. We help businesses and founders bring ideas to life, and offer consulting and support for existing projects.",
+    "body1": "We Make IT is a software development studio based in Ireland. We care deeply about helping local businesses grow because better digital experiences make everyday life easier for everyone.",
     "body2": "From your first question to launch and beyond, we are with you.",
-    "body3": "Our team combines full-stack development, accessible design, UX, and business expertise. We have worked at large tech companies and bring that experience to small and medium-sized businesses.",
+    "body3": "Our team combines full-stack development, accessible design, UX, and business expertise. We focus on Ireland while warmly welcoming clients from other markets too.",
     "tagline": "Wherever you are, if you have an idea, we would love to hear it.",
     "cta": "Get a free quote",
     "visualLabel": "We Make IT - Ireland",
@@ -197,7 +213,7 @@
     }
   },
   "projectBrief": {
-    "title": "Project Brief | We Make IT",
+    "title": "Project Brief",
     "description": "Share details about your project to help us prepare an accurate quote and proposal.",
     "eyebrow": "Project Brief",
     "heading": "Tell us about your project",
@@ -353,7 +369,7 @@
     "tagline": "We help entrepreneurs and small businesses turn their ideas into real apps and websites. Based in Ireland, working globally.",
     "copyright": "© We Make IT Sole Trader company registered in Ireland.",
     "builtBy": "Built by",
-    "languageNote": "By the way, we also speak Italiano and \u0420\u0443\u0441\u0441\u043a\u0438\u0439.",
+    "languageNote": "Inclusive by design: support available in English, Italian, and Russian.",
     "footerLabel": "Site footer",
     "remoteText": "Registered in Ireland. Operating in Europe and the United Kingdom.",
     "sections": {
@@ -363,11 +379,11 @@
       "legal": "Legal"
     },
     "serviceLinks": [
-      "Frontend Development",
-      "Backend Development",
-      "Accessibility (WCAG)",
-      "UX Design",
-      "Website Development"
+      "Website Development",
+      "SEO & Marketing",
+      "Graphic Design",
+      "Custom Software",
+      "MVP & App Development"
     ],
     "companyLinks": {
       "aboutUs": "About Us",
@@ -388,7 +404,7 @@
     }
   },
   "contactPage": {
-    "title": "Contact | We Make IT",
+    "title": "Contact",
     "description": "Get in touch with We Make IT. Send us your question using the form below.",
     "eyebrow": "Get in Touch",
     "heading": "Send Us a Message",
@@ -422,7 +438,7 @@
     }
   },
   "blog": {
-    "title": "Blog: App and Business Ideas for Irish Entrepreneurs | We Make IT",
+    "title": "Blog: App and Business Ideas for Irish Entrepreneurs",
     "description": "Practical guides on building apps, finding funding, and turning your business idea into a digital product. Written for Irish entrepreneurs by the We Make IT team.",
     "ogTitle": "App Development Insights for Irish Entrepreneurs | We Make IT Blog",
     "ogDescription": "Practical advice on building apps, getting funding, and turning business ideas into real digital products."
@@ -433,6 +449,125 @@
     "learnMore": "Learn more",
     "essential": "Essential only",
     "acceptAll": "Accept all cookies"
+  },
+  "solutionsGeneralPage": {
+    "metadata": {
+      "title": "Solutions for Irish SMEs",
+      "description": "A clear path for Irish businesses that need stronger websites or tailored software. Practical support, calm communication, and measurable outcomes.",
+      "ogTitle": "Solutions for Irish SMEs",
+      "ogDescription": "Website and software solutions that help Irish businesses grow with smoother digital experiences."
+    },
+    "eyebrow": "Solutions",
+    "heading": "We help Irish businesses grow",
+    "subheading": "Whether you need a stronger website presence or custom software, we focus on smooth user experiences that reduce friction and improve results.",
+    "cards": [
+      {
+        "title": "Website Solutions",
+        "body": "For business owners who want better visibility, better conversion, and a stronger digital presence.",
+        "cta": "Explore website solutions",
+        "href": "/solutions/for-websites"
+      },
+      {
+        "title": "Software Solutions",
+        "body": "For teams and founders building products, automating workflows, or outsourcing project delivery.",
+        "cta": "Explore software solutions",
+        "href": "/solutions/for-software"
+      }
+    ],
+    "finalCtaHeading": "Not sure which direction fits best?",
+    "finalCtaBody": "Send us a short message. We will help you choose the most useful next step for your business.",
+    "finalCta": "Get in touch"
+  },
+  "solutionsWebsitesPage": {
+    "metadata": {
+      "title": "Website Services for Small Businesses",
+      "description": "Website development and digital presence services for Irish small businesses, from SEO to campaign assets.",
+      "ogTitle": "Website Services for Small Businesses",
+      "ogDescription": "Improve your digital presence with websites, SEO, marketing support, and design services built for growth."
+    },
+    "schemaName": "Website Solutions for Small Businesses",
+    "eyebrow": "Website Solutions",
+    "heading": "Websites and marketing support for small businesses",
+    "subheading": "We help small businesses improve digital presence through website development and marketing. If you are looking to gain more customers, we will be happy to hear from you.",
+    "servicesHeading": "What we can do for your website presence",
+    "services": [
+      { "name": "Website Development", "detail": "Custom websites that are clear, fast, accessible, and built to convert." },
+      { "name": "Website Management", "detail": "Ongoing updates, fixes, and improvements so your website keeps working for your business." },
+      { "name": "SEO", "detail": "On-page SEO foundations and practical improvements to help your business get found." },
+      { "name": "Marketing Support", "detail": "Campaign landing pages and content support aligned with your sales goals." },
+      { "name": "Graphic Design", "detail": "Visual assets for your website and campaigns that keep your brand consistent." },
+      { "name": "Sales Materials", "detail": "Web and print-ready sales materials for campaigns, outreach, and customer communication." }
+    ],
+    "finalCtaHeading": "Ready to improve your digital presence?",
+    "finalCtaBody": "Tell us what you need and we will suggest a clear, practical plan.",
+    "finalCta": "Send us a message"
+  },
+  "solutionsSoftwarePage": {
+    "metadata": {
+      "title": "Custom Software Services for SMEs",
+      "description": "Custom software development for Irish SMEs and founders: MVPs, web apps, mobile apps, audits, and consulting.",
+      "ogTitle": "Custom Software Services for SMEs",
+      "ogDescription": "Turn your software idea into a real product with UX-led development and practical technical support."
+    },
+    "schemaName": "Software Solutions for SMEs",
+    "eyebrow": "Software Solutions",
+    "heading": "Custom software development for growing businesses",
+    "subheading": "We help early entrepreneurs turn software ideas into live products through application development, UX, and design thinking. Have an idea worth building? Get a free consultation.",
+    "servicesHeading": "Software services we provide",
+    "services": [
+      { "name": "MVP Software", "detail": "Build a focused first version to validate demand quickly and reduce risk." },
+      { "name": "Web Apps", "detail": "Custom web applications designed around your operations and customer needs." },
+      { "name": "Mobile Apps", "detail": "iOS and Android app development with practical scope and reliable delivery." },
+      { "name": "Custom Software", "detail": "Tailored software that fixes specific business bottlenecks and manual processes." },
+      { "name": "Software Audits", "detail": "Technical review of existing systems to identify risk, waste, and upgrade priorities." },
+      { "name": "Accessibility Audits", "detail": "Identify accessibility gaps and improve compliance and usability for all users." },
+      { "name": "UX Research", "detail": "Evidence-based user insight to shape product decisions and reduce rework." },
+      { "name": "Consultations", "detail": "Practical planning sessions for product scope, roadmap, and delivery decisions." },
+      { "name": "Custom Tech Webinars", "detail": "Tailored training sessions for your employees focused on your tools and workflows." }
+    ],
+    "finalCtaHeading": "Need software that truly fits your business?",
+    "finalCtaBody": "Send us your goals and constraints. We will help you shape the right product path.",
+    "finalCta": "Book a consultation"
+  },
+  "valuePropWebsitesPage": {
+    "metadata": {
+      "title": "For Small Businesses: Better Website Results",
+      "description": "A clear value proposition for Irish small businesses that want more customers through a stronger online presence.",
+      "ogTitle": "For Small Businesses: Better Website Results",
+      "ogDescription": "Practical website and marketing support for Irish small businesses that want measurable growth."
+    },
+    "eyebrow": "For Small Businesses",
+    "heading": "More visibility, more trust, more enquiries",
+    "subheading": "If your website is not helping your business grow, we can fix that with practical changes that improve discoverability, credibility, and conversion.",
+    "points": [
+      "Clear messaging that explains your offer in seconds",
+      "Fast, accessible pages that are easy to use on any device",
+      "SEO and content structure that helps customers find you",
+      "Campaign assets and sales materials aligned with your goals"
+    ],
+    "finalCtaHeading": "Want your website to work harder for your business?",
+    "finalCtaBody": "Tell us where you are now and where you want to get. We will help you bridge that gap.",
+    "finalCta": "Get in touch"
+  },
+  "valuePropSoftwarePage": {
+    "metadata": {
+      "title": "For SMEs: Build Software That Solves Real Problems",
+      "description": "A clear value proposition for SMEs that need custom software, product development, or outsourced delivery support.",
+      "ogTitle": "For SMEs: Build Software That Solves Real Problems",
+      "ogDescription": "From MVP to production software, we help SMEs ship useful products with less risk and better user outcomes."
+    },
+    "eyebrow": "For Small and Medium Businesses",
+    "heading": "Build software people actually enjoy using",
+    "subheading": "We support SMEs that need custom software, stronger product delivery, or a trusted partner to outsource project execution.",
+    "points": [
+      "MVP-first planning to reduce risk and protect budget",
+      "UX-led development to improve adoption and satisfaction",
+      "Flexible delivery support when your internal team is stretched",
+      "Clear communication for technical and non-technical stakeholders"
+    ],
+    "finalCtaHeading": "Have a software challenge you need to solve?",
+    "finalCtaBody": "Send us your context and we will propose a practical way forward.",
+    "finalCta": "Send us a message"
   },
   "servicePages": {
     "intro": {

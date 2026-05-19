@@ -10,7 +10,6 @@ import Services from "@/components/sections/Services";
 import Founder from "@/components/sections/Founder";
 import About from "@/components/sections/About";
 import Process from "@/components/sections/Process";
-import AuditBanner from "@/components/sections/AuditBanner";
 import CtaStrip from "@/components/sections/CtaStrip";
 
 // Lazy-load the heavy Contact section: defers react-hook-form, zod and
@@ -89,7 +88,6 @@ export default async function HomePage({
         <Founder />
         <About />
         <Process />
-        <AuditBanner />
         <CtaStrip />
         <Suspense fallback={null}>
           <Contact />
