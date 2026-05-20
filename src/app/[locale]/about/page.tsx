@@ -3,7 +3,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import About from "@/components/sections/About";
-import Founder from "@/components/sections/Founder";
 import { Link } from "@/i18n/navigation";
 
 const BASE_URL = "https://www.wemakeit.ie";
@@ -86,9 +85,6 @@ async function AboutPageContent({
 
         {/* About section */}
         <About />
-
-        {/* Founder message */}
-        <Founder />
 
         {/* Team */}
         <section className="bg-white py-20 lg:py-28">
