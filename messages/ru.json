@@ -1099,11 +1099,10 @@
     "teamSubheading": "We combine design, development, strategy, and business expertise. Most importantly, we genuinely care about your success.",
     "team": [
       { "name": "Andrea Contarino", "title": "Chief Architect & Backend Engineer", "bio": "15+ years building scalable systems and technical foundations for products at scale. Architect of our approach to custom software and project delivery." },
-      { "name": "Svetlana Savchenko", "title": "Founder & Senior Frontend Engineer", "bio": "Frontend specialist and UX advocate. Over 8 years building interfaces that are intuitive, accessible, and genuinely usable. Founder of We Make IT." },
-      { "name": "Seamus O'Brien", "title": "Web and Marketing", "bio": "Brings brand strategy, content, and go-to-market expertise. Helps translate our work into clear messaging that resonates with clients and users." },
-      { "name": "Sheila McLoughlin", "title": "Junior Software Engineer", "bio": "Growing her expertise in full-stack development. Brings fresh perspective to problem-solving and brings quality and care to every feature delivered." }
+      { "name": "Svetlana Savchenko", "title": "Founder & Senior Frontend Engineer", "bio": "Frontend specialist and UX advocate. Over 8 years building interfaces that are intuitive, accessible, and genuinely usable. Founder of We Make IT." }
     ],
-    "teamPlaceholder": "Photo coming soon"
+    "teamCollaborators": "Мы также сотрудничаем с сетью старших консультантов на контрактной основе. В зависимости от проекта мы привлекаем нужных специалистов из числа наших проверенных партнёров — чтобы каждый случай получал именно ту экспертизу, которая необходима.",
+    "teamPlaceholder": "Фото появится скоро"
   },
   "auditExpert": {
     "title": "Free Audits by Tech Experts",

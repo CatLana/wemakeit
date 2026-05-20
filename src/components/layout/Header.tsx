@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Header() {
   const t = useTranslations("header");
@@ -129,9 +128,8 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* Desktop right side: Language switcher + CTA */}
+            {/* Desktop right side: CTA */}
             <div className="hidden lg:flex items-center gap-4">
-              <LanguageSwitcher />
               <Link
                 href="/audit"
                 className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] px-5 py-2 bg-[#22D3EE] text-[#0F172A] font-semibold text-sm rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
@@ -190,9 +188,7 @@ export default function Header() {
             <X size={22} aria-hidden="true" />
           </button>
         </div>
-        <div className="px-6 pt-5 pb-2">
-          <LanguageSwitcher />
-        </div>
+        <div className="px-6 pt-2 pb-2" />
         <nav aria-label={t("mobileNavLabel")}>
           <ul className="flex flex-col px-6 py-4 gap-2" role="list">
             {navLinks.map((link) => (

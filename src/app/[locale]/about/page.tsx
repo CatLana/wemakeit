@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import About from "@/components/sections/About";
+import Founder from "@/components/sections/Founder";
 import { Link } from "@/i18n/navigation";
 
 const BASE_URL = "https://www.wemakeit.ie";
@@ -63,6 +64,7 @@ async function AboutPageContent({
     title: string;
     bio: string;
   }>;
+  const teamCollaborators = t("teamCollaborators");
 
   return (
     <>
@@ -86,6 +88,9 @@ async function AboutPageContent({
         {/* About section */}
         <About />
 
+        {/* Our Founder */}
+        <Founder />
+
         {/* Team */}
         <section className="bg-white py-20 lg:py-28">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,7 +103,7 @@ async function AboutPageContent({
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
               {team.map((member) => (
                 <div
                   key={member.name}
@@ -128,6 +133,11 @@ async function AboutPageContent({
                 </div>
               ))}
             </div>
+
+            {/* Collaborators note */}
+            <p className="mt-10 max-w-2xl mx-auto text-center text-base leading-7 text-slate-500">
+              {teamCollaborators}
+            </p>
           </div>
         </section>
 
