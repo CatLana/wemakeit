@@ -111,7 +111,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: `${BASE_URL}/api/og`,
+          url: `${BASE_URL}/images/wemakeit_thumbnail.png`,
           width: 1200,
           height: 630,
           alt: "We Make IT – Custom App & Web Development Ireland",
@@ -122,6 +122,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
+      images: [`${BASE_URL}/images/wemakeit_thumbnail.png`],
     },
     alternates: {
       canonical: `${BASE_URL}/${locale}`,

@@ -6,6 +6,9 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AuditRequestForm from "@/components/AuditRequestForm";
 
+const BASE_URL = "https://www.wemakeit.ie";
+const SLUG = "audit/expert";
+
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
 }
@@ -17,9 +20,43 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "auditExpert" });
+  const canonicalUrl = `${BASE_URL}/${locale}/${SLUG}`;
+  const keywords = t.raw("keywords") as string[];
+
   return {
     title: t("title"),
     description: t("subtitle"),
+    keywords,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        "x-default": `${BASE_URL}/en/${SLUG}`,
+        en: `${BASE_URL}/en/${SLUG}`,
+        it: `${BASE_URL}/it/${SLUG}`,
+        ru: `${BASE_URL}/ru/${SLUG}`,
+      },
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("subtitle"),
+      url: canonicalUrl,
+      siteName: "We Make IT",
+      type: "website",
+      images: [
+        {
+          url: `${BASE_URL}/images/wemakeit_thumbnail.png`,
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("subtitle"),
+      images: [`${BASE_URL}/images/wemakeit_thumbnail.png`],
+    },
     robots: { index: true, follow: true },
   };
 }
