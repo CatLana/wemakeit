@@ -201,8 +201,26 @@ export default function AuditRequestForm() {
         )}
       </button>
 
-      <p className="text-center text-xs text-slate-400">
-        No commitment required. We reply within 1 business day.
+      <p className="text-center text-xs text-slate-400 leading-relaxed">
+        By clicking &ldquo;{t("submitBtnText")}&rdquo; you agree to our{" "}
+        <a
+          href="/en/privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-slate-600 transition-colors"
+        >
+          Privacy Policy
+        </a>{" "}
+        and{" "}
+        <a
+          href="/en/terms-of-service"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-slate-600 transition-colors"
+        >
+          Terms of Service
+        </a>
+        , and consent to be contacted by email including for service updates. No commitment required.
       </p>
     </form>
   );

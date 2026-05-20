@@ -1140,7 +1140,7 @@
       "runningMsg": "Running Lighthouse audit — this takes about 15 seconds…"
     },
     "howItWorksTitle": "How our free audit works",
-    "howItWorksIntro": "We've designed our audit process to be thorough, transparent, and collaborative. Here's exactly what happens:",
+    "howItWorksIntro": "We provide free audits",
     "processSteps": [
       {
         "step": "1",
@@ -1295,16 +1295,16 @@
   },
   "auditExpert": {
     "title": "Free Audits by Tech Experts",
-    "subtitle": "Get a comprehensive audit from our team of experts. We review your website or app, identify opportunities, and provide a clear, practical plan to improve your digital presence.",
+    "subtitle": "Get your website or brand reviewed by our team of technical consultants. We look at your site, identify opportunities for improvement, and give you a clear, practical plan to optimise your digital presence.",
     "backToHome": "Back to home",
     "eyebrow": "How it works",
     "howItWorksTitle": "How our free audit works",
-    "howItWorksIntro": "We've designed our audit process to be thorough, transparent, and collaborative. Here's exactly what happens:",
+    "howItWorksIntro": "This servie is free because we always keep researching the real needs of local businesses. Talking to you can help me to shape the value of my services that deliver true results to local businesses like yours. You’ll get a clear, practical plan to improve your digital presence and optimise your processes that save you time and money using tailored IT solutions. Here’s how it works:",
     "processSteps": [
       {
         "step": "1",
         "title": "Fill in the request form",
-        "description": "Tell us about your business, your website, and any specific problems you want us to focus on. This takes about 2-3 minutes."
+        "description": "Tell us about your business, your website, and any specific problems you might have."
       },
       {
         "step": "2",
@@ -1313,18 +1313,18 @@
       },
       {
         "step": "3",
-        "title": "Expert review & suggestions",
-        "description": "Our team reviews your website and creates a detailed plan showing what you can do to gain more customers, fix technical issues, or improve user experience."
+        "title": "We review your website and create a plan",
+        "description": "Our team reviews your website and creates a plan showing what you can do to gain more customers, fix technical issues, or improve user experience."
       },
       {
         "step": "4",
-        "title": "Choose your format",
-        "description": "You decide how you'd like to discuss the results: an online video call, an in-person meetup (if you're in Ireland), or a detailed email report."
+        "title": "You review and Ask Questions",
+        "description": "We will deliver the report to you  and you can ask us questions about the report and the suggestions. We can also schedule a call to discuss the report in more detail if you prefer."
       },
       {
         "step": "5",
-        "title": "Review & Q&A",
-        "description": "We go through the suggestions together, answer your questions, and discuss what the changes could mean for your business."
+        "title": "No commitment",
+        "description": "We don't ask for any commitment from you. You can choose to implement the changes yourself, work with your own team, or ask us for a quote to do it for you. The only ask"
       },
       {
         "step": "6",

@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AuditRequestForm from "@/components/AuditRequestForm";
+import PageScrollReset from "@/components/PageScrollReset";
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "audit";
@@ -80,6 +81,7 @@ export default async function AuditPage({
     <>
       <Header />
       <main id="main-content" tabIndex={-1} className="min-h-screen bg-[#F8FAFC]">
+        <PageScrollReset />
 
         {/* Hero */}
         <section className="bg-[#0F172A] pt-24 pb-20">
