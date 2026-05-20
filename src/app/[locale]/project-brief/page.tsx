@@ -11,7 +11,7 @@ const BriefForm = dynamic(() => import("@/components/BriefForm"));
 const BASE_URL = "https://www.wemakeit.ie";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+  return [{ locale: "en" }];
 }
 
 export async function generateMetadata({

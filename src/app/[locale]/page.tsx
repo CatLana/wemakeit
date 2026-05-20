@@ -18,7 +18,7 @@ const Contact = dynamic(() => import("@/components/sections/Contact"));
 const BASE_URL = "https://www.wemakeit.ie";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+  return [{ locale: "en" }];
 }
 
 export async function generateMetadata({

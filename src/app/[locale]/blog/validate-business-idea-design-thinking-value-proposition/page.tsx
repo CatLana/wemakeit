@@ -9,7 +9,7 @@ const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "validate-business-idea-design-thinking-value-proposition";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+  return [{ locale: "en" }];
 }
 
 export async function generateMetadata({
@@ -20,7 +20,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const canonicalUrl = `${BASE_URL}/${locale}/blog/${SLUG}`;
   const ogLocale =
-    locale === "en" ? "en_IE" : locale === "it" ? "it_IT" : "ru_RU";
+    "en_IE";
 
   return {
     title:

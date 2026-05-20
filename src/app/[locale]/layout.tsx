@@ -31,8 +31,6 @@ const BASE_URL = "https://www.wemakeit.ie";
 
 const ogLocaleMap: Record<string, string> = {
   en: "en_IE",
-  it: "it_IT",
-  ru: "ru_RU",
 };
 
 export async function generateStaticParams() {
@@ -51,9 +49,6 @@ export async function generateMetadata({
     "x-default": `${BASE_URL}/en`,
     en: `${BASE_URL}/en`,
     "en-IE": `${BASE_URL}/en`,
-    it: `${BASE_URL}/it`,
-    "it-IT": `${BASE_URL}/it`,
-    ru: `${BASE_URL}/ru`,
   };
 
   return {

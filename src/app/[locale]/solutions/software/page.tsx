@@ -8,7 +8,7 @@ const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "solutions/software";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+  return [{ locale: "en" }];
 }
 
 export async function generateMetadata({
@@ -28,8 +28,6 @@ export async function generateMetadata({
       languages: {
         "x-default": `${BASE_URL}/en/${SLUG}`,
         en: `${BASE_URL}/en/${SLUG}`,
-        it: `${BASE_URL}/it/${SLUG}`,
-        ru: `${BASE_URL}/ru/${SLUG}`,
       },
     },
     openGraph: {

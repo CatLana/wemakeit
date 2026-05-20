@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://www.wemakeit.ie";
-const locales = ["en", "it", "ru"] as const;
+const locales = ["en"] as const;
 
 const pages: {
   path: string;

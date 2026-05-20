@@ -8,7 +8,7 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 const BASE_URL = "https://www.wemakeit.ie";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+  return [{ locale: "en" }];
 }
 
 export async function generateMetadata({
@@ -27,8 +27,6 @@ export async function generateMetadata({
       languages: {
         "x-default": `${BASE_URL}/en/blog`,
         en: `${BASE_URL}/en/blog`,
-        it: `${BASE_URL}/it/blog`,
-        ru: `${BASE_URL}/ru/blog`,
       },
     },
     openGraph: {

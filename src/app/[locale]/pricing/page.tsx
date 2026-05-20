@@ -9,7 +9,7 @@ const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "pricing";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+  return [{ locale: "en" }];
 }
 
 export async function generateMetadata({
@@ -32,8 +32,7 @@ export async function generateMetadata({
     ru: "Прозрачные цены для веб- и app-разработки. Фиксированные проекты от €4.200 или ежемесячные ретейнеры от €800. Цены без НДС.",
   };
 
-  const ogLocale =
-    locale === "it" ? "it_IT" : locale === "ru" ? "ru_RU" : "en_IE";
+  const ogLocale = "en_IE";
 
   return {
     title: titles[locale] || titles["en"],
@@ -43,8 +42,6 @@ export async function generateMetadata({
       languages: {
         "x-default": `${BASE_URL}/en/${SLUG}`,
         en: `${BASE_URL}/en/${SLUG}`,
-        it: `${BASE_URL}/it/${SLUG}`,
-        ru: `${BASE_URL}/ru/${SLUG}`,
       },
     },
     openGraph: {
