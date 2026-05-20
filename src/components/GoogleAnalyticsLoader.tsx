@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-const GA_ID = "G-2M2GP44WYZ";
+const GA_ID = "G-MQ2ZVBMQWW";
 const STORAGE_KEY = "wemakeit_cookie_consent";
 
 export default function GoogleAnalyticsLoader() {
