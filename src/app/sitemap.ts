@@ -10,7 +10,8 @@ const pages: {
   lastModified: Date;
 }[] = [
   { path: "",                                        priority: 1.0, changeFrequency: "weekly",  lastModified: new Date("2026-05-19") },
-  { path: "/audit",                                  priority: 0.9, changeFrequency: "weekly",  lastModified: new Date("2026-05-15") },
+  { path: "/audit",                                  priority: 0.9, changeFrequency: "weekly",  lastModified: new Date("2026-05-20") },
+  { path: "/audit/automated",                        priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-05-20") },
   { path: "/contact",                                priority: 0.6, changeFrequency: "monthly", lastModified: new Date("2026-04-16") },
   { path: "/pricing",                                priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/about",                                  priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-19") },

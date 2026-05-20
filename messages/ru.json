@@ -1332,7 +1332,28 @@
         "description": "We ask for your feedback and discuss next steps—whether you want us to implement changes or you'd prefer to work with your own team."
       }
     ],
-    "requestFormTitle": "Get your free audit started",
-    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps."
+    "requestFormTitle": "Запросить бесплатный аудит",
+    "requestFormSubtitle": "Заполните форму — мы свяжемся с вами в течение 24 часов для подтверждения и дальнейших шагов.",
+    "keywords": ["бесплатный аудит сайта ирландия", "экспертный обзор сайта", "аудит производительности сайта", "аудит доступности", "SEO аудит ирландия", "бесплатный аудит цифрового присутствия", "аудит UX"],
+    "nameLabel": "Ваше имя",
+    "namePlaceholder": "Иван Иванов",
+    "emailLabel": "Электронная почта",
+    "emailPlaceholder": "ivan@example.com",
+    "websiteLabel": "URL вашего сайта",
+    "websitePlaceholder": "https://yourwebsite.com",
+    "businessLabel": "Расскажите о вашем бизнесе",
+    "businessPlaceholder": "Кратко опишите, чем занимается ваш бизнес...",
+    "focusLabel": "Что вас беспокоит? (необязательно)",
+    "focusPlaceholder": "Например: 'Сайт не продаёт', 'Проблемы на мобильных', 'Нужен аудит доступности'",
+    "submitBtnText": "Отправить заявку",
+    "submitting": "Отправка\u2026",
+    "successMessage": "Спасибо! Мы получили вашу заявку. Подтверждение придет на email в течение 24 часов.",
+    "serverError": "Что-то пошло не так. Попробуйте ещё раз.",
+    "errors": {
+      "name": "Введите ваше имя (не менее 2 символов)",
+      "email": "Введите корректный email адрес",
+      "website": "Введите корректный URL сайта (например https://example.com)",
+      "business": "Расскажите немного о вашем бизнесе (не менее 10 символов)"
+    }
   }
 }

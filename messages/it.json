@@ -1332,7 +1332,28 @@
         "description": "We ask for your feedback and discuss next steps—whether you want us to implement changes or you'd prefer to work with your own team."
       }
     ],
-    "requestFormTitle": "Get your free audit started",
-    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps."
+    "requestFormTitle": "Richiedi subito il tuo audit gratuito",
+    "requestFormSubtitle": "Compila i dati qui sotto: ti ricontatteremo entro 24 ore per confermare l'audit e inviarti i prossimi passi.",
+    "keywords": ["audit sito web gratuito irlanda", "revisione esperta sito web", "audit prestazioni sito", "audit accessibilità web", "audit SEO irlanda", "audit presenza digitale gratuito", "servizio audit UX"],
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Mario Rossi",
+    "emailLabel": "Indirizzo email",
+    "emailPlaceholder": "mario@esempio.it",
+    "websiteLabel": "URL del tuo sito",
+    "websitePlaceholder": "https://tuosito.it",
+    "businessLabel": "Parlaci della tua azienda",
+    "businessPlaceholder": "Descrivi brevemente la tua attività...",
+    "focusLabel": "Qual è la tua principale preoccupazione? (opzionale)",
+    "focusPlaceholder": "Es: 'Il sito non converte', 'Gli utenti mobile abbandonano', 'Serve audit accessibilità'",
+    "submitBtnText": "Richiedi audit gratuito",
+    "submitting": "Invio in corso\u2026",
+    "successMessage": "Grazie! Abbiamo ricevuto la tua richiesta. Ti invieremo una conferma via email entro 24 ore.",
+    "serverError": "Qualcosa è andato storto. Riprova.",
+    "errors": {
+      "name": "Inserisci il tuo nome (almeno 2 caratteri)",
+      "email": "Inserisci un indirizzo email valido",
+      "website": "Inserisci un URL valido (es. https://esempio.it)",
+      "business": "Descrivi brevemente la tua attività (almeno 10 caratteri)"
+    }
   }
 }

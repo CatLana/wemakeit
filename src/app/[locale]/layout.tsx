@@ -172,6 +172,7 @@ export default async function LocaleLayout({
     languageSwitcher: allMessages.languageSwitcher,
     newsletter:       allMessages.newsletter,
     audit:            allMessages.audit,
+    auditExpert:      allMessages.auditExpert,
   };
 
   // JSON-LD organisation schema

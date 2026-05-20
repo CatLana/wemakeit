@@ -1,172 +1,209 @@
 "use client";
 
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { useTranslations } from "next-intl";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
+
+const schema = z.object({
+  name: z.string().min(2),
+  email: z.string().email(),
+  website: z.string().url(),
+  business: z.string().min(10),
+  focus: z.string().optional(),
+});
+
+type FormValues = z.infer<typeof schema>;
+
+const inputBase =
+  "mt-1.5 w-full rounded-lg border bg-white px-4 py-2.5 text-sm text-[#1E293B] placeholder:text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE]/30 focus:border-[#22D3EE]";
+const inputError = "border-red-400 focus:ring-red-200 focus:border-red-400";
+const inputOk = "border-slate-200";
 
 export default function AuditRequestForm() {
-  const t = useTranslations("audit");
-  const [isLoading, setIsLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    website: "",
-    business: "",
-    focus: "",
+  const t = useTranslations("auditExpert");
+  const [submitted, setSubmitted] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<FormValues>({
+    resolver: zodResolver(schema),
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setSuccessMessage("");
-    setErrorMessage("");
-
+  const onSubmit = async (data: FormValues) => {
+    setServerError(null);
     try {
-      const response = await fetch("/api/audit/request", {
+      const res = await fetch("/api/audit/request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...data, locale: "en" }),
       });
-
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
-      }
-
-      setSuccessMessage(t("successMessage"));
-      setFormData({ name: "", email: "", website: "", business: "", focus: "" });
-    } catch (error) {
-      setErrorMessage("Failed to submit your request. Please try again.");
-      console.error("Form submission error:", error);
-    } finally {
-      setIsLoading(false);
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+      reset();
+    } catch {
+      setServerError(t("serverError"));
     }
   };
 
+  if (submitted) {
+    return (
+      <div
+        role="status"
+        className="rounded-2xl border border-green-200 bg-green-50 px-6 py-8 text-center"
+      >
+        <CheckCircle2
+          size={40}
+          className="mx-auto mb-3 text-green-500"
+          aria-hidden="true"
+        />
+        <p className="text-base font-semibold text-green-800">
+          {t("successMessage")}
+        </p>
+      </div>
+    );
+  }
+
   return (
-    <form onSubmit={handleSubmit} id="audit-request-form" className="space-y-5">
-      {successMessage && (
-        <div className="rounded-xl border border-green-200 bg-green-50 p-4">
-          <p className="text-sm font-medium text-green-800">{successMessage}</p>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      noValidate
+      aria-label="Audit request form"
+      className="space-y-5"
+    >
+      {serverError && (
+        <div role="alert" className="rounded-xl border border-red-200 bg-red-50 px-4 py-3">
+          <p className="text-sm font-medium text-red-700">{serverError}</p>
         </div>
       )}
 
-      {errorMessage && (
-        <div className="rounded-xl border border-red-200 bg-red-50 p-4">
-          <p className="text-sm font-medium text-red-800">{errorMessage}</p>
+      {/* Name + Email side by side on md+ */}
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div>
+          <label htmlFor="af-name" className="block text-sm font-semibold text-[#1E293B]">
+            {t("nameLabel")} <span className="text-red-500" aria-hidden="true">*</span>
+          </label>
+          <input
+            id="af-name"
+            type="text"
+            autoComplete="name"
+            placeholder={t("namePlaceholder")}
+            aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? "af-name-err" : undefined}
+            className={`${inputBase} ${errors.name ? inputError : inputOk}`}
+            {...register("name")}
+          />
+          {errors.name && (
+            <p id="af-name-err" role="alert" className="mt-1 text-xs text-red-600">
+              {t("errors.name")}
+            </p>
+          )}
         </div>
-      )}
 
-      <div>
-        <label
-          htmlFor="audit-name"
-          className="block text-sm font-semibold text-[#1E293B]"
-        >
-          {t("nameLabel")}
-        </label>
-        <input
-          id="audit-name"
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm text-[#1E293B] placeholder:text-slate-400 focus:border-[#22D3EE] focus:outline-none focus:ring-2 focus:ring-[#22D3EE]/20"
-          placeholder="John Doe"
-        />
+        <div>
+          <label htmlFor="af-email" className="block text-sm font-semibold text-[#1E293B]">
+            {t("emailLabel")} <span className="text-red-500" aria-hidden="true">*</span>
+          </label>
+          <input
+            id="af-email"
+            type="email"
+            autoComplete="email"
+            placeholder={t("emailPlaceholder")}
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "af-email-err" : undefined}
+            className={`${inputBase} ${errors.email ? inputError : inputOk}`}
+            {...register("email")}
+          />
+          {errors.email && (
+            <p id="af-email-err" role="alert" className="mt-1 text-xs text-red-600">
+              {t("errors.email")}
+            </p>
+          )}
+        </div>
       </div>
 
       <div>
-        <label
-          htmlFor="audit-email"
-          className="block text-sm font-semibold text-[#1E293B]"
-        >
-          {t("emailLabel")}
+        <label htmlFor="af-website" className="block text-sm font-semibold text-[#1E293B]">
+          {t("websiteLabel")} <span className="text-red-500" aria-hidden="true">*</span>
         </label>
         <input
-          id="audit-email"
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm text-[#1E293B] placeholder:text-slate-400 focus:border-[#22D3EE] focus:outline-none focus:ring-2 focus:ring-[#22D3EE]/20"
-          placeholder="john@example.com"
-        />
-      </div>
-
-      <div>
-        <label
-          htmlFor="audit-website"
-          className="block text-sm font-semibold text-[#1E293B]"
-        >
-          {t("websiteLabel")}
-        </label>
-        <input
-          id="audit-website"
+          id="af-website"
           type="url"
-          name="website"
-          value={formData.website}
-          onChange={handleChange}
-          required
-          className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm text-[#1E293B] placeholder:text-slate-400 focus:border-[#22D3EE] focus:outline-none focus:ring-2 focus:ring-[#22D3EE]/20"
-          placeholder="https://yourwebsite.com"
+          autoComplete="url"
+          placeholder={t("websitePlaceholder")}
+          aria-invalid={!!errors.website}
+          aria-describedby={errors.website ? "af-website-err" : undefined}
+          className={`${inputBase} ${errors.website ? inputError : inputOk}`}
+          {...register("website")}
         />
+        {errors.website && (
+          <p id="af-website-err" role="alert" className="mt-1 text-xs text-red-600">
+            {t("errors.website")}
+          </p>
+        )}
       </div>
 
       <div>
-        <label
-          htmlFor="audit-business"
-          className="block text-sm font-semibold text-[#1E293B]"
-        >
-          {t("businessLabel")}
+        <label htmlFor="af-business" className="block text-sm font-semibold text-[#1E293B]">
+          {t("businessLabel")} <span className="text-red-500" aria-hidden="true">*</span>
         </label>
         <textarea
-          id="audit-business"
-          name="business"
-          value={formData.business}
-          onChange={handleChange}
-          required
+          id="af-business"
           rows={3}
-          className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm text-[#1E293B] placeholder:text-slate-400 focus:border-[#22D3EE] focus:outline-none focus:ring-2 focus:ring-[#22D3EE]/20"
-          placeholder="Tell us briefly about what your business does..."
+          placeholder={t("businessPlaceholder")}
+          aria-invalid={!!errors.business}
+          aria-describedby={errors.business ? "af-business-err" : undefined}
+          className={`${inputBase} resize-none ${errors.business ? inputError : inputOk}`}
+          {...register("business")}
         />
+        {errors.business && (
+          <p id="af-business-err" role="alert" className="mt-1 text-xs text-red-600">
+            {t("errors.business")}
+          </p>
+        )}
       </div>
 
       <div>
-        <label
-          htmlFor="audit-focus"
-          className="block text-sm font-semibold text-[#1E293B]"
-        >
+        <label htmlFor="af-focus" className="block text-sm font-semibold text-[#1E293B]">
           {t("focusLabel")}
         </label>
         <textarea
-          id="audit-focus"
-          name="focus"
-          value={formData.focus}
-          onChange={handleChange}
+          id="af-focus"
           rows={2}
-          className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm text-[#1E293B] placeholder:text-slate-400 focus:border-[#22D3EE] focus:outline-none focus:ring-2 focus:ring-[#22D3EE]/20"
           placeholder={t("focusPlaceholder")}
+          className={`${inputBase} resize-none ${inputOk}`}
+          {...register("focus")}
         />
       </div>
 
       <button
         type="submit"
-        disabled={isLoading}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#22D3EE] px-6 py-3 text-sm font-semibold text-[#0F172A] transition-colors hover:bg-cyan-300 disabled:bg-slate-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+        disabled={isSubmitting}
+        aria-busy={isSubmitting}
+        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#22D3EE] px-6 py-3 text-sm font-semibold text-[#0F172A] transition-colors hover:bg-cyan-300 disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
       >
-        {isLoading ? "Submitting..." : t("submitBtnText")}
-        {!isLoading && <ArrowRight size={16} aria-hidden="true" />}
+        {isSubmitting ? (
+          <>
+            <Loader2 size={16} className="animate-spin" aria-hidden="true" />
+            {t("submitting")}
+          </>
+        ) : (
+          <>
+            {t("submitBtnText")}
+            <ArrowRight size={16} aria-hidden="true" />
+          </>
+        )}
       </button>
+
+      <p className="text-center text-xs text-slate-400">
+        No commitment required. We reply within 1 business day.
+      </p>
     </form>
   );
 }

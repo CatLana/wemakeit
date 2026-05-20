@@ -1333,6 +1333,27 @@
       }
     ],
     "requestFormTitle": "Get your free audit started",
-    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps."
+    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps.",
+    "keywords": ["free website audit ireland", "expert website review", "website performance audit", "web accessibility audit", "SEO audit ireland", "free digital presence audit", "UX audit service"],
+    "nameLabel": "Your name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "john@example.com",
+    "websiteLabel": "Your website URL",
+    "websitePlaceholder": "https://yourwebsite.com",
+    "businessLabel": "Tell us about your business",
+    "businessPlaceholder": "Tell us briefly about what your business does...",
+    "focusLabel": "What's your main concern? (optional)",
+    "focusPlaceholder": "E.g., 'My site doesn't convert', 'Mobile users bounce', 'Needs an accessibility audit'",
+    "submitBtnText": "Request my free audit",
+    "submitting": "Sending\u2026",
+    "successMessage": "Thank you! We've received your audit request. We'll send you a confirmation email within 24 hours.",
+    "serverError": "Something went wrong. Please try again.",
+    "errors": {
+      "name": "Please enter your name (at least 2 characters)",
+      "email": "Please enter a valid email address",
+      "website": "Please enter a valid website URL (e.g. https://example.com)",
+      "business": "Please tell us a bit about your business (at least 10 characters)"
+    }
   }
 }

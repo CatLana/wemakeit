@@ -59,7 +59,7 @@ export default function AuditBanner() {
             </p>
 
             <Link
-              href="/audit"
+              href="/audit/automated"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#22D3EE] px-7 py-3.5 text-sm font-semibold text-[#0F172A] transition-colors hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
             >
               {t("cta")}
