@@ -18,7 +18,10 @@ export type HybridAuditResult = {
 };
 
 const CACHE_TTL_MS = 48 * 60 * 60 * 1000;
-const CACHE_DIR = path.join(process.cwd(), ".next", "cache", "audit-results");
+// /tmp is the only writable path on Vercel serverless functions
+const CACHE_DIR = process.env.VERCEL
+  ? "/tmp/audit-results"
+  : path.join(process.cwd(), ".next", "cache", "audit-results");
 
 function normaliseAuditUrl(input: string): string {
   let normalised = input.trim();
@@ -115,7 +118,12 @@ export async function runHybridAudit(
 
   try {
     const data = await fetchPageSpeed(normalisedUrl, strategy);
-    await writeCache(normalisedUrl, strategy, data);
+    // Cache write failure (e.g. read-only filesystem) must not discard a successful live result
+    try {
+      await writeCache(normalisedUrl, strategy, data);
+    } catch {
+      // non-fatal — continue without caching
+    }
     return {
       data,
       source: "live",

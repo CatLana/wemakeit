@@ -937,6 +937,13 @@
     "ctaBody": "Automated tools catch technical issues. A real expert catches everything else.",
     "ctaBtn": "Get a free audit quote",
     "results": {
+      "successBadge": "Report ready",
+      "successTitle": "Your audit report is ready",
+      "successSubtitle": "Download the PDF below — it covers your Lighthouse scores, what is working well, and what to fix.",
+      "downloadBtn": "Download PDF report",
+      "expertCtaTitle": "Want a human review on top of this?",
+      "expertCtaBody": "Automated tools catch technical signals. A real expert catches everything else — strategy, content quality, and what your users actually experience.",
+      "expertCtaBtn": "Request a free expert audit",
       "errorTitle": "Audit could not be completed",
       "errorBody": "The site may be unreachable, require authentication, or the audit service is temporarily unavailable.",
       "errorReasonPrefix": "Technical reason",

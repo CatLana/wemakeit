@@ -937,6 +937,13 @@
     "ctaBody": "Gli strumenti automatici trovano i problemi tecnici. Un vero esperto vede tutto il resto.",
     "ctaBtn": "Richiedi audit gratuito",
     "results": {
+      "successBadge": "Report pronto",
+      "successTitle": "Il tuo report di audit è pronto",
+      "successSubtitle": "Scarica il PDF qui sotto — contiene i punteggi Lighthouse, i punti di forza e cosa migliorare.",
+      "downloadBtn": "Scarica il report PDF",
+      "expertCtaTitle": "Vuoi una revisione umana?",
+      "expertCtaBody": "Gli strumenti automatici rilevano segnali tecnici. Un esperto reale coglie tutto il resto — strategia, qualità dei contenuti e l'esperienza reale degli utenti.",
+      "expertCtaBtn": "Richiedi un audit gratuito",
       "errorTitle": "Audit non completato",
       "errorBody": "Il sito potrebbe essere irraggiungibile, richiedere autenticazione o il servizio di audit non è disponibile.",
       "errorReasonPrefix": "Motivo tecnico",
