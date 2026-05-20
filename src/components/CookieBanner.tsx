@@ -33,6 +33,7 @@ export default function CookieBanner() {
 
   function accept(value: "all" | "essential") {
     localStorage.setItem(STORAGE_KEY, value);
+    window.dispatchEvent(new CustomEvent("wemakeit:consent-updated"));
     setVisible(false);
   }
 
