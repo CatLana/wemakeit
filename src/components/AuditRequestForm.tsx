@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -26,6 +26,25 @@ export default function AuditRequestForm() {
   const t = useTranslations("auditExpert");
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
+  const successRef = useRef<HTMLDivElement>(null);
+  const errorRef = useRef<HTMLDivElement>(null);
+
+  const scrollToRef = (ref: React.RefObject<HTMLDivElement | null>) => {
+    const el = ref.current;
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - 96;
+    window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    if (submitted) scrollToRef(successRef);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [submitted]);
+
+  useEffect(() => {
+    if (serverError) scrollToRef(errorRef);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [serverError]);
 
   const {
     register,
@@ -55,7 +74,9 @@ export default function AuditRequestForm() {
   if (submitted) {
     return (
       <div
+        ref={successRef}
         role="status"
+        tabIndex={-1}
         className="rounded-2xl border border-green-200 bg-green-50 px-6 py-8 text-center"
       >
         <CheckCircle2
@@ -78,7 +99,7 @@ export default function AuditRequestForm() {
       className="space-y-5"
     >
       {serverError && (
-        <div role="alert" className="rounded-xl border border-red-200 bg-red-50 px-4 py-3">
+        <div ref={errorRef} role="alert" tabIndex={-1} className="rounded-xl border border-red-200 bg-red-50 px-4 py-3">
           <p className="text-sm font-medium text-red-700">{serverError}</p>
         </div>
       )}
