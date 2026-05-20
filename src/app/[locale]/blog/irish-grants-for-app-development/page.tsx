@@ -47,7 +47,7 @@ export async function generateMetadata({
       locale: ogLocale,
       images: [
         {
-          url: `${BASE_URL}/api/og`,
+          url: `${BASE_URL}/images/wemakeit_thumbnail.png`,
           width: 1200,
           height: 630,
           alt: "Irish Grants for App Development 2026",
@@ -76,7 +76,7 @@ export default async function ArticlePage({
     dateModified: "2026-03-31T00:00:00.000Z",
     author: { "@type": "Person", name: "Svetlana Savchenko", url: "https://www.linkedin.com/in/svetlana-savchenko-08868764" },
     publisher: { "@type": "Organization", name: "We Make IT", url: "https://www.wemakeit.ie" },
-    image: "https://www.wemakeit.ie/api/og",
+    image: "https://www.wemakeit.ie/images/wemakeit_thumbnail.png",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${BASE_URL}/${locale}/blog/${SLUG}` },
     inLanguage: locale,
     about: [

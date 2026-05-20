@@ -48,7 +48,7 @@ export async function generateMetadata({
       locale: ogLocale,
       images: [
         {
-          url: `${BASE_URL}/api/og`,
+          url: `${BASE_URL}/images/wemakeit_thumbnail.png`,
           width: 1200,
           height: 630,
           alt: "Web Accessibility in Ireland — European Accessibility Act guide",
@@ -86,7 +86,7 @@ export default async function ArticlePage({
       name: "We Make IT",
       url: "https://www.wemakeit.ie",
     },
-    image: "https://www.wemakeit.ie/api/og",
+    image: "https://www.wemakeit.ie/images/wemakeit_thumbnail.png",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${BASE_URL}/${locale}/blog/${SLUG}`,

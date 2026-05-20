@@ -48,7 +48,7 @@ export async function generateMetadata({
       locale: ogLocale,
       images: [
         {
-          url: `${BASE_URL}/api/og`,
+          url: `${BASE_URL}/images/wemakeit_thumbnail.png`,
           width: 1200,
           height: 630,
           alt: "A website that works for your users",
@@ -85,7 +85,7 @@ export default async function ArticlePage({
       name: "We Make IT",
       url: BASE_URL,
     },
-    image: `${BASE_URL}/api/og`,
+    image: `${BASE_URL}/images/wemakeit_thumbnail.png`,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${BASE_URL}/${locale}/blog/${SLUG}`,

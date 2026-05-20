@@ -182,7 +182,7 @@ export default async function LocaleLayout({
     name: "We Make IT",
     url: BASE_URL,
     logo: `${BASE_URL}/images/logo_wemakeit.svg`,
-    image: `${BASE_URL}/api/og`,
+    image: `${BASE_URL}/images/wemakeit_thumbnail.png`,
     description:
       "Custom app and website development for entrepreneurs and small businesses. Based in Ireland, working globally.",
     address: {

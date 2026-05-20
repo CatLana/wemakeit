@@ -91,7 +91,7 @@ export async function generateMetadata({
       siteName: "We Make IT",
       images: [
         {
-          url: `${BASE_URL}/api/og`,
+          url: `${BASE_URL}/images/wemakeit_thumbnail.png`,
           width: 1200,
           height: 630,
           alt: "We Make IT — Web & App Development Ireland",
@@ -102,7 +102,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: titles[locale] || titles["en"],
       description: descriptions[locale] || descriptions["en"],
-      images: [`${BASE_URL}/api/og`],
+      images: [`${BASE_URL}/images/wemakeit_thumbnail.png`],
     },
   };
 }
@@ -141,7 +141,7 @@ export default async function HomePage({
             description:
               "Web development and app development services in Ireland, Italy, and Switzerland. 15+ years experience.",
             url: BASE_URL,
-            image: `${BASE_URL}/api/og`,
+            image: `${BASE_URL}/images/wemakeit_thumbnail.png`,
             address: {
               "@type": "PostalAddress",
               streetAddress: "Ashbourne",

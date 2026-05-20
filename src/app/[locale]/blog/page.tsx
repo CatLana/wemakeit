@@ -36,7 +36,7 @@ export async function generateMetadata({
       description: t("ogDescription"),
       url: `${BASE_URL}/${locale}/blog`,
       siteName: "We Make IT",
-      images: [{ url: `${BASE_URL}/api/og`, width: 1200, height: 630 }],
+      images: [{ url: `${BASE_URL}/images/wemakeit_thumbnail.png`, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
