@@ -1303,33 +1303,28 @@
     "processSteps": [
       {
         "step": "1",
-        "title": "Fill in the request form",
+        "title": "Fill in the form",
         "description": "Tell us about your business, your website, and any specific problems you might have."
       },
       {
         "step": "2",
-        "title": "We send you a brief questionnaire",
+        "title": "We send you a brief",
         "description": "We'll ask more detailed questions about your business, goals, and current challenges. This helps us tailor the audit to what matters most to you."
       },
       {
         "step": "3",
-        "title": "We review your website and create a plan",
+        "title": "We review and create a plan",
         "description": "Our team reviews your website and creates a plan showing what you can do to gain more customers, fix technical issues, or improve user experience."
       },
       {
         "step": "4",
-        "title": "You review and Ask Questions",
+        "title": "Your questions",
         "description": "We will deliver the report to you  and you can ask us questions about the report and the suggestions. We can also schedule a call to discuss the report in more detail if you prefer."
       },
       {
         "step": "5",
         "title": "No commitment",
-        "description": "We don't ask for any commitment from you. You can choose to implement the changes yourself, work with your own team, or ask us for a quote to do it for you. The only ask"
-      },
-      {
-        "step": "6",
-        "title": "Feedback & next steps",
-        "description": "We ask for your feedback and discuss next steps—whether you want us to implement changes or you'd prefer to work with your own team."
+        "description": "We don't ask for any commitment from you. You can choose to implement the changes yourself, work with your own team, or ask us for a quote to do it for you."
       }
     ],
     "requestFormTitle": "Get your free audit started",
