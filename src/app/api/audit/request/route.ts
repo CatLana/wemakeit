@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 import { z } from "zod";
 
 const auditRequestSchema = z.object({
@@ -12,70 +13,53 @@ const auditRequestSchema = z.object({
 
 type AuditRequest = z.infer<typeof auditRequestSchema>;
 
+const RECIPIENT = ["ssavchenko8@gmail.com"];
+
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    const validatedData = auditRequestSchema.parse(body);
+    const body = await request.json().catch(() => null);
+    if (!body) {
+      return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
+    }
 
-    // Send to Resend email service
+    const parsed = auditRequestSchema.safeParse(body);
+    if (!parsed.success) {
+      return NextResponse.json(
+        { error: "Validation error", details: parsed.error.issues },
+        { status: 400 }
+      );
+    }
+
+    const data = parsed.data;
+
     if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is not set");
       return NextResponse.json(
         { error: "Email service not configured" },
         { status: 500 }
       );
     }
 
-    const emailContent = formatAuditRequestEmail(validatedData);
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const response = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      },
-      body: JSON.stringify({
-        from: "We Make IT <onboarding@resend.dev>",
-        to: validatedData.email,
-        subject: "Your Free Audit Request - We Make IT",
-        html: emailContent.userEmail,
-      }),
+    const { error } = await resend.emails.send({
+      from: "We Make IT <onboarding@resend.dev>",
+      to: RECIPIENT,
+      replyTo: data.email,
+      subject: `[wemakeit.ie] Free Audit Request from ${data.name}`,
+      html: buildAdminEmail(data),
     });
 
-    if (!response.ok) {
-      console.error("Resend API error:", await response.text());
+    if (error) {
+      console.error("Resend error (audit):", error);
       return NextResponse.json(
-        { error: "Failed to send confirmation email" },
+        { error: "Failed to send email. Please try again." },
         { status: 500 }
       );
     }
 
-    // Send notification to We Make IT
-    await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      },
-      body: JSON.stringify({
-        from: "We Make IT <onboarding@resend.dev>",
-        to: "info@wemakeit.ie",
-        subject: `New Free Audit Request from ${validatedData.name}`,
-        html: emailContent.adminEmail,
-      }),
-    }).catch(console.error);
-
-    return NextResponse.json(
-      { message: "Audit request received successfully" },
-      { status: 200 }
-    );
+    return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {
-    if (error instanceof z.ZodError) {
-      return NextResponse.json(
-        { error: "Validation error", details: error.issues },
-        { status: 400 }
-      );
-    }
-
     console.error("Audit request error:", error);
     return NextResponse.json(
       { error: "Failed to process audit request" },
@@ -84,45 +68,20 @@ export async function POST(request: NextRequest) {
   }
 }
 
-function formatAuditRequestEmail(data: AuditRequest) {
-  const userEmailHtml = `
-    <div style="font-family: sans-serif; color: #1E293B; line-height: 1.6;">
-      <h2 style="color: #0F172A;">Thank you for requesting a free audit!</h2>
-      <p>Hi ${data.name},</p>
-      <p>We've received your audit request for <strong>${data.website}</strong>.</p>
-      <p>Our team will review your website and business details within the next 24 hours. We'll send you a detailed questionnaire to help us tailor the audit specifically to your needs.</p>
-      
-      <h3 style="color: #0F172A; margin-top: 24px;">What happens next:</h3>
-      <ol>
-        <li>You'll receive a brief questionnaire from us</li>
-        <li>We'll conduct a thorough review of your website</li>
-        <li>We'll prepare a detailed plan with specific suggestions</li>
-        <li>We'll reach out to schedule a call or meeting to discuss the results</li>
-      </ol>
-      
-      <p style="margin-top: 24px; color: #64748B;">
-        If you have any questions in the meantime, feel free to reply to this email.
-      </p>
-      
-      <p>Best regards,<br>The We Make IT Team</p>
+function buildAdminEmail(data: AuditRequest): string {
+  return `
+    <div style="font-family:sans-serif;color:#1E293B;line-height:1.6;max-width:600px">
+      <h2 style="color:#0F172A;margin-bottom:4px">New Free Audit Request</h2>
+      <p style="color:#64748B;font-size:13px;margin-top:0">${new Date().toUTCString()}</p>
+      <table style="border-collapse:collapse;width:100%;margin-top:16px">
+        <tr><td style="padding:8px 12px;font-size:13px;color:#64748B;white-space:nowrap">Name</td><td style="padding:8px 12px;font-size:13px;color:#0F172A">${data.name}</td></tr>
+        <tr style="background:#F8FAFC"><td style="padding:8px 12px;font-size:13px;color:#64748B;white-space:nowrap">Email</td><td style="padding:8px 12px;font-size:13px;color:#0F172A">${data.email}</td></tr>
+        <tr><td style="padding:8px 12px;font-size:13px;color:#64748B;white-space:nowrap">Website</td><td style="padding:8px 12px;font-size:13px"><a href="${data.website}">${data.website}</a></td></tr>
+        <tr style="background:#F8FAFC"><td style="padding:8px 12px;font-size:13px;color:#64748B;white-space:nowrap;vertical-align:top">Business</td><td style="padding:8px 12px;font-size:13px;color:#0F172A">${data.business}</td></tr>
+        ${data.focus ? `<tr><td style="padding:8px 12px;font-size:13px;color:#64748B;white-space:nowrap;vertical-align:top">Focus</td><td style="padding:8px 12px;font-size:13px;color:#0F172A">${data.focus}</td></tr>` : ""}
+        <tr style="background:#F8FAFC"><td style="padding:8px 12px;font-size:13px;color:#64748B">Locale</td><td style="padding:8px 12px;font-size:13px;color:#0F172A">${data.locale}</td></tr>
+      </table>
+      <p style="margin-top:24px;font-size:13px;color:#64748B">Reply to this email to contact ${data.name} directly.</p>
     </div>
   `;
-
-  const adminEmailHtml = `
-    <div style="font-family: sans-serif; color: #1E293B; line-height: 1.6;">
-      <h2>New Free Audit Request</h2>
-      <p><strong>Name:</strong> ${data.name}</p>
-      <p><strong>Email:</strong> ${data.email}</p>
-      <p><strong>Website:</strong> ${data.website}</p>
-      <p><strong>Business:</strong> ${data.business}</p>
-      ${data.focus ? `<p><strong>Main Concern:</strong> ${data.focus}</p>` : ""}
-      <p><strong>Locale:</strong> ${data.locale}</p>
-      <p><strong>Received:</strong> ${new Date().toISOString()}</p>
-    </div>
-  `;
-
-  return {
-    userEmail: userEmailHtml,
-    adminEmail: adminEmailHtml,
-  };
 }
