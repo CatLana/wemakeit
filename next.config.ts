@@ -42,6 +42,15 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: securityHeaders,
       },
+      {
+        // Allow OG images (and all public images) to be fetched cross-origin
+        // so messenger/social crawlers can load them for link previews.
+        // The global CORP: same-origin above would otherwise block them.
+        source: "/images/:path*",
+        headers: [
+          { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
+        ],
+      },
     ];
   },
   async redirects() {
