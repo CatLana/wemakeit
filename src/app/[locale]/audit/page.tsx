@@ -176,10 +176,8 @@ export default async function AuditPage({
 
                 <ul className="mt-8 space-y-3" aria-label="What you get">
                   {[
-                    "Expert human review — not just automated tools",
-                    "Actionable suggestions, not vague advice",
-                    "Done within 5 business days",
-                    "100% free, no strings attached",
+                    "Actionable suggestions",
+                    "100% free, no commitment",
                   ].map((point) => (
                     <li key={point} className="flex items-start gap-2.5 text-sm text-slate-600">
                       <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-[#22D3EE]" aria-hidden="true" />

@@ -1340,7 +1340,7 @@
     "emailLabel": "Электронная почта",
     "emailPlaceholder": "ivan@example.com",
     "websiteLabel": "URL вашего сайта",
-    "websitePlaceholder": "https://yourwebsite.com",
+    "websitePlaceholder": "www.yourwebsite.com",
     "businessLabel": "Расскажите о вашем бизнесе",
     "businessPlaceholder": "Кратко опишите, чем занимается ваш бизнес...",
     "focusLabel": "Что вас беспокоит? (необязательно)",
@@ -1352,7 +1352,7 @@
     "errors": {
       "name": "Введите ваше имя (не менее 2 символов)",
       "email": "Введите корректный email адрес",
-      "website": "Введите корректный URL сайта (например https://example.com)",
+      "website": "Введите корректный адрес сайта (например yourwebsite.com)",
       "business": "Расскажите немного о вашем бизнесе (не менее 10 символов)"
     }
   }

@@ -1335,7 +1335,7 @@
     "emailLabel": "Email address",
     "emailPlaceholder": "john@example.com",
     "websiteLabel": "Your website URL",
-    "websitePlaceholder": "https://yourwebsite.com",
+    "websitePlaceholder": "www.yourwebsite.com",
     "businessLabel": "Tell us about your business",
     "businessPlaceholder": "Tell us briefly about what your business does...",
     "focusLabel": "What's your main concern? (optional)",
@@ -1347,7 +1347,7 @@
     "errors": {
       "name": "Please enter your name (at least 2 characters)",
       "email": "Please enter a valid email address",
-      "website": "Please enter a valid website URL (e.g. https://example.com)",
+      "website": "Please enter a valid website address (e.g. yourwebsite.com)",
       "business": "Please tell us a bit about your business (at least 10 characters)"
     }
   }

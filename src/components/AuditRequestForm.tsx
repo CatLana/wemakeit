@@ -10,7 +10,13 @@ import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 const schema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
-  website: z.string().url(),
+  website: z.string().min(1).refine(
+    (val) => {
+      const normalized = /^https?:\/\//i.test(val.trim()) ? val.trim() : `https://${val.trim()}`;
+      try { new URL(normalized); return true; } catch { return false; }
+    },
+    { message: "invalid" }
+  ),
   business: z.string().min(10),
   focus: z.string().optional(),
 });
@@ -58,10 +64,13 @@ export default function AuditRequestForm() {
   const onSubmit = async (data: FormValues) => {
     setServerError(null);
     try {
+      const website = /^https?:\/\//i.test(data.website.trim())
+        ? data.website.trim()
+        : `https://${data.website.trim()}`;
       const res = await fetch("/api/audit/request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, locale: "en" }),
+        body: JSON.stringify({ ...data, website, locale: "en" }),
       });
       if (!res.ok) throw new Error();
       setSubmitted(true);
@@ -155,8 +164,9 @@ export default function AuditRequestForm() {
         </label>
         <input
           id="af-website"
-          type="url"
+          type="text"
           autoComplete="url"
+          inputMode="url"
           placeholder={t("websitePlaceholder")}
           aria-invalid={!!errors.website}
           aria-describedby={errors.website ? "af-website-err" : undefined}

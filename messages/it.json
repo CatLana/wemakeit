@@ -1340,7 +1340,7 @@
     "emailLabel": "Indirizzo email",
     "emailPlaceholder": "mario@esempio.it",
     "websiteLabel": "URL del tuo sito",
-    "websitePlaceholder": "https://tuosito.it",
+    "websitePlaceholder": "www.tuosito.it",
     "businessLabel": "Parlaci della tua azienda",
     "businessPlaceholder": "Descrivi brevemente la tua attività...",
     "focusLabel": "Qual è la tua principale preoccupazione? (opzionale)",
@@ -1352,7 +1352,7 @@
     "errors": {
       "name": "Inserisci il tuo nome (almeno 2 caratteri)",
       "email": "Inserisci un indirizzo email valido",
-      "website": "Inserisci un URL valido (es. https://esempio.it)",
+      "website": "Inserisci un indirizzo web valido (es. tuosito.it)",
       "business": "Descrivi brevemente la tua attività (almeno 10 caratteri)"
     }
   }
