@@ -384,6 +384,9 @@
     "copyright": "© We Make IT Sole Trader company registered in Ireland.",
     "builtBy": "Built by",
     "languageNote": "Inclusive by design: support available in English, Italian, and Russian.",
+    "whatsappLabel": "Chat on WhatsApp",
+    "whatsappQrAlt": "WhatsApp QR code — scan to start a chat with We Make IT",
+    "whatsappQrCaption": "Scan to chat",
     "footerLabel": "Site footer",
     "remoteText": "Registered in Ireland. Operating in Europe and the United Kingdom.",
     "sections": {
@@ -428,6 +431,11 @@
     "mapLabel": "Map of Ashbourne, Co. Meath, Ireland",
     "locationHeading": "Where We Are",
     "locationText": "Ashbourne, Co. Meath, Ireland",
+    "whatsappHeading": "Chat on WhatsApp",
+    "whatsappBody": "Prefer to message us directly? Tap the button or scan the QR code to open a WhatsApp chat.",
+    "whatsappBtn": "Message us on WhatsApp",
+    "whatsappQrAlt": "Scan this QR code to start a WhatsApp chat with We Make IT",
+    "whatsappQrCaption": "Scan to chat on WhatsApp",
     "form": {
       "name": "Full name",
       "namePlaceholder": "Jane Murphy",
