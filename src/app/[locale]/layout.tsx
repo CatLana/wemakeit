@@ -216,6 +216,14 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={font.variable}>
       <head>
+        {/* GA Consent Mode v2 — must run before gtag.js so the default state
+            is queued in dataLayer before the library initialises. No data is
+            collected until the user explicitly accepts analytics cookies. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){window.dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',wait_for_update:500});`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
