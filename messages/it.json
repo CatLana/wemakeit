@@ -406,7 +406,11 @@
       "aboutUs": "About Us",
       "howItWorks": "How It Works",
       "blog": "Blog",
-      "getAQuote": "Get a Quote"
+      "getAQuote": "Get a Quote",
+      "forEntrepreneurs": "Per i piccoli imprenditori",
+      "forSMEs": "Per le PMI",
+      "forStartups": "Per le startup",
+      "forSoftware": "Soluzioni software personalizzate"
     },
     "freeToolLinks": {
       "websiteAudit": "Free Website Audit",

@@ -67,19 +67,12 @@ export default function Footer() {
               </p>
               <p className="text-xs text-slate-400 mt-1.5">
                 {t("springSaleBeat")}{" "}
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (typeof window !== "undefined") {
-                      import("@/components/sections/Contact").then((mod) => {
-                        if (mod.focusContactForm) mod.focusContactForm();
-                      });
-                    }
-                  }}
+                <Link
+                  href={{ pathname: "/", hash: "quote" } as never}
                   className="text-[#22D3EE] underline underline-offset-2 hover:text-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
                   {t("springSaleSendIt")}
-                </button>{" "}
+                </Link>{" "}
                 {t("springSaleBeatSuffix")}
               </p>
             </div>
@@ -258,22 +251,22 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/solutions/for-entrepreneurs" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                  For Small Entrepreneurs
+                  {t("companyLinks.forEntrepreneurs")}
                 </Link>
               </li>
               <li>
                 <Link href="/solutions/for-smes" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                  For SMEs
+                  {t("companyLinks.forSMEs")}
                 </Link>
               </li>
               <li>
                 <Link href="/solutions/for-startups" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                  For Startups
+                  {t("companyLinks.forStartups")}
                 </Link>
               </li>
               <li>
                 <Link href="/solutions/for-software" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                  Custom Software Solutions
+                  {t("companyLinks.forSoftware")}
                 </Link>
               </li>
             </ul>
