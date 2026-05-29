@@ -33,8 +33,8 @@
     "subtitleBody": "Aiutiamo le aziende irlandesi a crescere costruendo soluzioni digitali su misura. Che tu abbia bisogno di un sito web che vende o di una soluzione IT personalizzata per risparmiare tempo e denaro — sappiamo come aiutarti.",
     "subtitleCta": "Prenota oggi la tua consulenza gratuita di 30 minuti.",
     "springSale": "Summer Sale: 30% off for new clients. Limited spots available.",
-    "cta1": "Contattaci",
-    "cta2": "Come funziona",
+    "cta1": "Prenota audit gratuito",
+    "cta2": "Chi siamo",
     "auditCta": "Free website audit. See how your site scores",
     "ariaLabel": "Hero: We Make IT home"
   },
@@ -384,6 +384,9 @@
     "copyright": "© We Make IT Sole Trader company registered in Ireland.",
     "builtBy": "Built by",
     "languageNote": "Inclusive by design: support available in English, Italian, and Russian.",
+    "whatsappLabel": "Chatta su WhatsApp",
+    "whatsappQrAlt": "Codice QR WhatsApp — scansiona per chattare con We Make IT",
+    "whatsappQrCaption": "Scansiona per chattare",
     "footerLabel": "Site footer",
     "remoteText": "Registered in Ireland. Operating in Europe and the United Kingdom.",
     "sections": {
@@ -449,7 +452,12 @@
       "emailError": "Please enter a valid email address",
       "messageError": "Please enter your message",
       "serverError": "Something went wrong. Please try again."
-    }
+    },
+    "whatsappHeading": "Chatta su WhatsApp",
+    "whatsappBody": "Preferisci scriverci direttamente? Tocca il pulsante o scansiona il codice QR per aprire una chat WhatsApp.",
+    "whatsappBtn": "Scrivici su WhatsApp",
+    "whatsappQrAlt": "Scansiona questo codice QR per avviare una chat WhatsApp con We Make IT",
+    "whatsappQrCaption": "Scansiona per chattare su WhatsApp"
   },
   "blog": {
     "title": "Blog: App and Business Ideas for Irish Entrepreneurs",

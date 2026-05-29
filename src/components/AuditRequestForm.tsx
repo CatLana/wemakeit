@@ -44,12 +44,10 @@ export default function AuditRequestForm() {
 
   useEffect(() => {
     if (submitted) scrollToRef(successRef);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [submitted]);
 
   useEffect(() => {
     if (serverError) scrollToRef(errorRef);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [serverError]);
 
   const {
