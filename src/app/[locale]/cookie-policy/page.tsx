@@ -95,7 +95,7 @@ export default async function CookiePolicyPage({
                   <span className="inline-block px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-700">Consent required</span>
                   <h3 className="text-base font-bold text-[#1E293B]">Analytics / Performance</h3>
                 </div>
-                <p className="text-sm text-slate-500 mb-3">Analytics cookies help us understand how visitors interact with our website — which pages are popular, how people navigate, and where improvements can be made. This data is aggregated and anonymous.</p>
+                <p className="text-sm text-slate-500 mb-3">Analytics cookies help us understand how visitors interact with our website: which pages are popular, how people navigate, and where improvements can be made. This data is aggregated and anonymous.</p>
                 <p className="text-sm font-medium text-[#1E293B]">Current status: We do not currently use analytics cookies. When we introduce analytics (for example, Google Analytics), we will update this policy, disclose the specific cookies used, and request your consent before setting any analytics cookies.</p>
               </div>
 

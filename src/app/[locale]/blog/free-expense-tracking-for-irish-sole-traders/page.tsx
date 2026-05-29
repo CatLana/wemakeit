@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
@@ -216,8 +216,7 @@ export default async function ArticlePage({
                 during the tax year
               </li>
               <li>
-                A record of all <strong>allowable business expenses</strong> —
-                costs you can deduct to reduce your taxable profit
+                A record of all <strong>allowable business expenses</strong> (costs you can deduct to reduce your taxable profit)
               </li>
               <li>
                 Supporting <strong>receipts or invoices</strong> for those
@@ -246,7 +245,7 @@ export default async function ArticlePage({
               longer offers a straightforward free tier in Ireland.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
-              This is not a knock on any particular product — business models
+              This is not a knock on any particular product; business models
               change. But it is a reason to be cautious. Before committing time
               to set up any new app, always check the current pricing page
               directly and read recent reviews. For most sole traders just
@@ -281,7 +280,7 @@ export default async function ArticlePage({
               these columns: <strong>Date</strong>, <strong>Supplier</strong>,{" "}
               <strong>Description</strong>, <strong>Category</strong>,{" "}
               <strong>Amount EUR</strong>, <strong>VAT EUR</strong>, and{" "}
-              <strong>Receipt filename</strong>. That last column is the key —
+              <strong>Receipt filename</strong>. That last column is the key:
               it links each row to a photo in your Receipts folder so you can
               find any document in seconds, even two years later.
             </p>
@@ -309,7 +308,7 @@ export default async function ArticlePage({
                 {
                   n: "04",
                   title: "Photograph receipts on the spot",
-                  body: "When you receive a receipt — paper or email — photograph or screenshot it immediately. Name each file with the date and supplier, for example 2026-04-15_aws.pdf. Upload it to your Receipts folder straight away. This single habit is what prevents the October panic.",
+                  body: "When you receive a receipt (paper or email), photograph or screenshot it immediately. Name each file with the date and supplier, for example 2026-04-15_aws.pdf. Upload it to your Receipts folder straight away. This single habit is what prevents the October panic.",
                 },
                 {
                   n: "05",
@@ -344,9 +343,7 @@ export default async function ArticlePage({
             </h3>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Google Drive works well and costs nothing. But if data protection
-              matters to you — and as a business owner holding financial records,
-              it probably should — there is a European alternative worth knowing
-              about.
+              matters to you. As a business owner holding financial records, it probably should. There is a European alternative worth knowing about.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               <a
@@ -365,27 +362,27 @@ export default async function ArticlePage({
             </p>
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 leading-relaxed">
               <li>
-                <strong>European servers, Swiss jurisdiction</strong> — your
+                <strong>European servers, Swiss jurisdiction</strong>: your
                 receipts and financial records are stored under Swiss and EU
                 privacy law, outside US and UK jurisdiction
               </li>
               <li>
-                <strong>GDPR by design</strong> — Proton was built around
+                <strong>GDPR by design</strong>: Proton was built around
                 privacy from day one, not retrofitted to comply with it later
               </li>
               <li>
-                <strong>Free plan available</strong> — 5 GB of encrypted
+                <strong>Free plan available</strong>: 5 GB of encrypted
                 storage at no cost, which is more than enough for receipts and
                 spreadsheets in the early years of a sole trader business
               </li>
               <li>
-                <strong>Proton Sheets included</strong> — Proton now has its
+                <strong>Proton Sheets included</strong>: Proton now has its
                 own encrypted spreadsheet tool. You can recreate the full
                 expenses tracker setup inside Proton&apos;s ecosystem without
                 touching Google at all
               </li>
               <li>
-                <strong>Open source and independently audited</strong> — the
+                <strong>Open source and independently audited</strong>: the
                 code is publicly available and reviewed regularly by
                 independent security experts
               </li>
@@ -428,7 +425,7 @@ export default async function ArticlePage({
                 <tbody>
                   {[
                     [
-                      "Pricing page — not the landing page",
+                      "Pricing page, not the landing page",
                       '"Free forever" claims change. Check the actual pricing page before investing time in setup.',
                     ],
                     [
@@ -441,7 +438,7 @@ export default async function ArticlePage({
                     ],
                     [
                       "CSV or PDF export",
-                      "You need to get your data out easily — for your accountant and for switching tools later.",
+                      "You need to get your data out easily, for your accountant and for switching tools later.",
                     ],
                     [
                       "GDPR and data storage",
@@ -648,14 +645,14 @@ export default async function ArticlePage({
                       free: "Yes, free forever",
                       paid: "Not needed",
                       benefit:
-                        "Zero cost, no subscription risk, works on any device — the simplest place to start",
+                        "Zero cost, no subscription risk, works on any device. The simplest place to start.",
                     },
                     {
                       tool: "Proton Drive + Proton Sheets",
                       free: "Yes, 5 GB storage",
                       paid: "~€4/month",
                       benefit:
-                        "End-to-end encrypted, European (Swiss) servers, GDPR-first — the privacy choice for storing financial files",
+                        "End-to-end encrypted, European (Swiss) servers, GDPR-first: the privacy choice for storing financial files",
                     },
                     {
                       tool: "Zoho Books",
@@ -721,48 +718,46 @@ export default async function ArticlePage({
             </p>
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 leading-relaxed">
               <li>
-                <strong>Software subscriptions</strong> — design tools,
+                <strong>Software subscriptions</strong>: design tools,
                 development tools, project management software
               </li>
               <li>
-                <strong>Hosting, domains, and cloud services</strong> — AWS,
+                <strong>Hosting, domains, and cloud services</strong>: AWS,
                 Vercel, Cloudflare, GitHub, etc.
               </li>
               <li>
-                <strong>Hardware</strong> — laptop, monitor, keyboard (subject
+                <strong>Hardware</strong>: laptop, monitor, keyboard (subject
                 to capital allowances rules)
               </li>
               <li>
-                <strong>Home office costs</strong> — a proportion of broadband,
+                <strong>Home office costs</strong>: a proportion of broadband,
                 electricity, and heating if you work from home
               </li>
               <li>
-                <strong>Professional fees</strong> — accountant fees, legal
+                <strong>Professional fees</strong>: accountant fees, legal
                 advice directly related to the business
               </li>
               <li>
-                <strong>Advertising and marketing</strong> — website costs,
+                <strong>Advertising and marketing</strong>: website costs,
                 paid ads, copywriting
               </li>
               <li>
-                <strong>Training and professional development</strong> —
-                online courses, books, conference tickets
+                <strong>Training and professional development</strong>: online courses, books, conference tickets
               </li>
               <li>
-                <strong>Bank charges</strong> — business bank account fees
+                <strong>Bank charges</strong>: business bank account fees
               </li>
               <li>
-                <strong>Travel</strong> — mileage for business meetings
+                <strong>Travel</strong>: mileage for business meetings
                 (Revenue sets the approved mileage rate each year)
               </li>
               <li>
-                <strong>Subcontractors</strong> — freelancers or contractors
+                <strong>Subcontractors</strong>: freelancers or contractors
                 you pay to deliver client work
               </li>
             </ul>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
-              Personal expenses — a coffee you had by yourself, your gym
-              membership, your family phone plan — are not allowable. When in
+              Personal expenses such as a coffee you had by yourself, your gym membership, or your family phone plan are not allowable. When in
               doubt, keep the receipt and ask your accountant.
             </p>
 
@@ -773,12 +768,12 @@ export default async function ArticlePage({
               {[
                 {
                   date: "31 October 2026",
-                  label: "Self-assessment deadline — paper",
+                  label: "Self-assessment deadline (paper)",
                   note: "File your Form 11 for the 2025 tax year and pay any balance of tax owed, plus preliminary tax for 2026. This is the general Pay and File deadline.",
                 },
                 {
                   date: "18 November 2026",
-                  label: "Self-assessment deadline — online via ROS",
+                  label: "Self-assessment deadline (online via ROS)",
                   note: "Revenue Online Service (ROS) filers get an extended deadline. Revenue confirmed this date via eBrief No. 034/26. Filing online also lets you import pre-populated income data directly.",
                 },
                 {
@@ -814,15 +809,15 @@ export default async function ArticlePage({
             <div className="rounded-xl bg-slate-50 border border-slate-200 p-6 mb-10">
               <ul className="space-y-3 text-sm text-slate-700">
                 {[
-                  "Create your Google Drive folder structure today — not tomorrow",
+                  "Create your Google Drive folder structure today, not tomorrow",
                   "Set up your Expenses Google Sheet with the seven columns above",
                   "Photograph every receipt the moment you receive it",
                   "Name each file: YYYY-MM-DD_supplier (makes searching easy in 2 years)",
-                  "Log each expense the same day — it takes under a minute",
+                  "Log each expense the same day. It takes under a minute.",
                   "Record income (invoices paid) in a separate sheet",
                   "Do a 5-minute weekly review to catch anything you missed",
                   "At year-end, total by category and share with your accountant",
-                  "Keep all records for at least 6 years — Revenue can audit up to 4 years back",
+                  "Keep all records for at least 6 years. Revenue can audit up to 4 years back.",
                   "Register with ROS for online filing and get the November deadline",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -849,9 +844,9 @@ export default async function ArticlePage({
                   rel="noopener noreferrer"
                   className="text-[#0E7490] underline font-semibold"
                 >
-                  Revenue.ie — Self-Assessment and Self-Employment
+                  Revenue.ie: Self-Assessment and Self-Employment
                 </a>{" "}
-                — the official starting point for registering as a sole trader
+                the official starting point for registering as a sole trader
                 and understanding your obligations
               </li>
               <li>
@@ -861,9 +856,9 @@ export default async function ArticlePage({
                   rel="noopener noreferrer"
                   className="text-[#0E7490] underline font-semibold"
                 >
-                  Revenue.ie — Filing your tax return (Form 11)
+                  Revenue.ie: Filing your tax return (Form 11)
                 </a>{" "}
-                — step-by-step guide and help videos for completing Form 11
+                step-by-step guide and help videos for completing Form 11
               </li>
               <li>
                 <a
@@ -874,7 +869,7 @@ export default async function ArticlePage({
                 >
                   ROS (Revenue Online Service)
                 </a>{" "}
-                — file your Form 11 online and get the extended November
+                to file your Form 11 online and get the extended November
                 deadline
               </li>
               <li>
@@ -884,9 +879,9 @@ export default async function ArticlePage({
                   rel="noopener noreferrer"
                   className="text-[#0E7490] underline font-semibold"
                 >
-                  Citizens Information — Taxation of self-employed people
+                  Citizens Information: Taxation of self-employed people
                 </a>{" "}
-                — a plain-language overview of how self-employment income is
+                a plain-language overview of how self-employment income is
                 taxed in Ireland
               </li>
               <li>
@@ -898,7 +893,7 @@ export default async function ArticlePage({
                 >
                   Local Enterprise Office (LEO)
                 </a>{" "}
-                — free mentoring and start-your-own-business training for sole
+                for free mentoring and start-your-own-business training for sole
                 traders across Ireland
               </li>
             </ul>
@@ -916,7 +911,7 @@ export default async function ArticlePage({
                 </span>{" "}
                 This guide is for general information only and does not
                 constitute tax, legal, or financial advice. Tax rules and
-                deadlines change — always verify current details on{" "}
+                deadlines change, so always verify current details on{" "}
                 <a
                   href="https://www.revenue.ie/"
                   target="_blank"
@@ -926,8 +921,7 @@ export default async function ArticlePage({
                   Revenue.ie
                 </a>{" "}
                 or with a qualified accountant before filing your return.
-                Third-party tool pricing mentioned in this article may change —
-                always check each product&apos;s own website for current information.
+                Third-party tool pricing mentioned in this article may change. Always check each product&apos;s own website for current information.
               </p>
             </div>
 
@@ -937,8 +931,7 @@ export default async function ArticlePage({
                 Building a business and need a digital product?
               </p>
               <p className="text-slate-400 text-sm mb-6">
-                Whether you need an MVP, a client portal, or a full web app —
-                we would love to hear your idea. Free first consultation, no
+                Whether you need an MVP, a client portal, or a full web app, we would love to hear your idea. Free first consultation, no
                 commitment.
               </p>
               <Link

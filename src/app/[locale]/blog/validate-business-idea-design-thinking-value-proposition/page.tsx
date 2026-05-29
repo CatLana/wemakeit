@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
@@ -173,7 +173,7 @@ export default async function ArticlePage({
 
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Most new ventures fail not because the founders weren&apos;t smart or
-              didn&apos;t work hard enough — they fail because they built something
+              didn&apos;t work hard enough, and they fail because they built something
               nobody wanted to pay for. The problem is usually invisible until
               you&apos;ve already spent months (and a lot of money) building it.
             </p>
@@ -197,7 +197,7 @@ export default async function ArticlePage({
               >
                 Value Proposition Canvas
               </a>{" "}
-              lets you stress-test your idea cheaply — before writing a single
+              lets you stress-test your idea cheaply, before writing a single
               line of code.
             </p>
 
@@ -206,29 +206,29 @@ export default async function ArticlePage({
               Start with empathy: understand your customer&apos;s world
             </h2>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
-              Design Thinking always begins with empathy — really understanding
+              Design Thinking always begins with empathy, really understanding
               the people you want to help before you jump to a solution. The
               practical tool for this is a <strong>Customer Profile</strong>,
               which maps three things:
             </p>
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 text-base leading-relaxed">
               <li>
-                <strong>Jobs to be done</strong> — what tasks, goals, or
+                <strong>Jobs to be done:</strong> what tasks, goals, or
                 problems is your customer trying to deal with?
               </li>
               <li>
-                <strong>Pains</strong> — what frustrates them, blocks them, or
+                <strong>Pains:</strong> what frustrates them, blocks them, or
                 costs them money and time right now?
               </li>
               <li>
-                <strong>Gains</strong> — what outcomes or benefits are they
+                <strong>Gains:</strong> what outcomes or benefits are they
                 actually hoping for?
               </li>
             </ul>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Without clarity here, no amount of great execution will save the
               product. Industry data consistently shows that over 90% of startup
-              failures trace back to poor alignment with real customer needs —
+              failures trace back to poor alignment with real customer needs,
               not technical failure.
             </p>
             <div className="rounded-xl bg-slate-50 border border-slate-200 p-5 mb-10">
@@ -237,7 +237,7 @@ export default async function ArticlePage({
                   Worked example:
                 </span>{" "}
                 A busy restaurant owner (job: manage table bookings efficiently)
-                has a specific pain — no-shows wasting reserved tables — and a
+                has a specific pain (no-shows wasting reserved tables) and a
                 specific gain they want: full bookings without having to
                 overstaff to compensate. A solution built around this profile
                 has a fighting chance. A generic &quot;restaurant management app&quot;
@@ -275,11 +275,11 @@ export default async function ArticlePage({
             </p>
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 text-base leading-relaxed">
               <li>
-                <strong>Right side — Customer Profile:</strong> the jobs, pains,
+                <strong>Right side, Customer Profile:</strong> the jobs, pains,
                 and gains you mapped above.
               </li>
               <li>
-                <strong>Left side — Value Map:</strong> your pain relievers
+                <strong>Left side, Value Map:</strong> your pain relievers
                 (how you reduce their pains), gain creators (how you deliver the
                 benefits they want), and the actual products or services you
                 offer.
@@ -288,7 +288,7 @@ export default async function ArticlePage({
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               <strong>Fit</strong> happens when your Value Map genuinely
               addresses the most important pains and gains on the Customer
-              Profile. Not all pains and gains — just the ones that actually
+              Profile. Not all pains and gains, just the ones that actually
               matter to the customer.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
@@ -319,7 +319,7 @@ export default async function ArticlePage({
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Once you have a Value Proposition Canvas filled in, you have a set
               of assumptions. Each one is a hypothesis that could be wrong.
-              Rank them by risk — how bad would it be if this assumption turned
+              Rank them by risk: how bad would it be if this assumption turned
               out to be false? Then test the riskiest ones first, as cheaply as
               possible.
             </p>
@@ -333,24 +333,24 @@ export default async function ArticlePage({
             </p>
             <ol className="list-decimal list-outside ml-5 space-y-3 mb-5 text-slate-600 text-base leading-relaxed">
               <li>
-                <strong>Customer interviews</strong> — talk to 10–20 people who
+                <strong>Customer interviews:</strong> talk to 10–20 people who
                 match your target profile. Ask open questions:{" "}
                 <em>&quot;Tell me about your biggest frustration with X.&quot;</em>{" "}
-                Listen more than you talk. Never pitch — just listen.
+                Listen more than you talk. Never pitch, just listen.
               </li>
               <li>
-                <strong>Surveys</strong> — get 50+ responses on specific
+                <strong>Surveys:</strong> get 50+ responses on specific
                 willingness-to-pay questions. Use a tool like Tally or Google
                 Forms.
               </li>
               <li>
-                <strong>Landing page</strong> — build one page describing the
+                <strong>Landing page:</strong> build one page describing the
                 solution (Carrd or Framer work well) and track how many
                 visitors sign up for early access. A 5% conversion rate is a
                 meaningful signal.
               </li>
               <li>
-                <strong>Prototype</strong> — paper sketches, Figma mockups, or
+                <strong>Prototype:</strong> paper sketches, Figma mockups, or
                 a no-code MVP. Get it in front of real users before committing
                 to a full build.
               </li>
@@ -378,22 +378,22 @@ export default async function ArticlePage({
               Crunch the profitability numbers early
             </h2>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
-              Validation is not just about whether people want your solution —
+              Validation is not just about whether people want your solution;
               it is also about whether the numbers work. Before you build
               anything, do a back-of-envelope calculation:
             </p>
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 text-base leading-relaxed">
               <li>
-                <strong>Market size</strong> — estimate your TAM (Total
+                <strong>Market size:</strong> estimate your TAM (Total
                 Addressable Market), SAM (Serviceable Available Market), and
                 SOM (Serviceable Obtainable Market).
               </li>
               <li>
-                <strong>Willingness to pay</strong> — what came out of your
+                <strong>Willingness to pay:</strong> what came out of your
                 interviews and surveys?
               </li>
               <li>
-                <strong>Costs and margins</strong> — what does it cost to
+                <strong>Costs and margins:</strong> what does it cost to
                 deliver the product? What&apos;s your gross margin? When do you
                 break even?
               </li>
@@ -405,7 +405,7 @@ export default async function ArticlePage({
                 </span>{" "}
                 100 customers paying €20/month with 50% gross margin = €12,000
                 profit per year. Is that enough to justify the build? If not,
-                what would need to change — price, volume, or cost structure?
+                what would need to change: price, volume, or cost structure?
                 Run this before committing to anything.
               </p>
             </div>
@@ -417,13 +417,13 @@ export default async function ArticlePage({
             <div className="rounded-xl bg-slate-50 border border-slate-200 p-6 mb-10">
               <ul className="space-y-3 text-sm text-slate-700">
                 {[
-                  "Fill in a Value Proposition Canvas — jobs, pains, gains on the right; pain relievers, gain creators on the left",
-                  "Rank your assumptions by risk — which ones, if wrong, would kill the idea?",
-                  "Schedule 10 customer interviews this week — listen, don't pitch",
+                  "Fill in a Value Proposition Canvas: jobs, pains, gains on the right; pain relievers, gain creators on the left",
+                  "Rank your assumptions by risk. Which ones, if wrong, would kill the idea?",
+                  "Schedule 10 customer interviews this week: listen, don't pitch",
                   "Launch a one-page landing page and measure sign-up conversion",
                   "Run a quick profitability calculation before committing to a build",
                   "Download the free canvas template from Strategyzer",
-                  "If the numbers and signals look good, build an MVP — not the full product",
+                  "If the numbers and signals look good, build an MVP, not the full product",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span
@@ -450,9 +450,9 @@ export default async function ArticlePage({
                   rel="noopener noreferrer"
                   className="text-[#0E7490] underline font-semibold"
                 >
-                  Strategyzer — Value Proposition Canvas (free download)
+                  Strategyzer: Value Proposition Canvas (free download)
                 </a>{" "}
-                — the original tool from Alex Osterwalder, with instructions
+                the original tool from Alex Osterwalder, with instructions and examples
               </li>
               <li>
                 <a
@@ -461,9 +461,9 @@ export default async function ArticlePage({
                   rel="noopener noreferrer"
                   className="text-[#0E7490] underline font-semibold"
                 >
-                  Interaction Design Foundation — Design Thinking
+                  Interaction Design Foundation: Design Thinking
                 </a>{" "}
-                — a thorough, free reference covering all five stages
+                a thorough, free reference covering all five stages
               </li>
               <li>
                 <a
@@ -472,9 +472,9 @@ export default async function ArticlePage({
                   rel="noopener noreferrer"
                   className="text-[#0E7490] underline font-semibold"
                 >
-                  Harvard Business School Online — How to validate your business idea
+                  Harvard Business School Online: How to validate your business idea
                 </a>{" "}
-                — 5-step framework with practical guidance
+                a 5-step framework with practical guidance
               </li>
               <li>
                 <a
@@ -485,7 +485,7 @@ export default async function ArticlePage({
                 >
                   Local Enterprise Office (LEO)
                 </a>{" "}
-                — free mentoring and start-your-own-business training across
+                for free mentoring and start-your-own-business training across
                 Ireland, including idea validation support
               </li>
             </ul>
@@ -503,7 +503,7 @@ export default async function ArticlePage({
                 </span>{" "}
                 This article is for general information only and does not
                 constitute business, legal, or financial advice. Market
-                conditions change — always verify current data with your own
+                conditions change, so always verify current data with your own
                 research and consult a qualified advisor before making
                 significant business decisions.
               </p>

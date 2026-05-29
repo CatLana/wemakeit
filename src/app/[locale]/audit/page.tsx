@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -94,7 +94,7 @@ export default async function AuditPage({
               </Link>
             </div>
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-4">
-              Free — No commitment
+              Free, no commitment
             </span>
             <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
               {t("title")}

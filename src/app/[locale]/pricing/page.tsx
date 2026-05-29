@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -177,7 +177,7 @@ export default async function PricingPage({
                 Whether you need a one-time project or ongoing support, we offer flexible plans tailored to your business.
               </p>
               <p className="text-sm text-slate-500">
-                All prices in EUR, exclusive of VAT. Custom enterprise quotes available —{" "}
+                All prices in EUR, exclusive of VAT. Custom enterprise quotes available. {" "}
                 <Link href="/#quote" className="text-[#22D3EE] underline hover:text-cyan-300">
                   get in touch
                 </Link>
@@ -195,7 +195,7 @@ export default async function PricingPage({
                 Monthly Support &amp; Retainers
               </h2>
               <p className="text-slate-600 text-lg">
-                Predictable monthly costs. Your development team on tap — support, improvements, and expert advice included.
+                Predictable monthly costs. Your development team on tap: support, improvements, and expert advice included.
               </p>
             </div>
 
@@ -577,7 +577,7 @@ export default async function PricingPage({
                 <h3 className="font-bold text-[#1E293B] mb-2">Interactive App Prototype</h3>
                 <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€2,500–€5,000</p>
                 <p className="text-sm text-slate-600">
-                  Clickable prototype for user testing or investor demos — before a single line of code is written.
+                  Clickable prototype for user testing or investor demos, before a single line of code is written.
                 </p>
               </div>
 
@@ -601,7 +601,7 @@ export default async function PricingPage({
                 <h3 className="font-bold text-[#1E293B] mb-2">API Integration</h3>
                 <p className="text-lg font-extrabold text-[#22D3EE] mb-2">€2,000–€5,000</p>
                 <p className="text-sm text-slate-600">
-                  Connect your product to third-party services — payments, CRMs, email, maps, and more.
+                  Connect your product to third-party services: payments, CRMs, email, maps, and more.
                 </p>
               </div>
 
@@ -653,7 +653,7 @@ export default async function PricingPage({
                   Are your prices inclusive of VAT?
                 </h3>
                 <p className="text-slate-600">
-                  No. All prices shown are exclusive of VAT. Irish VAT at 23% applies to B2B services provided in Ireland. EU businesses with a valid VAT number may be eligible for VAT reverse charge — just let us know when you enquire.
+                  No. All prices shown are exclusive of VAT. Irish VAT at 23% applies to B2B services provided in Ireland. EU businesses with a valid VAT number may be eligible for VAT reverse charge. Just let us know when you enquire.
                 </p>
               </div>
 
@@ -671,7 +671,7 @@ export default async function PricingPage({
                   What&apos;s not included in the prices above?
                 </h3>
                 <p className="text-slate-600">
-                  Third-party costs — hosting, domains, SMS, payment gateway fees — are billed separately at cost. We always flag these upfront so there are no surprises.
+                  Third-party costs (hosting, domains, SMS, payment gateway fees) are billed separately at cost. We always flag these upfront so there are no surprises.
                 </p>
               </div>
 
@@ -689,7 +689,7 @@ export default async function PricingPage({
                   Do you offer payment plans?
                 </h3>
                 <p className="text-slate-600">
-                  Yes. For projects over €10,000, we offer 50/50 split payment (50% upfront, 50% at delivery). For larger projects, milestone-based payments are available — we&apos;ll agree the schedule before we start.
+                  Yes. For projects over €10,000, we offer 50/50 split payment (50% upfront, 50% at delivery). For larger projects, milestone-based payments are available and we&apos;ll agree the schedule before we start.
                 </p>
               </div>
 
@@ -707,7 +707,7 @@ export default async function PricingPage({
                   Do you work with international clients?
                 </h3>
                 <p className="text-slate-600">
-                  Yes. We serve clients across Ireland, EU, UK, and beyond. We work fully remotely and time zones are rarely an issue — we&apos;ve worked with clients in Ireland, Italy, Switzerland, and further afield.
+                  Yes. We serve clients across Ireland, EU, UK, and beyond. We work fully remotely and time zones are rarely an issue; we&apos;ve worked with clients in Ireland, Italy, Switzerland, and further afield.
                 </p>
               </div>
             </div>
@@ -717,7 +717,7 @@ export default async function PricingPage({
                 Still have questions?
               </h3>
               <p className="text-slate-300 mb-6">
-                Every business is different. Let&apos;s talk through your specific needs — no commitment required.
+                Every business is different. Let&apos;s talk through your specific needs. No commitment required.
               </p>
               <Link
                 href="/#quote"

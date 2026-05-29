@@ -105,7 +105,7 @@ export default async function TermsOfServicePage({
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">5. Scope Changes and Additional Work</h2>
               <p className="text-sm">
-                Any request for work outside the agreed Scope — including additional features, design changes, platform changes, or integrations not specified in the original quote — constitutes a <strong className="text-[#1E293B]">scope change</strong> and will require a separate written quote and acceptance before work commences.
+                Any request for work outside the agreed Scope (including additional features, design changes, platform changes, or integrations not specified in the original quote) constitutes a <strong className="text-[#1E293B]">scope change</strong> and will require a separate written quote and acceptance before work commences.
               </p>
               <p className="mt-3 text-sm">
                 We are not obliged to perform work outside the agreed Scope. Requests for scope changes submitted verbally (e.g., by phone or in conversation) do not bind us until confirmed in writing.
@@ -195,13 +195,13 @@ export default async function TermsOfServicePage({
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">10. Limitation of Liability</h2>
               <div className="rounded-xl bg-rose-50 border border-rose-200 p-5 text-sm text-rose-900 mt-2">
-                <p className="font-bold mb-2">IMPORTANT — PLEASE READ THIS SECTION CAREFULLY</p>
+                <p className="font-bold mb-2">IMPORTANT: PLEASE READ THIS SECTION CAREFULLY</p>
                 <p>
                   To the maximum extent permitted by applicable law:
                 </p>
                 <ol className="list-decimal pl-5 space-y-2 mt-3">
                   <li><strong>Cap on liability:</strong> Our total liability to you under or in connection with these Terms, whether arising in contract, tort (including negligence), breach of statutory duty, or otherwise, shall not exceed the greater of: (a) the total fees actually paid by you to us in the <strong>12 months immediately preceding the event giving rise to the claim</strong>; or (b) <strong>EUR 500</strong>.</li>
-                  <li><strong>Excluded losses:</strong> We shall not be liable for any: loss of profits; loss of revenue or anticipated savings; loss of business or contracts; loss of goodwill or reputation; loss of data or corruption of data; loss of opportunity; or any indirect, special, incidental, punitive, or consequential damages of any kind — even if we have been advised of the possibility of such losses.</li>
+                  <li><strong>Excluded losses:</strong> We shall not be liable for any: loss of profits; loss of revenue or anticipated savings; loss of business or contracts; loss of goodwill or reputation; loss of data or corruption of data; loss of opportunity; or any indirect, special, incidental, punitive, or consequential damages of any kind, even if we have been advised of the possibility of such losses.</li>
                   <li><strong>Third-party failures:</strong> We shall not be liable for failures, delays, errors, or interruptions caused by third-party services, hosting providers, domain registrars, payment processors, APIs, or any technology or infrastructure outside our direct control.</li>
                   <li><strong>Client content:</strong> We shall not be liable for any claims, damages, or losses arising from Client-provided content, materials, or data, including intellectual property infringement, defamation, or regulatory non-compliance.</li>
                   <li><strong>Security:</strong> While we take reasonable security precautions, we shall not be liable for data breaches, hacking, or security incidents resulting from vulnerabilities in third-party software, hosting infrastructure, or actions outside our reasonable control.</li>

@@ -130,7 +130,7 @@ const articles = [
     title:
       "Web accessibility in Ireland: what the European Accessibility Act means for your business",
     excerpt:
-      "From June 2025, the European Accessibility Act extends legal web accessibility requirements to private businesses in Ireland. Here is what you need to know — and practical steps you can take now.",
+      "From June 2025, the European Accessibility Act extends legal web accessibility requirements to private businesses in Ireland. Here is what you need to know, with practical steps you can take now.",
     date: "28 April 2026",
     readTime: "8 min read",
   },

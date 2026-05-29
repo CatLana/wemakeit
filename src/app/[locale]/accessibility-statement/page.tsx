@@ -23,7 +23,7 @@ const features = [
   "Colour contrast ratios exceed 4.5:1 for normal text and 3:1 for large text throughout",
   "The 'alt' attribute is provided for all meaningful images",
   "No content flashes or rapid animations that could cause seizures; animations respect prefers-reduced-motion where supported",
-  "Mobile-responsive layout — the site is fully functional at all viewport widths without horizontal scrolling",
+  "Mobile-responsive layout: the site is fully functional at all viewport widths without horizontal scrolling",
   "Text can be resized up to 200% in the browser without loss of content or functionality",
   "Links have descriptive, contextually meaningful text (no bare 'click here' links)",
   "Page language declared in the HTML lang attribute",
@@ -68,7 +68,7 @@ export default async function AccessibilityStatementPage({
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">Our Commitment</h2>
               <p className="text-sm">
-                <strong className="text-[#1E293B]">We Make IT</strong> is committed to ensuring that our website, <strong className="text-[#1E293B]">wemakeit.ie</strong>, is accessible to all users, including people with disabilities. We believe that everyone deserves equal access to digital services and information, and accessibility is not an afterthought — it is a core part of how we build.
+                <strong className="text-[#1E293B]">We Make IT</strong> is committed to ensuring that our website, <strong className="text-[#1E293B]">wemakeit.ie</strong>, is accessible to all users, including people with disabilities. We believe everyone deserves equal access to digital services and information. Accessibility is not an afterthought; it is a core part of how we build.
               </p>
               <p className="mt-3 text-sm">
                 We are working towards conformance with the <strong className="text-[#1E293B]">Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</strong> and the European standard <strong className="text-[#1E293B]">EN 301 549</strong>.

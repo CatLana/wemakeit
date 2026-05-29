@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
@@ -171,7 +171,7 @@ export default async function ArticlePage({
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Imagine heading to a local council&apos;s website to apply for a
-              permit — but you cannot use a mouse because of a hand tremor. The
+              permit, but you cannot use a mouse because of a hand tremor. The
               buttons have no visible labels. The form fields are not
               keyboard-navigable. The deadline passes. That is not a
               hypothetical scenario; it is the everyday experience of roughly 1
@@ -179,7 +179,7 @@ export default async function ArticlePage({
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
               For years, making a website accessible was seen as best practice
-              rather than a legal obligation — especially for private businesses.
+              rather than a legal obligation, especially for private businesses.
               That has now changed. With the{" "}
               <strong>European Accessibility Act (EAA)</strong> in force since
               June 2025, Irish businesses in a range of sectors face real legal
@@ -216,7 +216,7 @@ export default async function ArticlePage({
             </ul>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
               The benchmark standard is{" "}
-              <strong>WCAG 2.1 Level AA</strong> — the Web Content Accessibility
+              <strong>WCAG 2.1 Level AA</strong>: the Web Content Accessibility
               Guidelines published by the W3C. Level AA is the target for most
               international and EU compliance frameworks.
             </p>
@@ -226,7 +226,7 @@ export default async function ArticlePage({
             </h2>
 
             <h3 className="text-xl font-bold text-[#1E293B] mt-6 mb-3">
-              EU Accessibility Directive — public sector (since 2020)
+              EU Accessibility Directive: public sector (since 2020)
             </h3>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Since September 2020, public sector websites and mobile apps
@@ -246,7 +246,7 @@ export default async function ArticlePage({
             </p>
 
             <h3 className="text-xl font-bold text-[#1E293B] mt-6 mb-3">
-              European Accessibility Act — private sector (from June 2025)
+              European Accessibility Act: private sector (from June 2025)
             </h3>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               The EAA extends accessibility requirements to certain{" "}
@@ -267,7 +267,7 @@ export default async function ArticlePage({
               include fines, forced withdrawal of products or services, and
               reputational damage. Micro-enterprises (fewer than 10 employees
               and under €2 million annual turnover) are generally exempt from
-              the EAA&apos;s product requirements — but this exemption is narrow,
+              the EAA&apos;s product requirements. This exemption is narrow,
               and the public sector rules apply regardless of company size.
             </p>
 
@@ -297,7 +297,7 @@ export default async function ArticlePage({
               What does WCAG 2.1 AA actually mean in practice?
             </h2>
             <p className="text-slate-600 leading-relaxed text-base mb-6">
-              WCAG 2.1 organises its requirements around four principles — often
+              WCAG 2.1 organises its requirements around four principles, often
               abbreviated as <strong>POUR</strong>:
             </p>
 
@@ -357,24 +357,24 @@ export default async function ArticlePage({
             </p>
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 leading-relaxed">
               <li>
-                <strong>Bigger addressable market</strong> — roughly 15–20% of
+                <strong>Bigger addressable market:</strong> roughly 15–20% of
                 the population has a disability of some kind. These are
                 customers you currently risk excluding.
               </li>
               <li>
-                <strong>SEO benefits</strong> — good accessibility and good SEO
+                <strong>SEO benefits:</strong> good accessibility and good SEO
                 overlap significantly. Meaningful alt text, clean heading
                 structure, fast performance, and descriptive link text all help
                 search engines and screen readers equally.
               </li>
               <li>
-                <strong>Better experience for everyone</strong> — captions help
+                <strong>Better experience for everyone:</strong> captions help
                 users in noisy environments, clear navigation helps users in a
                 hurry, high contrast helps people reading in bright sunlight.
                 Inclusive design improves usability across the board.
               </li>
               <li>
-                <strong>Enterprise and public sector sales</strong> — if you
+                <strong>Enterprise and public sector sales:</strong> if you
                 sell software or services to public bodies in Ireland or the EU,
                 accessibility compliance is increasingly a procurement
                 requirement.
@@ -413,7 +413,7 @@ export default async function ArticlePage({
                 {
                   n: "05",
                   title: "Label your form fields",
-                  body: "Every input, select, and textarea needs a visible \u003clabel\u003e element connected via the for/id attributes. Placeholder text does not count \u2014 it disappears as soon as someone starts typing.",
+                  body: "Every input, select, and textarea needs a visible \u003clabel\u003e element connected via the for/id attributes. Placeholder text does not count: it disappears as soon as someone starts typing.",
                 },
               ].map(({ n, title, body }) => (
                 <li key={n} className="flex gap-5">
@@ -522,7 +522,7 @@ export default async function ArticlePage({
                 </span>{" "}
                 This article is for informational purposes only and does not
                 constitute legal advice. The European Accessibility Act is
-                implemented differently across EU member states — consult a
+                implemented differently across EU member states. Consult a
                 qualified legal professional if you need advice specific to your
                 business situation. Information is based on publicly available
                 sources as of April 2026.
