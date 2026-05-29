@@ -29,7 +29,7 @@ function buildHtml(data: z.infer<typeof schema>): string {
         <tr>
           <td style="padding:24px 32px 32px;">
             <p style="margin:0 0 16px;font-size:16px;font-weight:700;color:#0f172a;">
-              Free Consultation Request — ${data.service}
+              Free Consultation Request: ${data.service}
             </p>
             <table width="100%" cellPadding="0" cellSpacing="0" style="border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
               <tbody>
@@ -54,7 +54,7 @@ function buildHtml(data: z.infer<typeof schema>): string {
         </tr>
         <tr>
           <td style="padding:0 32px 32px;">
-            <a href="mailto:${data.email}?subject=Re: Free Consultation — ${data.service}&body=Hi ${data.name},%0D%0A%0D%0AThank you for requesting a free consultation. I'd love to learn more about your project.%0D%0A%0D%0AKind regards,%0D%0ALana%0D%0AWe Make IT"
+            <a href="mailto:${data.email}?subject=Re: Free Consultation: ${data.service}&body=Hi ${data.name},%0D%0A%0D%0AThank you for requesting a free consultation. I'd love to learn more about your project.%0D%0A%0D%0AKind regards,%0D%0ALana%0D%0AWe Make IT"
                style="display:inline-block;background:#22d3ee;color:#0f172a;font-weight:700;font-size:14px;padding:12px 24px;border-radius:10px;text-decoration:none;">
               Reply to ${data.name}
             </a>
@@ -96,7 +96,7 @@ export async function POST(req: NextRequest) {
     from: "We Make IT <onboarding@resend.dev>",
     to: RECIPIENT,
     replyTo: data.email,
-    subject: `[wemakeit.ie] Free consultation — ${data.service} from ${data.name}`,
+    subject: `[wemakeit.ie] Free consultation: ${data.service} from ${data.name}`,
     html: buildHtml(data),
   });
 

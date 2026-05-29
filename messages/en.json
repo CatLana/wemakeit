@@ -3,7 +3,7 @@
     "title": "Web & App Development Ireland | We Make IT",
     "description": "Custom websites, mobile apps and digital solutions for Irish businesses. Fixed pricing, free consultation. 15+ years of experience.",
     "ogTitle": "Web & App Development Ireland | We Make IT",
-    "ogDescription": "We build custom websites and apps for Irish businesses — from idea to launch. Fixed price, no surprises. Book your free consultation today."
+    "ogDescription": "We build custom websites and apps for Irish businesses, from idea to launch. Fixed price, no surprises. Book your free consultation today."
   },
   "header": {
     "logoAriaLabel": "We Make IT - Home",
@@ -30,7 +30,7 @@
     "badge": "Based in Ireland",
     "h1": "We Make {accent} Happen.",
     "accent": "IT",
-    "subtitleBody": "We help Irish businesses grow through building bespoke digital solutions. Whether you need a website that sells or a custom IT solution to save you time and money — we know how to help.",
+    "subtitleBody": "We help Irish businesses grow through building bespoke digital solutions. Whether you need a website that sells or a custom IT solution to save you time and money, we know how to help.",
     "subtitleCta": "Book your FREE 30-min consultation today.",
     "springSale": "Summer Sale: 30% off for new clients. Limited spots available.",
     "cta1": "Book Free Audit",
@@ -99,17 +99,17 @@
   },
   "founder": {
     "eyebrow": "A Message From Our Founder",
-    "opening": "I am a software engineer with a particular interest in UX and Accessibility, but I am also just a normal user of dozens of apps we all have to operate on a daily basis to get our work and life tasks done. I find websites and apps that have bad usability genuinely draining — it takes energy and time that could have gone towards things that actually matter. I love experiences that simply make sense, where you never have to stop and wonder what to do next. The truth is, most apps still do not feel that way. And that is exactly the gap we help close.",
+    "opening": "I am a software engineer with a particular interest in UX and Accessibility, but I am also just a normal user of dozens of apps we all have to operate on a daily basis to get our work and life tasks done. I find websites and apps that have bad usability genuinely draining. It takes energy and time that could have gone towards things that actually matter. I love experiences that simply make sense, where you never have to stop and wonder what to do next. The truth is, most apps still do not feel that way. And that is exactly the gap we help close.",
     "name": "My name is Lana.",
     "identity": "Creative innovator, technical consultant for small businesses, frontend developer, and the founder of We Make IT.",
     "bio": "For more than eight years, I have worked across web development in both large companies and small, close-knit teams. My focus has always been frontend engineering, Design Systems, and Accessibility. I am also a certified UX designer, and I genuinely love building interfaces that feel intuitive and inclusive. I work alongside a fantastic team of full-stack engineers with over fifteen years of experience. Together, We Make IT Happen.",
-    "passion": "It took years of reflection to realise it, but helping people solve real problems is my true passion. I care deeply about inclusive and accessible software — because no one should be left behind when navigating their digital world. People are different, and needs are different, yet everyone deserves a smooth, frustration-free experience. Applications shape our everyday lives, whether we realise it or not. My mission is to help entrepreneurs just like you build products that your customers genuinely enjoy using.",
+    "passion": "It took years of reflection to realise it, but helping people solve real problems is my true passion. I care deeply about inclusive and accessible software, because no one should be left behind when navigating their digital world. People are different, and needs are different, yet everyone deserves a smooth, frustration-free experience. Applications shape our everyday lives, whether we realise it or not. My mission is to help entrepreneurs just like you build products that your customers genuinely enjoy using.",
     "differenceHeading": "So what makes our services different?",
     "differenceHighlight": "A genuine obsession with solving the right problems in the right way.",
     "differenceText": "If you have a challenge, we will find you a clear and practical solution without unnecessary complexity or technical language getting in the way.",
     "quote": "When your business solves a real problem for real people, that is where success begins.",
     "quoteFooter": "And we know how to help you reach that point.",
-    "callout": "Ready to share your idea? Fill in the form below and we will send you a free, no-obligation quote. Your customers deserve a better experience — and it all starts here.",
+    "callout": "Ready to share your idea? Fill in the form below and we will send you a free, no-obligation quote. Your customers deserve a better experience, and it all starts here.",
     "cta": "Tell us your idea",
     "imgAlt": "Lana, founder of We Make IT"
   },
@@ -231,7 +231,7 @@
     "description": "Share details about your project to help us prepare an accurate quote and proposal.",
     "eyebrow": "Project Brief",
     "heading": "Tell us about your project",
-    "subheading": "This brief helps us give you an accurate quote and plan. Share as much or as little as you know — no technical knowledge needed.",
+    "subheading": "This brief helps us give you an accurate quote and plan. Share as much or as little as you know. No technical knowledge needed.",
     "intro": "You received a link to this form after submitting a quote request. The more detail you share, the more accurate our proposal.",
     "form": {
       "ariaLabel": "Project brief form",
@@ -297,7 +297,7 @@
         "no": "No, starting from scratch"
       },
       "competitorQuote": "Have a quote from another company? (optional)",
-      "competitorPlaceholder": "e.g. €12,000 from XYZ Agency — we'll beat it.",
+      "competitorPlaceholder": "e.g. €12,000 from XYZ Agency. We'll beat it.",
       "submit": "Submit My Project Brief",
       "submitting": "Sending…",
       "errors": {
@@ -353,7 +353,7 @@
     "variants": {
       "consultation": {
         "heading": "Request a Free Consultation",
-        "subheading": "Tell us about your project and we will get back to you within one business day — no commitment required.",
+        "subheading": "Tell us about your project and we will get back to you within one business day. No commitment required.",
         "messageLabel": "Tell us about your project",
         "messagePlaceholder": "What are you looking to build? Any deadlines, budget range, or context you can share?",
         "submitLabel": "Request free consultation"
@@ -362,14 +362,14 @@
         "heading": "Request a Free Accessibility Audit",
         "subheading": "Share your website or app URL and we will run a free initial check and report back within one business day.",
         "messageLabel": "Your website or app URL",
-        "messagePlaceholder": "e.g. https://yoursite.ie — add any context about your product or concerns.",
+        "messagePlaceholder": "e.g. https://yoursite.ie. Add any context about your product or concerns.",
         "submitLabel": "Request free audit"
       },
       "retainer": {
         "heading": "Tell Us About Your Project",
         "subheading": "Looking for ongoing support? Share what you have and we will put together a support proposal that fits.",
         "messageLabel": "What does your project need?",
-        "messagePlaceholder": "Tell us about your existing product — tech stack, current issues, what support you are looking for.",
+        "messagePlaceholder": "Tell us about your existing product: tech stack, current issues, and what support you are looking for.",
         "submitLabel": "Get a support proposal"
       }
     }
@@ -383,9 +383,9 @@
     "tagline": "We help entrepreneurs and small businesses turn their ideas into real apps and websites. Based in Ireland, working globally.",
     "copyright": "© We Make IT Sole Trader company registered in Ireland.",
     "builtBy": "Built by",
-    "languageNote": "Inclusive by design: support available in English, Italian, and Russian.",
+    "languageNote": "Inclusive by design: support available in English, Italian and Russian.",
     "whatsappLabel": "Chat on WhatsApp",
-    "whatsappQrAlt": "WhatsApp QR code — scan to start a chat with We Make IT",
+    "whatsappQrAlt": "WhatsApp QR code. Scan to start a chat with We Make IT",
     "whatsappQrCaption": "Scan to chat",
     "footerLabel": "Site footer",
     "remoteText": "Registered in Ireland. Operating in Europe and the United Kingdom.",
@@ -635,19 +635,19 @@
       },
       "ctaHeading": "Ready to build your web presence?",
       "whatWeDoHeading": "What We Build",
-      "whatWeDoSub": "From simple business websites to complex web applications — we cover it all.",
+      "whatWeDoSub": "From simple business websites to complex web applications, we cover it all.",
       "whatWeDo": [
         { "title": "Business Websites", "description": "Clean, professional websites that represent your brand, rank on Google, and turn visitors into customers." },
         { "title": "E-Commerce Stores", "description": "Sell online with confidence. We build and configure your store, payment processing, and product management from scratch." },
         { "title": "CMS-Powered Sites", "description": "Update your content without touching code. We build on trusted platforms so you stay in control after launch." },
-        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces — if your business needs more than a website, we build it." },
+        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces. If your business needs more than a website, we build it." },
         { "title": "Landing Pages", "description": "Launch fast with a focused, conversion-optimised page for your product, campaign, or service." },
-        { "title": "Website Redesign", "description": "Got a website that's letting you down? We rebuild it properly — faster, better-looking, and easier to manage." }
+        { "title": "Website Redesign", "description": "Got a website that's letting you down? We rebuild it properly: faster, better-looking, and easier to manage." }
       ],
       "whyHeading": "Why Businesses Choose Us",
       "why": [
         { "title": "Fixed Price, No Surprises", "description": "You know the full cost before we start. No hidden extras, no surprise invoices mid-project." },
-        { "title": "Mobile-First by Default", "description": "Every website we build works perfectly on phones, tablets, and desktops. It's not optional — it's how we work." },
+        { "title": "Mobile-First by Default", "description": "Every website we build works perfectly on phones, tablets, and desktops. It's not optional, it's just how we work." },
         { "title": "Built for Search Engines", "description": "Clean code, fast loading, proper structure. Your site is ready to rank from day one." },
         { "title": "Accessible to Everyone", "description": "We build to WCAG 2.1 AA standards so your site works for all users and meets legal requirements." }
       ],
@@ -681,14 +681,14 @@
       "ctaPrimary": "Tell us your idea",
       "ctaSecondary": "Request free consultation",
       "whatWeDoHeading": "What We Build",
-      "whatWeDoSub": "From a first prototype to a full production app — we cover every stage.",
+      "whatWeDoSub": "From a first prototype to a full production app, we cover every stage.",
       "whatWeDo": [
         { "title": "iOS Apps", "description": "Native and React Native apps for iPhone and iPad. Smooth, performant, App Store ready." },
         { "title": "Android Apps", "description": "Native and cross-platform Android apps, built to Google Play standards and optimised for a wide range of devices." },
         { "title": "Cross-Platform Apps", "description": "One codebase, two platforms. We use React Native and Expo so you launch on iOS and Android without doubling the budget." },
         { "title": "Progressive Web Apps", "description": "Web apps that install and feel like native apps. A cost-effective route to mobile-first experiences." },
-        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces — if your business needs more than a website, we build it." },
-        { "title": "MVP Development", "description": "Launch the smallest version that proves your idea. Real users, real feedback, minimum spend — then we scale." }
+        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces. If your business needs more than a website, we build it." },
+        { "title": "MVP Development", "description": "Launch the smallest version that proves your idea. Real users, real feedback, minimum spend, then we scale." }
       ],
       "whyHeading": "Why Irish Businesses Choose Us",
       "why": [
@@ -729,7 +729,7 @@
         "ch": "Idea Validation & MVP Development in Switzerland"
       },
       "breadcrumb": "Idea Validation & MVP",
-      "desc": "Not sure if your idea will work? We help you validate it before spending a penny on a full build — then create a lean MVP you can test with real users.",
+      "desc": "Not sure if your idea will work? We help you validate it before spending a penny on a full build, then create a lean MVP you can test with real users.",
       "whatHeading": "What We Do",
       "whatItems": [
         { "title": "Idea Workshop", "description": "We run a structured session to explore your idea, identify assumptions, and map out the core problem you are solving." },
@@ -777,12 +777,12 @@
         "ch": "UX Design Services in Switzerland"
       },
       "breadcrumb": "UX Design",
-      "desc": "From wireframes to polished UI — we turn research findings and product ideas into designs that are intuitive, accessible, and ready to build.",
+      "desc": "From wireframes to polished UI, we turn research findings and product ideas into designs that are intuitive, accessible, and ready to build.",
       "whatHeading": "What We Do",
       "whatItems": [
         { "title": "Information Architecture", "description": "We structure your content and navigation so users always know where they are and where to go next." },
         { "title": "Wireframing", "description": "Low-fidelity layouts that define the flow and structure before we invest in visual design." },
-        { "title": "UI Design", "description": "High-fidelity screens in your brand — clean, modern, and built to convert." },
+        { "title": "UI Design", "description": "High-fidelity screens in your brand: clean, modern, and built to convert." },
         { "title": "Design System", "description": "A reusable component library that keeps your product consistent and speeds up future development." }
       ],
       "deliverableHeading": "What You Get",
@@ -814,7 +814,7 @@
         "Find usability problems before they are expensive to fix",
         "Validate your concept with real users at low cost",
         "Get clearer developer estimates from a detailed prototype",
-        "Pitch with confidence — show, don't just tell"
+        "Pitch with confidence: show, don't just tell"
       ]
     },
     "mobileAppDev": {
@@ -849,7 +849,7 @@
         "ch": "Software Consultancy in Switzerland"
       },
       "breadcrumb": "Software Consultancy",
-      "desc": "Not sure what to build, which technology to choose, or how to get your existing product back on track? We give you clear, honest advice in plain language — no vendor lock-in.",
+      "desc": "Not sure what to build, which technology to choose, or how to get your existing product back on track? We give you clear, honest advice in plain language. No vendor lock-in.",
       "whatHeading": "What We Help With",
       "whatItems": [
         { "title": "Technology Strategy", "description": "Which stack, which platform, which architecture. We lay out the options clearly and help you choose with confidence." },
@@ -860,7 +860,7 @@
       "whyHeading": "Why Consult With Us",
       "whyItems": [
         "15+ years of experience building products at scale",
-        "Honest advice — we tell you what you need to hear, not what you want to hear",
+        "Honest advice: we tell you what you need to hear, not what you want to hear",
         "We speak plain English so you can make informed decisions",
         "We have no financial interest in recommending specific vendors or tools"
       ]
@@ -873,12 +873,12 @@
         "ch": "App Maintenance & Support in Switzerland"
       },
       "breadcrumb": "Maintenance & Support",
-      "desc": "Already have an app or website that needs looking after? We take it on — fixing bugs, keeping it up to date, adding features, and ensuring it runs smoothly month to month.",
+      "desc": "Already have an app or website that needs looking after? We take it on, fixing bugs, keeping it up to date, adding features, and making sure it runs smoothly month to month.",
       "whatHeading": "What's Included",
       "whatItems": [
         { "title": "Bug Fixes", "description": "We respond to issues fast and fix bugs before they impact your users or your reputation." },
         { "title": "Security Updates", "description": "Regular dependency updates, security patches, and vulnerability monitoring to keep your product safe." },
-        { "title": "Performance Monitoring", "description": "We track uptime, load times, and errors — and fix problems before you or your users notice them." },
+        { "title": "Performance Monitoring", "description": "We track uptime, load times, and errors, and fix problems before you or your users notice them." },
         { "title": "Feature Development", "description": "Retainer clients get dedicated development capacity each month for new features, improvements, and integrations." }
       ],
       "retainerHeading": "Support Retainer Plans",
@@ -899,15 +899,15 @@
         "ch": "Website & App Localisation Services in Switzerland"
       },
       "breadcrumb": "Website & App Localisation",
-      "desc": "We handle the full localisation of your website or app — from translating content to integrating i18n frameworks in your codebase. We have done it for our own product, and we can do it for yours.",
+      "desc": "We handle the full localisation of your website or app, from translating content to integrating i18n frameworks in your codebase. We have done it for our own product, and we can do it for yours.",
       "uniqueHeading": "Why We Are Different",
-      "uniqueBody": "Most localisation agencies translate content but have no idea how to wire it into a React or Next.js app. We do both — in-house linguistic expertise and the technical skills to implement it. No awkward handoffs, no broken layouts from right-to-left text, no missing string keys.",
+      "uniqueBody": "Most localisation agencies translate content but have no idea how to wire it into a React or Next.js app. We do both: in-house linguistic expertise and the technical skills to implement it. No awkward handoffs, no broken layouts from right-to-left text, no missing string keys.",
       "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Content Translation", "description": "Accurate, natural-sounding translation into the target language — not machine translation copy-pasted into a CMS." },
+        { "title": "Content Translation", "description": "Accurate, natural-sounding translation into the target language, not machine translation copy-pasted into a CMS." },
         { "title": "i18n Framework Integration", "description": "We wire up next-intl, i18next, or your chosen library. All strings externalised, all routes localised." },
         { "title": "RTL Layout Support", "description": "Arabic, Hebrew, and other right-to-left languages require layout changes. We handle them correctly." },
-        { "title": "Locale Testing", "description": "We test every locale end to end — text overflow, date formats, currency symbols, and number formatting." }
+        { "title": "Locale Testing", "description": "We test every locale end to end: text overflow, date formats, currency symbols, and number formatting." }
       ],
       "languagesHeading": "Languages We Support",
       "languages": "English, Italian, Russian, French, German, Spanish, Arabic (RTL). Contact us for others.",
@@ -924,7 +924,7 @@
     "eyebrow": "Free tool",
     "betaLabel": "Beta",
     "title": "Run a website audit",
-    "subtitle": "Enter any live website URL to get an automated report covering UX, SEO, visual quality, and accessibility — powered by Google Lighthouse.",
+    "subtitle": "Enter any live website URL to get an automated report covering UX, SEO, visual quality, and accessibility, powered by Google Lighthouse.",
     "backToHome": "Back to home",
     "seoKeywords": [
       "website audit",
@@ -951,17 +951,17 @@
     "results": {
       "successBadge": "Report ready",
       "successTitle": "Your audit report is ready",
-      "successSubtitle": "Download the PDF below — it covers your Lighthouse scores, what is working well, and what to fix.",
+      "successSubtitle": "Download the PDF below. It covers your Lighthouse scores, what is working well, and what to fix.",
       "downloadBtn": "Download PDF report",
       "expertCtaTitle": "Want a human review on top of this?",
-      "expertCtaBody": "Automated tools catch technical signals. A real expert catches everything else — strategy, content quality, and what your users actually experience.",
+      "expertCtaBody": "Automated tools catch technical signals. A real expert catches everything else: strategy, content quality, and what your users actually experience.",
       "expertCtaBtn": "Request a free expert audit",
       "errorTitle": "Audit could not be completed",
       "errorBody": "The site may be unreachable, require authentication, or the audit service is temporarily unavailable.",
       "errorReasonPrefix": "Technical reason",
       "fallbackUsed": "Cached fallback result (generated in the last 48 hours)",
       "tryAgainBtn": "Try another URL",
-      "runningMsg": "Running Lighthouse audit — this takes about 15 seconds…"
+      "runningMsg": "Running Lighthouse audit, this takes about 15 seconds…"
     },
     "howItWorksTitle": "How our free audit works",
     "howItWorksIntro": "We provide free audits",
@@ -994,7 +994,7 @@
       {
         "step": "6",
         "title": "Feedback & next steps",
-        "description": "We ask for your feedback and discuss next steps—whether you want us to implement changes or you'd prefer to work with your own team."
+        "description": "We ask for your feedback and discuss next steps. Whether you want us to implement the changes or work with your own team, we will point you in the right direction."
       }
     ],
     "requestFormTitle": "Get your free audit started",
@@ -1013,7 +1013,7 @@
       "title": "For Small Entrepreneurs: Build Your Brand Online",
       "description": "Website development and digital marketing services designed for small business owners who want to attract more customers online.",
       "ogTitle": "For Small Entrepreneurs: Build Your Brand Online",
-      "ogDescription": "Get a website that works for your business — clear, fast, and built to convert."
+      "ogDescription": "Get a website that works for your business: clear, fast, and built to convert."
     },
     "eyebrow": "For Small Entrepreneurs",
     "heading": "Build your brand online and attract more customers",
@@ -1078,11 +1078,11 @@
     "tagline": "We help startup founders validate ideas, build MVPs, and launch with confident product foundations. Fixed pricing or flexible equity partnerships available.",
     "whyHeading": "Why startups choose us",
     "why": [
-      "Fixed pricing or flexible equity partnership options — choose what fits your stage",
-      "Rapid MVP delivery — validate your idea with real users in weeks, not months",
-      "Design Thinking methodology — proven framework to reduce risk and test assumptions",
-      "Founder-friendly communication — we explain tech in plain English and actually listen",
-      "Post-launch support — we don't disappear after launch; we help you iterate based on user feedback"
+      "Fixed pricing or flexible equity partnership options: choose what fits your stage",
+      "Rapid MVP delivery: validate your idea with real users in weeks, not months",
+      "Design Thinking methodology: proven framework to reduce risk and test assumptions",
+      "Founder-friendly communication: we explain tech in plain English and actually listen",
+      "Post-launch support: we don't disappear after launch and we help you iterate based on user feedback"
     ],
     "finalCtaHeading": "Ready to validate your startup idea?",
     "finalCtaBody": "Let's talk about your vision. We'll help you shape the right MVP roadmap and discuss options.",
@@ -1113,7 +1113,7 @@
       { "name": "Andrea Contarino", "title": "Chief Architect & Backend Engineer", "bio": "15+ years building scalable systems and technical foundations for products at scale. Architect of our approach to custom software and project delivery." },
       { "name": "Svetlana Savchenko", "title": "Founder & Senior Frontend Engineer", "bio": "Frontend specialist and UX advocate. Over 8 years building interfaces that are intuitive, accessible, and genuinely usable. Founder of We Make IT." }
     ],
-    "teamCollaborators": "We also collaborate with a network of senior consultants on a contract basis. Depending on the project, we bring in the right specialists from our established collaborators — so you always get the expertise your case needs.",
+    "teamCollaborators": "We also collaborate with a network of senior consultants on a contract basis. Depending on the project, we bring in the right specialists from our established collaborators, so you always get the expertise your case needs.",
     "teamPlaceholder": "Photo coming soon"
   },
   "auditExpert": {

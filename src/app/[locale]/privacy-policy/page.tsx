@@ -96,7 +96,7 @@ export default async function PrivacyPolicyPage({
                 <li>IP address (server logs)</li>
                 <li>Browser type and version</li>
                 <li>Device type and operating system</li>
-                <li>Pages visited and time spent (when analytics tools are in use — see our <Link href="/cookie-policy" className="text-[#0E7490] hover:text-[#0891B2]">Cookie Policy</Link>)</li>
+                <li>Pages visited and time spent (when analytics tools are in use; see our <Link href="/cookie-policy" className="text-[#0E7490] hover:text-[#0891B2]">Cookie Policy</Link>)</li>
                 <li>Referral source (how you found us)</li>
               </ul>
               <p className="mt-3 text-sm text-slate-500">
@@ -175,7 +175,7 @@ export default async function PrivacyPolicyPage({
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">6. Sharing Your Personal Data</h2>
               <p>We do not sell your data. We may share it with the following categories of recipients, only where necessary and under appropriate data processing agreements:</p>
               <ul className="list-disc pl-5 space-y-2 text-sm mt-3">
-                <li><strong className="text-[#1E293B]">Hosting and infrastructure:</strong> Vercel Inc. (USA) — our website is hosted on Vercel. Data transfers to the USA are governed by Standard Contractual Clauses (SCCs) under GDPR Art. 46(2)(c).</li>
+                <li><strong className="text-[#1E293B]">Hosting and infrastructure:</strong> Vercel Inc. (USA): our website is hosted on Vercel. Data transfers to the USA are governed by Standard Contractual Clauses (SCCs) under GDPR Art. 46(2)(c).</li>
                 <li><strong className="text-[#1E293B]">Email delivery:</strong> Where we use a transactional email service provider to deliver your quote or enquiry confirmation, that provider processes your email address under a data processing agreement.</li>
                 <li><strong className="text-[#1E293B]">Accountants and advisors:</strong> Our accountant and legal advisors, who are bound by professional confidentiality obligations.</li>
                 <li><strong className="text-[#1E293B]">Analytics providers:</strong> Where you have consented to analytics cookies, your usage data may be shared with analytics service providers in anonymised or pseudonymised form.</li>

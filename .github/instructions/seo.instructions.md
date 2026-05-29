@@ -34,25 +34,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t("title"),           // renders as "Page Title | We Make IT"
     description: t("description"),
     alternates: {
-      canonical: `${BASE_URL}/${locale}/page-path`,
-      languages: {
-        "en": `${BASE_URL}/en/page-path`,
-        "it": `${BASE_URL}/it/page-path`,
-        "ru": `${BASE_URL}/ru/page-path`,
-      },
+      canonical: `${BASE_URL}/en/page-path`,
     },
     openGraph: {
       title: t("ogTitle"),
       description: t("ogDescription"),
-      url: `${BASE_URL}/${locale}/page-path`,
+      url: `${BASE_URL}/en/page-path`,
       siteName: "We Make IT",
-      locale: locale === "en" ? "en_IE" : locale === "it" ? "it_IT" : "ru_RU",
+      locale: "en_IE",
       images: [{ url: `${BASE_URL}/api/og`, width: 1200, height: 630 }],
     },
     twitter: { card: "summary_large_image" },
   };
 }
 ```
+
+No `alternates.languages` block. The site is English-only; there are no alternate locale URLs to declare.
 
 Always call `setRequestLocale(locale)` at the top of the page component (enables SSG):
 ```tsx
@@ -66,10 +63,10 @@ export default async function Page({ params }: Props) {
 
 ## Static Generation (generateStaticParams)
 
-Every new page needs `generateStaticParams` to pre-render all 3 locales:
+Every new page needs `generateStaticParams`. Return `en` only:
 ```tsx
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+  return [{ locale: "en" }];
 }
 ```
 
@@ -97,9 +94,11 @@ const jsonLd = {
   "@type": "Service",
   "name": "...",
   "provider": { "@type": "Organization", "name": "We Make IT", "url": "https://www.wemakeit.ie" },
-  "areaServed": ["IE", "IT", "CH", "RU"],
+  "areaServed": ["IE"],
 };
 ```
+
+For services that genuinely serve EU clients, add `"EU"` to `areaServed`. Do not include country codes for markets that are no longer active.
 
 Inject with:
 ```tsx
@@ -108,17 +107,16 @@ Inject with:
 
 ## Sitemap & Robots
 
-`src/app/sitemap.ts` and `src/app/robots.ts` already exist — add new route paths to `sitemap.ts` manually when adding new pages.
+`src/app/sitemap.ts` and `src/app/robots.ts` already exist. Add new route paths to `sitemap.ts` manually when adding new pages.
 
 ## SEO Keyword Strategy
 
-Target market: **Ireland-first**, then EU (IT, CH) and tech diaspora (RU).
+Target market: **Ireland-first**, then broader EU.
 
 Primary keyword patterns for service pages:
 - `[service] ireland` — "web app development ireland", "mobile app developer ireland"
 - `[service] dublin` / `[service] meath` for local SEO
 - `mvp development`, `startup app developer`, `idea to app`, `custom software ireland`
-- Italian variants: `sviluppo app irlanda`, `sviluppo web irlanda`
 
 For blog posts:
 - Long-tail: "how to get funding for app development ireland", "best way to build an mvp"
@@ -127,4 +125,4 @@ For blog posts:
 
 ## Content Tone
 
-Warm and conversational — talk to the reader like a smart friend, not a corporate brochure. Short paragraphs, plain language, specific examples over abstract claims.
+Warm and conversational. Talk to the reader like a knowledgeable friend, not a corporate brochure. Short paragraphs, plain language, specific examples over abstract claims. See `.github/instructions/content.instructions.md` for the full writing rules.

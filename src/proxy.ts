@@ -7,7 +7,7 @@ export const config = {
   // Match all pathnames except for API routes, Next.js internals, and static files
   matcher: [
     "/",
-    "/(en|it|ru)/:path*",
+    "/(en)/:path*",
     "/((?!api|_next|_vercel|sitemap\\.xml|robots\\.txt|.*\\..*).*)",
   ],
 };

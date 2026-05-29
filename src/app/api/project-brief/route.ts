@@ -101,7 +101,7 @@ function buildHtml(data: z.infer<typeof schema>): string {
         <tr>
           <td style="padding:24px 32px 32px;">
             <p style="margin:0 0 16px;font-size:16px;font-weight:700;color:#0f172a;">
-              Project Brief — ${SERVICE_LABELS[data.service] ?? data.service}
+              Project Brief: ${SERVICE_LABELS[data.service] ?? data.service}
             </p>
             <table width="100%" cellPadding="0" cellSpacing="0" style="border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
               <tbody>
@@ -169,7 +169,7 @@ export async function POST(req: NextRequest) {
     from: "We Make IT <onboarding@resend.dev>",
     to: RECIPIENT,
     replyTo: data.email,
-    subject: `Project Brief: ${serviceLabel} — ${data.name}`,
+    subject: `Project Brief: ${serviceLabel} (${data.name})`,
     html: buildHtml(data),
   });
 

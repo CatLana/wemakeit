@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
@@ -9,7 +9,7 @@ const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "irish-grants-for-app-development";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+  return [{ locale: "en" }];
 }
 
 export async function generateMetadata({
@@ -20,7 +20,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const canonicalUrl = `${BASE_URL}/${locale}/blog/${SLUG}`;
   const ogLocale =
-    locale === "en" ? "en_IE" : locale === "it" ? "it_IT" : "ru_RU";
+    "en_IE";
 
   return {
     title:
@@ -31,8 +31,6 @@ export async function generateMetadata({
       canonical: canonicalUrl,
       languages: {
         en: `${BASE_URL}/en/blog/${SLUG}`,
-        it: `${BASE_URL}/it/blog/${SLUG}`,
-        ru: `${BASE_URL}/ru/blog/${SLUG}`,
       },
     },
     openGraph: {
@@ -198,7 +196,7 @@ export default async function ArticlePage({
 
             <h3 className="text-xl font-bold text-[#1E293B] mt-8 mb-4">Enterprise Ireland Innovation Vouchers in Detail</h3>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
-              <a href="https://www.enterprise-ireland.com/en/supports/innovation-vouchers" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland&apos;s Innovation Voucher Programme</a> is one of the most popular schemes for app developers. Vouchers are issued to SMEs to work with registered knowledge providers—typically universities, research institutes, or approved consultants—to validate ideas and explore technical feasibility.
+              <a href="https://www.enterprise-ireland.com/en/supports/innovation-vouchers" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland&apos;s Innovation Voucher Programme</a> is one of the most popular schemes for app developers. Vouchers are issued to SMEs to work with registered knowledge providers, typically universities, research institutes, or approved consultants, to validate ideas and explore technical feasibility.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-3">
               Vouchers cover:
@@ -246,7 +244,7 @@ export default async function ArticlePage({
                 {
                   n: "02",
                   title: "Define Your Project Scope",
-                  body: "Grants don't fund full development—they fund research, prototyping, and discovery. Clearly define what research or prototype work you need to validate your app idea. Document the problem you're solving, target users, and technical unknowns.",
+                  body: "Grants don't fund full development. They fund research, prototyping, and discovery. Clearly define what research or prototype work you need to validate your app idea. Document the problem you're solving, target users, and technical unknowns.",
                 },
                 {
                   n: "03",
@@ -261,7 +259,7 @@ export default async function ArticlePage({
                 {
                   n: "05",
                   title: "Submit Your Application",
-                  body: "Submit via your Local Enterprise Office (LEO) for Grow Digital and Feasibility Grants, or via Enterprise Ireland for Innovation Vouchers and CSF. Check official deadlines—many schemes operate on rolling or periodic application windows.",
+                  body: "Submit via your Local Enterprise Office (LEO) for Grow Digital and Feasibility Grants, or via Enterprise Ireland for Innovation Vouchers and CSF. Check official deadlines, as many schemes operate on rolling or periodic application windows.",
                 },
                 {
                   n: "06",
@@ -296,7 +294,7 @@ export default async function ArticlePage({
               <div className="rounded-xl border border-slate-200 p-5">
                 <h3 className="text-base font-bold text-[#1E293B] mb-2">Choose the right knowledge provider</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  For Innovation Vouchers, your knowledge provider&apos;s experience matters. Look for providers with expertise in your app&apos;s domain—whether that&apos;s e-commerce, health tech, FinTech, or another sector.
+                  For Innovation Vouchers, your knowledge provider&apos;s experience matters. Look for providers with expertise in your app&apos;s domain, whether that&apos;s e-commerce, health tech, FinTech, or another sector.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200 p-5">
@@ -317,11 +315,11 @@ export default async function ArticlePage({
               Key Resources for Irish App Development Grants
             </h2>
             <ul className="list-disc list-outside ml-5 space-y-3 mb-10 text-slate-600 leading-relaxed">
-              <li><strong><a href="https://www.localenterprise.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">LocalEnterprise.ie</a></strong> — Find your local LEO and access Grow Digital and Feasibility Grant information</li>
-              <li><strong><a href="https://www.enterprise-ireland.com/en/supports/innovation-vouchers" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland Innovation Vouchers</a></strong> — Official scheme details, eligibility, and application portal</li>
-              <li><strong><a href="https://www.enterprise-ireland.com/en/supports/start-ups" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland Start-Ups</a></strong> — Competitive Start Fund and other startup-focused grants</li>
-              <li><strong><a href="https://www.cro.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Companies Registration Office (CRO)</a></strong> — Check SME classification and company registration requirements</li>
-              <li><strong><a href="https://www.gov.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Gov.ie</a></strong> — Official Irish government portal for business supports and grants</li>
+              <li><strong><a href="https://www.localenterprise.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">LocalEnterprise.ie</a></strong>: find your local LEO and access Grow Digital and Feasibility Grant information</li>
+              <li><strong><a href="https://www.enterprise-ireland.com/en/supports/innovation-vouchers" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland Innovation Vouchers</a></strong>: official scheme details, eligibility, and application portal</li>
+              <li><strong><a href="https://www.enterprise-ireland.com/en/supports/start-ups" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland Start-Ups</a></strong>: Competitive Start Fund and other startup-focused grants</li>
+              <li><strong><a href="https://www.cro.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Companies Registration Office (CRO)</a></strong>: check SME classification and company registration requirements</li>
+              <li><strong><a href="https://www.gov.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Gov.ie</a></strong>: official Irish government portal for business supports and grants</li>
             </ul>
 
             {/* Disclaimer */}

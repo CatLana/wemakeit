@@ -15,7 +15,7 @@ export default function FreeAuditBanner() {
             Connect with fellow business owners who want to grow.
           </h2>
           <p className="text-slate-300 text-lg leading-relaxed max-w-3xl mx-auto">
-            We are looking to connect with business owners. Whether you are an early entrepreneur or established company who want to grow your revenue and improve how your business runs online — let&rsquo;s connect!
+            We are looking to connect with business owners. Whether you are an early entrepreneur or established company who want to grow your revenue and improve how your business runs online. Let&rsquo;s connect!
           </p>
         </div>
 

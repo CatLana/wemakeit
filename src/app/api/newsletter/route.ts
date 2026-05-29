@@ -105,7 +105,7 @@ export async function POST(req: NextRequest) {
           </tr>
           <tr>
             <td style="padding:10px 12px;background:#fff;border:1px solid #E2E8F0;font-weight:600;color:#1E293B;">Consent</td>
-            <td style="padding:10px 12px;background:#fff;border:1px solid #E2E8F0;color:#22c55e;">✓ Confirmed — agreed to Privacy Policy and marketing emails</td>
+            <td style="padding:10px 12px;background:#fff;border:1px solid #E2E8F0;color:#22c55e;">✓ Confirmed: agreed to Privacy Policy and marketing emails</td>
           </tr>
         </table>
         <p style="color:#94A3B8;font-size:12px;margin-top:24px;">

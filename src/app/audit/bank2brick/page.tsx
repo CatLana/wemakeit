@@ -6,7 +6,7 @@ const BASE_URL = "https://www.wemakeit.ie";
 export const metadata: Metadata = {
   title: "Bank2Brick website audit report",
   description:
-    "Private audit report for Bank2Brick covering UX, SEO, visual design, and accessibility — with specific issues highlighted by severity and a downloadable PDF.",
+    "Private audit report for Bank2Brick covering UX, SEO, visual design, and accessibility. Specific issues highlighted by severity with a downloadable PDF.",
   robots: {
     index: false,
     follow: false,
@@ -91,7 +91,7 @@ export default function Bank2BrickAuditPage() {
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">
             A structured review across user experience, SEO, visual design, and
-            accessibility — with clear findings, prioritised fixes, and what is already
+            accessibility, with clear findings, prioritised fixes, and what is already
             working well.
           </p>
 

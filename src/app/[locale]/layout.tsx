@@ -31,8 +31,6 @@ const BASE_URL = "https://www.wemakeit.ie";
 
 const ogLocaleMap: Record<string, string> = {
   en: "en_IE",
-  it: "it_IT",
-  ru: "ru_RU",
 };
 
 export async function generateStaticParams() {
@@ -51,9 +49,6 @@ export async function generateMetadata({
     "x-default": `${BASE_URL}/en`,
     en: `${BASE_URL}/en`,
     "en-IE": `${BASE_URL}/en`,
-    it: `${BASE_URL}/it`,
-    "it-IT": `${BASE_URL}/it`,
-    ru: `${BASE_URL}/ru`,
   };
 
   return {
@@ -92,14 +87,6 @@ export async function generateMetadata({
       "web development agency meath",
       "web developer ashbourne",
       "irish grants app development",
-      "sviluppo app irlanda",
-      "sviluppo software irlanda",
-      "sviluppo web irlanda",
-      "sviluppo siti web irlanda",
-      "agenzia web irlanda",
-      "разработка приложений ирландия",
-      "веб разработка ирландия",
-      "разработка сайтов ирландия",
     ],
     authors: [{ name: "We Make IT", url: BASE_URL }],
     creator: "We Make IT",
@@ -196,10 +183,10 @@ export default async function LocaleLayout({
       "@type": "ContactPoint",
       contactType: "customer service",
       email: "info@wemakeit.ie",
-      availableLanguage: ["English", "Italian", "Russian"],
+      availableLanguage: ["English"],
     },
-    areaServed: ["IE", "IT", "CH", "RU", "EU"],
-    knowsLanguage: ["en", "it", "ru"],
+    areaServed: ["IE", "EU"],
+    knowsLanguage: ["en"],
     priceRange: "€€",
     sameAs: ["https://www.linkedin.com/in/svetlana-savchenko-08868764"],
   };

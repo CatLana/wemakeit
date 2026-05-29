@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -11,7 +11,7 @@ const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "audit";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "it" }, { locale: "ru" }];
+  return [{ locale: "en" }];
 }
 
 export async function generateMetadata({
@@ -33,8 +33,6 @@ export async function generateMetadata({
       languages: {
         "x-default": `${BASE_URL}/en/${SLUG}`,
         en: `${BASE_URL}/en/${SLUG}`,
-        it: `${BASE_URL}/it/${SLUG}`,
-        ru: `${BASE_URL}/ru/${SLUG}`,
       },
     },
     openGraph: {
@@ -96,7 +94,7 @@ export default async function AuditPage({
               </Link>
             </div>
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-4">
-              Free — No commitment
+              Free, no commitment
             </span>
             <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
               {t("title")}
