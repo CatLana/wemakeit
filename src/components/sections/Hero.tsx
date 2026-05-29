@@ -1,5 +1,6 @@
 import { MapPin, Tag } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -57,7 +58,12 @@ export default function Hero() {
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 font-medium leading-relaxed mb-6">
           {t("subtitleBody")}
           <br />
-          <span className="text-[#22D3EE] font-bold">{t("subtitleCta")}</span>
+          <a
+            href="#quote"
+            className="text-[#22D3EE] font-bold hover:underline underline-offset-2 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+          >
+            {t("subtitleCta")}
+          </a>
         </p>
 
         {/* Summer sale offer */}
@@ -68,14 +74,14 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="#quote"
+          <Link
+            href="/audit"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
           >
             {t("cta1")}
-          </a>
+          </Link>
           <a
-            href="#process"
+            href="#services"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-transparent text-white border border-white/20 font-semibold rounded-xl hover:bg-white/5 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
           >
             {t("cta2")}

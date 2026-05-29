@@ -237,7 +237,7 @@ export default function Bank2BrickAuditPage() {
             <h2 className="text-3xl font-extrabold">Ready to turn this into a fix list?</h2>
             <p className="mt-4 text-base leading-7 text-slate-300">
               We can help you prioritise the work, redesign for trust, and build something
-              that gives you full control. Request a free, no-obligation quote and we'll
+              that gives you full control. Request a free, no-obligation quote and we&apos;ll
               get back to you within 48 hours.
             </p>
             <div className="mt-8">

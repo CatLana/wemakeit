@@ -203,20 +203,13 @@ export default function Header() {
               </li>
             ))}
             <li className="mt-4">
-              <button
-                type="button"
-                onClick={() => {
-                  closeMenu();
-                  if (typeof window !== "undefined") {
-                    import("@/components/sections/Contact").then(mod => {
-                      if (mod.focusContactForm) mod.focusContactForm();
-                    });
-                  }
-                }}
+              <Link
+                href="/audit"
+                onClick={closeMenu}
                 className="flex items-center justify-center h-11 px-5 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2"
               >
                 {t("cta")}
-              </button>
+              </Link>
             </li>
           </ul>
         </nav>

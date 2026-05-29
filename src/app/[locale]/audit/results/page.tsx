@@ -45,6 +45,7 @@ export default async function AuditResultsPage({
   let siteName: string;
   try {
     const result = await runHybridAudit(normalised, strategyMode);
+    // eslint-disable-next-line react-hooks/purity -- server component, Date.now() is safe here
     const expiresAt = Date.now() + 48 * 60 * 60 * 1000;
     downloadHref = `/api/audit/pdf?url=${encodeURIComponent(result.normalisedUrl)}&strategy=${encodeURIComponent(strategyMode)}&expires=${expiresAt}`;
     try {
