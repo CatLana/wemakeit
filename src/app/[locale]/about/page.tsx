@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -60,7 +61,9 @@ async function AboutPageContent({
   const team = t.raw("team") as Array<{
     name: string;
     title: string;
+    photo?: string;
     bio: string;
+    qualifications?: Array<{ year: string; credential: string; institution: string }>;
   }>;
   const teamCollaborators = t("teamCollaborators");
 
@@ -107,27 +110,55 @@ async function AboutPageContent({
                   key={member.name}
                   className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-8 text-center"
                 >
-                  {/* Placeholder avatar */}
+                  {/* Avatar */}
                   <div className="mb-6 flex justify-center">
-                    <div className="h-32 w-32 rounded-full bg-gradient-to-br from-[#22D3EE]/20 to-[#A855F7]/20 flex items-center justify-center">
-                      <svg
-                        className="h-16 w-16 text-[#0F172A]/30"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.35-.82-6.14-2.88C7.72 15.75 9.97 15 12 15s4.28.75 6.14 2.12C16.35 19.18 14.03 20 12 20z" />
-                      </svg>
-                    </div>
+                    {member.photo ? (
+                      <Image
+                        src={member.photo}
+                        alt={member.name}
+                        width={128}
+                        height={128}
+                        className="h-32 w-32 rounded-full object-cover object-top border-2 border-[#22D3EE]/30"
+                      />
+                    ) : (
+                      <div className="h-32 w-32 rounded-full bg-gradient-to-br from-[#22D3EE]/20 to-[#A855F7]/20 flex items-center justify-center">
+                        <svg
+                          className="h-16 w-16 text-[#0F172A]/30"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.35-.82-6.14-2.88C7.72 15.75 9.97 15 12 15s4.28.75 6.14 2.12C16.35 19.18 14.03 20 12 20z" />
+                        </svg>
+                      </div>
+                    )}
                   </div>
                   <h3 className="text-xl font-bold text-[#1E293B] mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-sm font-semibold text-[#0E7490] mb-3">
+                  <p className="text-sm font-semibold text-[#0E7490] mb-4">
                     {member.title}
                   </p>
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <p className="text-sm text-slate-600 leading-relaxed mb-4">
                     {member.bio}
                   </p>
+
+                  {member.qualifications && member.qualifications.length > 0 && (
+                    <div className="border-t border-slate-200 pt-5 text-left space-y-3">
+                      {member.qualifications.map((q) => (
+                        <div key={q.credential} className="flex items-start gap-3">
+                          <span className="shrink-0 mt-0.5 rounded-md bg-[#0F172A] px-2 py-0.5 text-xs font-mono font-semibold text-[#22D3EE]">
+                            {q.year}
+                          </span>
+                          <div className="min-w-0">
+                            <p className="text-xs font-semibold text-[#1E293B] leading-snug">{q.credential}</p>
+                            {q.institution && (
+                              <p className="text-xs text-slate-400 mt-0.5">{q.institution}</p>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

@@ -1110,8 +1110,19 @@
     "teamHeading": "Meet Our Team",
     "teamSubheading": "We combine design, development, strategy, and business expertise. Most importantly, we genuinely care about your success.",
     "team": [
-      { "name": "Andrea Contarino", "title": "Chief Architect & Backend Engineer", "bio": "15+ years building scalable systems and technical foundations for products at scale. Architect of our approach to custom software and project delivery." },
-      { "name": "Svetlana Savchenko", "title": "Founder & Senior Frontend Engineer", "bio": "Frontend specialist and UX advocate. Over 8 years building interfaces that are intuitive, accessible, and genuinely usable. Founder of We Make IT." }
+      {
+        "name": "Lana",
+        "title": "Founder · Software & UX Engineer",
+        "photo": "/profile_picture.jpg",
+        "bio": "8 years of full-time software development in Ireland, building complex applications for global companies. 3 of those years as a dedicated frontend engineer building accessible component systems. Founder of We Make IT.",
+        "qualifications": [
+          { "year": "2026", "credential": "Post Graduate Certificate in Creativity, Innovation & Entrepreneurship, Level 9", "institution": "UCD Innovation Academy" },
+          { "year": "2026", "credential": "Professional Certificate in Sales Management", "institution": "UCD Academy" },
+          { "year": "2020", "credential": "Professional Diploma in UX Design (Level 8, accredited by Glasgow Caledonian University)", "institution": "UX Design Institute, Dublin" },
+          { "year": "2017", "credential": "Post Graduate Higher Diploma in Web Development, Level 8 (First Class Hons)", "institution": "Griffith College Dublin" }
+        ]
+      },
+      { "name": "Andrea", "title": "Chief Architect & Senior Software Engineer", "photo": "/images/andrea_contarino.png", "bio": "Full-stack software engineer with 20 years of experience working on global IT projects and infrastructures. Has built and maintained systems for companies including Fidelity Investments, Global Payments, and the Central Bank of Ireland. Specialist in technical architecture for medical, financial, and public administration systems.", "qualifications": [] }
     ],
     "teamCollaborators": "We also collaborate with a network of senior consultants on a contract basis. Depending on the project, we bring in the right specialists from our established collaborators, so you always get the expertise your case needs.",
     "teamPlaceholder": "Photo coming soon"
