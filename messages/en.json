@@ -1189,13 +1189,16 @@
   "book": {
     "eyebrow": "Follow-up",
     "heading": "Book a follow-up",
-    "body": "Choose the type of meeting that suits you. You will receive a confirmation email once your booking is made.",
+    "body": "Please select a time for your follow-up and make a booking. You will receive a confirmation email once your booking is made. If you have any questions or need to reschedule, please contact us directly.",
     "bookBtn": "Book now",
     "onlineLabel": "Online call",
     "onlineDuration": "30 minutes",
-    "onlineBadge": "Proton Meet",
-    "onlineDescription": "A video call via Proton Meet. You will receive a link in your confirmation email.",
-    "inpersonNote": "Prefer to meet in person? Please book an online call and mention in the notes that you would like to meet in person. We will get back to you to arrange a face-to-face meeting if you are located within 45-min drive from Ashbourne, Co. Meath.",
+    "onlineBadge": "Google Meet",
+    "onlineDescription": "A 30-minute video call via Google Meet. Pick a slot below and you will receive a confirmation with the link straight away.",
+    "contactHeading": "Prefer to meet in person, or have a question first?",
+    "contactBody": "Get in touch directly and we will sort something out.",
+    "contactWhatsapp": "Message on WhatsApp",
+    "contactEmail": "info@wemakeit.ie",
     "meta": {
       "title": "Book a follow-up | We Make IT",
       "description": "Book a follow-up call or in-person meeting with us. Choose an online video call or a face-to-face meeting."
