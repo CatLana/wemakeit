@@ -407,6 +407,7 @@
       "howItWorks": "How It Works",
       "blog": "Blog",
       "getAQuote": "Get a Quote",
+      "bookFollowUp": "Book a follow-up",
       "forEntrepreneurs": "For Small Entrepreneurs",
       "forSMEs": "For SMEs",
       "forStartups": "For Startups",
@@ -1183,6 +1184,21 @@
       "email": "Please enter a valid email address",
       "website": "Please enter a valid website address (e.g. yourwebsite.com)",
       "business": "Please tell us a bit about your business (at least 10 characters)"
+    }
+  },
+  "book": {
+    "eyebrow": "Follow-up",
+    "heading": "Book a follow-up",
+    "body": "Choose the type of meeting that suits you. You will receive a confirmation email once your booking is made.",
+    "bookBtn": "Book now",
+    "onlineLabel": "Online call",
+    "onlineDuration": "30 minutes",
+    "onlineBadge": "Google Meet",
+    "onlineDescription": "A video call via Google Meet. You will receive a link in your confirmation email.",
+    "inpersonNote": "Prefer to meet in person? Please book an online call and mention in the notes that you would like to meet in person. We will get back to you to arrange a face-to-face meeting if you are located within 45-min drive from Ashbourne, Co. Meath.",
+    "meta": {
+      "title": "Book a follow-up | We Make IT",
+      "description": "Book a follow-up call or in-person meeting with us. Choose an online video call or a face-to-face meeting."
     }
   }
 }
