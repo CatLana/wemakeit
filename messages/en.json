@@ -1189,14 +1189,14 @@
   "book": {
     "eyebrow": "Follow-up",
     "heading": "Book a follow-up",
-    "body": "Please select a time for your follow-up and make a booking. You will receive a confirmation email once your booking is made. If you have any questions or need to reschedule, please contact us directly.",
+    "body": "Please select a time slot for your follow-up and make a booking. We look forward to speaking with you!",
     "bookBtn": "Book now",
     "onlineLabel": "Online call",
     "onlineDuration": "30 minutes",
     "onlineBadge": "Google Meet",
-    "onlineDescription": "A 30-minute video call via Google Meet. Pick a slot below and you will receive a confirmation with the link straight away.",
-    "contactHeading": "Prefer to meet in person, or have a question first?",
-    "contactBody": "Get in touch directly and we will sort something out.",
+    "onlineDescription": "A 45-minute video call via Google Meet or in-person catch-up. Pick a slot below and you will receive a confirmation with the link for a video call. If you prefer meeting in-person, please book a slot and text us on WhatsApp or email to agree on the meeting location.",
+    "contactHeading": "Have questions or need to reschedule?",
+    "contactBody": "If you have any questions or need to reschedule, please contact us directly. We are happy to help!",
     "contactWhatsapp": "Message on WhatsApp",
     "contactEmail": "info@wemakeit.ie",
     "meta": {
