@@ -1193,8 +1193,8 @@
     "bookBtn": "Book now",
     "onlineLabel": "Online call",
     "onlineDuration": "30 minutes",
-    "onlineBadge": "Google Meet",
-    "onlineDescription": "A video call via Google Meet. You will receive a link in your confirmation email.",
+    "onlineBadge": "Proton Meet",
+    "onlineDescription": "A video call via Proton Meet. You will receive a link in your confirmation email.",
     "inpersonNote": "Prefer to meet in person? Please book an online call and mention in the notes that you would like to meet in person. We will get back to you to arrange a face-to-face meeting if you are located within 45-min drive from Ashbourne, Co. Meath.",
     "meta": {
       "title": "Book a follow-up | We Make IT",

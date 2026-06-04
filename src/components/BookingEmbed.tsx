@@ -11,7 +11,7 @@ export default async function BookingEmbed({ locale }: { locale: string }) {
   return (
     <div className="flex flex-col gap-6">
       <div className="rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col gap-5">
-        <span className="inline-flex items-center gap-1.5 self-start rounded-full border bg-[#22D3EE]/10 border-[#22D3EE]/30 text-[#22D3EE] px-3 py-1 text-xs font-semibold">
+        <span className="inline-flex items-center gap-1.5 self-start rounded-full border bg-[#0F172A] border-[#22D3EE]/40 text-[#22D3EE] px-3 py-1 text-xs font-semibold">
           <Video size={15} aria-hidden="true" />
           {t("onlineBadge")}
         </span>
