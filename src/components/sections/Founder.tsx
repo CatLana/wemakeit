@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import GetQuoteButton from "@/components/GetQuoteButton";
 
 export default function Founder() {
   const t = useTranslations("founder");
@@ -87,12 +88,9 @@ export default function Founder() {
               <p className="text-slate-300 leading-relaxed text-base mb-5">
                 {t("callout")}
               </p>
-              <a
-                href="#quote"
-                className="inline-flex items-center justify-center min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
-              >
+              <GetQuoteButton className="inline-flex items-center justify-center min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2">
                 {t("cta")}
-              </a>
+              </GetQuoteButton>
             </div>
 
           </div>

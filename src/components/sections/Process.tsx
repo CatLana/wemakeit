@@ -1,4 +1,5 @@
 ﻿import { useTranslations } from "next-intl";
+import GetQuoteButton from "@/components/GetQuoteButton";
 
 export default function Process() {
   const t = useTranslations("process");
@@ -54,13 +55,10 @@ export default function Process() {
 
         {/* CTA */}
         <div className="mt-14 text-center">
-          <a
-            href="#quote"
-            className="inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2"
-          >
+          <GetQuoteButton className="inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2">
             {t("cta")}
             <span aria-hidden="true" className="ml-2">↓</span>
-          </a>
+          </GetQuoteButton>
         </div>
       </div>
     </section>
