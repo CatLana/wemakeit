@@ -5,7 +5,7 @@ import { Video, Clock, ArrowRight, Mail } from "lucide-react";
 // (X-Frame-Options: SAMEORIGIN). The booking page opens in a new tab instead.
 const BOOKING_URL = "https://calendar.app.google/KXdMj1SU1hRtB6fe6";
 
-const WHATSAPP_URL = "https://wa.me/message/KKU3OE2JOK4HL1";
+const WHATSAPP_URL = "https://wa.me/353838158383";
 const EMAIL = "info@wemakeit.ie";
 
 function WhatsAppIcon() {
