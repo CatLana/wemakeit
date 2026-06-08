@@ -396,16 +396,17 @@
       "legal": "Legal"
     },
     "serviceLinks": [
-      "Website Development",
-      "SEO & Marketing",
-      "Graphic Design",
-      "Custom Software",
-      "MVP & App Development"
+      "Website design & development",
+      "App & software development",
+      "UX design & research",
+      "Accessibility audit"
     ],
     "companyLinks": {
       "aboutUs": "About Us",
       "howItWorks": "How It Works",
       "blog": "Blog",
+      "pricing": "Pricing",
+      "faq": "FAQ",
       "getAQuote": "Get a Quote",
       "bookFollowUp": "Book a follow-up",
       "forEntrepreneurs": "For Small Entrepreneurs",
@@ -415,7 +416,6 @@
     },
     "freeToolLinks": {
       "websiteAudit": "Free Website Audit",
-      "appAudit": "Free App Audit",
       "freeConsultation": "Free Consultation"
     },
     "legalLinks": {
@@ -1173,8 +1173,8 @@
     "websitePlaceholder": "www.yourwebsite.com",
     "businessLabel": "Tell us about your business",
     "businessPlaceholder": "Tell us briefly about what your business does...",
-    "focusLabel": "What's your main concern? (optional)",
-    "focusPlaceholder": "E.g., 'My site doesn't convert', 'Mobile users bounce', 'Needs an accessibility audit'",
+    "focusLabel": "What is your main goal for your website? (optional)",
+    "focusPlaceholder": "E.g. 'Get more enquiries', 'Better search rankings', 'Modern redesign', 'EAA compliance'",
     "submitBtnText": "Request my free audit",
     "submitting": "Sending\u2026",
     "successMessage": "Thank you! We've received your audit request. We'll send you a confirmation email within 24 hours.",

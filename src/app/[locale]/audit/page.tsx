@@ -94,7 +94,7 @@ export default async function AuditPage({
               </Link>
             </div>
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-4">
-              Free, no commitment
+              Worth €300. Free, no commitment.
             </span>
             <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
               {t("title")}
@@ -176,6 +176,7 @@ export default async function AuditPage({
                   {[
                     "Actionable suggestions",
                     "100% free, no commitment",
+                    "Audit worth €300, yours at no cost",
                   ].map((point) => (
                     <li key={point} className="flex items-start gap-2.5 text-sm text-slate-600">
                       <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-[#22D3EE]" aria-hidden="true" />

@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Mail, MapPin, Globe, Tag } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/message/KKU3OE2JOK4HL1";
+const WHATSAPP_URL = "https://wa.me/353838158383";
 
 function WhatsAppIcon({ size = 16 }: { size?: number }) {
   return (
@@ -26,7 +26,6 @@ export default function Footer() {
   const serviceLabels = t.raw("serviceLinks") as string[];
   const freeToolLinks = t.raw("freeToolLinks") as {
     websiteAudit: string;
-    appAudit: string;
     freeConsultation: string;
   };
 
@@ -209,10 +208,9 @@ export default function Footer() {
               {serviceLabels.map((label, index) => {
                 const serviceHrefs = [
                   "/solutions/websites",
-                  "/solutions/websites",
-                  "/solutions/websites",
                   "/solutions/software",
                   "/solutions/software",
+                  "/audit",
                 ];
                 return (
                   <li key={label}>
@@ -242,6 +240,16 @@ export default function Footer() {
               <li>
                 <Link href="/blog" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
                   {t("companyLinks.blog")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/pricing" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("companyLinks.pricing")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/pricing#faq-heading" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("companyLinks.faq")}
                 </Link>
               </li>
               <li>
@@ -289,14 +297,6 @@ export default function Footer() {
                   className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
                   {freeToolLinks.websiteAudit}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={{ pathname: "/", query: { service: "audit" }, hash: "quote" } as never}
-                  className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                >
-                  {freeToolLinks.appAudit}
                 </Link>
               </li>
               <li>
