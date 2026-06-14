@@ -153,7 +153,7 @@ export default async function LocaleLayout({
     footer:           allMessages.footer,
     about:            allMessages.about,
     contact:          allMessages.contact,
-    projectBrief:     allMessages.projectBrief,
+    brief:            allMessages.brief,
     consultationForm: allMessages.consultationForm,
     contactPage:      allMessages.contactPage,
     cookieBanner:     allMessages.cookieBanner,

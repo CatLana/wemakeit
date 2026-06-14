@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
-import { Video, Clock, ArrowRight, Mail } from "lucide-react";
+import { Video, Clock, ArrowRight, Mail, FileText } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 // Google Calendar appointment scheduling blocks cross-origin iframe embedding
 // (X-Frame-Options: SAMEORIGIN). The booking page opens in a new tab instead.
@@ -16,13 +17,31 @@ function WhatsAppIcon() {
   );
 }
 
+function StepBadge({ number, label }: { number: number; label: string }) {
+  return (
+    <div className="flex items-center gap-2.5">
+      <span
+        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#0F172A] text-[#22D3EE] text-xs font-bold"
+        aria-hidden="true"
+      >
+        {number}
+      </span>
+      <span className="text-xs font-semibold uppercase tracking-widest text-[#0E7490]">
+        {label}
+      </span>
+    </div>
+  );
+}
+
 export default async function BookingEmbed({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: "book" });
 
   return (
     <div className="flex flex-col gap-6">
-      {/* Primary: booking card */}
+      {/* Step 1: booking card */}
       <div className="rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col gap-5">
+        <StepBadge number={1} label={t("step1Label")} />
+
         <span className="inline-flex items-center gap-1.5 self-start rounded-full border bg-[#0F172A] border-[#22D3EE]/40 text-[#22D3EE] px-3 py-1 text-xs font-semibold">
           <Video size={15} aria-hidden="true" />
           {t("onlineBadge")}
@@ -49,6 +68,26 @@ export default async function BookingEmbed({ locale }: { locale: string }) {
           {t("bookBtn")}
           <ArrowRight size={15} aria-hidden="true" />
         </a>
+      </div>
+
+      {/* Step 2: pre-meeting brief */}
+      <div className="rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col gap-4">
+        <StepBadge number={2} label={t("step2Label")} />
+
+        <h2 className="text-lg font-bold text-[#1E293B]">{t("briefHeading")}</h2>
+
+        <p className="text-sm text-slate-600 leading-relaxed">
+          {t("briefBody")}
+        </p>
+
+        <Link
+          href="/brief"
+          className="inline-flex items-center justify-center gap-2 self-start rounded-lg bg-[#0F172A] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+        >
+          <FileText size={15} aria-hidden="true" />
+          {t("briefBtn")}
+          <ArrowRight size={15} aria-hidden="true" />
+        </Link>
       </div>
 
       {/* Secondary: direct contact for in-person or questions */}

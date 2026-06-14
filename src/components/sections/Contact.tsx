@@ -77,7 +77,7 @@ export default function Contact() {
               <p className="mt-8 text-xs text-slate-400 leading-relaxed">
                 Need to share more detail?{" "}
                 <Link
-                  href="/project-brief"
+                  href="/brief"
                   className="text-[#0E7490] underline underline-offset-2 hover:text-[#0891B2] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
                   Fill in our full project brief →
