@@ -3,8 +3,11 @@
 import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
 
+const STORAGE_KEY = "wemakeit_cookie_consent";
+
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
+  const [cookieBannerVisible, setCookieBannerVisible] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 300);
@@ -12,7 +15,14 @@ export default function ScrollToTop() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (!visible) return null;
+  useEffect(() => {
+    const check = () => setCookieBannerVisible(!localStorage.getItem(STORAGE_KEY));
+    check();
+    window.addEventListener("wemakeit:consent-updated", check);
+    return () => window.removeEventListener("wemakeit:consent-updated", check);
+  }, []);
+
+  if (!visible || cookieBannerVisible) return null;
 
   return (
     <button

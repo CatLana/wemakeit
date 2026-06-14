@@ -230,7 +230,7 @@
     "title": "Pre-meeting brief",
     "description": "Choose the short, optional brief that matches what you would like to talk about: your website and digital presence, or a custom software project.",
     "eyebrow": "Before our call",
-    "heading": "Fill in your brief before our call",
+    "heading": "Please fill in your brief before our call",
     "subheading": "A short, optional brief helps us prepare for your call, so our advice is tailored to your business and not generic. Choose the option below that best matches what you would like to talk about.",
     "backToBooking": "Back to booking",
     "backToOptions": "Back to brief options",
@@ -1095,7 +1095,7 @@
       }
     ],
     "requestFormTitle": "Get your free audit started",
-    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps.",
+    "requestFormSubtitle": "Please fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps.",
     "nameLabel": "Your name",
     "emailLabel": "Email address",
     "websiteLabel": "Your website URL",
@@ -1259,7 +1259,7 @@
       }
     ],
     "requestFormTitle": "Get your free audit started",
-    "requestFormSubtitle": "Fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps.",
+    "requestFormSubtitle": "Please fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps.",
     "keywords": ["free website audit ireland", "expert website review", "website performance audit", "web accessibility audit", "SEO audit ireland", "free digital presence audit", "UX audit service"],
     "nameLabel": "Your name",
     "namePlaceholder": "John Doe",
