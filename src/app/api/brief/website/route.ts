@@ -60,7 +60,7 @@ function buildHtml(data: BriefData): string {
         <tr>
           <td style="background:#0f172a;padding:28px 32px;">
             <span style="font-size:22px;font-weight:800;color:#fff;">We Make <span style="color:#22d3ee;">IT</span></span>
-            <p style="margin:8px 0 0;font-size:13px;color:#94a3b8;">New pre-meeting brief from wemakeit.ie</p>
+            <p style="margin:8px 0 0;font-size:13px;color:#94a3b8;">New website brief from wemakeit.ie</p>
           </td>
         </tr>
         <tr>
@@ -84,7 +84,7 @@ function buildHtml(data: BriefData): string {
         </tr>
         <tr>
           <td style="padding:0 32px 24px;">
-            <p style="font-size:12px;color:#94a3b8;margin:0;">This email was sent from the pre-meeting brief form at wemakeit.ie</p>
+            <p style="font-size:12px;color:#94a3b8;margin:0;">This email was sent from the website brief form at wemakeit.ie</p>
           </td>
         </tr>
       </table>
@@ -117,7 +117,7 @@ export async function POST(req: NextRequest) {
   }
 
   const replyTo = data.email && EMAIL_REGEX.test(data.email) ? data.email : undefined;
-  const subject = data.name ? `Pre-meeting brief from ${data.name}` : "New pre-meeting brief";
+  const subject = data.name ? `Website brief from ${data.name}` : "New website brief";
 
   const resend = new Resend(process.env.RESEND_API_KEY);
   const { error } = await resend.emails.send({
@@ -129,7 +129,7 @@ export async function POST(req: NextRequest) {
   });
 
   if (error) {
-    console.error("Resend error (brief):", error);
+    console.error("Resend error (website brief):", error);
     return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
   }
 

@@ -14,24 +14,47 @@ function WhatsAppIcon() {
   );
 }
 
-const QUESTION_KEYS = [
-  "form.business",
-  "form.idealCustomer",
-  "form.websiteGoal",
-  "form.notWorking",
-  "form.desiredAction",
-  "form.triedMarketing",
-  "form.competitors",
-  "form.successLooksLike",
-  "form.budgetTimeframe",
-  "form.additionalInfo",
-] as const;
+export type BriefNamespace = "websiteBrief" | "softwareBrief" | "generalBrief";
 
-export default function AudioBriefSection() {
-  const t = useTranslations("brief");
+const QUESTION_KEYS: Record<BriefNamespace, readonly string[]> = {
+  websiteBrief: [
+    "form.business",
+    "form.idealCustomer",
+    "form.websiteGoal",
+    "form.notWorking",
+    "form.desiredAction",
+    "form.triedMarketing",
+    "form.competitors",
+    "form.successLooksLike",
+    "form.budgetTimeframe",
+    "form.additionalInfo",
+  ],
+  softwareBrief: [
+    "form.projectType",
+    "form.problem",
+    "form.outcome",
+    "form.users",
+    "form.currentProcess",
+    "form.integrations",
+    "form.mustHaveFeatures",
+    "form.timeline",
+    "form.budget",
+  ],
+  generalBrief: [
+    "form.business",
+    "form.challenge",
+    "form.triedSoFar",
+    "form.successLooksLike",
+    "form.budgetTimeframe",
+    "form.additionalInfo",
+  ],
+};
+
+export default function AudioBriefSection({ namespace }: { namespace: BriefNamespace }) {
+  const t = useTranslations(namespace);
   const [copied, setCopied] = useState(false);
 
-  const questions = QUESTION_KEYS.map((key) => t(key));
+  const questions = QUESTION_KEYS[namespace].map((key) => t(key));
 
   async function handleCopy() {
     try {

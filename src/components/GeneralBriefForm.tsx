@@ -3,51 +3,21 @@
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
+import { Field, inputBase, textareaBase } from "@/components/BriefFormFields";
 
 type FormValues = {
   name?: string;
   email?: string;
   business?: string;
-  idealCustomer?: string;
-  websiteGoal?: string;
-  notWorking?: string;
-  desiredAction?: string;
-  triedMarketing?: string;
-  competitors?: string;
+  challenge?: string;
+  triedSoFar?: string;
   successLooksLike?: string;
   budgetTimeframe?: string;
   additionalInfo?: string;
 };
 
-function Field({
-  id,
-  label,
-  hint,
-  children,
-}: {
-  id: string;
-  label: string;
-  hint?: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <label htmlFor={id} className="text-sm font-medium text-[#1E293B]">
-        {label}
-      </label>
-      {hint && <p className="text-xs text-slate-400">{hint}</p>}
-      {children}
-    </div>
-  );
-}
-
-const inputBase =
-  "w-full px-4 py-3 rounded-lg border border-slate-200 text-sm text-[#1E293B] placeholder:text-slate-400 bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE]";
-
-const textareaBase = `${inputBase} resize-y min-h-[88px]`;
-
-export default function BriefForm() {
-  const t = useTranslations("brief");
+export default function GeneralBriefForm() {
+  const t = useTranslations("generalBrief");
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
   const successRef = useRef<HTMLDivElement>(null);
@@ -65,7 +35,7 @@ export default function BriefForm() {
   async function onSubmit(data: FormValues) {
     setServerError(null);
     try {
-      const res = await fetch("/api/brief", {
+      const res = await fetch("/api/brief/general", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -120,9 +90,9 @@ export default function BriefForm() {
     >
       {/* Contact details */}
       <div className="grid sm:grid-cols-2 gap-5">
-        <Field id="bf-name" label={t("form.name")}>
+        <Field id="gb-name" label={t("form.name")}>
           <input
-            id="bf-name"
+            id="gb-name"
             type="text"
             autoComplete="name"
             placeholder={t("form.namePlaceholder")}
@@ -131,9 +101,9 @@ export default function BriefForm() {
           />
         </Field>
 
-        <Field id="bf-email" label={t("form.email")} hint={t("form.emailHint")}>
+        <Field id="gb-email" label={t("form.email")} hint={t("form.emailHint")}>
           <input
-            id="bf-email"
+            id="gb-email"
             type="email"
             autoComplete="email"
             placeholder={t("form.emailPlaceholder")}
@@ -145,44 +115,28 @@ export default function BriefForm() {
 
       <hr className="border-slate-200" />
 
-      <Field id="bf-business" label={t("form.business")}>
-        <textarea id="bf-business" rows={2} placeholder={t("form.businessPlaceholder")} className={textareaBase} {...register("business")} />
+      <Field id="gb-business" label={t("form.business")}>
+        <textarea id="gb-business" rows={2} placeholder={t("form.businessPlaceholder")} className={textareaBase} {...register("business")} />
       </Field>
 
-      <Field id="bf-idealCustomer" label={t("form.idealCustomer")}>
-        <textarea id="bf-idealCustomer" rows={2} placeholder={t("form.idealCustomerPlaceholder")} className={textareaBase} {...register("idealCustomer")} />
+      <Field id="gb-challenge" label={t("form.challenge")}>
+        <textarea id="gb-challenge" rows={2} placeholder={t("form.challengePlaceholder")} className={textareaBase} {...register("challenge")} />
       </Field>
 
-      <Field id="bf-websiteGoal" label={t("form.websiteGoal")}>
-        <textarea id="bf-websiteGoal" rows={2} placeholder={t("form.websiteGoalPlaceholder")} className={textareaBase} {...register("websiteGoal")} />
+      <Field id="gb-triedSoFar" label={t("form.triedSoFar")}>
+        <textarea id="gb-triedSoFar" rows={2} placeholder={t("form.triedSoFarPlaceholder")} className={textareaBase} {...register("triedSoFar")} />
       </Field>
 
-      <Field id="bf-notWorking" label={t("form.notWorking")}>
-        <textarea id="bf-notWorking" rows={2} placeholder={t("form.notWorkingPlaceholder")} className={textareaBase} {...register("notWorking")} />
+      <Field id="gb-successLooksLike" label={t("form.successLooksLike")}>
+        <textarea id="gb-successLooksLike" rows={2} placeholder={t("form.successLooksLikePlaceholder")} className={textareaBase} {...register("successLooksLike")} />
       </Field>
 
-      <Field id="bf-desiredAction" label={t("form.desiredAction")}>
-        <textarea id="bf-desiredAction" rows={2} placeholder={t("form.desiredActionPlaceholder")} className={textareaBase} {...register("desiredAction")} />
+      <Field id="gb-budgetTimeframe" label={t("form.budgetTimeframe")}>
+        <textarea id="gb-budgetTimeframe" rows={2} placeholder={t("form.budgetTimeframePlaceholder")} className={textareaBase} {...register("budgetTimeframe")} />
       </Field>
 
-      <Field id="bf-triedMarketing" label={t("form.triedMarketing")}>
-        <textarea id="bf-triedMarketing" rows={2} placeholder={t("form.triedMarketingPlaceholder")} className={textareaBase} {...register("triedMarketing")} />
-      </Field>
-
-      <Field id="bf-competitors" label={t("form.competitors")}>
-        <textarea id="bf-competitors" rows={2} placeholder={t("form.competitorsPlaceholder")} className={textareaBase} {...register("competitors")} />
-      </Field>
-
-      <Field id="bf-successLooksLike" label={t("form.successLooksLike")}>
-        <textarea id="bf-successLooksLike" rows={2} placeholder={t("form.successLooksLikePlaceholder")} className={textareaBase} {...register("successLooksLike")} />
-      </Field>
-
-      <Field id="bf-budgetTimeframe" label={t("form.budgetTimeframe")}>
-        <textarea id="bf-budgetTimeframe" rows={2} placeholder={t("form.budgetTimeframePlaceholder")} className={textareaBase} {...register("budgetTimeframe")} />
-      </Field>
-
-      <Field id="bf-additionalInfo" label={t("form.additionalInfo")}>
-        <textarea id="bf-additionalInfo" rows={2} placeholder={t("form.additionalInfoPlaceholder")} className={textareaBase} {...register("additionalInfo")} />
+      <Field id="gb-additionalInfo" label={t("form.additionalInfo")}>
+        <textarea id="gb-additionalInfo" rows={2} placeholder={t("form.additionalInfoPlaceholder")} className={textareaBase} {...register("additionalInfo")} />
       </Field>
 
       {serverError && (

@@ -228,13 +228,38 @@
   },
   "brief": {
     "title": "Pre-meeting brief",
-    "description": "A short, optional brief to help us prepare for your call. Tell us about your business and goals so our advice is tailored to you, not generic.",
+    "description": "Choose the short, optional brief that matches what you would like to talk about: your website and digital presence, or a custom software project.",
     "eyebrow": "Before our call",
+    "heading": "Fill in your brief before our call",
+    "subheading": "A short, optional brief helps us prepare for your call, so our advice is tailored to your business and not generic. Choose the option below that best matches what you would like to talk about.",
+    "backToBooking": "Back to booking",
+    "backToOptions": "Back to brief options",
+    "options": {
+      "website": {
+        "title": "Website & digital presence",
+        "description": "For businesses reviewing their website, branding, or online presence and looking to attract more of the right visitors.",
+        "cta": "Start the website brief"
+      },
+      "software": {
+        "title": "Custom software",
+        "description": "For founders and teams exploring a custom application, internal tool, or integration to support how they work.",
+        "cta": "Start the software brief"
+      },
+      "general": {
+        "prompt": "Not sure?",
+        "linkText": "Fill in the general brief"
+      }
+    }
+  },
+  "websiteBrief": {
+    "title": "Website brief",
+    "description": "A short, optional brief about your website and digital presence to help us prepare for your call. Tell us about your business and goals so our advice is tailored to you, not generic.",
+    "eyebrow": "Website & digital presence",
     "heading": "Help us get to know your business",
     "subheading": "This short brief helps us build a clearer picture of your business and its goals, so the ideas we bring to our call are tailored to you, not generic. We want to personalise our advice to help your business become more successful.",
     "intro": "Every question is optional. Answer as many or as few as you like, whatever helps us prepare for our conversation.",
     "form": {
-      "ariaLabel": "Pre-meeting brief form",
+      "ariaLabel": "Website brief form",
       "name": "Your name",
       "namePlaceholder": "Jane Murphy",
       "email": "Your email",
@@ -265,6 +290,113 @@
       "success": {
         "title": "Thanks, brief received!",
         "body": "We'll read this before our call so we can focus on what matters most to your business."
+      },
+      "serverError": "Something went wrong. Please try again.",
+      "networkError": "Could not reach the server. Please check your connection and try again."
+    },
+    "audio": {
+      "formNotePrefix": "Prefer not to type?",
+      "formNoteLink": "Send us a voice message on WhatsApp instead",
+      "eyebrow": "Another option",
+      "heading": "Rather record a voice message?",
+      "body": "If typing isn't for you, send us a voice note on WhatsApp instead. Read through the questions below and answer as many as you like, in your own words.",
+      "whatsappBtn": "Message us on WhatsApp",
+      "questionsHeading": "Questions to talk through",
+      "copyBtn": "Copy questions",
+      "copiedBtn": "Copied"
+    }
+  },
+  "softwareBrief": {
+    "title": "Custom software brief",
+    "description": "A short, optional brief about your software project to help us prepare for your call. Tell us about the problem you're solving and your goals so our advice is tailored to you, not generic.",
+    "eyebrow": "Custom software",
+    "heading": "Help us understand your project",
+    "subheading": "This short brief helps us build a clearer picture of the problem you're solving and how your team works, so the ideas we bring to our call are tailored to your project, not generic. We want to personalise our advice to help you make the right decisions early.",
+    "intro": "Every question is optional. Answer as many or as few as you like, whatever helps us prepare for our conversation.",
+    "form": {
+      "ariaLabel": "Custom software brief form",
+      "name": "Your name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Your email",
+      "emailPlaceholder": "jane@company.ie",
+      "emailHint": "So we can match this to your booking.",
+      "sections": {
+        "projectType": "Project type",
+        "problemAndGoals": "Problem and goals",
+        "usersAndWorkflows": "Users and workflows",
+        "toolsAndIntegrations": "Existing tools and integrations",
+        "scopeAndBudget": "Scope, timeline and budget"
+      },
+      "projectType": "What kind of project is this?",
+      "projectTypePlaceholder": "e.g. A new customer portal, an internal tool for staff, or automating a manual process.",
+      "problem": "What problem are you trying to solve?",
+      "problemPlaceholder": "e.g. Our team spends hours every week copying data between spreadsheets and our accounting software.",
+      "outcome": "What outcome do you want?",
+      "outcomePlaceholder": "e.g. Save the team a day a week and cut down on errors in our reporting.",
+      "users": "Who will use this software?",
+      "usersPlaceholder": "e.g. Our five-person operations team, and eventually our customers too.",
+      "currentProcess": "How are you doing this today?",
+      "currentProcessPlaceholder": "e.g. A mix of spreadsheets, email, and a paper diary.",
+      "integrations": "What systems does it need to connect with?",
+      "integrationsPlaceholder": "e.g. Our accounting software, website, or a booking system.",
+      "mustHaveFeatures": "What features are must-have for version 1?",
+      "mustHaveFeaturesPlaceholder": "e.g. Logging jobs, automatic reminders, and a simple dashboard.",
+      "timeline": "What is your timeline?",
+      "timelinePlaceholder": "e.g. Ready to start next month, with a goal to launch within three months.",
+      "budget": "What budget range are you considering?",
+      "budgetPlaceholder": "e.g. Around €5,000 to €10,000.",
+      "submit": "Send my brief",
+      "submitting": "Sending…",
+      "success": {
+        "title": "Thanks, brief received!",
+        "body": "We'll read this before our call so we can focus on what matters most to your project."
+      },
+      "serverError": "Something went wrong. Please try again.",
+      "networkError": "Could not reach the server. Please check your connection and try again."
+    },
+    "audio": {
+      "formNotePrefix": "Prefer not to type?",
+      "formNoteLink": "Send us a voice message on WhatsApp instead",
+      "eyebrow": "Another option",
+      "heading": "Rather record a voice message?",
+      "body": "If typing isn't for you, send us a voice note on WhatsApp instead. Read through the questions below and answer as many as you like, in your own words.",
+      "whatsappBtn": "Message us on WhatsApp",
+      "questionsHeading": "Questions to talk through",
+      "copyBtn": "Copy questions",
+      "copiedBtn": "Copied"
+    }
+  },
+  "generalBrief": {
+    "title": "General brief",
+    "description": "A short, optional brief to help us prepare for your call, whatever you're exploring. Tell us about your business and what's on your mind so our advice is tailored to you, not generic.",
+    "eyebrow": "Not sure where to start",
+    "heading": "Tell us a bit about what's on your mind",
+    "subheading": "Not sure whether you need a new website or custom software? No problem. This short brief helps us understand your business and what you're hoping to achieve, so we can point the conversation in the right direction.",
+    "intro": "Every question is optional. Answer as many or as few as you like, whatever helps us prepare for our conversation.",
+    "form": {
+      "ariaLabel": "General brief form",
+      "name": "Your name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Your email",
+      "emailPlaceholder": "jane@company.ie",
+      "emailHint": "So we can match this to your booking.",
+      "business": "Tell us about your business, what you do and who you serve.",
+      "businessPlaceholder": "e.g. We run a small accountancy practice offering bookkeeping, tax returns, and payroll for sole traders.",
+      "challenge": "What's the main challenge or opportunity you'd like to discuss?",
+      "challengePlaceholder": "e.g. Our booking process is all manual and it's costing us time, or our website doesn't reflect how the business has grown.",
+      "triedSoFar": "What have you already tried, or what's currently in place, if anything?",
+      "triedSoFarPlaceholder": "e.g. We have an old website from a few years ago, or we manage this with spreadsheets.",
+      "successLooksLike": "What would a great outcome look like for you?",
+      "successLooksLikePlaceholder": "e.g. A clear plan for what to do first, or more enquiries from the right customers.",
+      "budgetTimeframe": "What is your budget or timeframe?",
+      "budgetTimeframePlaceholder": "e.g. Around €2,000 to €5,000, ready to start in the next month or two.",
+      "additionalInfo": "Is there anything else I should know before the call?",
+      "additionalInfoPlaceholder": "Anything else that would help us prepare.",
+      "submit": "Send my brief",
+      "submitting": "Sending…",
+      "success": {
+        "title": "Thanks, brief received!",
+        "body": "We'll read this before our call so we can point the conversation in the right direction."
       },
       "serverError": "Something went wrong. Please try again.",
       "networkError": "Could not reach the server. Please check your connection and try again."
@@ -1162,8 +1294,8 @@
     "onlineBadge": "Google Meet",
     "onlineDescription": "A 45-minute video call via Google Meet or in-person catch-up. Pick a slot below and you will receive a confirmation with the link for a video call. If you prefer meeting in-person, please book a slot and text us on WhatsApp or email to agree on the meeting location.",
     "briefHeading": "Help us prepare for the call",
-    "briefBody": "Once you have booked your slot, take a couple of minutes to fill in a short brief about your business. It is completely optional, but it helps us tailor the call to you rather than give generic advice.",
-    "briefBtn": "Fill in the pre-meeting brief",
+    "briefBody": "Once you have booked your slot, take a couple of minutes to fill in a short brief. Choose whichever matches what you are exploring with us, your website and digital presence, or a custom software project. It is completely optional, but it helps us tailor the call to you rather than give generic advice.",
+    "briefBtn": "Choose your pre-meeting brief",
     "contactHeading": "Have questions or need to reschedule?",
     "contactBody": "If you have any questions or need to reschedule, please contact us directly. We are happy to help!",
     "contactWhatsapp": "Message on WhatsApp",
