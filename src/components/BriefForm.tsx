@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
 
@@ -50,8 +50,17 @@ export default function BriefForm() {
   const t = useTranslations("brief");
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
+  const successRef = useRef<HTMLDivElement>(null);
 
   const { register, handleSubmit, formState: { isSubmitting } } = useForm<FormValues>();
+
+  useEffect(() => {
+    if (!submitted) return;
+    const el = successRef.current;
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - 96;
+    window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+  }, [submitted]);
 
   async function onSubmit(data: FormValues) {
     setServerError(null);
@@ -67,7 +76,6 @@ export default function BriefForm() {
         return;
       }
       setSubmitted(true);
-      window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
       setServerError(t("form.networkError"));
     }
@@ -76,8 +84,10 @@ export default function BriefForm() {
   if (submitted) {
     return (
       <div
+        ref={successRef}
         role="status"
         aria-live="polite"
+        tabIndex={-1}
         className="flex flex-col items-center justify-center text-center py-20"
       >
         <div className="w-16 h-16 rounded-full bg-[#22D3EE]/15 flex items-center justify-center mb-5">
