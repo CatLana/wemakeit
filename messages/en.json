@@ -227,11 +227,11 @@
     }
   },
   "brief": {
-    "title": "Pre-meeting brief",
+    "title": "Tell us about your business",
     "description": "Choose the short, optional brief that matches what you would like to talk about: your website and digital presence, or a custom software project.",
-    "eyebrow": "Before our call",
-    "heading": "Please fill in your brief before our call",
-    "subheading": "A short, optional brief helps us prepare for your call, so our advice is tailored to your business and not generic. Choose the option below that best matches what you would like to talk about.",
+    "eyebrow": "Get to know your business",
+    "heading": "Tell us about your business and goals",
+    "subheading": "A short, optional brief helps us understand your business and goals, so any advice we give is tailored to you and not generic. Choose the option below that best matches what you would like to talk about.",
     "backToBooking": "Back to booking",
     "backToOptions": "Back to brief options",
     "options": {
