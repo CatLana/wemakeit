@@ -11,6 +11,7 @@
       "whatWeDo": "Services",
       "aboutUs": "About",
       "howItWorks": "How It Works",
+      "ourWork": "Our work",
       "blog": "Resources",
       "talkToUs": "Contact"
     },
@@ -94,6 +95,63 @@
           "UX research and architecture consulting"
         ],
         "cta": "Explore for startups"
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Our work",
+    "headingPlain": "Apps we've",
+    "headingAccent": "built and shipped",
+    "subheading": "Live products we've designed, built, and keep running for real users today.",
+    "viewAllCta": "See all our work",
+    "visitCta": "Visit live site",
+    "liveLabel": "Live preview",
+    "screenshotComingSoon": "Screenshot coming soon",
+    "closingHeading": "Want something like this built for you?",
+    "closingBody": "Every app here started as a brief, just like yours could. Tell us what you're trying to build.",
+    "closingCta": "Talk to us",
+    "apps": [
+      {
+        "name": "We Make It Happen",
+        "tagline": "Conversation games · Progressive web app",
+        "description": "Free conversation games that help couples talk, reconnect, and understand each other. Works as a progressive web app on both desktop and mobile.",
+        "url": "https://www.wemakeithappen.ie",
+        "embed": "live",
+        "image": "",
+        "imageAlt": "",
+        "accentColor": "#4A1A6E",
+        "tags": ["React", "Vite", "PWA"],
+        "metrics": [
+          { "value": "Free", "label": "to play" }
+        ]
+      },
+      {
+        "name": "Love. Eat. KeepFit.",
+        "tagline": "Meal planning · Website",
+        "description": "The marketing site explaining how the meal-planning service works: how it works, recipes, and pricing, before you sign up.",
+        "url": "https://www.loveeatkeepfit.ie",
+        "embed": "live",
+        "image": "",
+        "imageAlt": "",
+        "accentColor": "#1D5A57",
+        "tags": ["Next.js", "Supabase"],
+        "metrics": []
+      },
+      {
+        "name": "Love. Eat. KeepFit. App",
+        "tagline": "Meal planning · Progressive web app",
+        "description": "The weekly meal planner and shopping list itself: custom plans that keep busy people in a calorie deficit, without tracking a single calorie.",
+        "url": "https://www.loveeatkeepfit.ie/auth/signup",
+        "embed": "screenshot",
+        "image": "/images/loveeatkeepfit_app_screen.jpeg",
+        "imageAlt": "Love. Eat. KeepFit. app showing a day's meal plan with calories and macros",
+        "accentColor": "#1D5A57",
+        "tags": ["Next.js", "Supabase", "PWA"],
+        "metrics": [
+          { "value": "Free", "label": "to get started" },
+          { "value": "~30 min", "label": "cooking per day" },
+          { "value": "0", "label": "calories to track" }
+        ]
       }
     ]
   },
@@ -499,6 +557,7 @@
     "companyLinks": {
       "aboutUs": "About Us",
       "howItWorks": "How It Works",
+      "ourWork": "Our work",
       "blog": "Blog",
       "pricing": "Pricing",
       "faq": "FAQ",
@@ -1185,6 +1244,15 @@
     "finalCtaBody": "Let's talk about your vision. We'll help you shape the right MVP roadmap and discuss options.",
     "finalCta": "Send us a Message"
   },
+  "workPage": {
+    "metadata": {
+      "title": "Our work: apps we've built and shipped | We Make IT",
+      "description": "See the live apps We Make IT has designed, built, and keeps running for real users today, including tech stack and links to visit each one.",
+      "ogTitle": "Our work | We Make IT",
+      "ogDescription": "Live apps we've designed, built, and keep running for real users today."
+    },
+    "breadcrumbName": "Our work"
+  },
   "aboutPage": {
     "metadata": {
       "title": "About We Make IT - Meet Our Team",
@@ -1219,7 +1287,7 @@
           { "year": "2017", "credential": "Post Graduate Higher Diploma in Web Development, Level 8 (First Class Hons)", "institution": "Griffith College Dublin" }
         ]
       },
-      { "name": "Andrea", "title": "Chief Architect & Senior Software Engineer", "photo": "/images/andrea_contarino.png", "bio": "Full-stack software engineer with 20 years of experience working on global IT projects and infrastructures. Has built and maintained systems for companies including Fidelity Investments, Global Payments, and the Central Bank of Ireland. Specialist in technical architecture for medical, financial, and public administration systems.", "qualifications": [] }
+      { "name": "Andrea", "title": "Chief Architect & Senior Software Engineer", "photo": "/images/andrea_contarino.jpg", "bio": "Full-stack software engineer with 20 years of experience working on global IT projects and infrastructures. Has built and maintained systems for companies including Fidelity Investments, Global Payments, and the Central Bank of Ireland. Specialist in technical architecture for medical, financial, and public administration systems.", "qualifications": [] }
     ],
     "teamCollaborators": "We also collaborate with a network of senior consultants on a contract basis. Depending on the project, we bring in the right specialists from our established collaborators, so you always get the expertise your case needs.",
     "teamPlaceholder": "Photo coming soon"

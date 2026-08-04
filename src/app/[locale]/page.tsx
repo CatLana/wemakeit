@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import Services from "@/components/sections/Services";
+import Work from "@/components/sections/Work";
 import About from "@/components/sections/About";
 import CtaStrip from "@/components/sections/CtaStrip";
 import FreeAuditBanner from "@/components/sections/FreeAuditBanner";
@@ -96,6 +97,7 @@ export default async function HomePage({
       <main id="main-content" tabIndex={-1}>
         <Hero />
         <Services />
+        <Work />
         <Stats />
         <About />
         <FreeAuditBanner />

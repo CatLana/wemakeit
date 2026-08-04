@@ -37,6 +37,7 @@ const pages: {
   { path: "/solutions/for-websites",                 priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/solutions/for-software",                 priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/services",                               priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
+  { path: "/work",                                   priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-08-04") },
   { path: "/book",                                   priority: 0.5, changeFrequency: "monthly", lastModified: new Date("2026-06-08") },
   { path: "/privacy-policy",                         priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
   { path: "/cookie-policy",                          priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
