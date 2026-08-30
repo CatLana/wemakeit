@@ -378,7 +378,7 @@ export default async function ArticlePage({
               <li>
                 <strong>Proton Sheets included</strong>: Proton now has its
                 own encrypted spreadsheet tool. You can recreate the full
-                expenses tracker setup inside Proton&apos;s ecosystem without
+                expenses tracker setup inside Proton&apos;s own apps without
                 touching Google at all
               </li>
               <li>
@@ -488,7 +488,7 @@ export default async function ArticlePage({
               accounting app. If your business brings in under €50,000 per
               year, you can use its full invoicing and expense tracking
               features at no cost. Paid plans start around €10 per month
-              (billed annually) and unlock additional users, inventory
+              (billed annually) and add more users, inventory
               management, and more advanced reporting. Zoho states it does not
               use third-party tracking tools on its own products and hosts data
               in its own data centres. It supports EUR, handles VAT, and works
@@ -562,7 +562,7 @@ export default async function ArticlePage({
               free plan that includes basic expense tracking, invoicing, and
               client management. The free tier is limited to 15 documents per
               period, which suits very low-volume businesses. Premium plans
-              unlock unlimited documents, recurring invoices, and more
+              include unlimited documents, recurring invoices, and more
               automation features.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-8">
@@ -931,7 +931,7 @@ export default async function ArticlePage({
                 Building a business and need a digital product?
               </p>
               <p className="text-slate-400 text-sm mb-6">
-                Whether you need an MVP, a client portal, or a full web app, we would love to hear your idea. Free first consultation, no
+                Need an MVP, a client portal, or a full web app? We would love to hear your idea. Free first consultation, no
                 commitment.
               </p>
               <Link

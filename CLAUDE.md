@@ -42,7 +42,7 @@ npm run lint
 - Follow existing brand tokens and layout patterns
 - Write headings in sentence case
 - Prefer short, clear sentences over clever copy
-- Avoid these words in user-facing copy: leverage, utilise, robust, seamless, game-changing, transformative, elevate, empower, streamline
+- No em dashes or en dashes as sentence punctuation. No AI-sounding buzzwords (leverage, robust, seamless, streamline, etc.) or sentence patterns ("Whether you're X or Y...", "It's not X, it's Y", "No X, no Y, just Z"). Full list and rewrite guidance: `.github/instructions/content.instructions.md`
 
 ## Working style
 

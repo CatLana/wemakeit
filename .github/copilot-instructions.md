@@ -122,6 +122,19 @@ Never use any of the following. They read as AI-generated and undermine trust:
 - at the end of the day
 - touch base, circle back
 - going forward (just use "from now on" or restructure)
+- vibrant, boast/boasts, testament to
+- top-notch, world-class, unmatched, unparalleled
+- tapestry, myriad, plethora (just list the things)
+- crucial, pivotal (use "important" or cut it)
+- meticulous/meticulously, underscore, multifaceted, foster
+
+### Sentence patterns to avoid
+These read as AI-generated even with no single forbidden word:
+- "Whether you're X or Y..." as an audience-address opener. Rewrite as a direct statement instead.
+- "It's not X, it's Y" / "That's not X, that's Y" negation pairs. Say the positive thing once.
+- "No X, no Y, just Z" negation triads. State what you offer directly.
+- "In today's fast-paced/digital world" or any "in today's X" opener. Cut it.
+- "Dive into" / "deep dive" / "unpack". Use "look at", "cover", or "explain".
 
 ### Emojis
 - **No emojis** in any page content, component JSX, email templates, or metadata.

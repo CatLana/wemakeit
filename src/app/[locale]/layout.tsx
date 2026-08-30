@@ -102,7 +102,7 @@ export async function generateMetadata({
           url: `${BASE_URL}/images/wemakeit_thumbnail.png`,
           width: 1200,
           height: 630,
-          alt: "We Make IT – Custom App & Web Development Ireland",
+          alt: "We Make IT: Custom App & Web Development Ireland",
         },
       ],
     },

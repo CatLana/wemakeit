@@ -358,7 +358,7 @@ export default async function ArticlePage({
             <p className="text-slate-600 leading-relaxed text-base mb-10">
               Each experiment produces data. Measure it, learn from it, and
               either iterate or pivot. This is the core of the{" "}
-              <strong>Build–Measure–Learn</strong> loop from Lean Startup, and
+              <strong>Build-Measure-Learn</strong> loop from Lean Startup, and
               it is the fastest known way to reduce the risk of a new product.
               The{" "}
               <a

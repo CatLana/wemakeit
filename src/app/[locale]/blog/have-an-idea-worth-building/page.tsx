@@ -236,7 +236,7 @@ export default async function ArticlePage({
                 <strong>Customer interviews (free, most valuable).</strong> Talk to 10 to 15 people who match your target. Ask about the problem, not about your solution. Listen carefully. If the problem does not come up unprompted, it may not be as painful as you think.
               </li>
               <li>
-                <strong>A simple landing page (low cost).</strong> Describe the product in one sentence and ask people to sign up for early access. The sign-up rate tells you whether the idea resonates. Tools like Carrd or Webflow make this cheap and fast.
+                <strong>A simple landing page (low cost).</strong> Describe the product in one sentence and ask people to sign up for early access. The sign-up rate tells you whether people actually want it. Tools like Carrd or Webflow make this cheap and fast.
               </li>
               <li>
                 <strong>A clickable prototype (affordable).</strong> A prototype shows people the product experience without any code behind it. You can test whether the design makes sense and whether people understand how to use it before committing to a build.

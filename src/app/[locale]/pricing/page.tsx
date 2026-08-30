@@ -49,7 +49,7 @@ const services = [
   {
     name: "Landing page",
     price: "from €700",
-    description: "A single focused page built to convert — ideal for a product launch, a campaign, or a service you want to promote.",
+    description: "A single focused page built to convert. Ideal for a product launch, a campaign, or a service you want to promote.",
   },
   {
     name: "Website build",
@@ -59,7 +59,7 @@ const services = [
   {
     name: "Accessibility & UX audit",
     price: "from €1,500",
-    description: "A scored report covering WCAG 2.1 AA compliance, UX issues, and SEO gaps — with a prioritised list of what to fix first.",
+    description: "A scored report covering WCAG 2.1 AA compliance, UX issues, and SEO gaps, with a prioritised list of what to fix first.",
   },
   {
     name: "Custom web application",
@@ -94,7 +94,7 @@ export default async function PricingPage({
     areaServed: ["IE", "EU"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "We Make IT — Pricing",
+      name: "We Make IT Pricing",
       itemListElement: [
         { "@type": "Offer", name: "Landing Page", price: "700", priceCurrency: "EUR" },
         { "@type": "Offer", name: "Website Build", price: "1500", priceCurrency: "EUR" },
@@ -223,7 +223,7 @@ export default async function PricingPage({
               <div>
                 <h3 className="font-bold text-[#1E293B] mb-2">How do I get an exact price?</h3>
                 <p className="text-slate-600">
-                  Fill in the quote form and describe what you need. We will review it and send you a fixed price within 24 hours. No vague estimates, no obligation.
+                  Fill in the quote form and describe what you need. We will review it and send you a fixed price within 24 hours, with no obligation to go ahead.
                 </p>
               </div>
               <div>

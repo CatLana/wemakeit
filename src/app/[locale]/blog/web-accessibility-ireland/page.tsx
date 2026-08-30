@@ -26,7 +26,7 @@ export async function generateMetadata({
     title:
       "Web Accessibility in Ireland: What the European Accessibility Act Means for Your Business",
     description:
-      "From June 2025, the European Accessibility Act extends legal web accessibility requirements to private businesses in Ireland and across the EU. Here is what you need to know — and practical steps you can take now.",
+      "From June 2025, the European Accessibility Act extends legal web accessibility requirements to private businesses in Ireland and across the EU. Here is what you need to know, and the practical steps you can take now.",
     alternates: {
       canonical: canonicalUrl,
       languages: {
@@ -49,7 +49,7 @@ export async function generateMetadata({
           url: `${BASE_URL}/images/wemakeit_thumbnail.png`,
           width: 1200,
           height: 630,
-          alt: "Web Accessibility in Ireland — European Accessibility Act guide",
+          alt: "Web Accessibility in Ireland: European Accessibility Act guide",
         },
       ],
     },
@@ -191,8 +191,8 @@ export default async function ArticlePage({
               What is web accessibility?
             </h2>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
-              Web accessibility means building digital products — websites, apps,
-              and online services — so that anyone can use them regardless of
+              Web accessibility means building digital products, websites, apps,
+              and online services, so that anyone can use them regardless of
               disability. That includes:
             </p>
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 leading-relaxed">
@@ -281,16 +281,16 @@ export default async function ArticlePage({
                 73% of Ireland&apos;s top 100 companies failed basic web
                 accessibility checks
               </strong>{" "}
-              — and the EU Accessibility Directive had already been in force for
-              two years at that point.
+              even though the EU Accessibility Directive had already been in
+              force for two years at that point.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
               With the EAA now covering private businesses too, that statistic
               represents a significant compliance gap. The good news: most
-              accessibility issues are fixable. Many of the most common failures
-              — missing alt text, poor colour contrast, unlabelled form fields —
-              do not require a full rebuild. They can often be resolved in days,
-              not months.
+              accessibility issues are fixable. Many of the most common failures,
+              like missing alt text, poor colour contrast, and unlabelled form
+              fields, do not require a full rebuild. They can often be resolved
+              in days, not months.
             </p>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">
@@ -447,8 +447,8 @@ export default async function ArticlePage({
                   >
                     W3C Web Accessibility Initiative (WAI)
                   </a>
-                </strong>{" "}
-                — The official home of WCAG 2.1, with plain-language summaries
+                </strong>
+                : the official home of WCAG 2.1, with plain-language summaries
                 and a developer quick-reference
               </li>
               <li>
@@ -461,8 +461,8 @@ export default async function ArticlePage({
                   >
                     National Disability Authority (NDA)
                   </a>
-                </strong>{" "}
-                — Ireland&apos;s oversight body for public sector accessibility
+                </strong>
+                : Ireland&apos;s oversight body for public sector accessibility
                 and a source of practical Irish-specific guidance
               </li>
               <li>
@@ -475,8 +475,8 @@ export default async function ArticlePage({
                   >
                     WebAIM Contrast Checker
                   </a>
-                </strong>{" "}
-                — A free tool to instantly test colour contrast ratios against
+                </strong>
+                : a free tool to instantly test colour contrast ratios against
                 WCAG thresholds
               </li>
               <li>
@@ -487,10 +487,10 @@ export default async function ArticlePage({
                     rel="noopener noreferrer"
                     className="text-[#0E7490] underline"
                   >
-                    European Commission — European Accessibility Act
+                    European Commission: European Accessibility Act
                   </a>
-                </strong>{" "}
-                — Official summary of the EAA scope, timelines, and EU member
+                </strong>
+                : official summary of the EAA scope, timelines, and EU member
                 state implementation
               </li>
               <li>
@@ -501,10 +501,10 @@ export default async function ArticlePage({
                     rel="noopener noreferrer"
                     className="text-[#0E7490] underline"
                   >
-                    Gov.ie — Web Accessibility
+                    Gov.ie: Web Accessibility
                   </a>
-                </strong>{" "}
-                — Irish government guidance on web accessibility obligations for
+                </strong>
+                : Irish government guidance on web accessibility obligations for
                 public bodies
               </li>
             </ul>
@@ -535,10 +535,10 @@ export default async function ArticlePage({
                 Need an accessible website or app?
               </p>
               <p className="text-slate-400 text-sm mb-6">
-                At We Make IT, accessibility is built in from the start — not
-                bolted on at the end. Whether you need an audit of your existing
-                site or want to build something new that meets WCAG 2.1 AA from
-                day one, we can help.
+                At We Make IT, we build accessibility in from the start instead
+                of bolting it on at the end. If you need an audit of your
+                existing site or want to build something new that meets WCAG
+                2.1 AA from day one, we can help.
               </p>
               <div className="flex flex-col gap-3">
                 <Link

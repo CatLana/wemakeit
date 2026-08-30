@@ -181,7 +181,7 @@ export default async function ArticlePage({
               <div className="flex gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
                 <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>Repetitive manual tasks.</strong> If someone on your team does the same task over and over with no variation, there is almost certainly a way to automate or streamline it.
+                  <strong>Repetitive manual tasks.</strong> If someone on your team does the same task over and over with no variation, there is almost certainly a way to automate it or make it faster.
                 </p>
               </div>
               <div className="flex gap-3">

@@ -73,6 +73,27 @@ Never use any of the following in user-visible copy. They read as AI-generated a
 | value-add | (say what the benefit is) |
 | pain points | problems, challenges |
 | bandwidth | capacity, time, resource |
+| vibrant | (say what specifically) |
+| boast / boasts | has, comes with |
+| testament to | shows, proves |
+| top-notch / world-class / unmatched | (say what is actually good about it) |
+| unparalleled | (say what makes it different) |
+| tapestry / myriad / plethora | (just list the things) |
+| crucial / pivotal | important, or cut it |
+| meticulous / meticulously | careful, careful about X |
+| underscore | show, highlight |
+| multifaceted | (name the parts) |
+| foster | build, encourage |
+
+## Sentence patterns to avoid
+
+These structural tells read as AI-generated even when no single word is on the forbidden list above:
+
+- **"Whether you're X or Y..." as an audience-address opener.** Rewrite as a direct statement: "Whether you're a startup founder or an established business, we can help" becomes "We work with startup founders and established businesses alike."
+- **"It's not X, it's Y" / "That's not X, that's Y" negation pairs.** Say the positive thing once: "It's not optional, it's just how we work" becomes "We build it that way from day one."
+- **"No X, no Y, just Z" negation triads.** State what you offer directly instead of listing what you don't: "No vague estimates, no obligation" becomes "You'll get an exact price, with no obligation to go ahead."
+- **"In today's fast-paced/digital world" or any "in today's X" opener.** Cut it. Start with the actual point.
+- **"Dive into" / "deep dive" / "unpack".** Use "look at", "cover", or "explain".
 
 ## Emojis
 
