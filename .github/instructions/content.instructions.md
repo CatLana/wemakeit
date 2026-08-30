@@ -73,6 +73,7 @@ Never use any of the following in user-visible copy. They read as AI-generated a
 | value-add | (say what the benefit is) |
 | pain points | problems, challenges |
 | bandwidth | capacity, time, resource |
+| no surprises / no hidden extras framed as a slogan | (say what's fixed or agreed upfront instead) |
 | vibrant | (say what specifically) |
 | boast / boasts | has, comes with |
 | testament to | shows, proves |

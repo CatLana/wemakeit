@@ -1,9 +1,12 @@
-import { MapPin, Tag } from "lucide-react";
+import { MapPin, Award, UserCheck, Bot } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
+const valuePropIcons = [UserCheck, Bot];
+
 export default function Hero() {
   const t = useTranslations("hero");
+  const valueProps = t.raw("valueProps") as string[];
   return (
     <section
       className="relative min-h-screen flex items-center justify-center bg-[#0F172A] overflow-hidden"
@@ -54,28 +57,42 @@ export default function Hero() {
           {" "}Happen.
         </h1>
 
-        {/* Sub-headline */}
-        <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 font-medium leading-relaxed mb-6">
-          {t("subtitleBody")}
-          <br />
-          <a
-            href="#quote"
+        {/* Sub-headline: two distinct value props */}
+        <div className="max-w-2xl mx-auto text-left space-y-4 mb-6">
+          {valueProps.map((prop, i) => {
+            const Icon = valuePropIcons[i] ?? UserCheck;
+            return (
+              <div key={i} className="flex items-start gap-3">
+                <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#22D3EE]/15">
+                  <Icon size={16} className="text-[#22D3EE]" aria-hidden="true" />
+                </span>
+                <p className="text-lg sm:text-xl text-slate-300 font-medium leading-relaxed">
+                  {prop}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+
+        <p className="text-lg sm:text-xl font-medium leading-relaxed mb-6">
+          <Link
+            href="/book"
             className="text-[#22D3EE] font-bold hover:underline underline-offset-2 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
           >
             {t("subtitleCta")}
-          </a>
+          </Link>
         </p>
 
-        {/* Summer sale offer */}
+        {/* Credibility badge */}
         <div className="inline-flex items-start gap-2 px-5 py-3 max-w-full rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-10">
-          <Tag size={14} aria-hidden="true" className="mt-0.5 shrink-0" />
-          <span>{t("springSale")}</span>
+          <Award size={14} aria-hidden="true" className="mt-0.5 shrink-0" />
+          <span>{t("credibilityBadge")}</span>
         </div>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="/audit"
+            href="/book"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
           >
             {t("cta1")}

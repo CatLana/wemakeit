@@ -189,16 +189,16 @@ async function AboutPageContent({
                   desc: "Every product we build is inclusive and accessible from day one. No one should be left behind in the digital world.",
                 },
                 {
-                  title: "Honest Communication",
-                  desc: "We speak plain English, explain technical decisions clearly, and always listen to understand your real needs.",
+                  title: "Tailored to Your Business",
+                  desc: "We build around what your business actually needs, not a generic package. Every solution is shaped by your goals, your team, and your customers.",
                 },
                 {
                   title: "Quality Over Speed",
                   desc: "We build for the long term. Your product is designed to scale, improve, and adapt as your business grows.",
                 },
                 {
-                  title: "Fixed Pricing",
-                  desc: "You know the full cost before we start. No hidden extras, no surprise invoices. Transparency is not optional.",
+                  title: "Scaled Pricing",
+                  desc: "We offer clear pricing tiers, each with a different level of service, so you can choose what fits your budget today and add more as your business grows.",
                 },
               ].map((value, i) => (
                 <div key={i} className="rounded-xl bg-white p-6 border border-slate-200">

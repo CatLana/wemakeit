@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import GetQuoteButton from "@/components/GetQuoteButton";
+import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 
 const BASE_URL = "https://www.wemakeit.ie";
@@ -23,7 +24,7 @@ export async function generateMetadata({
   return {
     title: "Pricing | Web & App Development Ireland | We Make IT",
     description:
-      "Clear pricing for web and app development in Ireland. Landing pages from €700, website builds from €1,500, consultations at €450/day. All prices exclude VAT.",
+      "Clear pricing for web and app development in Ireland. Landing pages from €700, website builds from €1,500, plus a free 30-minute technical consultation. All prices exclude VAT.",
     alternates: {
       canonical: canonicalUrl,
       languages: {
@@ -34,7 +35,7 @@ export async function generateMetadata({
     openGraph: {
       title: "Pricing | Web & App Development Ireland | We Make IT",
       description:
-        "Clear pricing for web and app development in Ireland. Landing pages from €700, website builds from €1,500, consultations at €450/day. All prices exclude VAT.",
+        "Clear pricing for web and app development in Ireland. Landing pages from €700, website builds from €1,500, plus a free 30-minute technical consultation. All prices exclude VAT.",
       url: canonicalUrl,
       siteName: "We Make IT",
       locale: "en_IE",
@@ -57,11 +58,6 @@ const services = [
     description: "A custom multi-page website designed around your business. No templates. Built to rank on Google and bring in enquiries.",
   },
   {
-    name: "Accessibility & UX audit",
-    price: "from €1,500",
-    description: "A scored report covering WCAG 2.1 AA compliance, UX issues, and SEO gaps, with a prioritised list of what to fix first.",
-  },
-  {
     name: "Custom web application",
     price: "from €6,000",
     description: "A bespoke web app built around your business process. User accounts, database, API, and core business logic.",
@@ -70,11 +66,6 @@ const services = [
     name: "Mobile app (iOS & Android)",
     price: "from €8,000",
     description: "A cross-platform mobile app from design to App Store submission. Ideal for MVPs and early-stage product ideas.",
-  },
-  {
-    name: "Consultation",
-    price: "€450 / day",
-    description: "A full day of expert advice on your project, technology choices, or digital strategy. Delivered remotely or in person.",
   },
 ];
 
@@ -98,10 +89,8 @@ export default async function PricingPage({
       itemListElement: [
         { "@type": "Offer", name: "Landing Page", price: "700", priceCurrency: "EUR" },
         { "@type": "Offer", name: "Website Build", price: "1500", priceCurrency: "EUR" },
-        { "@type": "Offer", name: "Accessibility & UX Audit", price: "1500", priceCurrency: "EUR" },
         { "@type": "Offer", name: "Custom Web Application", price: "6000", priceCurrency: "EUR" },
         { "@type": "Offer", name: "Mobile App MVP", price: "8000", priceCurrency: "EUR" },
-        { "@type": "Offer", name: "Consultation", price: "450", priceCurrency: "EUR" },
         { "@type": "Offer", name: "Starter Retainer", price: "800", priceCurrency: "EUR" },
       ],
     },
@@ -123,7 +112,7 @@ export default async function PricingPage({
               Pricing
             </span>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-4">
-              Clear pricing. No surprises.
+              Straightforward pricing, whatever your budget.
             </h1>
             <p className="text-lg text-slate-400 mb-6">
               All prices are starting points. Your final quote depends on scope and complexity. Fill in the form below and we will get back to you with an exact price.
@@ -163,6 +152,27 @@ export default async function PricingPage({
           </div>
         </section>
 
+        {/* Technical consultation */}
+        <section aria-labelledby="consultation-heading" className="bg-[#F8FAFC] pb-16 lg:pb-24">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <h2 id="consultation-heading" className="text-lg font-bold text-[#1E293B]">Technical consultation</h2>
+                <p className="text-sm text-slate-500 mt-1 max-w-md">
+                  A second opinion on your AI-built app, website, or technical decision. The first 30 minutes are free. After that, €60 per hour, billed after the call.
+                </p>
+              </div>
+              <Link
+                href="/book"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+              >
+                Book a free consultation
+                <ArrowRight size={15} aria-hidden="true" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Retainer */}
         <section aria-labelledby="retainer-heading" className="bg-white py-16 lg:py-24">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,7 +180,7 @@ export default async function PricingPage({
               Ongoing support
             </h2>
             <p className="text-slate-600 mb-10">
-              Need a developer on tap each month? The Starter retainer gives you a set block of hours for maintenance, updates, and small improvements.
+              If you&apos;re time-poor and just need someone reliable to keep your site or app running, the Starter retainer covers bug fixes, support, new features, and updates that keep you visible in search.
             </p>
 
             <div className="rounded-2xl border border-slate-200 p-8">
@@ -186,9 +196,9 @@ export default async function PricingPage({
               </div>
               <ul className="space-y-2 text-sm text-slate-600 mb-8">
                 {[
-                  "Bug fixes and minor updates",
-                  "Security patches",
-                  "Uptime monitoring",
+                  "Bug fixes and new feature development",
+                  "Security patches and maintenance",
+                  "Regular updates that keep you visible in search",
                   "Priority email support, 24-48 hour response",
                   "Additional hours at €95/hour",
                 ].map((item) => (
@@ -198,6 +208,7 @@ export default async function PricingPage({
                   </li>
                 ))}
               </ul>
+              <p className="text-xs text-slate-500 mb-6">Social media management is available as a separate add-on. Ask us for details.</p>
               <GetQuoteButton className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2">
                 Fill in the form to get started
                 <ArrowRight size={15} aria-hidden="true" />

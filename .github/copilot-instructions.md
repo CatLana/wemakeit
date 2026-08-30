@@ -127,6 +127,7 @@ Never use any of the following. They read as AI-generated and undermine trust:
 - tapestry, myriad, plethora (just list the things)
 - crucial, pivotal (use "important" or cut it)
 - meticulous/meticulously, underscore, multifaceted, foster
+- no surprises / no hidden extras framed as a slogan (say what's fixed or agreed upfront instead)
 
 ### Sentence patterns to avoid
 These read as AI-generated even with no single forbidden word:

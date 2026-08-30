@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Check } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -51,6 +52,7 @@ export default async function SoftwareSolutionsPage({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "solutionsSoftwarePage" });
   const services = t.raw("services") as Array<{ name: string; detail: string }>;
+  const trustPoints = t.raw("trustPoints") as string[];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -74,6 +76,28 @@ export default async function SoftwareSolutionsPage({
           </div>
         </section>
 
+        {/* AI-builder technical advisory */}
+        <section className="bg-[#F8FAFC] py-14">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl border border-[#22D3EE]/30 bg-white p-8 sm:p-10">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1E293B] mb-4">{t("advisoryHeading")}</h2>
+              <p className="text-slate-600 leading-relaxed mb-8 max-w-3xl">{t("advisoryBody")}</p>
+              <div className="rounded-xl bg-[#0F172A] p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">{t("advisoryCtaHeading")}</h3>
+                  <p className="text-sm text-slate-300">{t("advisoryCtaBody")}</p>
+                </div>
+                <Link
+                  href="/book"
+                  className="inline-flex items-center justify-center gap-2 shrink-0 min-h-[46px] px-6 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
+                >
+                  {t("advisoryCta")}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="bg-white py-14">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E293B] mb-6">{t("servicesHeading")}</h2>
@@ -82,6 +106,23 @@ export default async function SoftwareSolutionsPage({
                 <li key={service.name} className="rounded-xl border border-slate-200 p-5 bg-[#F8FAFC]">
                   <h3 className="font-semibold text-[#1E293B] mb-2">{service.name}</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">{service.detail}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Trust points */}
+        <section className="bg-[#F8FAFC] py-14">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E293B] mb-6">{t("trustHeading")}</h2>
+            <ul role="list" className="space-y-4">
+              {trustPoints.map((point) => (
+                <li key={point} className="flex items-start gap-3">
+                  <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#22D3EE]/15">
+                    <Check size={12} className="text-[#0E7490]" aria-hidden="true" strokeWidth={2.5} />
+                  </span>
+                  <p className="text-slate-600 leading-relaxed">{point}</p>
                 </li>
               ))}
             </ul>

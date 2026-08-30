@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useTranslations } from "next-intl";
+import StepBadge from "@/components/StepBadge";
 
 const inputBase =
   "w-full px-4 py-3 rounded-lg border text-sm text-[#1E293B] placeholder:text-slate-400 bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE]";
@@ -27,14 +28,19 @@ type FormValues = {
 
 interface ConsultationFormProps {
   /** Which copy variant to use */
-  variant?: "consultation" | "audit" | "retainer";
+  variant?: "consultation" | "audit" | "retainer" | "technicalConsultation";
   /** Sent in the email to identify which service page the request came from */
   serviceName: string;
+  /** When set alongside stepLabel, renders a StepBadge above the heading */
+  stepNumber?: number;
+  stepLabel?: string;
 }
 
 export default function ConsultationForm({
   variant = "consultation",
   serviceName,
+  stepNumber,
+  stepLabel,
 }: ConsultationFormProps) {
   const t = useTranslations("consultationForm");
   const tv = useTranslations(`consultationForm.variants.${variant}`);
@@ -104,6 +110,11 @@ export default function ConsultationForm({
       aria-labelledby="consultation-heading"
       className="bg-slate-950 rounded-2xl p-8 md:p-10"
     >
+      {stepNumber !== undefined && stepLabel && (
+        <div className="mb-5">
+          <StepBadge number={stepNumber} label={stepLabel} />
+        </div>
+      )}
       <h2
         id="consultation-heading"
         className="text-2xl font-bold text-slate-50 mb-2"

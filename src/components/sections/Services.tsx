@@ -1,4 +1,4 @@
-import { ArrowRight, LayoutTemplate, Workflow, Rocket, Check } from "lucide-react";
+import { ArrowRight, Code2, Globe, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -13,7 +13,7 @@ export default function Services() {
     cta: string;
   }>;
 
-  const categoryIcons = [LayoutTemplate, Workflow, Rocket];
+  const categoryIcons = [Code2, Globe];
 
   return (
     <section
@@ -42,10 +42,10 @@ export default function Services() {
         {/* Service categories */}
         <ul
           role="list"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           {categories.map((category, i) => {
-            const Icon = categoryIcons[i] ?? LayoutTemplate;
+            const Icon = categoryIcons[i] ?? Code2;
             return (
               <li key={i}>
                 <Link

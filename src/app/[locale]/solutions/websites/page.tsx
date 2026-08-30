@@ -89,6 +89,24 @@ export default async function WebsitesSolutionsPage({
           </div>
         </section>
 
+        {/* Consultation CTA */}
+        <section className="bg-white pb-14">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-xl bg-[#0F172A] p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+              <div>
+                <h2 className="text-lg font-bold text-white mb-1">{t("consultationCtaHeading")}</h2>
+                <p className="text-sm text-slate-300">{t("consultationCtaBody")}</p>
+              </div>
+              <Link
+                href="/book"
+                className="inline-flex items-center justify-center gap-2 shrink-0 min-h-[46px] px-6 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
+              >
+                {t("consultationCta")}
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="bg-white pb-14">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-8 text-center">

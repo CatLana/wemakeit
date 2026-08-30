@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import { Video, Clock, ArrowRight, Mail, FileText } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import StepBadge from "@/components/StepBadge";
+import ConsultationForm from "@/components/ConsultationForm";
 
 // Google Calendar appointment scheduling blocks cross-origin iframe embedding
 // (X-Frame-Options: SAMEORIGIN). The booking page opens in a new tab instead.
@@ -17,30 +19,22 @@ function WhatsAppIcon() {
   );
 }
 
-function StepBadge({ number, label }: { number: number; label: string }) {
-  return (
-    <div className="flex items-center gap-2.5">
-      <span
-        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#0F172A] text-[#22D3EE] text-xs font-bold"
-        aria-hidden="true"
-      >
-        {number}
-      </span>
-      <span className="text-xs font-semibold uppercase tracking-widest text-[#0E7490]">
-        {label}
-      </span>
-    </div>
-  );
-}
-
 export default async function BookingEmbed({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: "book" });
 
   return (
     <div className="flex flex-col gap-6">
-      {/* Step 1: booking card */}
+      {/* Step 1: lead-capture form */}
+      <ConsultationForm
+        variant="technicalConsultation"
+        serviceName="Technical consultation (book page)"
+        stepNumber={1}
+        stepLabel={t("step1Label")}
+      />
+
+      {/* Step 2: booking card */}
       <div className="rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col gap-5">
-        <StepBadge number={1} label={t("step1Label")} />
+        <StepBadge number={2} label={t("step2Label")} />
 
         <span className="inline-flex items-center gap-1.5 self-start rounded-full border bg-[#0F172A] border-[#22D3EE]/40 text-[#22D3EE] px-3 py-1 text-xs font-semibold">
           <Video size={15} aria-hidden="true" />
@@ -70,9 +64,9 @@ export default async function BookingEmbed({ locale }: { locale: string }) {
         </a>
       </div>
 
-      {/* Step 2: pre-meeting brief */}
+      {/* Step 3: pre-meeting brief */}
       <div className="rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col gap-4">
-        <StepBadge number={2} label={t("step2Label")} />
+        <StepBadge number={3} label={t("step3Label")} />
 
         <h2 className="text-lg font-bold text-[#1E293B]">{t("briefHeading")}</h2>
 
