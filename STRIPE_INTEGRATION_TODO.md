@@ -36,7 +36,7 @@ These came from your Checkout Studio session and are already set in the code.
 | `ui_mode` | `hosted_page` |
 | `billing_address_collection` | `auto` |
 | `phone_number_collection` | `{ enabled: false }` |
-| `automatic_tax` | `{ enabled: false }` |
+| `managed_payments` | `{ enabled: false }` |
 | `submit_type` | `auto` |
 | `integration_identifier` | `hosted_web_0001` |
 | `origin_context` | `web` |
@@ -45,6 +45,8 @@ These came from your Checkout Studio session and are already set in the code.
 **Note on `allow_promotion_codes` vs `discounts`**: Stripe rejects a session that sets both parameters at once. The newsletter welcome email links to `/audit?promo=NEWSLETTER10`; when that query param is present, the route resolves it to a Stripe promotion code and passes it as `discounts` instead, so that one session skips the manual promo box (the discount is already applied) while every other session keeps the manual box enabled per your Studio config.
 
 **`payment_method_collection` was deliberately not included.** It's a subscription-mode-only parameter in the Stripe API (see the SDK's own type comment on `SessionCreateParams.payment_method_collection`); passing it alongside `mode: "payment"` would have caused Stripe to reject the request. An earlier draft of this route had it set — removed as part of this update.
+
+**`managed_payments: { enabled: false }` was added after live testing against your account.** Your Stripe account has "Managed Payments" (automatic tax handling) enabled by default, which requires either every product to carry a Stripe tax code, or the session to explicitly opt out. Without this, every checkout attempt failed with `Invalid line_items[0]: the product tax code is missing`. This keeps tax handled the same way as the rest of the site (VAT applied manually, not through Stripe Tax).
 
 ## Setup and next steps
 

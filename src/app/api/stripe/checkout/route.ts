@@ -50,21 +50,29 @@ export async function POST(req: NextRequest) {
 
   const baseUrl = req.nextUrl.origin;
 
-  const session = await stripe.checkout.sessions.create({
-    mode: "payment",
-    ui_mode: "hosted_page",
-    line_items: [{ price: priceId, quantity: 1 }],
-    billing_address_collection: "auto",
-    phone_number_collection: { enabled: false },
-    automatic_tax: { enabled: false },
-    submit_type: "auto",
-    integration_identifier: "hosted_web_0001",
-    origin_context: "web",
-    metadata: { tier },
-    success_url: `${baseUrl}/en/audit/thank-you?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${baseUrl}/en/audit`,
-    ...(discounts ? { discounts } : { allow_promotion_codes: true }),
-  });
+  let session: Stripe.Checkout.Session;
+  try {
+    session = await stripe.checkout.sessions.create({
+      mode: "payment",
+      ui_mode: "hosted_page",
+      line_items: [{ price: priceId, quantity: 1 }],
+      billing_address_collection: "auto",
+      phone_number_collection: { enabled: false },
+      // This account has Managed Payments enabled by default, which requires every
+      // product to carry a Stripe tax code unless explicitly turned off per session.
+      managed_payments: { enabled: false },
+      submit_type: "auto",
+      integration_identifier: "hosted_web_0001",
+      origin_context: "web",
+      metadata: { tier },
+      success_url: `${baseUrl}/en/audit/thank-you?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${baseUrl}/en/audit`,
+      ...(discounts ? { discounts } : { allow_promotion_codes: true }),
+    });
+  } catch (err) {
+    console.error("Stripe checkout session creation failed:", err);
+    return NextResponse.json({ error: "Could not start checkout." }, { status: 500 });
+  }
 
   if (!session.url) {
     return NextResponse.json({ error: "Could not start checkout." }, { status: 500 });
