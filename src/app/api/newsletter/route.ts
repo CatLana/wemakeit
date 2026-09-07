@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
 import { google } from "googleapis";
+import { NEWSLETTER_PROMO_CODE } from "@/lib/audit-pricing";
+
+const BASE_URL = "https://www.wemakeit.ie";
 
 const schema = z.object({
   email: z.string().email(),
@@ -83,8 +86,36 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ status: "already_subscribed" }, { status: 200 });
   }
 
-  // Send admin notification (non-blocking)
   const resend = new Resend(process.env.RESEND_API_KEY);
+
+  // Send subscriber welcome email with the audit discount code (non-blocking)
+  const { error: welcomeError } = await resend.emails.send({
+    from: "We Make IT <onboarding@resend.dev>",
+    to: [email],
+    subject: "Welcome, plus a discount code for your website audit",
+    html: `
+      <div style="font-family:Inter,sans-serif;max-width:520px;margin:0 auto;background:#F8FAFC;padding:32px;border-radius:12px;">
+        <h2 style="color:#0F172A;margin-top:0;">Welcome to We Make IT</h2>
+        <p style="color:#475569;line-height:1.6;">Thanks for signing up. Here's a code for 10% off a website audit, whenever you're ready:</p>
+        <p style="text-align:center;margin:20px 0;">
+          <span style="display:inline-block;background:#0F172A;color:#22D3EE;font-weight:700;font-size:18px;letter-spacing:0.05em;padding:12px 24px;border-radius:10px;">${NEWSLETTER_PROMO_CODE}</span>
+        </p>
+        <p style="text-align:center;">
+          <a href="${BASE_URL}/en/audit?promo=${NEWSLETTER_PROMO_CODE}" style="display:inline-block;background:#22D3EE;color:#0F172A;font-weight:700;font-size:14px;padding:12px 24px;border-radius:10px;text-decoration:none;">
+            Order your audit
+          </a>
+        </p>
+        <p style="color:#94A3B8;font-size:12px;margin-top:24px;">
+          The discount is applied automatically when you order through the link above.
+        </p>
+      </div>
+    `,
+  });
+  if (welcomeError) {
+    console.error("Resend welcome email error:", welcomeError);
+  }
+
+  // Send admin notification (non-blocking)
   const { error: mailError } = await resend.emails.send({
     from: "We Make IT <onboarding@resend.dev>",
     to: ["ssavchenko8@gmail.com"],

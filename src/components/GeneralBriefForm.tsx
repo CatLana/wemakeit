@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Field, inputBase, textareaBase } from "@/components/BriefFormFields";
 
@@ -18,6 +19,7 @@ type FormValues = {
 
 export default function GeneralBriefForm() {
   const t = useTranslations("generalBrief");
+  const isAuditContext = useSearchParams().get("context") === "audit";
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
   const successRef = useRef<HTMLDivElement>(null);
@@ -76,7 +78,9 @@ export default function GeneralBriefForm() {
           </svg>
         </div>
         <h2 className="text-2xl font-bold text-[#1E293B] mb-2">{t("form.success.title")}</h2>
-        <p className="text-slate-500 text-sm max-w-sm mx-auto">{t("form.success.body")}</p>
+        <p className="text-slate-500 text-sm max-w-sm mx-auto">
+          {isAuditContext ? t("audit.successBody") : t("form.success.body")}
+        </p>
       </div>
     );
   }
@@ -101,7 +105,7 @@ export default function GeneralBriefForm() {
           />
         </Field>
 
-        <Field id="gb-email" label={t("form.email")} hint={t("form.emailHint")}>
+        <Field id="gb-email" label={t("form.email")} hint={isAuditContext ? t("audit.emailHint") : t("form.emailHint")}>
           <input
             id="gb-email"
             type="email"

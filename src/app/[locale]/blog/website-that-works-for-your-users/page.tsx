@@ -297,10 +297,10 @@ export default async function ArticlePage({
                 Tell us about your current website and what you want it to do better. We will review it and give you specific, honest recommendations.
               </p>
               <Link
-                href="/#quote"
+                href="/audit"
                 className="inline-flex items-center justify-center gap-2 min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
               >
-                Get a free site review
+                Order a website audit
                 <ArrowRight size={16} aria-hidden="true" />
               </Link>
             </div>

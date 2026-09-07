@@ -10,7 +10,6 @@ import Services from "@/components/sections/Services";
 import Work from "@/components/sections/Work";
 import About from "@/components/sections/About";
 import CtaStrip from "@/components/sections/CtaStrip";
-import FreeAuditBanner from "@/components/sections/FreeAuditBanner";
 
 // Lazy-load the heavy Contact section: defers react-hook-form, zod and
 // @hookform/resolvers from the initial JS bundle (~105 KiB savings).
@@ -97,10 +96,9 @@ export default async function HomePage({
       <main id="main-content" tabIndex={-1}>
         <Hero />
         <Services />
-        <Work />
         <Stats />
+        <Work />
         <About />
-        <FreeAuditBanner />
         <CtaStrip />
         <Suspense fallback={null}>
           <Contact />

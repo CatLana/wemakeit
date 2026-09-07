@@ -10,8 +10,6 @@ const pages: {
   lastModified: Date;
 }[] = [
   { path: "",                                        priority: 1.0, changeFrequency: "weekly",  lastModified: new Date("2026-05-19") },
-  { path: "/audit",                                  priority: 0.9, changeFrequency: "weekly",  lastModified: new Date("2026-05-20") },
-  { path: "/audit/automated",                        priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-05-20") },
   { path: "/contact",                                priority: 0.6, changeFrequency: "monthly", lastModified: new Date("2026-04-16") },
   { path: "/pricing",                                priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/about",                                  priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-05-19") },
@@ -33,7 +31,8 @@ const pages: {
   { path: "/solutions/software",                     priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-08-30") },
   { path: "/services",                               priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-04-30") },
   { path: "/work",                                   priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-08-04") },
-  { path: "/book",                                   priority: 0.5, changeFrequency: "monthly", lastModified: new Date("2026-06-08") },
+  { path: "/book",                                   priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-09-01") },
+  { path: "/audit",                                  priority: 0.9, changeFrequency: "monthly", lastModified: new Date("2026-09-01") },
   { path: "/privacy-policy",                         priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
   { path: "/cookie-policy",                          priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },
   { path: "/terms-of-service",                       priority: 0.3, changeFrequency: "yearly",  lastModified: new Date("2025-09-01") },

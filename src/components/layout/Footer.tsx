@@ -25,7 +25,6 @@ export default function Footer() {
   const t = useTranslations("footer");
   const serviceLabels = t.raw("serviceLinks") as string[];
   const freeToolLinks = t.raw("freeToolLinks") as {
-    websiteAudit: string;
     freeConsultation: string;
   };
 
@@ -275,15 +274,7 @@ export default function Footer() {
             <ul className="space-y-1" role="list">
               <li>
                 <Link
-                  href="/audit"
-                  className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                >
-                  {freeToolLinks.websiteAudit}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={{ pathname: "/", query: { service: "consultation" }, hash: "quote" } as never}
+                  href="/book"
                   className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
                   {freeToolLinks.freeConsultation}

@@ -42,15 +42,15 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-28 lg:py-32 text-center">
         {/* Eyebrow badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-slate-400 mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-slate-400 mb-5 sm:mb-8">
           <MapPin size={14} aria-hidden="true" className="text-slate-400" />
           <span>{t("badge")}</span>
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold chalk-display leading-[1.07] tracking-tight mb-6">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold chalk-display leading-[1.07] tracking-tight mb-4 sm:mb-6">
           We Make{" "}
           <span className="text-[#22D3EE]">IT</span>
           <br />
@@ -58,7 +58,7 @@ export default function Hero() {
         </h1>
 
         {/* Sub-headline: two distinct value props */}
-        <div className="max-w-2xl mx-auto text-left space-y-4 mb-6">
+        <div className="max-w-2xl mx-auto text-left space-y-3 sm:space-y-4 mb-4 sm:mb-6">
           {valueProps.map((prop, i) => {
             const Icon = valuePropIcons[i] ?? UserCheck;
             return (
@@ -74,7 +74,7 @@ export default function Hero() {
           })}
         </div>
 
-        <p className="text-lg sm:text-xl font-medium leading-relaxed mb-6">
+        <p className="text-lg sm:text-xl font-medium leading-relaxed mb-4 sm:mb-6">
           <Link
             href="/book"
             className="text-[#22D3EE] font-bold hover:underline underline-offset-2 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
@@ -84,7 +84,7 @@ export default function Hero() {
         </p>
 
         {/* Credibility badge */}
-        <div className="inline-flex items-start gap-2 px-5 py-3 max-w-full rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-10">
+        <div className="inline-flex items-start gap-2 px-5 py-3 max-w-full rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-6 sm:mb-10">
           <Award size={14} aria-hidden="true" className="mt-0.5 shrink-0" />
           <span>{t("credibilityBadge")}</span>
         </div>

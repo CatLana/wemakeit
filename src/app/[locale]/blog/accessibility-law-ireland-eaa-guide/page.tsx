@@ -323,22 +323,22 @@ export default async function AccessibilityLawArticlePage({
             <section className="rounded-3xl bg-[#0F172A] p-8 sm:p-10 text-white">
               <h2 className="text-2xl sm:text-3xl font-extrabold">Need help with accessibility compliance?</h2>
               <p className="mt-3 text-slate-300 leading-relaxed">
-                We can review your website and IT project flows, then send you a free website audit and a free
-                accessibility consultation plan.
+                Order a website audit for a full report on your site and IT project flows, or book a free
+                consultation to talk through accessibility for your business.
               </p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/contact#simple-contact-form"
+                  href="/audit"
                   className="inline-flex items-center justify-center rounded-xl bg-[#22D3EE] px-6 py-3 text-sm font-semibold text-[#0F172A] transition-colors hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
                 >
-                  Request Free Website Audit
+                  Order a website audit
                   <ArrowRight size={16} aria-hidden="true" className="ml-2" />
                 </Link>
                 <Link
-                  href="/contact#simple-contact-form"
+                  href="/book"
                   className="inline-flex items-center justify-center rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/40 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
                 >
-                  Book Free Accessibility Consultation
+                  Book a free consultation
                 </Link>
               </div>
             </section>

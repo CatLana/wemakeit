@@ -13,7 +13,6 @@ const SERVICE_CODES = [
   "consultation",
   "quote",
   "general",
-  "audit",
 ] as const;
 
 export type ServiceCode = (typeof SERVICE_CODES)[number];
@@ -23,7 +22,6 @@ const SERVICE_I18N_KEY: Record<ServiceCode, string> = {
   consultation: "consultation",
   quote: "quote",
   general: "general",
-  audit: "audit",
 };
 
 type FormValues = {

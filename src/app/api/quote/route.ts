@@ -3,7 +3,7 @@ import { Resend } from "resend";
 import { z } from "zod";
 
 const schema = z.object({
-  service: z.enum(["consultation", "quote", "general", "audit"]),
+  service: z.enum(["consultation", "quote", "general"]),
   name: z.string().min(2),
   email: z.string().email(),
   phone: z.string().optional(),
@@ -17,7 +17,6 @@ const SERVICE_LABELS: Record<string, string> = {
   consultation: "Free Consultation",
   quote: "Quote Request",
   general: "General Query",
-  audit: "Free Audit Request",
 };
 
 function row(label: string, value: string, alt = false): string {

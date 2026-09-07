@@ -272,10 +272,10 @@ export default async function ArticlePage({
                 Tell us about your business and current online setup. We will review it and come back to you with honest, practical recommendations.
               </p>
               <Link
-                href="/#quote"
+                href="/audit"
                 className="inline-flex items-center justify-center gap-2 min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
               >
-                Get a digital presence review
+                Order a digital presence audit
                 <ArrowRight size={16} aria-hidden="true" />
               </Link>
             </div>

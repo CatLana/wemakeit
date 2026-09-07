@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
+import { getAuditPrices } from "@/lib/audit-pricing";
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "pricing";
@@ -51,21 +52,25 @@ const services = [
     name: "Landing page",
     price: "from €700",
     description: "A single focused page built to convert. Ideal for a product launch, a campaign, or a service you want to promote.",
+    largeProject: false,
   },
   {
     name: "Website build",
     price: "from €1,500",
     description: "A custom multi-page website designed around your business. No templates. Built to rank on Google and bring in enquiries.",
+    largeProject: false,
   },
   {
     name: "Custom web application",
     price: "from €6,000",
     description: "A bespoke web app built around your business process. User accounts, database, API, and core business logic.",
+    largeProject: true,
   },
   {
     name: "Mobile app (iOS & Android)",
     price: "from €8,000",
     description: "A cross-platform mobile app from design to App Store submission. Ideal for MVPs and early-stage product ideas.",
+    largeProject: true,
   },
 ];
 
@@ -76,6 +81,7 @@ export default async function PricingPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const auditPrices = getAuditPrices();
 
   const offersJsonLd = {
     "@context": "https://schema.org",
@@ -131,6 +137,15 @@ export default async function PricingPage({
                   <div className="flex-1">
                     <h3 className="text-lg font-bold text-[#1E293B]">{service.name}</h3>
                     <p className="mt-1 text-sm text-slate-500 leading-relaxed max-w-lg">{service.description}</p>
+                    {service.largeProject && (
+                      <Link
+                        href={{ pathname: "/", query: { service: "quote" }, hash: "quote" } as never}
+                        className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#0E7490] hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                      >
+                        Get a quote for a project like this
+                        <ArrowRight size={13} aria-hidden="true" />
+                      </Link>
+                    )}
                   </div>
                   <div className="sm:text-right shrink-0">
                     <span className="text-xl font-extrabold text-[#1E293B]">{service.price}</span>
@@ -167,6 +182,41 @@ export default async function PricingPage({
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
               >
                 Book a free consultation
+                <ArrowRight size={15} aria-hidden="true" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Website audit */}
+        <section aria-labelledby="audit-heading" className="bg-[#F8FAFC] pb-16 lg:pb-24">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl border border-[#22D3EE]/30 bg-white p-6 sm:p-8">
+              <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-2">
+                Order now
+              </span>
+              <h2 id="audit-heading" className="text-lg font-bold text-[#1E293B]">Website audit</h2>
+              <p className="text-sm text-slate-500 mt-1 max-w-md">
+                A written report on what to fix, delivered within 48 hours. No call required, and a free follow-up
+                consultation is included.
+              </p>
+              <div className="mt-6 grid sm:grid-cols-2 gap-4">
+                <div className="rounded-xl border border-slate-200 p-4">
+                  <p className="text-sm font-semibold text-[#1E293B]">Website audit</p>
+                  <p className="text-2xl font-extrabold text-[#1E293B] mt-1">€{auditPrices.website}</p>
+                  <p className="text-xs text-slate-500 mt-1">Your website, reviewed end to end.</p>
+                </div>
+                <div className="rounded-xl border border-[#22D3EE]/40 bg-[#F0FDFF] p-4">
+                  <p className="text-sm font-semibold text-[#1E293B]">Website + social bundle</p>
+                  <p className="text-2xl font-extrabold text-[#1E293B] mt-1">€{auditPrices.bundle}</p>
+                  <p className="text-xs text-slate-500 mt-1">Website, social media, and web presence.</p>
+                </div>
+              </div>
+              <Link
+                href="/audit"
+                className="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+              >
+                Order your audit
                 <ArrowRight size={15} aria-hidden="true" />
               </Link>
             </div>

@@ -13,9 +13,9 @@
       "howItWorks": "How It Works",
       "ourWork": "Our work",
       "blog": "Resources",
-      "talkToUs": "Contact"
+      "contact": "Contact"
     },
-    "cta": "Get free audit",
+    "cta": "Book a consultation",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "mobileNavLabel": "Mobile navigation",
@@ -48,8 +48,8 @@
     "items": [
       { "icon": "ShieldCheck", "label": "Accessibility & UX first", "description": "Every product is built inclusive and usable from day one.", "ariaLabel": "We build every product with accessibility and UX as a foundation" },
       { "icon": "Lightbulb", "label": "Design Thinking applied", "description": "We validate before we build. You invest in the right thing.", "ariaLabel": "We apply Design Thinking to validate ideas before building" },
-      { "icon": "TrendingUp", "label": "Built to convert", "description": "Sales and marketing strategy is baked into every decision.", "ariaLabel": "We make decisions with your business goals and conversions in mind" },
-      { "icon": "MessageCircle", "label": "We speak plain English", "description": "We are easy to speak with. If you are not a technical person, we explain everything in simple terms.", "ariaLabel": "We communicate in plain English and always listen to our clients to clearly understand their needs" }
+      { "icon": "TrendingUp", "label": "Reliable engineering choices", "description": "We use technologies and architecture that hold up as you grow, not just what's quickest to ship.", "ariaLabel": "We choose technologies and architecture that hold up as your business grows" },
+      { "icon": "MessageCircle", "label": "Built around you, not a template", "description": "We start from what your business actually needs, not a generic package we reuse for everyone.", "ariaLabel": "We build solutions around what each client actually needs, not generic, off-the-shelf packages" }
     ]
   },
   "services": {
@@ -200,21 +200,10 @@
     "body2": "The first 30 minutes are free.",
     "cta": "Book a free consultation"
   },
-  "auditBanner": {
-    "eyebrow": "Free website check",
-    "betaLabel": "Beta",
-    "heading": "Run a free audit for your website",
-    "body": "Get an instant snapshot of your performance, accessibility, and SEO so you know what to improve first.",
-    "cta": "Run free audit",
-    "metricPerformance": "Performance",
-    "metricAccessibility": "Accessibility",
-    "metricSeo": "SEO",
-    "visualNote": "Sample score preview"
-  },
   "contact": {
     "eyebrow": "We are happy to hear from you",
     "heading": "Send us a message",
-    "body": "Need a free quote or consultation request? We are here to help!",
+    "body": "Tell us what you're building and we'll help you find the right next step.",
     "officeLabel": "Location",
     "officeLocation": "Remote",
     "contactLink": "Questions?",
@@ -228,9 +217,9 @@
     ],
     "whatNextHeading": "What happens next?",
     "whatNextSteps": [
-      "We review your request",
-      "We send a quote or schedule a quick call",
-      "You decide, no pressure"
+      "We look at what you're building",
+      "We flag anything that needs a closer look",
+      "You get a clear next step, no pressure"
     ],
     "form": {
       "ariaLabel": "Get a free quote",
@@ -238,8 +227,7 @@
       "serviceOptions": {
         "consultation": "Free Consultation",
         "quote": "Quote Request",
-        "general": "General Query",
-        "audit": "Free Audit Request"
+        "general": "General Query"
       },
       "name": "Your name",
       "namePlaceholder": "Jane Murphy",
@@ -449,6 +437,10 @@
       "serverError": "Something went wrong. Please try again.",
       "networkError": "Could not reach the server. Please check your connection and try again."
     },
+    "audit": {
+      "emailHint": "So we can match this to your order.",
+      "successBody": "We'll read this before we start your audit so we can focus on what matters most."
+    },
     "audio": {
       "formNotePrefix": "Prefer not to type?",
       "formNoteLink": "Send us a voice message on WhatsApp instead",
@@ -459,6 +451,80 @@
       "questionsHeading": "Questions to talk through",
       "copyBtn": "Copy questions",
       "copiedBtn": "Copied"
+    }
+  },
+  "auditPage": {
+    "meta": {
+      "title": "Website audit | We Make IT",
+      "description": "Order a written audit of your website, social media, and web presence. Delivered within 48 hours, with a free follow-up consultation included."
+    },
+    "eyebrow": "Website & digital presence audit",
+    "heading": "You have a website. Is it actually working for you?",
+    "body": "Order a written report on what's working, what isn't, and exactly what to fix. No call needed, delivered within 48 hours.",
+    "intro": {
+      "heading": "Something feels off, but you're not sure what",
+      "body": "You already have a website, social accounts, maybe both. It's just not bringing in the clients it should, and it's hard to tell why from the inside. We look at what you have and tell you exactly what to change.",
+      "imageAlt": "A business owner looking thoughtfully at their own website on a laptop, trying to work out what to improve"
+    },
+    "howItWorks": {
+      "heading": "How it works",
+      "steps": [
+        "Choose the audit that fits your business",
+        "Pay securely, no call required",
+        "Your report lands in your inbox within 48 hours",
+        "A free 30-minute follow-up call is included, whenever you want it"
+      ]
+    },
+    "whyNow": {
+      "heading": "Why now",
+      "worthItHeading": "Worth doing now",
+      "worthItBody": "You don't need to hire anyone. The report gives you plain-language steps, so you or your team can make the changes yourselves.",
+      "costHeading": "What waiting costs",
+      "costBody": "Every week your site or presence quietly underperforms is a week of enquiries going to a competitor instead. Fixing small things now is cheaper than losing business later."
+    },
+    "tiers": {
+      "heading": "Choose your audit",
+      "launchBadge": "Launch pricing ends in",
+      "website": {
+        "name": "Website audit",
+        "description": "A full review of your website: what's working, what's holding you back, and what to fix first.",
+        "features": [
+          "Written report with clear priorities",
+          "Plain-language steps you can act on yourself",
+          "Delivered within 48 hours",
+          "Free 30-minute follow-up call included"
+        ]
+      },
+      "bundle": {
+        "name": "Website + social bundle",
+        "description": "Your website, social media, and wider web presence, reviewed together.",
+        "features": [
+          "Everything in the website audit",
+          "Social media and web presence review",
+          "One consistent set of priorities across channels",
+          "Free 30-minute follow-up call included"
+        ]
+      },
+      "buyCta": "Order now",
+      "promoApplied": "Your newsletter discount will be applied at checkout.",
+      "agreeLabel": "I agree to the",
+      "termsLinkLabel": "Terms of Service for this audit",
+      "deliveryNotice": "Delivery starts immediately. Once your report is delivered, you won't be able to cancel."
+    },
+    "reassurance": {
+      "heading": "No pressure, no upsell",
+      "points": [
+        "Order online, no call required if you don't want one",
+        "Delivered within 48 hours by a person, not an automated tool",
+        "A free follow-up call is included either way"
+      ]
+    },
+    "thankYou": {
+      "meta": { "title": "Order confirmed | We Make IT" },
+      "heading": "Thanks, your order is confirmed",
+      "body": "Check your inbox for a confirmation email. Your report will land within 48 hours.",
+      "briefCta": "Tell us your goal",
+      "bookCta": "Book your free follow-up"
     }
   },
   "newsletter": {
@@ -501,13 +567,6 @@
         "messagePlaceholder": "What are you looking to build? Any deadlines, budget range, or context you can share?",
         "submitLabel": "Request free consultation"
       },
-      "audit": {
-        "heading": "Request a Free Accessibility Audit",
-        "subheading": "Share your website or app URL and we will run a free initial check and report back within one business day.",
-        "messageLabel": "Your website or app URL",
-        "messagePlaceholder": "e.g. https://yoursite.ie. Add any context about your product or concerns.",
-        "submitLabel": "Request free audit"
-      },
       "retainer": {
         "heading": "Tell Us About Your Project",
         "subheading": "Looking for ongoing support? Share what you have and we will put together a support proposal that fits.",
@@ -531,7 +590,7 @@
     "tagline": "We help entrepreneurs and small businesses turn their ideas into real apps and websites. Based in Ireland, working globally.",
     "copyright": "© We Make IT Sole Trader company registered in Ireland.",
     "builtBy": "Built by",
-    "languageNote": "Inclusive by design: support available in English, Italian and Russian.",
+    "languageNote": "Inclusive by design: every project is built to be accessible for everyone.",
     "whatsappLabel": "Chat on WhatsApp",
     "whatsappQrAlt": "WhatsApp QR code. Scan to start a chat with We Make IT",
     "whatsappQrCaption": "Scan to chat",
@@ -560,7 +619,6 @@
       "preMeetingBrief": "Pre-meeting brief"
     },
     "freeToolLinks": {
-      "websiteAudit": "Free Website Audit",
       "freeConsultation": "Free Consultation"
     },
     "legalLinks": {
@@ -702,6 +760,9 @@
       { "name": "Bespoke IT solutions for businesses that need optimisation", "detail": "Custom systems built to fix a specific process that's costing you time or money." },
       { "name": "Custom Tech Webinars", "detail": "Tailored training sessions for your employees focused on your tools and workflows." }
     ],
+    "quoteCtaHeading": "Looking at a larger project or ongoing outsourcing?",
+    "quoteCtaBody": "For a full build or ongoing support, we'll need to scope it properly.",
+    "quoteCta": "Get a quote",
     "trustHeading": "What we bring to every project",
     "trustPoints": [
       "We use technologies and architecture patterns that hold up as your product grows, not just what's quickest to ship.",
@@ -1024,94 +1085,6 @@
       ]
     }
   },
-  "audit": {
-    "eyebrow": "Free tool",
-    "betaLabel": "Beta",
-    "title": "Run a website audit",
-    "subtitle": "Enter any live website URL to get an automated report covering UX, SEO, visual quality, and accessibility, powered by Google Lighthouse.",
-    "backToHome": "Back to home",
-    "seoKeywords": [
-      "website audit",
-      "free website audit",
-      "SEO audit",
-      "accessibility audit",
-      "performance audit",
-      "Lighthouse audit",
-      "website speed test",
-      "technical SEO audit",
-      "UX audit",
-      "web accessibility check"
-    ],
-    "urlLabel": "Website URL",
-    "urlPlaceholder": "https://yourwebsite.com",
-    "submitBtn": "Run audit",
-    "exampleLabel": "Example",
-    "exampleUrl": "https://www.yourwebsite.com",
-    "limitationsTitle": "About this tool",
-    "limitationsBody": "This tool runs an automated Lighthouse analysis and identifies technical issues. It cannot assess content quality, UX design decisions, brand messaging, or business-specific context. For a full expert review, get in touch.",
-    "ctaTitle": "Need a human expert on top of this?",
-    "ctaBody": "Automated tools catch technical issues. A real expert catches everything else.",
-    "ctaBtn": "Get a free audit quote",
-    "results": {
-      "successBadge": "Report ready",
-      "successTitle": "Your audit report is ready",
-      "successSubtitle": "Download the PDF below. It covers your Lighthouse scores, what is working well, and what to fix.",
-      "downloadBtn": "Download PDF report",
-      "expertCtaTitle": "Want a human review on top of this?",
-      "expertCtaBody": "Automated tools catch technical signals. A real expert catches everything else: strategy, content quality, and what your users actually experience.",
-      "expertCtaBtn": "Request a free expert audit",
-      "errorTitle": "Audit could not be completed",
-      "errorBody": "The site may be unreachable, require authentication, or the audit service is temporarily unavailable.",
-      "errorReasonPrefix": "Technical reason",
-      "fallbackUsed": "Cached fallback result (generated in the last 48 hours)",
-      "tryAgainBtn": "Try another URL",
-      "runningMsg": "Running Lighthouse audit, this takes about 15 seconds…"
-    },
-    "howItWorksTitle": "How our free audit works",
-    "howItWorksIntro": "We provide free audits",
-    "processSteps": [
-      {
-        "step": "1",
-        "title": "Fill in the request form",
-        "description": "Tell us about your business, your website, and any specific problems you want us to focus on. This takes about 2-3 minutes."
-      },
-      {
-        "step": "2",
-        "title": "We send you a brief questionnaire",
-        "description": "We'll ask more detailed questions about your business, goals, and current challenges. This helps us tailor the audit to what matters most to you."
-      },
-      {
-        "step": "3",
-        "title": "Expert review & suggestions",
-        "description": "Our team reviews your website and creates a detailed plan showing what you can do to gain more customers, fix technical issues, or improve user experience."
-      },
-      {
-        "step": "4",
-        "title": "Choose your format",
-        "description": "You decide how you'd like to discuss the results: an online video call, an in-person meetup (if you're in Ireland), or a detailed email report."
-      },
-      {
-        "step": "5",
-        "title": "Review & Q&A",
-        "description": "We go through the suggestions together, answer your questions, and discuss what the changes could mean for your business."
-      },
-      {
-        "step": "6",
-        "title": "Feedback & next steps",
-        "description": "We ask for your feedback and discuss next steps. Whether you want us to implement the changes or work with your own team, we will point you in the right direction."
-      }
-    ],
-    "requestFormTitle": "Get your free audit started",
-    "requestFormSubtitle": "Please fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps.",
-    "nameLabel": "Your name",
-    "emailLabel": "Email address",
-    "websiteLabel": "Your website URL",
-    "businessLabel": "Tell us about your business",
-    "focusLabel": "What's your main concern? (optional)",
-    "focusPlaceholder": "E.g., 'My site doesn't convert', 'Mobile users bounce', 'Needs an accessibility audit'",
-    "submitBtnText": "Request my free audit",
-    "successMessage": "Thank you! We've received your audit request. We'll send you a confirmation email within 24 hours."
-  },
   "workPage": {
     "metadata": {
       "title": "Our work: apps we've built and shipped | We Make IT",
@@ -1160,64 +1133,6 @@
     "teamCollaborators": "We also collaborate with a network of senior consultants on a contract basis. Depending on the project, we bring in the right specialists from our established collaborators, so you always get the expertise your case needs.",
     "teamPlaceholder": "Photo coming soon"
   },
-  "auditExpert": {
-    "title": "Free Audits by Tech Experts",
-    "subtitle": "Get your website or brand reviewed by our team of technical consultants. We check your site, find what needs fixing, and give you a clear plan to improve it.",
-    "backToHome": "Back to home",
-    "eyebrow": "How it works",
-    "howItWorksTitle": "How our free audit works",
-    "howItWorksIntro": "This service is free because we're always learning what local businesses actually need. Talking to you helps us understand what really works for businesses like yours. You'll get a clear plan to improve your digital presence and save time and money. Here's how it works:",
-    "processSteps": [
-      {
-        "step": "1",
-        "title": "Fill in the form",
-        "description": "Tell us about your business, your website, and any specific problems you might have."
-      },
-      {
-        "step": "2",
-        "title": "We send you a brief",
-        "description": "We'll ask more detailed questions about your business, goals, and current challenges. This helps us tailor the audit to what matters most to you."
-      },
-      {
-        "step": "3",
-        "title": "We review and create a plan",
-        "description": "Our team reviews your website and creates a plan showing what you can do to gain more customers, fix technical issues, or improve user experience."
-      },
-      {
-        "step": "4",
-        "title": "Your questions",
-        "description": "We will deliver the report to you  and you can ask us questions about the report and the suggestions. We can also schedule a call to discuss the report in more detail if you prefer."
-      },
-      {
-        "step": "5",
-        "title": "No commitment",
-        "description": "We don't ask for any commitment from you. You can choose to implement the changes yourself, work with your own team, or ask us for a quote to do it for you."
-      }
-    ],
-    "requestFormTitle": "Get your free audit started",
-    "requestFormSubtitle": "Please fill in your details below and we'll be in touch within 24 hours to confirm your audit and send you the next steps.",
-    "keywords": ["free website audit ireland", "expert website review", "website performance audit", "web accessibility audit", "SEO audit ireland", "free digital presence audit", "UX audit service"],
-    "nameLabel": "Your name",
-    "namePlaceholder": "John Doe",
-    "emailLabel": "Email address",
-    "emailPlaceholder": "john@example.com",
-    "websiteLabel": "Your website URL",
-    "websitePlaceholder": "www.yourwebsite.com",
-    "businessLabel": "Tell us about your business",
-    "businessPlaceholder": "Tell us briefly about what your business does...",
-    "focusLabel": "What is your main goal for your website? (optional)",
-    "focusPlaceholder": "E.g. 'Get more enquiries', 'Better search rankings', 'Modern redesign', 'EAA compliance'",
-    "submitBtnText": "Request my free audit",
-    "submitting": "Sending\u2026",
-    "successMessage": "Thank you! We've received your audit request. We'll send you a confirmation email within 24 hours.",
-    "serverError": "Something went wrong. Please try again.",
-    "errors": {
-      "name": "Please enter your name (at least 2 characters)",
-      "email": "Please enter a valid email address",
-      "website": "Please enter a valid website address (e.g. yourwebsite.com)",
-      "business": "Please tell us a bit about your business (at least 10 characters)"
-    }
-  },
   "book": {
     "eyebrow": "Book a call",
     "heading": "Book a technical consultation",
@@ -1237,6 +1152,23 @@
     "contactBody": "If you have any questions or need to reschedule, please contact us directly. We are happy to help!",
     "contactWhatsapp": "Message on WhatsApp",
     "contactEmail": "info@wemakeit.ie",
+    "story": {
+      "painHeading": "Sounds familiar?",
+      "painPoints": [
+        "You started building with AI, and you're already out of tokens.",
+        "Too many tools, too many platforms. Which one actually fits what you're building?",
+        "You want to make the right call now, not pay to redo it later.",
+        "AI builds it. If something goes wrong legally, that's on you, not the AI."
+      ],
+      "painImageAlt": "A person at a laptop late at night, head in hand, overwhelmed",
+      "mattersHeading": "Why this matters",
+      "mattersBody": "If your app has a login, a form, or saves anything about your users, the backend needs to be built properly: GDPR compliance, secure architecture, data handled the right way from day one. Get it wrong, and the legal risk is yours.",
+      "guideHeading": "You don't need a developer. You need a guide.",
+      "guideBody": "You can learn all of this yourself, eventually. But as an entrepreneur, you don't have time to learn everything. A human expert can save you time, money, and a lot of wasted tokens, and help you build it safely from the start.",
+      "guideCloser": "A little help is worth it.",
+      "guideCta": "Claim your free 30-minute consultation",
+      "guideImagePlaceholder": "Image: two people in a genuine consultation moment, video call or in person, conveying relief and connection."
+    },
     "meta": {
       "title": "Book a technical consultation | We Make IT",
       "description": "Book a free 30-minute technical consultation with We Make IT. Get a second opinion before your AI-built app, website, or feature goes live."

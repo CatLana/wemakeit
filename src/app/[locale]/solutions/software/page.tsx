@@ -112,6 +112,24 @@ export default async function SoftwareSolutionsPage({
           </div>
         </section>
 
+        {/* Quote CTA for larger projects */}
+        <section className="bg-white pb-14">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-xl border border-slate-200 bg-[#F8FAFC] p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+              <div>
+                <h2 className="text-lg font-bold text-[#1E293B] mb-1">{t("quoteCtaHeading")}</h2>
+                <p className="text-sm text-slate-600">{t("quoteCtaBody")}</p>
+              </div>
+              <Link
+                href={{ pathname: "/", query: { service: "quote" }, hash: "quote" } as never}
+                className="inline-flex items-center justify-center gap-2 shrink-0 min-h-[46px] px-6 bg-[#0F172A] text-white font-semibold rounded-lg hover:bg-slate-800 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+              >
+                {t("quoteCta")}
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Trust points */}
         <section className="bg-[#F8FAFC] py-14">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const LAST_UPDATED = "24 March 2026";
+const LAST_UPDATED = "1 September 2026";
 
 export default async function TermsOfServicePage({
   params,
@@ -314,6 +314,55 @@ export default async function TermsOfServicePage({
                 <p>Registered: Ashbourne, Co. Meath, Ireland</p>
                 <p>Email: <a href="mailto:info@wemakeit.ie" className="text-[#0E7490] hover:text-[#0891B2]">info@wemakeit.ie</a></p>
               </div>
+            </section>
+
+            {/* 20. Audit service terms */}
+            <section id="audit-terms">
+              <h2 className="text-xl font-bold text-[#1E293B] mb-3">20. Website &amp; Digital Presence Audit — Additional Terms</h2>
+              <p className="text-sm">
+                This section applies specifically to the paid Website Audit and Website + Social Bundle Audit (&ldquo;Audit Service&rdquo;) ordered through wemakeit.ie. Where anything in this section conflicts with the rest of these Terms, this section takes priority for the Audit Service.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">a) What the Audit Service is</h3>
+              <p className="text-sm">
+                The Audit Service is a written report reviewing the publicly visible aspects of your website and, for the bundle tier, your social media and wider online presence, at the time of review. It sets out our observations and recommendations for improvement.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">b) Advice, not a guarantee or certification</h3>
+              <p className="text-sm">
+                Our recommendations reflect our professional opinion at the time of review. They are not a guarantee of any business outcome, including increased traffic, enquiries, sales, or search ranking, and they are not a formal legal, accessibility, security, tax, or regulatory compliance certification. Areas such as GDPR, WCAG accessibility, and consumer law compliance are legally complex; if you need formal compliance certification or legal advice, engage a qualified solicitor or relevant specialist. We accept no liability for decisions made, or not made, on the basis of our recommendations.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">c) Delivery</h3>
+              <p className="text-sm">
+                We aim to deliver your report by email within <strong className="text-[#1E293B]">48 hours</strong> of payment. In exceptional circumstances beyond our reasonable control, including illness, technical failure, or a Force Majeure Event as described in Section 12, delivery may take up to <strong className="text-[#1E293B]">10 working days</strong>. We will let you know if this applies to your order.
+              </p>
+              <p className="mt-3 text-sm">
+                It is your responsibility to provide a correct, monitored email address at checkout. We are not liable for non-delivery caused by an incorrect address or spam and junk filtering.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">d) Free follow-up consultation</h3>
+              <p className="text-sm">
+                Every order includes one free 30-minute follow-up consultation to discuss the findings. This must be booked within <strong className="text-[#1E293B]">90 days</strong> of your order date, after which the offer expires.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">e) Payment, pricing, and refunds</h3>
+              <p className="text-sm">
+                Payment is taken in full at the time of order via Stripe, a third-party payment processor. We do not see or store your card details. The price charged is the price shown at checkout at the time of payment.
+              </p>
+              <p className="mt-3 text-sm">
+                Because your report is prepared specifically for you, once it has been delivered the order is complete and non-refundable. If we are unable to deliver your report at all, you will receive a full refund.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">f) Right of cancellation</h3>
+              <p className="text-sm">
+                If you are ordering as a consumer in a personal capacity rather than for your trade, business, or profession, you would normally have a 14-day right to cancel a service before it is completed. By ticking the confirmation box at checkout, you expressly request that we begin the Audit Service immediately, and you acknowledge that you lose this right to cancel once your report has been delivered.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">g) Confidentiality of your information</h3>
+              <p className="text-sm">
+                We only review information that is publicly visible or that you voluntarily share with us, for example in your brief. We do not attempt to access private, password-protected, or restricted systems as part of the Audit Service.
+              </p>
             </section>
 
           </div>

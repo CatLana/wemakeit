@@ -542,10 +542,10 @@ export default async function ArticlePage({
               </p>
               <div className="flex flex-col gap-3">
                 <Link
-                  href="/contact"
+                  href="/audit"
                   className="inline-flex items-center justify-center min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
                 >
-                  Talk to us about accessibility
+                  Order an accessibility audit
                 </Link>
                 <a
                   href="https://www.w3.org/WAI/standards-guidelines/wcag/"

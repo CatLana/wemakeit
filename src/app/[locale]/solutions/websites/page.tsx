@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import AuditBanner from "@/components/sections/AuditBanner";
 import { Link } from "@/i18n/navigation";
 
 const BASE_URL = "https://www.wemakeit.ie";
@@ -122,7 +121,6 @@ export default async function WebsitesSolutionsPage({
           </div>
         </section>
 
-        <AuditBanner />
       </main>
       <Footer />
 
