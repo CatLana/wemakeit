@@ -162,8 +162,7 @@ export default async function LocaleLayout({
     cookieBanner:     allMessages.cookieBanner,
     languageSwitcher: allMessages.languageSwitcher,
     newsletter:       allMessages.newsletter,
-    audit:            allMessages.audit,
-    auditExpert:      allMessages.auditExpert,
+    auditPage:        allMessages.auditPage,
   };
 
   // JSON-LD organisation schema

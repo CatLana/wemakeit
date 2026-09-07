@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import LaunchCountdown from "@/components/LaunchCountdown";
 import AuditBuyForm from "@/components/AuditBuyForm";
+import AuditAltPaymentForm from "@/components/AuditAltPaymentForm";
 import { getAuditPrices, isLaunchPricingActive, AUDIT_LAUNCH_ENDS_AT } from "@/lib/audit-pricing";
 
 const BASE_URL = "https://www.wemakeit.ie";
@@ -239,6 +240,8 @@ export default async function AuditPage({
                 />
               </div>
             </div>
+
+            <AuditAltPaymentForm defaultTier="website" />
           </div>
         </section>
 

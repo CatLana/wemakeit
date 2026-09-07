@@ -519,6 +519,33 @@
         "A free follow-up call is included either way"
       ]
     },
+    "altPayment": {
+      "toggleLabel": "Card not working, or prefer another way to pay?",
+      "heading": "Request a payment link instead",
+      "body": "Tell us which audit you'd like and we'll send you a secure Revolut payment link by email within one business day. Your 48-hour delivery window starts once we receive payment.",
+      "form": {
+        "ariaLabel": "Request an alternative payment link",
+        "name": "Your name",
+        "namePlaceholder": "Jane Murphy",
+        "email": "Your email",
+        "emailPlaceholder": "jane@company.ie",
+        "tier": "Which audit?",
+        "tierWebsite": "Website audit",
+        "tierBundle": "Website + social bundle",
+        "message": "Anything else we should know?",
+        "messagePlaceholder": "Optional",
+        "submit": "Request payment link",
+        "submitting": "Sending…",
+        "agreeLabel": "I agree to the",
+        "termsLinkLabel": "Terms of Service for this audit",
+        "success": {
+          "title": "Request received",
+          "body": "We'll email you a secure payment link within one business day."
+        },
+        "serverError": "Something went wrong. Please try again.",
+        "networkError": "Could not reach the server. Please check your connection and try again."
+      }
+    },
     "thankYou": {
       "meta": { "title": "Order confirmed | We Make IT" },
       "heading": "Thanks, your order is confirmed",
