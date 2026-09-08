@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const LAST_UPDATED = "1 September 2026";
+const LAST_UPDATED = "8 September 2026";
 
 export default async function TermsOfServicePage({
   params,
@@ -349,6 +349,9 @@ export default async function TermsOfServicePage({
               <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">e) Payment, pricing, and refunds</h3>
               <p className="text-sm">
                 Payment is taken in full at the time of order via Stripe, a third-party payment processor. We do not see or store your card details. The price charged is the price shown at checkout at the time of payment.
+              </p>
+              <p className="mt-3 text-sm">
+                We are not currently VAT-registered, as our turnover is below the Irish VAT registration threshold. No VAT is added to or included in the Audit Service price. If this changes in future, this section will be updated and prices adjusted accordingly.
               </p>
               <p className="mt-3 text-sm">
                 Because your report is prepared specifically for you, once it has been delivered the order is complete and non-refundable. If we are unable to deliver your report at all, you will receive a full refund.
