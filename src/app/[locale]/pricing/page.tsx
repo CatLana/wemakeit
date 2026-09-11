@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import GetQuoteButton from "@/components/GetQuoteButton";
+import BookServiceButton from "@/components/BookServiceButton";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 import { getAuditPrices } from "@/lib/audit-pricing";
@@ -133,23 +134,26 @@ export default async function PricingPage({
             <h2 id="services-heading" className="sr-only">Services and prices</h2>
             <div className="divide-y divide-slate-200">
               {services.map((service) => (
-                <div key={service.name} className="py-8 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
-                  <div className="flex-1">
-                    <h3 className="text-lg font-bold text-[#1E293B]">{service.name}</h3>
-                    <p className="mt-1 text-sm text-slate-500 leading-relaxed max-w-lg">{service.description}</p>
-                    {service.largeProject && (
-                      <Link
-                        href={{ pathname: "/", query: { service: "quote" }, hash: "quote" } as never}
-                        className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#0E7490] hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                      >
-                        Get a quote for a project like this
-                        <ArrowRight size={13} aria-hidden="true" />
-                      </Link>
-                    )}
+                <div key={service.name} className="py-8 flex flex-col gap-4">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-[#1E293B]">{service.name}</h3>
+                      <p className="mt-1 text-sm text-slate-500 leading-relaxed max-w-lg">{service.description}</p>
+                      {service.largeProject && (
+                        <Link
+                          href={{ pathname: "/", query: { service: "quote" }, hash: "quote" } as never}
+                          className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#0E7490] hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                        >
+                          Get a quote for a project like this
+                          <ArrowRight size={13} aria-hidden="true" />
+                        </Link>
+                      )}
+                    </div>
+                    <div className="sm:text-right shrink-0">
+                      <span className="text-xl font-extrabold text-[#1E293B]">{service.price}</span>
+                    </div>
                   </div>
-                  <div className="sm:text-right shrink-0">
-                    <span className="text-xl font-extrabold text-[#1E293B]">{service.price}</span>
-                  </div>
+                  <BookServiceButton service={service.name} label="Book a free consultation" className="self-start" />
                 </div>
               ))}
             </div>

@@ -60,11 +60,14 @@ export async function generateMetadata({
 
 export default async function BookPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ service?: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const { service } = await searchParams;
   const t = await getTranslations({ locale, namespace: "book" });
   const painPoints = t.raw("story.painPoints") as string[];
 
@@ -176,7 +179,7 @@ export default async function BookPage({
 
         {/* Calendar */}
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <BookingEmbed locale={locale} />
+          <BookingEmbed locale={locale} service={service} />
         </div>
       </main>
       <Footer />

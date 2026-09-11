@@ -3,6 +3,7 @@ import { Check } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import BookServiceButton from "@/components/BookServiceButton";
 import { Link } from "@/i18n/navigation";
 
 const BASE_URL = "https://www.wemakeit.ie";
@@ -103,9 +104,10 @@ export default async function SoftwareSolutionsPage({
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E293B] mb-6">{t("servicesHeading")}</h2>
             <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {services.map((service) => (
-                <li key={service.name} className="rounded-xl border border-slate-200 p-5 bg-[#F8FAFC]">
+                <li key={service.name} className="rounded-xl border border-slate-200 p-5 bg-[#F8FAFC] flex flex-col">
                   <h3 className="font-semibold text-[#1E293B] mb-2">{service.name}</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">{service.detail}</p>
+                  <p className="text-sm text-slate-600 leading-relaxed mb-4">{service.detail}</p>
+                  <BookServiceButton service={service.name} label={t("serviceCta")} className="self-start mt-auto" />
                 </li>
               ))}
             </ul>

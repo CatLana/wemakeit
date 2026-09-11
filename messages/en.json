@@ -777,6 +777,7 @@
     "consultationCtaHeading": "Not sure what your website needs?",
     "consultationCtaBody": "The first 30 minutes are free. Need more time? A paid 60-minute session is also available.",
     "consultationCta": "Book a free consultation",
+    "serviceCta": "Book a free consultation",
     "finalCtaHeading": "Ready to improve your website?",
     "finalCtaBody": "Tell us what you need and we will suggest a clear, practical plan.",
     "finalCta": "Send us a message"
@@ -797,6 +798,7 @@
     "advisoryCtaHeading": "Get a second opinion before you launch",
     "advisoryCtaBody": "The first 30 minutes are free. Need more time? A paid 60-minute session is also available.",
     "advisoryCta": "Book a free consultation",
+    "serviceCta": "Book a free consultation",
     "servicesHeading": "Software services we provide",
     "services": [
       { "name": "MVP Software", "detail": "Build a focused first version to validate demand quickly and reduce risk." },

@@ -17,7 +17,7 @@ function WhatsAppIcon() {
   );
 }
 
-export default async function BookingEmbed({ locale }: { locale: string }) {
+export default async function BookingEmbed({ locale, service }: { locale: string; service?: string }) {
   const t = await getTranslations({ locale, namespace: "book" });
 
   return (
@@ -25,7 +25,7 @@ export default async function BookingEmbed({ locale }: { locale: string }) {
       {/* Step 1: lead-capture form */}
       <ConsultationForm
         variant="technicalConsultation"
-        serviceName="Technical consultation (book page)"
+        serviceName={service ?? "Technical consultation (book page)"}
         stepNumber={1}
         stepLabel={t("step1Label")}
       />
