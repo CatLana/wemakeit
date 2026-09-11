@@ -95,13 +95,24 @@ async function AboutPageContent({
         {/* Team */}
         <section className="bg-white py-20 lg:py-28">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-16 text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-3">
-                {t("teamHeading")}
-              </h2>
-              <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-                {t("teamSubheading")}
-              </p>
+            <div className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center text-center md:text-left">
+              <div>
+                <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-3">
+                  {t("teamHeading")}
+                </h2>
+                <p className="text-slate-600 text-lg">
+                  {t("teamSubheading")}
+                </p>
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/software-engineer-at-work.jpg"
+                  alt={t("teamPhotoAlt")}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+              </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">

@@ -168,6 +168,7 @@
     "body3": "Our team combines full-stack development, accessible design, UX, and business expertise. We focus on Ireland while warmly welcoming clients from other markets too.",
     "tagline": "Wherever you are, if you have an idea, we would love to hear it.",
     "cta": "Get a free quote",
+    "photoAlt": "Lana, founder of We Make IT, shaking hands with a client",
     "visualLabel": "We Make IT - Ireland",
     "visualHeading": "Based in Ireland",
     "visualSub": "Working globally",
@@ -1142,6 +1143,7 @@
     ],
     "teamHeading": "Meet Our Team",
     "teamSubheading": "We combine design, development, strategy, and business expertise. Most importantly, we genuinely care about your success.",
+    "teamPhotoAlt": "One of our engineers deep in focus at his home workspace, building a client's product",
     "team": [
       {
         "name": "Lana",
@@ -1155,7 +1157,7 @@
           { "year": "2017", "credential": "Post Graduate Higher Diploma in Web Development, Level 8 (First Class Hons)", "institution": "Griffith College Dublin" }
         ]
       },
-      { "name": "Andrea", "title": "Chief Architect & Senior Software Engineer", "photo": "/images/andrea_contarino.jpg", "bio": "Full-stack software engineer with 20 years of experience working on global IT projects and infrastructures. Has built and maintained systems for companies including Fidelity Investments, Global Payments, and the Central Bank of Ireland. Specialist in technical architecture for medical, financial, and public administration systems.", "qualifications": [] }
+      { "name": "Andrea", "title": "Chief Architect & Senior Software Engineer", "photo": "/images/andrea-contarino-smiling.jpg", "bio": "Full-stack software engineer with 20 years of experience working on global IT projects and infrastructures. Has built and maintained systems for companies including Fidelity Investments, Global Payments, and the Central Bank of Ireland. Specialist in technical architecture for medical, financial, and public administration systems.", "qualifications": [] }
     ],
     "teamCollaborators": "We also collaborate with a network of senior consultants on a contract basis. Depending on the project, we bring in the right specialists from our established collaborators, so you always get the expertise your case needs.",
     "teamPlaceholder": "Photo coming soon"

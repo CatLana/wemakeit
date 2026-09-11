@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Heart, Award, Users, ShieldCheck } from "lucide-react";
 import { useTranslations } from "next-intl";
 import GetQuoteButton from "@/components/GetQuoteButton";
@@ -31,6 +32,15 @@ export default function About() {
             <GetQuoteButton className="mt-8 inline-flex items-center justify-center min-h-[50px] px-7 bg-[#0F172A] text-white font-semibold rounded-xl hover:bg-slate-800 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2">
               {t("cta")}
             </GetQuoteButton>
+          </div>
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+            <Image
+              src="/images/webdevelopment-company-owner-shaking-hand-with-client.png"
+              alt={t("photoAlt")}
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
           </div>
         </div>
 
