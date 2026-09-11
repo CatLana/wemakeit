@@ -33,7 +33,7 @@ export default function About() {
               {t("cta")}
             </GetQuoteButton>
           </div>
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+          <div className="relative aspect-square max-w-sm mx-auto rounded-2xl overflow-hidden">
             <Image
               src="/images/webdevelopment-company-owner-shaking-hand-with-client.png"
               alt={t("photoAlt")}
