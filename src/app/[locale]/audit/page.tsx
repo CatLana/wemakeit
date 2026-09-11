@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Check, TrendingDown, TrendingUp } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import Header from "@/components/layout/Header";
@@ -129,8 +130,14 @@ export default async function AuditPage({
                 </h2>
                 <p className="text-slate-600 leading-relaxed text-lg">{t("intro.body")}</p>
               </div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 flex items-center justify-center p-6">
-                <p className="text-sm text-slate-400 leading-relaxed text-center">{t("intro.imageAlt")}</p>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100">
+                <Image
+                  src="/images/business-owner-looking-at-their-website.jpg"
+                  alt={t("intro.imageAlt")}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
               </div>
             </div>
           </div>
