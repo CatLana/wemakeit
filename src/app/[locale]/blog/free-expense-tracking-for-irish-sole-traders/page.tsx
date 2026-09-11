@@ -258,10 +258,10 @@ export default async function ArticlePage({
             </h2>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Google Drive and Google Sheets are free with any Google account,
-              work on every device, and have been around for two decades. There
-              is no pricing tier to worry about, no credit card required, and
-              your data is accessible wherever you are. For a sole trader with
-              up to 30 transactions per month, this is all you need.
+              work on every device, and have been around for two decades. It&apos;s
+              genuinely free, no card details needed, and your data is
+              accessible wherever you are. For a sole trader with up to 30
+              transactions per month, this is all you need.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-3">
               Set up a folder structure like this in Google Drive:

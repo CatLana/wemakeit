@@ -5,6 +5,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BookingEmbed from "@/components/BookingEmbed";
+import { Link } from "@/i18n/navigation";
 
 function ShieldGraphic() {
   return (
@@ -80,7 +81,16 @@ export default async function BookPage({
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
               {t("heading")}
             </h1>
-            <p className="mt-3 text-slate-400 text-sm">{t("body")}</p>
+            <p className="mt-3 text-slate-400 text-sm max-w-xl">{t("body")}</p>
+            <p className="mt-4 text-sm text-slate-400">
+              {t("auditBridge.text")}{" "}
+              <Link
+                href="/audit"
+                className="text-[#22D3EE] font-semibold hover:underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+              >
+                {t("auditBridge.cta")}
+              </Link>
+            </p>
           </div>
         </div>
 

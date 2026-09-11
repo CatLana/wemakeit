@@ -5,6 +5,7 @@ import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
+import AuditOffer from "@/components/sections/AuditOffer";
 import Stats from "@/components/sections/Stats";
 import Services from "@/components/sections/Services";
 import Work from "@/components/sections/Work";
@@ -95,6 +96,7 @@ export default async function HomePage({
       <Header />
       <main id="main-content" tabIndex={-1}>
         <Hero />
+        <AuditOffer />
         <Services />
         <Stats />
         <Work />

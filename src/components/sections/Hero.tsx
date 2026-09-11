@@ -74,15 +74,6 @@ export default function Hero() {
           })}
         </div>
 
-        <p className="text-lg sm:text-xl font-medium leading-relaxed mb-4 sm:mb-6">
-          <Link
-            href="/book"
-            className="text-[#22D3EE] font-bold hover:underline underline-offset-2 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-          >
-            {t("subtitleCta")}
-          </Link>
-        </p>
-
         {/* Credibility badge */}
         <div className="inline-flex items-start gap-2 px-5 py-3 max-w-full rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 text-[#22D3EE] text-sm font-semibold mb-6 sm:mb-10">
           <Award size={14} aria-hidden="true" className="mt-0.5 shrink-0" />
@@ -92,17 +83,17 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="/book"
+            href="/audit"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
           >
             {t("cta1")}
           </Link>
-          <a
-            href="#services"
+          <Link
+            href="/book"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-transparent text-white border border-white/20 font-semibold rounded-xl hover:bg-white/5 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
           >
             {t("cta2")}
-          </a>
+          </Link>
         </div>
 
         {/* Scroll indicator */}

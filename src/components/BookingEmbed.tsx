@@ -3,10 +3,8 @@ import { Video, Clock, ArrowRight, Mail, FileText } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import StepBadge from "@/components/StepBadge";
 import ConsultationForm from "@/components/ConsultationForm";
-
-// Google Calendar appointment scheduling blocks cross-origin iframe embedding
-// (X-Frame-Options: SAMEORIGIN). The booking page opens in a new tab instead.
-const BOOKING_URL = "https://calendar.app.google/KXdMj1SU1hRtB6fe6";
+import ConsultationBuyForm from "@/components/ConsultationBuyForm";
+import { CONSULTATION_BOOKING_URL } from "@/lib/consultation-booking";
 
 const WHATSAPP_URL = "https://wa.me/353838158383";
 const EMAIL = "info@wemakeit.ie";
@@ -32,36 +30,65 @@ export default async function BookingEmbed({ locale }: { locale: string }) {
         stepLabel={t("step1Label")}
       />
 
-      {/* Step 2: booking card */}
-      <div className="rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col gap-5">
+      {/* Step 2: choose your offer */}
+      <div id="consultation" className="rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col gap-5">
         <StepBadge number={2} label={t("step2Label")} />
 
         <span className="inline-flex items-center gap-1.5 self-start rounded-full border bg-[#0F172A] border-[#22D3EE]/40 text-[#22D3EE] px-3 py-1 text-xs font-semibold">
           <Video size={15} aria-hidden="true" />
-          {t("onlineBadge")}
+          {t("offersHeading")}
         </span>
 
-        <div>
-          <h2 className="text-lg font-bold text-[#1E293B]">{t("onlineLabel")}</h2>
-          <p className="mt-1.5 flex items-center gap-1.5 text-sm text-slate-500">
-            <Clock size={13} aria-hidden="true" />
-            {t("onlineDuration")}
-          </p>
-        </div>
-
         <p className="text-sm text-slate-600 leading-relaxed">
-          {t("onlineDescription")}
+          {t("offersSubheading")}
         </p>
 
-        <a
-          href={BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 self-start rounded-lg bg-[#0F172A] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
-        >
-          {t("bookBtn")}
-          <ArrowRight size={15} aria-hidden="true" />
-        </a>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {/* Free offer */}
+          <div className="rounded-xl border border-slate-200 p-5 flex flex-col gap-3">
+            <span className="self-start rounded-full bg-emerald-50 text-emerald-700 px-2.5 py-0.5 text-xs font-bold">
+              {t("freeOffer.badge")}
+            </span>
+            <h3 className="text-base font-bold text-[#1E293B]">{t("freeOffer.heading")}</h3>
+            <p className="flex items-center gap-1.5 text-xs text-slate-500">
+              <Clock size={13} aria-hidden="true" />
+              {t("freeOffer.duration")}
+            </p>
+            <p className="text-sm text-slate-600 leading-relaxed flex-1">
+              {t("freeOffer.description")}
+            </p>
+            <a
+              href={CONSULTATION_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F172A] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+            >
+              {t("freeOffer.cta")}
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+          </div>
+
+          {/* Paid offer */}
+          <div className="rounded-xl border-2 border-[#22D3EE] p-5 flex flex-col gap-3">
+            <span className="self-start rounded-full bg-[#22D3EE]/15 text-[#0E7490] px-2.5 py-0.5 text-xs font-bold">
+              {t("paidOffer.badge")}
+            </span>
+            <h3 className="text-base font-bold text-[#1E293B]">{t("paidOffer.heading")}</h3>
+            <p className="flex items-center gap-1.5 text-xs text-slate-500">
+              <Clock size={13} aria-hidden="true" />
+              {t("paidOffer.duration")}
+            </p>
+            <p className="text-sm text-slate-600 leading-relaxed flex-1">
+              {t("paidOffer.description")}
+            </p>
+            <ConsultationBuyForm
+              buyLabel={t("paidOffer.cta")}
+              agreeLabel={t("paidOffer.agreeLabel")}
+              termsLinkLabel={t("paidOffer.termsLinkLabel")}
+              buttonClassName="inline-flex items-center justify-center gap-2 rounded-lg bg-[#22D3EE] px-5 py-2.5 text-sm font-semibold text-[#0F172A] hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Step 3: pre-meeting brief */}

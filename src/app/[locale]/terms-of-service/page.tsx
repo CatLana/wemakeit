@@ -368,6 +368,50 @@ export default async function TermsOfServicePage({
               </p>
             </section>
 
+            {/* 21. Paid consultation terms */}
+            <section id="consultation-terms">
+              <h2 className="text-xl font-bold text-[#1E293B] mb-3">21. Paid Technical Consultation — Additional Terms</h2>
+              <p className="text-sm">
+                This section applies specifically to the paid 60-minute technical consultation (&ldquo;Paid Consultation&rdquo;) purchased through wemakeit.ie. Where anything in this section conflicts with the rest of these Terms, this section takes priority for the Paid Consultation. It does not apply to the separate free 30-minute consultation, which carries no charge.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">a) What the Paid Consultation is</h3>
+              <p className="text-sm">
+                The Paid Consultation is a 60-minute video call (or in-person meeting, by arrangement) to discuss your website, app, or technical decision, and give you our professional opinion and recommendations.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">b) Advice, not a guarantee or certification</h3>
+              <p className="text-sm">
+                Our recommendations reflect our professional opinion at the time of the call. They are not a guarantee of any business outcome, and they are not a formal legal, accessibility, security, tax, or regulatory compliance certification. If you need formal compliance certification or legal advice, engage a qualified solicitor or relevant specialist. We accept no liability for decisions made, or not made, on the basis of our recommendations.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">c) Booking</h3>
+              <p className="text-sm">
+                After payment, you book your 60-minute slot using the calendar link provided on the confirmation page and in your confirmation email. There is no fixed deadline to book, but we recommend booking within 90 days of payment.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">d) Payment, pricing, and refunds</h3>
+              <p className="text-sm">
+                Payment is taken in full at the time of booking via Stripe, a third-party payment processor. We do not see or store your card details. The price charged is the price shown at checkout at the time of payment.
+              </p>
+              <p className="mt-3 text-sm">
+                We are not currently VAT-registered, as our turnover is below the Irish VAT registration threshold. No VAT is added to or included in the Paid Consultation price. If this changes in future, this section will be updated and prices adjusted accordingly.
+              </p>
+              <p className="mt-3 text-sm">
+                You may cancel or reschedule for a full refund any time before your booked slot takes place. Once the call has taken place, the session is complete and non-refundable. If you do not attend your booked slot without cancelling in advance, no refund is due.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">e) Right of cancellation</h3>
+              <p className="text-sm">
+                If you are ordering as a consumer in a personal capacity rather than for your trade, business, or profession, you would normally have a 14-day right to cancel a service before it is completed. By ticking the confirmation box at checkout, you expressly request that we make the booking link available to you immediately, and you acknowledge that you lose this right to cancel once the call has taken place.
+              </p>
+
+              <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">f) Confidentiality</h3>
+              <p className="text-sm">
+                Anything you share with us during the call, or beforehand in a pre-meeting brief, is kept confidential and used only to prepare for and deliver the consultation.
+              </p>
+            </section>
+
           </div>
         </div>
       </main>

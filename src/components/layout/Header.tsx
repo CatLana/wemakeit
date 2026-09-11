@@ -18,6 +18,7 @@ export default function Header() {
   const trapCleanupRef = useRef<(() => void) | null>(null);
 
   const navLinks = [
+    { label: t("nav.audit"), href: "/audit" },
     { label: t("nav.whatWeDo"), href: "/#services" },
     { label: t("nav.aboutUs"), href: "/about" },
     { label: t("nav.ourWork"), href: "/work" },

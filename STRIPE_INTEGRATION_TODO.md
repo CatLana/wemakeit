@@ -18,8 +18,16 @@ Nothing in the code itself is a hardcoded placeholder — `line_items`, `success
 | `STRIPE_PRICE_AUDIT_BUNDLE_LAUNCH` | unset | Price ID for the €120 website + social bundle (launch pricing). |
 | `STRIPE_PRICE_AUDIT_WEBSITE_STANDARD` | unset | Price ID for the €100 website audit (standard pricing, after the launch window). |
 | `STRIPE_PRICE_AUDIT_BUNDLE_STANDARD` | unset | Price ID for the €150 website + social bundle (standard pricing). |
+| `STRIPE_PRICE_CONSULTATION` | unset | Price ID for the €60 paid 60-minute technical consultation (single fixed price, no launch/standard split). |
 
-All six live in [.env.local.example](.env.local.example) as a template — copy the ones you need into `.env.local`.
+All seven live in [.env.local.example](.env.local.example) as a template — copy the ones you need into `.env.local`.
+
+## Paid consultation (added alongside the audit checkout)
+
+The `/book` page now sells two consultations: a free 30-minute call (booked directly via the Google Calendar link, no payment) and a paid 60-minute call at €60 (booked like the audit — Stripe checkout first).
+
+- [src/app/api/stripe/checkout-consultation/route.ts](src/app/api/stripe/checkout-consultation/route.ts) — same shape as the audit's checkout route, but a single fixed price (`STRIPE_PRICE_CONSULTATION`), no tier/launch matrix. Called by `src/components/ConsultationBuyForm.tsx`. Success redirects to `/en/book/thank-you`, which points the customer at the same Google Calendar link (`src/lib/consultation-booking.ts`) to pick their slot.
+- [src/app/api/stripe/webhook/route.ts](src/app/api/stripe/webhook/route.ts) — the same webhook endpoint handles both products, branching on `session.metadata.product` (`"consultation"` vs the audit's default). No separate webhook endpoint or signing secret needed; register the one endpoint below for both.
 
 The launch/standard cutoff date itself is `AUDIT_LAUNCH_ENDS_AT` in [src/lib/audit-pricing.ts](src/lib/audit-pricing.ts), currently set to 2026-10-01 as a placeholder — confirm it against the real deploy date.
 

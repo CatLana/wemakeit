@@ -4,6 +4,7 @@ import { Check, TrendingDown, TrendingUp } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Link } from "@/i18n/navigation";
 import LaunchCountdown from "@/components/LaunchCountdown";
 import AuditBuyForm from "@/components/AuditBuyForm";
 import AuditAltPaymentForm from "@/components/AuditAltPaymentForm";
@@ -264,6 +265,15 @@ export default async function AuditPage({
                 </li>
               ))}
             </ul>
+            <p className="mt-8 text-sm text-slate-500">
+              {t("bookBridge.text")}{" "}
+              <Link
+                href="/book"
+                className="text-[#0E7490] font-semibold hover:text-[#22D3EE] hover:underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+              >
+                {t("bookBridge.cta")}
+              </Link>
+            </p>
           </div>
         </section>
       </main>

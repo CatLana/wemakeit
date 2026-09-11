@@ -174,7 +174,7 @@ export default async function PricingPage({
               <div>
                 <h2 id="consultation-heading" className="text-lg font-bold text-[#1E293B]">Technical consultation</h2>
                 <p className="text-sm text-slate-500 mt-1 max-w-md">
-                  A second opinion on your AI-built app, website, or technical decision. The first 30 minutes are free. After that, €60 per hour, billed after the call.
+                  A second opinion on your AI-built app, website, or technical decision. The first 30 minutes are free. Need more time? A paid 60-minute session is also available.
                 </p>
               </div>
               <Link

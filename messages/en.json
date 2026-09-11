@@ -8,6 +8,7 @@
   "header": {
     "logoAriaLabel": "We Make IT - Home",
     "nav": {
+      "audit": "Audit",
       "whatWeDo": "Services",
       "aboutUs": "About",
       "howItWorks": "How It Works",
@@ -35,12 +36,24 @@
       "Too busy to deal with the technical side of your business? We take it off your plate, from websites to custom software.",
       "Building your own product with AI yourself? We offer technical consultations to help you get it right before you have to rebuild."
     ],
-    "subtitleCta": "Book your FREE 30-min consultation today.",
     "credibilityBadge": "Every product we build is accessible, secure, and compliant with the law.",
-    "cta1": "Book a consultation",
-    "cta2": "Who We Are",
-    "auditCta": "Free website audit. See how your site scores",
+    "cta1": "Get your website audit",
+    "cta2": "Book a free consultation",
     "ariaLabel": "Hero: We Make IT home"
+  },
+  "auditOffer": {
+    "eyebrow": "Website & digital presence audit",
+    "heading": "Not sure if your website is actually working for you?",
+    "body": "Get a plain-English report on what's working, what's costing you enquiries, and exactly what to fix. Delivered within 48 hours. No call required.",
+    "features": [
+      "Written report with clear, ranked priorities",
+      "Delivered within 48 hours",
+      "Free 30-minute follow-up call included"
+    ],
+    "priceLabel": "From",
+    "cta": "Order your audit",
+    "bridgeText": "Not sure exactly what you need?",
+    "bridgeCta": "Book a free consultation instead"
   },
   "stats": {
     "ariaLabel": "How we work",
@@ -196,9 +209,9 @@
     ]
   },
   "ctaStrip": {
-    "heading": "Not sure if your project needs a technical check?",
-    "body1": "If you're building something with a login, a form, or anything that collects personal data, especially with AI, it's worth a second opinion before you launch.",
-    "body2": "The first 30 minutes are free.",
+    "heading": "Not sure exactly what your website or project needs?",
+    "body1": "Book a free 30-minute video call. We'll talk through where you're at and work out the right next step together.",
+    "body2": "It's free, with no obligation to book anything else.",
     "cta": "Book a free consultation"
   },
   "contact": {
@@ -513,12 +526,16 @@
       "deliveryNotice": "Delivery starts immediately. Once your report is delivered, you won't be able to cancel."
     },
     "reassurance": {
-      "heading": "No pressure, no upsell",
+      "heading": "Follow-up call included",
       "points": [
         "Order online, no call required if you don't want one",
         "Delivered within 48 hours by a person, not an automated tool",
         "A free follow-up call is included either way"
       ]
+    },
+    "bookBridge": {
+      "text": "Still not sure which audit you need?",
+      "cta": "Book a free consultation instead"
     },
     "altPayment": {
       "toggleLabel": "Card not working, or prefer another way to pay?",
@@ -551,8 +568,11 @@
       "meta": { "title": "Order confirmed | We Make IT" },
       "heading": "Thanks, your order is confirmed",
       "body": "Check your inbox for a confirmation email. Your report will land within 48 hours.",
-      "briefCta": "Tell us your goal",
-      "bookCta": "Book your free follow-up"
+      "briefHeading": "One more thing before we start",
+      "briefBody": "Take 5 minutes to fill in your brief. It tells us what you're trying to achieve, so we can tailor the report to your goals instead of reviewing your site in a generic way.",
+      "briefConsequence": "Once your report is delivered, that order is complete. If you would like it looked at again with more detail later, that is a new order, so it is worth getting the brief right now.",
+      "briefAudioNote": "Not in the mood to type? The brief page has a voice message option too, just talk us through it on WhatsApp instead.",
+      "briefCta": "Fill in your brief now"
     }
   },
   "newsletter": {
@@ -604,7 +624,7 @@
       },
       "technicalConsultation": {
         "heading": "Tell us what you're building",
-        "subheading": "The first 30 minutes are free. After that, consultations are €60 per hour, billed after the call. No commitment required.",
+        "subheading": "The first 30 minutes are free. Need more time? A paid 60-minute session is also available. No commitment required.",
         "messageLabel": "What do you need a second opinion on?",
         "messagePlaceholder": "e.g. an AI-built app that collects user data, a new feature with a login, or a platform choice you're unsure about.",
         "submitLabel": "Request a free consultation"
@@ -755,7 +775,7 @@
       { "name": "Regular updates that boost visibility", "detail": "Scheduled content and technical updates that improve SEO, engagement, and search visibility over time." }
     ],
     "consultationCtaHeading": "Not sure what your website needs?",
-    "consultationCtaBody": "The first 30 minutes are free. After that, consultations are €60 per hour, billed after the call.",
+    "consultationCtaBody": "The first 30 minutes are free. Need more time? A paid 60-minute session is also available.",
     "consultationCta": "Book a free consultation",
     "finalCtaHeading": "Ready to improve your website?",
     "finalCtaBody": "Tell us what you need and we will suggest a clear, practical plan.",
@@ -775,7 +795,7 @@
     "advisoryHeading": "Technical consultations for AI-built apps",
     "advisoryBody": "If you're building your app or product yourself with an AI tool, AI saves you real time, but it doesn't take on the liability if something goes wrong. You do. A simple informative page needs very little of this. Anything with a login, a form, or that collects personal data needs a proper check: GDPR and data handling, accessibility law, and the platform or architecture choices that are expensive to undo later. We review what you've built or planned and tell you plainly what to fix and what's already fine.",
     "advisoryCtaHeading": "Get a second opinion before you launch",
-    "advisoryCtaBody": "The first 30 minutes are free. After that, consultations are €60 per hour, billed after the call.",
+    "advisoryCtaBody": "The first 30 minutes are free. Need more time? A paid 60-minute session is also available.",
     "advisoryCta": "Book a free consultation",
     "servicesHeading": "Software services we provide",
     "services": [
@@ -885,7 +905,7 @@
       ],
       "whyHeading": "Why Irish Businesses Choose Us",
       "why": [
-        { "number": "01", "title": "Fixed Price from Day One", "description": "You know the full cost before we write a line of code. No hourly billing, no scope creep surprises." },
+        { "number": "01", "title": "Fixed Price from Day One", "description": "You know the full cost before we write a line of code, fixed and agreed upfront, with no surprise bills later." },
         { "number": "02", "title": "Accessibility Built In", "description": "We build to WCAG 2.1 AA so your app works for all users and meets EU accessibility requirements from launch." },
         { "number": "03", "title": "Design Thinking First", "description": "We validate before we build. Your idea is tested with real users before a single feature is committed to production." },
         { "number": "04", "title": "15+ Years of Experience", "description": "Our team has shipped products at scale. We bring that experience to every project, no matter the size." }
@@ -1031,7 +1051,7 @@
         { "title": "Accessibility from Day One", "description": "Every app we build meets WCAG 2.1 AA. VoiceOver, TalkBack, and dynamic text all tested before launch." },
         { "title": "Design Thinking Approach", "description": "We validate flows and screens with users before we write production code. You ship what users actually want." },
         { "title": "Fixed Pricing", "description": "You know the cost before we start, agreed upfront with no hourly billing." },
-        { "title": "Full Stack Team", "description": "Design, frontend, backend, and DevOps all under one roof. No handoff problems, no coordination overhead." }
+        { "title": "Full Stack Team", "description": "Design, frontend, backend, and DevOps all under one roof, so you deal with one team instead of juggling several." }
       ]
     },
     "softwareConsultancy": {
@@ -1094,7 +1114,7 @@
       "breadcrumb": "Website & App Localisation",
       "desc": "We handle the full localisation of your website or app, from translating content to integrating i18n frameworks in your codebase. We have done it for our own product, and we can do it for yours.",
       "uniqueHeading": "Why We Are Different",
-      "uniqueBody": "Most localisation agencies translate content but have no idea how to wire it into a React or Next.js app. We do both: in-house linguistic expertise and the technical skills to implement it. No awkward handoffs, no broken layouts from right-to-left text, no missing string keys.",
+      "uniqueBody": "Most localisation agencies translate content but have no idea how to wire it into a React or Next.js app. We do both: in-house linguistic expertise and the technical skills to implement it, so you avoid the usual pitfalls: awkward handoffs, broken layouts from right-to-left text, missing string keys.",
       "whatHeading": "What We Do",
       "whatItems": [
         { "title": "Content Translation", "description": "Accurate, natural-sounding translation into the target language, not machine translation copy-pasted into a CMS." },
@@ -1165,15 +1185,32 @@
   "book": {
     "eyebrow": "Book a call",
     "heading": "Book a technical consultation",
-    "body": "Tell us what you're building and pick a time that suits you. The first 30 minutes are free.",
-    "bookBtn": "Book now",
+    "body": "Not sure what you need, or want a second opinion before you build or launch? Book a free 30-minute video call. Need more time, or a follow-up after that? You can book a paid 60-minute session too.",
+    "auditBridge": {
+      "text": "Looking for a full written report instead?",
+      "cta": "Get a website audit"
+    },
     "step1Label": "Step 1",
     "step2Label": "Step 2",
     "step3Label": "Step 3",
-    "onlineLabel": "Online video call or in-person meeting",
-    "onlineDuration": "30 minutes",
-    "onlineBadge": "Google Meet",
-    "onlineDescription": "The first 30 minutes are free. After that, consultations are billed at €60 per hour, with a payment link sent after the call. Pick a slot below and you will receive a confirmation with the link for a video call. If you prefer meeting in person, book a slot and text us on WhatsApp or email to agree on a location.",
+    "offersHeading": "Online video call or in-person meeting",
+    "offersSubheading": "Pick the option that fits, then choose a slot. Prefer meeting in person? Book a slot and message us on WhatsApp or email to arrange a location.",
+    "freeOffer": {
+      "badge": "Free",
+      "heading": "Free technical consultation",
+      "duration": "30 minutes",
+      "description": "For when you're not sure what you need, or want a second opinion before you build or launch. We'll work out the right next step together.",
+      "cta": "Book your free call"
+    },
+    "paidOffer": {
+      "badge": "€60",
+      "heading": "Paid technical consultation",
+      "duration": "60 minutes",
+      "description": "For when you need more time than 30 minutes, or want a follow-up session after your free call for extra detail or another report.",
+      "cta": "Book your paid consultation",
+      "agreeLabel": "I agree to the",
+      "termsLinkLabel": "Terms of Service for this consultation"
+    },
     "briefHeading": "Help us prepare for the call",
     "briefBody": "Once you have booked your slot, take a couple of minutes to fill in a short brief. Choose whichever matches what you are exploring with us, your website and digital presence, or a custom software project. It is completely optional, but it helps us tailor the call to you.",
     "briefBtn": "Choose your pre-meeting brief",
@@ -1197,6 +1234,13 @@
       "guideCloser": "A little help is worth it.",
       "guideCta": "Claim your free 30-minute consultation",
       "guideImagePlaceholder": "Image: two people in a genuine consultation moment, video call or in person, conveying relief and connection."
+    },
+    "thankYou": {
+      "meta": { "title": "Payment confirmed | We Make IT" },
+      "heading": "Thanks, your payment is confirmed",
+      "body": "Check your inbox for a confirmation email. Pick a time that suits you below and we'll see you on the call.",
+      "bookCta": "Pick your time slot",
+      "briefCta": "Choose your pre-meeting brief"
     },
     "meta": {
       "title": "Book a technical consultation | We Make IT",
