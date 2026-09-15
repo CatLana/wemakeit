@@ -48,6 +48,86 @@ export async function generateMetadata({
   };
 }
 
+const maintenancePlans = [
+  {
+    name: "Care plan",
+    price: "€120",
+    description: "Keep your website alive, secure, and online. No surprises.",
+    features: [
+      "Uptime and security monitoring",
+      "Monthly backups",
+      "Software and security updates",
+      "Domain and SSL renewal checks",
+      "Priority email support, 48-hour response",
+    ],
+    highlighted: false,
+  },
+  {
+    name: "Growth plan",
+    price: "€450",
+    description: "Everything in the Care plan, plus ongoing content and SEO work to bring in more visitors.",
+    features: [
+      "Everything in the Care plan",
+      "Two new blog articles or content updates a month",
+      "Ongoing on-page SEO improvements",
+      "Monthly visibility and performance report",
+      "Quarterly strategy call",
+    ],
+    highlighted: true,
+  },
+];
+
+const appSupportPlans = [
+  {
+    name: "Basic",
+    price: "€800",
+    hours: "6 hours a month",
+    description: "For a stable app that just needs to stay secure and online.",
+    features: [
+      "Security patches and dependency updates",
+      "Uptime monitoring",
+      "Priority email support, 48-hour response",
+      "Additional hours at €100/hour",
+    ],
+  },
+  {
+    name: "Bug fixes",
+    price: "€1,200",
+    hours: "10 hours a month",
+    description: "Everything in Basic, plus we fix bugs as they come up.",
+    features: [
+      "Everything in Basic",
+      "Reactive bug fixes as issues are reported",
+      "Monthly health report",
+      "Additional hours at €100/hour",
+    ],
+  },
+  {
+    name: "Maintenance",
+    price: "€1,800",
+    hours: "16 hours a month",
+    description: "Everything in Bug fixes, plus proactive work to keep your app fast and future-proof.",
+    features: [
+      "Everything in Bug fixes",
+      "Framework and library upgrades",
+      "Performance monitoring and tuning",
+      "Additional hours at €95/hour",
+    ],
+  },
+  {
+    name: "Feature development",
+    price: "from €2,800",
+    hours: "24+ hours a month",
+    description: "Everything in Maintenance, plus a dedicated budget for ongoing new features.",
+    features: [
+      "Everything in Maintenance",
+      "Dedicated monthly feature development budget",
+      "Quarterly roadmap planning call",
+      "Additional hours at €90/hour",
+    ],
+  },
+];
+
 const services = [
   {
     name: "Landing page",
@@ -98,7 +178,12 @@ export default async function PricingPage({
         { "@type": "Offer", name: "Website Build", price: "1500", priceCurrency: "EUR" },
         { "@type": "Offer", name: "Custom Web Application", price: "6000", priceCurrency: "EUR" },
         { "@type": "Offer", name: "Mobile App MVP", price: "8000", priceCurrency: "EUR" },
-        { "@type": "Offer", name: "Starter Retainer", price: "800", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Website Maintenance - Care Plan", price: "120", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "Website Maintenance - Growth Plan", price: "450", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "App Support - Basic", price: "800", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "App Support - Bug Fixes", price: "1200", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "App Support - Maintenance", price: "1800", priceCurrency: "EUR" },
+        { "@type": "Offer", name: "App Support - Feature Development", price: "2800", priceCurrency: "EUR" },
       ],
     },
   };
@@ -227,46 +312,94 @@ export default async function PricingPage({
           </div>
         </section>
 
-        {/* Retainer */}
-        <section aria-labelledby="retainer-heading" className="bg-white py-16 lg:py-24">
+        {/* Website maintenance */}
+        <section aria-labelledby="website-maintenance-heading" className="bg-white py-16 lg:py-24">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 id="retainer-heading" className="text-3xl font-extrabold text-[#1E293B] mb-3">
-              Ongoing support
+            <h2 id="website-maintenance-heading" className="text-3xl font-extrabold text-[#1E293B] mb-3">
+              Website maintenance
             </h2>
             <p className="text-slate-600 mb-10">
-              If you&apos;re time-poor and just need someone reliable to keep your site or app running, the Starter retainer covers bug fixes, support, new features, and updates that keep you visible in search.
+              Prefer to hand off the technical side completely? Choose a plan that keeps your site alive and secure, or one that also helps it grow.
             </p>
 
-            <div className="rounded-2xl border border-slate-200 p-8">
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
-                <div>
-                  <h3 className="text-xl font-bold text-[#1E293B]">Starter retainer</h3>
-                  <p className="text-sm text-slate-500 mt-1">8 hours per month. Month to month, cancel anytime.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {maintenancePlans.map((plan) => (
+                <div
+                  key={plan.name}
+                  className={`rounded-2xl p-8 flex flex-col ${plan.highlighted ? "border-2 border-[#22D3EE]" : "border border-slate-200"}`}
+                >
+                  {plan.highlighted && (
+                    <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-2">
+                      Most popular
+                    </span>
+                  )}
+                  <h3 className="text-xl font-bold text-[#1E293B]">{plan.name}</h3>
+                  <p className="text-sm text-slate-500 mt-1 mb-4">{plan.description}</p>
+                  <p className="mb-6">
+                    <span className="text-3xl font-extrabold text-[#1E293B]">{plan.price}</span>
+                    <span className="text-slate-500 ml-1">/month</span>
+                  </p>
+                  <ul className="space-y-2 text-sm text-slate-600 mb-8 flex-1">
+                    {plan.features.map((item) => (
+                      <li key={item} className="flex items-start gap-2.5">
+                        <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#22D3EE] shrink-0" aria-hidden="true" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <GetQuoteButton className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2">
+                    Fill in the form to get started
+                    <ArrowRight size={15} aria-hidden="true" />
+                  </GetQuoteButton>
                 </div>
-                <div className="shrink-0">
-                  <span className="text-3xl font-extrabold text-[#1E293B]">€800</span>
-                  <span className="text-slate-500 ml-1">/month</span>
+              ))}
+            </div>
+            <p className="text-xs text-slate-500 mt-6">
+              Social media management is available as a separate service.{" "}
+              <Link
+                href="/social"
+                className="font-semibold text-[#0E7490] underline underline-offset-2 hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+              >
+                See social media pricing
+              </Link>
+            </p>
+          </div>
+        </section>
+
+        {/* Web & mobile app support */}
+        <section aria-labelledby="app-support-heading" className="bg-white py-16 lg:py-24">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 id="app-support-heading" className="text-3xl font-extrabold text-[#1E293B] mb-3">
+              Web &amp; mobile app support
+            </h2>
+            <p className="text-slate-600 mb-10 max-w-3xl">
+              Ongoing support for custom web apps and mobile apps, from €800/month. Month to month, cancel anytime, and scaled to how much help you need.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {appSupportPlans.map((plan) => (
+                <div key={plan.name} className="rounded-2xl border border-slate-200 p-8 flex flex-col">
+                  <h3 className="text-xl font-bold text-[#1E293B]">{plan.name}</h3>
+                  <p className="text-sm text-slate-500 mt-1 mb-4">{plan.description}</p>
+                  <p className="mb-1">
+                    <span className="text-3xl font-extrabold text-[#1E293B]">{plan.price}</span>
+                    <span className="text-slate-500 ml-1">/month</span>
+                  </p>
+                  <p className="text-xs text-slate-500 mb-6">{plan.hours}</p>
+                  <ul className="space-y-2 text-sm text-slate-600 mb-8 flex-1">
+                    {plan.features.map((item) => (
+                      <li key={item} className="flex items-start gap-2.5">
+                        <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#22D3EE] shrink-0" aria-hidden="true" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <GetQuoteButton className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2">
+                    Fill in the form to get started
+                    <ArrowRight size={15} aria-hidden="true" />
+                  </GetQuoteButton>
                 </div>
-              </div>
-              <ul className="space-y-2 text-sm text-slate-600 mb-8">
-                {[
-                  "Bug fixes and new feature development",
-                  "Security patches and maintenance",
-                  "Regular updates that keep you visible in search",
-                  "Priority email support, 24-48 hour response",
-                  "Additional hours at €95/hour",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2.5">
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#22D3EE] shrink-0" aria-hidden="true" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p className="text-xs text-slate-500 mb-6">Social media management is available as a separate add-on. Ask us for details.</p>
-              <GetQuoteButton className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2">
-                Fill in the form to get started
-                <ArrowRight size={15} aria-hidden="true" />
-              </GetQuoteButton>
+              ))}
             </div>
           </div>
         </section>
