@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { Globe, Code2, ArrowRight } from "lucide-react";
+import { Globe, Code2, Instagram, ArrowRight } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Link } from "@/i18n/navigation";
@@ -38,7 +38,7 @@ function BriefOptionCard({
   description,
   cta,
 }: {
-  href: "/brief/website" | "/brief/software";
+  href: "/brief/website" | "/brief/software" | "/brief/social";
   icon: React.ReactNode;
   title: string;
   description: string;
@@ -100,8 +100,8 @@ export default async function BriefPage({
         </div>
 
         {/* Options */}
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid sm:grid-cols-2 gap-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <BriefOptionCard
               href="/brief/website"
               icon={<Globe size={22} className="text-[#0E7490]" aria-hidden="true" />}
@@ -115,6 +115,13 @@ export default async function BriefPage({
               title={t("options.software.title")}
               description={t("options.software.description")}
               cta={t("options.software.cta")}
+            />
+            <BriefOptionCard
+              href="/brief/social"
+              icon={<Instagram size={22} className="text-[#0E7490]" aria-hidden="true" />}
+              title={t("options.social.title")}
+              description={t("options.social.description")}
+              cta={t("options.social.cta")}
             />
           </div>
 

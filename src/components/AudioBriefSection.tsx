@@ -14,7 +14,7 @@ function WhatsAppIcon() {
   );
 }
 
-export type BriefNamespace = "websiteBrief" | "softwareBrief" | "generalBrief";
+export type BriefNamespace = "websiteBrief" | "softwareBrief" | "generalBrief" | "socialBrief";
 
 const QUESTION_KEYS: Record<BriefNamespace, readonly string[]> = {
   websiteBrief: [
@@ -47,6 +47,21 @@ const QUESTION_KEYS: Record<BriefNamespace, readonly string[]> = {
     "form.successLooksLike",
     "form.budgetTimeframe",
     "form.additionalInfo",
+  ],
+  socialBrief: [
+    "form.topServices",
+    "form.growthGoal",
+    "form.idealClient",
+    "form.differentiator",
+    "form.contentDislikes",
+    "form.accountsAdmired",
+    "form.desiredTone",
+    "form.filmingOnSite",
+    "form.beforeAfterComfort",
+    "form.onCamera",
+    "form.brandAssets",
+    "form.approver",
+    "form.budgetRange",
   ],
 };
 

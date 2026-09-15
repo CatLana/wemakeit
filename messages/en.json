@@ -295,6 +295,11 @@
         "description": "For founders and teams exploring a custom application, internal tool, or integration to support how they work.",
         "cta": "Start the software brief"
       },
+      "social": {
+        "title": "Social media",
+        "description": "For businesses who want help planning and creating Instagram content that brings in the right clients.",
+        "cta": "Start the social media brief"
+      },
       "general": {
         "prompt": "Not sure?",
         "linkText": "Fill in the general brief"
@@ -465,6 +470,162 @@
       "questionsHeading": "Questions to talk through",
       "copyBtn": "Copy questions",
       "copiedBtn": "Copied"
+    }
+  },
+  "socialBrief": {
+    "title": "Social media brief",
+    "description": "A short, optional brief about your business and your Instagram to help us prepare for your call. Tell us about your business and goals so we can give you advice that actually fits.",
+    "eyebrow": "Social media",
+    "heading": "Help us get to know your business",
+    "subheading": "This short brief helps us build a clearer picture of your business, your ideal client, and the content you want, so the plan we bring to our call fits your business.",
+    "intro": "Every question is optional. Answer as many or as few as you like, whatever helps us prepare for our conversation.",
+    "form": {
+      "ariaLabel": "Social media brief form",
+      "name": "Your name",
+      "namePlaceholder": "Jane Murphy",
+      "email": "Your email",
+      "emailPlaceholder": "jane@company.ie",
+      "emailHint": "So we can match this to your booking.",
+      "sections": {
+        "aboutBusiness": "About the business",
+        "aboutInstagram": "About your current Instagram",
+        "aboutContent": "About content",
+        "logistics": "Logistics"
+      },
+      "topServices": "What treatments or services make the most money right now?",
+      "topServicesPlaceholder": "e.g. Facials and laser treatments bring in most of our revenue.",
+      "growthGoal": "What do you want to grow?",
+      "growthGoalPlaceholder": "e.g. More bookings for our higher-value treatments.",
+      "idealClient": "Who is your ideal client? Age, location, what they're looking for.",
+      "idealClientPlaceholder": "e.g. Women aged 30 to 50 living locally, looking for results they can trust.",
+      "differentiator": "What makes your business different from others nearby?",
+      "differentiatorPlaceholder": "e.g. We only use techniques backed by clinical evidence.",
+      "contentDislikes": "What do you dislike about your current content?",
+      "contentDislikesPlaceholder": "e.g. It looks inconsistent and doesn't show our results.",
+      "accountsAdmired": "Any accounts you admire? What do you like about them?",
+      "accountsAdmiredPlaceholder": "e.g. @example, their before and after content feels honest.",
+      "desiredTone": "What tone do you want? Clinical and premium, warm and personal, fun and trendy, or a mix.",
+      "desiredTonePlaceholder": "e.g. Clinical and premium, but still approachable.",
+      "filmingOnSite": "Can we film on site? What's the best time?",
+      "filmingOnSitePlaceholder": "e.g. Yes, weekday mornings work best before it gets busy.",
+      "beforeAfterComfort": "Are you comfortable sharing before and after or result photos?",
+      "beforeAfterComfortPlaceholder": "e.g. Yes, with client consent.",
+      "onCamera": "Who's on camera? You, staff, just the work, or a mix?",
+      "onCameraPlaceholder": "e.g. Mostly me, sometimes the team.",
+      "brandAssets": "Do you have existing brand colours, fonts, or logo files?",
+      "brandAssetsPlaceholder": "e.g. Yes, we have a brand guide we can send over.",
+      "approver": "Who approves content before it's posted?",
+      "approverPlaceholder": "e.g. Me, usually within a day.",
+      "budgetRange": "What budget range do you have in mind?",
+      "budgetRangePlaceholder": "e.g. Around €350 to €450 a month.",
+      "submit": "Send my brief",
+      "submitting": "Sending…",
+      "success": {
+        "title": "Thanks, brief received!",
+        "body": "We'll read this before our call so we can focus on what matters most to your business."
+      },
+      "serverError": "Something went wrong. Please try again.",
+      "networkError": "Could not reach the server. Please check your connection and try again."
+    },
+    "audio": {
+      "formNotePrefix": "Prefer not to type?",
+      "formNoteLink": "Send us a voice message on WhatsApp instead",
+      "eyebrow": "Another option",
+      "heading": "Rather record a voice message?",
+      "body": "If typing isn't for you, send us a voice note on WhatsApp instead. Read through the questions below and answer as many as you like, in your own words.",
+      "whatsappBtn": "Message us on WhatsApp",
+      "questionsHeading": "Questions to talk through",
+      "copyBtn": "Copy questions",
+      "copiedBtn": "Copied"
+    }
+  },
+  "socialPage": {
+    "meta": {
+      "title": "Social media management | We Make IT",
+      "description": "Instagram content that brings in real clients, not just likes. Reels, posts, and stories planned and created for you, from €150 a month."
+    },
+    "eyebrow": "Social media management",
+    "heading": "Instagram content that brings in real clients, not just likes",
+    "body": "We plan, film, and put together content that shows off your work and gets the right people booking in. No jargon, no empty promises, just content that works.",
+    "heroCta": "See pricing",
+    "howItWorks": {
+      "heading": "How it works",
+      "steps": [
+        "Fill in a short brief telling us about your business, your goals, and the content you want.",
+        "We turn your brief into a content plan and start filming, writing, and scheduling.",
+        "You review and approve content before it goes live. We handle the rest."
+      ]
+    },
+    "tiers": {
+      "heading": "Pricing",
+      "subheading": "Simple monthly plans. Cancel any time.",
+      "popularBadge": "Most popular",
+      "perMonth": "/month",
+      "ctaLabel": "Get started",
+      "plans": [
+        {
+          "name": "Starter",
+          "priceRange": "€150 to €200",
+          "description": "One polished reel a month. A steady drip of content without a big commitment.",
+          "features": [
+            "1 reel a month, filmed and edited",
+            "Content ideas provided",
+            "You post it yourself"
+          ],
+          "highlighted": false
+        },
+        {
+          "name": "Growth",
+          "priceRange": "€350 to €450",
+          "description": "Two reels and regular posts, so your feed stays active and on-brand.",
+          "features": [
+            "2 reels a month, filmed and edited",
+            "2 posts every two weeks",
+            "Story content ideas provided",
+            "You post it yourself"
+          ],
+          "highlighted": true
+        },
+        {
+          "name": "Full Service",
+          "priceRange": "€550 to €700",
+          "description": "The full package. We plan it, make it, and hand you everything ready to go.",
+          "features": [
+            "2 reels a month, filmed and edited",
+            "4 posts a month",
+            "Story content produced, not just ideas",
+            "You post it yourself"
+          ],
+          "highlighted": false
+        }
+      ]
+    },
+    "addOns": {
+      "heading": "Add-ons",
+      "items": [
+        {
+          "name": "Posting and scheduling",
+          "price": "+€100 to €150/month",
+          "description": "We post everything for you, at the best times for your audience."
+        },
+        {
+          "name": "Instagram audit and strategy",
+          "price": "€150 to €250 one-off",
+          "description": "A full review of your current Instagram and a clear plan to improve it."
+        }
+      ]
+    },
+    "reassurance": {
+      "heading": "Not sure which plan fits?",
+      "points": [
+        "Every plan is month to month, cancel any time",
+        "Prices depend on your business and content needs",
+        "A free follow-up consultation is included either way"
+      ]
+    },
+    "bookBridge": {
+      "text": "Ready to get started?",
+      "cta": "Fill in the social media brief"
     }
   },
   "auditPage": {
