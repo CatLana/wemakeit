@@ -357,7 +357,7 @@ export default async function ArticlePage({
             </p>
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 leading-relaxed">
               <li>
-                <strong>Bigger addressable market:</strong> roughly 15–20% of
+                <strong>Bigger addressable market:</strong> roughly 15 to 20% of
                 the population has a disability of some kind. These are
                 customers you currently risk excluding.
               </li>

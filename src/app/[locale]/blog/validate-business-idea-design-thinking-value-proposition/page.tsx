@@ -333,7 +333,7 @@ export default async function ArticlePage({
             </p>
             <ol className="list-decimal list-outside ml-5 space-y-3 mb-5 text-slate-600 text-base leading-relaxed">
               <li>
-                <strong>Customer interviews:</strong> talk to 10–20 people who
+                <strong>Customer interviews:</strong> talk to 10 to 20 people who
                 match your target profile. Ask open questions:{" "}
                 <em>&quot;Tell me about your biggest frustration with X.&quot;</em>{" "}
                 Listen more than you talk. Never pitch, just listen.

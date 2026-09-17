@@ -91,7 +91,7 @@ export default async function TermsOfServicePage({
             <section>
               <h2 className="text-xl font-bold text-[#1E293B] mb-3">4. Payment Terms</h2>
               <ul className="list-disc pl-5 space-y-2 text-sm">
-                <li>A non-refundable <strong className="text-[#1E293B]">deposit</strong> (as stated in the quote, typically 30–50% of the total project value) is required before any work begins. The deposit covers initial planning, research, and setup work.</li>
+                <li>A non-refundable <strong className="text-[#1E293B]">deposit</strong> (as stated in the quote, typically 30 to 50% of the total project value) is required before any work begins. The deposit covers initial planning, research, and setup work.</li>
                 <li>Interim payments may be required for larger projects at agreed milestones. Milestones will be defined in the project plan.</li>
                 <li>The <strong className="text-[#1E293B]">final balance</strong> is due upon project completion, before final deliverables are released or handed over.</li>
                 <li>Invoices are payable within <strong className="text-[#1E293B]">14 calendar days</strong> of issue unless otherwise stated.</li>
@@ -318,7 +318,7 @@ export default async function TermsOfServicePage({
 
             {/* 20. Audit service terms */}
             <section id="audit-terms">
-              <h2 className="text-xl font-bold text-[#1E293B] mb-3">20. Website &amp; Digital Presence Audit — Additional Terms</h2>
+              <h2 className="text-xl font-bold text-[#1E293B] mb-3">20. Website &amp; Digital Presence Audit: Additional Terms</h2>
               <p className="text-sm">
                 This section applies specifically to the paid Website Audit and Website + Social Bundle Audit (&ldquo;Audit Service&rdquo;) ordered through wemakeit.ie. Where anything in this section conflicts with the rest of these Terms, this section takes priority for the Audit Service.
               </p>
@@ -370,7 +370,7 @@ export default async function TermsOfServicePage({
 
             {/* 21. Paid consultation terms */}
             <section id="consultation-terms">
-              <h2 className="text-xl font-bold text-[#1E293B] mb-3">21. Paid Technical Consultation — Additional Terms</h2>
+              <h2 className="text-xl font-bold text-[#1E293B] mb-3">21. Paid Technical Consultation: Additional Terms</h2>
               <p className="text-sm">
                 This section applies specifically to the paid 60-minute technical consultation (&ldquo;Paid Consultation&rdquo;) purchased through wemakeit.ie. Where anything in this section conflicts with the rest of these Terms, this section takes priority for the Paid Consultation. It does not apply to the separate free 30-minute consultation, which carries no charge.
               </p>

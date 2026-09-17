@@ -152,7 +152,7 @@ export default async function AccessibilityStatementPage({
               </p>
               <div className="mt-3 rounded-xl bg-white border border-slate-200 p-5 text-sm space-y-1">
                 <p><strong className="text-[#1E293B]">Irish Human Rights and Equality Commission</strong></p>
-                <p>16–22 Green Street, Dublin 7, D07 CR20</p>
+                <p>16 to 22 Green Street, Dublin 7, D07 CR20</p>
                 <p>Web: <a href="https://www.ihrec.ie" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] hover:text-[#0891B2]">www.ihrec.ie</a></p>
               </div>
             </section>

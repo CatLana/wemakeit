@@ -239,7 +239,7 @@ export default async function ArticlePage({
                 {
                   n: "01",
                   title: "Determine Your Eligibility",
-                  body: "Check which grant suits your business: Are you a startup (CSF), an SME under 250 employees (Innovation Vouchers), or a micro-business 1–50 employees (LEO Grow Digital)? Visit your local LEO's website to confirm regional availability and criteria.",
+                  body: "Check which grant suits your business: Are you a startup (CSF), an SME under 250 employees (Innovation Vouchers), or a micro-business with 1 to 50 employees (LEO Grow Digital)? Visit your local LEO's website to confirm regional availability and criteria.",
                 },
                 {
                   n: "02",
