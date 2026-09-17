@@ -158,6 +158,7 @@ export default async function LocaleLayout({
     softwareBrief:    allMessages.softwareBrief,
     generalBrief:     allMessages.generalBrief,
     socialBrief:      allMessages.socialBrief,
+    auditBriefSuccess: allMessages.auditBriefSuccess,
     consultationForm: allMessages.consultationForm,
     contactPage:      allMessages.contactPage,
     cookieBanner:     allMessages.cookieBanner,

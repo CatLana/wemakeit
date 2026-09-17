@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Field, inputBase, textareaBase } from "@/components/BriefFormFields";
+import AuditBriefSuccess from "@/components/AuditBriefSuccess";
 
 type FormValues = {
   name?: string;
@@ -54,6 +55,7 @@ export default function GeneralBriefForm() {
   }
 
   if (submitted) {
+    if (isAuditContext) return <AuditBriefSuccess successRef={successRef} />;
     return (
       <div
         ref={successRef}
@@ -78,9 +80,7 @@ export default function GeneralBriefForm() {
           </svg>
         </div>
         <h2 className="text-2xl font-bold text-[#1E293B] mb-2">{t("form.success.title")}</h2>
-        <p className="text-slate-500 text-sm max-w-sm mx-auto">
-          {isAuditContext ? t("audit.successBody") : t("form.success.body")}
-        </p>
+        <p className="text-slate-500 text-sm max-w-sm mx-auto">{t("form.success.body")}</p>
       </div>
     );
   }

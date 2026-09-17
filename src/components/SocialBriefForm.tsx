@@ -2,8 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Field, SectionHeading, inputBase, textareaBase } from "@/components/BriefFormFields";
+import AuditBriefSuccess from "@/components/AuditBriefSuccess";
 
 type FormValues = {
   name?: string;
@@ -25,6 +27,7 @@ type FormValues = {
 
 export default function SocialBriefForm() {
   const t = useTranslations("socialBrief");
+  const isAuditContext = useSearchParams().get("context") === "audit";
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
   const successRef = useRef<HTMLDivElement>(null);
@@ -59,6 +62,7 @@ export default function SocialBriefForm() {
   }
 
   if (submitted) {
+    if (isAuditContext) return <AuditBriefSuccess successRef={successRef} />;
     return (
       <div
         ref={successRef}

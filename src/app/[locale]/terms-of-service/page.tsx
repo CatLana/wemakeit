@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const LAST_UPDATED = "8 September 2026";
+const LAST_UPDATED = "17 September 2026";
 
 export default async function TermsOfServicePage({
   params,
@@ -343,7 +343,7 @@ export default async function TermsOfServicePage({
 
               <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">d) Free follow-up consultation</h3>
               <p className="text-sm">
-                Every order includes one free 30-minute follow-up consultation to discuss the findings. This must be booked within <strong className="text-[#1E293B]">90 days</strong> of your order date, after which the offer expires.
+                Every order includes one free 30-minute follow-up consultation to discuss the findings. This must be booked within <strong className="text-[#1E293B]">30 days</strong> of your order date, after which the offer expires. This is a separate benefit from your right of cancellation in clause (f) below: whether or not you book this call has no effect on your refund rights either way.
               </p>
 
               <h3 className="text-base font-semibold text-[#1E293B] mt-4 mb-2">e) Payment, pricing, and refunds</h3>

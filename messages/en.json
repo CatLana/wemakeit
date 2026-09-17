@@ -421,6 +421,13 @@
       "copiedBtn": "Copied"
     }
   },
+  "auditBriefSuccess": {
+    "title": "Step 1 done",
+    "body": "Thanks, we've got your brief. One more step left.",
+    "bookHeading": "Now book your free follow-up call",
+    "bookBody": "Choose a slot within 30 days of your order to make sure it's still available.",
+    "bookCta": "Book your call"
+  },
   "generalBrief": {
     "title": "General brief",
     "description": "A short, optional brief to help us prepare for your call, whatever you're exploring. Tell us about your business and what's on your mind so we can give you advice that actually fits.",
@@ -457,8 +464,7 @@
       "networkError": "Could not reach the server. Please check your connection and try again."
     },
     "audit": {
-      "emailHint": "So we can match this to your order.",
-      "successBody": "We'll read this before we start your audit so we can focus on what matters most."
+      "emailHint": "So we can match this to your order."
     },
     "audio": {
       "formNotePrefix": "Prefer not to type?",
@@ -735,11 +741,23 @@
       "meta": { "title": "Order confirmed | We Make IT" },
       "heading": "Thanks, your order is confirmed",
       "body": "Check your inbox for a confirmation email. Your report will land within 48 hours.",
-      "briefHeading": "One more thing before we start",
-      "briefBody": "Take 5 minutes to fill in your brief. It tells us what you're trying to achieve, so we can tailor the report to your goals instead of reviewing your site in a generic way.",
-      "briefConsequence": "Once your report is delivered, that order is complete. If you would like it looked at again with more detail later, that is a new order, so it is worth getting the brief right now.",
-      "briefAudioNote": "Not in the mood to type? The brief page has a voice message option too, just talk us through it on WhatsApp instead.",
-      "briefCta": "Fill in your brief now"
+      "stepsHeading": "2 more steps, about 5 minutes",
+      "step1Badge": "Step 1",
+      "step1Heading": "Fill in your brief",
+      "step1Body": "Pick whichever fits what you'd like reviewed. It tells us what you're trying to achieve, so we can tailor the report to your goals instead of reviewing your site in a generic way.",
+      "step1AudioNote": "Not in the mood to type? Each brief page has a voice message option too, just talk us through it on WhatsApp instead.",
+      "briefOptions": {
+        "website": "Website & digital presence",
+        "software": "Custom software",
+        "social": "Social media",
+        "general": "Not sure? General brief"
+      },
+      "step2Badge": "Step 2",
+      "step2Heading": "Book your free follow-up call",
+      "step2Body": "A free 30-minute call is included with your order. Book it any time, you don't need to wait for your report first.",
+      "step2Cta": "Book your call",
+      "warningHeading": "Please note",
+      "warningBody": "Your report usually lands within 48 hours. Once it does, your order is complete, and that's also when your legal right to a refund ends (Irish consumer law gives you 14 days to cancel before a service is completed). Your free follow-up call is separate: book it within 30 days or the offer expires. Booking it, or not, doesn't change your refund rights either way."
     }
   },
   "newsletter": {
@@ -1399,7 +1417,7 @@
       "guideBody": "You can learn all of this yourself, eventually. But as an entrepreneur, you don't have time to learn everything. A human expert can save you time, money, and a lot of wasted tokens, and help you build it safely from the start.",
       "guideCloser": "A little help is worth it.",
       "guideCta": "Claim your free 30-minute consultation",
-      "guideImagePlaceholder": "Image: two people in a genuine consultation moment, video call or in person, conveying relief and connection."
+      "guideImageAlt": "Two people in a genuine consultation moment, conveying relief and connection"
     },
     "thankYou": {
       "meta": { "title": "Payment confirmed | We Make IT" },
