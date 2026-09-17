@@ -717,9 +717,15 @@
         "submitting": "Sending…",
         "agreeLabel": "I agree to the",
         "termsLinkLabel": "Terms of Service for this audit",
+        "errors": {
+          "name": "Please enter your name.",
+          "email": "Please enter a valid email address.",
+          "agreed": "Please agree to the Terms of Service to continue."
+        },
         "success": {
           "title": "Request received",
-          "body": "We'll email you a secure payment link within one business day."
+          "body": "We'll email you a secure payment link within one business day.",
+          "backCta": "Back to form"
         },
         "serverError": "Something went wrong. Please try again.",
         "networkError": "Could not reach the server. Please check your connection and try again."
