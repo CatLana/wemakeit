@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Mail, MapPin, Globe, ShieldCheck, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Globe } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/353838158383";
 
@@ -53,24 +53,6 @@ export default function Footer() {
             <p className="text-sm leading-relaxed mb-4 max-w-xs">
               {t("tagline")}
             </p>
-
-            {/* AI risk / consultation banner */}
-            <div className="rounded-xl bg-[#22D3EE]/10 border border-[#22D3EE]/30 p-4 mb-6">
-              <p className="text-xs font-semibold text-[#22D3EE] mb-1 flex items-center gap-1.5">
-                <ShieldCheck size={12} aria-hidden="true" />
-                {t("aiRiskTitle")}
-              </p>
-              <p className="text-xs text-slate-400 leading-relaxed mb-2">
-                {t("aiRiskBody")}
-              </p>
-              <Link
-                href="/book"
-                className="inline-flex items-center gap-1 text-xs font-semibold text-[#22D3EE] hover:text-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-              >
-                {t("aiRiskCta")}
-                <ArrowRight size={12} aria-hidden="true" />
-              </Link>
-            </div>
 
             <NewsletterSignup />
             {/* Contact info with small map */}
