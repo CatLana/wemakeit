@@ -204,10 +204,10 @@ export default async function PricingPage({
               Pricing
             </span>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-4">
-              Straightforward pricing, whatever your budget.
+              Scaled pricing tiers
             </h1>
             <p className="text-lg text-slate-400 mb-6">
-              All prices are starting points. Your final quote depends on scope and complexity. Fill in the form below and we will get back to you with an exact price.
+              The price depends on your project&apos;s specifics. We offer different tiers so you can cover as much as you need within your budget.
             </p>
             <p className="text-xs text-slate-500">All prices in EUR, exclusive of VAT.</p>
           </div>
