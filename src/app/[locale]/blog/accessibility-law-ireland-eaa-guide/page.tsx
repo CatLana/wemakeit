@@ -335,10 +335,10 @@ export default async function AccessibilityLawArticlePage({
                   <ArrowRight size={16} aria-hidden="true" className="ml-2" />
                 </Link>
                 <Link
-                  href="/book"
+                  href="/discovery-call"
                   className="inline-flex items-center justify-center rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/40 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
                 >
-                  Book a free consultation
+                  Book a discovery call
                 </Link>
               </div>
             </section>

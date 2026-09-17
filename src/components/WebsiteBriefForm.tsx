@@ -1,7 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Field, inputBase, textareaBase } from "@/components/BriefFormFields";
@@ -11,16 +13,23 @@ type FormValues = {
   name?: string;
   email?: string;
   business?: string;
-  idealCustomer?: string;
   websiteGoal?: string;
   notWorking?: string;
-  desiredAction?: string;
-  triedMarketing?: string;
-  competitors?: string;
-  successLooksLike?: string;
-  budgetTimeframe?: string;
+  budget: string;
   additionalInfo?: string;
 };
+
+function makeSchema(e: (key: string) => string) {
+  return z.object({
+    name: z.string().optional(),
+    email: z.string().optional(),
+    business: z.string().optional(),
+    websiteGoal: z.string().optional(),
+    notWorking: z.string().optional(),
+    budget: z.string().min(1, e("form.errors.budget")),
+    additionalInfo: z.string().optional(),
+  });
+}
 
 export default function WebsiteBriefForm() {
   const t = useTranslations("websiteBrief");
@@ -29,7 +38,13 @@ export default function WebsiteBriefForm() {
   const [serverError, setServerError] = useState<string | null>(null);
   const successRef = useRef<HTMLDivElement>(null);
 
-  const { register, handleSubmit, formState: { isSubmitting } } = useForm<FormValues>();
+  const schema = useMemo(() => makeSchema((key) => t(key as Parameters<typeof t>[0])), [t]);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
   useEffect(() => {
     if (!submitted) return;
@@ -127,10 +142,6 @@ export default function WebsiteBriefForm() {
         <textarea id="wb-business" rows={2} placeholder={t("form.businessPlaceholder")} className={textareaBase} {...register("business")} />
       </Field>
 
-      <Field id="wb-idealCustomer" label={t("form.idealCustomer")}>
-        <textarea id="wb-idealCustomer" rows={2} placeholder={t("form.idealCustomerPlaceholder")} className={textareaBase} {...register("idealCustomer")} />
-      </Field>
-
       <Field id="wb-websiteGoal" label={t("form.websiteGoal")}>
         <textarea id="wb-websiteGoal" rows={2} placeholder={t("form.websiteGoalPlaceholder")} className={textareaBase} {...register("websiteGoal")} />
       </Field>
@@ -139,24 +150,17 @@ export default function WebsiteBriefForm() {
         <textarea id="wb-notWorking" rows={2} placeholder={t("form.notWorkingPlaceholder")} className={textareaBase} {...register("notWorking")} />
       </Field>
 
-      <Field id="wb-desiredAction" label={t("form.desiredAction")}>
-        <textarea id="wb-desiredAction" rows={2} placeholder={t("form.desiredActionPlaceholder")} className={textareaBase} {...register("desiredAction")} />
-      </Field>
-
-      <Field id="wb-triedMarketing" label={t("form.triedMarketing")}>
-        <textarea id="wb-triedMarketing" rows={2} placeholder={t("form.triedMarketingPlaceholder")} className={textareaBase} {...register("triedMarketing")} />
-      </Field>
-
-      <Field id="wb-competitors" label={t("form.competitors")}>
-        <textarea id="wb-competitors" rows={2} placeholder={t("form.competitorsPlaceholder")} className={textareaBase} {...register("competitors")} />
-      </Field>
-
-      <Field id="wb-successLooksLike" label={t("form.successLooksLike")}>
-        <textarea id="wb-successLooksLike" rows={2} placeholder={t("form.successLooksLikePlaceholder")} className={textareaBase} {...register("successLooksLike")} />
-      </Field>
-
-      <Field id="wb-budgetTimeframe" label={t("form.budgetTimeframe")}>
-        <textarea id="wb-budgetTimeframe" rows={2} placeholder={t("form.budgetTimeframePlaceholder")} className={textareaBase} {...register("budgetTimeframe")} />
+      <Field id="wb-budget" label={t("form.budget")} required error={errors.budget?.message}>
+        <textarea
+          id="wb-budget"
+          rows={2}
+          placeholder={t("form.budgetPlaceholder")}
+          aria-required="true"
+          aria-invalid={!!errors.budget}
+          aria-describedby={errors.budget ? "wb-budget-error" : undefined}
+          className={`${textareaBase} ${errors.budget ? "border-rose-400" : "border-slate-200"}`}
+          {...register("budget")}
+        />
       </Field>
 
       <Field id="wb-additionalInfo" label={t("form.additionalInfo")}>

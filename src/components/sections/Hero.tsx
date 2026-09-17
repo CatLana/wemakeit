@@ -89,7 +89,7 @@ export default function Hero() {
             {t("cta1")}
           </Link>
           <Link
-            href="/book"
+            href="/discovery-call"
             className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 bg-transparent text-white border border-white/20 font-semibold rounded-xl hover:bg-white/5 transition-colors text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
           >
             {t("cta2")}

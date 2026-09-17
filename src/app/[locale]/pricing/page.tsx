@@ -3,7 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import GetQuoteButton from "@/components/GetQuoteButton";
-import BookServiceButton from "@/components/BookServiceButton";
+import DiscoveryCallButton from "@/components/DiscoveryCallButton";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 import { getAuditPrices } from "@/lib/audit-pricing";
@@ -133,25 +133,21 @@ const services = [
     name: "Landing page",
     price: "from €700",
     description: "A single focused page built to convert. Ideal for a product launch, a campaign, or a service you want to promote.",
-    largeProject: false,
   },
   {
     name: "Website build",
     price: "from €1,500",
     description: "A custom multi-page website designed around your business. No templates. Built to rank on Google and bring in enquiries.",
-    largeProject: false,
   },
   {
     name: "Custom web application",
     price: "from €6,000",
     description: "A bespoke web app built around your business process. User accounts, database, API, and core business logic.",
-    largeProject: true,
   },
   {
     name: "Mobile app (iOS & Android)",
     price: "from €8,000",
     description: "A cross-platform mobile app from design to App Store submission. Ideal for MVPs and early-stage product ideas.",
-    largeProject: true,
   },
 ];
 
@@ -224,21 +220,12 @@ export default async function PricingPage({
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-[#1E293B]">{service.name}</h3>
                       <p className="mt-1 text-sm text-slate-500 leading-relaxed max-w-lg">{service.description}</p>
-                      {service.largeProject && (
-                        <Link
-                          href={{ pathname: "/", query: { service: "quote" }, hash: "quote" } as never}
-                          className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#0E7490] hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                        >
-                          Get a quote for a project like this
-                          <ArrowRight size={13} aria-hidden="true" />
-                        </Link>
-                      )}
                     </div>
                     <div className="sm:text-right shrink-0">
                       <span className="text-xl font-extrabold text-[#1E293B]">{service.price}</span>
                     </div>
                   </div>
-                  <BookServiceButton service={service.name} label="Book a free consultation" className="self-start" />
+                  <DiscoveryCallButton service={service.name} label="Book a discovery call" className="self-start" />
                 </div>
               ))}
             </div>
@@ -263,14 +250,14 @@ export default async function PricingPage({
               <div>
                 <h2 id="consultation-heading" className="text-lg font-bold text-[#1E293B]">Technical consultation</h2>
                 <p className="text-sm text-slate-500 mt-1 max-w-md">
-                  A second opinion on your AI-built app, website, or technical decision. The first 30 minutes are free. Need more time? A paid 60-minute session is also available.
+                  A second opinion on your AI-built app, website, or technical decision. The first call is free, 30 minutes.
                 </p>
               </div>
               <Link
-                href="/book"
+                href="/discovery-call"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white hover:bg-[#1E293B] transition-colors whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
               >
-                Book a free consultation
+                Book a discovery call
                 <ArrowRight size={15} aria-hidden="true" />
               </Link>
             </div>

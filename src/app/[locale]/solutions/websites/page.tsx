@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import BookServiceButton from "@/components/BookServiceButton";
+import DiscoveryCallButton from "@/components/DiscoveryCallButton";
 import { Link } from "@/i18n/navigation";
 
 const BASE_URL = "https://www.wemakeit.ie";
@@ -83,7 +83,7 @@ export default async function WebsitesSolutionsPage({
                 <li key={service.name} className="rounded-xl border border-slate-200 p-5 bg-[#F8FAFC] flex flex-col">
                   <h3 className="font-semibold text-[#1E293B] mb-2">{service.name}</h3>
                   <p className="text-sm text-slate-600 leading-relaxed mb-4">{service.detail}</p>
-                  <BookServiceButton service={service.name} label={t("serviceCta")} className="self-start mt-auto" />
+                  <DiscoveryCallButton service={service.name} label={t("serviceCta")} className="self-start mt-auto" />
                 </li>
               ))}
             </ul>
@@ -99,7 +99,7 @@ export default async function WebsitesSolutionsPage({
                 <p className="text-sm text-slate-300">{t("consultationCtaBody")}</p>
               </div>
               <Link
-                href="/book"
+                href="/discovery-call"
                 className="inline-flex items-center justify-center gap-2 shrink-0 min-h-[46px] px-6 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
               >
                 {t("consultationCta")}

@@ -265,7 +265,7 @@ export default async function ArticlePage({
                 Tell us about your idea. We will help you work out whether it has the legs to become a product, and what the right next step is.
               </p>
               <Link
-                href="/book"
+                href="/discovery-call"
                 className="inline-flex items-center justify-center gap-2 min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
               >
                 Let&apos;s talk about your idea

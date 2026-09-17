@@ -9,7 +9,7 @@ import { Menu, X } from "lucide-react";
 export default function Header() {
   const t = useTranslations("header");
   const pathname = usePathname();
-  const isBookPage = pathname === "/book";
+  const hideDiscoveryCta = pathname === "/book" || pathname === "/discovery-call";
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
@@ -134,9 +134,9 @@ export default function Header() {
 
             {/* Desktop right side: CTA */}
             <div className="hidden lg:flex items-center gap-4">
-              {!isBookPage && (
+              {!hideDiscoveryCta && (
                 <Link
-                  href="/book"
+                  href="/discovery-call"
                   className="inline-flex items-center justify-center min-h-[44px] min-w-[44px] px-5 py-2 bg-[#22D3EE] text-[#0F172A] font-semibold text-sm rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
                 >
                   {t("cta")}
@@ -208,10 +208,10 @@ export default function Header() {
                 </Link>
               </li>
             ))}
-            {!isBookPage && (
+            {!hideDiscoveryCta && (
               <li className="mt-4">
                 <Link
-                  href="/book"
+                  href="/discovery-call"
                   onClick={closeMenu}
                   className="flex items-center justify-center h-11 px-5 bg-[#22D3EE] text-[#0F172A] font-semibold rounded-lg hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-[#0F172A] focus-visible:outline-offset-2"
                 >

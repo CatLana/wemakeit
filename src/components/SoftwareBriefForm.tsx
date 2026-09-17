@@ -1,10 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { Field, SectionHeading, inputBase, textareaBase } from "@/components/BriefFormFields";
+import { Field, inputBase, textareaBase } from "@/components/BriefFormFields";
 import AuditBriefSuccess from "@/components/AuditBriefSuccess";
 
 type FormValues = {
@@ -12,14 +14,22 @@ type FormValues = {
   email?: string;
   projectType?: string;
   problem?: string;
-  outcome?: string;
   users?: string;
-  currentProcess?: string;
-  integrations?: string;
   mustHaveFeatures?: string;
-  timeline?: string;
-  budget?: string;
+  budget: string;
 };
+
+function makeSchema(e: (key: string) => string) {
+  return z.object({
+    name: z.string().optional(),
+    email: z.string().optional(),
+    projectType: z.string().optional(),
+    problem: z.string().optional(),
+    users: z.string().optional(),
+    mustHaveFeatures: z.string().optional(),
+    budget: z.string().min(1, e("form.errors.budget")),
+  });
+}
 
 export default function SoftwareBriefForm() {
   const t = useTranslations("softwareBrief");
@@ -28,7 +38,13 @@ export default function SoftwareBriefForm() {
   const [serverError, setServerError] = useState<string | null>(null);
   const successRef = useRef<HTMLDivElement>(null);
 
-  const { register, handleSubmit, formState: { isSubmitting } } = useForm<FormValues>();
+  const schema = useMemo(() => makeSchema((key) => t(key as Parameters<typeof t>[0])), [t]);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
   useEffect(() => {
     if (!submitted) return;
@@ -122,65 +138,34 @@ export default function SoftwareBriefForm() {
 
       <hr className="border-slate-200" />
 
-      {/* Project type */}
-      <div className="flex flex-col gap-5">
-        <SectionHeading>{t("form.sections.projectType")}</SectionHeading>
-        <Field id="sb-projectType" label={t("form.projectType")}>
-          <textarea id="sb-projectType" rows={2} placeholder={t("form.projectTypePlaceholder")} className={textareaBase} {...register("projectType")} />
-        </Field>
-      </div>
+      <Field id="sb-projectType" label={t("form.projectType")}>
+        <textarea id="sb-projectType" rows={2} placeholder={t("form.projectTypePlaceholder")} className={textareaBase} {...register("projectType")} />
+      </Field>
 
-      <hr className="border-slate-200" />
+      <Field id="sb-problem" label={t("form.problem")}>
+        <textarea id="sb-problem" rows={2} placeholder={t("form.problemPlaceholder")} className={textareaBase} {...register("problem")} />
+      </Field>
 
-      {/* Problem and goals */}
-      <div className="flex flex-col gap-5">
-        <SectionHeading>{t("form.sections.problemAndGoals")}</SectionHeading>
-        <Field id="sb-problem" label={t("form.problem")}>
-          <textarea id="sb-problem" rows={2} placeholder={t("form.problemPlaceholder")} className={textareaBase} {...register("problem")} />
-        </Field>
-        <Field id="sb-outcome" label={t("form.outcome")}>
-          <textarea id="sb-outcome" rows={2} placeholder={t("form.outcomePlaceholder")} className={textareaBase} {...register("outcome")} />
-        </Field>
-      </div>
+      <Field id="sb-users" label={t("form.users")}>
+        <textarea id="sb-users" rows={2} placeholder={t("form.usersPlaceholder")} className={textareaBase} {...register("users")} />
+      </Field>
 
-      <hr className="border-slate-200" />
+      <Field id="sb-mustHaveFeatures" label={t("form.mustHaveFeatures")}>
+        <textarea id="sb-mustHaveFeatures" rows={2} placeholder={t("form.mustHaveFeaturesPlaceholder")} className={textareaBase} {...register("mustHaveFeatures")} />
+      </Field>
 
-      {/* Users and workflows */}
-      <div className="flex flex-col gap-5">
-        <SectionHeading>{t("form.sections.usersAndWorkflows")}</SectionHeading>
-        <Field id="sb-users" label={t("form.users")}>
-          <textarea id="sb-users" rows={2} placeholder={t("form.usersPlaceholder")} className={textareaBase} {...register("users")} />
-        </Field>
-        <Field id="sb-currentProcess" label={t("form.currentProcess")}>
-          <textarea id="sb-currentProcess" rows={2} placeholder={t("form.currentProcessPlaceholder")} className={textareaBase} {...register("currentProcess")} />
-        </Field>
-      </div>
-
-      <hr className="border-slate-200" />
-
-      {/* Existing tools and integrations */}
-      <div className="flex flex-col gap-5">
-        <SectionHeading>{t("form.sections.toolsAndIntegrations")}</SectionHeading>
-        <Field id="sb-integrations" label={t("form.integrations")}>
-          <textarea id="sb-integrations" rows={2} placeholder={t("form.integrationsPlaceholder")} className={textareaBase} {...register("integrations")} />
-        </Field>
-      </div>
-
-      <hr className="border-slate-200" />
-
-      {/* Scope, timeline and budget */}
-      <div className="flex flex-col gap-5">
-        <SectionHeading>{t("form.sections.scopeAndBudget")}</SectionHeading>
-        <Field id="sb-mustHaveFeatures" label={t("form.mustHaveFeatures")}>
-          <textarea id="sb-mustHaveFeatures" rows={2} placeholder={t("form.mustHaveFeaturesPlaceholder")} className={textareaBase} {...register("mustHaveFeatures")} />
-        </Field>
-        <Field id="sb-timeline" label={t("form.timeline")}>
-          <textarea id="sb-timeline" rows={2} placeholder={t("form.timelinePlaceholder")} className={textareaBase} {...register("timeline")} />
-        </Field>
-        <Field id="sb-budget" label={t("form.budget")}>
-          <textarea id="sb-budget" rows={2} placeholder={t("form.budgetPlaceholder")} className={textareaBase} {...register("budget")} />
-        </Field>
-      </div>
+      <Field id="sb-budget" label={t("form.budget")} required error={errors.budget?.message}>
+        <textarea
+          id="sb-budget"
+          rows={2}
+          placeholder={t("form.budgetPlaceholder")}
+          aria-required="true"
+          aria-invalid={!!errors.budget}
+          aria-describedby={errors.budget ? "sb-budget-error" : undefined}
+          className={`${textareaBase} ${errors.budget ? "border-rose-400" : "border-slate-200"}`}
+          {...register("budget")}
+        />
+      </Field>
 
       {serverError && (
         <p

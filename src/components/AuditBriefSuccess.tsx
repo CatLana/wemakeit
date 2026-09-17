@@ -42,7 +42,7 @@ export default function AuditBriefSuccess({
         <h3 className="font-bold text-[#1E293B] mb-2">{t("bookHeading")}</h3>
         <p className="text-sm text-slate-600 mb-4">{t("bookBody")}</p>
         <Link
-          href="/book"
+          href="/discovery-call"
           className="w-full inline-flex items-center justify-center gap-2 min-h-[50px] px-6 bg-[#0F172A] text-white font-bold rounded-xl hover:bg-slate-800 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
         >
           {t("bookCta")}

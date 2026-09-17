@@ -54,7 +54,7 @@ export default function AuditOffer() {
         <p className="mt-6 text-sm text-slate-400">
           {t("bridgeText")}{" "}
           <Link
-            href="/book"
+            href="/discovery-call"
             className="text-[#22D3EE] font-semibold hover:underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
           >
             {t("bridgeCta")}

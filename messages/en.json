@@ -16,7 +16,7 @@
       "blog": "Resources",
       "contact": "Contact"
     },
-    "cta": "Book a consultation",
+    "cta": "Book a discovery call",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "mobileNavLabel": "Mobile navigation",
@@ -38,7 +38,7 @@
     ],
     "credibilityBadge": "Every product we build is accessible, secure, and compliant with the law.",
     "cta1": "Get your website audit",
-    "cta2": "Book a free consultation",
+    "cta2": "Book a discovery call",
     "ariaLabel": "Hero: We Make IT home"
   },
   "auditOffer": {
@@ -53,7 +53,7 @@
     "priceLabel": "From",
     "cta": "Order your audit",
     "bridgeText": "Not sure exactly what you need?",
-    "bridgeCta": "Book a free consultation instead"
+    "bridgeCta": "Book a discovery call instead"
   },
   "stats": {
     "ariaLabel": "How we work",
@@ -170,8 +170,8 @@
     "differenceText": "If you have a challenge, we will find you a clear and practical solution without unnecessary complexity or technical language getting in the way.",
     "quote": "When your business solves a real problem for real people, that is where success begins.",
     "quoteFooter": "And we know how to help you reach that point.",
-    "callout": "Not sure where to start? Book a free 30-minute consultation and we'll help you avoid the mistakes that are the most expensive to fix later.",
-    "cta": "Book a free consultation",
+    "callout": "Not sure where to start? Book a free 30-minute discovery call and we'll help you avoid the mistakes that are the most expensive to fix later.",
+    "cta": "Book a discovery call",
     "imgAlt": "Lana, founder of We Make IT"
   },
   "about": {
@@ -210,9 +210,9 @@
   },
   "ctaStrip": {
     "heading": "Not sure exactly what your website or project needs?",
-    "body1": "Book a free 30-minute video call. We'll talk through where you're at and work out the right next step together.",
+    "body1": "Book a free 30-minute discovery call. We'll talk through where you're at and work out the right next step together.",
     "body2": "It's free, with no obligation to book anything else.",
-    "cta": "Book a free consultation"
+    "cta": "Book a discovery call"
   },
   "contact": {
     "eyebrow": "We are happy to hear from you",
@@ -224,22 +224,11 @@
     "contactLinkText": "Send us a message",
     "linkedinLabel": "LinkedIn",
     "linkedinNewTab": "(opens in new tab)",
-    "trustLabel": "Why work with us",
-    "trustPoints": [
-      "Free quote, no commitment required",
-      "We reply within 1 business day"
-    ],
-    "whatNextHeading": "What happens next?",
-    "whatNextSteps": [
-      "We look at what you're building",
-      "We flag anything that needs a closer look",
-      "You get a clear next step, no pressure"
-    ],
     "form": {
       "ariaLabel": "Get a free quote",
       "service": "How can we help?",
       "serviceOptions": {
-        "consultation": "Free Consultation",
+        "consultation": "Discovery Call",
         "quote": "Quote Request",
         "general": "General Query"
       },
@@ -282,7 +271,7 @@
     "eyebrow": "Get to know your business",
     "heading": "Tell us about your business and goals",
     "subheading": "A short, optional brief helps us understand your business and goals, so the advice we give actually fits you. Choose the option below that best matches what you would like to talk about.",
-    "backToBooking": "Back to booking",
+    "backToBooking": "Back to home",
     "backToOptions": "Back to brief options",
     "options": {
       "website": {
@@ -312,7 +301,7 @@
     "eyebrow": "Website & digital presence",
     "heading": "Help us get to know your business",
     "subheading": "This short brief helps us build a clearer picture of your business and its goals, so the ideas we bring to our call fit your business. We want to help you grow.",
-    "intro": "Every question is optional. Answer as many or as few as you like, whatever helps us prepare for our conversation.",
+    "intro": "Every question is optional except your budget, it helps us prepare properly for the call. Answer the rest as much or as little as you like.",
     "form": {
       "ariaLabel": "Website brief form",
       "name": "Your name",
@@ -320,26 +309,19 @@
       "email": "Your email",
       "emailPlaceholder": "jane@company.ie",
       "emailHint": "So we can match this to your booking.",
-      "business": "What is your business and what do you sell?",
-      "businessPlaceholder": "e.g. We run a small accountancy practice offering bookkeeping, tax returns, and payroll for sole traders.",
-      "idealCustomer": "Who is your ideal customer?",
-      "idealCustomerPlaceholder": "e.g. Small business owners in Ireland who find paperwork stressful.",
+      "business": "Tell us about your business, and who your website needs to reach",
+      "businessPlaceholder": "e.g. We run a small accountancy practice offering bookkeeping, tax returns, and payroll for sole traders, mainly small business owners in Ireland.",
       "websiteGoal": "What is the main goal of your website?",
       "websiteGoalPlaceholder": "e.g. Get more people to book a free consultation.",
       "notWorking": "What is currently not working?",
       "notWorkingPlaceholder": "e.g. Visitors leave without getting in touch, or the site looks outdated.",
-      "desiredAction": "What action do you want visitors to take?",
-      "desiredActionPlaceholder": "e.g. Fill in the contact form or call us directly.",
-      "triedMarketing": "What have you already tried in marketing?",
-      "triedMarketingPlaceholder": "e.g. Facebook ads, local flyers, word of mouth.",
-      "competitors": "Who are your competitors?",
-      "competitorsPlaceholder": "e.g. ABC Accountants, XYZ Bookkeeping.",
-      "successLooksLike": "What does success look like for you?",
-      "successLooksLikePlaceholder": "e.g. Five new enquiries a month within six months.",
-      "budgetTimeframe": "What is your budget or timeframe?",
-      "budgetTimeframePlaceholder": "e.g. Around €2,000, ready to start next month.",
+      "budget": "What is your budget?",
+      "budgetPlaceholder": "e.g. Around €2,000, ready to start next month.",
       "additionalInfo": "Is there anything else I should know before the call?",
       "additionalInfoPlaceholder": "Anything else that would help us prepare.",
+      "errors": {
+        "budget": "Please let us know your budget, even a rough range helps."
+      },
       "submit": "Send my brief",
       "submitting": "Sending…",
       "success": {
@@ -367,7 +349,7 @@
     "eyebrow": "Custom software",
     "heading": "Help us understand your project",
     "subheading": "This short brief helps us build a clearer picture of the problem you're solving and how your team works, so the ideas we bring to our call fit your project. We want to help you make the right decisions early.",
-    "intro": "Every question is optional. Answer as many or as few as you like, whatever helps us prepare for our conversation.",
+    "intro": "Every question is optional except your budget, it helps us prepare properly for the call. Answer the rest as much or as little as you like.",
     "form": {
       "ariaLabel": "Custom software brief form",
       "name": "Your name",
@@ -375,31 +357,19 @@
       "email": "Your email",
       "emailPlaceholder": "jane@company.ie",
       "emailHint": "So we can match this to your booking.",
-      "sections": {
-        "projectType": "Project type",
-        "problemAndGoals": "Problem and goals",
-        "usersAndWorkflows": "Users and workflows",
-        "toolsAndIntegrations": "Existing tools and integrations",
-        "scopeAndBudget": "Scope, timeline and budget"
-      },
       "projectType": "What kind of project is this?",
       "projectTypePlaceholder": "e.g. A new customer portal, an internal tool for staff, or automating a manual process.",
-      "problem": "What problem are you trying to solve?",
-      "problemPlaceholder": "e.g. Our team spends hours every week copying data between spreadsheets and our accounting software.",
-      "outcome": "What outcome do you want?",
-      "outcomePlaceholder": "e.g. Save the team a day a week and cut down on errors in our reporting.",
+      "problem": "What problem are you trying to solve, and what outcome do you want?",
+      "problemPlaceholder": "e.g. Our team spends hours every week copying data between spreadsheets and our accounting software. We want to save a day a week and cut down on errors.",
       "users": "Who will use this software?",
       "usersPlaceholder": "e.g. Our five-person operations team, and eventually our customers too.",
-      "currentProcess": "How are you doing this today?",
-      "currentProcessPlaceholder": "e.g. A mix of spreadsheets, email, and a paper diary.",
-      "integrations": "What systems does it need to connect with?",
-      "integrationsPlaceholder": "e.g. Our accounting software, website, or a booking system.",
       "mustHaveFeatures": "What features are must-have for version 1?",
       "mustHaveFeaturesPlaceholder": "e.g. Logging jobs, automatic reminders, and a simple dashboard.",
-      "timeline": "What is your timeline?",
-      "timelinePlaceholder": "e.g. Ready to start next month, with a goal to launch within three months.",
       "budget": "What budget range are you considering?",
-      "budgetPlaceholder": "e.g. Around €5,000 to €10,000.",
+      "budgetPlaceholder": "e.g. Around €5,000 to €10,000, ready to start next month.",
+      "errors": {
+        "budget": "Please let us know your budget range, even rough numbers help."
+      },
       "submit": "Send my brief",
       "submitting": "Sending…",
       "success": {
@@ -484,7 +454,7 @@
     "eyebrow": "Social media",
     "heading": "Help us get to know your business",
     "subheading": "This short brief helps us build a clearer picture of your business, your ideal client, and the content you want, so the plan we bring to our call fits your business.",
-    "intro": "Every question is optional. Answer as many or as few as you like, whatever helps us prepare for our conversation.",
+    "intro": "Every question is optional except your budget, it helps us prepare properly for the call. Answer the rest as much or as little as you like.",
     "form": {
       "ariaLabel": "Social media brief form",
       "name": "Your name",
@@ -492,38 +462,17 @@
       "email": "Your email",
       "emailPlaceholder": "jane@company.ie",
       "emailHint": "So we can match this to your booking.",
-      "sections": {
-        "aboutBusiness": "About the business",
-        "aboutInstagram": "About your current Instagram",
-        "aboutContent": "About content",
-        "logistics": "Logistics"
-      },
-      "topServices": "What treatments or services make the most money right now?",
-      "topServicesPlaceholder": "e.g. Facials and laser treatments bring in most of our revenue.",
-      "growthGoal": "What do you want to grow?",
-      "growthGoalPlaceholder": "e.g. More bookings for our higher-value treatments.",
-      "idealClient": "Who is your ideal client? Age, location, what they're looking for.",
+      "topServices": "What are your top services, and what do you want to grow?",
+      "topServicesPlaceholder": "e.g. Facials and laser treatments bring in most of our revenue, but we want more bookings for higher-value treatments.",
+      "idealClient": "Who is your ideal client?",
       "idealClientPlaceholder": "e.g. Women aged 30 to 50 living locally, looking for results they can trust.",
-      "differentiator": "What makes your business different from others nearby?",
-      "differentiatorPlaceholder": "e.g. We only use techniques backed by clinical evidence.",
-      "contentDislikes": "What do you dislike about your current content?",
-      "contentDislikesPlaceholder": "e.g. It looks inconsistent and doesn't show our results.",
-      "accountsAdmired": "Any accounts you admire? What do you like about them?",
-      "accountsAdmiredPlaceholder": "e.g. @example, their before and after content feels honest.",
-      "desiredTone": "What tone do you want? Clinical and premium, warm and personal, fun and trendy, or a mix.",
+      "desiredTone": "What tone do you want?",
       "desiredTonePlaceholder": "e.g. Clinical and premium, but still approachable.",
-      "filmingOnSite": "Can we film on site? What's the best time?",
-      "filmingOnSitePlaceholder": "e.g. Yes, weekday mornings work best before it gets busy.",
-      "beforeAfterComfort": "Are you comfortable sharing before and after or result photos?",
-      "beforeAfterComfortPlaceholder": "e.g. Yes, with client consent.",
-      "onCamera": "Who's on camera? You, staff, just the work, or a mix?",
-      "onCameraPlaceholder": "e.g. Mostly me, sometimes the team.",
-      "brandAssets": "Do you have existing brand colours, fonts, or logo files?",
-      "brandAssetsPlaceholder": "e.g. Yes, we have a brand guide we can send over.",
-      "approver": "Who approves content before it's posted?",
-      "approverPlaceholder": "e.g. Me, usually within a day.",
-      "budgetRange": "What budget range do you have in mind?",
-      "budgetRangePlaceholder": "e.g. Around €350 to €450 a month.",
+      "budget": "What is your budget?",
+      "budgetPlaceholder": "e.g. Around €350 to €450 a month.",
+      "errors": {
+        "budget": "Please let us know your budget, even a rough range helps."
+      },
       "submit": "Send my brief",
       "submitting": "Sending…",
       "success": {
@@ -702,7 +651,7 @@
     },
     "bookBridge": {
       "text": "Still not sure which audit you need?",
-      "cta": "Book a free consultation instead"
+      "cta": "Book a discovery call instead"
     },
     "altPayment": {
       "toggleLabel": "Card not working, or prefer another way to pay?",
@@ -787,8 +736,8 @@
     "emailError": "Please enter a valid email address",
     "messageError": "Please tell us a little about your project",
     "submitting": "Sending…",
-    "successTitle": "Request sent!",
-    "successBody": "Thanks for getting in touch. We will get back to you within one business day.",
+    "successTitle": "Check your email",
+    "successBody": "We've sent you a link to pick a time that works for you. Check your inbox, and your spam folder just in case.",
     "sendAnother": "Send another request",
     "privacyNote": "Your details stay private and are only used to reply to you.",
     "serverError": "Something went wrong. Please try again.",
@@ -809,10 +758,10 @@
       },
       "technicalConsultation": {
         "heading": "Tell us what you're building",
-        "subheading": "The first 30 minutes are free. Need more time? A paid 60-minute session is also available. No commitment required.",
+        "subheading": "We'll email you a link to pick a time that works.",
         "messageLabel": "What do you need a second opinion on?",
         "messagePlaceholder": "e.g. an AI-built app that collects user data, a new feature with a login, or a platform choice you're unsure about.",
-        "submitLabel": "Request a free consultation"
+        "submitLabel": "Request my discovery call"
       }
     }
   },
@@ -845,11 +794,11 @@
       "pricing": "Pricing",
       "faq": "FAQ",
       "getAQuote": "Get a Quote",
-      "bookFollowUp": "Book a consultation",
+      "bookFollowUp": "Book a paid consultation",
       "preMeetingBrief": "Pre-meeting brief"
     },
     "freeToolLinks": {
-      "freeConsultation": "Free Consultation"
+      "freeConsultation": "Free Discovery Call"
     },
     "legalLinks": {
       "privacyPolicy": "Privacy Policy",
@@ -957,9 +906,9 @@
       { "name": "Regular updates that boost visibility", "detail": "Scheduled content and technical updates that improve SEO, engagement, and search visibility over time." }
     ],
     "consultationCtaHeading": "Not sure what your website needs?",
-    "consultationCtaBody": "The first 30 minutes are free. Need more time? A paid 60-minute session is also available.",
-    "consultationCta": "Book a free consultation",
-    "serviceCta": "Book a free consultation",
+    "consultationCtaBody": "Book a free 30-minute discovery call and we'll work it out together.",
+    "consultationCta": "Book a discovery call",
+    "serviceCta": "Book a discovery call",
     "finalCtaHeading": "Ready to improve your website?",
     "finalCtaBody": "Tell us what you need and we will suggest a clear, practical plan.",
     "finalCta": "Send us a message"
@@ -978,9 +927,9 @@
     "advisoryHeading": "Technical consultations for AI-built apps",
     "advisoryBody": "If you're building your app or product yourself with an AI tool, AI saves you real time, but it doesn't take on the liability if something goes wrong. You do. A simple informative page needs very little of this. Anything with a login, a form, or that collects personal data needs a proper check: GDPR and data handling, accessibility law, and the platform or architecture choices that are expensive to undo later. We review what you've built or planned and tell you plainly what to fix and what's already fine.",
     "advisoryCtaHeading": "Get a second opinion before you launch",
-    "advisoryCtaBody": "The first 30 minutes are free. Need more time? A paid 60-minute session is also available.",
-    "advisoryCta": "Book a free consultation",
-    "serviceCta": "Book a free consultation",
+    "advisoryCtaBody": "Book a free 30-minute discovery call and we'll work it out together.",
+    "advisoryCta": "Book a discovery call",
+    "serviceCta": "Book a discovery call",
     "servicesHeading": "Software services we provide",
     "services": [
       { "name": "MVP Software", "detail": "Build a focused first version to validate demand quickly and reduce risk." },
@@ -1367,30 +1316,26 @@
     "teamPlaceholder": "Photo coming soon"
   },
   "book": {
-    "eyebrow": "Book a call",
-    "heading": "Book a technical consultation",
-    "body": "Not sure what you need, or want a second opinion before you build or launch? Book a free 30-minute video call. Need more time, or a follow-up after that? You can book a paid 60-minute session too.",
+    "eyebrow": "Paid consultation",
+    "heading": "Book a paid technical consultation",
+    "body": "€60 for 60 minutes, one to one. For when you need more time than a free call allows, or want a follow-up after one for extra detail or another report.",
+    "discoveryCallBridge": {
+      "text": "Not sure yet, or just want a quick chat first?",
+      "cta": "Book a free discovery call instead"
+    },
     "auditBridge": {
       "text": "Looking for a full written report instead?",
       "cta": "Get a website audit"
     },
     "step1Label": "Step 1",
     "step2Label": "Step 2",
-    "step3Label": "Step 3",
     "offersHeading": "Online video call or in-person meeting",
-    "offersSubheading": "Pick the option that fits, then choose a slot. Prefer meeting in person? Book a slot and message us on WhatsApp or email to arrange a location.",
-    "freeOffer": {
-      "badge": "Free",
-      "heading": "Free technical consultation",
-      "duration": "30 minutes",
-      "description": "For when you're not sure what you need, or want a second opinion before you build or launch. We'll work out the right next step together.",
-      "cta": "Book your free call"
-    },
+    "offersSubheading": "Book your slot below. Prefer meeting in person? Book a slot and message us on WhatsApp or email to arrange a location.",
     "paidOffer": {
       "badge": "€60",
       "heading": "Paid technical consultation",
       "duration": "60 minutes",
-      "description": "For when you need more time than 30 minutes, or want a follow-up session after your free call for extra detail or another report.",
+      "description": "For when you need more time than a free call allows, or want a follow-up session after one for extra detail or another report.",
       "cta": "Book your paid consultation",
       "agreeLabel": "I agree to the",
       "termsLinkLabel": "Terms of Service for this consultation"
@@ -1402,23 +1347,6 @@
     "contactBody": "If you have any questions or need to reschedule, please contact us directly. We are happy to help!",
     "contactWhatsapp": "Message on WhatsApp",
     "contactEmail": "info@wemakeit.ie",
-    "story": {
-      "painHeading": "Sounds familiar?",
-      "painPoints": [
-        "You started building with AI, and you're already out of tokens.",
-        "Too many tools, too many platforms. Which one actually fits what you're building?",
-        "You want to make the right call now, not pay to redo it later.",
-        "AI builds it. If something goes wrong legally, that's on you, not the AI."
-      ],
-      "painImageAlt": "A person at a laptop late at night, head in hand, overwhelmed",
-      "mattersHeading": "Why this matters",
-      "mattersBody": "If your app has a login, a form, or saves anything about your users, the backend needs to be built properly: GDPR compliance, secure architecture, data handled the right way from day one. Get it wrong, and the legal risk is yours.",
-      "guideHeading": "You don't need a developer. You need a guide.",
-      "guideBody": "You can learn all of this yourself, eventually. But as an entrepreneur, you don't have time to learn everything. A human expert can save you time, money, and a lot of wasted tokens, and help you build it safely from the start.",
-      "guideCloser": "A little help is worth it.",
-      "guideCta": "Claim your free 30-minute consultation",
-      "guideImageAlt": "Two people in a genuine consultation moment, conveying relief and connection"
-    },
     "thankYou": {
       "meta": { "title": "Payment confirmed | We Make IT" },
       "heading": "Thanks, your payment is confirmed",
@@ -1427,8 +1355,25 @@
       "briefCta": "Choose your pre-meeting brief"
     },
     "meta": {
-      "title": "Book a technical consultation | We Make IT",
-      "description": "Book a free 30-minute technical consultation with We Make IT. Get a second opinion before your AI-built app, website, or feature goes live."
+      "title": "Book a paid technical consultation | We Make IT",
+      "description": "Book a paid 60-minute technical consultation with We Make IT. €60, one to one, for a proper second opinion on your app, website, or platform choice."
+    }
+  },
+  "discoveryCallPage": {
+    "eyebrow": "Free discovery call",
+    "heading": "Book a free discovery call",
+    "body": "Free, 30 minutes, no commitment.",
+    "bookBridge": {
+      "text": "Already know you need more time?",
+      "cta": "Book the paid consultation instead"
+    },
+    "contactHeading": "Prefer to talk first?",
+    "contactBody": "Message us on WhatsApp or by email and we'll get back to you directly.",
+    "contactWhatsapp": "Message on WhatsApp",
+    "contactEmail": "info@wemakeit.ie",
+    "meta": {
+      "title": "Book a free discovery call | We Make IT",
+      "description": "Book a free 30-minute discovery call with We Make IT. Tell us what you're building and we'll email you a link to pick a time."
     }
   }
 }

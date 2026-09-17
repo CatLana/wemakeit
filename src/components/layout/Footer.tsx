@@ -256,7 +256,7 @@ export default function Footer() {
             <ul className="space-y-1" role="list">
               <li>
                 <Link
-                  href="/book"
+                  href="/discovery-call"
                   className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
                 >
                   {freeToolLinks.freeConsultation}

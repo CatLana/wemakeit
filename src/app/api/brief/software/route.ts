@@ -7,13 +7,9 @@ const schema = z.object({
   email: z.string().optional(),
   projectType: z.string().optional(),
   problem: z.string().optional(),
-  outcome: z.string().optional(),
   users: z.string().optional(),
-  currentProcess: z.string().optional(),
-  integrations: z.string().optional(),
   mustHaveFeatures: z.string().optional(),
-  timeline: z.string().optional(),
-  budget: z.string().optional(),
+  budget: z.string().min(1),
 });
 
 type BriefData = z.infer<typeof schema>;
@@ -22,13 +18,9 @@ const RECIPIENT = ["ssavchenko8@gmail.com"];
 
 const FIELD_LABELS: Record<keyof Omit<BriefData, "name" | "email">, string> = {
   projectType: "What kind of project is this?",
-  problem: "What problem are you trying to solve?",
-  outcome: "What outcome do you want?",
+  problem: "What problem are you trying to solve, and what outcome do you want?",
   users: "Who will use this software?",
-  currentProcess: "How are you doing this today?",
-  integrations: "What systems does it need to connect with?",
   mustHaveFeatures: "What features are must-have for version 1?",
-  timeline: "What is your timeline?",
   budget: "What budget range are you considering?",
 };
 

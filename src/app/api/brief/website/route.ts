@@ -6,14 +6,9 @@ const schema = z.object({
   name: z.string().optional(),
   email: z.string().optional(),
   business: z.string().optional(),
-  idealCustomer: z.string().optional(),
   websiteGoal: z.string().optional(),
   notWorking: z.string().optional(),
-  desiredAction: z.string().optional(),
-  triedMarketing: z.string().optional(),
-  competitors: z.string().optional(),
-  successLooksLike: z.string().optional(),
-  budgetTimeframe: z.string().optional(),
+  budget: z.string().min(1),
   additionalInfo: z.string().optional(),
 });
 
@@ -22,15 +17,10 @@ type BriefData = z.infer<typeof schema>;
 const RECIPIENT = ["ssavchenko8@gmail.com"];
 
 const FIELD_LABELS: Record<keyof Omit<BriefData, "name" | "email">, string> = {
-  business: "What is your business and what do you sell?",
-  idealCustomer: "Who is your ideal customer?",
+  business: "Tell us about your business, and who your website needs to reach",
   websiteGoal: "What is the main goal of your website?",
   notWorking: "What is currently not working?",
-  desiredAction: "What action do you want visitors to take?",
-  triedMarketing: "What have you already tried in marketing?",
-  competitors: "Who are your competitors?",
-  successLooksLike: "What does success look like for you?",
-  budgetTimeframe: "What is your budget or timeframe?",
+  budget: "What is your budget?",
   additionalInfo: "Is there anything else I should know before the call?",
 };
 

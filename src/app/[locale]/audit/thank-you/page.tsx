@@ -110,7 +110,7 @@ export default async function AuditThankYouPage({
               <h2 className="text-lg font-bold text-white mb-2">{t("step2Heading")}</h2>
               <p className="text-slate-300 leading-relaxed mb-5 text-sm">{t("step2Body")}</p>
               <Link
-                href="/book"
+                href="/discovery-call"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
               >
                 {t("step2Cta")}

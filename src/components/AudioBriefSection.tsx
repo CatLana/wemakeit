@@ -19,25 +19,16 @@ export type BriefNamespace = "websiteBrief" | "softwareBrief" | "generalBrief" |
 const QUESTION_KEYS: Record<BriefNamespace, readonly string[]> = {
   websiteBrief: [
     "form.business",
-    "form.idealCustomer",
     "form.websiteGoal",
     "form.notWorking",
-    "form.desiredAction",
-    "form.triedMarketing",
-    "form.competitors",
-    "form.successLooksLike",
-    "form.budgetTimeframe",
+    "form.budget",
     "form.additionalInfo",
   ],
   softwareBrief: [
     "form.projectType",
     "form.problem",
-    "form.outcome",
     "form.users",
-    "form.currentProcess",
-    "form.integrations",
     "form.mustHaveFeatures",
-    "form.timeline",
     "form.budget",
   ],
   generalBrief: [
@@ -50,18 +41,9 @@ const QUESTION_KEYS: Record<BriefNamespace, readonly string[]> = {
   ],
   socialBrief: [
     "form.topServices",
-    "form.growthGoal",
     "form.idealClient",
-    "form.differentiator",
-    "form.contentDislikes",
-    "form.accountsAdmired",
     "form.desiredTone",
-    "form.filmingOnSite",
-    "form.beforeAfterComfort",
-    "form.onCamera",
-    "form.brandAssets",
-    "form.approver",
-    "form.budgetRange",
+    "form.budget",
   ],
 };
 

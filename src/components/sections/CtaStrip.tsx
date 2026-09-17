@@ -20,7 +20,7 @@ export default function CtaStrip() {
           {t("body2") && <p className="mt-3 text-slate-400 text-base lg:text-lg">{t("body2")}</p>}
         </div>
         <Link
-          href="/book"
+          href="/discovery-call"
           className="shrink-0 inline-flex items-center justify-center min-h-[52px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base whitespace-nowrap focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
         >
           {t("cta")}

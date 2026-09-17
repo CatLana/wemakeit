@@ -520,7 +520,7 @@ export default async function ArticlePage({
                 commitment.
               </p>
               <Link
-                href="/book"
+                href="/discovery-call"
                 className="inline-flex items-center justify-center min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
               >
                 Tell us your idea

@@ -5,7 +5,7 @@ export function BackLink({
   href,
   children,
 }: {
-  href: "/book" | "/brief";
+  href: "/" | "/brief";
   children: React.ReactNode;
 }) {
   return (
@@ -23,20 +23,32 @@ export function Field({
   id,
   label,
   hint,
+  required,
+  error,
   children,
 }: {
   id: string;
   label: string;
   hint?: string;
+  required?: boolean;
+  error?: string;
   children: React.ReactNode;
 }) {
   return (
     <div className="flex flex-col gap-1.5">
       <label htmlFor={id} className="text-sm font-medium text-[#1E293B]">
         {label}
+        {required && (
+          <span className="text-rose-500 ml-0.5" aria-hidden="true">*</span>
+        )}
       </label>
       {children}
-      {hint && <p className="text-xs text-slate-400">{hint}</p>}
+      {hint && !error && <p className="text-xs text-slate-400">{hint}</p>}
+      {error && (
+        <p id={`${id}-error`} role="alert" className="text-xs text-rose-500 font-medium">
+          {error}
+        </p>
+      )}
     </div>
   );
 }

@@ -1,29 +1,33 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { Field, SectionHeading, inputBase, textareaBase } from "@/components/BriefFormFields";
+import { Field, inputBase, textareaBase } from "@/components/BriefFormFields";
 import AuditBriefSuccess from "@/components/AuditBriefSuccess";
 
 type FormValues = {
   name?: string;
   email?: string;
   topServices?: string;
-  growthGoal?: string;
   idealClient?: string;
-  differentiator?: string;
-  contentDislikes?: string;
-  accountsAdmired?: string;
   desiredTone?: string;
-  filmingOnSite?: string;
-  beforeAfterComfort?: string;
-  onCamera?: string;
-  brandAssets?: string;
-  approver?: string;
-  budgetRange?: string;
+  budget: string;
 };
+
+function makeSchema(e: (key: string) => string) {
+  return z.object({
+    name: z.string().optional(),
+    email: z.string().optional(),
+    topServices: z.string().optional(),
+    idealClient: z.string().optional(),
+    desiredTone: z.string().optional(),
+    budget: z.string().min(1, e("form.errors.budget")),
+  });
+}
 
 export default function SocialBriefForm() {
   const t = useTranslations("socialBrief");
@@ -32,7 +36,13 @@ export default function SocialBriefForm() {
   const [serverError, setServerError] = useState<string | null>(null);
   const successRef = useRef<HTMLDivElement>(null);
 
-  const { register, handleSubmit, formState: { isSubmitting } } = useForm<FormValues>();
+  const schema = useMemo(() => makeSchema((key) => t(key as Parameters<typeof t>[0])), [t]);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
   useEffect(() => {
     if (!submitted) return;
@@ -126,70 +136,30 @@ export default function SocialBriefForm() {
 
       <hr className="border-slate-200" />
 
-      {/* About the business */}
-      <div className="flex flex-col gap-5">
-        <SectionHeading>{t("form.sections.aboutBusiness")}</SectionHeading>
-        <Field id="smb-topServices" label={t("form.topServices")}>
-          <textarea id="smb-topServices" rows={2} placeholder={t("form.topServicesPlaceholder")} className={textareaBase} {...register("topServices")} />
-        </Field>
-        <Field id="smb-growthGoal" label={t("form.growthGoal")}>
-          <textarea id="smb-growthGoal" rows={2} placeholder={t("form.growthGoalPlaceholder")} className={textareaBase} {...register("growthGoal")} />
-        </Field>
-        <Field id="smb-idealClient" label={t("form.idealClient")}>
-          <textarea id="smb-idealClient" rows={2} placeholder={t("form.idealClientPlaceholder")} className={textareaBase} {...register("idealClient")} />
-        </Field>
-        <Field id="smb-differentiator" label={t("form.differentiator")}>
-          <textarea id="smb-differentiator" rows={2} placeholder={t("form.differentiatorPlaceholder")} className={textareaBase} {...register("differentiator")} />
-        </Field>
-      </div>
+      <Field id="smb-topServices" label={t("form.topServices")}>
+        <textarea id="smb-topServices" rows={2} placeholder={t("form.topServicesPlaceholder")} className={textareaBase} {...register("topServices")} />
+      </Field>
 
-      <hr className="border-slate-200" />
+      <Field id="smb-idealClient" label={t("form.idealClient")}>
+        <textarea id="smb-idealClient" rows={2} placeholder={t("form.idealClientPlaceholder")} className={textareaBase} {...register("idealClient")} />
+      </Field>
 
-      {/* About current Instagram */}
-      <div className="flex flex-col gap-5">
-        <SectionHeading>{t("form.sections.aboutInstagram")}</SectionHeading>
-        <Field id="smb-contentDislikes" label={t("form.contentDislikes")}>
-          <textarea id="smb-contentDislikes" rows={2} placeholder={t("form.contentDislikesPlaceholder")} className={textareaBase} {...register("contentDislikes")} />
-        </Field>
-        <Field id="smb-accountsAdmired" label={t("form.accountsAdmired")}>
-          <textarea id="smb-accountsAdmired" rows={2} placeholder={t("form.accountsAdmiredPlaceholder")} className={textareaBase} {...register("accountsAdmired")} />
-        </Field>
-        <Field id="smb-desiredTone" label={t("form.desiredTone")}>
-          <textarea id="smb-desiredTone" rows={2} placeholder={t("form.desiredTonePlaceholder")} className={textareaBase} {...register("desiredTone")} />
-        </Field>
-      </div>
+      <Field id="smb-desiredTone" label={t("form.desiredTone")}>
+        <textarea id="smb-desiredTone" rows={2} placeholder={t("form.desiredTonePlaceholder")} className={textareaBase} {...register("desiredTone")} />
+      </Field>
 
-      <hr className="border-slate-200" />
-
-      {/* About content */}
-      <div className="flex flex-col gap-5">
-        <SectionHeading>{t("form.sections.aboutContent")}</SectionHeading>
-        <Field id="smb-filmingOnSite" label={t("form.filmingOnSite")}>
-          <textarea id="smb-filmingOnSite" rows={2} placeholder={t("form.filmingOnSitePlaceholder")} className={textareaBase} {...register("filmingOnSite")} />
-        </Field>
-        <Field id="smb-beforeAfterComfort" label={t("form.beforeAfterComfort")}>
-          <textarea id="smb-beforeAfterComfort" rows={2} placeholder={t("form.beforeAfterComfortPlaceholder")} className={textareaBase} {...register("beforeAfterComfort")} />
-        </Field>
-        <Field id="smb-onCamera" label={t("form.onCamera")}>
-          <textarea id="smb-onCamera" rows={2} placeholder={t("form.onCameraPlaceholder")} className={textareaBase} {...register("onCamera")} />
-        </Field>
-        <Field id="smb-brandAssets" label={t("form.brandAssets")}>
-          <textarea id="smb-brandAssets" rows={2} placeholder={t("form.brandAssetsPlaceholder")} className={textareaBase} {...register("brandAssets")} />
-        </Field>
-      </div>
-
-      <hr className="border-slate-200" />
-
-      {/* Logistics */}
-      <div className="flex flex-col gap-5">
-        <SectionHeading>{t("form.sections.logistics")}</SectionHeading>
-        <Field id="smb-approver" label={t("form.approver")}>
-          <textarea id="smb-approver" rows={2} placeholder={t("form.approverPlaceholder")} className={textareaBase} {...register("approver")} />
-        </Field>
-        <Field id="smb-budgetRange" label={t("form.budgetRange")}>
-          <textarea id="smb-budgetRange" rows={2} placeholder={t("form.budgetRangePlaceholder")} className={textareaBase} {...register("budgetRange")} />
-        </Field>
-      </div>
+      <Field id="smb-budget" label={t("form.budget")} required error={errors.budget?.message}>
+        <textarea
+          id="smb-budget"
+          rows={2}
+          placeholder={t("form.budgetPlaceholder")}
+          aria-required="true"
+          aria-invalid={!!errors.budget}
+          aria-describedby={errors.budget ? "smb-budget-error" : undefined}
+          className={`${textareaBase} ${errors.budget ? "border-rose-400" : "border-slate-200"}`}
+          {...register("budget")}
+        />
+      </Field>
 
       {serverError && (
         <p

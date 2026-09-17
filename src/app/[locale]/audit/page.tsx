@@ -268,7 +268,7 @@ export default async function AuditPage({
             <p className="mt-8 text-sm text-slate-500">
               {t("bookBridge.text")}{" "}
               <Link
-                href="/book"
+                href="/discovery-call"
                 className="text-[#0E7490] font-semibold hover:text-[#22D3EE] hover:underline underline-offset-2 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
               >
                 {t("bookBridge.cta")}

@@ -78,7 +78,7 @@ export default async function BriefPage({
         {/* Page hero */}
         <div className="bg-[#0F172A] pt-32 pb-16">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <BackLink href="/book">{t("backToBooking")}</BackLink>
+            <BackLink href="/">{t("backToBooking")}</BackLink>
             <div className="flex items-center gap-2 text-xs text-slate-500 mb-4">
               <Link
                 href="/"

@@ -6,18 +6,9 @@ const schema = z.object({
   name: z.string().optional(),
   email: z.string().optional(),
   topServices: z.string().optional(),
-  growthGoal: z.string().optional(),
   idealClient: z.string().optional(),
-  differentiator: z.string().optional(),
-  contentDislikes: z.string().optional(),
-  accountsAdmired: z.string().optional(),
   desiredTone: z.string().optional(),
-  filmingOnSite: z.string().optional(),
-  beforeAfterComfort: z.string().optional(),
-  onCamera: z.string().optional(),
-  brandAssets: z.string().optional(),
-  approver: z.string().optional(),
-  budgetRange: z.string().optional(),
+  budget: z.string().min(1),
 });
 
 type BriefData = z.infer<typeof schema>;
@@ -25,19 +16,10 @@ type BriefData = z.infer<typeof schema>;
 const RECIPIENT = ["ssavchenko8@gmail.com"];
 
 const FIELD_LABELS: Record<keyof Omit<BriefData, "name" | "email">, string> = {
-  topServices: "What treatments or services make the most money right now?",
-  growthGoal: "What do you want to grow?",
+  topServices: "What are your top services, and what do you want to grow?",
   idealClient: "Who is your ideal client?",
-  differentiator: "What makes your business different from others nearby?",
-  contentDislikes: "What do you dislike about your current content?",
-  accountsAdmired: "Any accounts you admire? What do you like about them?",
   desiredTone: "What tone do you want?",
-  filmingOnSite: "Can we film on site? What's the best time?",
-  beforeAfterComfort: "Are you comfortable sharing before and after or result photos?",
-  onCamera: "Who's on camera?",
-  brandAssets: "Do you have existing brand colours, fonts, or logo files?",
-  approver: "Who approves content before it's posted?",
-  budgetRange: "What budget range do you have in mind?",
+  budget: "What is your budget?",
 };
 
 const FIELD_ORDER = Object.keys(FIELD_LABELS) as Array<keyof typeof FIELD_LABELS>;
