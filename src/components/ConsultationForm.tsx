@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import StepBadge from "@/components/StepBadge";
 
 const inputBase =
-  "w-full px-4 py-3 rounded-lg border text-sm text-[#1E293B] placeholder:text-slate-400 bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE]";
+  "w-full px-4 py-3 rounded-lg border text-sm bg-slate-900 text-slate-100 placeholder:text-slate-500 transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE]";
 
 function makeSchema(t: (k: string) => string) {
   return z.object({
@@ -147,7 +147,7 @@ export default function ConsultationForm({
               aria-required="true"
               aria-invalid={!!errors.name}
               aria-describedby={errors.name ? "cf-name-error" : undefined}
-              className={`${inputBase} ${errors.name ? "border-rose-400" : "border-slate-700 bg-slate-900 text-slate-100 placeholder:text-slate-500"}`}
+              className={`${inputBase} ${errors.name ? "border-rose-400" : "border-slate-700"}`}
               {...register("name")}
             />
             {errors.name && (
@@ -173,7 +173,7 @@ export default function ConsultationForm({
               aria-required="true"
               aria-invalid={!!errors.email}
               aria-describedby={errors.email ? "cf-email-error" : undefined}
-              className={`${inputBase} ${errors.email ? "border-rose-400" : "border-slate-700 bg-slate-900 text-slate-100 placeholder:text-slate-500"}`}
+              className={`${inputBase} ${errors.email ? "border-rose-400" : "border-slate-700"}`}
               {...register("email")}
             />
             {errors.email && (
@@ -197,7 +197,7 @@ export default function ConsultationForm({
             type="tel"
             autoComplete="tel"
             placeholder={t("phonePlaceholder")}
-            className={`${inputBase} border-slate-700 bg-slate-900 text-slate-100 placeholder:text-slate-500`}
+            className={`${inputBase} border-slate-700`}
             {...register("phone")}
           />
         </div>
@@ -218,7 +218,7 @@ export default function ConsultationForm({
             aria-required="true"
             aria-invalid={!!errors.message}
             aria-describedby={errors.message ? "cf-message-error" : undefined}
-            className={`${inputBase} resize-none ${errors.message ? "border-rose-400" : "border-slate-700 bg-slate-900 text-slate-100 placeholder:text-slate-500"}`}
+            className={`${inputBase} resize-none ${errors.message ? "border-rose-400" : "border-slate-700"}`}
             {...register("message")}
           />
           {errors.message && (

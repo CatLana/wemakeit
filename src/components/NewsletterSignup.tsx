@@ -24,7 +24,7 @@ type FormValues = {
 };
 
 const inputBase =
-  "w-full px-4 py-3 rounded-lg border text-sm text-[#1E293B] placeholder:text-slate-400 bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE]";
+  "w-full px-4 py-3 rounded-lg border text-sm bg-white/5 text-white placeholder:text-slate-500 transition-colors focus:outline-none focus:ring-2 focus:ring-[#22D3EE] focus:border-[#22D3EE]";
 
 export default function NewsletterSignup() {
   const t = useTranslations("newsletter");
@@ -102,7 +102,7 @@ export default function NewsletterSignup() {
               aria-required="true"
               aria-invalid={!!errors.email}
               aria-describedby={errors.email ? "newsletter-email-error" : undefined}
-              className={`${inputBase} ${errors.email ? "border-rose-400" : "border-white/20 bg-white/5 text-white placeholder:text-slate-500"} focus:ring-[#22D3EE]`}
+              className={`${inputBase} ${errors.email ? "border-rose-400" : "border-white/20"}`}
               {...register("email")}
             />
             {errors.email && (
