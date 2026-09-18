@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -163,6 +164,17 @@ export default async function ArticlePage({
         {/* Article body */}
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/start-up-make-mistakes-faster.jpg"
+                alt="Sticky notes reading Start Up and Make Mistakes Faster next to a laptop"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
 
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               You have had the idea for a while. Maybe it came from a frustration at work, a gap you spotted in your industry, or a problem you kept running into yourself. The idea feels solid. But every time you try to figure out what to do next, you hit a wall.

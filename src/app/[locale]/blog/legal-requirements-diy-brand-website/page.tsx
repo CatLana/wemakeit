@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Clock, CheckCircle2 } from "lucide-react";
+
+const CHECKLIST_ITEMS = [
+  "Privacy policy published and up to date",
+  "Cookie banner is opt-in compliant",
+  "Contact/lead forms include lawful data notices",
+  "Terms and cookie policy are linked in footer",
+  "Core pages pass basic accessibility checks",
+  "Data retention and deletion workflow documented",
+];
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "legal-requirements-diy-brand-website";
@@ -157,6 +167,17 @@ export default async function ArticlePage({
 
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/blog-diy-website-legal.jpg"
+                alt="A desk with an open notebook full of handwritten notes, sticky notes, and a laptop, mid DIY website build"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
+
             <p className="text-slate-600 leading-relaxed text-base mb-10">
               If you built your site with Webador, Wix, Squarespace, or AI tools, you are not alone. It is a smart way
               to launch fast. But legal and compliance basics are often missed. This guide focuses on the essentials you
@@ -222,15 +243,15 @@ export default async function ArticlePage({
             </ul>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">Quick DIY Website Legal Checklist</h2>
-            <div className="rounded-xl border border-slate-200 p-6 mb-10">
-              <ul className="list-disc list-outside ml-5 space-y-2 text-slate-600 leading-relaxed">
-                <li>Privacy policy published and up to date</li>
-                <li>Cookie banner is opt-in compliant</li>
-                <li>Contact/lead forms include lawful data notices</li>
-                <li>Terms and cookie policy are linked in footer</li>
-                <li>Core pages pass basic accessibility checks</li>
-                <li>Data retention and deletion workflow documented</li>
-              </ul>
+            <div className="rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10">
+              <div className="grid sm:grid-cols-2 gap-4">
+                {CHECKLIST_ITEMS.map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <CheckCircle2 size={18} className="text-[#0E7490] shrink-0 mt-0.5" aria-hidden="true" />
+                    <p className="text-sm text-slate-600 leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">Conclusion</h2>

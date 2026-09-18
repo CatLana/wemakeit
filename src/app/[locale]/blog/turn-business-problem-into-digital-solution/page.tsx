@@ -1,9 +1,33 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, ArrowRight, Repeat, Database, MessageCircleWarning, TrendingUp } from "lucide-react";
+
+const PROBLEM_SIGNALS = [
+  {
+    icon: Repeat,
+    title: "Repetitive manual tasks",
+    body: "If someone on your team does the same task over and over with no variation, there is almost certainly a way to automate it or make it faster.",
+  },
+  {
+    icon: Database,
+    title: "Information scattered across tools",
+    body: "When the truth about a customer, order, or project lives in three different places and never gets updated in all three, you have a data problem. And data problems cause mistakes.",
+  },
+  {
+    icon: MessageCircleWarning,
+    title: "Customers hitting friction at a key step",
+    body: "If people regularly call to ask where their order is, or have to email you to do something they should be able to do themselves, the process can almost certainly be improved.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Your team cannot keep up with demand",
+    body: "If growth is causing chaos because the business was not built to scale, a digital solution can do the work that hiring more people cannot always solve.",
+  },
+];
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "turn-business-problem-into-digital-solution";
@@ -164,6 +188,17 @@ export default async function ArticlePage({
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/blog-business-problem-to-solution.jpg"
+                alt="Someone sketching a website structure on a whiteboard, working through the problem step by step"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
+
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Every growing business reaches a point where something stops working. A manual process that was fine at 20 customers falls apart at 200. A spreadsheet that worked for one person becomes unmanageable for a team of five. A task that someone does every day by hand takes hours that could be spent on something more valuable.
             </p>
@@ -177,31 +212,16 @@ export default async function ArticlePage({
             <p className="text-slate-600 leading-relaxed text-base mb-6">
               Not every business problem is a software problem. But certain patterns almost always point to a digital fix. Look for:
             </p>
-            <div className="space-y-4 mb-10">
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>Repetitive manual tasks.</strong> If someone on your team does the same task over and over with no variation, there is almost certainly a way to automate it or make it faster.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>Information scattered across tools.</strong> When the truth about a customer, order, or project lives in three different places and never gets updated in all three, you have a data problem. And data problems cause mistakes.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>Customers hitting friction at a key step.</strong> If people regularly call to ask where their order is, or have to email you to do something they should be able to do themselves, the process can almost certainly be improved.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>Your team cannot keep up with demand.</strong> If growth is causing chaos because the business was not built to scale, a digital solution can do the work that hiring more people cannot always solve.
-                </p>
-              </div>
+            <div className="grid sm:grid-cols-2 gap-4 mb-10">
+              {PROBLEM_SIGNALS.map(({ icon: Icon, title, body }) => (
+                <div key={title} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#0F172A] mb-3">
+                    <Icon size={18} className="text-[#22D3EE]" aria-hidden="true" />
+                  </div>
+                  <p className="font-bold text-[#1E293B] text-sm mb-1.5">{title}</p>
+                  <p className="text-sm text-slate-600 leading-relaxed">{body}</p>
+                </div>
+              ))}
             </div>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">

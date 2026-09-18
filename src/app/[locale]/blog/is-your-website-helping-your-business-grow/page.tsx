@@ -1,9 +1,38 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, ArrowRight, MailX, LogOut, SearchX, MousePointerClick, Timer } from "lucide-react";
+
+const WARNING_SIGNS = [
+  {
+    icon: MailX,
+    title: "You get no enquiries from the site",
+    body: "If someone can only reach you by finding your number themselves, the website is not working. A functioning site should prompt people to reach out.",
+  },
+  {
+    icon: LogOut,
+    title: "People leave immediately",
+    body: "A high bounce rate means visitors are arriving and deciding within seconds that this is not what they were looking for. Usually this is a clarity problem, not a design problem.",
+  },
+  {
+    icon: SearchX,
+    title: "It does not rank for your own business name",
+    body: "If you search your company name on Google and the website does not appear on the first page, that is a technical issue that needs fixing before anything else.",
+  },
+  {
+    icon: MousePointerClick,
+    title: "It takes more than two clicks to contact you",
+    body: "Every extra step between a visitor and a conversation is a drop-off point. Contact details should be reachable in one click from anywhere on the site.",
+  },
+  {
+    icon: Timer,
+    title: "It loads slowly",
+    body: "Google research consistently shows that a one-second delay in page load time reduces conversions by around 7%. Slow sites lose visitors before they have read a word.",
+  },
+];
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "is-your-website-helping-your-business-grow";
@@ -164,6 +193,17 @@ export default async function ArticlePage({
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/blog-website-helping-business-grow.jpg"
+                alt="A business owner on the phone, looking concerned while checking something on their laptop"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
+
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Most business owners launch a website and move on. The site is live, it looks fine, and it has the company name and a phone number. But a year later, they cannot tell you how many customers it brought in. Most of the time, the honest answer is: very few.
             </p>
@@ -198,37 +238,16 @@ export default async function ArticlePage({
             <p className="text-slate-600 leading-relaxed text-base mb-6">
               These are the patterns that show up most often when we review websites for Irish businesses:
             </p>
-            <div className="space-y-4 mb-10">
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>You get no enquiries from the site.</strong> If someone can only reach you by finding your number themselves, the website is not working. A functioning site should prompt people to reach out.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>People leave immediately.</strong> A high bounce rate means visitors are arriving and deciding within seconds that this is not what they were looking for. Usually this is a clarity problem, not a design problem.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>It does not rank for your own business name.</strong> If you search your company name on Google and the website does not appear on the first page, that is a technical issue that needs fixing before anything else.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>It takes more than two clicks to contact you.</strong> Every extra step between a visitor and a conversation is a drop-off point. Contact details should be reachable in one click from anywhere on the site.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>It loads slowly.</strong> Google research consistently shows that a one-second delay in page load time reduces conversions by around 7%. Slow sites lose visitors before they have read a word.
-                </p>
-              </div>
+            <div className="grid sm:grid-cols-2 gap-4 mb-10">
+              {WARNING_SIGNS.map(({ icon: Icon, title, body }) => (
+                <div key={title} className="rounded-2xl border border-rose-200 bg-rose-50 p-5">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Icon size={18} className="text-rose-500 shrink-0" aria-hidden="true" />
+                    <p className="font-bold text-[#1E293B] text-sm">{title}</p>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">{body}</p>
+                </div>
+              ))}
             </div>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">

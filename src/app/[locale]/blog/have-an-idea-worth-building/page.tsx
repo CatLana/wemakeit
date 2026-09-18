@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -163,6 +164,17 @@ export default async function ArticlePage({
         {/* Article body */}
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/don't-quit-do-it.jpg"
+                alt="A monitor reading Don't Quit above a laptop with a design mockup open, mid work session"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
 
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               The number of good ideas that never became products is far larger than the number of products that exist. Most of those ideas were not abandoned because they were bad. They were abandoned because no one knew how to put them to the test without spending a lot of money first.

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Clock, AlertCircle, CheckCircle2 } from "lucide-react";
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "accessibility-law-ireland-eaa-guide";
@@ -157,6 +158,17 @@ export default async function AccessibilityLawArticlePage({
 
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/blog-accessibility-eaa-guide.jpg"
+                alt="A hand holding a lens up to a laptop keyboard, examining it closely"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
+
             <p className="text-slate-600 leading-relaxed text-base mb-6">
               The European Accessibility Act (EAA) was transposed into Irish law through the European Union
               (Accessibility Requirements of Products and Services) Regulations 2023 and took effect on 28 June 2025.
@@ -173,19 +185,30 @@ export default async function AccessibilityLawArticlePage({
               In general, businesses must comply when they are not microenterprises and they provide covered services to
               consumers.
             </p>
-            <p className="text-slate-600 leading-relaxed text-base mb-3 font-semibold">Must comply threshold:</p>
-            <ul className="list-disc list-outside ml-5 space-y-2 mb-6 text-slate-600 leading-relaxed">
-              <li>10 or more employees, or</li>
-              <li>Annual turnover above EUR 2 million, or</li>
-              <li>Annual balance sheet total above EUR 2 million</li>
-            </ul>
-            <p className="text-slate-600 leading-relaxed text-base mb-3 font-semibold">Microenterprise exemption:</p>
-            <ul className="list-disc list-outside ml-5 space-y-2 mb-10 text-slate-600 leading-relaxed">
-              <li>Fewer than 10 employees, and</li>
-              <li>Turnover below EUR 2 million, and</li>
-              <li>Balance sheet below EUR 2 million</li>
-              <li>All three conditions must be met to qualify</li>
-            </ul>
+            <div className="grid sm:grid-cols-2 gap-4 mb-10">
+              <div className="rounded-2xl border border-rose-200 bg-rose-50 p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <AlertCircle size={18} className="text-rose-500 shrink-0" aria-hidden="true" />
+                  <p className="font-bold text-[#1E293B]">Must comply if any apply</p>
+                </div>
+                <ul className="list-disc list-outside ml-5 space-y-2 text-sm text-slate-600 leading-relaxed">
+                  <li>10 or more employees, or</li>
+                  <li>Annual turnover above EUR 2 million, or</li>
+                  <li>Annual balance sheet total above EUR 2 million</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <CheckCircle2 size={18} className="text-emerald-600 shrink-0" aria-hidden="true" />
+                  <p className="font-bold text-[#1E293B]">Exempt if all three apply</p>
+                </div>
+                <ul className="list-disc list-outside ml-5 space-y-2 text-sm text-slate-600 leading-relaxed">
+                  <li>Fewer than 10 employees, and</li>
+                  <li>Turnover below EUR 2 million, and</li>
+                  <li>Balance sheet below EUR 2 million</li>
+                </ul>
+              </div>
+            </div>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">2. Service Types in Scope</h2>
             <p className="text-slate-600 leading-relaxed text-base mb-5">

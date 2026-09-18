@@ -273,6 +273,30 @@ export default async function ArticlePage({
               (from his book <em>Value Proposition Design</em>) is a one-page
               tool split into two halves:
             </p>
+
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8 mb-6 flex justify-center">
+              <svg
+                viewBox="0 0 440 210"
+                className="w-full max-w-md h-auto"
+                role="img"
+                aria-label="Venn diagram: a Customer Profile circle covering jobs, pains, and gains on the left, overlapping a Value Map circle covering pain relievers, gain creators, and products on the right, with the overlap labelled Fit."
+              >
+                <circle cx="160" cy="100" r="95" fill="#22D3EE" fillOpacity="0.12" stroke="#22D3EE" strokeWidth="1.5" />
+                <circle cx="280" cy="100" r="95" fill="#A855F7" fillOpacity="0.12" stroke="#A855F7" strokeWidth="1.5" />
+                <text x="95" y="50" fontSize="13" fontWeight="700" fill="#0F172A">Customer</text>
+                <text x="95" y="67" fontSize="13" fontWeight="700" fill="#0F172A">Profile</text>
+                <text x="95" y="95" fontSize="11" fill="#64748B">Jobs</text>
+                <text x="95" y="113" fontSize="11" fill="#64748B">Pains</text>
+                <text x="95" y="131" fontSize="11" fill="#64748B">Gains</text>
+                <text x="345" y="50" fontSize="13" fontWeight="700" fill="#0F172A" textAnchor="end">Value</text>
+                <text x="345" y="67" fontSize="13" fontWeight="700" fill="#0F172A" textAnchor="end">Map</text>
+                <text x="345" y="95" fontSize="11" fill="#64748B" textAnchor="end">Pain relievers</text>
+                <text x="345" y="113" fontSize="11" fill="#64748B" textAnchor="end">Gain creators</text>
+                <text x="345" y="131" fontSize="11" fill="#64748B" textAnchor="end">Products</text>
+                <text x="220" y="106" textAnchor="middle" fontSize="15" fontWeight="800" fill="#0E7490">FIT</text>
+              </svg>
+            </div>
+
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 text-base leading-relaxed">
               <li>
                 <strong>Right side, Customer Profile:</strong> the jobs, pains,

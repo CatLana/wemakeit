@@ -1,9 +1,38 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, ArrowRight, Search, MousePointerClick, FileText, Users, Gauge } from "lucide-react";
+
+const UX_ESSENTIALS = [
+  {
+    icon: Search,
+    title: "Visitors can find what they came for quickly",
+    body: "If someone lands on your homepage and cannot immediately understand what you do and who you help, most of them leave within a few seconds. Clarity is more valuable than cleverness.",
+  },
+  {
+    icon: MousePointerClick,
+    title: "The next step is always obvious",
+    body: "Every page should make it clear what you want the visitor to do. Call, book, send a message. One primary action per page. If there are five options of equal visual weight, people will pick none of them.",
+  },
+  {
+    icon: FileText,
+    title: "The content is written for the reader, not the company",
+    body: "Visitors arrive with a problem. They want to know whether you can solve it, not read a history of the business. Put the customer's situation front and centre.",
+  },
+  {
+    icon: Users,
+    title: "It works just as well on mobile as on desktop",
+    body: "More than half of web traffic in Ireland is on mobile. A site that is frustrating to use on a phone is actively losing leads every day.",
+  },
+  {
+    icon: Gauge,
+    title: "It loads fast",
+    body: "Under 3 seconds on a standard mobile connection is the threshold. Slower than that and a significant portion of visitors will leave before the page even finishes loading.",
+  },
+];
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "website-that-works-for-your-users";
@@ -164,6 +193,17 @@ export default async function ArticlePage({
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/blog-website-works-for-users.jpg"
+                alt="Someone looking at their phone with a frustrated expression, mid scroll"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
+
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               A website that looks nice is not the same as a website that works. You can have a polished design and still lose visitors at every step because they cannot find what they need, do not know what to do next, or give up because something is taking too long.
             </p>
@@ -177,37 +217,16 @@ export default async function ArticlePage({
             <p className="text-slate-600 leading-relaxed text-base mb-6">
               A website that works for its users does five things consistently:
             </p>
-            <div className="space-y-4 mb-10">
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>Visitors can find what they came for quickly.</strong> If someone lands on your homepage and cannot immediately understand what you do and who you help, most of them leave within a few seconds. Clarity is more valuable than cleverness.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>The next step is always obvious.</strong> Every page should make it clear what you want the visitor to do. Call, book, send a message. One primary action per page. If there are five options of equal visual weight, people will pick none of them.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>The content is written for the reader, not the company.</strong> Visitors arrive with a problem. They want to know whether you can solve it, not read a history of the business. Put the customer&apos;s situation front and centre.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>It works just as well on mobile as on desktop.</strong> More than half of web traffic in Ireland is on mobile. A site that is frustrating to use on a phone is actively losing leads every day.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] shrink-0 mt-2.5"></div>
-                <p className="text-slate-600 leading-relaxed text-base">
-                  <strong>It loads fast.</strong> Under 3 seconds on a standard mobile connection is the threshold. Slower than that and a significant portion of visitors will leave before the page even finishes loading.
-                </p>
-              </div>
+            <div className="grid sm:grid-cols-2 gap-4 mb-10">
+              {UX_ESSENTIALS.map(({ icon: Icon, title, body }) => (
+                <div key={title} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#0F172A] mb-3">
+                    <Icon size={18} className="text-[#22D3EE]" aria-hidden="true" />
+                  </div>
+                  <p className="font-bold text-[#1E293B] text-sm mb-1.5">{title}</p>
+                  <p className="text-sm text-slate-600 leading-relaxed">{body}</p>
+                </div>
+              ))}
             </div>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">

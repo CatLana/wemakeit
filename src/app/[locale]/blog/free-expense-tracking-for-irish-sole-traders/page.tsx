@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -169,6 +170,17 @@ export default async function ArticlePage({
         {/* Article body */}
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/blog-expense-tracking-sole-traders.jpg"
+                alt="A sole trader going through paperwork at their desk, laptop open beside them"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
 
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               It&apos;s October. Your accountant asks for your business expenses for

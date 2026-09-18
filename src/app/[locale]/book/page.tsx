@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -7,6 +8,37 @@ import { Link } from "@/i18n/navigation";
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "book";
+
+function ClarityPhotoPair({ before, after }: { before: string; after: string }) {
+  return (
+    <div className="rounded-2xl overflow-hidden border border-slate-200 grid grid-cols-2">
+      <div className="relative aspect-square">
+        <Image
+          src="/images/book-before.jpg"
+          alt="A developer with his hands in his hair, frustrated while troubleshooting a problem alone at his laptop"
+          fill
+          className="object-cover"
+          sizes="(min-width: 640px) 384px, 50vw"
+        />
+      </div>
+      <div className="relative aspect-square">
+        <Image
+          src="/images/book-after.jpg"
+          alt="The same developer relaxed and smiling on a call, problem resolved"
+          fill
+          className="object-cover"
+          sizes="(min-width: 640px) 384px, 50vw"
+        />
+      </div>
+      <p className="bg-slate-50 py-3 text-center text-xs font-semibold uppercase tracking-widest text-slate-500 border-t border-slate-200">
+        {before}
+      </p>
+      <p className="bg-[#0F172A] py-3 text-center text-xs font-semibold uppercase tracking-widest text-[#22D3EE] border-t border-white/10">
+        {after}
+      </p>
+    </div>
+  );
+}
 
 export async function generateStaticParams() {
   return [{ locale: "en" }];
@@ -71,6 +103,11 @@ export default async function BookPage({
               </Link>
             </p>
           </div>
+        </div>
+
+        {/* Before / after */}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+          <ClarityPhotoPair before={t("clarity.before")} after={t("clarity.after")} />
         </div>
 
         {/* Booking */}

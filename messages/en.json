@@ -181,7 +181,6 @@
     "body3": "Our team combines full-stack development, accessible design, UX, and business expertise. We focus on Ireland while warmly welcoming clients from other markets too.",
     "tagline": "Wherever you are, if you have an idea, we would love to hear it.",
     "cta": "Get a free quote",
-    "photoAlt": "Lana, founder of We Make IT, shaking hands with a client",
     "visualLabel": "We Make IT - Ireland",
     "visualHeading": "Based in Ireland",
     "visualSub": "Working globally",
@@ -1322,6 +1321,10 @@
     "discoveryCallBridge": {
       "text": "Not sure yet, or just want a quick chat first?",
       "cta": "Book a free discovery call instead"
+    },
+    "clarity": {
+      "before": "Building alone",
+      "after": "With a second opinion"
     },
     "auditBridge": {
       "text": "Looking for a full written report instead?",

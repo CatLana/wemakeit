@@ -1,9 +1,39 @@
 ﻿import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { ArrowLeft, Calendar, Clock, AlertCircle } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, AlertCircle, User } from "lucide-react";
+
+function DisabilityStatGraphic() {
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8 mb-10">
+      <div className="flex flex-wrap gap-3 justify-center mb-4" aria-hidden="true">
+        {Array.from({ length: 12 }).map((_, i) => {
+          const highlighted = i === 0 || i === 6;
+          return (
+            <div
+              key={i}
+              className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full ${
+                highlighted ? "bg-[#0F172A]" : "bg-slate-200"
+              }`}
+            >
+              <User
+                size={16}
+                className={highlighted ? "text-[#22D3EE]" : "text-slate-400"}
+                strokeWidth={1.75}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <p className="text-center text-sm font-semibold text-[#1E293B]">
+        Roughly 1 in 6 people globally live with some form of disability
+      </p>
+    </div>
+  );
+}
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "web-accessibility-ireland";
@@ -169,6 +199,17 @@ export default async function ArticlePage({
         {/* Article body */}
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/blog-web-accessibility-ireland.jpg"
+                alt="A mixed group of colleagues collaborating around a table with laptops, notebooks, and design materials"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
+
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Imagine heading to a local council&apos;s website to apply for a
               permit, but you cannot use a mouse because of a hand tremor. The
@@ -177,6 +218,9 @@ export default async function ArticlePage({
               hypothetical scenario; it is the everyday experience of roughly 1
               in 6 people globally who live with some form of disability.
             </p>
+
+            <DisabilityStatGraphic />
+
             <p className="text-slate-600 leading-relaxed text-base mb-10">
               For years, making a website accessible was seen as best practice
               rather than a legal obligation, especially for private businesses.

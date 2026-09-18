@@ -1,10 +1,39 @@
 "use client";
-import Image from "next/image";
-import { Heart, Award, Users, ShieldCheck } from "lucide-react";
+import { Heart, Award, Users, ShieldCheck, Handshake } from "lucide-react";
 import { useTranslations } from "next-intl";
 import GetQuoteButton from "@/components/GetQuoteButton";
 
 const valueIcons = [Heart, Award, Users, ShieldCheck];
+
+function PartnershipGraphic() {
+  return (
+    <div
+      aria-hidden="true"
+      className="relative aspect-square max-w-sm mx-auto rounded-2xl overflow-hidden bg-[#0F172A] flex items-center justify-center"
+    >
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-64 h-64 rounded-full bg-[#22D3EE]/10 blur-3xl" />
+      </div>
+      <div className="absolute -bottom-16 -right-16 w-48 h-48 rounded-full bg-[#A855F7]/10 blur-3xl" />
+
+      <div className="relative flex flex-col items-center gap-8 p-8">
+        <div className="flex h-24 w-24 items-center justify-center rounded-full bg-[#22D3EE]/15 border border-[#22D3EE]/30">
+          <Handshake size={40} className="text-[#22D3EE]" strokeWidth={1.75} />
+        </div>
+        <div className="flex items-center gap-4">
+          {valueIcons.map((Icon, i) => (
+            <div
+              key={i}
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/5 border border-white/10"
+            >
+              <Icon size={18} className="text-slate-300" strokeWidth={1.75} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function About() {
   const t = useTranslations("about");
@@ -33,15 +62,7 @@ export default function About() {
               {t("cta")}
             </GetQuoteButton>
           </div>
-          <div className="relative aspect-square max-w-sm mx-auto rounded-2xl overflow-hidden">
-            <Image
-              src="/images/webdevelopment-company-owner-shaking-hand-with-client.png"
-              alt={t("photoAlt")}
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
-          </div>
+          <PartnershipGraphic />
         </div>
 
         {/* Values row */}

@@ -8,6 +8,42 @@ import { ArrowLeft, Calendar, Clock, AlertCircle } from "lucide-react";
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "irish-grants-for-app-development";
 
+const FUNDING_BARS = [
+  { label: "LEO Grow Digital", value: 5000, display: "up to €5,000" },
+  { label: "Innovation Vouchers", value: 10000, display: "up to €10,000" },
+  { label: "Competitive Start Fund", value: 50000, display: "up to €50,000" },
+];
+const FUNDING_MAX = 50000;
+
+function GrantFundingGraphic() {
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8 mb-10">
+      <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-5">
+        Maximum funding by scheme
+      </p>
+      <div className="space-y-5">
+        {FUNDING_BARS.map(({ label, value, display }) => (
+          <div key={label}>
+            <div className="flex items-baseline justify-between gap-3 mb-1.5">
+              <span className="text-sm font-semibold text-[#1E293B]">{label}</span>
+              <span className="text-sm text-slate-500 whitespace-nowrap">{display}</span>
+            </div>
+            <div className="h-3 rounded-full bg-slate-200 overflow-hidden">
+              <div
+                className="h-full rounded-full bg-[#0E7490]"
+                style={{ width: `${(value / FUNDING_MAX) * 100}%` }}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+      <p className="text-xs text-slate-400 mt-5">
+        LEO Feasibility Grants fund 50 to 75% of eligible costs rather than a fixed ceiling, so they are not shown on this scale.
+      </p>
+    </div>
+  );
+}
+
 export async function generateStaticParams() {
   return [{ locale: "en" }];
 }
@@ -153,6 +189,8 @@ export default async function ArticlePage({
             <p className="text-slate-600 leading-relaxed text-base mb-6">
               Ireland offers several government-backed grants designed specifically for app and software development. Here&apos;s a comparison of the main options:
             </p>
+
+            <GrantFundingGraphic />
 
             {/* Grants comparison table */}
             <div className="overflow-x-auto mb-10">
