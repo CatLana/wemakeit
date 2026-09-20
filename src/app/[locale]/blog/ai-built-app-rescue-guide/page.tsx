@@ -251,7 +251,10 @@ export default async function ArticlePage({
               6 signs your app needs a professional look
             </h2>
             <p className="text-slate-600 leading-relaxed text-base mb-6">
-              You do not need to be technical to notice most of these. If two or more sound familiar, it is worth getting a second opinion before you build anything else on top.
+              You do not need to be technical to notice most of these. If two or more sound familiar, it is worth getting a second opinion before you build anything else on top. For signs specific to the tool you built with, see{" "}
+              <Link href="/blog/signs-ai-app-needs-professional-review" className="text-[#0E7490] underline">
+                signs by tool: Lovable, Bolt, Replit, and Cursor
+              </Link>.
             </p>
             <div className="grid sm:grid-cols-2 gap-4 mb-10">
               {SIGNS.map(({ icon: Icon, title, body }) => (
@@ -315,7 +318,10 @@ export default async function ArticlePage({
               Exact figures vary hugely with how far an app has grown before the review happens, so treat any number quoted online, including here, as a rough starting point rather than a quote. What is consistent across the projects we see is the direction: the longer an AI-built app runs on an unreviewed foundation, the more expensive the eventual fix becomes, because every new feature gets built on top of the same gaps.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
-              A technical audit is the cheapest way to find out where you actually stand. It gives you a concrete list and a cost estimate for fixing it, instead of a guess. You can then decide whether to fix it yourself with that list in hand, or have it fixed for you.
+              A technical audit is the cheapest way to find out where you actually stand. It gives you a concrete list and a cost estimate for fixing it, instead of a guess. You can then decide whether to fix it yourself with that list in hand, or have it fixed for you. See exactly{" "}
+              <Link href="/blog/what-a-technical-audit-checks" className="text-[#0E7490] underline">
+                what a technical audit checks
+              </Link>.
             </p>
 
             <div className="rounded-xl bg-slate-50 border border-slate-200 p-5 flex gap-4 mb-12">

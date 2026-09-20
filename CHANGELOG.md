@@ -2,6 +2,17 @@
 
 Brief log of completed work. Chat replies stay short; details live here.
 
+## 2026-09-20 (later)
+
+- Published 2 more AI/vibe-coding posts, completing the Pillar 1 cluster
+  (4 total): tool-specific signs (Lovable RLS/CVE-2025-48757, Replit
+  server risk, Bolt speed-vs-review, Cursor review-gap stats), and a
+  "what a technical audit checks" breakdown with a sample finding.
+  All 4 posts cross-link each other and route to /audit and /book.
+- Researched a Google Reviews section (live API vs third-party widget vs
+  manual curation, with cost/effort tradeoffs). Not built: the business
+  has no reviews yet, so there is nothing to display or curate.
+
 ## 2026-09-20
 
 - Irish grants blog post: fact-checked against official sources, fixed wrong

@@ -16,6 +16,8 @@ const pages: {
   { path: "/blog",                                   priority: 0.8, changeFrequency: "weekly",  lastModified: new Date("2026-09-20") },
   { path: "/blog/ai-built-app-rescue-guide",         priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-09-20") },
   { path: "/blog/vibe-coding-technical-debt-explained", priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-09-20") },
+  { path: "/blog/signs-ai-app-needs-professional-review", priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-09-20") },
+  { path: "/blog/what-a-technical-audit-checks",     priority: 0.8, changeFrequency: "monthly", lastModified: new Date("2026-09-20") },
   { path: "/blog/legal-requirements-diy-brand-website", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/blog/accessibility-law-ireland-eaa-guide", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-15") },
   { path: "/blog/got-an-idea-turn-it-into-a-real-product", priority: 0.7, changeFrequency: "monthly", lastModified: new Date("2026-05-01") },

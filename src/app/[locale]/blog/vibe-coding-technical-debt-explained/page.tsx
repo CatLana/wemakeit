@@ -248,7 +248,11 @@ export default async function ArticlePage({
               5 checks you can run yourself, no developer required
             </h2>
             <p className="text-slate-600 leading-relaxed text-base mb-6">
-              These will not catch everything a professional audit would, but they take about twenty minutes and will tell you whether it is worth getting one.
+              These will not catch everything a professional audit would, but they take about twenty minutes and will tell you whether it is worth getting one. If you know which tool built your app, our{" "}
+              <Link href="/blog/signs-ai-app-needs-professional-review" className="text-[#0E7490] underline">
+                tool-by-tool signs guide
+              </Link>{" "}
+              is more specific than a general checklist can be.
             </p>
             <div className="space-y-5 mb-10">
               {SELF_CHECKS.map(({ icon: Icon, title, body }) => (

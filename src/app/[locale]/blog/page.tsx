@@ -53,6 +53,24 @@ const articles = [
     readTime: "11 min read",
   },
   {
+    slug: "signs-ai-app-needs-professional-review",
+    category: "AI & Software",
+    title: "7 signs your Lovable, Bolt, or Cursor app needs a professional review",
+    excerpt:
+      "Different AI coding tools fail in different ways. Tool-by-tool signs your app needs a professional security and architecture review.",
+    date: "20 September 2026",
+    readTime: "10 min read",
+  },
+  {
+    slug: "what-a-technical-audit-checks",
+    category: "AI & Software",
+    title: "What a technical audit of an AI-built app actually checks",
+    excerpt:
+      "A concrete walkthrough of what a technical audit covers: authentication, data exposure, secrets, error handling, architecture, and dependencies.",
+    date: "20 September 2026",
+    readTime: "8 min read",
+  },
+  {
     slug: "vibe-coding-technical-debt-explained",
     category: "AI & Software",
     title: "Vibe coding technical debt: what it is and how to check for it",
