@@ -12,15 +12,34 @@
       "whatWeDo": "Services",
       "aboutUs": "About",
       "howItWorks": "How It Works",
+      "pricing": "Pricing",
       "ourWork": "Our work",
       "blog": "Resources",
       "contact": "Contact"
     },
+    "servicesMenu": [
+      {
+        "title": "Software development",
+        "description": "Custom software, MVPs, and technical consultations for founders building with AI.",
+        "href": "/solutions/software"
+      },
+      {
+        "title": "Website design & development",
+        "description": "Custom websites, maintenance, and accessibility built in from day one.",
+        "href": "/solutions/websites"
+      },
+      {
+        "title": "Social media",
+        "description": "Instagram content planning and creation for businesses that want it done properly.",
+        "href": "/social"
+      }
+    ],
     "cta": "Book a discovery call",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "mobileNavLabel": "Mobile navigation",
-    "mainNavLabel": "Main navigation"
+    "mainNavLabel": "Main navigation",
+    "servicesMenuLabel": "Services menu"
   },
   "languageSwitcher": {
     "selectorAriaLabel": "Language selector",
@@ -777,13 +796,13 @@
     "sections": {
       "services": "Services",
       "company": "Company",
-      "freeTools": "Free Services",
+      "getStarted": "Get Started",
       "legal": "Legal"
     },
     "serviceLinks": [
-      "Website design & development",
       "Software development",
-      "Technical consultations"
+      "Website design & development",
+      "Social media"
     ],
     "companyLinks": {
       "aboutUs": "About Us",
@@ -791,13 +810,14 @@
       "ourWork": "Our work",
       "blog": "Blog",
       "pricing": "Pricing",
-      "faq": "FAQ",
-      "getAQuote": "Get a Quote",
-      "bookFollowUp": "Book a paid consultation",
-      "preMeetingBrief": "Pre-meeting brief"
+      "faq": "FAQ"
     },
-    "freeToolLinks": {
-      "freeConsultation": "Free Discovery Call"
+    "actionLinks": {
+      "getAQuote": "Get a Quote",
+      "bookDiscoveryCall": "Book a Discovery Call",
+      "bookPaidConsultation": "Book a Paid Consultation",
+      "orderAudit": "Order an Audit",
+      "preMeetingBrief": "Pre-meeting Brief"
     },
     "legalLinks": {
       "privacyPolicy": "Privacy Policy",

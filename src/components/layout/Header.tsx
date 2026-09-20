@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback, startTransition } from "react
 import Image from "next/image";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 export default function Header() {
   const t = useTranslations("header");
@@ -12,19 +12,59 @@ export default function Header() {
   const hideDiscoveryCta = pathname === "/book" || pathname === "/discovery-call";
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
   const hamburgerRef = useRef<HTMLButtonElement>(null);
+  const servicesWrapRef = useRef<HTMLDivElement>(null);
+  const servicesButtonRef = useRef<HTMLButtonElement>(null);
   // Holds cleanup for the focus-trap listener, set asynchronously via rAF
   const trapCleanupRef = useRef<(() => void) | null>(null);
 
+  const servicesMenu = t.raw("servicesMenu") as Array<{
+    title: string;
+    description: string;
+    href: string;
+  }>;
+
   const navLinks = [
     { label: t("nav.audit"), href: "/audit" },
-    { label: t("nav.whatWeDo"), href: "/#services" },
+    { label: t("nav.pricing"), href: "/pricing" },
     { label: t("nav.aboutUs"), href: "/about" },
     { label: t("nav.ourWork"), href: "/work" },
     { label: t("nav.blog"), href: "/blog" },
-    { label: t("nav.contact"), href: "/#quote" },
+    { label: t("nav.contact"), href: "/contact" },
   ];
+
+  const closeServicesMenu = useCallback(() => {
+    setServicesOpen(false);
+  }, []);
+
+  // Close the desktop services dropdown on outside click or Escape
+  useEffect(() => {
+    if (!servicesOpen) return;
+
+    const handlePointerDown = (e: MouseEvent) => {
+      if (
+        servicesWrapRef.current &&
+        !servicesWrapRef.current.contains(e.target as Node)
+      ) {
+        closeServicesMenu();
+      }
+    };
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        closeServicesMenu();
+        servicesButtonRef.current?.focus();
+      }
+    };
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("keydown", handleEscape);
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, [servicesOpen, closeServicesMenu]);
 
   // Memoised so child onClick props are stable across renders
   const toggleMenu = useCallback(() => {
@@ -32,7 +72,10 @@ export default function Header() {
   }, []);
 
   const closeMenu = useCallback(() => {
-    startTransition(() => setOpen(false));
+    startTransition(() => {
+      setOpen(false);
+      setMobileServicesOpen(false);
+    });
   }, []);
 
   useEffect(() => {
@@ -121,6 +164,41 @@ export default function Header() {
 
             {/* Desktop nav */}
             <nav aria-label={t("mainNavLabel")} className="hidden lg:flex items-center gap-8">
+              <div ref={servicesWrapRef} className="relative">
+                <button
+                  ref={servicesButtonRef}
+                  type="button"
+                  aria-expanded={servicesOpen}
+                  aria-controls="services-menu-panel"
+                  onClick={() => setServicesOpen((prev) => !prev)}
+                  className="flex items-center gap-1 text-slate-300 hover:text-[#22D3EE] transition-colors text-sm font-medium focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                >
+                  {t("nav.whatWeDo")}
+                  <ChevronDown
+                    size={14}
+                    aria-hidden="true"
+                    className={`transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+                <div
+                  id="services-menu-panel"
+                  aria-label={t("servicesMenuLabel")}
+                  hidden={!servicesOpen}
+                  className="absolute top-full left-0 mt-3 w-[600px] rounded-2xl bg-white shadow-2xl border border-slate-200 p-2 grid grid-cols-3 gap-1"
+                >
+                  {servicesMenu.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href as "/"}
+                      onClick={closeServicesMenu}
+                      className="block rounded-xl p-4 hover:bg-slate-50 transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2"
+                    >
+                      <p className="font-bold text-[#1E293B] text-sm mb-1.5">{item.title}</p>
+                      <p className="text-xs text-slate-500 leading-relaxed">{item.description}</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -197,6 +275,40 @@ export default function Header() {
         <div className="px-6 pt-2 pb-2" />
         <nav aria-label={t("mobileNavLabel")}>
           <ul className="flex flex-col px-6 py-4 gap-2" role="list">
+            <li>
+              <button
+                type="button"
+                aria-expanded={mobileServicesOpen}
+                aria-controls="mobile-services-group"
+                onClick={() => setMobileServicesOpen((prev) => !prev)}
+                className="flex items-center justify-between w-full h-11 text-slate-300 hover:text-[#22D3EE] transition-colors font-medium text-base focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+              >
+                {t("nav.whatWeDo")}
+                <ChevronDown
+                  size={18}
+                  aria-hidden="true"
+                  className={`transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              <ul
+                id="mobile-services-group"
+                hidden={!mobileServicesOpen}
+                role="list"
+                className="flex flex-col pl-4 border-l border-white/10 ml-1 mt-1 mb-1"
+              >
+                {servicesMenu.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href as "/"}
+                      onClick={closeMenu}
+                      className="flex items-center h-10 text-slate-400 hover:text-[#22D3EE] transition-colors text-sm focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link

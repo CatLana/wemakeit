@@ -136,16 +136,18 @@ export default async function ArticlePage({
       <main id="main-content" tabIndex={-1}>
         <div className="bg-[#0F172A] pt-32 pb-14">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-[#22D3EE] transition-colors mb-8 focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-            >
-              <ArrowLeft size={14} aria-hidden="true" />
-              Back to Blog
-            </Link>
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-3">
-              Compliance & Legal
-            </span>
+            <div className="flex items-center justify-between mb-8">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
+              >
+                <ArrowLeft size={14} aria-hidden="true" />
+                Back to Blog
+              </Link>
+              <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE]">
+                Compliance & Legal
+              </span>
+            </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6">
               All You Need to Know Before Building Your Brand Website Yourself
             </h1>

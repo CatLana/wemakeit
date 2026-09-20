@@ -24,9 +24,6 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 export default function Footer() {
   const t = useTranslations("footer");
   const serviceLabels = t.raw("serviceLinks") as string[];
-  const freeToolLinks = t.raw("freeToolLinks") as {
-    freeConsultation: string;
-  };
 
   return (
     <footer
@@ -184,7 +181,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1" role="list">
               {serviceLabels.map((label, index) => {
-                const serviceHrefs = ["/solutions/websites", "/solutions/software", "/book"];
+                const serviceHrefs = ["/solutions/software", "/solutions/websites", "/social"];
                 return (
                   <li key={label}>
                     <Link
@@ -230,36 +227,38 @@ export default function Footer() {
                   {t("companyLinks.faq")}
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Get Started column */}
+          <div>
+            <h3 className="chalk-heading font-semibold text-sm uppercase tracking-wider mb-4">
+              {t("sections.getStarted")}
+            </h3>
+            <ul className="space-y-1" role="list">
               <li>
                 <Link href={{ pathname: "/", query: { service: "quote" }, hash: "quote" } as never} className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                  {t("companyLinks.getAQuote")}
+                  {t("actionLinks.getAQuote")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/discovery-call" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("actionLinks.bookDiscoveryCall")}
                 </Link>
               </li>
               <li>
                 <Link href="/book" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                  {t("companyLinks.bookFollowUp")}
+                  {t("actionLinks.bookPaidConsultation")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/audit" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
+                  {t("actionLinks.orderAudit")}
                 </Link>
               </li>
               <li>
                 <Link href="/brief" className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded">
-                  {t("companyLinks.preMeetingBrief")}
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Free Tools column */}
-          <div>
-            <h3 className="chalk-heading font-semibold text-sm uppercase tracking-wider mb-4">
-              {t("sections.freeTools")}
-            </h3>
-            <ul className="space-y-1" role="list">
-              <li>
-                <Link
-                  href="/discovery-call"
-                  className="block py-2 text-sm hover:text-[#22D3EE] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded"
-                >
-                  {freeToolLinks.freeConsultation}
+                  {t("actionLinks.preMeetingBrief")}
                 </Link>
               </li>
             </ul>
