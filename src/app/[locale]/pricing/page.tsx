@@ -177,7 +177,7 @@ const linkCta = "inline-flex items-center gap-1.5 text-sm font-semibold text-[#0
 
 function ServiceGrid({ items }: { items: typeof websiteServices }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden">
+    <div className="rounded-2xl border border-slate-200 bg-white">
       <div className="divide-y divide-slate-200">
         {items.map((service) => (
           <div
@@ -186,7 +186,7 @@ function ServiceGrid({ items }: { items: typeof websiteServices }) {
           >
             <div className="flex items-center gap-2 min-w-0">
               <h3 className="font-semibold text-[#1E293B] text-base">{service.name}</h3>
-              <InfoTooltip text={service.description} label={`About ${service.name}`} />
+              <InfoTooltip text={service.description} label={`About ${service.name}`} align="left" />
             </div>
             <div className="flex items-center justify-between sm:contents">
               <span className="text-base font-bold text-[#1E293B] sm:text-right">{service.price}</span>

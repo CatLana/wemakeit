@@ -6,9 +6,14 @@ import { Info } from "lucide-react";
 export default function InfoTooltip({
   text,
   label = "More information",
+  align = "right",
 }: {
   text: string;
   label?: string;
+  /** Which edge of the icon the bubble hangs from. Use "left" when the icon
+   * sits near the left of its row, so the bubble opens toward free space
+   * instead of off the edge of the viewport. */
+  align?: "left" | "right";
 }) {
   const [open, setOpen] = useState(false);
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -53,7 +58,7 @@ export default function InfoTooltip({
       {open && (
         <div
           role="tooltip"
-          className="absolute right-0 top-full mt-2 w-56 rounded-lg bg-[#0F172A] text-white text-xs leading-relaxed p-3 shadow-xl z-20"
+          className={`absolute ${align === "left" ? "left-0" : "right-0"} top-full mt-2 w-56 rounded-lg bg-[#0F172A] text-white text-xs leading-relaxed p-3 shadow-xl z-20`}
         >
           {text}
         </div>
