@@ -9,7 +9,7 @@ export default function Process() {
     <section
       id="process"
       aria-labelledby="process-heading"
-      className="bg-[#F8FAFC] py-20 lg:py-28"
+      className="bg-[#F8FAFC] py-16 lg:py-24"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}

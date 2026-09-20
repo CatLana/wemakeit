@@ -9,7 +9,7 @@ export default function Founder() {
     <section
       id="founder"
       aria-labelledby="founder-heading"
-      className="bg-[#0F172A] py-20 lg:py-28"
+      className="bg-[#0F172A] py-16 lg:py-24"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-10">

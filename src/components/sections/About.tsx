@@ -30,7 +30,7 @@ export default function About() {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="bg-white py-20 lg:py-28"
+      className="bg-white py-16 lg:py-24"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Two-column layout */}

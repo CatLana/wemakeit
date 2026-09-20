@@ -11,7 +11,7 @@ export default function Work() {
     <section
       id="work"
       aria-labelledby="work-heading"
-      className="bg-white py-20 lg:py-28"
+      className="bg-white py-16 lg:py-24"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}

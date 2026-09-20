@@ -36,7 +36,7 @@ export default async function BookThankYouPage({
     <>
       <Header />
       <main id="main-content" tabIndex={-1} className="bg-[#0F172A] min-h-[70vh]">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-24 text-center">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 text-center">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">{t("heading")}</h1>
           <p className="text-slate-400 text-base mb-10">{t("body")}</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

@@ -15,7 +15,7 @@ export default function Contact() {
     <section
       id="quote"
       aria-labelledby="quote-heading"
-      className="bg-[#F8FAFC] py-20 lg:py-28"
+      className="bg-[#F8FAFC] py-16 lg:py-24"
     >
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#0E7490] mb-3">

@@ -93,7 +93,7 @@ async function AboutPageContent({
         <Founder />
 
         {/* Team */}
-        <section className="bg-white py-20 lg:py-28">
+        <section className="bg-white py-16 lg:py-24">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center text-center md:text-left">
               <div>
@@ -182,7 +182,7 @@ async function AboutPageContent({
         </section>
 
         {/* Values/Differentiators */}
-        <section className="bg-slate-50 py-20 lg:py-28">
+        <section className="bg-slate-50 py-16 lg:py-24">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-16 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B] mb-3">

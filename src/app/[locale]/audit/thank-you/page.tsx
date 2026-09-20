@@ -57,7 +57,7 @@ export default async function AuditThankYouPage({
     <>
       <Header />
       <main id="main-content" tabIndex={-1} className="bg-[#0F172A]">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-24">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
           <div className="text-center mb-12">
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">{t("heading")}</h1>
             <p className="text-slate-400 text-base">{t("body")}</p>

@@ -106,7 +106,7 @@ async function WorkPageContent({ locale }: { locale: string }) {
         </section>
 
         {/* App grid */}
-        <section aria-label={tPage("breadcrumbName")} className="bg-white py-20 lg:py-28">
+        <section aria-label={tPage("breadcrumbName")} className="bg-white py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ul role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {apps.map((app) => (
