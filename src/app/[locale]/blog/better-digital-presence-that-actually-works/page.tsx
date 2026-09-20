@@ -3,10 +3,19 @@ import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { ArrowLeft, Calendar, Clock, ArrowRight, Globe, Search, MapPin, Star, Share2 } from "lucide-react";
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "better-digital-presence-that-actually-works";
+
+const PRESENCE_ELEMENTS = [
+  { icon: Globe, title: "Website", body: "How it looks, how fast it loads, what it says, and how easy it is to navigate" },
+  { icon: Search, title: "Search visibility", body: "Which searches you appear in on Google, and how high up" },
+  { icon: MapPin, title: "Google Business Profile", body: "What shows when people search your business name directly" },
+  { icon: Star, title: "Reviews", body: "What past customers have said publicly, and how you have responded" },
+  { icon: Share2, title: "Social media", body: "How active and consistent you are on the platforms that matter for your industry" },
+];
 
 export async function generateStaticParams() {
   return [{ locale: "en" }];
@@ -165,6 +174,17 @@ export default async function ArticlePage({
         <div className="bg-white py-14 lg:py-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-10">
+              <Image
+                src="/images/blog-digital-presence-that-works.jpg"
+                alt="Someone searching for a business name on Google from a laptop"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 768px, 100vw"
+                priority
+              />
+            </div>
+
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Most Irish businesses have some kind of digital presence. A website, a Facebook page, a Google Business listing. But having these things is not the same as having a digital presence that actually works. The difference between the two is whether people find you when they are looking for what you offer.
             </p>
@@ -178,13 +198,17 @@ export default async function ArticlePage({
             <p className="text-slate-600 leading-relaxed text-base mb-5">
               Your digital presence is the sum of everything someone finds when they look for your business or your type of service online. It includes:
             </p>
-            <ul className="list-disc list-outside ml-5 space-y-3 mb-6 text-slate-600 text-base leading-relaxed">
-              <li>Your <strong>website</strong>: how it looks, how fast it loads, what it says, and how easy it is to navigate</li>
-              <li>Your <strong>search visibility</strong>: which searches you appear in on Google, and how high up</li>
-              <li>Your <strong>Google Business Profile</strong>: what shows when people search your business name directly</li>
-              <li>Your <strong>reviews</strong>: what past customers have said publicly and how you have responded</li>
-              <li>Your <strong>social media</strong>: how active and consistent you are on the platforms that matter for your industry</li>
-            </ul>
+            <div className="grid sm:grid-cols-2 gap-4 mb-6">
+              {PRESENCE_ELEMENTS.map(({ icon: Icon, title, body }) => (
+                <div key={title} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#0F172A] mb-3">
+                    <Icon size={18} className="text-[#22D3EE]" aria-hidden="true" />
+                  </div>
+                  <p className="font-bold text-[#1E293B] text-sm mb-1.5">{title}</p>
+                  <p className="text-sm text-slate-600 leading-relaxed">{body}</p>
+                </div>
+              ))}
+            </div>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
               None of these works in isolation. A strong website with no search visibility brings in no organic traffic. High search rankings pointing to a poor website generate no enquiries. All of these elements need to work together.
             </p>

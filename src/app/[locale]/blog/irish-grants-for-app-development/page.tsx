@@ -4,13 +4,15 @@ import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowLeft, Calendar, Clock, AlertCircle } from "lucide-react";
+import GetQuoteButton from "@/components/GetQuoteButton";
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "irish-grants-for-app-development";
 
 const FUNDING_BARS = [
   { label: "LEO Grow Digital", value: 5000, display: "up to €5,000" },
-  { label: "Innovation Vouchers", value: 10000, display: "up to €10,000" },
+  { label: "LEO Feasibility Study Grant", value: 15000, display: "up to €15,000" },
+  { label: "Innovation Vouchers", value: 20000, display: "up to €20,000" },
   { label: "Competitive Start Fund", value: 50000, display: "up to €50,000" },
 ];
 const FUNDING_MAX = 50000;
@@ -37,9 +39,6 @@ function GrantFundingGraphic() {
           </div>
         ))}
       </div>
-      <p className="text-xs text-slate-400 mt-5">
-        LEO Feasibility Grants fund 50 to 75% of eligible costs rather than a fixed ceiling, so they are not shown on this scale.
-      </p>
     </div>
   );
 }
@@ -62,7 +61,7 @@ export async function generateMetadata({
     title:
       "Irish Grants for App Development 2026: LEO Grow Digital, Enterprise Ireland & Innovation Vouchers",
     description:
-      "Complete guide to Irish government grants for app development in 2026. LEO Grow Digital up to €5,000, Enterprise Ireland Innovation Vouchers (€5k-€10k), and Competitive Start Fund up to €50,000. Eligibility, application steps, and official links.",
+      "Complete guide to Irish government grants for app development in 2026. LEO Grow Digital up to €5,000, Enterprise Ireland Innovation Vouchers up to €20,000, LEO Feasibility Study Grant up to €15,000, and Competitive Start Fund up to €50,000. Eligibility, application steps, and official links.",
     alternates: {
       canonical: canonicalUrl,
       languages: {
@@ -72,7 +71,7 @@ export async function generateMetadata({
     openGraph: {
       title: "Irish Grants for App Development 2026: Official Funding Guide",
       description:
-        "Discover how to fund your app development in Ireland. Compare LEO Grow Digital, Innovation Vouchers, and Enterprise Ireland grants. Complete guide with official links and eligibility criteria.",
+        "Discover how to fund your app development in Ireland. Compare LEO Grow Digital, the LEO Feasibility Study Grant, Innovation Vouchers, and the Competitive Start Fund. Complete guide with official links and eligibility criteria.",
       type: "article",
       publishedTime: "2026-03-24T00:00:00.000Z",
       authors: ["We Make IT"],
@@ -105,9 +104,9 @@ export default async function ArticlePage({
     "@type": "Article",
     headline: "Irish Grants for App Development 2026: Official Funding Guide",
     description:
-      "Complete guide to Irish government grants for app development in 2026. LEO Grow Digital, Enterprise Ireland Innovation Vouchers, and Competitive Start Fund.",
+      "Complete guide to Irish government grants for app development in 2026. LEO Grow Digital, the LEO Feasibility Study Grant, Enterprise Ireland Innovation Vouchers, and the Competitive Start Fund.",
     datePublished: "2026-03-24T00:00:00.000Z",
-    dateModified: "2026-03-31T00:00:00.000Z",
+    dateModified: "2026-09-20T00:00:00.000Z",
     author: { "@type": "Person", name: "Svetlana Savchenko", url: "https://www.linkedin.com/in/svetlana-savchenko-08868764" },
     publisher: { "@type": "Organization", name: "We Make IT", url: "https://www.wemakeit.ie" },
     image: "https://www.wemakeit.ie/images/wemakeit_thumbnail.png",
@@ -116,9 +115,11 @@ export default async function ArticlePage({
     about: [
       { "@type": "Thing", name: "Enterprise Ireland Innovation Vouchers" },
       { "@type": "Thing", name: "LEO Grow Digital Voucher" },
+      { "@type": "Thing", name: "LEO Feasibility Study Grant" },
+      { "@type": "Thing", name: "Competitive Start Fund" },
       { "@type": "Thing", name: "Irish Business Grants" },
     ],
-    keywords: "Irish grants app development, LEO Grow Digital, innovation vouchers Ireland, Enterprise Ireland funding, app development funding Ireland 2026",
+    keywords: "Irish grants app development, LEO Grow Digital, innovation vouchers Ireland, LEO feasibility study grant, competitive start fund Ireland, Enterprise Ireland funding, startup funding Ireland technology, app development funding Ireland 2026",
   };
 
   const breadcrumbJsonLd = {
@@ -162,7 +163,7 @@ export default async function ArticlePage({
             <div className="flex items-center gap-5 text-sm text-slate-400">
               <span className="flex items-center gap-1.5">
                 <Calendar size={14} aria-hidden="true" />
-                24 March 2026
+                24 March 2026 (updated 20 September 2026)
               </span>
               <span className="flex items-center gap-1.5">
                 <Clock size={14} aria-hidden="true" />
@@ -180,7 +181,7 @@ export default async function ArticlePage({
               If you run a small business in Ireland and have an idea for an app or digital service, cost is often the biggest barrier. Many SME owners park great ideas because they assume custom app development is financially out of reach.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
-              The good news: the Irish government offers multiple grants specifically designed to help SMEs fund app development, prototyping, and digital innovation. From <strong>Local Enterprise Office (LEO) Grow Digital Vouchers</strong> up to €5,000, to <strong>Enterprise Ireland Innovation Vouchers</strong> (€5,000–€10,000), to the <strong>Competitive Start Fund</strong> (up to €50,000), there are funding options to suit different project stages and business sizes. This guide explains each scheme, eligibility criteria, and how to apply.
+              The good news: the Irish government offers multiple grants specifically designed to help SMEs fund app development, prototyping, and digital innovation. From <strong>Local Enterprise Office (LEO) Grow Digital Vouchers</strong> up to €5,000, to the <strong>LEO Feasibility Study Grant</strong> (up to €15,000), to <strong>Enterprise Ireland Innovation Vouchers</strong> (up to €20,000), to the <strong>Competitive Start Fund</strong> (up to €50,000), there are funding options to suit different project stages and business sizes. This guide explains each scheme, eligibility criteria, and how to apply.
             </p>
 
             <h2 className="text-2xl font-extrabold text-[#1E293B] mt-10 mb-4">
@@ -205,26 +206,26 @@ export default async function ArticlePage({
                 </thead>
                 <tbody>
                   <tr className="border-b border-slate-200">
-                    <td className="px-4 py-3 font-semibold text-[#1E293B]"><a href="https://www.localenterprise.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">LEO Grow Digital</a></td>
+                    <td className="px-4 py-3 font-semibold text-[#1E293B]"><a href="https://www.localenterprise.ie/Growdigital/WHAT-IS-THE-GROW-DIGITAL-VOUCHER-/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">LEO Grow Digital</a></td>
                     <td className="px-4 py-3">Up to €5,000 (50% of costs)</td>
                     <td className="px-4 py-3">Digital tools, software, website updates, digital strategy</td>
-                    <td className="px-4 py-3">SMEs 1&ndash;50 employees</td>
+                    <td className="px-4 py-3">SMEs 1&ndash;50 employees, must have completed a Digital for Business project in the last 2 years</td>
                   </tr>
                   <tr className="border-b border-slate-200">
-                    <td className="px-4 py-3 font-semibold text-[#1E293B]"><a href="https://www.enterprise-ireland.com/en/supports/innovation-vouchers" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Innovation Vouchers</a></td>
-                    <td className="px-4 py-3">€5,000&ndash;€10,000 (expert time)</td>
+                    <td className="px-4 py-3 font-semibold text-[#1E293B]"><a href="https://www.enterprise-ireland.com/en/supports/innovation-voucher" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Innovation Vouchers</a></td>
+                    <td className="px-4 py-3">€10,000 standard, up to €20,000 co-funded</td>
                     <td className="px-4 py-3">Research, prototyping, UX testing, technical feasibility</td>
                     <td className="px-4 py-3">SMEs &lt;250 employees, limited company, CRO registered</td>
                   </tr>
                   <tr className="border-b border-slate-200">
-                    <td className="px-4 py-3 font-semibold text-[#1E293B]"><a href="https://www.enterprise-ireland.com/en/supports/start-ups" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Competitive Start Fund (CSF)</a></td>
-                    <td className="px-4 py-3">Up to €50,000 (equity investment)</td>
+                    <td className="px-4 py-3 font-semibold text-[#1E293B]"><a href="https://www.enterprise-ireland.com/en/funding-supports/Company/HPSU-Funding/Competitive-Start-Fund-All-Sectors.html" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Competitive Start Fund (CSF)</a></td>
+                    <td className="px-4 py-3">Up to €50,000 (10% equity stake)</td>
                     <td className="px-4 py-3">Early-stage software, apps, digital products</td>
                     <td className="px-4 py-3">Startups &lt;3 years old, innovative tech focus</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-3 font-semibold text-[#1E293B]"><a href="https://www.localenterprise.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">LEO Feasibility Grants</a></td>
-                    <td className="px-4 py-3">50&ndash;75% of eligible costs</td>
+                    <td className="px-4 py-3 font-semibold text-[#1E293B]"><a href="https://www.localenterprise.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">LEO Feasibility Study Grant</a></td>
+                    <td className="px-4 py-3">Up to €15,000 (50% of costs, 60% in the BMW region)</td>
                     <td className="px-4 py-3">Market research, technical development, UX prototyping</td>
                     <td className="px-4 py-3">SMEs in LEO catchment area</td>
                   </tr>
@@ -234,7 +235,10 @@ export default async function ArticlePage({
 
             <h3 className="text-xl font-bold text-[#1E293B] mt-8 mb-4">Enterprise Ireland Innovation Vouchers in Detail</h3>
             <p className="text-slate-600 leading-relaxed text-base mb-5">
-              <a href="https://www.enterprise-ireland.com/en/supports/innovation-vouchers" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland&apos;s Innovation Voucher Programme</a> is one of the most popular schemes for app developers. Vouchers are issued to SMEs to work with registered knowledge providers, typically universities, research institutes, or approved consultants, to validate ideas and explore technical feasibility.
+              <a href="https://www.enterprise-ireland.com/en/supports/innovation-voucher" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland&apos;s Innovation Voucher Programme</a> is one of the most popular schemes for app developers. Vouchers are issued to SMEs to work with registered knowledge providers, typically universities, research institutes, or approved consultants, to validate ideas and explore technical feasibility.
+            </p>
+            <p className="text-slate-600 leading-relaxed text-base mb-5">
+              There are two versions of the voucher: a fully funded <strong>standard voucher worth €10,000</strong>, and a <strong>co-funded voucher worth up to €20,000</strong> in project costs, where your business contributes 50% and the voucher covers the rest. A company can hold up to four vouchers over time, though only one can be active at once.
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-3">
               Vouchers cover:
@@ -247,7 +251,7 @@ export default async function ArticlePage({
               <li>Validating market opportunity and feasibility</li>
             </ul>
             <p className="text-slate-600 leading-relaxed text-base mb-10">
-              <strong>Eligibility:</strong> Limited companies with fewer than 250 employees and under €50 million turnover, registered with <a href="https://www.cro.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">the Companies Registration Office (CRO)</a>. Vouchers are valid for 12 months.
+              <strong>Eligibility:</strong> Limited companies with fewer than 250 employees and under €50 million turnover, registered with <a href="https://www.cro.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">the Companies Registration Office (CRO)</a>. Vouchers are valid for 18 months and can be applied for at any point in the year.
             </p>
 
             <h3 className="text-xl font-bold text-[#1E293B] mt-8 mb-4">What Grants Fund (and Don&apos;t Fund)</h3>
@@ -255,7 +259,7 @@ export default async function ArticlePage({
               It&apos;s important to understand that most Irish grants do not pay for full, end-to-end app development. Instead, they fund the early, high-risk work that reduces project complexity and cost:
             </p>
             <p className="text-slate-600 leading-relaxed text-base mb-3">
-              <strong>Typically funded by Innovation Vouchers and LEO Feasibility Grants:</strong>
+              <strong>Typically funded by Innovation Vouchers and the LEO Feasibility Study Grant:</strong>
             </p>
             <ul className="list-disc list-outside ml-5 space-y-2 mb-5 text-slate-600 leading-relaxed">
               <li>Market and user research to validate demand</li>
@@ -277,7 +281,7 @@ export default async function ArticlePage({
                 {
                   n: "01",
                   title: "Determine Your Eligibility",
-                  body: "Check which grant suits your business: Are you a startup (CSF), an SME under 250 employees (Innovation Vouchers), or a micro-business with 1 to 50 employees (LEO Grow Digital)? Visit your local LEO's website to confirm regional availability and criteria.",
+                  body: "Check which grant suits your business: Are you a startup (CSF), an SME under 250 employees (Innovation Vouchers), or a micro-business with 1 to 50 employees (LEO Grow Digital)? Note that Grow Digital requires you to have already completed a Digital for Business project with your LEO in the last 2 years. Visit your local LEO's website to confirm regional availability and criteria.",
                 },
                 {
                   n: "02",
@@ -286,8 +290,8 @@ export default async function ArticlePage({
                 },
                 {
                   n: "03",
-                  title: "Identify a Knowledge Provider (for Innovation Vouchers & Feasibility Grants)",
-                  body: "If applying for Enterprise Ireland Innovation Vouchers or LEO Feasibility Grants, you must partner with an approved knowledge provider: a university, research institute, or approved consultancy. Enterprise Ireland maintains a list of registered providers.",
+                  title: "Identify a Knowledge Provider (for Innovation Vouchers & the Feasibility Study Grant)",
+                  body: "If applying for Enterprise Ireland Innovation Vouchers or the LEO Feasibility Study Grant, you must partner with an approved knowledge provider: a university, research institute, or approved consultancy. Enterprise Ireland maintains a list of registered providers.",
                 },
                 {
                   n: "04",
@@ -297,7 +301,7 @@ export default async function ArticlePage({
                 {
                   n: "05",
                   title: "Submit Your Application",
-                  body: "Submit via your Local Enterprise Office (LEO) for Grow Digital and Feasibility Grants, or via Enterprise Ireland for Innovation Vouchers and CSF. Check official deadlines, as many schemes operate on rolling or periodic application windows.",
+                  body: "Submit via your Local Enterprise Office (LEO) for Grow Digital and the Feasibility Study Grant, or via Enterprise Ireland for Innovation Vouchers and CSF. Check official deadlines, as many schemes operate on rolling or periodic application windows.",
                 },
                 {
                   n: "06",
@@ -354,8 +358,8 @@ export default async function ArticlePage({
             </h2>
             <ul className="list-disc list-outside ml-5 space-y-3 mb-10 text-slate-600 leading-relaxed">
               <li><strong><a href="https://www.localenterprise.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">LocalEnterprise.ie</a></strong>: find your local LEO and access Grow Digital and Feasibility Grant information</li>
-              <li><strong><a href="https://www.enterprise-ireland.com/en/supports/innovation-vouchers" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland Innovation Vouchers</a></strong>: official scheme details, eligibility, and application portal</li>
-              <li><strong><a href="https://www.enterprise-ireland.com/en/supports/start-ups" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland Start-Ups</a></strong>: Competitive Start Fund and other startup-focused grants</li>
+              <li><strong><a href="https://www.enterprise-ireland.com/en/supports/innovation-voucher" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland Innovation Vouchers</a></strong>: official scheme details, eligibility, and application portal</li>
+              <li><strong><a href="https://www.enterprise-ireland.com/en/funding-supports/Company/HPSU-Funding/Competitive-Start-Fund-All-Sectors.html" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Enterprise Ireland Competitive Start Fund</a></strong>: eligibility and how to apply for equity funding</li>
               <li><strong><a href="https://www.cro.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Companies Registration Office (CRO)</a></strong>: check SME classification and company registration requirements</li>
               <li><strong><a href="https://www.gov.ie/" target="_blank" rel="noopener noreferrer" className="text-[#0E7490] underline">Gov.ie</a></strong>: official Irish government portal for business supports and grants</li>
             </ul>
@@ -371,36 +375,21 @@ export default async function ArticlePage({
                 <span className="font-semibold text-slate-600">
                   Important:
                 </span>{" "}
-                This guide is based on publicly available information from Enterprise Ireland, Local Enterprise Offices, and gov.ie as of March 2026. Grant schemes, amounts, and eligibility criteria change periodically. Always verify current details on official websites before applying. This article does not constitute financial or legal advice.
+                This guide is based on publicly available information from Enterprise Ireland, Local Enterprise Offices, and gov.ie as of September 2026. Grant schemes, amounts, and eligibility criteria change periodically. Always verify current details on official websites before applying. This article does not constitute financial or legal advice.
               </p>
             </div>
 
             {/* Next Steps */}
             <div className="rounded-2xl bg-[#0F172A] p-8 text-center">
               <p className="text-white font-extrabold text-xl mb-2">
-                Ready to explore Irish app grants?
+                Need a quote for your grant application?
               </p>
               <p className="text-slate-400 text-sm mb-6">
-                Contact your local Enterprise Office or visit the official Enterprise Ireland website to understand your eligibility and start the application process.
+                Fill in the form and we will scope the app development work your grant covers, so you have a fixed price to include in your application.
               </p>
-              <div className="flex flex-col gap-3">
-                <a
-                  href="https://www.localenterprise.ie/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
-                >
-                  Find Your Local LEO
-                </a>
-                <a
-                  href="https://www.enterprise-ireland.com/en/supports/innovation-vouchers"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center min-h-[50px] px-8 bg-white text-[#0F172A] font-bold rounded-xl hover:bg-slate-100 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
-                >
-                  View Innovation Vouchers
-                </a>
-              </div>
+              <GetQuoteButton className="inline-flex items-center justify-center min-h-[50px] px-8 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors text-base focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2">
+                Get a free quote
+              </GetQuoteButton>
             </div>
           </div>
         </div>

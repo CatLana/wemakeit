@@ -39,6 +39,10 @@ the right place myself.
   `start-up-make-mistakes-faster.jpg` (sticky notes reading "Start Up" and
   "Make Mistakes Faster") went on "Got an idea that needs to become a real
   product?".
+- `blog-digital-presence-that-works.jpg`, wired as that post's feature image.
+  The 5-element presence list (website, search visibility, Google Business
+  Profile, reviews, social media) is now an icon-based card grid instead of
+  a bullet list.
 
 All wired images were resized and recompressed before going in (max 1600px
 on the long edge, quality 78 mozjpeg), cutting each file by roughly 20 to 40x
@@ -46,20 +50,16 @@ with no visible quality loss.
 
 ## Still open
 
-Style note that applies to everything below: the photos already on `/about`
-(the handshake photo aside) read as genuine because they're actual phone
-photos, not polished stock. The two photos currently on `/book`
+Every blog post now has a feature image and its planned generated visual.
+Nothing outstanding here right now.
+
+Style note for anything added later: the photos already on `/about` (the
+handshake photo aside) read as genuine because they're actual phone photos,
+not polished stock. The two photos currently on `/book`
 (`frustrated-developer.jpg`, `technical-consultation-call.jpg`) are the
 opposite, generic stock photography of people who don't appear anywhere else
 on the site. Where possible, favour a real, slightly imperfect photo over a
 polished one, it'll read as more trustworthy and fits the humour angle better
-too.
-
----
-
-### `blog-digital-presence-that-works.jpg`
-**Post:** Need a better digital presence that actually works?
-**Look for:** a small business's presence spread across devices at once,
-phone showing a Google listing, laptop showing the website, side by side.
-**I'll also build:** a simple presence checklist (site, listing, social,
-reviews) as one compact visual.
+too. `webdevelopment-company-owner-shaking-hand-with-client.png` is still on
+disk but unreferenced since About.tsx switched to a generated graphic, say
+the word if you want it deleted.
