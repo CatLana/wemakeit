@@ -44,6 +44,24 @@ export async function generateMetadata({
 
 const articles = [
   {
+    slug: "ai-built-app-rescue-guide",
+    category: "AI & Software",
+    title: "My AI-built app worked, until it didn't: a practical rescue guide",
+    excerpt:
+      "Your Lovable, Bolt, or Cursor app worked until it didn't. How to tell if it needs a professional review, what a rescue involves, and what it costs.",
+    date: "20 September 2026",
+    readTime: "11 min read",
+  },
+  {
+    slug: "vibe-coding-technical-debt-explained",
+    category: "AI & Software",
+    title: "Vibe coding technical debt: what it is and how to check for it",
+    excerpt:
+      "A plain-English guide to vibe coding technical debt, why AI-generated code accumulates it, and five checks you can run yourself before calling a developer.",
+    date: "20 September 2026",
+    readTime: "9 min read",
+  },
+  {
     slug: "accessibility-law-ireland-eaa-guide",
     category: "Accessibility & Legal",
     title: "Accessibility law in Ireland: EAA compliance guide for your website or application",
