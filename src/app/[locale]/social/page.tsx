@@ -1,9 +1,40 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Check, ArrowRight } from "lucide-react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Link } from "@/i18n/navigation";
+
+const MESSY_COLORS = ["#F87171", "#FBBF24", "#34D399", "#818CF8", "#F472B6", "#94A3B8", "#FB923C", "#4ADE80", "#60A5FA"];
+const CONSISTENT_COLORS = ["#0F172A", "#0E7490", "#22D3EE", "#0E7490", "#0F172A", "#22D3EE", "#22D3EE", "#0F172A", "#0E7490"];
+
+function FeedGraphic() {
+  return (
+    <div className="rounded-2xl overflow-hidden border border-slate-200 grid grid-cols-2">
+      <div aria-hidden="true" className="bg-slate-50 p-6 sm:p-10 flex items-center justify-center">
+        <div className="grid grid-cols-3 gap-1 w-full max-w-[180px]">
+          {MESSY_COLORS.map((c, i) => (
+            <div key={i} style={{ background: c }} className="aspect-square rounded-sm" />
+          ))}
+        </div>
+      </div>
+      <div aria-hidden="true" className="bg-[#0F172A] p-6 sm:p-10 flex items-center justify-center">
+        <div className="grid grid-cols-3 gap-1 w-full max-w-[180px]">
+          {CONSISTENT_COLORS.map((c, i) => (
+            <div key={i} style={{ background: c }} className="aspect-square rounded-sm" />
+          ))}
+        </div>
+      </div>
+      <p className="bg-slate-50 py-3 text-center text-xs font-semibold uppercase tracking-widest text-slate-500 border-t border-slate-200">
+        Inconsistent
+      </p>
+      <p className="bg-[#0F172A] py-3 text-center text-xs font-semibold uppercase tracking-widest text-[#22D3EE] border-t border-white/10">
+        On-brand and consistent
+      </p>
+    </div>
+  );
+}
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "social";
@@ -86,19 +117,31 @@ export default async function SocialPage({
       <main id="main-content" tabIndex={-1} className="bg-[#F8FAFC]">
         {/* Hero */}
         <div className="bg-[#0F172A] pt-32 pb-16">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-3">
-              {t("eyebrow")}
-            </span>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white">{t("heading")}</h1>
-            <p className="mt-3 text-slate-400 text-base max-w-xl">{t("body")}</p>
-            <a
-              href="#pricing"
-              className="mt-6 inline-flex items-center justify-center gap-2 min-h-[50px] px-7 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
-            >
-              {t("heroCta")}
-              <ArrowRight size={15} aria-hidden="true" />
-            </a>
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#22D3EE] mb-3">
+                {t("eyebrow")}
+              </span>
+              <h1 className="text-3xl sm:text-4xl font-extrabold text-white">{t("heading")}</h1>
+              <p className="mt-3 text-slate-400 text-base max-w-xl">{t("body")}</p>
+              <a
+                href="#pricing"
+                className="mt-6 inline-flex items-center justify-center gap-2 min-h-[50px] px-7 bg-[#22D3EE] text-[#0F172A] font-bold rounded-xl hover:bg-cyan-300 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
+              >
+                {t("heroCta")}
+                <ArrowRight size={15} aria-hidden="true" />
+              </a>
+            </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image
+                src="/images/instagram-feed.jpg"
+                alt="Someone holding a phone open to an Instagram grid, laptop in the background"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 512px, 90vw"
+                priority
+              />
+            </div>
           </div>
         </div>
 
@@ -118,6 +161,9 @@ export default async function SocialPage({
                 </li>
               ))}
             </ol>
+            <div className="mt-10">
+              <FeedGraphic />
+            </div>
           </div>
         </section>
 
