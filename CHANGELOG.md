@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-22 (visuals + bug fixes)
+
+- Social media page: added the real Instagram-grid hero photo and a
+  generated before/after feed graphic.
+- Fixed the hero badge rendering under the fixed header on short
+  mobile viewports (a regression from the earlier spacing pass).
+- Fixed all 4 brief pages landing mid-scroll instead of at the top on
+  navigation, caused by a race between Next's scroll-to-top and the
+  Suspense-loaded form swapping in taller than its fallback.
+
 ## 2026-09-22 (testing pass)
 
 - Ran a full test battery on the social brief: all 4 tier CTAs end to
