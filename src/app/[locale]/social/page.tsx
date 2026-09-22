@@ -154,7 +154,7 @@ export default async function SocialPage({
                   ))}
                 </ul>
                 <Link
-                  href="/brief/social"
+                  href={{ pathname: "/brief/social", query: { tier: onceOffPlan.name } } as never}
                   className="w-full inline-flex items-center justify-center gap-2 min-h-[50px] px-6 font-bold rounded-xl transition-colors bg-[#0F172A] text-white hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#22D3EE]"
                 >
                   {t("tiers.ctaLabel")}
@@ -193,7 +193,7 @@ export default async function SocialPage({
                     ))}
                   </ul>
                   <Link
-                    href="/brief/social"
+                    href={{ pathname: "/brief/social", query: { tier: plan.name } } as never}
                     className={`w-full inline-flex items-center justify-center gap-2 min-h-[50px] px-6 font-bold rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 ${
                       plan.highlighted
                         ? "bg-[#22D3EE] text-[#0F172A] hover:bg-cyan-300 focus-visible:outline-white"

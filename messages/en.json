@@ -78,10 +78,30 @@
     "ariaLabel": "How we work",
     "heading": "How we work differently",
     "items": [
-      { "icon": "ShieldCheck", "label": "Accessibility & UX first", "description": "Every product is built inclusive and usable from day one.", "ariaLabel": "We build every product with accessibility and UX as a foundation" },
-      { "icon": "Lightbulb", "label": "Design Thinking applied", "description": "We validate before we build. You invest in the right thing.", "ariaLabel": "We apply Design Thinking to validate ideas before building" },
-      { "icon": "TrendingUp", "label": "Reliable engineering choices", "description": "We use technologies and architecture that hold up as you grow, not just what's quickest to ship.", "ariaLabel": "We choose technologies and architecture that hold up as your business grows" },
-      { "icon": "MessageCircle", "label": "Built around you, not a template", "description": "We start from what your business actually needs, not a generic package we reuse for everyone.", "ariaLabel": "We build solutions around what each client actually needs, not generic, off-the-shelf packages" }
+      {
+        "icon": "ShieldCheck",
+        "label": "Accessibility & UX first",
+        "description": "Every product is built inclusive and usable from day one.",
+        "ariaLabel": "We build every product with accessibility and UX as a foundation"
+      },
+      {
+        "icon": "Lightbulb",
+        "label": "Design Thinking applied",
+        "description": "We validate before we build. You invest in the right thing.",
+        "ariaLabel": "We apply Design Thinking to validate ideas before building"
+      },
+      {
+        "icon": "TrendingUp",
+        "label": "Reliable engineering choices",
+        "description": "We use technologies and architecture that hold up as you grow, not just what's quickest to ship.",
+        "ariaLabel": "We choose technologies and architecture that hold up as your business grows"
+      },
+      {
+        "icon": "MessageCircle",
+        "label": "Built around you, not a template",
+        "description": "We start from what your business actually needs, not a generic package we reuse for everyone.",
+        "ariaLabel": "We build solutions around what each client actually needs, not generic, off-the-shelf packages"
+      }
     ]
   },
   "services": {
@@ -143,9 +163,7 @@
         "imageAlt": "",
         "accentColor": "#4A1A6E",
         "tags": ["React", "Vite", "PWA"],
-        "metrics": [
-          { "value": "Free", "label": "to play" }
-        ]
+        "metrics": [{ "value": "Free", "label": "to play" }]
       },
       {
         "name": "Love. Eat. KeepFit.",
@@ -206,10 +224,22 @@
     "visualRegions": "Europe · Remote · Worldwide",
     "languageNote": "By the way, we also speak",
     "values": [
-      { "title": "We Welcome Every Client", "description": "No idea is too small. Startup founder, business owner, or just exploring an idea: we are happy to talk. Free first consultation, no commitment required." },
-      { "title": "Big-Company Experience", "description": "Our team has 15+ years of experience building products at major tech companies. We bring that expertise and quality to every project, no matter the size." },
-      { "title": "Personal Attention, Every Step", "description": "You work directly with our team, not a sales rep or account manager. Expect fast replies, straight talk, and genuine care from first idea to launch and beyond." },
-      { "title": "Pricing That Scales With You", "description": "Choose from clear pricing tiers, from a single project to ongoing support, so you always know what you're paying for. Got a quote from another company? We will beat it." }
+      {
+        "title": "We Welcome Every Client",
+        "description": "No idea is too small. Startup founder, business owner, or just exploring an idea: we are happy to talk. Free first consultation, no commitment required."
+      },
+      {
+        "title": "Big-Company Experience",
+        "description": "Our team has 15+ years of experience building products at major tech companies. We bring that expertise and quality to every project, no matter the size."
+      },
+      {
+        "title": "Personal Attention, Every Step",
+        "description": "You work directly with our team, not a sales rep or account manager. Expect fast replies, straight talk, and genuine care from first idea to launch and beyond."
+      },
+      {
+        "title": "Pricing That Scales With You",
+        "description": "Choose from clear pricing tiers, from a single project to ongoing support, so you always know what you're paying for. Got a quote from another company? We will beat it."
+      }
     ]
   },
   "process": {
@@ -219,11 +249,31 @@
     "subheading": "Tell us your idea and we will take it from there.",
     "cta": "Tell us your idea",
     "steps": [
-      { "number": "01", "title": "Tell Us Your Idea", "description": "Fill in the form and describe your idea in plain words." },
-      { "number": "02", "title": "We Send You a Quote", "description": "We review your idea and send you an estimated cost range and a potential implementation plan." },
-      { "number": "03", "title": "You Review the Proposal", "description": "You review the proposal and we schedule a consultation meeting online or offline to discuss further details." },
-      { "number": "04", "title": "We Shake Hands", "description": "When you are ready to start, we sign a simple contract to get everything in writing." },
-      { "number": "05", "title": "We Start the Work", "description": "You pay the deposit and we get building. Easy as that." }
+      {
+        "number": "01",
+        "title": "Tell Us Your Idea",
+        "description": "Fill in the form and describe your idea in plain words."
+      },
+      {
+        "number": "02",
+        "title": "We Send You a Quote",
+        "description": "We review your idea and send you an estimated cost range and a potential implementation plan."
+      },
+      {
+        "number": "03",
+        "title": "You Review the Proposal",
+        "description": "You review the proposal and we schedule a consultation meeting online or offline to discuss further details."
+      },
+      {
+        "number": "04",
+        "title": "We Shake Hands",
+        "description": "When you are ready to start, we sign a simple contract to get everything in writing."
+      },
+      {
+        "number": "05",
+        "title": "We Start the Work",
+        "description": "You pay the deposit and we get building. Easy as that."
+      }
     ]
   },
   "ctaStrip": {
@@ -471,8 +521,8 @@
     "description": "A short, optional brief about your business and your Instagram to help us prepare for your call. Tell us about your business and goals so we can give you advice that actually fits.",
     "eyebrow": "Social media",
     "heading": "Help us get to know your business",
-    "subheading": "This short brief helps us build a clearer picture of your business, your ideal client, and the content you want, so the plan we bring to our call fits your business.",
-    "intro": "Answer as many questions as you can, it helps us prepare properly for the call.",
+    "subheading": "This short brief helps us build a clearer picture of your business, your ideal client, and the content you want.",
+    "intro": "Answer as many questions as you can, it helps shape a better value for your business.",
     "form": {
       "ariaLabel": "Social media brief form",
       "name": "Your name",
@@ -545,7 +595,7 @@
       "popularBadge": "Best value",
       "perMonth": "/month",
       "oneOffSuffix": "one-off (6 months)",
-      "ctaLabel": "Get started",
+      "ctaLabel": "I want it!",
       "onceOffPlan": {
         "name": "Content plan development",
         "price": "€500",
@@ -561,10 +611,7 @@
           "name": "Tier 1",
           "priceRange": "€250",
           "description": "A light, steady presence.",
-          "features": [
-            "1 reel per month",
-            "1 post per month"
-          ],
+          "features": ["1 reel per month", "1 post per month"],
           "highlighted": false
         },
         {
@@ -610,9 +657,9 @@
     "reassurance": {
       "heading": "Not sure which plan fits?",
       "points": [
-        "Every subscription tier is month to month, cancel any time",
-        "Simple, fixed pricing, no surprises",
-        "A free follow-up consultation is included either way"
+        "For your peace of mind - you can cancel the subscription any time",
+        "We handle the work for you, so you have more time for something more important",
+        "Chat away with us anytime if you have any questions at all"
       ]
     },
     "bookBridge": {
@@ -938,10 +985,22 @@
     "subheading": "We build custom websites and keep them running afterwards, so business owners who don't have time to manage a site themselves always have someone who does.",
     "servicesHeading": "What we can do for your website",
     "services": [
-      { "name": "Website Development", "detail": "Custom websites that are clear, fast, accessible, and built to convert." },
-      { "name": "Website Maintenance", "detail": "Ongoing updates, fixes, and improvements so your website keeps working for your business." },
-      { "name": "Insourcing website management and updates", "detail": "We take over a website built by a previous developer or agency and manage it going forward, so you have one point of contact for changes." },
-      { "name": "Regular updates that boost visibility", "detail": "Scheduled content and technical updates that improve SEO, engagement, and search visibility over time." }
+      {
+        "name": "Website Development",
+        "detail": "Custom websites that are clear, fast, accessible, and built to convert."
+      },
+      {
+        "name": "Website Maintenance",
+        "detail": "Ongoing updates, fixes, and improvements so your website keeps working for your business."
+      },
+      {
+        "name": "Insourcing website management and updates",
+        "detail": "We take over a website built by a previous developer or agency and manage it going forward, so you have one point of contact for changes."
+      },
+      {
+        "name": "Regular updates that boost visibility",
+        "detail": "Scheduled content and technical updates that improve SEO, engagement, and search visibility over time."
+      }
     ],
     "consultationCtaHeading": "Not sure what your website needs?",
     "consultationCtaBody": "Book a free 30-minute discovery call and we'll work it out together.",
@@ -970,14 +1029,38 @@
     "serviceCta": "Book a discovery call",
     "servicesHeading": "Software services we provide",
     "services": [
-      { "name": "MVP Software", "detail": "Build a focused first version to validate demand quickly and reduce risk." },
-      { "name": "Web Apps", "detail": "Custom web applications designed around your operations and customer needs." },
-      { "name": "Mobile Apps", "detail": "iOS and Android app development with practical scope and reliable delivery." },
-      { "name": "Custom Software", "detail": "Tailored software that fixes specific business bottlenecks and manual processes." },
-      { "name": "Software Audits", "detail": "Technical review of existing systems to identify risk, waste, and upgrade priorities." },
-      { "name": "Insourcing of existing IT projects and apps", "detail": "We take over a project from a previous developer or agency, review what's there, and carry it forward without starting from scratch." },
-      { "name": "Bespoke IT solutions for businesses that need optimisation", "detail": "Custom systems built to fix a specific process that's costing you time or money." },
-      { "name": "Custom Tech Webinars", "detail": "Tailored training sessions for your employees focused on your tools and workflows." }
+      {
+        "name": "MVP Software",
+        "detail": "Build a focused first version to validate demand quickly and reduce risk."
+      },
+      {
+        "name": "Web Apps",
+        "detail": "Custom web applications designed around your operations and customer needs."
+      },
+      {
+        "name": "Mobile Apps",
+        "detail": "iOS and Android app development with practical scope and reliable delivery."
+      },
+      {
+        "name": "Custom Software",
+        "detail": "Tailored software that fixes specific business bottlenecks and manual processes."
+      },
+      {
+        "name": "Software Audits",
+        "detail": "Technical review of existing systems to identify risk, waste, and upgrade priorities."
+      },
+      {
+        "name": "Insourcing of existing IT projects and apps",
+        "detail": "We take over a project from a previous developer or agency, review what's there, and carry it forward without starting from scratch."
+      },
+      {
+        "name": "Bespoke IT solutions for businesses that need optimisation",
+        "detail": "Custom systems built to fix a specific process that's costing you time or money."
+      },
+      {
+        "name": "Custom Tech Webinars",
+        "detail": "Tailored training sessions for your employees focused on your tools and workflows."
+      }
     ],
     "quoteCtaHeading": "Looking at a larger project or ongoing outsourcing?",
     "quoteCtaBody": "For a full build or ongoing support, we'll need to scope it properly.",
@@ -1021,19 +1104,49 @@
       "whatWeDoHeading": "What We Build",
       "whatWeDoSub": "From simple business websites to complex web applications, we cover it all.",
       "whatWeDo": [
-        { "title": "Business Websites", "description": "Clean, professional websites that represent your brand, rank on Google, and turn visitors into customers." },
-        { "title": "E-Commerce Stores", "description": "Sell online with confidence. We build and configure your store, payment processing, and product management from scratch." },
-        { "title": "CMS-Powered Sites", "description": "Update your content without touching code. We build on trusted platforms so you stay in control after launch." },
-        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces. If your business needs more than a website, we build it." },
-        { "title": "Landing Pages", "description": "Launch fast with a focused, conversion-optimised page for your product, campaign, or service." },
-        { "title": "Website Redesign", "description": "Got a website that's letting you down? We rebuild it properly: faster, better-looking, and easier to manage." }
+        {
+          "title": "Business Websites",
+          "description": "Clean, professional websites that represent your brand, rank on Google, and turn visitors into customers."
+        },
+        {
+          "title": "E-Commerce Stores",
+          "description": "Sell online with confidence. We build and configure your store, payment processing, and product management from scratch."
+        },
+        {
+          "title": "CMS-Powered Sites",
+          "description": "Update your content without touching code. We build on trusted platforms so you stay in control after launch."
+        },
+        {
+          "title": "Web Applications",
+          "description": "Booking systems, client portals, dashboards, marketplaces. If your business needs more than a website, we build it."
+        },
+        {
+          "title": "Landing Pages",
+          "description": "Launch fast with a focused, conversion-optimised page for your product, campaign, or service."
+        },
+        {
+          "title": "Website Redesign",
+          "description": "Got a website that's letting you down? We rebuild it properly: faster, better-looking, and easier to manage."
+        }
       ],
       "whyHeading": "Why Businesses Choose Us",
       "why": [
-        { "title": "Fixed Price, Clearly Scoped", "description": "You know the full cost before we start. No hidden extras, everything agreed upfront." },
-        { "title": "Mobile-First by Default", "description": "Every website we build works perfectly on phones, tablets, and desktops. We build it that way from day one, not as an afterthought." },
-        { "title": "Built for Search Engines", "description": "Clean code, fast loading, proper structure. Your site is ready to rank from day one." },
-        { "title": "Accessible to Everyone", "description": "We build to WCAG 2.1 AA standards so your site works for all users and meets legal requirements." }
+        {
+          "title": "Fixed Price, Clearly Scoped",
+          "description": "You know the full cost before we start. No hidden extras, everything agreed upfront."
+        },
+        {
+          "title": "Mobile-First by Default",
+          "description": "Every website we build works perfectly on phones, tablets, and desktops. We build it that way from day one, not as an afterthought."
+        },
+        {
+          "title": "Built for Search Engines",
+          "description": "Clean code, fast loading, proper structure. Your site is ready to rank from day one."
+        },
+        {
+          "title": "Accessible to Everyone",
+          "description": "We build to WCAG 2.1 AA standards so your site works for all users and meets legal requirements."
+        }
       ],
       "deliverablesHeading": "What You Get",
       "deliverables": [
@@ -1067,19 +1180,53 @@
       "whatWeDoHeading": "What We Build",
       "whatWeDoSub": "From a first prototype to a full production app, we cover every stage.",
       "whatWeDo": [
-        { "title": "iOS Apps", "description": "Native and React Native apps for iPhone and iPad. Smooth, performant, App Store ready." },
-        { "title": "Android Apps", "description": "Native and cross-platform Android apps, built to Google Play standards and optimised for a wide range of devices." },
-        { "title": "Cross-Platform Apps", "description": "One codebase, two platforms. We use React Native and Expo so you launch on iOS and Android without doubling the budget." },
-        { "title": "Progressive Web Apps", "description": "Web apps that install and feel like native apps. A cost-effective route to mobile-first experiences." },
-        { "title": "Web Applications", "description": "Booking systems, client portals, dashboards, marketplaces. If your business needs more than a website, we build it." },
-        { "title": "MVP Development", "description": "Launch the smallest version that proves your idea. Real users, real feedback, minimum spend, then we scale." }
+        {
+          "title": "iOS Apps",
+          "description": "Native and React Native apps for iPhone and iPad. Smooth, performant, App Store ready."
+        },
+        {
+          "title": "Android Apps",
+          "description": "Native and cross-platform Android apps, built to Google Play standards and optimised for a wide range of devices."
+        },
+        {
+          "title": "Cross-Platform Apps",
+          "description": "One codebase, two platforms. We use React Native and Expo so you launch on iOS and Android without doubling the budget."
+        },
+        {
+          "title": "Progressive Web Apps",
+          "description": "Web apps that install and feel like native apps. A cost-effective route to mobile-first experiences."
+        },
+        {
+          "title": "Web Applications",
+          "description": "Booking systems, client portals, dashboards, marketplaces. If your business needs more than a website, we build it."
+        },
+        {
+          "title": "MVP Development",
+          "description": "Launch the smallest version that proves your idea. Real users, real feedback, minimum spend, then we scale."
+        }
       ],
       "whyHeading": "Why Irish Businesses Choose Us",
       "why": [
-        { "number": "01", "title": "Fixed Price from Day One", "description": "You know the full cost before we write a line of code, fixed and agreed upfront, with no surprise bills later." },
-        { "number": "02", "title": "Accessibility Built In", "description": "We build to WCAG 2.1 AA so your app works for all users and meets EU accessibility requirements from launch." },
-        { "number": "03", "title": "Design Thinking First", "description": "We validate before we build. Your idea is tested with real users before a single feature is committed to production." },
-        { "number": "04", "title": "15+ Years of Experience", "description": "Our team has shipped products at scale. We bring that experience to every project, no matter the size." }
+        {
+          "number": "01",
+          "title": "Fixed Price from Day One",
+          "description": "You know the full cost before we write a line of code, fixed and agreed upfront, with no surprise bills later."
+        },
+        {
+          "number": "02",
+          "title": "Accessibility Built In",
+          "description": "We build to WCAG 2.1 AA so your app works for all users and meets EU accessibility requirements from launch."
+        },
+        {
+          "number": "03",
+          "title": "Design Thinking First",
+          "description": "We validate before we build. Your idea is tested with real users before a single feature is committed to production."
+        },
+        {
+          "number": "04",
+          "title": "15+ Years of Experience",
+          "description": "Our team has shipped products at scale. We bring that experience to every project, no matter the size."
+        }
       ]
     },
     "uxAudit": {
@@ -1116,10 +1263,22 @@
       "desc": "Not sure if your idea will work? We help you validate it before spending a penny on a full build, then create a lean MVP you can test with real users.",
       "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Idea Workshop", "description": "We run a structured session to explore your idea, identify assumptions, and map out the core problem you are solving." },
-        { "title": "Market & User Research", "description": "We check if the market exists, who your users are, and whether they would pay for what you are building." },
-        { "title": "Prototyping", "description": "We create a clickable prototype you can test with real users before committing to a full build." },
-        { "title": "MVP Build", "description": "We build the smallest version of your product that proves the concept. Then we iterate based on feedback." }
+        {
+          "title": "Idea Workshop",
+          "description": "We run a structured session to explore your idea, identify assumptions, and map out the core problem you are solving."
+        },
+        {
+          "title": "Market & User Research",
+          "description": "We check if the market exists, who your users are, and whether they would pay for what you are building."
+        },
+        {
+          "title": "Prototyping",
+          "description": "We create a clickable prototype you can test with real users before committing to a full build."
+        },
+        {
+          "title": "MVP Build",
+          "description": "We build the smallest version of your product that proves the concept. Then we iterate based on feedback."
+        }
       ],
       "whyHeading": "Why Validate Before You Build",
       "whyItems": [
@@ -1140,10 +1299,22 @@
       "desc": "Already have a product? We research how real people use it, identify usability problems, and give you a clear prioritised list of improvements.",
       "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "User Interviews", "description": "We talk to your real users to understand their goals, frustrations, and mental models." },
-        { "title": "Usability Testing", "description": "We observe users completing real tasks in your product and record exactly where they struggle." },
-        { "title": "Heuristic Evaluation", "description": "We review your product against established UX principles and identify issues without needing users." },
-        { "title": "Research Report", "description": "You receive a clear, prioritised report with screenshots, severity ratings, and specific recommendations." }
+        {
+          "title": "User Interviews",
+          "description": "We talk to your real users to understand their goals, frustrations, and mental models."
+        },
+        {
+          "title": "Usability Testing",
+          "description": "We observe users completing real tasks in your product and record exactly where they struggle."
+        },
+        {
+          "title": "Heuristic Evaluation",
+          "description": "We review your product against established UX principles and identify issues without needing users."
+        },
+        {
+          "title": "Research Report",
+          "description": "You receive a clear, prioritised report with screenshots, severity ratings, and specific recommendations."
+        }
       ],
       "deliverableHeading": "What You Get",
       "deliverables": [
@@ -1164,10 +1335,22 @@
       "desc": "From wireframes to polished UI, we turn research findings and product ideas into designs that are intuitive, accessible, and ready to build.",
       "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Information Architecture", "description": "We structure your content and navigation so users always know where they are and where to go next." },
-        { "title": "Wireframing", "description": "Low-fidelity layouts that define the flow and structure before we invest in visual design." },
-        { "title": "UI Design", "description": "High-fidelity screens in your brand: clean, modern, and built to convert." },
-        { "title": "Design System", "description": "A reusable component library that keeps your product consistent and speeds up future development." }
+        {
+          "title": "Information Architecture",
+          "description": "We structure your content and navigation so users always know where they are and where to go next."
+        },
+        {
+          "title": "Wireframing",
+          "description": "Low-fidelity layouts that define the flow and structure before we invest in visual design."
+        },
+        {
+          "title": "UI Design",
+          "description": "High-fidelity screens in your brand: clean, modern, and built to convert."
+        },
+        {
+          "title": "Design System",
+          "description": "A reusable component library that keeps your product consistent and speeds up future development."
+        }
       ],
       "deliverableHeading": "What You Get",
       "deliverables": [
@@ -1188,10 +1371,22 @@
       "desc": "Before committing to a full build, we create an interactive, clickable prototype of your app. Test it with users, share it with investors, and validate every key flow.",
       "whatHeading": "What We Build",
       "whatItems": [
-        { "title": "Clickable Figma Prototype", "description": "A fully interactive prototype you can share with a link. No code required, but it feels like the real thing." },
-        { "title": "User Flow Mapping", "description": "We map every key user journey so the prototype covers the flows that matter most." },
-        { "title": "User Testing", "description": "We run a round of user tests on the prototype and report back on what works and what needs changing." },
-        { "title": "Investor-Ready Presentation", "description": "A polished prototype with supporting documentation for investor pitches and product demos." }
+        {
+          "title": "Clickable Figma Prototype",
+          "description": "A fully interactive prototype you can share with a link. No code required, but it feels like the real thing."
+        },
+        {
+          "title": "User Flow Mapping",
+          "description": "We map every key user journey so the prototype covers the flows that matter most."
+        },
+        {
+          "title": "User Testing",
+          "description": "We run a round of user tests on the prototype and report back on what works and what needs changing."
+        },
+        {
+          "title": "Investor-Ready Presentation",
+          "description": "A polished prototype with supporting documentation for investor pitches and product demos."
+        }
       ],
       "whyHeading": "Why Prototype First",
       "whyItems": [
@@ -1212,17 +1407,41 @@
       "desc": "We build mobile apps for iOS and Android that your users will love. Cross-platform development means you launch on both platforms without doubling the cost.",
       "whatHeading": "What We Build",
       "whatItems": [
-        { "title": "iOS Apps", "description": "Native Swift and React Native apps for iPhone and iPad, optimised for the App Store." },
-        { "title": "Android Apps", "description": "Apps built for the full range of Android devices and optimised for Google Play." },
-        { "title": "Cross-Platform Apps", "description": "One codebase, both platforms. React Native and Expo let you ship to iOS and Android with a shared team and budget." },
-        { "title": "App Maintenance", "description": "Post-launch support, OS updates, bug fixes, and new feature development as your product grows." }
+        {
+          "title": "iOS Apps",
+          "description": "Native Swift and React Native apps for iPhone and iPad, optimised for the App Store."
+        },
+        {
+          "title": "Android Apps",
+          "description": "Apps built for the full range of Android devices and optimised for Google Play."
+        },
+        {
+          "title": "Cross-Platform Apps",
+          "description": "One codebase, both platforms. React Native and Expo let you ship to iOS and Android with a shared team and budget."
+        },
+        {
+          "title": "App Maintenance",
+          "description": "Post-launch support, OS updates, bug fixes, and new feature development as your product grows."
+        }
       ],
       "whyHeading": "Why Choose Us",
       "whyItems": [
-        { "title": "Accessibility from Day One", "description": "Every app we build meets WCAG 2.1 AA. VoiceOver, TalkBack, and dynamic text all tested before launch." },
-        { "title": "Design Thinking Approach", "description": "We validate flows and screens with users before we write production code. You ship what users actually want." },
-        { "title": "Fixed Pricing", "description": "You know the cost before we start, agreed upfront with no hourly billing." },
-        { "title": "Full Stack Team", "description": "Design, frontend, backend, and DevOps all under one roof, so you deal with one team instead of juggling several." }
+        {
+          "title": "Accessibility from Day One",
+          "description": "Every app we build meets WCAG 2.1 AA. VoiceOver, TalkBack, and dynamic text all tested before launch."
+        },
+        {
+          "title": "Design Thinking Approach",
+          "description": "We validate flows and screens with users before we write production code. You ship what users actually want."
+        },
+        {
+          "title": "Fixed Pricing",
+          "description": "You know the cost before we start, agreed upfront with no hourly billing."
+        },
+        {
+          "title": "Full Stack Team",
+          "description": "Design, frontend, backend, and DevOps all under one roof, so you deal with one team instead of juggling several."
+        }
       ]
     },
     "softwareConsultancy": {
@@ -1236,10 +1455,22 @@
       "desc": "Not sure what to build, which technology to choose, or how to get your existing product back on track? We give you clear, honest advice in plain language. No vendor lock-in.",
       "whatHeading": "What We Help With",
       "whatItems": [
-        { "title": "Technology Strategy", "description": "Which stack, which platform, which architecture. We lay out the options clearly and help you choose with confidence." },
-        { "title": "CTO as a Service", "description": "Need senior technical leadership without a full-time hire? We act as your fractional CTO for as long as you need." },
-        { "title": "Product Review", "description": "We review your existing product or codebase and give you a plain-English report on what's working and what isn't." },
-        { "title": "Team Scaling Advice", "description": "Build in-house, outsource, or hybrid? We help you decide what makes sense for your stage and budget." }
+        {
+          "title": "Technology Strategy",
+          "description": "Which stack, which platform, which architecture. We lay out the options clearly and help you choose with confidence."
+        },
+        {
+          "title": "CTO as a Service",
+          "description": "Need senior technical leadership without a full-time hire? We act as your fractional CTO for as long as you need."
+        },
+        {
+          "title": "Product Review",
+          "description": "We review your existing product or codebase and give you a plain-English report on what's working and what isn't."
+        },
+        {
+          "title": "Team Scaling Advice",
+          "description": "Build in-house, outsource, or hybrid? We help you decide what makes sense for your stage and budget."
+        }
       ],
       "whyHeading": "Why Consult With Us",
       "whyItems": [
@@ -1260,10 +1491,22 @@
       "desc": "Already have an app or website that needs looking after? We take it on, fixing bugs, keeping it up to date, adding features, and making sure it runs smoothly month to month.",
       "whatHeading": "What's Included",
       "whatItems": [
-        { "title": "Bug Fixes", "description": "We respond to issues fast and fix bugs before they impact your users or your reputation." },
-        { "title": "Security Updates", "description": "Regular dependency updates, security patches, and vulnerability monitoring to keep your product safe." },
-        { "title": "Performance Monitoring", "description": "We track uptime, load times, and errors, and fix problems before you or your users notice them." },
-        { "title": "Feature Development", "description": "Retainer clients get dedicated development capacity each month for new features, improvements, and integrations." }
+        {
+          "title": "Bug Fixes",
+          "description": "We respond to issues fast and fix bugs before they impact your users or your reputation."
+        },
+        {
+          "title": "Security Updates",
+          "description": "Regular dependency updates, security patches, and vulnerability monitoring to keep your product safe."
+        },
+        {
+          "title": "Performance Monitoring",
+          "description": "We track uptime, load times, and errors, and fix problems before you or your users notice them."
+        },
+        {
+          "title": "Feature Development",
+          "description": "Retainer clients get dedicated development capacity each month for new features, improvements, and integrations."
+        }
       ],
       "retainerHeading": "Support Retainer Plans",
       "retainerBody": "We offer monthly support retainers starting from a fixed number of development hours. You know exactly what you are getting and what it costs.",
@@ -1288,10 +1531,22 @@
       "uniqueBody": "Most localisation agencies translate content but have no idea how to wire it into a React or Next.js app. We do both: in-house linguistic expertise and the technical skills to implement it, so you avoid the usual pitfalls: awkward handoffs, broken layouts from right-to-left text, missing string keys.",
       "whatHeading": "What We Do",
       "whatItems": [
-        { "title": "Content Translation", "description": "Accurate, natural-sounding translation into the target language, not machine translation copy-pasted into a CMS." },
-        { "title": "i18n Framework Integration", "description": "We wire up next-intl, i18next, or your chosen library. All strings externalised, all routes localised." },
-        { "title": "RTL Layout Support", "description": "Arabic, Hebrew, and other right-to-left languages require layout changes. We handle them correctly." },
-        { "title": "Locale Testing", "description": "We test every locale end to end: text overflow, date formats, currency symbols, and number formatting." }
+        {
+          "title": "Content Translation",
+          "description": "Accurate, natural-sounding translation into the target language, not machine translation copy-pasted into a CMS."
+        },
+        {
+          "title": "i18n Framework Integration",
+          "description": "We wire up next-intl, i18next, or your chosen library. All strings externalised, all routes localised."
+        },
+        {
+          "title": "RTL Layout Support",
+          "description": "Arabic, Hebrew, and other right-to-left languages require layout changes. We handle them correctly."
+        },
+        {
+          "title": "Locale Testing",
+          "description": "We test every locale end to end: text overflow, date formats, currency symbols, and number formatting."
+        }
       ],
       "languagesHeading": "Languages We Support",
       "languages": "English, Italian, Russian, French, German, Spanish, Arabic (RTL). Contact us for others.",
@@ -1327,10 +1582,22 @@
     "missionBody": "To help entrepreneurs and small businesses build digital products that their customers genuinely enjoy using. From first idea to launch and beyond, we are with you.",
     "valuesHeading": "What We Stand For",
     "values": [
-      { "title": "Accessibility & Inclusion", "description": "Every product we build is inclusive and accessible from day one. No one should be left behind in the digital world." },
-      { "title": "Tailored to Your Business", "description": "We build around what your business actually needs, not a generic package. Every solution is shaped by your goals, your team, and your customers." },
-      { "title": "Quality Over Speed", "description": "We build for the long term. Your product is designed to scale, improve, and adapt as your business grows." },
-      { "title": "Scaled Pricing", "description": "We offer clear pricing tiers, each with a different level of service, so you can choose what fits your budget today and add more as your business grows." }
+      {
+        "title": "Accessibility & Inclusion",
+        "description": "Every product we build is inclusive and accessible from day one. No one should be left behind in the digital world."
+      },
+      {
+        "title": "Tailored to Your Business",
+        "description": "We build around what your business actually needs, not a generic package. Every solution is shaped by your goals, your team, and your customers."
+      },
+      {
+        "title": "Quality Over Speed",
+        "description": "We build for the long term. Your product is designed to scale, improve, and adapt as your business grows."
+      },
+      {
+        "title": "Scaled Pricing",
+        "description": "We offer clear pricing tiers, each with a different level of service, so you can choose what fits your budget today and add more as your business grows."
+      }
     ],
     "teamHeading": "Meet Our Team",
     "teamSubheading": "We combine design, development, strategy, and business expertise. Most importantly, we genuinely care about your success.",
@@ -1342,13 +1609,35 @@
         "photo": "/profile_picture.jpg",
         "bio": "8 years of full-time software development in Ireland, building complex applications for global companies. 3 of those years as a dedicated frontend engineer building accessible component systems. Founder of We Make IT.",
         "qualifications": [
-          { "year": "2026", "credential": "Post Graduate Certificate in Creativity, Innovation & Entrepreneurship, Level 9", "institution": "UCD Innovation Academy" },
-          { "year": "2026", "credential": "Professional Certificate in Sales Management", "institution": "UCD Academy" },
-          { "year": "2020", "credential": "Professional Diploma in UX Design (Level 8, accredited by Glasgow Caledonian University)", "institution": "UX Design Institute, Dublin" },
-          { "year": "2017", "credential": "Post Graduate Higher Diploma in Web Development, Level 8 (First Class Hons)", "institution": "Griffith College Dublin" }
+          {
+            "year": "2026",
+            "credential": "Post Graduate Certificate in Creativity, Innovation & Entrepreneurship, Level 9",
+            "institution": "UCD Innovation Academy"
+          },
+          {
+            "year": "2026",
+            "credential": "Professional Certificate in Sales Management",
+            "institution": "UCD Academy"
+          },
+          {
+            "year": "2020",
+            "credential": "Professional Diploma in UX Design (Level 8, accredited by Glasgow Caledonian University)",
+            "institution": "UX Design Institute, Dublin"
+          },
+          {
+            "year": "2017",
+            "credential": "Post Graduate Higher Diploma in Web Development, Level 8 (First Class Hons)",
+            "institution": "Griffith College Dublin"
+          }
         ]
       },
-      { "name": "Andrea", "title": "Chief Architect & Senior Software Engineer", "photo": "/images/andrea_contarino.jpg", "bio": "Full-stack software engineer with 20 years of experience working on global IT projects and infrastructures. Has built and maintained systems for companies including Fidelity Investments, Global Payments, and the Central Bank of Ireland. Specialist in technical architecture for medical, financial, and public administration systems.", "qualifications": [] }
+      {
+        "name": "Andrea",
+        "title": "Chief Architect & Senior Software Engineer",
+        "photo": "/images/andrea_contarino.jpg",
+        "bio": "Full-stack software engineer with 20 years of experience working on global IT projects and infrastructures. Has built and maintained systems for companies including Fidelity Investments, Global Payments, and the Central Bank of Ireland. Specialist in technical architecture for medical, financial, and public administration systems.",
+        "qualifications": []
+      }
     ],
     "teamCollaborators": "We also collaborate with a network of senior consultants on a contract basis. Depending on the project, we bring in the right specialists from our established collaborators, so you always get the expertise your case needs.",
     "teamPlaceholder": "Photo coming soon"

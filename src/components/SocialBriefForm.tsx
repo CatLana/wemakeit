@@ -16,9 +16,10 @@ type FormValues = {
   idealClient?: string;
   differentiator?: string;
   contentDislikes?: string;
-  hasBrandAssets?: string;
+  hasBrandAssets?: string | null;
   brandAssetsOther?: string;
   budget: string;
+  selectedTier?: string;
 };
 
 function makeSchema(e: (key: string) => string) {
@@ -29,15 +30,18 @@ function makeSchema(e: (key: string) => string) {
     idealClient: z.string().optional(),
     differentiator: z.string().optional(),
     contentDislikes: z.string().optional(),
-    hasBrandAssets: z.string().optional(),
+    hasBrandAssets: z.string().nullable().optional(),
     brandAssetsOther: z.string().optional(),
     budget: z.string().min(1, e("form.errors.budget")),
+    selectedTier: z.string().optional(),
   });
 }
 
 export default function SocialBriefForm() {
   const t = useTranslations("socialBrief");
-  const isAuditContext = useSearchParams().get("context") === "audit";
+  const searchParams = useSearchParams();
+  const isAuditContext = searchParams.get("context") === "audit";
+  const selectedTier = searchParams.get("tier") ?? undefined;
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
   const successRef = useRef<HTMLDivElement>(null);
@@ -64,7 +68,7 @@ export default function SocialBriefForm() {
       const res = await fetch("/api/brief/social", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, selectedTier }),
       });
       if (!res.ok) {
         const json = await res.json().catch(() => ({}));

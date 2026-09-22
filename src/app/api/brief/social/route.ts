@@ -9,16 +9,17 @@ const schema = z.object({
   idealClient: z.string().optional(),
   differentiator: z.string().optional(),
   contentDislikes: z.string().optional(),
-  hasBrandAssets: z.string().optional(),
+  hasBrandAssets: z.string().nullable().optional(),
   brandAssetsOther: z.string().optional(),
   budget: z.string().min(1),
+  selectedTier: z.string().optional(),
 });
 
 type BriefData = z.infer<typeof schema>;
 
 const RECIPIENT = ["ssavchenko8@gmail.com"];
 
-const FIELD_LABELS: Record<keyof Omit<BriefData, "name" | "email">, string> = {
+const FIELD_LABELS: Record<keyof Omit<BriefData, "name" | "email" | "selectedTier">, string> = {
   growGoals: "What do you want to grow?",
   idealClient: "Who is your ideal client?",
   differentiator: "What makes your business different from others nearby?",
@@ -63,6 +64,7 @@ function buildHtml(data: BriefData): string {
               <tbody>
                 ${data.name ? `<tr style="background:#f8fafc;"><td style="padding:8px 12px;font-size:13px;color:#64748b;white-space:nowrap;vertical-align:top;">Name</td><td style="padding:8px 12px;font-size:13px;color:#0f172a;vertical-align:top;">${data.name}</td></tr>` : ""}
                 ${data.email ? `<tr><td style="padding:8px 12px;font-size:13px;color:#64748b;white-space:nowrap;vertical-align:top;">Email</td><td style="padding:8px 12px;font-size:13px;color:#0f172a;vertical-align:top;"><a href="mailto:${data.email}" style="color:#0891b2;">${data.email}</a></td></tr>` : ""}
+                ${data.selectedTier ? `<tr style="background:#f0fdff;"><td style="padding:8px 12px;font-size:13px;color:#64748b;white-space:nowrap;vertical-align:top;">Clicked pricing tier</td><td style="padding:8px 12px;font-size:13px;color:#0e7490;font-weight:600;vertical-align:top;">${data.selectedTier}</td></tr>` : ""}
               </tbody>
             </table>
           </td>
