@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-22 (testing pass)
+
+- Ran a full test battery on the social brief: all 4 tier CTAs end to
+  end, full field combinations, both radio states, mobile, and the
+  pre-existing audit-context variant. All pass. Found and fixed one
+  more real issue: user text was interpolated unescaped into the
+  notification email's HTML.
+
 ## 2026-09-22 (later)
 
 - Renamed pricing CTA to "I want it!" and wired it to pass the clicked
