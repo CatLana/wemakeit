@@ -515,7 +515,7 @@
   "socialPage": {
     "meta": {
       "title": "Social media management | We Make IT",
-      "description": "Instagram content that brings in real clients, not just likes. Reels, posts, and stories planned and created for you, from €150 a month."
+      "description": "Instagram content that brings in real clients, not just likes. Reels, posts, and stories planned and created for you, from €250 a month."
     },
     "eyebrow": "Social media management",
     "heading": "Instagram content that brings in real clients, not just likes",
@@ -531,45 +531,56 @@
     },
     "tiers": {
       "heading": "Pricing",
-      "subheading": "Simple monthly plans. Cancel any time.",
-      "popularBadge": "Most popular",
+      "subheading": "A one-off plan to set your strategy, then a monthly tier to get it produced. Cancel any time.",
+      "onceOffHeading": "Once-off: content plan development",
+      "subscriptionHeading": "Subscription: content production (includes shooting and editing)",
+      "popularBadge": "Best value",
       "perMonth": "/month",
+      "oneOffSuffix": "one-off (6 months)",
       "ctaLabel": "Get started",
+      "onceOffPlan": {
+        "name": "Content plan development",
+        "price": "€500",
+        "features": [
+          "Analysis of your business goals and target audience",
+          "Audit of your current profile",
+          "6-month content plan: 2 reel ideas per month, 8 posts, 8 stories",
+          "Hashtags and captions text included"
+        ]
+      },
       "plans": [
         {
-          "name": "Starter",
-          "priceRange": "€150 to €200",
-          "description": "One polished reel a month. A steady drip of content without a big commitment.",
+          "name": "Tier 1",
+          "priceRange": "€250",
+          "description": "A light, steady presence.",
           "features": [
-            "1 reel a month, filmed and edited",
-            "Content ideas provided",
-            "You post it yourself"
+            "1 reel per month",
+            "1 post per month"
           ],
           "highlighted": false
         },
         {
-          "name": "Growth",
-          "priceRange": "€350 to €450",
-          "description": "Two reels and regular posts, so your feed stays active and on-brand.",
+          "name": "Tier 2",
+          "priceRange": "€450",
+          "description": "An active, consistent feed.",
           "features": [
-            "2 reels a month, filmed and edited",
-            "2 posts every two weeks",
-            "Story content ideas provided",
-            "You post it yourself"
+            "2 reels per month",
+            "4 posts per month",
+            "4 stories per month"
+          ],
+          "highlighted": false
+        },
+        {
+          "name": "Tier 3",
+          "priceRange": "€650",
+          "description": "A full content calendar.",
+          "features": [
+            "Includes the €500 content plan development free on a 6-month term",
+            "4 reels per month",
+            "8 posts per month",
+            "8 stories per month"
           ],
           "highlighted": true
-        },
-        {
-          "name": "Full Service",
-          "priceRange": "€550 to €700",
-          "description": "The full package. We plan it, make it, and hand you everything ready to go.",
-          "features": [
-            "2 reels a month, filmed and edited",
-            "4 posts a month",
-            "Story content produced, not just ideas",
-            "You post it yourself"
-          ],
-          "highlighted": false
         }
       ]
     },
@@ -577,22 +588,22 @@
       "heading": "Add-ons",
       "items": [
         {
-          "name": "Posting and scheduling",
-          "price": "+€100 to €150/month",
-          "description": "We post everything for you, at the best times for your audience."
+          "name": "Post it yourself",
+          "price": "€0",
+          "description": "You post the content we provide and manage engagement yourself."
         },
         {
-          "name": "Instagram audit and strategy",
-          "price": "€150 to €250 one-off",
-          "description": "A full review of your current Instagram and a clear plan to improve it."
+          "name": "We manage your account",
+          "price": "€100/month",
+          "description": "We take over management of your account: posting and engagement."
         }
       ]
     },
     "reassurance": {
       "heading": "Not sure which plan fits?",
       "points": [
-        "Every plan is month to month, cancel any time",
-        "Prices depend on your business and content needs",
+        "Every subscription tier is month to month, cancel any time",
+        "Simple, fixed pricing, no surprises",
         "A free follow-up consultation is included either way"
       ]
     },

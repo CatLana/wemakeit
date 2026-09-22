@@ -47,6 +47,11 @@ export default async function SocialPage({
   const t = await getTranslations({ locale, namespace: "socialPage" });
 
   const steps = t.raw("howItWorks.steps") as string[];
+  const onceOffPlan = t.raw("tiers.onceOffPlan") as {
+    name: string;
+    price: string;
+    features: string[];
+  };
   const plans = t.raw("tiers.plans") as Array<{
     name: string;
     priceRange: string;
@@ -63,12 +68,15 @@ export default async function SocialPage({
     name: "Social Media Management",
     provider: { "@type": "Organization", name: "We Make IT", url: BASE_URL },
     areaServed: ["IE", "EU"],
-    offers: plans.map((plan) => ({
-      "@type": "Offer",
-      name: plan.name,
-      priceCurrency: "EUR",
-      description: plan.priceRange,
-    })),
+    offers: [
+      { "@type": "Offer", name: onceOffPlan.name, priceCurrency: "EUR", description: `${onceOffPlan.price} one-off` },
+      ...plans.map((plan) => ({
+        "@type": "Offer",
+        name: plan.name,
+        priceCurrency: "EUR",
+        description: plan.priceRange,
+      })),
+    ],
   };
 
   return (
@@ -121,6 +129,39 @@ export default async function SocialPage({
             </h2>
             <p className="text-slate-400 text-center mb-10">{t("tiers.subheading")}</p>
 
+            {/* Once-off content plan */}
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-[#22D3EE] mb-4 text-center">
+              {t("tiers.onceOffHeading")}
+            </h3>
+            <div className="max-w-md mx-auto mb-10">
+              <div className="rounded-2xl bg-white p-8 flex flex-col">
+                <h4 className="text-lg font-bold text-[#1E293B]">{onceOffPlan.name}</h4>
+                <p className="mb-6 mt-2">
+                  <span className="text-2xl font-extrabold text-[#1E293B]">{onceOffPlan.price}</span>
+                  <span className="text-slate-500 ml-1">{t("tiers.oneOffSuffix")}</span>
+                </p>
+                <ul className="space-y-2 mb-8 flex-1">
+                  {onceOffPlan.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-slate-600">
+                      <Check size={14} className="text-[#0E7490] mt-0.5 shrink-0" aria-hidden="true" strokeWidth={2.5} />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/brief/social"
+                  className="w-full inline-flex items-center justify-center gap-2 min-h-[50px] px-6 font-bold rounded-xl transition-colors bg-[#0F172A] text-white hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#22D3EE]"
+                >
+                  {t("tiers.ctaLabel")}
+                  <ArrowRight size={15} aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Subscription tiers */}
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-[#22D3EE] mb-4 text-center">
+              {t("tiers.subscriptionHeading")}
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {plans.map((plan) => (
                 <div
