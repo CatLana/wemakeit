@@ -40,9 +40,11 @@ const QUESTION_KEYS: Record<BriefNamespace, readonly string[]> = {
     "form.additionalInfo",
   ],
   socialBrief: [
-    "form.topServices",
+    "form.growGoals",
     "form.idealClient",
-    "form.desiredTone",
+    "form.differentiator",
+    "form.contentDislikes",
+    "form.hasBrandAssets",
     "form.budget",
   ],
 };

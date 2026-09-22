@@ -5,9 +5,12 @@ import { z } from "zod";
 const schema = z.object({
   name: z.string().optional(),
   email: z.string().optional(),
-  topServices: z.string().optional(),
+  growGoals: z.string().optional(),
   idealClient: z.string().optional(),
-  desiredTone: z.string().optional(),
+  differentiator: z.string().optional(),
+  contentDislikes: z.string().optional(),
+  hasBrandAssets: z.string().optional(),
+  brandAssetsOther: z.string().optional(),
   budget: z.string().min(1),
 });
 
@@ -16,10 +19,13 @@ type BriefData = z.infer<typeof schema>;
 const RECIPIENT = ["ssavchenko8@gmail.com"];
 
 const FIELD_LABELS: Record<keyof Omit<BriefData, "name" | "email">, string> = {
-  topServices: "What are your top services, and what do you want to grow?",
+  growGoals: "What do you want to grow?",
   idealClient: "Who is your ideal client?",
-  desiredTone: "What tone do you want?",
-  budget: "What is your budget?",
+  differentiator: "What makes your business different from others nearby?",
+  contentDislikes: "What do you dislike about your current content?",
+  hasBrandAssets: "Do you have existing brand colours, fonts, or logo files?",
+  brandAssetsOther: "Something else (brand assets)",
+  budget: "Budget range in mind",
 };
 
 const FIELD_ORDER = Object.keys(FIELD_LABELS) as Array<keyof typeof FIELD_LABELS>;

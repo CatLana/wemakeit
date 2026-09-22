@@ -12,9 +12,12 @@ import AuditBriefSuccess from "@/components/AuditBriefSuccess";
 type FormValues = {
   name?: string;
   email?: string;
-  topServices?: string;
+  growGoals?: string;
   idealClient?: string;
-  desiredTone?: string;
+  differentiator?: string;
+  contentDislikes?: string;
+  hasBrandAssets?: string;
+  brandAssetsOther?: string;
   budget: string;
 };
 
@@ -22,9 +25,12 @@ function makeSchema(e: (key: string) => string) {
   return z.object({
     name: z.string().optional(),
     email: z.string().optional(),
-    topServices: z.string().optional(),
+    growGoals: z.string().optional(),
     idealClient: z.string().optional(),
-    desiredTone: z.string().optional(),
+    differentiator: z.string().optional(),
+    contentDislikes: z.string().optional(),
+    hasBrandAssets: z.string().optional(),
+    brandAssetsOther: z.string().optional(),
     budget: z.string().min(1, e("form.errors.budget")),
   });
 }
@@ -136,16 +142,53 @@ export default function SocialBriefForm() {
 
       <hr className="border-slate-200" />
 
-      <Field id="smb-topServices" label={t("form.topServices")}>
-        <textarea id="smb-topServices" rows={2} placeholder={t("form.topServicesPlaceholder")} className={textareaBase} {...register("topServices")} />
+      <Field id="smb-growGoals" label={t("form.growGoals")} showOptional>
+        <textarea id="smb-growGoals" rows={2} placeholder={t("form.growGoalsPlaceholder")} className={textareaBase} {...register("growGoals")} />
       </Field>
 
-      <Field id="smb-idealClient" label={t("form.idealClient")}>
+      <Field id="smb-idealClient" label={t("form.idealClient")} showOptional>
         <textarea id="smb-idealClient" rows={2} placeholder={t("form.idealClientPlaceholder")} className={textareaBase} {...register("idealClient")} />
       </Field>
 
-      <Field id="smb-desiredTone" label={t("form.desiredTone")}>
-        <textarea id="smb-desiredTone" rows={2} placeholder={t("form.desiredTonePlaceholder")} className={textareaBase} {...register("desiredTone")} />
+      <Field id="smb-differentiator" label={t("form.differentiator")} showOptional>
+        <textarea id="smb-differentiator" rows={2} placeholder={t("form.differentiatorPlaceholder")} className={textareaBase} {...register("differentiator")} />
+      </Field>
+
+      <Field id="smb-contentDislikes" label={t("form.contentDislikes")} showOptional>
+        <textarea id="smb-contentDislikes" rows={2} placeholder={t("form.contentDislikesPlaceholder")} className={textareaBase} {...register("contentDislikes")} />
+      </Field>
+
+      <Field id="smb-hasBrandAssets" label={t("form.hasBrandAssets")} showOptional>
+        <div className="flex items-center gap-6 py-1">
+          <label className="inline-flex items-center gap-2 text-sm text-[#1E293B]">
+            <input
+              type="radio"
+              value="Yes"
+              className="h-4 w-4 accent-[#0E7490]"
+              {...register("hasBrandAssets")}
+            />
+            {t("form.hasBrandAssetsYes")}
+          </label>
+          <label className="inline-flex items-center gap-2 text-sm text-[#1E293B]">
+            <input
+              type="radio"
+              value="No"
+              className="h-4 w-4 accent-[#0E7490]"
+              {...register("hasBrandAssets")}
+            />
+            {t("form.hasBrandAssetsNo")}
+          </label>
+        </div>
+      </Field>
+
+      <Field id="smb-brandAssetsOther" label={t("form.brandAssetsOther")} showOptional>
+        <input
+          id="smb-brandAssetsOther"
+          type="text"
+          placeholder={t("form.brandAssetsOtherPlaceholder")}
+          className={inputBase}
+          {...register("brandAssetsOther")}
+        />
       </Field>
 
       <Field id="smb-budget" label={t("form.budget")} required error={errors.budget?.message}>
