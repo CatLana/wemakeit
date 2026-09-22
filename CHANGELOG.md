@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-22
+
+- Reworked social media pricing: once-off content plan (€500/6mo), 3
+  fixed subscription tiers (€250/€450/€650), Tier 3 bundles the free
+  content plan, add-ons simplified to €0/€100 flat options.
+- Rewrote the social media brief to 6 new questions (growth goal, ideal
+  client, differentiator, content dislikes, brand assets yes/no + text,
+  budget). Budget stays the only required field.
+
 Brief log of completed work. Chat replies stay short; details live here.
 
 ## 2026-09-20 (later)
