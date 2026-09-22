@@ -9,7 +9,7 @@ export default function Hero() {
   const valueProps = t.raw("valueProps") as string[];
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center bg-[#0F172A] overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-[#0F172A] overflow-hidden pt-24 sm:pt-20"
       aria-label={t("ariaLabel")}
     >
       {/* Geometric background — aria-hidden so screen readers skip it */}
