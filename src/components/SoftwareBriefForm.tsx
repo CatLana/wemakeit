@@ -7,6 +7,7 @@ import { z } from "zod";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Field, inputBase, textareaBase } from "@/components/BriefFormFields";
+import { useScrollToTopOnMount } from "@/hooks/useScrollToTopOnMount";
 import AuditBriefSuccess from "@/components/AuditBriefSuccess";
 
 type FormValues = {
@@ -32,6 +33,7 @@ function makeSchema(e: (key: string) => string) {
 }
 
 export default function SoftwareBriefForm() {
+  useScrollToTopOnMount();
   const t = useTranslations("softwareBrief");
   const isAuditContext = useSearchParams().get("context") === "audit";
   const [submitted, setSubmitted] = useState(false);

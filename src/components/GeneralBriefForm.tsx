@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Field, inputBase, textareaBase } from "@/components/BriefFormFields";
+import { useScrollToTopOnMount } from "@/hooks/useScrollToTopOnMount";
 import AuditBriefSuccess from "@/components/AuditBriefSuccess";
 
 type FormValues = {
@@ -19,6 +20,7 @@ type FormValues = {
 };
 
 export default function GeneralBriefForm() {
+  useScrollToTopOnMount();
   const t = useTranslations("generalBrief");
   const isAuditContext = useSearchParams().get("context") === "audit";
   const [submitted, setSubmitted] = useState(false);
