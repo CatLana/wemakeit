@@ -538,7 +538,8 @@
     },
     "tiers": {
       "heading": "Pricing",
-      "subheading": "A one-off plan to set your strategy, then a monthly tier to get it produced. Cancel any time.",
+      "subheading": "A one-off plan to set your strategy*, then a monthly tier to get it produced. Cancel any time.",
+      "onceOffNote": "* Free with Tier 3 on a 6-month contract",
       "onceOffHeading": "Once-off: content plan development",
       "subscriptionHeading": "Subscription: content production (includes shooting and editing)",
       "popularBadge": "Best value",

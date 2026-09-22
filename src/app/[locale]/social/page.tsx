@@ -127,7 +127,12 @@ export default async function SocialPage({
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3 text-center">
               {t("tiers.heading")}
             </h2>
-            <p className="text-slate-400 text-center mb-10">{t("tiers.subheading")}</p>
+            <p className="text-slate-400 text-center mb-3">{t("tiers.subheading")}</p>
+            <p className="text-center mb-10">
+              <span className="inline-block text-xs font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/30 rounded-full px-3 py-1">
+                {t("tiers.onceOffNote")}
+              </span>
+            </p>
 
             {/* Once-off content plan */}
             <h3 className="text-sm font-semibold uppercase tracking-widest text-[#22D3EE] mb-4 text-center">
