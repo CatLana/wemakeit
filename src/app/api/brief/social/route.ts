@@ -33,10 +33,19 @@ const FIELD_ORDER = Object.keys(FIELD_LABELS) as Array<keyof typeof FIELD_LABELS
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function section(label: string, value: string): string {
   return `<tr><td style="padding:14px 0;border-bottom:1px solid #e2e8f0;">
     <p style="margin:0 0 6px;font-size:13px;font-weight:600;color:#475569;">${label}</p>
-    <p style="margin:0;font-size:14px;color:#0f172a;line-height:1.6;white-space:pre-wrap;">${value}</p>
+    <p style="margin:0;font-size:14px;color:#0f172a;line-height:1.6;white-space:pre-wrap;">${escapeHtml(value)}</p>
   </td></tr>`;
 }
 
@@ -62,9 +71,9 @@ function buildHtml(data: BriefData): string {
           <td style="padding:24px 32px 8px;">
             <table width="100%" cellPadding="0" cellSpacing="0" style="border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
               <tbody>
-                ${data.name ? `<tr style="background:#f8fafc;"><td style="padding:8px 12px;font-size:13px;color:#64748b;white-space:nowrap;vertical-align:top;">Name</td><td style="padding:8px 12px;font-size:13px;color:#0f172a;vertical-align:top;">${data.name}</td></tr>` : ""}
-                ${data.email ? `<tr><td style="padding:8px 12px;font-size:13px;color:#64748b;white-space:nowrap;vertical-align:top;">Email</td><td style="padding:8px 12px;font-size:13px;color:#0f172a;vertical-align:top;"><a href="mailto:${data.email}" style="color:#0891b2;">${data.email}</a></td></tr>` : ""}
-                ${data.selectedTier ? `<tr style="background:#f0fdff;"><td style="padding:8px 12px;font-size:13px;color:#64748b;white-space:nowrap;vertical-align:top;">Clicked pricing tier</td><td style="padding:8px 12px;font-size:13px;color:#0e7490;font-weight:600;vertical-align:top;">${data.selectedTier}</td></tr>` : ""}
+                ${data.name ? `<tr style="background:#f8fafc;"><td style="padding:8px 12px;font-size:13px;color:#64748b;white-space:nowrap;vertical-align:top;">Name</td><td style="padding:8px 12px;font-size:13px;color:#0f172a;vertical-align:top;">${escapeHtml(data.name)}</td></tr>` : ""}
+                ${data.email ? `<tr><td style="padding:8px 12px;font-size:13px;color:#64748b;white-space:nowrap;vertical-align:top;">Email</td><td style="padding:8px 12px;font-size:13px;color:#0f172a;vertical-align:top;"><a href="mailto:${escapeHtml(data.email)}" style="color:#0891b2;">${escapeHtml(data.email)}</a></td></tr>` : ""}
+                ${data.selectedTier ? `<tr style="background:#f0fdff;"><td style="padding:8px 12px;font-size:13px;color:#64748b;white-space:nowrap;vertical-align:top;">Clicked pricing tier</td><td style="padding:8px 12px;font-size:13px;color:#0e7490;font-weight:600;vertical-align:top;">${escapeHtml(data.selectedTier)}</td></tr>` : ""}
               </tbody>
             </table>
           </td>
