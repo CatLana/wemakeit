@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-22 (later)
+
+- Renamed pricing CTA to "I want it!" and wired it to pass the clicked
+  tier to the brief form as a hidden field (shown in the notification
+  email, not the form). Found and fixed a real bug in the process: the
+  optional brand-assets radio reported null when unanswered, which
+  silently failed every submission that skipped it.
+
 ## 2026-09-22
 
 - Reworked social media pricing: once-off content plan (€500/6mo), 3
