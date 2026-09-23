@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { setRequestLocale, getTranslations } from "next-intl/server";
+import { Layers, Bot, ShieldCheck, Split, RotateCcw, ArrowRight } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BookingEmbed from "@/components/BookingEmbed";
 import { Link } from "@/i18n/navigation";
+
+const VALUE_PROP_ICONS = [Layers, Bot, ShieldCheck, Split, RotateCcw];
 
 const BASE_URL = "https://www.wemakeit.ie";
 const SLUG = "book";
@@ -70,6 +73,9 @@ export default async function BookPage({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "book" });
 
+  const valuePropPoints = t.raw("valueProp.points") as Array<{ title: string; body: string }>;
+  const furtherReadingLinks = t.raw("furtherReading.links") as Array<{ title: string; slug: string }>;
+
   return (
     <>
       <Header />
@@ -110,9 +116,61 @@ export default async function BookPage({
           <ClarityPhotoPair before={t("clarity.before")} after={t("clarity.after")} />
         </div>
 
+        {/* Value proposition */}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1E293B] mb-4">
+            {t("valueProp.heading")}
+          </h2>
+          <p className="text-slate-600 leading-relaxed mb-8">
+            {t("valueProp.intro")}
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            {valuePropPoints.map(({ title, body }, i) => {
+              const Icon = VALUE_PROP_ICONS[i] ?? Layers;
+              return (
+                <div key={title} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#0F172A] mb-3">
+                    <Icon size={18} className="text-[#22D3EE]" aria-hidden="true" />
+                  </div>
+                  <p className="font-bold text-[#1E293B] text-sm mb-1.5">{title}</p>
+                  <p className="text-sm text-slate-600 leading-relaxed">{body}</p>
+                </div>
+              );
+            })}
+          </div>
+          <p className="text-sm text-slate-500 leading-relaxed rounded-xl bg-white border border-slate-200 p-5">
+            {t("valueProp.closing")}
+          </p>
+        </div>
+
         {/* Booking */}
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <BookingEmbed locale={locale} />
+        </div>
+
+        {/* Further reading */}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+            <h2 className="text-lg font-bold text-[#1E293B] mb-1.5">
+              {t("furtherReading.heading")}
+            </h2>
+            <p className="text-sm text-slate-500 mb-5">
+              {t("furtherReading.intro")}
+            </p>
+            <ul className="space-y-2">
+              {furtherReadingLinks.map(({ title, slug }) => (
+                <li key={slug}>
+                  <Link
+                    href={`/blog/${slug}` as never}
+                    className="group flex items-center justify-between gap-3 text-sm font-medium text-[#1E293B] hover:text-[#0E7490] transition-colors focus-visible:outline-2 focus-visible:outline-[#22D3EE] focus-visible:outline-offset-2 rounded py-1"
+                  >
+                    <span>{title}</span>
+                    <ArrowRight size={14} className="shrink-0 text-slate-400 group-hover:text-[#0E7490] transition-colors" aria-hidden="true" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </main>
       <Footer />

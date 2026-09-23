@@ -26,7 +26,7 @@ export async function generateMetadata({
   return {
     title: "Pricing | Web & App Development Ireland | We Make IT",
     description:
-      "Clear pricing for web and app development in Ireland. Landing pages from €700, website builds from €1,500, plus a free 30-minute technical consultation. All prices exclude VAT.",
+      "Clear pricing for web and app development in Ireland. Landing pages from €700, website builds from €1,500, plus a free 30-minute discovery call. All prices exclude VAT.",
     alternates: {
       canonical: canonicalUrl,
       languages: {
@@ -37,7 +37,7 @@ export async function generateMetadata({
     openGraph: {
       title: "Pricing | Web & App Development Ireland | We Make IT",
       description:
-        "Clear pricing for web and app development in Ireland. Landing pages from €700, website builds from €1,500, plus a free 30-minute technical consultation. All prices exclude VAT.",
+        "Clear pricing for web and app development in Ireland. Landing pages from €700, website builds from €1,500, plus a free 30-minute discovery call. All prices exclude VAT.",
       url: canonicalUrl,
       siteName: "We Make IT",
       locale: "en_IE",
@@ -415,11 +415,11 @@ export default async function PricingPage({
               ))}
             </div>
 
-            {/* Not sure what you need */}
+            {/* Technical consultation */}
             <div className="mt-12 rounded-2xl bg-[#0F172A] p-8 text-center">
-              <p className="text-xl font-bold text-white mb-2">Not sure what you need?</p>
+              <p className="text-xl font-bold text-white mb-2">Want expert input before you commit?</p>
               <p className="text-slate-400 text-sm mb-6 max-w-md mx-auto">
-                Book a paid technical consultation. We will talk through your project and tell you exactly what to build and what it will cost.
+                A senior engineer reviews what you are building and gives you a clear steer on tech stack, architecture, and approach, before you spend time or budget on the wrong one.
               </p>
               <Link
                 href="/book"

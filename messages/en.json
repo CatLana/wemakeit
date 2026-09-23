@@ -1644,10 +1644,10 @@
   },
   "book": {
     "eyebrow": "Paid consultation",
-    "heading": "Book a paid technical consultation",
-    "body": "€60 for 60 minutes, one to one. For when you need more time than a free call allows, or want a follow-up after one for extra detail or another report.",
+    "heading": "A technical second opinion before you build",
+    "body": "€60 for 60 minutes, one to one, with a senior engineer. For founders and small teams building with AI tools who want the right tech stack, architecture, and approach decided once, not rebuilt twice.",
     "discoveryCallBridge": {
-      "text": "Not sure yet, or just want a quick chat first?",
+      "text": "Want a shorter, free chat first?",
       "cta": "Book a free discovery call instead"
     },
     "clarity": {
@@ -1658,6 +1658,43 @@
       "text": "Looking for a full written report instead?",
       "cta": "Get a website audit"
     },
+    "valueProp": {
+      "heading": "What one call can save you",
+      "intro": "AI tools make it possible to build a working app in a weekend without writing code yourself. What they do not do is tell you whether you picked the right tech stack, whether your users' data is actually secure, or whether the way you are prompting is quietly burning through your budget. That is what this call is for.",
+      "points": [
+        {
+          "title": "The right tech stack",
+          "body": "What to build with and what to avoid, based on what you are actually building, not what is trending this month."
+        },
+        {
+          "title": "Efficient AI-assisted development",
+          "body": "How to structure your project and your prompts so you get more built per euro of AI credit, not less."
+        },
+        {
+          "title": "Security and GDPR",
+          "body": "What secure by default actually means for your users' data, and what Irish and EU compliance requires in practice."
+        },
+        {
+          "title": "Website or web application?",
+          "body": "Whether you need user accounts and a database, or a simpler website does the job. Building the wrong one costs far more to undo."
+        },
+        {
+          "title": "Avoiding a rebuild",
+          "body": "The architecture decisions that are cheap to get right now and expensive to fix once you have built months of work on top of them."
+        }
+      ],
+      "closing": "This is not an agency engagement. It is one hour of a senior engineer's judgement, applied at the decisions that are expensive to get wrong, so building it yourself stays fast, affordable, and sustainable instead of something you rebuild from scratch."
+    },
+    "furtherReading": {
+      "heading": "New to building with AI tools?",
+      "intro": "These guides cover the same ground in more depth, written for people without an engineering background.",
+      "links": [
+        { "title": "My AI-built app worked, until it didn't: a practical rescue guide", "slug": "ai-built-app-rescue-guide" },
+        { "title": "Vibe coding technical debt: what it is and how to check for it", "slug": "vibe-coding-technical-debt-explained" },
+        { "title": "7 signs your Lovable, Bolt, or Cursor app needs a professional review", "slug": "signs-ai-app-needs-professional-review" },
+        { "title": "What a technical audit of an AI-built app actually checks", "slug": "what-a-technical-audit-checks" }
+      ]
+    },
     "step1Label": "Step 1",
     "step2Label": "Step 2",
     "offersHeading": "Online video call or in-person meeting",
@@ -1666,7 +1703,7 @@
       "badge": "€60",
       "heading": "Paid technical consultation",
       "duration": "60 minutes",
-      "description": "For when you need more time than a free call allows, or want a follow-up session after one for extra detail or another report.",
+      "description": "A senior engineer reviews what you are building and gives you a clear steer on tech stack, architecture, security, and approach, before you spend time or AI budget on the wrong one.",
       "cta": "Book your paid consultation",
       "agreeLabel": "I agree to the",
       "termsLinkLabel": "Terms of Service for this consultation"
@@ -1695,8 +1732,8 @@
     "heading": "Book a free discovery call",
     "body": "Free, 30 minutes, no commitment.",
     "bookBridge": {
-      "text": "Already know you need more time?",
-      "cta": "Book the paid consultation instead"
+      "text": "Already know what you're building and want an expert steer on the approach?",
+      "cta": "Book a paid technical consultation instead"
     },
     "contactHeading": "Prefer to talk first?",
     "contactBody": "Message us on WhatsApp or by email and we'll get back to you directly.",
