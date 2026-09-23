@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-09-23
+
+- Repositioned the paid technical consultation from "book this if the
+  free call isn't enough time" to a standalone service: rewrote the
+  /book value proposition (tech stack, AI-assisted development,
+  security/GDPR, website vs. web app, avoiding a rebuild), the pricing
+  and discovery-call bridge copy, and a pricing meta description that
+  mislabelled the free discovery call as a "technical consultation".
+  Added a further-reading section on /book linking the 4 AI/vibe-coding
+  articles.
+- Redesigned the blog index: thumbnail on every card (reused existing
+  hero photos plus two previously unused stock photos, branded gradient
+  covers for the rest), a featured-article treatment for the newest
+  post, and a byline.
+
 ## 2026-09-22 (visuals + bug fixes)
 
 - Social media page: added the real Instagram-grid hero photo and a
